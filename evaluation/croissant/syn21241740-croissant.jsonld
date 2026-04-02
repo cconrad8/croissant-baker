@@ -1,0 +1,912 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "RNAseq_Harmonization",
+  "description": "Dataset 'RNAseq_Harmonization' from Synapse (syn21241740)",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "RNAseq_Harmonization. Synapse ID: syn21241740. https://www.synapse.org/Synapse:syn21241740",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Mette Peters",
+    "url": "https://www.synapse.org/#!Profile:273995"
+  },
+  "datePublished": "2026-04-02 12:03:36.396",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn21241740",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "MSBB.html",
+      "contentSize": "3607969",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27068766",
+      "encodingFormat": "text/html",
+      "md5": "e9ec84c47ea9ec47c711f7b1e685a388"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "MSBB_BioMart_query_results.tsv",
+      "contentSize": "3786529",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27068755",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "15282991ae9d09a17b72fb657ec10a74"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "MSBB_Configuration_file.yml",
+      "contentSize": "2342",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27068765",
+      "encodingFormat": "application/octet-stream",
+      "md5": "ae33df4408b3a2096488584fe3804d39"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "MSBB_Differential_Expression_(age-death).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27068764",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "MSBB_Differential_Expression_(diagnosis).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27068762",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "MSBB_Differential_Expression_(diagnosis-sex).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27068763",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "MSBB_Differential_Expression_(diagnosis-sex-age-death).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn30821822",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "Mayo.html",
+      "contentSize": "3490951",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27024974",
+      "encodingFormat": "text/html",
+      "md5": "a2f4bc104f85b017c8c74fcaf304dcf2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "Mayo_BioMart_query_results.tsv",
+      "contentSize": "3786529",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27024953",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "15282991ae9d09a17b72fb657ec10a74"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "Mayo_Configuration_file.yml",
+      "contentSize": "2002",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27024973",
+      "encodingFormat": "application/octet-stream",
+      "md5": "e432a70550fed923126c3f3b77b95b18"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "Mayo_Differential_Expression_(age-death).tsv",
+      "contentSize": "10427277",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27024972",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "646e771d6185051f5c743727a083dfc6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "Mayo_Differential_Expression_(diagnosis).tsv",
+      "contentSize": "8267079",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27024969",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "33b45add475444e8b06c65138cf501a7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "Mayo_Differential_Expression_(diagnosis-sex).tsv",
+      "contentSize": "17397372",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27024970",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "536f5725aabd82f936be1a8b2cc17154"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "Mayo_Differential_Expression_(diagnosis-sex-age-death).tsv",
+      "contentSize": "17397444",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31339042",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "27fe651fe71d5458b0f01b920d133623"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "ROSMAP.html",
+      "contentSize": "3493202",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26967461",
+      "encodingFormat": "text/html",
+      "md5": "2cb9bfbebb8b344e78751081d1fcf1b1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "ROSMAP_BioMart_query_results.tsv",
+      "contentSize": "3786529",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26967452",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "15282991ae9d09a17b72fb657ec10a74"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "ROSMAP_Configuration_file.yml",
+      "contentSize": "2193",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26967460",
+      "encodingFormat": "application/octet-stream",
+      "md5": "3c3312d36cb60444609e4eb8b22cd358"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "ROSMAP_Differential_Expression_(age-death).tsv",
+      "contentSize": "15303264",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26967459",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "55b1d781f003b012aba08202355e0599"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "ROSMAP_Differential_Expression_(diagnosis).tsv",
+      "contentSize": "12129856",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26967457",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "f022161c6d745e885ff292a8fd9559b6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "ROSMAP_Differential_Expression_(diagnosis-sex).tsv",
+      "contentSize": "25511226",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26967458",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "6e852a3197d59c568774745353d0c81d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "ROSMAP_Differential_Expression_(diagnosis-sex-age-death).tsv",
+      "contentSize": "32818508",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31141707",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "cee24caf281c505e6833859b135bb5df"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "censor-ages-over-89.R",
+      "contentSize": "1615",
+      "contentUrl": "https://www.synapse.org/Synapse:syn29855659",
+      "encodingFormat": "text/x-r",
+      "md5": "6621a918bbe56f2fb316c2a291dbde61"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "MSBB_Covariates_ages_censored.tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn29855570",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "MSBB_Filtered_counts_(greater_than_1cpm).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27068754",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "MSBB_Normalized_counts_(CQN).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27068756",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "MSBB_Residualized_counts_(age-death).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27068761",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "MSBB_Residualized_counts_(diagnosis).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27068759",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "MSBB_Residualized_counts_(diagnosis-sex).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27068760",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "MSBB_Residualized_counts_(diagnosis-sex-age-death).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn30821820",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "Mayo_Covariates_ages_censored.tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn29855549",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "Mayo_Filtered_counts_(greater_than_1cpm).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27024951",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "Mayo_Normalized_counts_(CQN).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27024965",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "Mayo_Residualized_counts_(age-death).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27024968",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "Mayo_Residualized_counts_(diagnosis).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27024966",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "Mayo_Residualized_counts_(diagnosis-sex).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27024967",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "Mayo_Residualized_counts_(diagnosis-sex-age-death).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31339029",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "ROSMAP_Covariates_ages_censored.tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn29855598",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "ROSMAP_Filtered_counts_(greater_than_1cpm).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26967451",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "ROSMAP_Normalized_counts_(CQN).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26967453",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "ROSMAP_Residualized_counts_(age-death).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26967456",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "ROSMAP_Residualized_counts_(diagnosis).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26967454",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "ROSMAP_Residualized_counts_(diagnosis-sex).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26967455",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "ROSMAP_Residualized_counts_(diagnosis-sex-age-death).tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31141704",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "MSBB_Star_Log_Merged.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20963388",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "MSBB_Star_Log_Merged_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21544665",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "MSBB_Study_all_metrics_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20963391",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "MSBB_Study_all_metrics_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21544666",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "MSBB_gene_all_counts_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20963390",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "MSBB_gene_all_counts_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21544664",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "MSBB_provenance.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20963389",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "MSBB_sampleSwapSeqAtMayo_Star_Log_Merged.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21072118",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "MSBB_sampleSwapSeqAtMayo_Star_Log_Merged_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21544668",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "MSBB_sampleSwapSeqAtMayo_Study_all_metrics_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21072121",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "MSBB_sampleSwapSeqAtMayo_Study_all_metrics_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21544669",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "MSBB_sampleSwapSeqAtMayo_gene_all_counts_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21072120",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "MSBB_sampleSwapSeqAtMayo_gene_all_counts_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21544667",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "MSBB_sampleSwapSeqAtMayo_provenance.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21072119",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "Mayo_Star_Log_Merged.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20830934",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "Mayo_Star_Log_Merged_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21544636",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "Mayo_Study_all_metrics_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20831294",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "Mayo_Study_all_metrics_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21544637",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "Mayo_gene_all_counts_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20830935",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "Mayo_gene_all_counts_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21544635",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "Mayo_provenance.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20825567",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "Mayo_sampleSwapSeqAtMSBB_Star_Log_Merged.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21055464",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "Mayo_sampleSwapSeqAtMSBB_Star_Log_Merged_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21544639",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "Mayo_sampleSwapSeqAtMSBB_Study_all_metrics_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21055467",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "Mayo_sampleSwapSeqAtMSBB_Study_all_metrics_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21544640",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "Mayo_sampleSwapSeqAtMSBB_gene_all_counts_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21055466",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "Mayo_sampleSwapSeqAtMSBB_gene_all_counts_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21544638",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "Mayo_sampleSwapSeqAtMSBB_provenance.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21055465",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "RNAseq_Harmonization_MSBB_combined_metadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27000243",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "RNAseq_Harmonization_Mayo_combined_metadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27000373",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "RNAseq_Harmonization_ROSMAP_combined_metadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27034471",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "ROSMAP_batch1_Star_Log_Merged.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22283378",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "ROSMAP_batch1_Star_Log_Merged_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22283383",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "ROSMAP_batch1_Study_all_metrics_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22283381",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "ROSMAP_batch1_Study_all_metrics_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22283384",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "ROSMAP_batch1_gene_all_counts_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22283380",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "ROSMAP_batch1_gene_all_counts_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22283382",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "ROSMAP_batch1_provenance.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22283379",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "ROSMAP_batch1_sampleSwapSeqAtMSBB_Star_Log_Merged.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21065486",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "ROSMAP_batch1_sampleSwapSeqAtMSBB_Star_Log_Merged_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21544655",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "ROSMAP_batch1_sampleSwapSeqAtMSBB_Study_all_metrics_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21065489",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "ROSMAP_batch1_sampleSwapSeqAtMSBB_Study_all_metrics_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21544656",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "ROSMAP_batch1_sampleSwapSeqAtMSBB_gene_all_counts_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21065488",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "ROSMAP_batch1_sampleSwapSeqAtMSBB_gene_all_counts_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21544654",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "ROSMAP_batch1_sampleSwapSeqAtMSBB_provenance.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21065487",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "ROSMAP_batch1_sampleSwapSeqAtMayo_Star_Log_Merged.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21066968",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "ROSMAP_batch1_sampleSwapSeqAtMayo_Star_Log_Merged_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21544648",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "ROSMAP_batch1_sampleSwapSeqAtMayo_Study_all_metrics_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21066971",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "ROSMAP_batch1_sampleSwapSeqAtMayo_Study_all_metrics_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21544649",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "ROSMAP_batch1_sampleSwapSeqAtMayo_gene_all_counts_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21066970",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "ROSMAP_batch1_sampleSwapSeqAtMayo_gene_all_counts_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21544647",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "ROSMAP_batch1_sampleSwapSeqAtMayo_provenance.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21066969",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "ROSMAP_batch2_Star_Log_Merged.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22301597",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "ROSMAP_batch2_Star_Log_Merged_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22301602",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "ROSMAP_batch2_Study_all_metrics_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22301600",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "ROSMAP_batch2_Study_all_metrics_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22301603",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "ROSMAP_batch2_gene_all_counts_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22301599",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "ROSMAP_batch2_gene_all_counts_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22301601",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "ROSMAP_batch2_provenance.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22301598",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "ROSMAP_batch3_Star_Log_Merged.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22314226",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "ROSMAP_batch3_Star_Log_Merged_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22314231",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "ROSMAP_batch3_Study_all_metrics_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22314229",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "ROSMAP_batch3_Study_all_metrics_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22314232",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "ROSMAP_batch3_gene_all_counts_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22314228",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "ROSMAP_batch3_gene_all_counts_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22314230",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "ROSMAP_batch3_provenance.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22314227",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "ROSMAP_batch4_Star_Log_Merged.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25817654",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "ROSMAP_batch4_Star_Log_Merged_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25817662",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "ROSMAP_batch4_Study_all_metrics_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25817657",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "ROSMAP_batch4_Study_all_metrics_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25817663",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "ROSMAP_batch4_gene_all_counts_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25817656",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "ROSMAP_batch4_gene_all_counts_matrix_clean.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25817661",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "ROSMAP_batch4_provenance.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25817655",
+      "encodingFormat": "application/vnd.ms-excel"
+    }
+  ]
+}

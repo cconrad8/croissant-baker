@@ -1,0 +1,337 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Released_LC_Human Serum Determinants of Aging",
+  "description": "Dataset 'Released_LC_Human Serum Determinants of Aging' from Synapse (syn63099728)",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Released_LC_Human Serum Determinants of Aging. Synapse ID: syn63099728. https://www.synapse.org/Synapse:syn63099728",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Amelia Kallaher",
+    "url": "https://www.synapse.org/#!Profile:3455356"
+  },
+  "datePublished": "2026-04-02 12:58:32.863",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn63099728",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "lcproteomics_H_peptideratios_1k_norm_centenarians.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63623322",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "lcproteomics_H_proteins_gmwratios_1k_centenarians.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn64384006",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "Longevity_MrOS.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn61872127",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "MrOS_individual_human_template_LC_02282025.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn64941861",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "GCTOF_data_male_MrOS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63927863",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "GCTOF_featureannotation_male.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63927861",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "GCTOF_subjectannotation_male_MrOS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63927862",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "HILIC_data_male_MrOS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63600323",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "HILIC_featureannotation_male.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63600311",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "HILIC_sampleannotation_male_MrOS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63600324",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "lipidomics_negESI_data_male_MrOS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63600325",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "lipidomics_negESI_featureannotation_male.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63600312",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "lipidomics_negESI_sampleannotation_male_MrOS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63600326",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "lipidomics_posESI_data_male_MrOS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63600327",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "lipidomics_posESI_featureannotation_male.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63600313",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "lipidomics_posESI_sampleannotation_male_MrOS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63600328",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "lcproteomics_H_peptideratios_1k_norm_MrOS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn66364465",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "lcproteomics_H_proteins_gmwratios_1k_MrOS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn66364477",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "Longevity_SOF.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn61872139",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "SOF_individual_human_template_LC_02282025.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn64942044",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "GCTOF_data_female_SOF.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63927865",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "GCTOF_featureannotation_female.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63927864",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "GCTOF_subjectannotation_female_SOF.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63927866",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "HILIC_data_female_SOF.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63600331",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "HILIC_featureannotation_female.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63600339",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "HILIC_sampleannotation_female_SOF.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63600332",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "lipidomics_negESI_data_female_SOF.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63600335",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "lipidomics_negESI_featureannotation_female.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63600340",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "lipidomics_negESI_sampleannotation_female_SOF.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63600336",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "lipidomics_posESI_data_female_SOF.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63600337",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "lipidomics_posESI_featureannotation_female.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63600341",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "lipidomics_posESI_sampleannotation_female_SOF.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63600338",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "lcproteomics_H_peptideratios_1k_norm_SOF.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn66364467",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "lcproteomics_H_proteins_gmwratios_1k_SOF.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn66364478",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "assay_metabolomics_template_processed_all_cohorts_completed.xlsx",
+      "contentUrl": "https://www.synapse.org/Synapse:syn64572600",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "lcproteomics_H_peptides_1k.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn66364481",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "lcproteomics_H_proteins_filtered_1k.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn66364484",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "lcproteomics_H_readme.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn66364600",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "metadata_assay_proteomics_file.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68796971",
+      "encodingFormat": "application/vnd.ms-excel"
+    }
+  ]
+}

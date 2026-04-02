@@ -1,0 +1,2827 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "VMC",
+  "description": "Dataset 'VMC' from Synapse (syn21624490)",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "VMC. Synapse ID: syn21624490. https://www.synapse.org/Synapse:syn21624490",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Mette Peters",
+    "url": "https://www.synapse.org/#!Profile:273995"
+  },
+  "datePublished": "2026-04-02 11:50:50.080",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn21624490",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "BU-Vasc-01_S1_L003_I1_001.fastq.gz",
+      "contentSize": "686019980",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013129",
+      "encodingFormat": "application/gzip",
+      "md5": "dde301f7b2104dd05009a1d383aa3652"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "BU-Vasc-01_S1_L003_R1_001.fastq.gz",
+      "contentSize": "5710259716",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013142",
+      "encodingFormat": "application/gzip",
+      "md5": "c4510d484366945b4a42f0644cf8697f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "BU-Vasc-01_S1_L003_R2_001.fastq.gz",
+      "contentSize": "6828460105",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013165",
+      "encodingFormat": "application/gzip",
+      "md5": "c0f26f09fad812ed5b44fb433407f371"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "BU-Vasc-01_S1_L004_I1_001.fastq.gz",
+      "contentSize": "684245904",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013167",
+      "encodingFormat": "application/gzip",
+      "md5": "d5cf19e880733132159cb137bdc80e29"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "BU-Vasc-01_S1_L004_R1_001.fastq.gz",
+      "contentSize": "5775416050",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013183",
+      "encodingFormat": "application/gzip",
+      "md5": "ab5fca0717c04b6b2efa032e142d9f96"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "BU-Vasc-01_S1_L004_R2_001.fastq.gz",
+      "contentSize": "6876738321",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013200",
+      "encodingFormat": "application/gzip",
+      "md5": "a9bda3ec0927d246f5225dd0ae7f3463"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "BU-Vasc-01_S1_L005_I1_001.fastq.gz",
+      "contentSize": "693911918",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013203",
+      "encodingFormat": "application/gzip",
+      "md5": "9d8cf030deea3d0292054b9fd35c79e9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "BU-Vasc-01_S1_L005_R1_001.fastq.gz",
+      "contentSize": "5882371823",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013219",
+      "encodingFormat": "application/gzip",
+      "md5": "feff5036fe05fd20eab69a709e8ea3a5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "BU-Vasc-01_S1_L005_R2_001.fastq.gz",
+      "contentSize": "6985752695",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013236",
+      "encodingFormat": "application/gzip",
+      "md5": "e56ad51e38e8204e33db02d0ad2fc260"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "BU-Vasc-02_S2_L003_I1_001.fastq.gz",
+      "contentSize": "674205983",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013237",
+      "encodingFormat": "application/gzip",
+      "md5": "06afc3c5d139bc4edd46416d7775afd7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "BU-Vasc-02_S2_L003_R1_001.fastq.gz",
+      "contentSize": "5549392070",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013261",
+      "encodingFormat": "application/gzip",
+      "md5": "29bf614dae2d10ab170a8886f2c45a0d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "BU-Vasc-02_S2_L003_R2_001.fastq.gz",
+      "contentSize": "6528345110",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013280",
+      "encodingFormat": "application/gzip",
+      "md5": "13a9d1fada096f618250245a1fea8cf0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "BU-Vasc-02_S2_L004_I1_001.fastq.gz",
+      "contentSize": "671147042",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013281",
+      "encodingFormat": "application/gzip",
+      "md5": "339105e0282f4a22010f4bebab9ec1b8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "BU-Vasc-02_S2_L004_R1_001.fastq.gz",
+      "contentSize": "5614689072",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013295",
+      "encodingFormat": "application/gzip",
+      "md5": "5f93bc99dc883ab794d68768b493c83a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "BU-Vasc-02_S2_L004_R2_001.fastq.gz",
+      "contentSize": "6575041801",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013310",
+      "encodingFormat": "application/gzip",
+      "md5": "002df5e61129b3bfc0634edb9332bc37"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "BU-Vasc-02_S2_L005_I1_001.fastq.gz",
+      "contentSize": "684156756",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013313",
+      "encodingFormat": "application/gzip",
+      "md5": "232577a0a1801b0bbfc4f752f9b2f1d6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "BU-Vasc-02_S2_L005_R1_001.fastq.gz",
+      "contentSize": "5730282997",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013329",
+      "encodingFormat": "application/gzip",
+      "md5": "ce80a4a0c601ef96b3b2358dcd1477a8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "BU-Vasc-02_S2_L005_R2_001.fastq.gz",
+      "contentSize": "6702793485",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013344",
+      "encodingFormat": "application/gzip",
+      "md5": "76e916074c258b826d82cd241eb9e0bc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "BU-Vasc-03_S4_L003_I1_001.fastq.gz",
+      "contentSize": "656276371",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013347",
+      "encodingFormat": "application/gzip",
+      "md5": "6917b790fc796da7e3ecc84059fca15e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "BU-Vasc-03_S4_L003_R1_001.fastq.gz",
+      "contentSize": "5493275773",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013358",
+      "encodingFormat": "application/gzip",
+      "md5": "ae68decaf1ca1e48c605dedc10251e3c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "BU-Vasc-03_S4_L003_R2_001.fastq.gz",
+      "contentSize": "6619148112",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013375",
+      "encodingFormat": "application/gzip",
+      "md5": "16295ba70ba16988bd87a2a77725d992"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "BU-Vasc-03_S4_L004_I1_001.fastq.gz",
+      "contentSize": "656292213",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013376",
+      "encodingFormat": "application/gzip",
+      "md5": "8216bbc6a2018c1ddb40d2124c79084c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "BU-Vasc-03_S4_L004_R1_001.fastq.gz",
+      "contentSize": "5558030585",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013381",
+      "encodingFormat": "application/gzip",
+      "md5": "0ad77223108b3ed3e31a9b8b1309ceb1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "BU-Vasc-03_S4_L004_R2_001.fastq.gz",
+      "contentSize": "6678008087",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013383",
+      "encodingFormat": "application/gzip",
+      "md5": "3b9c5cf671c50c40d2966ce4e4189913"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "BU-Vasc-03_S4_L005_I1_001.fastq.gz",
+      "contentSize": "665038176",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013384",
+      "encodingFormat": "application/gzip",
+      "md5": "f51a90107a4b4b38250fcf54b0e8e731"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "BU-Vasc-03_S4_L005_R1_001.fastq.gz",
+      "contentSize": "5661937517",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013394",
+      "encodingFormat": "application/gzip",
+      "md5": "4f00f8eb66a1c7b2e4d28042d162879a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "BU-Vasc-03_S4_L005_R2_001.fastq.gz",
+      "contentSize": "6767628852",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013395",
+      "encodingFormat": "application/gzip",
+      "md5": "c8b0d0139580b04094c3575bb45bbd34"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "BU-Vasc-04_S3_L003_I1_001.fastq.gz",
+      "contentSize": "635545167",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013396",
+      "encodingFormat": "application/gzip",
+      "md5": "a3b472efc1c44692811a50677ece3e8c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "BU-Vasc-04_S3_L003_R1_001.fastq.gz",
+      "contentSize": "5129901581",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013413",
+      "encodingFormat": "application/gzip",
+      "md5": "3883642119739c2afb940aaaa59f6194"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "BU-Vasc-04_S3_L003_R2_001.fastq.gz",
+      "contentSize": "5999553306",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013424",
+      "encodingFormat": "application/gzip",
+      "md5": "628a8d07d444bef275c5bcc845500ba5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "BU-Vasc-04_S3_L004_I1_001.fastq.gz",
+      "contentSize": "638190937",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013425",
+      "encodingFormat": "application/gzip",
+      "md5": "ab17666999b81d0528f198087c53617d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "BU-Vasc-04_S3_L004_R1_001.fastq.gz",
+      "contentSize": "5196631506",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013436",
+      "encodingFormat": "application/gzip",
+      "md5": "1c9708e4c059a5114578813e9ecdc835"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "BU-Vasc-04_S3_L004_R2_001.fastq.gz",
+      "contentSize": "6051908250",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013437",
+      "encodingFormat": "application/gzip",
+      "md5": "bc87176dad6030c06d14be6c0e72500e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "BU-Vasc-04_S3_L005_I1_001.fastq.gz",
+      "contentSize": "645831899",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013438",
+      "encodingFormat": "application/gzip",
+      "md5": "73cdc2572237dd20cb1ededdb018a17b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "BU-Vasc-04_S3_L005_R1_001.fastq.gz",
+      "contentSize": "5288951877",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013440",
+      "encodingFormat": "application/gzip",
+      "md5": "7a75d07e354496f16b915b9f73c9fae8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "BU-Vasc-04_S3_L005_R2_001.fastq.gz",
+      "contentSize": "6148857178",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013443",
+      "encodingFormat": "application/gzip",
+      "md5": "5cacf13fe4d95eb51a4b1953a56fd029"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "BU-Vasc-05_S7_L006_I1_001.fastq.gz",
+      "contentSize": "661978529",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013445",
+      "encodingFormat": "application/gzip",
+      "md5": "610a240ac8768d7c41e33738a685900f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "BU-Vasc-05_S7_L006_R1_001.fastq.gz",
+      "contentSize": "5804035358",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013453",
+      "encodingFormat": "application/gzip",
+      "md5": "ff58fdc2247a5443cc06fc7b5885808a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "BU-Vasc-05_S7_L006_R2_001.fastq.gz",
+      "contentSize": "6716105115",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013454",
+      "encodingFormat": "application/gzip",
+      "md5": "75757b6b9073d429ce59447701079835"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "BU-Vasc-05_S7_L007_I1_001.fastq.gz",
+      "contentSize": "674864694",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013455",
+      "encodingFormat": "application/gzip",
+      "md5": "81966fc20d2934b8f64aa47cd894cdd5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "BU-Vasc-05_S7_L007_R1_001.fastq.gz",
+      "contentSize": "5850339957",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013462",
+      "encodingFormat": "application/gzip",
+      "md5": "4dfeea5f846152d4e7e3d51ac3996067"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "BU-Vasc-05_S7_L007_R2_001.fastq.gz",
+      "contentSize": "6807146172",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013473",
+      "encodingFormat": "application/gzip",
+      "md5": "38367d3f6b2fb2b79c7c5f62d5b2c28e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "BU-Vasc-05_S7_L008_I1_001.fastq.gz",
+      "contentSize": "681808936",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013476",
+      "encodingFormat": "application/gzip",
+      "md5": "5b0311258de5b5de13808d394e6def00"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "BU-Vasc-05_S7_L008_R1_001.fastq.gz",
+      "contentSize": "5953415399",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013487",
+      "encodingFormat": "application/gzip",
+      "md5": "cf49b864f1e098d979a987a0328e55f4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "BU-Vasc-05_S7_L008_R2_001.fastq.gz",
+      "contentSize": "6814191255",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013501",
+      "encodingFormat": "application/gzip",
+      "md5": "8b8a1d0b3fce99f2d8ddeb6f037fc8bf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "BU-Vasc-06_S8_L006_I1_001.fastq.gz",
+      "contentSize": "668416825",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013503",
+      "encodingFormat": "application/gzip",
+      "md5": "cdd26e110b2f72be0e8a26e667a0cffe"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "BU-Vasc-06_S8_L006_R1_001.fastq.gz",
+      "contentSize": "5464885676",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013513",
+      "encodingFormat": "application/gzip",
+      "md5": "f0a1314fad5fd7d11c529b0df328f2c7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "BU-Vasc-06_S8_L006_R2_001.fastq.gz",
+      "contentSize": "6367761130",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013522",
+      "encodingFormat": "application/gzip",
+      "md5": "a634bbf54801aa01a5c5e3e70ae0bb15"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "BU-Vasc-06_S8_L007_I1_001.fastq.gz",
+      "contentSize": "680259795",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013523",
+      "encodingFormat": "application/gzip",
+      "md5": "beb41778dc143df37095d605c73b2efd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "BU-Vasc-06_S8_L007_R1_001.fastq.gz",
+      "contentSize": "5506632341",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013528",
+      "encodingFormat": "application/gzip",
+      "md5": "3a4303e2a17dce68d125c54d59413e86"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "BU-Vasc-06_S8_L007_R2_001.fastq.gz",
+      "contentSize": "6439534514",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013529",
+      "encodingFormat": "application/gzip",
+      "md5": "5d4405bd8d62296beffbaa4b330fc688"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "BU-Vasc-06_S8_L008_I1_001.fastq.gz",
+      "contentSize": "690539200",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013530",
+      "encodingFormat": "application/gzip",
+      "md5": "6e2a3440a4404f594e8404149280af54"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "BU-Vasc-06_S8_L008_R1_001.fastq.gz",
+      "contentSize": "5601015340",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013531",
+      "encodingFormat": "application/gzip",
+      "md5": "0373130ea5e3d73502b7f8b64493663f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "BU-Vasc-06_S8_L008_R2_001.fastq.gz",
+      "contentSize": "6447639314",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013553",
+      "encodingFormat": "application/gzip",
+      "md5": "4a176d6712776f6ca8d96a16e0764459"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "BU-Vasc-07_S5_L006_I1_001.fastq.gz",
+      "contentSize": "675106991",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013554",
+      "encodingFormat": "application/gzip",
+      "md5": "1899082b97ba6cc859c786a191e4c824"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "BU-Vasc-07_S5_L006_R1_001.fastq.gz",
+      "contentSize": "5617760789",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013555",
+      "encodingFormat": "application/gzip",
+      "md5": "ee270ff9902659508b1280aaa549665a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "BU-Vasc-07_S5_L006_R2_001.fastq.gz",
+      "contentSize": "6560828921",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013556",
+      "encodingFormat": "application/gzip",
+      "md5": "04203c4feeac2b131418028184fb8ead"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "BU-Vasc-07_S5_L007_I1_001.fastq.gz",
+      "contentSize": "685930996",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013557",
+      "encodingFormat": "application/gzip",
+      "md5": "c0c1e281e24ad270bea642f07792ff06"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "BU-Vasc-07_S5_L007_R1_001.fastq.gz",
+      "contentSize": "5652924787",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013560",
+      "encodingFormat": "application/gzip",
+      "md5": "707b3a8df06f9b2028bd2e882c5c525b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "BU-Vasc-07_S5_L007_R2_001.fastq.gz",
+      "contentSize": "6638238883",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013566",
+      "encodingFormat": "application/gzip",
+      "md5": "2ac8e4618d0c85fe42760c1ca62408fe"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "BU-Vasc-07_S5_L008_I1_001.fastq.gz",
+      "contentSize": "695087246",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013569",
+      "encodingFormat": "application/gzip",
+      "md5": "566d10046e083b2ad73d8e85a8fc3779"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "BU-Vasc-07_S5_L008_R1_001.fastq.gz",
+      "contentSize": "5748261065",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013578",
+      "encodingFormat": "application/gzip",
+      "md5": "3ee886f6612bfe60929d911eb912838e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "BU-Vasc-07_S5_L008_R2_001.fastq.gz",
+      "contentSize": "6641632772",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013585",
+      "encodingFormat": "application/gzip",
+      "md5": "56bafcbab1cf250d03f1c021fb372092"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "BU-Vasc-08_S6_L006_I1_001.fastq.gz",
+      "contentSize": "617034896",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013586",
+      "encodingFormat": "application/gzip",
+      "md5": "43cf7bcb43305fd78a56cb78fc7c3c0d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "BU-Vasc-08_S6_L006_R1_001.fastq.gz",
+      "contentSize": "5109263797",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013588",
+      "encodingFormat": "application/gzip",
+      "md5": "7075ced150dbec0fe92b30b85d82a977"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "BU-Vasc-08_S6_L006_R2_001.fastq.gz",
+      "contentSize": "6103012877",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013595",
+      "encodingFormat": "application/gzip",
+      "md5": "b021efa3bc9d62826e9b71663797b089"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "BU-Vasc-08_S6_L007_I1_001.fastq.gz",
+      "contentSize": "627557572",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013596",
+      "encodingFormat": "application/gzip",
+      "md5": "ba9eac92f948ba6f6a5b4ef4a6f0db10"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "BU-Vasc-08_S6_L007_R1_001.fastq.gz",
+      "contentSize": "5144337635",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013597",
+      "encodingFormat": "application/gzip",
+      "md5": "f99f1ab33e016831d2198eb19dd95e9f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "BU-Vasc-08_S6_L007_R2_001.fastq.gz",
+      "contentSize": "6178831392",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013600",
+      "encodingFormat": "application/gzip",
+      "md5": "b3f29824a3dce0e23249123d0e69dfc6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "BU-Vasc-08_S6_L008_I1_001.fastq.gz",
+      "contentSize": "636043818",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013601",
+      "encodingFormat": "application/gzip",
+      "md5": "d76fd12ceb8a06145513b4e133ee6cad"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "BU-Vasc-08_S6_L008_R1_001.fastq.gz",
+      "contentSize": "5235116114",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013602",
+      "encodingFormat": "application/gzip",
+      "md5": "6ca9a0e3163207da809f479872480dea"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "BU-Vasc-08_S6_L008_R2_001.fastq.gz",
+      "contentSize": "6192043138",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013603",
+      "encodingFormat": "application/gzip",
+      "md5": "07e5fabc0cca8069a8a1430df1dac8bb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "BU-Vasc-09_S7_L003_I1_001.fastq.gz",
+      "contentSize": "768196228",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013604",
+      "encodingFormat": "application/gzip",
+      "md5": "b6c9388909e1753d33dd7990d1e0f0d3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "BU-Vasc-09_S7_L003_R1_001.fastq.gz",
+      "contentSize": "5922080202",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013605",
+      "encodingFormat": "application/gzip",
+      "md5": "ab32257929c1eaa2bd0d2d26a3ef9572"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "BU-Vasc-09_S7_L003_R2_001.fastq.gz",
+      "contentSize": "7158489363",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013606",
+      "encodingFormat": "application/gzip",
+      "md5": "a7b466cde7b83fdeb6e670c5922c480d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "BU-Vasc-09_S7_L004_I1_001.fastq.gz",
+      "contentSize": "766153994",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013607",
+      "encodingFormat": "application/gzip",
+      "md5": "add9b32708c9d04465ef62c5fae4d293"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "BU-Vasc-09_S7_L004_R1_001.fastq.gz",
+      "contentSize": "5931385413",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013610",
+      "encodingFormat": "application/gzip",
+      "md5": "1cb37decdb04574d43e34aa2a4098275"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "BU-Vasc-09_S7_L004_R2_001.fastq.gz",
+      "contentSize": "7108376748",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013611",
+      "encodingFormat": "application/gzip",
+      "md5": "37711d5823ad41dd6b145e839896f649"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "BU-Vasc-09_S7_L005_I1_001.fastq.gz",
+      "contentSize": "777294771",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013612",
+      "encodingFormat": "application/gzip",
+      "md5": "c486c0ca9c568a15119a83de13b5547f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "BU-Vasc-09_S7_L005_R1_001.fastq.gz",
+      "contentSize": "6015689779",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013615",
+      "encodingFormat": "application/gzip",
+      "md5": "6b75fa10c0f8fb3949ac61032ee93956"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "BU-Vasc-09_S7_L005_R2_001.fastq.gz",
+      "contentSize": "7212438972",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013617",
+      "encodingFormat": "application/gzip",
+      "md5": "50a7dc745edd7752e815ef225688e595"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "BU-Vasc-10_S6_L003_I1_001.fastq.gz",
+      "contentSize": "540527261",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013618",
+      "encodingFormat": "application/gzip",
+      "md5": "858ee3a408be093b7a7911e9841dccef"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "BU-Vasc-10_S6_L003_R1_001.fastq.gz",
+      "contentSize": "4227832115",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013619",
+      "encodingFormat": "application/gzip",
+      "md5": "0ef5d2e2df77e2300540d5647ab9a45a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "BU-Vasc-10_S6_L003_R2_001.fastq.gz",
+      "contentSize": "5225732541",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013623",
+      "encodingFormat": "application/gzip",
+      "md5": "aa52c791a380084b4b8fd69723dfbbea"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "BU-Vasc-10_S6_L004_I1_001.fastq.gz",
+      "contentSize": "539037248",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013624",
+      "encodingFormat": "application/gzip",
+      "md5": "80b23799dea35be35ec6e2576ba79d35"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "BU-Vasc-10_S6_L004_R1_001.fastq.gz",
+      "contentSize": "4231402048",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013625",
+      "encodingFormat": "application/gzip",
+      "md5": "9c1b4028e7a761b571cf6ae303f9d4d8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "BU-Vasc-10_S6_L004_R2_001.fastq.gz",
+      "contentSize": "5190368978",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013626",
+      "encodingFormat": "application/gzip",
+      "md5": "b2c70ee35d62530315965821af2e92dd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "BU-Vasc-10_S6_L005_I1_001.fastq.gz",
+      "contentSize": "547436586",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013627",
+      "encodingFormat": "application/gzip",
+      "md5": "98773c5ad8b7de7b1f12ceb85c49606e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "BU-Vasc-10_S6_L005_R1_001.fastq.gz",
+      "contentSize": "4299595464",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013628",
+      "encodingFormat": "application/gzip",
+      "md5": "1254bf40b3713c5a1bc4e8c282a60d93"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "BU-Vasc-10_S6_L005_R2_001.fastq.gz",
+      "contentSize": "5280346013",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013631",
+      "encodingFormat": "application/gzip",
+      "md5": "867bb78d783e7da6051acbf4a9149114"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "BU-Vasc-11_S5_L003_I1_001.fastq.gz",
+      "contentSize": "599337277",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013632",
+      "encodingFormat": "application/gzip",
+      "md5": "3031ec88492c70d55c8896642ee8a279"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "BU-Vasc-11_S5_L003_R1_001.fastq.gz",
+      "contentSize": "4780631846",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013633",
+      "encodingFormat": "application/gzip",
+      "md5": "f714ec23ccf69abceb5194d861b15a9a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "BU-Vasc-11_S5_L003_R2_001.fastq.gz",
+      "contentSize": "5838559992",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013634",
+      "encodingFormat": "application/gzip",
+      "md5": "8a595fce597dee122df97a344184d0ce"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "BU-Vasc-11_S5_L004_I1_001.fastq.gz",
+      "contentSize": "598533232",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013635",
+      "encodingFormat": "application/gzip",
+      "md5": "2fcc04e9bb1f620ab1a5b8b9c317d81a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "BU-Vasc-11_S5_L004_R1_001.fastq.gz",
+      "contentSize": "4786068628",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013636",
+      "encodingFormat": "application/gzip",
+      "md5": "b7ca82ca271439e5e859e83440fc94bf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "BU-Vasc-11_S5_L004_R2_001.fastq.gz",
+      "contentSize": "5802181694",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013637",
+      "encodingFormat": "application/gzip",
+      "md5": "5515c9123fab25e96bf7aafd191e2761"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "BU-Vasc-11_S5_L005_I1_001.fastq.gz",
+      "contentSize": "606481415",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013638",
+      "encodingFormat": "application/gzip",
+      "md5": "cd2e70da7000ce249f5558fa0aca9e36"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "BU-Vasc-11_S5_L005_R1_001.fastq.gz",
+      "contentSize": "4854012106",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013639",
+      "encodingFormat": "application/gzip",
+      "md5": "cc2e414a54f4230db2c0ab4d0fc4e084"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "BU-Vasc-11_S5_L005_R2_001.fastq.gz",
+      "contentSize": "5883807087",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013640",
+      "encodingFormat": "application/gzip",
+      "md5": "bb2e4ccb82e190385c0feb905f16a725"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "BU-Vasc-12_S8_L003_I1_001.fastq.gz",
+      "contentSize": "614601337",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013641",
+      "encodingFormat": "application/gzip",
+      "md5": "4b7bef29913a20c7e83f12a1b186879f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "BU-Vasc-12_S8_L003_R1_001.fastq.gz",
+      "contentSize": "4941801137",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013642",
+      "encodingFormat": "application/gzip",
+      "md5": "0f0af2ce7335a93fdd8fa33fef3a674a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "BU-Vasc-12_S8_L003_R2_001.fastq.gz",
+      "contentSize": "5974456566",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013643",
+      "encodingFormat": "application/gzip",
+      "md5": "cc1de872a9ae22d942a9936b4d62d20c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "BU-Vasc-12_S8_L004_I1_001.fastq.gz",
+      "contentSize": "612923360",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013644",
+      "encodingFormat": "application/gzip",
+      "md5": "693978ffd4f535f3b056c1ae93bda5ec"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "BU-Vasc-12_S8_L004_R1_001.fastq.gz",
+      "contentSize": "4946430397",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013645",
+      "encodingFormat": "application/gzip",
+      "md5": "70d9231e72e57374aa0cfed286d3d984"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "BU-Vasc-12_S8_L004_R2_001.fastq.gz",
+      "contentSize": "5932698858",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013646",
+      "encodingFormat": "application/gzip",
+      "md5": "77469c8f86954c12e18b6ec243ca5e01"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "BU-Vasc-12_S8_L005_I1_001.fastq.gz",
+      "contentSize": "620615470",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013647",
+      "encodingFormat": "application/gzip",
+      "md5": "38f358bd1007edd959f140ba3f45abae"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "BU-Vasc-12_S8_L005_R1_001.fastq.gz",
+      "contentSize": "5017371602",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013648",
+      "encodingFormat": "application/gzip",
+      "md5": "a49d35fc757837fff083f3553385aaed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "BU-Vasc-12_S8_L005_R2_001.fastq.gz",
+      "contentSize": "6017777971",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013649",
+      "encodingFormat": "application/gzip",
+      "md5": "4a5015c36dcea5ec18dd9809bf6376a2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "BU-Vasc-13_S4_L006_I1_001.fastq.gz",
+      "contentSize": "570416204",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013650",
+      "encodingFormat": "application/gzip",
+      "md5": "0332ae443296680e364de68f0f035de9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "BU-Vasc-13_S4_L006_R1_001.fastq.gz",
+      "contentSize": "4517062792",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013652",
+      "encodingFormat": "application/gzip",
+      "md5": "c6b00a64b7f2f792d4e04b7243785a8b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "BU-Vasc-13_S4_L006_R2_001.fastq.gz",
+      "contentSize": "5437436169",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013658",
+      "encodingFormat": "application/gzip",
+      "md5": "5f4a0fa154148b7f582fe2b536a196d6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "BU-Vasc-13_S4_L007_I1_001.fastq.gz",
+      "contentSize": "566155489",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013659",
+      "encodingFormat": "application/gzip",
+      "md5": "054eb56c7e90a2c6d71adc401e604c9a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "BU-Vasc-13_S4_L007_R1_001.fastq.gz",
+      "contentSize": "4442810370",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013661",
+      "encodingFormat": "application/gzip",
+      "md5": "5e117d0794df01a10c4eec725430c11a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "BU-Vasc-13_S4_L007_R2_001.fastq.gz",
+      "contentSize": "5355640089",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013662",
+      "encodingFormat": "application/gzip",
+      "md5": "a63045b13899e5b1cf69bbc90e186918"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "BU-Vasc-13_S4_L008_I1_001.fastq.gz",
+      "contentSize": "563374293",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013663",
+      "encodingFormat": "application/gzip",
+      "md5": "b4a1c8b2b063319d2b12485aec694e2e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "BU-Vasc-13_S4_L008_R1_001.fastq.gz",
+      "contentSize": "4386161979",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013664",
+      "encodingFormat": "application/gzip",
+      "md5": "f1ba763aa6c3509cfd67b21359e93ab8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_116",
+      "name": "BU-Vasc-13_S4_L008_R2_001.fastq.gz",
+      "contentSize": "5220099975",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013666",
+      "encodingFormat": "application/gzip",
+      "md5": "69341073c5682c55b53701ceeefb892a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_117",
+      "name": "BU-Vasc-14_S2_L006_I1_001.fastq.gz",
+      "contentSize": "589966895",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013667",
+      "encodingFormat": "application/gzip",
+      "md5": "bbbe3716e246ac9fe839206be6253010"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_118",
+      "name": "BU-Vasc-14_S2_L006_R1_001.fastq.gz",
+      "contentSize": "4787653814",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013668",
+      "encodingFormat": "application/gzip",
+      "md5": "c4aa1fe1df814e5c7725b6a1a4b41947"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_119",
+      "name": "BU-Vasc-14_S2_L006_R2_001.fastq.gz",
+      "contentSize": "5918130005",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013670",
+      "encodingFormat": "application/gzip",
+      "md5": "e4d5338547b8f6c5df9f7e6370caf7b0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_120",
+      "name": "BU-Vasc-14_S2_L007_I1_001.fastq.gz",
+      "contentSize": "585097447",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013671",
+      "encodingFormat": "application/gzip",
+      "md5": "468db904cf9dd60b87421d82e8d10f52"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_121",
+      "name": "BU-Vasc-14_S2_L007_R1_001.fastq.gz",
+      "contentSize": "4699329463",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013672",
+      "encodingFormat": "application/gzip",
+      "md5": "ef2cfd056a0807982783b34669e4367b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_122",
+      "name": "BU-Vasc-14_S2_L007_R2_001.fastq.gz",
+      "contentSize": "5819062995",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013673",
+      "encodingFormat": "application/gzip",
+      "md5": "c7b29129f636ed895cc143dd7af54ff1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_123",
+      "name": "BU-Vasc-14_S2_L008_I1_001.fastq.gz",
+      "contentSize": "582917067",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013674",
+      "encodingFormat": "application/gzip",
+      "md5": "f886a79d69bc1e35099c273169bd3879"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_124",
+      "name": "BU-Vasc-14_S2_L008_R1_001.fastq.gz",
+      "contentSize": "4645302238",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013675",
+      "encodingFormat": "application/gzip",
+      "md5": "f0127fdd38f09bc9baf632b0c6dda5e4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_125",
+      "name": "BU-Vasc-14_S2_L008_R2_001.fastq.gz",
+      "contentSize": "5687522042",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013676",
+      "encodingFormat": "application/gzip",
+      "md5": "6010651ea703848bf5f78f97c33ebb00"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_126",
+      "name": "BU-Vasc-15_S3_L006_I1_001.fastq.gz",
+      "contentSize": "649434248",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013677",
+      "encodingFormat": "application/gzip",
+      "md5": "afc42b48ca71c3790d74c6ce66020939"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_127",
+      "name": "BU-Vasc-15_S3_L006_R1_001.fastq.gz",
+      "contentSize": "5343225305",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013678",
+      "encodingFormat": "application/gzip",
+      "md5": "4cb81cabe5ca03e36e513d865f202bfc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_128",
+      "name": "BU-Vasc-15_S3_L006_R2_001.fastq.gz",
+      "contentSize": "6528991653",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013681",
+      "encodingFormat": "application/gzip",
+      "md5": "38f17d336fbbf59587b7bff725a84bdc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_129",
+      "name": "BU-Vasc-15_S3_L007_I1_001.fastq.gz",
+      "contentSize": "643931859",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013682",
+      "encodingFormat": "application/gzip",
+      "md5": "7f1d5e0cfcca4e10fbb5c386c655d610"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_130",
+      "name": "BU-Vasc-15_S3_L007_R1_001.fastq.gz",
+      "contentSize": "5248692270",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013683",
+      "encodingFormat": "application/gzip",
+      "md5": "a7b1581c36f80fe9db4176b429a30390"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_131",
+      "name": "BU-Vasc-15_S3_L007_R2_001.fastq.gz",
+      "contentSize": "6417871231",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013684",
+      "encodingFormat": "application/gzip",
+      "md5": "19b0b26d46e5651434b46fe227c6a16c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_132",
+      "name": "BU-Vasc-15_S3_L008_I1_001.fastq.gz",
+      "contentSize": "640899343",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013685",
+      "encodingFormat": "application/gzip",
+      "md5": "f37c1da9d2e88d32fe634d565bed6372"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_133",
+      "name": "BU-Vasc-15_S3_L008_R1_001.fastq.gz",
+      "contentSize": "5184993031",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013686",
+      "encodingFormat": "application/gzip",
+      "md5": "9d14245fd2745d5918c302e75c8e4d3e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_134",
+      "name": "BU-Vasc-15_S3_L008_R2_001.fastq.gz",
+      "contentSize": "6264785998",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013687",
+      "encodingFormat": "application/gzip",
+      "md5": "33984c6f43d429ccb3a656c57e8a75f4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_135",
+      "name": "BU-Vasc-16_S1_L006_I1_001.fastq.gz",
+      "contentSize": "760284421",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013688",
+      "encodingFormat": "application/gzip",
+      "md5": "fcee8048d224e43736abc4eb43ddceda"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_136",
+      "name": "BU-Vasc-16_S1_L006_R1_001.fastq.gz",
+      "contentSize": "6012922297",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013689",
+      "encodingFormat": "application/gzip",
+      "md5": "c0254a3a711c573513b9fb103881942e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_137",
+      "name": "BU-Vasc-16_S1_L006_R2_001.fastq.gz",
+      "contentSize": "7126067214",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013690",
+      "encodingFormat": "application/gzip",
+      "md5": "6b79c7b711aed72dce1cdd1f50e8a3c1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_138",
+      "name": "BU-Vasc-16_S1_L007_I1_001.fastq.gz",
+      "contentSize": "751879720",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013691",
+      "encodingFormat": "application/gzip",
+      "md5": "c4a52f3ab14e2a4e56f9f6954264e9d3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_139",
+      "name": "BU-Vasc-16_S1_L007_R1_001.fastq.gz",
+      "contentSize": "5902499038",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013692",
+      "encodingFormat": "application/gzip",
+      "md5": "95ec41b98511e716134cd8c5092dad4e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_140",
+      "name": "BU-Vasc-16_S1_L007_R2_001.fastq.gz",
+      "contentSize": "7000675414",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013693",
+      "encodingFormat": "application/gzip",
+      "md5": "d5a6039baf03378006939554a9a7a792"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_141",
+      "name": "BU-Vasc-16_S1_L008_I1_001.fastq.gz",
+      "contentSize": "748447284",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013694",
+      "encodingFormat": "application/gzip",
+      "md5": "fba1025daa4f055aa1fa3d88bfc4ff16"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_142",
+      "name": "BU-Vasc-16_S1_L008_R1_001.fastq.gz",
+      "contentSize": "5836555578",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013695",
+      "encodingFormat": "application/gzip",
+      "md5": "b2e853ded3a56dbd05238544354218b8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_143",
+      "name": "BU-Vasc-16_S1_L008_R2_001.fastq.gz",
+      "contentSize": "6825605631",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013698",
+      "encodingFormat": "application/gzip",
+      "md5": "45ad0d5faedbdf043cd9b8259fcfa57e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_144",
+      "name": "BU-Vasc-01.filtered_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "16892",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015497",
+      "encodingFormat": "application/gzip",
+      "md5": "c895dd6eb326029bda0511444e560857"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_145",
+      "name": "BU-Vasc-01.filtered_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015498",
+      "encodingFormat": "application/gzip",
+      "md5": "7dc41c940550001b43b57e93bc17a9fa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_146",
+      "name": "BU-Vasc-01.filtered_feature_bc_matrix.h5",
+      "contentSize": "9533949",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015500",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "51d56d6a6a60464d6f0380bbc3df09e9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_147",
+      "name": "BU-Vasc-01.filtered_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "17874380",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015499",
+      "encodingFormat": "application/octet-stream",
+      "md5": "56e79b492d88ea36366ee9cceecb2d1a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_148",
+      "name": "BU-Vasc-01.metrics_summary.csv",
+      "contentSize": "683",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015501",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "cd5702fad80caee860f6c8dab7d75988"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_149",
+      "name": "BU-Vasc-01.molecule_info.h5",
+      "contentSize": "79248875",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015503",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "4a2af00389d107b4c98a8277d3685755"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_150",
+      "name": "BU-Vasc-01.raw_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "2550196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015504",
+      "encodingFormat": "application/gzip",
+      "md5": "b12d12f58416858c43273db0035d5341"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_151",
+      "name": "BU-Vasc-01.raw_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015505",
+      "encodingFormat": "application/gzip",
+      "md5": "f53c93fd93c96e08a733072af7887a00"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_152",
+      "name": "BU-Vasc-01.raw_feature_bc_matrix.h5",
+      "contentSize": "26726947",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015502",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "fddbedaeb5f55503eaaefd3f8e7e3955"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_153",
+      "name": "BU-Vasc-01.raw_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "26863505",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015506",
+      "encodingFormat": "application/octet-stream",
+      "md5": "5bc31a2e45afd57ba7f8193ab6399d0b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_154",
+      "name": "BU-Vasc-02.filtered_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "15356",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015507",
+      "encodingFormat": "application/gzip",
+      "md5": "51896ff31af67e320ad5118e97cf0669"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_155",
+      "name": "BU-Vasc-02.filtered_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015508",
+      "encodingFormat": "application/gzip",
+      "md5": "847bad586425d722e9593523c9ac3cf7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_156",
+      "name": "BU-Vasc-02.filtered_feature_bc_matrix.h5",
+      "contentSize": "9125149",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015510",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "416324d0aca6181abbeb27e327b5d713"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_157",
+      "name": "BU-Vasc-02.filtered_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "16860754",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015509",
+      "encodingFormat": "application/octet-stream",
+      "md5": "4b1635dacb59da61a95f68de251c14d5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_158",
+      "name": "BU-Vasc-02.metrics_summary.csv",
+      "contentSize": "683",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015511",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "02258494a3dbcc14557c6ab20666b24a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_159",
+      "name": "BU-Vasc-02.molecule_info.h5",
+      "contentSize": "81726115",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015513",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "bbf7ee7de79c0a393a8de8ac0cd0e29e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_160",
+      "name": "BU-Vasc-02.raw_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "2550196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015514",
+      "encodingFormat": "application/gzip",
+      "md5": "3b6d3a2ce8b79779670e51168e832903"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_161",
+      "name": "BU-Vasc-02.raw_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015515",
+      "encodingFormat": "application/gzip",
+      "md5": "be91882c71a41533881e397d1cdf05d4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_162",
+      "name": "BU-Vasc-02.raw_feature_bc_matrix.h5",
+      "contentSize": "26443925",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015512",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "ef93d9b75925b9b61ace4519d02a6bbf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_163",
+      "name": "BU-Vasc-02.raw_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "25975654",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015516",
+      "encodingFormat": "application/octet-stream",
+      "md5": "91acdd13adb55a45f40d9325de2e0015"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_164",
+      "name": "BU-Vasc-03.filtered_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "13248",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015517",
+      "encodingFormat": "application/gzip",
+      "md5": "0bbee0ca6d6dbd1f355074fd5bf19e44"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_165",
+      "name": "BU-Vasc-03.filtered_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015518",
+      "encodingFormat": "application/gzip",
+      "md5": "dda2e58dfae3e29b9a0e6d8fedbed23c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_166",
+      "name": "BU-Vasc-03.filtered_feature_bc_matrix.h5",
+      "contentSize": "8389276",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015520",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "f47202e18a5303c8ed89d4b5ccf1eede"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_167",
+      "name": "BU-Vasc-03.filtered_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "14928398",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015519",
+      "encodingFormat": "application/octet-stream",
+      "md5": "656de69f7ff71875dd3f1e4d11dd3534"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_168",
+      "name": "BU-Vasc-03.metrics_summary.csv",
+      "contentSize": "684",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015521",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "5fe71e84a231bfc4070caafffb6900de"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_169",
+      "name": "BU-Vasc-03.molecule_info.h5",
+      "contentSize": "76289086",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015523",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "2e52f7ff890fe7ec303531022b4cd1fd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_170",
+      "name": "BU-Vasc-03.raw_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "2550196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015524",
+      "encodingFormat": "application/gzip",
+      "md5": "1407f7f9e5f035297ff03ee29bf06a0b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_171",
+      "name": "BU-Vasc-03.raw_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015525",
+      "encodingFormat": "application/gzip",
+      "md5": "d93c81bd3b1dab15df7a73df89684814"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_172",
+      "name": "BU-Vasc-03.raw_feature_bc_matrix.h5",
+      "contentSize": "25697263",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015522",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "3b3f119b4de632df2ddc63ecdc33f0cf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_173",
+      "name": "BU-Vasc-03.raw_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "23981843",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015526",
+      "encodingFormat": "application/octet-stream",
+      "md5": "808318fdfcae182adcf58511828d8d92"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_174",
+      "name": "BU-Vasc-04.filtered_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "13650",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015527",
+      "encodingFormat": "application/gzip",
+      "md5": "33f4bbe3a4592bfda2b7be5083fb5286"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_175",
+      "name": "BU-Vasc-04.filtered_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015528",
+      "encodingFormat": "application/gzip",
+      "md5": "8e81be101d06f9859d6eeabe734799cd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_176",
+      "name": "BU-Vasc-04.filtered_feature_bc_matrix.h5",
+      "contentSize": "8752785",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015530",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "9a8914b23f5dace48933ab025ee6e63c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_177",
+      "name": "BU-Vasc-04.filtered_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "15929789",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015529",
+      "encodingFormat": "application/octet-stream",
+      "md5": "ce1cb462c18a5e231aee4b5437d92b0e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_178",
+      "name": "BU-Vasc-04.metrics_summary.csv",
+      "contentSize": "683",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015531",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "350776816a12c03d3e76b2d405b26b01"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_179",
+      "name": "BU-Vasc-04.molecule_info.h5",
+      "contentSize": "82942187",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015533",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "3ba3927608a7aa26adc89d878d5d2646"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_180",
+      "name": "BU-Vasc-04.raw_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "2550196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015534",
+      "encodingFormat": "application/gzip",
+      "md5": "578f3b8fcdd31e88f7659d8221749294"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_181",
+      "name": "BU-Vasc-04.raw_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015535",
+      "encodingFormat": "application/gzip",
+      "md5": "7b8425c90a0c4af0400617f957e7f41f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_182",
+      "name": "BU-Vasc-04.raw_feature_bc_matrix.h5",
+      "contentSize": "26105633",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015532",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "66567474cd5414ed3d9375267c0f8e45"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_183",
+      "name": "BU-Vasc-04.raw_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "25001803",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015536",
+      "encodingFormat": "application/octet-stream",
+      "md5": "949199cf1d9fb7d3de98695f81b738bf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_184",
+      "name": "BU-Vasc-05.filtered_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "14084",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015537",
+      "encodingFormat": "application/gzip",
+      "md5": "a1ae03fcd8ecff5e4edc04a163c438fa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_185",
+      "name": "BU-Vasc-05.filtered_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015538",
+      "encodingFormat": "application/gzip",
+      "md5": "4df20178a57cd23aaf36174bc24deb9c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_186",
+      "name": "BU-Vasc-05.filtered_feature_bc_matrix.h5",
+      "contentSize": "9233955",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015540",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "0ebf6a63fe51171df8fa86590964da20"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_187",
+      "name": "BU-Vasc-05.filtered_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "17234849",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015539",
+      "encodingFormat": "application/octet-stream",
+      "md5": "2d5846f73d6c7148b2b1be8b36437d4a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_188",
+      "name": "BU-Vasc-05.metrics_summary.csv",
+      "contentSize": "684",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015541",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "93706c73c668c84397e57816e771fd91"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_189",
+      "name": "BU-Vasc-05.molecule_info.h5",
+      "contentSize": "88733514",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015543",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "d2698f682d92007c83b7df5ea5d5a822"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_190",
+      "name": "BU-Vasc-05.raw_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "2550196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015544",
+      "encodingFormat": "application/gzip",
+      "md5": "0a5bd99041972d0032ad96a8e2b98ded"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_191",
+      "name": "BU-Vasc-05.raw_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015545",
+      "encodingFormat": "application/gzip",
+      "md5": "82ce24efca59654064fb56e55248946a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_192",
+      "name": "BU-Vasc-05.raw_feature_bc_matrix.h5",
+      "contentSize": "26223206",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015542",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "7ee7306438c57430d869e0eab8d44a04"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_193",
+      "name": "BU-Vasc-05.raw_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "25507067",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015546",
+      "encodingFormat": "application/octet-stream",
+      "md5": "593a3fb75c3149cfae31258e43bad5c6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_194",
+      "name": "BU-Vasc-06.filtered_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "11492",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015547",
+      "encodingFormat": "application/gzip",
+      "md5": "0fe7bf52adb60cd1fe512401e3145f66"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_195",
+      "name": "BU-Vasc-06.filtered_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015548",
+      "encodingFormat": "application/gzip",
+      "md5": "87dee9e0b884c602cbf050313e682993"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_196",
+      "name": "BU-Vasc-06.filtered_feature_bc_matrix.h5",
+      "contentSize": "8248416",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015550",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "3a5f67fa663a2c2dc8245d43d0a163b7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_197",
+      "name": "BU-Vasc-06.filtered_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "14651719",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015549",
+      "encodingFormat": "application/octet-stream",
+      "md5": "65c9468194753cf8b633e86b8f2f68b2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_198",
+      "name": "BU-Vasc-06.metrics_summary.csv",
+      "contentSize": "684",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015551",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "bf86c0498ce205a908f11983464713f2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_199",
+      "name": "BU-Vasc-06.molecule_info.h5",
+      "contentSize": "88192691",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015553",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "de37878e26cfdde7bc2ddf26df12b762"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_200",
+      "name": "BU-Vasc-06.raw_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "2550196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015554",
+      "encodingFormat": "application/gzip",
+      "md5": "099bfdb959b3880c9f8248d13f7c561d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_201",
+      "name": "BU-Vasc-06.raw_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015555",
+      "encodingFormat": "application/gzip",
+      "md5": "e7dce03baf45eb7219215efc4244c356"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_202",
+      "name": "BU-Vasc-06.raw_feature_bc_matrix.h5",
+      "contentSize": "25308163",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015552",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "02045b5a25166fcf626d2b19d4989c3d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_203",
+      "name": "BU-Vasc-06.raw_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "22993873",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015556",
+      "encodingFormat": "application/octet-stream",
+      "md5": "e0c73d1aaa9eb729325b7c256659d280"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_204",
+      "name": "BU-Vasc-07.filtered_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "13690",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015557",
+      "encodingFormat": "application/gzip",
+      "md5": "60018e156d5ea79bfa4a7b6c1893cd59"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_205",
+      "name": "BU-Vasc-07.filtered_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015558",
+      "encodingFormat": "application/gzip",
+      "md5": "4403db5bdc28e91706e22fc5e2d8c2d0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_206",
+      "name": "BU-Vasc-07.filtered_feature_bc_matrix.h5",
+      "contentSize": "8687894",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015560",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "ddb46a244e9947c19b90b1eda7743524"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_207",
+      "name": "BU-Vasc-07.filtered_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "15716246",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015559",
+      "encodingFormat": "application/octet-stream",
+      "md5": "e9c87c8b606cbd03ad3ebed01e30c1fb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_208",
+      "name": "BU-Vasc-07.metrics_summary.csv",
+      "contentSize": "684",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015561",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "23b0bd6f6263d611b18b452fd7620b2f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_209",
+      "name": "BU-Vasc-07.molecule_info.h5",
+      "contentSize": "74680227",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015563",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "0fe100f7c98e047c7e4d105c03b0566f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_210",
+      "name": "BU-Vasc-07.raw_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "2550196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015564",
+      "encodingFormat": "application/gzip",
+      "md5": "b63b83a9b437e4ded01a8e555deaa545"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_211",
+      "name": "BU-Vasc-07.raw_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015565",
+      "encodingFormat": "application/gzip",
+      "md5": "701d7ea5a3685599638c595dd8aff75a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_212",
+      "name": "BU-Vasc-07.raw_feature_bc_matrix.h5",
+      "contentSize": "25697908",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015562",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "9a763b780d80fdccfae79778962b585a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_213",
+      "name": "BU-Vasc-07.raw_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "24150459",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015566",
+      "encodingFormat": "application/octet-stream",
+      "md5": "fb9b11a096c42cf6ed4249f6d336a6ca"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_214",
+      "name": "BU-Vasc-08.filtered_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "11369",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015567",
+      "encodingFormat": "application/gzip",
+      "md5": "9e6d3439bb84b4be2e22b5dcc4811db6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_215",
+      "name": "BU-Vasc-08.filtered_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015568",
+      "encodingFormat": "application/gzip",
+      "md5": "8681f9a09f9b17682d79f8bbaee325ca"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_216",
+      "name": "BU-Vasc-08.filtered_feature_bc_matrix.h5",
+      "contentSize": "7773181",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015570",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "ad0b5845afad0a4c8e8bf322a9440f92"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_217",
+      "name": "BU-Vasc-08.filtered_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "13368809",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015569",
+      "encodingFormat": "application/octet-stream",
+      "md5": "ab5ace65f33f79b2dcd628168bf58170"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_218",
+      "name": "BU-Vasc-08.metrics_summary.csv",
+      "contentSize": "684",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015571",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "82c5c7ba26ccdaba30ebbd1b1c94b031"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_219",
+      "name": "BU-Vasc-08.molecule_info.h5",
+      "contentSize": "66633410",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015573",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "a505a31583bb00f3360bc0c0727fe112"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_220",
+      "name": "BU-Vasc-08.raw_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "2550196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015574",
+      "encodingFormat": "application/gzip",
+      "md5": "9fe9bbaeec6af4cb278e081788b607da"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_221",
+      "name": "BU-Vasc-08.raw_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015575",
+      "encodingFormat": "application/gzip",
+      "md5": "7831851830c39538625467723dcff810"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_222",
+      "name": "BU-Vasc-08.raw_feature_bc_matrix.h5",
+      "contentSize": "24537821",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015572",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "a836bc70d70bea5806110b22a1494f76"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_223",
+      "name": "BU-Vasc-08.raw_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "21188192",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015576",
+      "encodingFormat": "application/octet-stream",
+      "md5": "c9062cbbf51080c1df1b6ce97f6e355a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_224",
+      "name": "BU-Vasc-09.filtered_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "12572",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015584",
+      "encodingFormat": "application/gzip",
+      "md5": "36773412edef43ad8559dc3c5ad92a15"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_225",
+      "name": "BU-Vasc-09.filtered_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015585",
+      "encodingFormat": "application/gzip",
+      "md5": "6de9860f56d77e3e32a7705b9bbe7028"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_226",
+      "name": "BU-Vasc-09.filtered_feature_bc_matrix.h5",
+      "contentSize": "9705655",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015583",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "302afdd8abe99499773dcb846e04fd1a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_227",
+      "name": "BU-Vasc-09.filtered_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "18523352",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015586",
+      "encodingFormat": "application/octet-stream",
+      "md5": "7734e239326aa4079708be5939be4152"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_228",
+      "name": "BU-Vasc-09.metrics_summary.csv",
+      "contentSize": "684",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015581",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "fb3d737d0f0ae1e1bab5f0205291414d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_229",
+      "name": "BU-Vasc-09.molecule_info.h5",
+      "contentSize": "108354984",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015582",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "2f2daf7d4abff0dd60c5988d35e763a6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_230",
+      "name": "BU-Vasc-09.raw_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "2550196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015577",
+      "encodingFormat": "application/gzip",
+      "md5": "e4f60dfee76f2c51c0869203c001b9b2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_231",
+      "name": "BU-Vasc-09.raw_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015578",
+      "encodingFormat": "application/gzip",
+      "md5": "7c0b0012d66bd671b4dd0ef4c51754a8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_232",
+      "name": "BU-Vasc-09.raw_feature_bc_matrix.h5",
+      "contentSize": "28003209",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015580",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "97836a8366df3e760a0eb8951b0d0245"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_233",
+      "name": "BU-Vasc-09.raw_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "29675387",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015579",
+      "encodingFormat": "application/octet-stream",
+      "md5": "97a6590db100e464899f24d2e181c37e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_234",
+      "name": "BU-Vasc-10.filtered_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "14266",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015594",
+      "encodingFormat": "application/gzip",
+      "md5": "247d6f2ddef1414540a5700b80469865"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_235",
+      "name": "BU-Vasc-10.filtered_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015595",
+      "encodingFormat": "application/gzip",
+      "md5": "98384fd8e875748e639907a650da9f17"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_236",
+      "name": "BU-Vasc-10.filtered_feature_bc_matrix.h5",
+      "contentSize": "10124252",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015593",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "91c83da51daa20bda3ef30d25283a91c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_237",
+      "name": "BU-Vasc-10.filtered_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "19613890",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015596",
+      "encodingFormat": "application/octet-stream",
+      "md5": "043943827c1099e39142ae4b5f087a2d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_238",
+      "name": "BU-Vasc-10.metrics_summary.csv",
+      "contentSize": "683",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015591",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "d85bb573a5daf843e1f536e125364df5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_239",
+      "name": "BU-Vasc-10.molecule_info.h5",
+      "contentSize": "105441548",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015592",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "98f05d639f5e1e78017e290066fbd023"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_240",
+      "name": "BU-Vasc-10.raw_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "2550196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015587",
+      "encodingFormat": "application/gzip",
+      "md5": "a409a49f830abd9c67e2b92a1e7829fb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_241",
+      "name": "BU-Vasc-10.raw_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015588",
+      "encodingFormat": "application/gzip",
+      "md5": "4e71b723632de6648b80b2c385169e54"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_242",
+      "name": "BU-Vasc-10.raw_feature_bc_matrix.h5",
+      "contentSize": "28240972",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015590",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "74b0b20a1598876eb59dab3ca0ed1177"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_243",
+      "name": "BU-Vasc-10.raw_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "30359662",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015589",
+      "encodingFormat": "application/octet-stream",
+      "md5": "e5b2536078a8296269c0ddec01932348"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_244",
+      "name": "BU-Vasc-11.filtered_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "13195",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015604",
+      "encodingFormat": "application/gzip",
+      "md5": "4dd7d6e65503c7dea8abe6cc933f3854"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_245",
+      "name": "BU-Vasc-11.filtered_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015605",
+      "encodingFormat": "application/gzip",
+      "md5": "6077c738b93967ab8a1bbb08a7e8590b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_246",
+      "name": "BU-Vasc-11.filtered_feature_bc_matrix.h5",
+      "contentSize": "9289305",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015603",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "f25d99399970f04095b65d8b6bdb22c3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_247",
+      "name": "BU-Vasc-11.filtered_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "17451567",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015606",
+      "encodingFormat": "application/octet-stream",
+      "md5": "48defe8032faab752cbca3b3eebe4126"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_248",
+      "name": "BU-Vasc-11.metrics_summary.csv",
+      "contentSize": "683",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015601",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "aa2ce857a805834bcebf5a405cafe702"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_249",
+      "name": "BU-Vasc-11.molecule_info.h5",
+      "contentSize": "87239555",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015602",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "deb9abeb5edf4b5dab4f0b2bf0d7e2af"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_250",
+      "name": "BU-Vasc-11.raw_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "2550196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015597",
+      "encodingFormat": "application/gzip",
+      "md5": "10bcfee9dc052f545b77ac7fa2bb5787"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_251",
+      "name": "BU-Vasc-11.raw_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015598",
+      "encodingFormat": "application/gzip",
+      "md5": "d6e5710ba118203bfc4d4093f2c01175"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_252",
+      "name": "BU-Vasc-11.raw_feature_bc_matrix.h5",
+      "contentSize": "27228443",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015600",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "b02b4dc3e956e17e4debe75c67b3f7f7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_253",
+      "name": "BU-Vasc-11.raw_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "27822493",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015599",
+      "encodingFormat": "application/octet-stream",
+      "md5": "0871187495f8f80d4a01824ee82bc893"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_254",
+      "name": "BU-Vasc-12.filtered_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "12568",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015614",
+      "encodingFormat": "application/gzip",
+      "md5": "8e56131fb1025141c5a935c546870be9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_255",
+      "name": "BU-Vasc-12.filtered_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015615",
+      "encodingFormat": "application/gzip",
+      "md5": "8fc7e79f10d2421e14702f2029230ed4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_256",
+      "name": "BU-Vasc-12.filtered_feature_bc_matrix.h5",
+      "contentSize": "8860447",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015613",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "792e7da0f1847d76d0317bce979dec3e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_257",
+      "name": "BU-Vasc-12.filtered_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "16300986",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015616",
+      "encodingFormat": "application/octet-stream",
+      "md5": "14c63b29d02565402a3d45ffa0250f99"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_258",
+      "name": "BU-Vasc-12.metrics_summary.csv",
+      "contentSize": "684",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015611",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "067d419117f2b910c5358c98f3397103"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_259",
+      "name": "BU-Vasc-12.molecule_info.h5",
+      "contentSize": "90374675",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015612",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "3c6a0a26e8b2944376a662692413b1dd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_260",
+      "name": "BU-Vasc-12.raw_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "2550196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015607",
+      "encodingFormat": "application/gzip",
+      "md5": "f58e6f6ae5e7d63785f99bb8a7162546"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_261",
+      "name": "BU-Vasc-12.raw_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015608",
+      "encodingFormat": "application/gzip",
+      "md5": "432a7d1f85793348beef03eeb543e01b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_262",
+      "name": "BU-Vasc-12.raw_feature_bc_matrix.h5",
+      "contentSize": "27417877",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015610",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "e223e7ec3684b5d2ec1452e5fcb1eada"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_263",
+      "name": "BU-Vasc-12.raw_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "28027616",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015609",
+      "encodingFormat": "application/octet-stream",
+      "md5": "f82285b0f9f569924a34de4c4059b797"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_264",
+      "name": "BU-Vasc-13.filtered_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "12358",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015624",
+      "encodingFormat": "application/gzip",
+      "md5": "33bfef89c756623448d18297ed44a944"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_265",
+      "name": "BU-Vasc-13.filtered_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015625",
+      "encodingFormat": "application/gzip",
+      "md5": "a31536bee39bc163f731b0ff9ba43efe"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_266",
+      "name": "BU-Vasc-13.filtered_feature_bc_matrix.h5",
+      "contentSize": "9845696",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015623",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "f857a1472cbf872f7774461933c9c400"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_267",
+      "name": "BU-Vasc-13.filtered_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "18871063",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015626",
+      "encodingFormat": "application/octet-stream",
+      "md5": "0b1b133c9a30791dd26026f6d576658c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_268",
+      "name": "BU-Vasc-13.metrics_summary.csv",
+      "contentSize": "683",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015621",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "9362ab483b6f99cb59c6770f9807b3c4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_269",
+      "name": "BU-Vasc-13.molecule_info.h5",
+      "contentSize": "111440425",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015622",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "16c328365c937ebd0df3b32f3b12840b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_270",
+      "name": "BU-Vasc-13.raw_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "2550196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015617",
+      "encodingFormat": "application/gzip",
+      "md5": "652c03aaa5e24b32aeacc25a86f0e9e2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_271",
+      "name": "BU-Vasc-13.raw_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015618",
+      "encodingFormat": "application/gzip",
+      "md5": "0e68e1ca7bdc2e9b490a6cebc0107ef2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_272",
+      "name": "BU-Vasc-13.raw_feature_bc_matrix.h5",
+      "contentSize": "28160256",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015620",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "780afe410cbf2a06997e123f415c795f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_273",
+      "name": "BU-Vasc-13.raw_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "30111662",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015619",
+      "encodingFormat": "application/octet-stream",
+      "md5": "9ce002f7cc9fc1fd9d8a04586d6d4763"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_274",
+      "name": "BU-Vasc-14.filtered_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "15247",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015634",
+      "encodingFormat": "application/gzip",
+      "md5": "b41bf25b0d2ad97be8d33c3fb782bb5f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_275",
+      "name": "BU-Vasc-14.filtered_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015635",
+      "encodingFormat": "application/gzip",
+      "md5": "e13fd080fb3697526b1f903e4480089b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_276",
+      "name": "BU-Vasc-14.filtered_feature_bc_matrix.h5",
+      "contentSize": "10091909",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015633",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "1beadf104a62f4e4f38758425627a6b7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_277",
+      "name": "BU-Vasc-14.filtered_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "19503360",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015636",
+      "encodingFormat": "application/octet-stream",
+      "md5": "22ee39886e1d2289e219365541e09bf9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_278",
+      "name": "BU-Vasc-14.metrics_summary.csv",
+      "contentSize": "683",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015631",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "a1ae5bd1c38495f6e08961b6025bb83e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_279",
+      "name": "BU-Vasc-14.molecule_info.h5",
+      "contentSize": "92007275",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015632",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "5c4b97a556608d2b32e9e99f5b11642a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_280",
+      "name": "BU-Vasc-14.raw_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "2550196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015627",
+      "encodingFormat": "application/gzip",
+      "md5": "9cd3dce4e11a4ea4dcb20d2b1aba991e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_281",
+      "name": "BU-Vasc-14.raw_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015628",
+      "encodingFormat": "application/gzip",
+      "md5": "f66673e3b9d0dcbc82c4fcfd3c124eb7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_282",
+      "name": "BU-Vasc-14.raw_feature_bc_matrix.h5",
+      "contentSize": "28161182",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015630",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "a5779c45fe5b1e5d492c385678b2625e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_283",
+      "name": "BU-Vasc-14.raw_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "30242403",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015629",
+      "encodingFormat": "application/octet-stream",
+      "md5": "3a49ab92ca3b3db884e4f2f3a2d7ad49"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_284",
+      "name": "BU-Vasc-15.filtered_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "15546",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015644",
+      "encodingFormat": "application/gzip",
+      "md5": "f210354bd6f1fa6f6df77f73f2d29384"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_285",
+      "name": "BU-Vasc-15.filtered_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015645",
+      "encodingFormat": "application/gzip",
+      "md5": "e7634fab7829affcc19df8f80eec3c78"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_286",
+      "name": "BU-Vasc-15.filtered_feature_bc_matrix.h5",
+      "contentSize": "10700036",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015643",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "94c1f8bfcc60ed31e2fb0205ed43f66d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_287",
+      "name": "BU-Vasc-15.filtered_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "21094655",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015646",
+      "encodingFormat": "application/octet-stream",
+      "md5": "d43dd905491aa89f8ec8a3f1ef5d48f4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_288",
+      "name": "BU-Vasc-15.metrics_summary.csv",
+      "contentSize": "683",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015641",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "5abed8a5383385ceac14930545eef410"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_289",
+      "name": "BU-Vasc-15.molecule_info.h5",
+      "contentSize": "112014120",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015642",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "572aa9b6dd6e91635c0dad9b308d2fb6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_290",
+      "name": "BU-Vasc-15.raw_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "2550196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015637",
+      "encodingFormat": "application/gzip",
+      "md5": "472b26caf108ca7969243c9bc297843c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_291",
+      "name": "BU-Vasc-15.raw_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015638",
+      "encodingFormat": "application/gzip",
+      "md5": "8f992e296cdecce1f1e5b72e5ca2ec3e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_292",
+      "name": "BU-Vasc-15.raw_feature_bc_matrix.h5",
+      "contentSize": "29412319",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015640",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "b120b670d5a9a2bc3c2d2fb9517d6e41"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_293",
+      "name": "BU-Vasc-15.raw_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "33247797",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015639",
+      "encodingFormat": "application/octet-stream",
+      "md5": "b94859e57a15387a188b7de7566bcf76"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_294",
+      "name": "BU-Vasc-16.filtered_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "20990",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015654",
+      "encodingFormat": "application/gzip",
+      "md5": "50bc87ae23351dc61f90b6ba310228bb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_295",
+      "name": "BU-Vasc-16.filtered_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015655",
+      "encodingFormat": "application/gzip",
+      "md5": "044bcfcc9402c07f23c7c1e8cb650f01"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_296",
+      "name": "BU-Vasc-16.filtered_feature_bc_matrix.h5",
+      "contentSize": "14716753",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015653",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "dd9fbb2300f171d9fbcf4f3fcbe523e6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_297",
+      "name": "BU-Vasc-16.filtered_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "31641152",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015656",
+      "encodingFormat": "application/octet-stream",
+      "md5": "df138c249a0de30f688cb442cccb2d21"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_298",
+      "name": "BU-Vasc-16.metrics_summary.csv",
+      "contentSize": "683",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015651",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "086b44454bc25bfde25b100f6be69d65"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_299",
+      "name": "BU-Vasc-16.molecule_info.h5",
+      "contentSize": "169480277",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015652",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "f6ffee883b0582b500eca8272adc10a4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_300",
+      "name": "BU-Vasc-16.raw_feature_bc_matrix.barcodes.tsv.gz",
+      "contentSize": "2550196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015647",
+      "encodingFormat": "application/gzip",
+      "md5": "162b16e26f6b68f7c7196ba027708f15"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_301",
+      "name": "BU-Vasc-16.raw_feature_bc_matrix.features.tsv.gz",
+      "contentSize": "279378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015648",
+      "encodingFormat": "application/gzip",
+      "md5": "77beae159f545d279a4e87c56966cb43"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_302",
+      "name": "BU-Vasc-16.raw_feature_bc_matrix.h5",
+      "contentSize": "34401852",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015650",
+      "encodingFormat": "application/x-hdf5",
+      "md5": "0095d32e8b3204a03160b834f48aeaa4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_303",
+      "name": "BU-Vasc-16.raw_feature_bc_matrix.matrix.mtx.gz",
+      "contentSize": "46192165",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22015649",
+      "encodingFormat": "application/octet-stream",
+      "md5": "2781016e88875bf2b8ba5c0bb2a4ea53"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_304",
+      "name": "VMC_assay_scRNAseq_metadata.csv",
+      "contentSize": "2268",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013126",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "dcb18ef3f576da6e277584c6e893dd22"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_305",
+      "name": "VMC_biospecimen_metadata.csv",
+      "contentSize": "1564",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013125",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "4ca8016980656140343cd46c867ad1bb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_306",
+      "name": "VMC_individual_metadata.csv",
+      "contentSize": "1553",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22013124",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "08656295092e6a10900a48b4b1958c3d"
+    }
+  ]
+}

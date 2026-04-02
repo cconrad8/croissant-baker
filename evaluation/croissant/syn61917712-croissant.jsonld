@@ -1,0 +1,3760 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "AMP RA.SLE PhaseI CyTOF",
+  "description": "AMP RA/SLE Phase I CyTOF of PBMC samples profiling marker panels targeting T cells, B cells, and myeloid cells and total leukocyte (TL) samples profiling  marker panels targeting TLs and PMN cells.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "AMP RA.SLE PhaseI CyTOF. https://doi.org/10.7303/syn61917712.2",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Jessica Vera",
+    "url": "https://www.synapse.org/#!Profile:3499646"
+  },
+  "datePublished": "2026-04-02 11:03:02.182",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn61917712",
+  "version": "3",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "Myeloid_AMP_11-29-16.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324807.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "Myeloid_AMP_12-01-16.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324808.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "Myeloid_AMP_12-06-16.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324809.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "Myeloid_AMP_12-13-16.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324813.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "Myeloid_AMP_12-15-16.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324810.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "Tcell_AMP_11-29-16.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324641.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "Tcell_AMP_12-01-16.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324644.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "Tcell_AMP_12-06-16.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324643.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "Tcell_AMP_12-13-16.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324646.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "Tcell_AMP_12-15-16.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324647.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "AMP Phase 1 PBMC Antibody Panels.xlsx",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324624.2",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "Barcode Key Run _num_1.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324626.2",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "Barcode Key Run _num_2.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324629.2",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "Barcode Key Run _num_3.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324628.2",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "Barcode Key Run _num_4.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324625.2",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "Barcode Key Run _num_5.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324627.2",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "Normalized and Debarcoded FCS file manifest.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn49047357.3",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "Bcell_AMP_11-29-16.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324801.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "Bcell_AMP_12-01-16.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324804.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "Bcell_AMP_12-06-16.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324802.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "Bcell_AMP_12-13-16.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324805.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "Bcell_AMP_12-15-16.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324803.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "Ctrl_Bcell_200-0608.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324720.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "Ctrl_Bcell_200-0609.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324719.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "Ctrl_Bcell_200-0610.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324721.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "Ctrl_Bcell_200-0611.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324722.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "Ctrl_Bcell_200-0612.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324723.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "Ctrl_Bcell_200-0613.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324725.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "Ctrl_Bcell_200-0614.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324718.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "Ctrl_Bcell_10053014.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324726.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "Ctrl_Bcell_10053519.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324728.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "Ctrl_Bcell_10053784.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324729.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "Ctrl_Bcell_10053868.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324727.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "Ctrl_Bcell_10054671.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324730.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "Ctrl_Bcell_10054967.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324731.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "Ctrl_Bcell_10055211.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324732.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "Ctrl_Bcell_10055776.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324742.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "Ctrl_Bcell_10056154.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324733.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "Ctrl_Bcell_10057462.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324736.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "Ctrl_Bcell_10058523.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324735.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "OA_Bcell_301-0132.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324737.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "OA_Bcell_301-0133.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324740.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "OA_Bcell_301-0135.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324738.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "OA_Bcell_301-0159.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324739.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "OA_Bcell_301-0242.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324744.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "OA_Bcell_301-0252.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324743.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "OA_Bcell_301-0253.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324741.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "RA_Bcell_300-0121.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324764.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "RA_Bcell_300-0133.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324765.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "RA_Bcell_300-0134.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324766.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "RA_Bcell_300-0153.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324767.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "RA_Bcell_300-0211.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324768.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "RA_Bcell_300-0212.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324769.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "RA_Bcell_300-0213.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324770.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "RA_Bcell_300-0451.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324771.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "RA_Bcell_300-0452.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324772.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "RA_Bcell_300-0526.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324745.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "RA_Bcell_300-0528.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324748.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "RA_Bcell_301-0121.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324746.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "RA_Bcell_301-0122.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324747.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "RA_Bcell_301-0125.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324749.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "RA_Bcell_301-0131.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324750.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "RA_Bcell_301-0134.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324751.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "RA_Bcell_301-0151.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324752.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "RA_Bcell_301-0152.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324753.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "RA_Bcell_301-0153.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324754.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "RA_Bcell_301-0156.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324755.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "RA_Bcell_301-0157.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324757.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "RA_Bcell_301-0241.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324756.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "RA_Bcell_301-0243.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324758.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "RA_Bcell_301-0244.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324760.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "RA_Bcell_301-0247.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324762.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "RA_Bcell_301-0249.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324759.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "RA_Bcell_301-0250.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324763.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "SLE_Bcell_200-0104.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324792.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "SLE_Bcell_200-0105.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324795.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "SLE_Bcell_200-0107.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324794.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "SLE_Bcell_200-0109.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324796.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "SLE_Bcell_200-0111.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324793.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "SLE_Bcell_200-0113.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324797.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "SLE_Bcell_200-0114.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324799.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "SLE_Bcell_200-0124.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324798.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "SLE_Bcell_200-0126.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324800.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "SLE_Bcell_200-0139.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324773.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "SLE_Bcell_200-0364.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324774.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "SLE_Bcell_200-0446.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324775.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "SLE_Bcell_200-0458.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324776.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "SLE_Bcell_200-0841.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324777.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "SLE_Bcell_200-0872.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324779.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "SLE_Bcell_200-0874.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324778.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "SLE_Bcell_200-0875.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324781.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "SLE_Bcell_200-1214.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324787.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "SLE_Bcell_200-1216.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324782.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "SLE_Bcell_200-1217.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324780.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "SLE_Bcell_200-5568.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324784.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "SLE_Bcell_200-5601.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324783.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "SLE_Bcell_200-5623.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324786.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "SLE_Bcell_200-5626.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324785.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "SLE_Bcell_200-5627.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324788.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "SLE_Bcell_200-5629.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324791.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "SLE_Bcell_200-5634.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324789.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "Ctrl_Myeloid_200-0608.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324811.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "Ctrl_Myeloid_200-0609.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324812.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "Ctrl_Myeloid_200-0610.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324816.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "Ctrl_Myeloid_200-0611.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324815.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "Ctrl_Myeloid_200-0612.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324814.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "Ctrl_Myeloid_200-0613.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324820.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "Ctrl_Myeloid_200-0614.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324806.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "Ctrl_Myeloid_10053014.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324817.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "Ctrl_Myeloid_10053519.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324818.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "Ctrl_Myeloid_10053784.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324821.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "Ctrl_Myeloid_10053868.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324819.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "Ctrl_Myeloid_10054671.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324824.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "Ctrl_Myeloid_10054967.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324823.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "Ctrl_Myeloid_10055211.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324822.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "Ctrl_Myeloid_10055776.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324827.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_116",
+      "name": "Ctrl_Myeloid_10056154.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324825.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_117",
+      "name": "Ctrl_Myeloid_10057462.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324829.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_118",
+      "name": "Ctrl_Myeloid_10058523.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324828.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_119",
+      "name": "OA_Myeloid_301-0132.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324832.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_120",
+      "name": "OA_Myeloid_301-0133.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324833.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_121",
+      "name": "OA_Myeloid_301-0135.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324830.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_122",
+      "name": "OA_Myeloid_301-0159.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324831.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_123",
+      "name": "OA_Myeloid_301-0242.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324834.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_124",
+      "name": "OA_Myeloid_301-0252.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324836.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_125",
+      "name": "OA_Myeloid_301-0253.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324835.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_126",
+      "name": "RA_Myeloid_300-0121.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324859.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_127",
+      "name": "RA_Myeloid_300-0133.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324856.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_128",
+      "name": "RA_Myeloid_300-0134.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324857.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_129",
+      "name": "RA_Myeloid_300-0153.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324858.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_130",
+      "name": "RA_Myeloid_300-0211.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324863.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_131",
+      "name": "RA_Myeloid_300-0212.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324861.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_132",
+      "name": "RA_Myeloid_300-0213.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324862.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_133",
+      "name": "RA_Myeloid_300-0451.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324860.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_134",
+      "name": "RA_Myeloid_300-0452.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324867.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_135",
+      "name": "RA_Myeloid_300-0526.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324837.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_136",
+      "name": "RA_Myeloid_300-0528.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324838.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_137",
+      "name": "RA_Myeloid_301-0121.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324839.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_138",
+      "name": "RA_Myeloid_301-0122.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324840.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_139",
+      "name": "RA_Myeloid_301-0125.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324841.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_140",
+      "name": "RA_Myeloid_301-0131.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324843.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_141",
+      "name": "RA_Myeloid_301-0134.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324842.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_142",
+      "name": "RA_Myeloid_301-0151.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324844.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_143",
+      "name": "RA_Myeloid_301-0152.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324847.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_144",
+      "name": "RA_Myeloid_301-0153.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324845.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_145",
+      "name": "RA_Myeloid_301-0156.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324846.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_146",
+      "name": "RA_Myeloid_301-0157.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324851.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_147",
+      "name": "RA_Myeloid_301-0241.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324848.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_148",
+      "name": "RA_Myeloid_301-0243.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324849.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_149",
+      "name": "RA_Myeloid_301-0244.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324852.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_150",
+      "name": "RA_Myeloid_301-0247.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324853.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_151",
+      "name": "RA_Myeloid_301-0249.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324850.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_152",
+      "name": "RA_Myeloid_301-0250.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324855.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_153",
+      "name": "SLE_Myeloid_200-0104.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324891.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_154",
+      "name": "SLE_Myeloid_200-0105.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324878.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_155",
+      "name": "SLE_Myeloid_200-0107.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324882.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_156",
+      "name": "SLE_Myeloid_200-0109.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324884.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_157",
+      "name": "SLE_Myeloid_200-0111.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324883.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_158",
+      "name": "SLE_Myeloid_200-0113.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324885.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_159",
+      "name": "SLE_Myeloid_200-0114.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324886.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_160",
+      "name": "SLE_Myeloid_200-0124.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324887.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_161",
+      "name": "SLE_Myeloid_200-0126.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324890.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_162",
+      "name": "SLE_Myeloid_200-0139.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324889.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_163",
+      "name": "SLE_Myeloid_200-0364.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324888.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_164",
+      "name": "SLE_Myeloid_200-0446.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324865.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_165",
+      "name": "SLE_Myeloid_200-0458.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324864.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_166",
+      "name": "SLE_Myeloid_200-0841.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324866.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_167",
+      "name": "SLE_Myeloid_200-0872.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324875.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_168",
+      "name": "SLE_Myeloid_200-0874.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324868.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_169",
+      "name": "SLE_Myeloid_200-0875.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324870.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_170",
+      "name": "SLE_Myeloid_200-1214.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324869.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_171",
+      "name": "SLE_Myeloid_200-1216.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324871.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_172",
+      "name": "SLE_Myeloid_200-1217.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324874.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_173",
+      "name": "SLE_Myeloid_200-5568.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324879.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_174",
+      "name": "SLE_Myeloid_200-5601.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324873.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_175",
+      "name": "SLE_Myeloid_200-5623.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324881.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_176",
+      "name": "SLE_Myeloid_200-5626.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324872.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_177",
+      "name": "SLE_Myeloid_200-5627.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324880.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_178",
+      "name": "SLE_Myeloid_200-5629.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324876.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_179",
+      "name": "SLE_Myeloid_200-5634.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324877.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_180",
+      "name": "Ctrl_Tcell_200-0608.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324630.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_181",
+      "name": "Ctrl_Tcell_200-0609.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324633.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_182",
+      "name": "Ctrl_Tcell_200-0610.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324632.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_183",
+      "name": "Ctrl_Tcell_200-0611.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324640.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_184",
+      "name": "Ctrl_Tcell_200-0612.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324631.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_185",
+      "name": "Ctrl_Tcell_200-0613.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324634.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_186",
+      "name": "Ctrl_Tcell_200-0614.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324635.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_187",
+      "name": "Ctrl_Tcell_10053014.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324636.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_188",
+      "name": "Ctrl_Tcell_10053519.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324639.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_189",
+      "name": "Ctrl_Tcell_10053784.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324637.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_190",
+      "name": "Ctrl_Tcell_10053868.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324638.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_191",
+      "name": "Ctrl_Tcell_10054671.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324642.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_192",
+      "name": "Ctrl_Tcell_10054967.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324649.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_193",
+      "name": "Ctrl_Tcell_10055211.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324648.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_194",
+      "name": "Ctrl_Tcell_10055776.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324651.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_195",
+      "name": "Ctrl_Tcell_10056154.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324652.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_196",
+      "name": "Ctrl_Tcell_10057462.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324653.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_197",
+      "name": "Ctrl_Tcell_10058523.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324654.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_198",
+      "name": "OA_Tcell_301-0132.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324655.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_199",
+      "name": "OA_Tcell_301-0133.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324656.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_200",
+      "name": "OA_Tcell_301-0135.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324657.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_201",
+      "name": "OA_Tcell_301-0159.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324667.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_202",
+      "name": "OA_Tcell_301-0242.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324658.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_203",
+      "name": "OA_Tcell_301-0252.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324660.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_204",
+      "name": "OA_Tcell_301-0253.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324659.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_205",
+      "name": "RA_Tcell_300-0121.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324680.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_206",
+      "name": "RA_Tcell_300-0133.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324684.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_207",
+      "name": "RA_Tcell_300-0134.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324682.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_208",
+      "name": "RA_Tcell_300-0153.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324683.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_209",
+      "name": "RA_Tcell_300-0211.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324685.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_210",
+      "name": "RA_Tcell_300-0212.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324686.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_211",
+      "name": "RA_Tcell_300-0213.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324692.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_212",
+      "name": "RA_Tcell_300-0451.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324687.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_213",
+      "name": "RA_Tcell_300-0452.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324688.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_214",
+      "name": "RA_Tcell_300-0526.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324662.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_215",
+      "name": "RA_Tcell_300-0528.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324661.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_216",
+      "name": "RA_Tcell_301-0121.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324665.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_217",
+      "name": "RA_Tcell_301-0122.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324663.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_218",
+      "name": "RA_Tcell_301-0125.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324668.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_219",
+      "name": "RA_Tcell_301-0131.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324669.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_220",
+      "name": "RA_Tcell_301-0134.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324666.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_221",
+      "name": "RA_Tcell_301-0151.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324664.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_222",
+      "name": "RA_Tcell_301-0152.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324673.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_223",
+      "name": "RA_Tcell_301-0153.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324672.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_224",
+      "name": "RA_Tcell_301-0156.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324670.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_225",
+      "name": "RA_Tcell_301-0157.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324678.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_226",
+      "name": "RA_Tcell_301-0241.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324671.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_227",
+      "name": "RA_Tcell_301-0243.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324675.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_228",
+      "name": "RA_Tcell_301-0244.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324674.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_229",
+      "name": "RA_Tcell_301-0247.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324676.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_230",
+      "name": "RA_Tcell_301-0249.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324677.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_231",
+      "name": "RA_Tcell_301-0250.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324679.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_232",
+      "name": "SLE_Tcell_200-0104.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324708.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_233",
+      "name": "SLE_Tcell_200-0105.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324705.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_234",
+      "name": "SLE_Tcell_200-0107.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324709.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_235",
+      "name": "SLE_Tcell_200-0109.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324710.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_236",
+      "name": "SLE_Tcell_200-0111.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324707.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_237",
+      "name": "SLE_Tcell_200-0113.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324711.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_238",
+      "name": "SLE_Tcell_200-0114.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324714.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_239",
+      "name": "SLE_Tcell_200-0124.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324712.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_240",
+      "name": "SLE_Tcell_200-0126.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324713.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_241",
+      "name": "SLE_Tcell_200-0139.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324716.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_242",
+      "name": "SLE_Tcell_200-0364.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324715.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_243",
+      "name": "SLE_Tcell_200-0446.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324691.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_244",
+      "name": "SLE_Tcell_200-0458.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324689.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_245",
+      "name": "SLE_Tcell_200-0841.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324700.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_246",
+      "name": "SLE_Tcell_200-0872.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324694.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_247",
+      "name": "SLE_Tcell_200-0874.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324690.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_248",
+      "name": "SLE_Tcell_200-0875.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324697.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_249",
+      "name": "SLE_Tcell_200-1214.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324693.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_250",
+      "name": "SLE_Tcell_200-1216.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324696.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_251",
+      "name": "SLE_Tcell_200-1217.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324695.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_252",
+      "name": "SLE_Tcell_200-5568.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324698.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_253",
+      "name": "SLE_Tcell_200-5601.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324699.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_254",
+      "name": "SLE_Tcell_200-5623.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324702.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_255",
+      "name": "SLE_Tcell_200-5626.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324701.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_256",
+      "name": "SLE_Tcell_200-5627.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324704.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_257",
+      "name": "SLE_Tcell_200-5629.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324706.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_258",
+      "name": "SLE_Tcell_200-5634.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324703.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_259",
+      "name": "Additional FCS file information.docx",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324384.2",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_260",
+      "name": "TL and PMN panel.xlsx",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324383.2",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_261",
+      "name": "PMN_Ctrl_10053014.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324520.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_262",
+      "name": "PMN_Ctrl_10053519.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324498.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_263",
+      "name": "PMN_Ctrl_10053784.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324479.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_264",
+      "name": "PMN_Ctrl_10053868.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324483.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_265",
+      "name": "PMN_Ctrl_10054671.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324478.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_266",
+      "name": "PMN_Ctrl_10054967.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324490.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_267",
+      "name": "PMN_Ctrl_10055211.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324486.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_268",
+      "name": "PMN_Ctrl_10056154.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324482.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_269",
+      "name": "PMN_Ctrl_10057462.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324493.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_270",
+      "name": "PMN_Ctrl_10058523.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324480.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_271",
+      "name": "PMN_RA_300-0121.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324485.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_272",
+      "name": "PMN_RA_300-0153.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324495.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_273",
+      "name": "PMN_RA_300-0211 .fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324497.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_274",
+      "name": "PMN_RA_300-0213.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324502.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_275",
+      "name": "PMN_RA_300-0451.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324484.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_276",
+      "name": "PMN_RA_300-0526.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324500.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_277",
+      "name": "PMN_RA_300-0527.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324507.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_278",
+      "name": "PMN_RA_300-0528.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324487.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_279",
+      "name": "PMN_RA_300-2590.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324510.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_280",
+      "name": "PMN_RA_301-0124.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324492.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_281",
+      "name": "PMN_RA_301-0125.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324511.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_282",
+      "name": "PMN_RA_301-0162.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324488.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_283",
+      "name": "PMN_OA_301-0541.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324540.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_284",
+      "name": "PMN_SLE_200-0061.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324514.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_285",
+      "name": "PMN_SLE_200-0062.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324489.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_286",
+      "name": "PMN_SLE_200-0104.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324513.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_287",
+      "name": "PMN_SLE_200-0105.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324517.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_288",
+      "name": "PMN_SLE_200-0111.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324491.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_289",
+      "name": "PMN_SLE_200-0114.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324518.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_290",
+      "name": "PMN_SLE_200-0115.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324499.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_291",
+      "name": "PMN_SLE_200-0124.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324515.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_292",
+      "name": "PMN_SLE_200-0127.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324494.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_293",
+      "name": "PMN_SLE_200-0230.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324496.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_294",
+      "name": "PMN_SLE_200-0361.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324501.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_295",
+      "name": "PMN_SLE_200-0362.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324516.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_296",
+      "name": "PMN_SLE_200-0364.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324526.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_297",
+      "name": "PMN_SLE_200-0454.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324503.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_298",
+      "name": "PMN_SLE_200-0458.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324505.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_299",
+      "name": "PMN_SLE_200-0841.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324504.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_300",
+      "name": "PMN_SLE_200-0871.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324506.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_301",
+      "name": "PMN_SLE_200-0872.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324524.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_302",
+      "name": "PMN_SLE_200-0873.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324508.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_303",
+      "name": "PMN_SLE_200-0874.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324522.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_304",
+      "name": "PMN_SLE_200-0875.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324512.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_305",
+      "name": "PMN_SLE_200-0961.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324519.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_306",
+      "name": "PMN_SLE_200-1214.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324521.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_307",
+      "name": "PMN_SLE_200-1215.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324509.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_308",
+      "name": "PMN_Ctrl_10053014_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324569.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_309",
+      "name": "PMN_Ctrl_10053519_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324527.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_310",
+      "name": "PMN_Ctrl_10053784_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324525.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_311",
+      "name": "PMN_Ctrl_10053868_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324523.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_312",
+      "name": "PMN_Ctrl_10054671_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324530.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_313",
+      "name": "PMN_Ctrl_10054967_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324528.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_314",
+      "name": "PMN_Ctrl_10055211_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324529.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_315",
+      "name": "PMN_Ctrl_10056154_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324533.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_316",
+      "name": "PMN_Ctrl_10057462_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324535.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_317",
+      "name": "PMN_Ctrl_10058523_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324544.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_318",
+      "name": "PMN_RA_300-0121_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324531.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_319",
+      "name": "PMN_RA_300-0153_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324532.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_320",
+      "name": "PMN_RA_300-0211 _live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324534.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_321",
+      "name": "PMN_RA_300-0213_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324536.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_322",
+      "name": "PMN_RA_300-0451_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324537.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_323",
+      "name": "PMN_RA_300-0526_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324538.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_324",
+      "name": "PMN_RA_300-0527_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324549.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_325",
+      "name": "PMN_RA_300-0528_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324539.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_326",
+      "name": "PMN_RA_300-2590_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324547.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_327",
+      "name": "PMN_RA_301-0124_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324541.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_328",
+      "name": "PMN_RA_301-0125_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324542.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_329",
+      "name": "PMN_RA_301-0162_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324543.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_330",
+      "name": "PMN_OA_301-0541_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324545.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_331",
+      "name": "PMN_SLE_200-0061_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324546.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_332",
+      "name": "PMN_SLE_200-0062_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324568.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_333",
+      "name": "PMN_SLE_200-0104_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324548.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_334",
+      "name": "PMN_SLE_200-0105_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324553.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_335",
+      "name": "PMN_SLE_200-0111_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324550.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_336",
+      "name": "PMN_SLE_200-0114_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324552.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_337",
+      "name": "PMN_SLE_200-0115_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324551.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_338",
+      "name": "PMN_SLE_200-0124_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324554.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_339",
+      "name": "PMN_SLE_200-0127_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324555.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_340",
+      "name": "PMN_SLE_200-0230_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324556.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_341",
+      "name": "PMN_SLE_200-0361_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324557.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_342",
+      "name": "PMN_SLE_200-0362_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324561.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_343",
+      "name": "PMN_SLE_200-0364_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324558.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_344",
+      "name": "PMN_SLE_200-0454_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324559.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_345",
+      "name": "PMN_SLE_200-0458_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324562.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_346",
+      "name": "PMN_SLE_200-0841_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324560.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_347",
+      "name": "PMN_SLE_200-0871_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324563.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_348",
+      "name": "PMN_SLE_200-0872_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324571.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_349",
+      "name": "PMN_SLE_200-0873_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324565.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_350",
+      "name": "PMN_SLE_200-0874_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324564.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_351",
+      "name": "PMN_SLE_200-0875_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324570.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_352",
+      "name": "PMN_SLE_200-0961_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324567.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_353",
+      "name": "PMN_SLE_200-1214_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324566.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_354",
+      "name": "PMN_SLE_200-1215_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324572.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_355",
+      "name": "TL_Ctrl_10053014.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324431.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_356",
+      "name": "TL_Ctrl_10053519.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324389.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_357",
+      "name": "TL_Ctrl_10053784.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324395.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_358",
+      "name": "TL_Ctrl_10053868.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324387.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_359",
+      "name": "TL_Ctrl_10054671.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324433.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_360",
+      "name": "TL_Ctrl_10054967.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324393.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_361",
+      "name": "TL_Ctrl_10055211.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324388.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_362",
+      "name": "TL_Ctrl_10056154.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324400.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_363",
+      "name": "TL_Ctrl_10057462.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324396.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_364",
+      "name": "TL_Ctrl_10058523.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324390.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_365",
+      "name": "TL_RA_300-0121.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324386.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_366",
+      "name": "TL_RA_300-0153.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324405.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_367",
+      "name": "TL_RA_300-0211 .fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324402.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_368",
+      "name": "TL_RA_300-0213.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324408.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_369",
+      "name": "TL_RA_300-0451.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324385.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_370",
+      "name": "TL_RA_300-0526.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324407.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_371",
+      "name": "TL_RA_300-0527.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324411.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_372",
+      "name": "TL_RA_300-0528.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324391.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_373",
+      "name": "TL_RA_300-2590.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324418.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_374",
+      "name": "TL_RA_301-0124.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324394.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_375",
+      "name": "TL_RA_301-0125.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324429.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_376",
+      "name": "TL_RA_301-0162.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324414.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_377",
+      "name": "TL_OA_301-0541.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324392.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_378",
+      "name": "TL_SLE_200-0061.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324420.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_379",
+      "name": "TL_SLE_200-0062.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324416.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_380",
+      "name": "TL_SLE_200-0104.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324397.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_381",
+      "name": "TL_SLE_200-0105.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324417.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_382",
+      "name": "TL_SLE_200-0111.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324419.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_383",
+      "name": "TL_SLE_200-0114.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324398.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_384",
+      "name": "TL_SLE_200-0115.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324425.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_385",
+      "name": "TL_SLE_200-0124.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324399.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_386",
+      "name": "TL_SLE_200-0127.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324421.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_387",
+      "name": "TL_SLE_200-0230.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324403.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_388",
+      "name": "TL_SLE_200-0361.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324401.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_389",
+      "name": "TL_SLE_200-0362.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324404.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_390",
+      "name": "TL_SLE_200-0364.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324422.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_391",
+      "name": "TL_SLE_200-0454.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324423.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_392",
+      "name": "TL_SLE_200-0458.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324410.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_393",
+      "name": "TL_SLE_200-0841.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324424.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_394",
+      "name": "TL_SLE_200-0871.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324406.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_395",
+      "name": "TL_SLE_200-0872.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324426.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_396",
+      "name": "TL_SLE_200-0873.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324409.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_397",
+      "name": "TL_SLE_200-0874.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324412.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_398",
+      "name": "TL_SLE_200-0875.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324427.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_399",
+      "name": "TL_SLE_200-0961.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324415.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_400",
+      "name": "TL_SLE_200-1214.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324428.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_401",
+      "name": "TL_SLE_200-1215.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324413.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_402",
+      "name": "TL_Ctrl_10053014_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324474.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_403",
+      "name": "TL_Ctrl_10053519_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324430.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_404",
+      "name": "TL_Ctrl_10053784_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324432.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_405",
+      "name": "TL_Ctrl_10053868_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324438.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_406",
+      "name": "TL_Ctrl_10054671_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324437.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_407",
+      "name": "TL_Ctrl_10054967_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324434.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_408",
+      "name": "TL_Ctrl_10055211_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324435.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_409",
+      "name": "TL_Ctrl_10056154_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324436.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_410",
+      "name": "TL_Ctrl_10057462_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324445.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_411",
+      "name": "TL_Ctrl_10058523_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324443.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_412",
+      "name": "TL_RA_300-0121_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324439.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_413",
+      "name": "TL_RA_300-0153_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324441.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_414",
+      "name": "TL_RA_300-0211 _live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324440.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_415",
+      "name": "TL_RA_300-0213_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324442.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_416",
+      "name": "TL_RA_300-0451_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324444.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_417",
+      "name": "TL_RA_300-0526_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324455.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_418",
+      "name": "TL_RA_300-0527_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324448.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_419",
+      "name": "TL_RA_300-0528_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324446.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_420",
+      "name": "TL_RA_300-2590_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324464.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_421",
+      "name": "TL_RA_301-0124_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324447.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_422",
+      "name": "TL_RA_301-0125_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324452.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_423",
+      "name": "TL_RA_301-0162_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324451.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_424",
+      "name": "TL_OA_301-0541_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324449.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_425",
+      "name": "TL_SLE_200-0061_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324453.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_426",
+      "name": "TL_SLE_200-0062_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324450.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_427",
+      "name": "TL_SLE_200-0104_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324458.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_428",
+      "name": "TL_SLE_200-0105_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324454.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_429",
+      "name": "TL_SLE_200-0111_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324456.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_430",
+      "name": "TL_SLE_200-0114_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324457.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_431",
+      "name": "TL_SLE_200-0115_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324459.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_432",
+      "name": "TL_SLE_200-0124_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324463.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_433",
+      "name": "TL_SLE_200-0127_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324460.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_434",
+      "name": "TL_SLE_200-0230_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324461.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_435",
+      "name": "TL_SLE_200-0361_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324462.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_436",
+      "name": "TL_SLE_200-0362_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324467.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_437",
+      "name": "TL_SLE_200-0364_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324470.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_438",
+      "name": "TL_SLE_200-0454_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324465.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_439",
+      "name": "TL_SLE_200-0458_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324466.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_440",
+      "name": "TL_SLE_200-0841_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324469.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_441",
+      "name": "TL_SLE_200-0871_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324468.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_442",
+      "name": "TL_SLE_200-0872_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324471.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_443",
+      "name": "TL_SLE_200-0873_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324473.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_444",
+      "name": "TL_SLE_200-0874_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324472.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_445",
+      "name": "TL_SLE_200-0875_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324481.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_446",
+      "name": "TL_SLE_200-0961_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324475.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_447",
+      "name": "TL_SLE_200-1214_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324477.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_448",
+      "name": "TL_SLE_200-1215_live_cells.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26324476.2",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_449",
+      "name": "AMP-RA.SLE_clinical.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn47136972.4",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_450",
+      "name": "AMP RA.SLE PhaseI CyTOF",
+      "description": "Synapse Dataset metadata schema for syn61917712",
+      "contentUrl": "https://www.synapse.org/Synapse:syn61917712",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema",
+      "name": "AMP RA.SLE PhaseI CyTOF (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn61917712: 33 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/id/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/name/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/metadataType",
+          "name": "metadataType",
+          "description": "Column 'metadataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/metadataType/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "metadataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/assay/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/dataLevel",
+          "name": "dataLevel",
+          "description": "Column 'dataLevel'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/dataLevel/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "dataLevel"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/isMultiSpecimen",
+          "name": "isMultiSpecimen",
+          "description": "Column 'isMultiSpecimen'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/isMultiSpecimen/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "isMultiSpecimen"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/tissue",
+          "name": "tissue",
+          "description": "Column 'tissue'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/tissue/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "tissue"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/markerPanel",
+          "name": "markerPanel",
+          "description": "Column 'markerPanel'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/markerPanel/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "markerPanel"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/platform",
+          "name": "platform",
+          "description": "Column 'platform'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/platform/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "platform"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/program",
+          "name": "program",
+          "description": "Column 'program'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/program/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "program"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/project",
+          "name": "project",
+          "description": "Column 'project'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/project/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "project"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/study",
+          "name": "study",
+          "description": "Column 'study'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/study/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "study"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/etag/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/path",
+          "name": "path",
+          "description": "Column 'path'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/path/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "path"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/dataFileName",
+          "name": "dataFileName",
+          "description": "Column 'dataFileName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/dataFileName/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "dataFileName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/dataFileConcreteType",
+          "name": "dataFileConcreteType",
+          "description": "Column 'dataFileConcreteType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/dataFileConcreteType/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "dataFileConcreteType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/dataFileBucket",
+          "name": "dataFileBucket",
+          "description": "Column 'dataFileBucket'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/dataFileBucket/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "dataFileBucket"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/dataFileKey",
+          "name": "dataFileKey",
+          "description": "Column 'dataFileKey'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_PhaseI_CyTOF-schema/dataFileKey/source",
+            "fileObject": {
+              "@id": "file_450"
+            },
+            "extract": {
+              "column": "dataFileKey"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

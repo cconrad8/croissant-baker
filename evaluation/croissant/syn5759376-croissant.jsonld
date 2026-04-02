@@ -1,0 +1,574 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "ACT",
+  "description": "Dataset 'ACT' from Synapse (syn5759376)",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "ACT. Synapse ID: syn5759376. https://www.synapse.org/Synapse:syn5759376",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Mette Peters",
+    "url": "https://www.synapse.org/#!Profile:273995"
+  },
+  "datePublished": "2026-04-02 11:30:25.395",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn5759376",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "ACT_Proteomics_PFC_MODULEASSIGNMENTS.csv",
+      "contentSize": "1085607",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7417624",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "9519e677e7594e7df9e8b0f9b6a73ff5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "ACT_Proteomics_PFC_PROTEININPUT.txt",
+      "contentSize": "3423187",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7421971",
+      "encodingFormat": "text/plain",
+      "md5": "a928725885dd2de0de2809a525cec072"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "ACT_Proteomics_PFC_WGCNACODE.R",
+      "contentSize": "18686",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7417625",
+      "encodingFormat": "text/plain",
+      "md5": "a1e00cc6ad2147e623b50cc021f6045e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "ACT_Proteomics_PFC_TRAITS.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6098356",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6042896",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6042903",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6042921",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6042932",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6043017",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6043210",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6043408",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6043567",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6043691",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6043821",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6043846",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6043870",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6043902",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6043928",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6043934",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act27.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6043944",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act29.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6043952",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act33.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6043955",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act36.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6043957",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act37.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6043961",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act38.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6043976",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act40.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044019",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act41.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044148",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act43.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044181",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act44.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044187",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act46.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044190",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act47.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044195",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act48.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044200",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act50.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044215",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act51.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044218",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act52.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044227",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act55.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044318",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act56.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044322",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act57.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044350",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act59.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044397",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act61.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044406",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act62.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044409",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act64.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044414",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "ACT_Proteomics_PFC_RAW_ad_act66.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044419",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "ACT_Proteomics_PFC_RAW_asym_act04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044461",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "ACT_Proteomics_PFC_RAW_asym_act09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044470",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "ACT_Proteomics_PFC_RAW_asym_act13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044482",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "ACT_Proteomics_PFC_RAW_asym_act14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044525",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "ACT_Proteomics_PFC_RAW_asym_act21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044533",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "ACT_Proteomics_PFC_RAW_asym_act22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044616",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "ACT_Proteomics_PFC_RAW_asym_act26.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044637",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "ACT_Proteomics_PFC_RAW_asym_act28.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044667",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "ACT_Proteomics_PFC_RAW_asym_act30.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044670",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "ACT_Proteomics_PFC_RAW_asym_act32.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044674",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "ACT_Proteomics_PFC_RAW_asym_act34.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044678",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "ACT_Proteomics_PFC_RAW_asym_act35.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044693",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "ACT_Proteomics_PFC_RAW_asym_act42.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044697",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "ACT_Proteomics_PFC_RAW_asym_act54.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044700",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "ACT_Proteomics_PFC_RAW_asym_act60.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044704",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "ACT_Proteomics_PFC_RAW_ctl_act05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044710",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "ACT_Proteomics_PFC_RAW_ctl_act17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044715",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "ACT_Proteomics_PFC_RAW_ctl_act18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044724",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "ACT_Proteomics_PFC_RAW_ctl_act25.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044726",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "ACT_Proteomics_PFC_RAW_ctl_act31.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044732",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "ACT_Proteomics_PFC_RAW_ctl_act39.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044734",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "ACT_Proteomics_PFC_RAW_ctl_act49.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044738",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "ACT_Proteomics_PFC_RAW_ctl_act53.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044745",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "ACT_Proteomics_PFC_RAW_ctl_act58.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044751",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "ACT_Proteomics_PFC_RAW_ctl_act63.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044753",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "ACT_Proteomics_PFC_RAW_ctl_act65.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6044755",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "ACT_Proteomics_PFC_DATABASE.fasta",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6098365",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "ACT_Proteomics_PFC_PROTEINOUTPUT.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6098424",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "ACT_Proteomics_PFC_SEARCHPARAMS.xml",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6098366",
+      "encodingFormat": "text/xml"
+    }
+  ]
+}

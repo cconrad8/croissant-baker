@@ -1,0 +1,944 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Germline Genomic Variants - Strelka Pipeline (from syn31621349)",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Germline Genomic Variants - Strelka Pipeline (from syn31621349). Synapse ID: syn35562796. https://www.synapse.org/Synapse:syn35562796",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:18:31.596",
+  "keywords": [
+    "Strelka",
+    "WGS",
+    "germline variants",
+    "NF1",
+    "cNF"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn35562796",
+  "version": "5",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "Strelka_VA01_genome.vcf.gz",
+      "contentSize": "2037064260",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624637.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c00323631ad8b497eac030b7618d133a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "Strelka_VA01_genome.vcf.gz.tbi",
+      "contentSize": "1220688",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624532.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "33c0371018f988f2dede3c62fe25345a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "Strelka_VA01_variants.vcf.gz",
+      "contentSize": "65325676",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624543.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3891d1c3ea1c686e54f949e9b20a6b3d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "Strelka_VA01_variants.vcf.gz.tbi",
+      "contentSize": "1609167",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624546.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "77838c9101f1eab9dfe051508127f207"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "Strelka_VA02_genome.vcf.gz",
+      "contentSize": "2842540324",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624735.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ac84734b563251bede670cbecad0ba29"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "Strelka_VA02_genome.vcf.gz.tbi",
+      "contentSize": "1304243",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624611.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4b3a698feb450353362fb523bcdd3dae"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "Strelka_VA02_variants.vcf.gz",
+      "contentSize": "111654181",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624616.1",
+      "encodingFormat": "application/gzip",
+      "md5": "cd2a326b2768a5c02087f0c5f8e22b29"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "Strelka_VA02_variants.vcf.gz.tbi",
+      "contentSize": "1650433",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624613.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "6887691f12f551aa0143031a17995202"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "Strelka_VA03_genome.vcf.gz",
+      "contentSize": "1780108034",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624852.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a466cb7d53496375f566f9eb0f442828"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "Strelka_VA03_genome.vcf.gz.tbi",
+      "contentSize": "1174057",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624740.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "2abf06fac63ea9d801f4613725a1a42c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "Strelka_VA03_variants.vcf.gz",
+      "contentSize": "47209756",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624785.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6efa610eb685893fa257552cae97cef1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "Strelka_VA03_variants.vcf.gz.tbi",
+      "contentSize": "1595481",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624796.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "9b9e08bd59284368871e624b7577667e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "Strelka_VA04_genome.vcf.gz",
+      "contentSize": "2807440730",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624966.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4edc6720b24b8555ae37f37ce50037fb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "Strelka_VA04_genome.vcf.gz.tbi",
+      "contentSize": "1300405",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624874.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "a317677de8214a9146f539283fdb8d18"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "Strelka_VA04_variants.vcf.gz",
+      "contentSize": "95662566",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624879.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1bbbeb4a9c87e8a4ee41496d286af6d3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "Strelka_VA04_variants.vcf.gz.tbi",
+      "contentSize": "1639486",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624878.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "b52641e52b3208c0d52e4dcf0bb90298"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "Strelka_VA05_genome.vcf.gz",
+      "contentSize": "3028105663",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624969.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d4f0b282848d7f0f4191a8e0bd98051a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "Strelka_VA05_genome.vcf.gz.tbi",
+      "contentSize": "1302419",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624918.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4a8214f497918fe32100e697fe504165"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "Strelka_VA05_variants.vcf.gz",
+      "contentSize": "118555594",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624939.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ab778cd49835020f0fafbd628d2c0dc6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "Strelka_VA05_variants.vcf.gz.tbi",
+      "contentSize": "1648602",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624920.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "2c7fdb8261fe151ee752b939ec4899d2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "Strelka_VA06_genome.vcf.gz",
+      "contentSize": "2976460911",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624999.1",
+      "encodingFormat": "application/gzip",
+      "md5": "543fe42a2d023837000b5b7cd1686fae"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "Strelka_VA06_genome.vcf.gz.tbi",
+      "contentSize": "1299466",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624923.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "16d0d0fe1c80e7e859c365c4ccab75ce"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "Strelka_VA06_variants.vcf.gz",
+      "contentSize": "99604648",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624929.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b3a41fc321a481a0a62c8be928e890ee"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "Strelka_VA06_variants.vcf.gz.tbi",
+      "contentSize": "1635882",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624927.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "0d758a4caf59323b433d52d3b87b9fbf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "Strelka_VA07_genome.vcf.gz",
+      "contentSize": "2573036838",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31625040.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1ec8a616692e5063ed5cfb53e1bfbbf0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "Strelka_VA07_genome.vcf.gz.tbi",
+      "contentSize": "1291412",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624967.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "92c2ba9f655a40d4aa0ea94daf92805b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "Strelka_VA07_variants.vcf.gz",
+      "contentSize": "103984977",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624978.1",
+      "encodingFormat": "application/gzip",
+      "md5": "99bc20e83605f55fbb8c41f0a03ceb55"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "Strelka_VA07_variants.vcf.gz.tbi",
+      "contentSize": "1638707",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624974.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "8ddc2eb12075b93176c5f89d8a3d98ed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "Strelka_VA08_genome.vcf.gz",
+      "contentSize": "2589438289",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31625270.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fca2fec4f9eb74feeae5de908a35f0a4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "Strelka_VA08_genome.vcf.gz.tbi",
+      "contentSize": "1294241",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31625012.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4d9b887f9430706744cb7fbd5d5a408b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "Strelka_VA08_variants.vcf.gz",
+      "contentSize": "106028358",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31625014.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9a6bac02259da68ddaa2a0327d689fc2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "Strelka_VA08_variants.vcf.gz.tbi",
+      "contentSize": "1646837",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31625011.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "d98f93962d009301ba66f4c76c76d9a8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "Strelka_VA09_genome.vcf.gz",
+      "contentSize": "2163939659",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31625267.1",
+      "encodingFormat": "application/gzip",
+      "md5": "380e6fbf7bf8248e77e1bb4c13976c1c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "Strelka_VA09_genome.vcf.gz.tbi",
+      "contentSize": "1242226",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31625233.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "e81edfa985a64668b2e8c319c7163c30"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "Strelka_VA09_variants.vcf.gz",
+      "contentSize": "87842701",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31625246.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c1dfdcb5718778950cc7abd4ca410c85"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "Strelka_VA09_variants.vcf.gz.tbi",
+      "contentSize": "1632183",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31625237.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "9826bcd2f8471b42e63eeb09fe520759"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "Strelka_alt_genome.vcf.gz",
+      "contentSize": "874334387",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31625257.1",
+      "encodingFormat": "application/gzip",
+      "md5": "26896cad4fd220a3ee91b74b1d50746d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "Strelka_alt_genome.vcf.gz.tbi",
+      "contentSize": "917391",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31625254.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "c34b044cca3931e50432aee5617f3bc0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "Strelka_alt_variants.vcf.gz",
+      "contentSize": "22049729",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31625253.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f0a0ebbcbdbf5b9a24a027edfafab6ed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "Strelka_alt_variants.vcf.gz.tbi",
+      "contentSize": "1534420",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31625239.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "26cee173525d55b8575d82ba7673a9e7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "Germline Genomic Variants - Strelka Pipeline (from syn31621349)",
+      "description": "Synapse Dataset metadata schema for syn35562796",
+      "contentUrl": "https://www.synapse.org/Synapse:syn35562796",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema",
+      "name": "Germline Genomic Variants - Strelka Pipeline (from syn31621349) (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn35562796: 31 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/id/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/name/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/etag/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/type/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/assay/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/nf1Genotype",
+          "name": "nf1Genotype",
+          "description": "Column 'nf1Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/nf1Genotype/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "nf1Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/nf2Genotype",
+          "name": "nf2Genotype",
+          "description": "Column 'nf2Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/nf2Genotype/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "nf2Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/species/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/workflow",
+          "name": "workflow",
+          "description": "Column 'workflow'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/workflow/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "workflow"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/workflowLink",
+          "name": "workflowLink",
+          "description": "Column 'workflowLink'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31621349_-schema/workflowLink/source",
+            "fileObject": {
+              "@id": "file_40"
+            },
+            "extract": {
+              "column": "workflowLink"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

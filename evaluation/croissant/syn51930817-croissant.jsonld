@@ -1,0 +1,940 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Gene Expression Quantification from RNA-seq",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Gene Expression Quantification from RNA-seq. Synapse ID: syn51930817. https://www.synapse.org/Synapse:syn51930817",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF Service"
+  },
+  "datePublished": "2026-04-02 11:12:48.902",
+  "keywords": [
+    "NF1",
+    "Neurofibromatosis type 1",
+    "Schwann cell",
+    "hESC",
+    "SMASh",
+    "gene editing",
+    "RNA-seq",
+    "gene expression",
+    "quantification"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn51930817",
+  "version": "7",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "quant.genes.sf",
+      "contentSize": "2392912",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51478239.2",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "6632647471f47c975945c61f1f4604eb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "quant.sf",
+      "contentSize": "11436062",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51478242.2",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "e392e3d78015a448b070480ee8b2e0aa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "quant.genes.sf",
+      "contentSize": "2403490",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51478248.2",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "382db568b6dd2887674ea0e29a7bcedf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "quant.sf",
+      "contentSize": "11455704",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51478282.2",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "9b52f208b9c5db3893fe8417d885a390"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "quant.sf",
+      "contentSize": "11439339",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51478307.2",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "a282124640d442e4ec8e1ba195f4055d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "quant.sf",
+      "contentSize": "11450969",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51478331.2",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "dd426339265e398ffae7f95bd01abb13"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "quant.genes.sf",
+      "contentSize": "2350451",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51478450.2",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "64837fa93f9bf1f3bef33a3a6416e579"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "quant.sf",
+      "contentSize": "11437700",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51478458.2",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "76364bde1f452d993e594915b6e83580"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "quant.sf",
+      "contentSize": "11435443",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51478491.2",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "1f8edb6a479eae38d97afc64aefbbb31"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "quant.sf",
+      "contentSize": "11445826",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51478540.2",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "2d7a4474908490cb27f5cbb879333c8b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "quant.genes.sf",
+      "contentSize": "2375817",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51478612.2",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "082d5c272476b4d0c61b1187fcb75089"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "quant.sf",
+      "contentSize": "11435208",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51478689.2",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "87bebc29ced36e44305b4753f202d988"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "quant.genes.sf",
+      "contentSize": "2394988",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51484569.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "19d6b27551b5c716a0147e023f452f95"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "quant.genes.sf",
+      "contentSize": "2375836",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51484599.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "c37ff5d0c00202feb0c422816ae90038"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "quant.genes.sf",
+      "contentSize": "2394425",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51484601.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "19e1e66acb62b349b0992eda02053165"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "quant.sf",
+      "contentSize": "11435196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51484604.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "f6057450d4e94d618ba4f599ce42c31a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "quant.genes.sf",
+      "contentSize": "2386474",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51484609.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "23edece0eb769a0a398f958c075c28fc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "quant.genes.sf",
+      "contentSize": "2390589",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51484631.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "abb33382f38982dcdb4b1b570309aeda"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "quant.sf",
+      "contentSize": "11437413",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51484651.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "389fee9de9933175427d501f33e4fc53"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "quant.genes.sf",
+      "contentSize": "2363636",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51484655.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "e6e76bf052c4d6b4e92479154885fd93"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "quant.sf",
+      "contentSize": "11433178",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51484668.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "a0d94a9be95a132b9418a6d6b23a0866"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "quant.genes.sf",
+      "contentSize": "2392446",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51484724.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "04ef7cd0d2e84b3e11232fc8d03c2f8b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "quant.sf",
+      "contentSize": "11440397",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51484748.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "908af39c6f7836b7449210a6f7504282"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "quant.sf",
+      "contentSize": "11448389",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51485152.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "69b7b990f7c1983ffff6362453a0a06d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "quant.genes.sf",
+      "contentSize": "2372661",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51485187.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "423de2803e81283d49a662fede7ad9ee"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "quant.genes.sf",
+      "contentSize": "2391142",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51485206.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "bae03a1cccd781c4e931a1aa3bfe6128"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "quant.sf",
+      "contentSize": "11434872",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51485210.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "0ca895dbee39ddddf68d038226e38b43"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "quant.genes.sf",
+      "contentSize": "2391139",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51485284.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "73f03522492252aa4f1403b7cbcb7893"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "quant.genes.sf",
+      "contentSize": "2391974",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51485391.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "9fcf1ec4345c3d1de93a1a0239b2da7d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "quant.sf",
+      "contentSize": "11442665",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51485405.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "2ae3989fd13a4fcffd72a50eace12e0b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "quant.genes.sf",
+      "contentSize": "2397795",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51485605.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "80d1c59fb48ea29ff4f71fe9adf5f922"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "quant.sf",
+      "contentSize": "11430985",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51485869.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "f1bdcd0d304abadca0fe40acf6627800"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "Gene Expression Quantification from RNA-seq",
+      "description": "Synapse Dataset metadata schema for syn51930817",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51930817",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Gene_Expression_Quantification_from_RNA-seq-schema",
+      "name": "Gene Expression Quantification from RNA-seq (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn51930817: 35 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/id/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/name/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/description",
+          "name": "description",
+          "description": "Column 'description'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/description/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "description"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/etag/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/type/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/dataFileConcreteType",
+          "name": "dataFileConcreteType",
+          "description": "Column 'dataFileConcreteType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/dataFileConcreteType/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "dataFileConcreteType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/dataFileBucket",
+          "name": "dataFileBucket",
+          "description": "Column 'dataFileBucket'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/dataFileBucket/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "dataFileBucket"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/dataFileKey",
+          "name": "dataFileKey",
+          "description": "Column 'dataFileKey'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/dataFileKey/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "dataFileKey"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/Component",
+          "name": "Component",
+          "description": "Column 'Component'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/Component/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "Component"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/assay/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/cellType",
+          "name": "cellType",
+          "description": "Column 'cellType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/cellType/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "cellType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/expressionUnit",
+          "name": "expressionUnit",
+          "description": "Column 'expressionUnit'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/expressionUnit/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "expressionUnit"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/isCellLine",
+          "name": "isCellLine",
+          "description": "Column 'isCellLine'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/isCellLine/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "isCellLine"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/nf1Genotype",
+          "name": "nf1Genotype",
+          "description": "Column 'nf1Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/nf1Genotype/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "nf1Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/species/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/specimenPreparationMethod",
+          "name": "specimenPreparationMethod",
+          "description": "Column 'specimenPreparationMethod'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/specimenPreparationMethod/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "specimenPreparationMethod"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/tumorType",
+          "name": "tumorType",
+          "description": "Column 'tumorType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/tumorType/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "tumorType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/workflow",
+          "name": "workflow",
+          "description": "Column 'workflow'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/workflow/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "workflow"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/workflowLink",
+          "name": "workflowLink",
+          "description": "Column 'workflowLink'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/workflowLink/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "workflowLink"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_Expression_Quantification_from_RNA-seq-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_32"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

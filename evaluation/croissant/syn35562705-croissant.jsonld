@@ -1,0 +1,1963 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Germline Genomic Variants - DeepVariant Pipeline (from syn31668189)",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Germline Genomic Variants - DeepVariant Pipeline (from syn31668189). Synapse ID: syn35562705. https://www.synapse.org/Synapse:syn35562705",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:14:45.952",
+  "keywords": [
+    "DeepVariant",
+    "WES",
+    "germline variants",
+    "NF1"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn35562705",
+  "version": "6",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "2-001_Blood.vcf.gz",
+      "contentSize": "11600801",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689771.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2e22b044f636eebdde416d82f8206ca2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "2-001_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "10471728",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689754.1",
+      "encodingFormat": "application/gzip",
+      "md5": "70c16424b4d7e9cababf4ee769f8ad31"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "2-002_Blood.vcf.gz",
+      "contentSize": "9764753",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689795.1",
+      "encodingFormat": "application/gzip",
+      "md5": "af7ca99e5a09b23f42a318c4127823ee"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "2-002_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz",
+      "contentSize": "7568831",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689801.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f6216316d5fcedce03f55a6ebaa7bd7a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "2-004_Blood.vcf.gz",
+      "contentSize": "11935181",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689840.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9ca77fbbfc55691ec72eb8c590453174"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "2-004_NF_Cell_Line.vcf.gz",
+      "contentSize": "12582728",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689846.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fe286906e01e1679e3c6cf61125147ce"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "2-004_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "12108868",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689877.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a421999a0a0d34ac17418974e4030ea0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "2-004_pNF_Cell_Line.vcf.gz",
+      "contentSize": "10883317",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689905.1",
+      "encodingFormat": "application/gzip",
+      "md5": "02ef7f5078728ae86476b40aa5988f69"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "2-005_Blood.vcf.gz",
+      "contentSize": "11895348",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689925.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e9719c192a0b1420e04fc2d0fc091926"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "2-005_Neurofibroma.vcf.gz",
+      "contentSize": "13120646",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689929.1",
+      "encodingFormat": "application/gzip",
+      "md5": "bddff55422d5cb89da8c1774839545fb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "2-006_Blood.vcf.gz",
+      "contentSize": "11719476",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689961.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a8b43bbc4709c5bd44beb687eaa6c08a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "2-006_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "15290205",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689976.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2c3af42a0e7330d0428980aece863499"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "2-009_Blood.vcf.gz",
+      "contentSize": "9482067",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690007.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d3bb399e3254f0d43f33d9b88a6269a4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "2-009_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz",
+      "contentSize": "6798085",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690012.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b396b7bfefa8c2bc57de9531977adac8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "2-010_Blood.vcf.gz",
+      "contentSize": "12237509",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690026.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f9df3469d8970e0d4879394b3a1c127d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "2-010_Neurofibroma.vcf.gz",
+      "contentSize": "11344143",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690037.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fcc3ce555cd18404acdd4c3549c5be7b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "2-012_Blood.vcf.gz",
+      "contentSize": "12705315",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690079.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d8254566b86cd70b7602534631016060"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "2-012_Neurofibroma.vcf.gz",
+      "contentSize": "12255061",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690089.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f29ccc6c7f2338742775a438dc57cd06"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "2-013_Blood.vcf.gz",
+      "contentSize": "12692807",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690124.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ea1d08250670e250c52376901d5ce56e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "2-013_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "16981737",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690114.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5dbe57ba60983e07d5fbf4fb6871e5b5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "2-014_Blood.vcf.gz",
+      "contentSize": "10807458",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690142.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6e310c12dc216a9996e3b0c9c8393af7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "2-014_Neurofibroma.vcf.gz",
+      "contentSize": "9103484",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690161.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4959c16b43a0955a2a3c18311c4f8de6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "2-015_Blood.vcf.gz",
+      "contentSize": "9837078",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690177.1",
+      "encodingFormat": "application/gzip",
+      "md5": "796d71735f1421bfed584d63549ddbaf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "2-015_Neurofibroma.vcf.gz",
+      "contentSize": "11493306",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690188.1",
+      "encodingFormat": "application/gzip",
+      "md5": "aedd3541fb34b136c7949a8c2cd281bf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "2-015_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "10658923",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690207.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d11d391d71bb325a77afbb3861aa4157"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "2-016_Blood.vcf.gz",
+      "contentSize": "11859609",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690242.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a9fa893578e4f2fa0e84853616e8f260"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "2-016_Neurofibroma.vcf.gz",
+      "contentSize": "11833419",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690250.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2197b10831dfddc4180cd8566ffc5ffa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "2-017_Blood.vcf.gz",
+      "contentSize": "10458709",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690273.1",
+      "encodingFormat": "application/gzip",
+      "md5": "71f0b38690105e38a0c5121f486b8570"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "2-017_Neurofibroma.vcf.gz",
+      "contentSize": "10190898",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690300.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f9a8ca11bd8351b7e5929eac97183691"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "2-019_Blood.vcf.gz",
+      "contentSize": "11264403",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690321.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6652aaeb837877ae698bc56ab6e3a7ce"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "2-019_Neurofibroma.vcf.gz",
+      "contentSize": "11587914",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690322.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ccebed1851151be8a3145b42c10307fd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "2-021_Blood.vcf.gz",
+      "contentSize": "10331585",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690353.1",
+      "encodingFormat": "application/gzip",
+      "md5": "cb269f87e6069a66d2e96c18f59f7f97"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "2-021_Neurofibroma.vcf.gz",
+      "contentSize": "12232408",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690361.1",
+      "encodingFormat": "application/gzip",
+      "md5": "51023e65a37b50c1b3de21f98b258a91"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "2-023_Blood.vcf.gz",
+      "contentSize": "11585034",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690386.1",
+      "encodingFormat": "application/gzip",
+      "md5": "26f4955ad3ef29c108f78af224c8f67f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "2-023_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz",
+      "contentSize": "7983761",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690403.1",
+      "encodingFormat": "application/gzip",
+      "md5": "12b59c752536ba0113a961ea5ebca225"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "2-023_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "11684137",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690415.1",
+      "encodingFormat": "application/gzip",
+      "md5": "bdf21efc4b7c75871480570dc24f4b17"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "2-025_Blood.vcf.gz",
+      "contentSize": "10681042",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690506.1",
+      "encodingFormat": "application/gzip",
+      "md5": "cf7e721d8c865d215c1f0fdf3e7746b9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "2-025_Neurofibroma.vcf.gz",
+      "contentSize": "11068189",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690458.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0a806bc272a08f19534aa6794f5d5827"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "2-026_Blood.vcf.gz",
+      "contentSize": "9138273",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690485.1",
+      "encodingFormat": "application/gzip",
+      "md5": "93aaad10ebdb9929451e82a2a80419a1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "2-026_Neurofibroma.vcf.gz",
+      "contentSize": "10107643",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690505.1",
+      "encodingFormat": "application/gzip",
+      "md5": "159e0cf10fee796a67ededb48accd5a3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "2-029_Blood.vcf.gz",
+      "contentSize": "11777465",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690520.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2140af3d9b9193bf95de438a1a8d7344"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "2-029_Neurofibroma.vcf.gz",
+      "contentSize": "11942980",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690585.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6e4f0eb397a96bd62180433c90c46ace"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "2-031_Blood.vcf.gz",
+      "contentSize": "11131141",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690557.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d0436517d884202e3d48f7dca2baabc3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "2-031_Cell_Line.vcf.gz",
+      "contentSize": "8827190",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690644.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f879c1fada31be196e78b0a3f0fb66ac"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "2-031_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz",
+      "contentSize": "11635363",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690591.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8a153087ef84c7199f1f7b5788d06031"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "2-032_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "10366157",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690619.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e8981ba58685c994647446d49de4c6cc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "2-032_Skin.vcf.gz",
+      "contentSize": "9810165",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690657.1",
+      "encodingFormat": "application/gzip",
+      "md5": "73d566b5056ac32dc0019831d68357b9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "2_002_Plexiform_Neurofibroma_TD.vcf.gz",
+      "contentSize": "10303773",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690653.1",
+      "encodingFormat": "application/gzip",
+      "md5": "97af40a29e4ea2136dc39fd2c06e2c62"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "2_009_Neurofibroma_TD.vcf.gz",
+      "contentSize": "10411695",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690704.1",
+      "encodingFormat": "application/gzip",
+      "md5": "269a5a06337d5f8bd9fa4e24e7973f43"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "2_015_Malignant_Peripheral_Nerve_Sheath_Tumor_TD.vcf.gz",
+      "contentSize": "9634333",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690720.1",
+      "encodingFormat": "application/gzip",
+      "md5": "53e9e6d20355ca1d255160637a98a0cd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "2_015_TD.vcf.gz",
+      "contentSize": "10741832",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690758.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c5a60ed66384472c1c76db0b6b68bd90"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "2_016_TD.vcf.gz",
+      "contentSize": "11098428",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690781.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5a4fc63687e75d629243b78c39e3b1b5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "TWFE-2-002-20.vcf.gz",
+      "contentSize": "6528209",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690810.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9d8a2f1ec247addbefa49957f946d0a5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "TWFE-2-002-30.vcf.gz",
+      "contentSize": "5756714",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690833.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4d7cdcbfe93a21f9b37b63033927b87a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "TWFE-2-002-JHK6.vcf.gz",
+      "contentSize": "6047334",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690866.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3182dba26a4e513a349e245a78fb96a7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "TWFE-2-009-23.vcf.gz",
+      "contentSize": "6386841",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690869.1",
+      "encodingFormat": "application/gzip",
+      "md5": "187ec90ae9eb036f272be9a4ee1d8776"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "TWFE-2-023-21.vcf.gz",
+      "contentSize": "7675829",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690915.1",
+      "encodingFormat": "application/gzip",
+      "md5": "dafbaf784b2708bedca1ec2b3035952c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "TWFE-2-0234-6.vcf.gz",
+      "contentSize": "6418406",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690930.1",
+      "encodingFormat": "application/gzip",
+      "md5": "eaf34c1bcaa47a7a17d980b7133a4573"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "TWFE-2-044-22.vcf.gz",
+      "contentSize": "6147120",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690972.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9dc2e554dbefca808bf33c8203880f41"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "TWFE-2-044-34.vcf.gz",
+      "contentSize": "6401238",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691010.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fa9f7de79e9231294334f8e7efc272b1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "TWFE-2-045-24.vcf.gz",
+      "contentSize": "5681686",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690989.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9420fc5a1c8532aaee9d8dd7ad123f15"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "TWFE-2-045-25.vcf.gz",
+      "contentSize": "6867699",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691016.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3436c6499e464c7f1e1a58ee3e78dad6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "TWFE-2-045-26.vcf.gz",
+      "contentSize": "5752385",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691032.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8dc8440ab83c8a07e7fc0c1a0cafdbeb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "TWFE-2-054-3.vcf.gz",
+      "contentSize": "6165241",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691048.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8acc4b99a642ba63a8c5afb10de6ea14"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "TWFE-2-054-33.vcf.gz",
+      "contentSize": "5681625",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691049.1",
+      "encodingFormat": "application/gzip",
+      "md5": "733e8d7e4c210703b7cde5ed867df264"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "TWFE-2-054-40.vcf.gz",
+      "contentSize": "6341936",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691087.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0a37b89b3984d5b6dd58d2c19a06ef4b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "TWFE-2-055-13.vcf.gz",
+      "contentSize": "6340271",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691104.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5ba4c91a7adbf9a57c3cdef71365041d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "TWFE-2-055-14.vcf.gz",
+      "contentSize": "5750021",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691140.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9037992e8f418e0dbd84e645354f084d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "TWFE-2-055-15.vcf.gz",
+      "contentSize": "5555807",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691170.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ed4f94b482ef6e33f9b5e6559ce89c9f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "TWFE-2-055-41.vcf.gz",
+      "contentSize": "6188777",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691203.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d8487805bc9b6451f2c065387fa4f415"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "TWFE-2-057-28.vcf.gz",
+      "contentSize": "6453106",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691205.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2ff33e0d0a8ad505cee419072ade3cdb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "TWFE-2-057-42.vcf.gz",
+      "contentSize": "5490444",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691237.1",
+      "encodingFormat": "application/gzip",
+      "md5": "817a7ae0458eb051b634ea72838f26ac"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "TWFE-2-060-38.vcf.gz",
+      "contentSize": "6591281",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691236.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f06161b11148490ffe05f2de281288ee"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "TWFE-2-060-5.vcf.gz",
+      "contentSize": "5963770",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691270.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c116a63eab4bf7ecf061276a40e6a794"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "TWFE-2-060-7.vcf.gz",
+      "contentSize": "6468769",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691306.1",
+      "encodingFormat": "application/gzip",
+      "md5": "48ab7098d496b8b9542a17ab239742d6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "TWFE-2-060-JHK1.vcf.gz",
+      "contentSize": "6033771",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691337.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fb7e8552c517cab50a6d19a1652347cb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "TWFE-2-061-11.vcf.gz",
+      "contentSize": "6469188",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691343.1",
+      "encodingFormat": "application/gzip",
+      "md5": "41ea1536078a65d0a47b77328722a00c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "TWFE-2-061-27.vcf.gz",
+      "contentSize": "6958684",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691331.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4dfb9a0bbe8c81b686431e6279ce328b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "TWFE-2-061-43.vcf.gz",
+      "contentSize": "6678894",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691392.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1f1c791c42e4734755f20fa40b72dd68"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "TWFE-2-068-10.vcf.gz",
+      "contentSize": "6710875",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691394.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e140c93b8427c2f69b6ab5ed876f96da"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "TWFE-2-068-12.vcf.gz",
+      "contentSize": "6577350",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691427.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8543fdeb963e9410ac20f0f99347fab4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "TWFE-2-068-44.vcf.gz",
+      "contentSize": "6641716",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691445.1",
+      "encodingFormat": "application/gzip",
+      "md5": "70eaf810d7aca4d3d3cc76cbb5e4ca63"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "TWFE-2-068-8.vcf.gz",
+      "contentSize": "6291368",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691455.1",
+      "encodingFormat": "application/gzip",
+      "md5": "eba6cffe02da17120b0a3ce8866938a1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "TWFE-2-068-9.vcf.gz",
+      "contentSize": "6240587",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691482.1",
+      "encodingFormat": "application/gzip",
+      "md5": "cf66a9e47252bdcc1eed84361aca0836"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "TWFE-2-072-1.vcf.gz",
+      "contentSize": "6329675",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691510.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7a76c0497cf8decbe593107a6897f1a1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "TWFE-2-072-45.vcf.gz",
+      "contentSize": "7160456",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691535.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2e3f30d0dd6ac389813298e382a952ce"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "TWFE-2-074-16.vcf.gz",
+      "contentSize": "7117075",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691546.1",
+      "encodingFormat": "application/gzip",
+      "md5": "708fe2ea6303799dc4734a96e3bb8d38"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "TWFE-2-074-46.vcf.gz",
+      "contentSize": "7889102",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691572.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d4ceb2fa98c0232bb210a9239a680fb5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "TWFE-2-075-29.vcf.gz",
+      "contentSize": "6222156",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691583.1",
+      "encodingFormat": "application/gzip",
+      "md5": "868aae09b0af31f5f62105cc9464b6c5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "TWFE-2-075-31.vcf.gz",
+      "contentSize": "6054565",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691612.1",
+      "encodingFormat": "application/gzip",
+      "md5": "78001bef9882be9c0b9aedfd0921c8a1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "TWFE-2-075-JHK2.vcf.gz",
+      "contentSize": "6079969",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691621.1",
+      "encodingFormat": "application/gzip",
+      "md5": "600aa190e8fdcf53992517a75f9b92c0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "TWFE-2-076-17.vcf.gz",
+      "contentSize": "5616896",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691648.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c482f7a7fe2ab1aea7dec05a9eb1f45e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "TWFE-2-076-4.vcf.gz",
+      "contentSize": "6279809",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691658.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9041287edbfbfbb47866da4d065122ad"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "TWFE-2-076-JHK3.vcf.gz",
+      "contentSize": "6633530",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691689.1",
+      "encodingFormat": "application/gzip",
+      "md5": "31a18c547990cb55763245de52a3d918"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "TWFE-2-077-18.vcf.gz",
+      "contentSize": "5885059",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691712.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f22d2a0e4bab22af84d779826ab28d10"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "TWFE-2-077-39.vcf.gz",
+      "contentSize": "6507250",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691732.1",
+      "encodingFormat": "application/gzip",
+      "md5": "874143ad418b61bca01dc8773f54c029"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "TWFE-2-077-JHK4.vcf.gz",
+      "contentSize": "6817923",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691771.1",
+      "encodingFormat": "application/gzip",
+      "md5": "91244b88ede81524886238655227706f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "TWFE-2-079-32.vcf.gz",
+      "contentSize": "6939399",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691772.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5f25c42f7145e5cfde72019b76826619"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "TWFE-2-079-47.vcf.gz",
+      "contentSize": "7923540",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691802.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8c31293e9762d2ae21546347eb730685"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "TWFE-2-082-2.vcf.gz",
+      "contentSize": "6986580",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691795.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c84f55532ab35aa9fe2025f2d6a7db3a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "TWFE-2-082-36.vcf.gz",
+      "contentSize": "5673116",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691887.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1ef1367adeb71b737ef919a23957b84e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "TWFE-2-082-JHK5.vcf.gz",
+      "contentSize": "6513925",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691860.1",
+      "encodingFormat": "application/gzip",
+      "md5": "147f567ade4d1784ffe6c09f21e8ef58"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "TWFE-2-084-19.vcf.gz",
+      "contentSize": "6578095",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691928.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c4981afe314db933d9a8285c98cf88df"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "TWFE-2-084-2-084.vcf.gz",
+      "contentSize": "5620185",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691906.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e4348086a6a6cdf69c03754307b7c284"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "TWFE-2-084-35.vcf.gz",
+      "contentSize": "5868146",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691907.1",
+      "encodingFormat": "application/gzip",
+      "md5": "09793601a5402fb66c165b242d34d234"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "TWFE-2-084-37.vcf.gz",
+      "contentSize": "6246940",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691938.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6f96eca869f050c29f6b80853f1e4bdb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "TWFE-2-085-2.vcf.gz",
+      "contentSize": "5880017",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691960.1",
+      "encodingFormat": "application/gzip",
+      "md5": "456706ee6427083a65c2a3439bb5e2c3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "TWFE-2-085-2-085.vcf.gz",
+      "contentSize": "6358292",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691944.1",
+      "encodingFormat": "application/gzip",
+      "md5": "dc63e72dd94cbc7125c30afccfff9834"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "TWFE-2-086-2-086.vcf.gz",
+      "contentSize": "6296024",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691987.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f2d8ac83b5c6c82a7a8b4fab2f410624"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "TWFE-2-086-2-086LLE.vcf.gz",
+      "contentSize": "6118532",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692009.1",
+      "encodingFormat": "application/gzip",
+      "md5": "eb0a3dc09f2bf255d039ac9b6dd50f3e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "TWFE-2-089-2-089.vcf.gz",
+      "contentSize": "5863106",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692016.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ded144ff1892d6065c809212bbab4a88"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "TWFE-2-089-2-089Tumor.vcf.gz",
+      "contentSize": "5623246",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692020.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f854bff9be01b04d59286bdd28b66279"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "TWFE-2-090-2-090.vcf.gz",
+      "contentSize": "6631313",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692108.1",
+      "encodingFormat": "application/gzip",
+      "md5": "540e32a2146bf883586c5595251887a7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "TWFE-2-090-2-090Benign.vcf.gz",
+      "contentSize": "6687535",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692061.1",
+      "encodingFormat": "application/gzip",
+      "md5": "972d5d6f04c55ce072353b1ded255919"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "TWFE-2-090-2-090MalignantTumor.vcf.gz",
+      "contentSize": "6476129",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692096.1",
+      "encodingFormat": "application/gzip",
+      "md5": "14286d7e46594663e91540cb877ae80e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "TWFE-2-091-2-091.vcf.gz",
+      "contentSize": "5575120",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692122.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3034ac12ca6f1603f88e32420b6590bd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_116",
+      "name": "TWFE-2-091-2-091normal.vcf.gz",
+      "contentSize": "5880368",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692163.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a6b95fe19b3ef8b230e9637fc0795a11"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_117",
+      "name": "TWFE-2-092-2-092.vcf.gz",
+      "contentSize": "5767204",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692174.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6db8c11d4669966efa832d16ad89f4ce"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_118",
+      "name": "TWFE-2-092-2-092LeftFlank.vcf.gz",
+      "contentSize": "5649119",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692178.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c103863d8f148c51c94aebc7a99e1b6c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_119",
+      "name": "TWFE-2-092-2-092RightFlank.vcf.gz",
+      "contentSize": "5329834",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692197.1",
+      "encodingFormat": "application/gzip",
+      "md5": "29d372e67fa982b6a83c8eadc104037e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_120",
+      "name": "TWFE-2-093-2-093.vcf.gz",
+      "contentSize": "6324041",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692214.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0c84d7a3e298e72a0f6e7cb64c06e517"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_121",
+      "name": "TWFE-2-093-2-093RightMiddleBack.vcf.gz",
+      "contentSize": "5645513",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692238.1",
+      "encodingFormat": "application/gzip",
+      "md5": "44fbc9615eb3669d45a428327ee84e29"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_122",
+      "name": "TWFE-2-093-2-093RightUpperBack.vcf.gz",
+      "contentSize": "6180861",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692264.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a0520a5fd681af62ac6e19b2a25a0c7f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_123",
+      "name": "TWFE-2-094-2-094.vcf.gz",
+      "contentSize": "6099714",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692286.1",
+      "encodingFormat": "application/gzip",
+      "md5": "93994dd03578d8a71d668ca894589829"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_124",
+      "name": "TWFE-2-094-2-094ankleRightBx.vcf.gz",
+      "contentSize": "6015858",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692287.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1d9d76ecbdd24d5e5bc5f147396a52d8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_125",
+      "name": "TWFE-2-094-2-094ankleSuperficial.vcf.gz",
+      "contentSize": "5505287",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692314.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b621c1ea69b16783fff4ad792e50d5e6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_126",
+      "name": "TWFE-2-095-2-095.vcf.gz",
+      "contentSize": "6015852",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692390.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3a082803d3e21e6ccb7c8c7f231bbc6a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_127",
+      "name": "TWFE-2-095-2-095tumor.vcf.gz",
+      "contentSize": "5288061",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692343.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ab70a34cca05d7e633c4ea49a09d13b5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_128",
+      "name": "TWFE-2-096-2-096normal.vcf.gz",
+      "contentSize": "5634180",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692378.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f047b454bdb306017389ed48d7e15007"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_129",
+      "name": "TWFE-2-096-2-096tumor.vcf.gz",
+      "contentSize": "5272266",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692448.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d75fafab7e6a6f7d1e1acdcc24e6b457"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_130",
+      "name": "TWFE-2-098-2-098.vcf.gz",
+      "contentSize": "6064576",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692478.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5ba24566f898aecde045ee966af2f85a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_131",
+      "name": "TWFE-2-099-2-099.vcf.gz",
+      "contentSize": "5360698",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692435.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1fdfcd9de2d4d1255d4c3de4fafeb32f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_132",
+      "name": "TWFE-2-099-2-099normal.vcf.gz",
+      "contentSize": "5783534",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692454.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5184829930858b31d1aea6da9ea32806"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_133",
+      "name": "TWFE-2-100-2-100.vcf.gz",
+      "contentSize": "5728812",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692449.1",
+      "encodingFormat": "application/gzip",
+      "md5": "592b5da1c3394de25977f27880ab74fa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_134",
+      "name": "TWFE-2-100-2-100buttocksTumor.vcf.gz",
+      "contentSize": "5712040",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692489.1",
+      "encodingFormat": "application/gzip",
+      "md5": "93f840d9c7df1e1c207ede731200aac0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_135",
+      "name": "TWFE-2-102-2-102.vcf.gz",
+      "contentSize": "5620967",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692498.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ac0dbc41e0b6996f3b3fc56b80fa5118"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_136",
+      "name": "TWFE-2-102-2-102leftBackLesion.vcf.gz",
+      "contentSize": "6084296",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692504.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d4eb5c7eb717f3822c1b524e03a9a467"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_137",
+      "name": "TWFE-2-103-2-103normal.vcf.gz",
+      "contentSize": "6139240",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692536.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e6ca54c35a06c8ef16b12aea32313898"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_138",
+      "name": "TWFE-2-103-2-103tumor.vcf.gz",
+      "contentSize": "6050305",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692596.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c56c992211e80d39c96d1527f620d286"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_139",
+      "name": "TWFE-2-104-2-104normal.vcf.gz",
+      "contentSize": "5251096",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692573.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3cc8a1bffa040543700376df5ac4028d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_140",
+      "name": "TWFE-2-104-2-104tumor.vcf.gz",
+      "contentSize": "5604074",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692570.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a8bac3e3e9080fd2fe07398e84c1629d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_141",
+      "name": "TWFE-2-105-2-105normal.vcf.gz",
+      "contentSize": "5712566",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692598.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0a3d921f063ac8c99005c9623a50f637"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_142",
+      "name": "TWFE-2-106-2-106.vcf.gz",
+      "contentSize": "5601107",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692612.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a327b89fa7d994e423a4398e26fad0c4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_143",
+      "name": "TWFE-2-106-2-106normal.vcf.gz",
+      "contentSize": "6456071",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692644.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c2552f779f319f6ee7b200951bad6187"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_144",
+      "name": "TWFE-2-111-2-111.vcf.gz",
+      "contentSize": "6455960",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692654.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4219f9ce707bb739f1f0ba4974de323d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_145",
+      "name": "TWFE-2-111-2-111tumor.vcf.gz",
+      "contentSize": "5600228",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692665.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8c614bc2cc4a1f44b85e703d82dd3706"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_146",
+      "name": "TWFE-2-113-2-113.vcf.gz",
+      "contentSize": "6263746",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692694.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e2c47e10f1ad294c9f8a2f9651c97116"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_147",
+      "name": "TWFE-2-113-2-113lumbar.vcf.gz",
+      "contentSize": "6113373",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692692.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4d61561d59e214287aadaad2b2191a0c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_148",
+      "name": "Germline Genomic Variants - DeepVariant Pipeline (from syn31668189)",
+      "description": "Synapse Dataset metadata schema for syn35562705",
+      "contentUrl": "https://www.synapse.org/Synapse:syn35562705",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema",
+      "name": "Germline Genomic Variants - DeepVariant Pipeline (from syn31668189) (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn35562705: 34 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/id/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/name/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/etag/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/type/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/assay/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/nf1Genotype",
+          "name": "nf1Genotype",
+          "description": "Column 'nf1Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/nf1Genotype/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "nf1Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/nf2Genotype",
+          "name": "nf2Genotype",
+          "description": "Column 'nf2Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/nf2Genotype/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "nf2Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/progressReportNumber",
+          "name": "progressReportNumber",
+          "description": "Column 'progressReportNumber'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/progressReportNumber/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "progressReportNumber"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/sex",
+          "name": "sex",
+          "description": "Column 'sex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/sex/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "sex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/species/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/workflow",
+          "name": "workflow",
+          "description": "Column 'workflow'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/workflow/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "workflow"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/workflowLink",
+          "name": "workflowLink",
+          "description": "Column 'workflowLink'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31668189_-schema/workflowLink/source",
+            "fileObject": {
+              "@id": "file_148"
+            },
+            "extract": {
+              "column": "workflowLink"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

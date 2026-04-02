@@ -1,0 +1,3837 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Germline Genomic Variants - Strelka Pipeline (from syn31726450)",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Germline Genomic Variants - Strelka Pipeline (from syn31726450). https://doi.org/10.7303/syn35562838",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:15:46.588",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn35562838",
+  "version": "7",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "Strelka_lib003_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743702.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "Strelka_lib003_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743609.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "Strelka_lib003_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743641.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "Strelka_lib003_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743631.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "Strelka_lib009_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743722.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "Strelka_lib009_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743660.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "Strelka_lib009_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743653.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "Strelka_lib009_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743685.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "Strelka_lib012_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743712.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "Strelka_lib012_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743672.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "Strelka_lib012_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743667.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "Strelka_lib012_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743636.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "Strelka_lib014_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743756.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "Strelka_lib014_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743678.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "Strelka_lib014_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743687.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "Strelka_lib014_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743692.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "Strelka_lib019_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743921.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "Strelka_lib019_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743779.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "Strelka_lib019_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743709.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "Strelka_lib019_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743708.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "Strelka_lib023_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743861.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "Strelka_lib023_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743724.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "Strelka_lib023_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743730.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "Strelka_lib023_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743703.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "Strelka_lib027_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743788.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "Strelka_lib027_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743746.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "Strelka_lib027_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743732.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "Strelka_lib027_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743735.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "Strelka_lib032_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743806.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "Strelka_lib032_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743754.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "Strelka_lib032_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743753.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "Strelka_lib032_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743752.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "Strelka_lib036_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743888.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "Strelka_lib036_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743772.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "Strelka_lib036_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743799.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "Strelka_lib036_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743823.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "Strelka_lib041_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743949.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "Strelka_lib041_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743794.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "Strelka_lib041_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743813.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "Strelka_lib041_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743771.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "Strelka_lib052_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743846.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "Strelka_lib052_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743811.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "Strelka_lib052_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743812.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "Strelka_lib052_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743803.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "Strelka_lib060_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743892.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "Strelka_lib060_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743810.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "Strelka_lib060_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743874.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "Strelka_lib060_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743809.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "Strelka_lib061_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743883.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "Strelka_lib061_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743840.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "Strelka_lib061_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743824.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "Strelka_lib061_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743814.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "Strelka_lib065_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743938.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "Strelka_lib065_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743828.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "Strelka_lib065_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743864.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "Strelka_lib065_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743817.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "Strelka_lib066_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744156.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "Strelka_lib066_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743816.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "Strelka_lib066_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743832.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "Strelka_lib066_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743835.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "Strelka_lib067_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744025.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "Strelka_lib067_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743839.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "Strelka_lib067_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743845.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "Strelka_lib067_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743841.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "Strelka_lib068_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743954.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "Strelka_lib068_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743842.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "Strelka_lib068_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743885.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "Strelka_lib068_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743847.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "Strelka_lib070_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743959.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "Strelka_lib070_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743881.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "Strelka_lib070_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743873.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "Strelka_lib070_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743858.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "Strelka_lib071_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744105.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "Strelka_lib071_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743853.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "Strelka_lib071_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743870.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "Strelka_lib071_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743866.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "Strelka_lib072_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743942.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "Strelka_lib072_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743862.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "Strelka_lib072_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743932.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "Strelka_lib072_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743879.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "Strelka_lib073_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743982.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "Strelka_lib073_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743905.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "Strelka_lib073_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743882.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "Strelka_lib073_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743895.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "Strelka_lib076_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743965.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "Strelka_lib076_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743898.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "Strelka_lib076_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743894.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "Strelka_lib076_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743951.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "Strelka_lib077_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744174.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "Strelka_lib077_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743887.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "Strelka_lib077_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743897.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "Strelka_lib077_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743911.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "Strelka_lib079_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744252.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "Strelka_lib079_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743913.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "Strelka_lib079_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743964.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "Strelka_lib079_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743961.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "Strelka_lib080_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744123.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "Strelka_lib080_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743922.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "Strelka_lib080_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743915.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "Strelka_lib080_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743889.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "Strelka_lib083_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744220.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "Strelka_lib083_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743910.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "Strelka_lib083_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743925.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "Strelka_lib083_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743918.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "Strelka_lib085_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744009.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "Strelka_lib085_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743919.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "Strelka_lib085_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744022.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "Strelka_lib085_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743916.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "Strelka_lib086_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743995.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "Strelka_lib086_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743978.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "Strelka_lib086_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743947.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "Strelka_lib086_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743923.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "Strelka_lib088_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744062.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "Strelka_lib088_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743946.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "Strelka_lib088_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743940.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "Strelka_lib088_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743941.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_116",
+      "name": "Strelka_lib090_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744015.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_117",
+      "name": "Strelka_lib090_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744030.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_118",
+      "name": "Strelka_lib090_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744044.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_119",
+      "name": "Strelka_lib090_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744050.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_120",
+      "name": "Strelka_lib092_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744186.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_121",
+      "name": "Strelka_lib092_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744037.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_122",
+      "name": "Strelka_lib092_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744040.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_123",
+      "name": "Strelka_lib092_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744047.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_124",
+      "name": "Strelka_lib093_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744325.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_125",
+      "name": "Strelka_lib093_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743937.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_126",
+      "name": "Strelka_lib093_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743968.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_127",
+      "name": "Strelka_lib093_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743944.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_128",
+      "name": "Strelka_lib094_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744266.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_129",
+      "name": "Strelka_lib094_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743960.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_130",
+      "name": "Strelka_lib094_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743957.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_131",
+      "name": "Strelka_lib094_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744023.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_132",
+      "name": "Strelka_lib095_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744149.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_133",
+      "name": "Strelka_lib095_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743952.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_134",
+      "name": "Strelka_lib095_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744020.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_135",
+      "name": "Strelka_lib095_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743967.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_136",
+      "name": "Strelka_lib096_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744066.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_137",
+      "name": "Strelka_lib096_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744032.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_138",
+      "name": "Strelka_lib096_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743962.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_139",
+      "name": "Strelka_lib096_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744004.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_140",
+      "name": "Strelka_lib099_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744290.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_141",
+      "name": "Strelka_lib099_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743986.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_142",
+      "name": "Strelka_lib099_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743988.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_143",
+      "name": "Strelka_lib099_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743993.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_144",
+      "name": "Strelka_lib100_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744243.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_145",
+      "name": "Strelka_lib100_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744019.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_146",
+      "name": "Strelka_lib100_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743985.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_147",
+      "name": "Strelka_lib100_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744000.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_148",
+      "name": "Strelka_lib101_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744098.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_149",
+      "name": "Strelka_lib101_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744002.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_150",
+      "name": "Strelka_lib101_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744014.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_151",
+      "name": "Strelka_lib101_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744010.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_152",
+      "name": "Strelka_lib107_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744128.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_153",
+      "name": "Strelka_lib107_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743997.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_154",
+      "name": "Strelka_lib107_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744018.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_155",
+      "name": "Strelka_lib107_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744110.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_156",
+      "name": "Strelka_lib109_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744160.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_157",
+      "name": "Strelka_lib109_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744027.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_158",
+      "name": "Strelka_lib109_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744051.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_159",
+      "name": "Strelka_lib109_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744033.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_160",
+      "name": "Strelka_lib110_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744164.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_161",
+      "name": "Strelka_lib110_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744041.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_162",
+      "name": "Strelka_lib110_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744071.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_163",
+      "name": "Strelka_lib110_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744087.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_164",
+      "name": "Strelka_lib113_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744208.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_165",
+      "name": "Strelka_lib113_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744070.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_166",
+      "name": "Strelka_lib113_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744077.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_167",
+      "name": "Strelka_lib113_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744063.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_168",
+      "name": "Strelka_lib117_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744260.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_169",
+      "name": "Strelka_lib117_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744101.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_170",
+      "name": "Strelka_lib117_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744146.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_171",
+      "name": "Strelka_lib117_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744074.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_172",
+      "name": "Strelka_lib119_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744410.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_173",
+      "name": "Strelka_lib119_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744102.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_174",
+      "name": "Strelka_lib119_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744120.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_175",
+      "name": "Strelka_lib119_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744116.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_176",
+      "name": "Strelka_lib123_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744433.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_177",
+      "name": "Strelka_lib123_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744097.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_178",
+      "name": "Strelka_lib123_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744133.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_179",
+      "name": "Strelka_lib123_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744127.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_180",
+      "name": "Strelka_lib126_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744237.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_181",
+      "name": "Strelka_lib126_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744150.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_182",
+      "name": "Strelka_lib126_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744137.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_183",
+      "name": "Strelka_lib126_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744122.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_184",
+      "name": "Strelka_lib127_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744484.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_185",
+      "name": "Strelka_lib127_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744142.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_186",
+      "name": "Strelka_lib127_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744274.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_187",
+      "name": "Strelka_lib127_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744155.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_188",
+      "name": "Strelka_lib129_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744637.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_189",
+      "name": "Strelka_lib129_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744163.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_190",
+      "name": "Strelka_lib129_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744206.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_191",
+      "name": "Strelka_lib129_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744166.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_192",
+      "name": "Strelka_lib131_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744453.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_193",
+      "name": "Strelka_lib131_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744218.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_194",
+      "name": "Strelka_lib131_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744195.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_195",
+      "name": "Strelka_lib131_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744193.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_196",
+      "name": "Strelka_lib132_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744320.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_197",
+      "name": "Strelka_lib132_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744217.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_198",
+      "name": "Strelka_lib132_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744189.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_199",
+      "name": "Strelka_lib132_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744228.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_200",
+      "name": "Strelka_lib134_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744573.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_201",
+      "name": "Strelka_lib134_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744187.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_202",
+      "name": "Strelka_lib134_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744229.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_203",
+      "name": "Strelka_lib134_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744222.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_204",
+      "name": "Strelka_lib135_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744444.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_205",
+      "name": "Strelka_lib135_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744241.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_206",
+      "name": "Strelka_lib135_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744251.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_207",
+      "name": "Strelka_lib135_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744240.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_208",
+      "name": "Strelka_lib136_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744587.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_209",
+      "name": "Strelka_lib136_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744269.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_210",
+      "name": "Strelka_lib136_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744278.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_211",
+      "name": "Strelka_lib136_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744298.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_212",
+      "name": "Strelka_lib138_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744411.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_213",
+      "name": "Strelka_lib138_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744335.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_214",
+      "name": "Strelka_lib138_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744297.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_215",
+      "name": "Strelka_lib138_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744258.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_216",
+      "name": "Strelka_lib139_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744656.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_217",
+      "name": "Strelka_lib139_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744270.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_218",
+      "name": "Strelka_lib139_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744288.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_219",
+      "name": "Strelka_lib139_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744272.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_220",
+      "name": "Strelka_lib141_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744506.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_221",
+      "name": "Strelka_lib141_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744341.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_222",
+      "name": "Strelka_lib141_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744292.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_223",
+      "name": "Strelka_lib141_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744275.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_224",
+      "name": "Strelka_lib142_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744755.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_225",
+      "name": "Strelka_lib142_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744398.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_226",
+      "name": "Strelka_lib142_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744319.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_227",
+      "name": "Strelka_lib142_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744360.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_228",
+      "name": "Strelka_lib143_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744709.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_229",
+      "name": "Strelka_lib143_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744321.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_230",
+      "name": "Strelka_lib143_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744358.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_231",
+      "name": "Strelka_lib143_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744342.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_232",
+      "name": "Strelka_lib144_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744745.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_233",
+      "name": "Strelka_lib144_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744527.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_234",
+      "name": "Strelka_lib144_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744371.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_235",
+      "name": "Strelka_lib144_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744357.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_236",
+      "name": "Strelka_lib145_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744686.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_237",
+      "name": "Strelka_lib145_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744382.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_238",
+      "name": "Strelka_lib145_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744381.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_239",
+      "name": "Strelka_lib145_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744345.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_240",
+      "name": "Strelka_lib146_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744729.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_241",
+      "name": "Strelka_lib146_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744544.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_242",
+      "name": "Strelka_lib146_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744380.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_243",
+      "name": "Strelka_lib146_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744384.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_244",
+      "name": "Strelka_lib147_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744491.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_245",
+      "name": "Strelka_lib147_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744417.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_246",
+      "name": "Strelka_lib147_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744387.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_247",
+      "name": "Strelka_lib147_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744397.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_248",
+      "name": "Strelka_lib148_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744825.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_249",
+      "name": "Strelka_lib148_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744457.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_250",
+      "name": "Strelka_lib148_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744409.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_251",
+      "name": "Strelka_lib148_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744394.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_252",
+      "name": "Strelka_lib150_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744860.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_253",
+      "name": "Strelka_lib150_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744415.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_254",
+      "name": "Strelka_lib150_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744426.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_255",
+      "name": "Strelka_lib150_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744416.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_256",
+      "name": "Strelka_lib153_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744849.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_257",
+      "name": "Strelka_lib153_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744435.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_258",
+      "name": "Strelka_lib153_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744461.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_259",
+      "name": "Strelka_lib153_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744442.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_260",
+      "name": "Strelka_lib154_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744980.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_261",
+      "name": "Strelka_lib154_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744446.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_262",
+      "name": "Strelka_lib154_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744439.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_263",
+      "name": "Strelka_lib154_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744455.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_264",
+      "name": "Strelka_lib155_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744936.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_265",
+      "name": "Strelka_lib155_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744464.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_266",
+      "name": "Strelka_lib155_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744483.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_267",
+      "name": "Strelka_lib155_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744466.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_268",
+      "name": "Strelka_lib156_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744914.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_269",
+      "name": "Strelka_lib156_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744476.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_270",
+      "name": "Strelka_lib156_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744518.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_271",
+      "name": "Strelka_lib156_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744465.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_272",
+      "name": "Strelka_lib158_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745015.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_273",
+      "name": "Strelka_lib158_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744488.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_274",
+      "name": "Strelka_lib158_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744525.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_275",
+      "name": "Strelka_lib158_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744503.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_276",
+      "name": "Strelka_lib160_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744788.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_277",
+      "name": "Strelka_lib160_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744510.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_278",
+      "name": "Strelka_lib160_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744494.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_279",
+      "name": "Strelka_lib160_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744555.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_280",
+      "name": "Strelka_lib161_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744805.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_281",
+      "name": "Strelka_lib161_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744514.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_282",
+      "name": "Strelka_lib161_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744511.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_283",
+      "name": "Strelka_lib161_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744664.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_284",
+      "name": "Strelka_lib162_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744809.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_285",
+      "name": "Strelka_lib162_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744537.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_286",
+      "name": "Strelka_lib162_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744559.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_287",
+      "name": "Strelka_lib162_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744567.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_288",
+      "name": "Strelka_lib164_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744787.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_289",
+      "name": "Strelka_lib164_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744541.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_290",
+      "name": "Strelka_lib164_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744538.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_291",
+      "name": "Strelka_lib164_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744542.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_292",
+      "name": "Strelka_lib168_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744837.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_293",
+      "name": "Strelka_lib168_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744549.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_294",
+      "name": "Strelka_lib168_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744578.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_295",
+      "name": "Strelka_lib168_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744560.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_296",
+      "name": "Strelka_lib169_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744634.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_297",
+      "name": "Strelka_lib169_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744569.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_298",
+      "name": "Strelka_lib169_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744572.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_299",
+      "name": "Strelka_lib169_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744579.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_300",
+      "name": "Strelka_lib171_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744826.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_301",
+      "name": "Strelka_lib171_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744576.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_302",
+      "name": "Strelka_lib171_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744618.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_303",
+      "name": "Strelka_lib171_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744565.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_304",
+      "name": "Strelka_lib172_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744852.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_305",
+      "name": "Strelka_lib172_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744615.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_306",
+      "name": "Strelka_lib172_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744610.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_307",
+      "name": "Strelka_lib172_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744601.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_308",
+      "name": "Strelka_lib173_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744893.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_309",
+      "name": "Strelka_lib173_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744602.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_310",
+      "name": "Strelka_lib173_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744638.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_311",
+      "name": "Strelka_lib173_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744642.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_312",
+      "name": "Strelka_lib175_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745032.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_313",
+      "name": "Strelka_lib175_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744703.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_314",
+      "name": "Strelka_lib175_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744655.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_315",
+      "name": "Strelka_lib175_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744692.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_316",
+      "name": "Strelka_lib179_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744955.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_317",
+      "name": "Strelka_lib179_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744722.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_318",
+      "name": "Strelka_lib179_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744659.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_319",
+      "name": "Strelka_lib179_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744666.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_320",
+      "name": "Strelka_lib180_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744845.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_321",
+      "name": "Strelka_lib180_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744663.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_322",
+      "name": "Strelka_lib180_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744682.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_323",
+      "name": "Strelka_lib180_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744672.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_324",
+      "name": "Strelka_lib181_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744753.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_325",
+      "name": "Strelka_lib181_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744690.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_326",
+      "name": "Strelka_lib181_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744699.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_327",
+      "name": "Strelka_lib181_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744696.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_328",
+      "name": "Strelka_lib182_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745048.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_329",
+      "name": "Strelka_lib182_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744698.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_330",
+      "name": "Strelka_lib182_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744984.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_331",
+      "name": "Strelka_lib182_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744714.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_332",
+      "name": "Strelka_lib183_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745063.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_333",
+      "name": "Strelka_lib183_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744718.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_334",
+      "name": "Strelka_lib183_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744870.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_335",
+      "name": "Strelka_lib183_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744751.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_336",
+      "name": "Strelka_lib184_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745035.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_337",
+      "name": "Strelka_lib184_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744743.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_338",
+      "name": "Strelka_lib184_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744750.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_339",
+      "name": "Strelka_lib184_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744740.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_340",
+      "name": "Strelka_lib185_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745165.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_341",
+      "name": "Strelka_lib185_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744759.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_342",
+      "name": "Strelka_lib185_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744766.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_343",
+      "name": "Strelka_lib185_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744770.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_344",
+      "name": "Strelka_lib188_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745112.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_345",
+      "name": "Strelka_lib188_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744818.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_346",
+      "name": "Strelka_lib188_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744868.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_347",
+      "name": "Strelka_lib188_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744774.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_348",
+      "name": "Strelka_lib190_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745116.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_349",
+      "name": "Strelka_lib190_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744783.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_350",
+      "name": "Strelka_lib190_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744808.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_351",
+      "name": "Strelka_lib190_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744795.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_352",
+      "name": "Strelka_lib191_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745172.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_353",
+      "name": "Strelka_lib191_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744769.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_354",
+      "name": "Strelka_lib191_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744797.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_355",
+      "name": "Strelka_lib191_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744798.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_356",
+      "name": "Strelka_lib193_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745078.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_357",
+      "name": "Strelka_lib193_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744869.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_358",
+      "name": "Strelka_lib193_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744896.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_359",
+      "name": "Strelka_lib193_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744827.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_360",
+      "name": "Strelka_lib196_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745144.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_361",
+      "name": "Strelka_lib196_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744819.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_362",
+      "name": "Strelka_lib196_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744856.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_363",
+      "name": "Strelka_lib196_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744824.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_364",
+      "name": "Strelka_lib198_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745166.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_365",
+      "name": "Strelka_lib198_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744859.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_366",
+      "name": "Strelka_lib198_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744866.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_367",
+      "name": "Strelka_lib198_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744897.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_368",
+      "name": "Strelka_lib199_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745046.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_369",
+      "name": "Strelka_lib199_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744872.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_370",
+      "name": "Strelka_lib199_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744854.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_371",
+      "name": "Strelka_lib199_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744889.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_372",
+      "name": "Strelka_lib201_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745153.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_373",
+      "name": "Strelka_lib201_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744895.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_374",
+      "name": "Strelka_lib201_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744880.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_375",
+      "name": "Strelka_lib201_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744891.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_376",
+      "name": "Strelka_lib202_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745156.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_377",
+      "name": "Strelka_lib202_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744876.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_378",
+      "name": "Strelka_lib202_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744892.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_379",
+      "name": "Strelka_lib202_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744912.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_380",
+      "name": "Strelka_lib203_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745083.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_381",
+      "name": "Strelka_lib203_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744909.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_382",
+      "name": "Strelka_lib203_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744923.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_383",
+      "name": "Strelka_lib203_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744926.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_384",
+      "name": "Strelka_lib204_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745162.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_385",
+      "name": "Strelka_lib204_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744924.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_386",
+      "name": "Strelka_lib204_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744940.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_387",
+      "name": "Strelka_lib204_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744950.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_388",
+      "name": "Strelka_lib205_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745287.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_389",
+      "name": "Strelka_lib205_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744957.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_390",
+      "name": "Strelka_lib205_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744960.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_391",
+      "name": "Strelka_lib205_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744934.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_392",
+      "name": "Strelka_lib206_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745256.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_393",
+      "name": "Strelka_lib206_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744965.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_394",
+      "name": "Strelka_lib206_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744971.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_395",
+      "name": "Strelka_lib206_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744968.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_396",
+      "name": "Strelka_lib208_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745294.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_397",
+      "name": "Strelka_lib208_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744994.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_398",
+      "name": "Strelka_lib208_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744995.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_399",
+      "name": "Strelka_lib208_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744974.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_400",
+      "name": "Strelka_lib209_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745307.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_401",
+      "name": "Strelka_lib209_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745004.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_402",
+      "name": "Strelka_lib209_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745100.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_403",
+      "name": "Strelka_lib209_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744998.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_404",
+      "name": "Strelka_lib214_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745095.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_405",
+      "name": "Strelka_lib214_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744988.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_406",
+      "name": "Strelka_lib214_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745010.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_407",
+      "name": "Strelka_lib214_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745056.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_408",
+      "name": "Strelka_lib216_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745086.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_409",
+      "name": "Strelka_lib216_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745066.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_410",
+      "name": "Strelka_lib216_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745104.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_411",
+      "name": "Strelka_lib216_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745020.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_412",
+      "name": "Strelka_lib218_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745223.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_413",
+      "name": "Strelka_lib218_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745011.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_414",
+      "name": "Strelka_lib218_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745087.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_415",
+      "name": "Strelka_lib218_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745044.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_416",
+      "name": "Strelka_lib235_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745142.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_417",
+      "name": "Strelka_lib235_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745123.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_418",
+      "name": "Strelka_lib235_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745065.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_419",
+      "name": "Strelka_lib235_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745054.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_420",
+      "name": "Strelka_lib236_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745247.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_421",
+      "name": "Strelka_lib236_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745069.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_422",
+      "name": "Strelka_lib236_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745073.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_423",
+      "name": "Strelka_lib236_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745072.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_424",
+      "name": "Strelka_lib238_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745289.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_425",
+      "name": "Strelka_lib238_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745090.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_426",
+      "name": "Strelka_lib238_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745099.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_427",
+      "name": "Strelka_lib238_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745082.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_428",
+      "name": "Strelka_lib239_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745301.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_429",
+      "name": "Strelka_lib239_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745173.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_430",
+      "name": "Strelka_lib239_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745114.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_431",
+      "name": "Strelka_lib239_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745110.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_432",
+      "name": "Strelka_lib241_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745298.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_433",
+      "name": "Strelka_lib241_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745178.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_434",
+      "name": "Strelka_lib241_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745215.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_435",
+      "name": "Strelka_lib241_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745168.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_436",
+      "name": "Strelka_lib242_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745295.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_437",
+      "name": "Strelka_lib242_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745133.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_438",
+      "name": "Strelka_lib242_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745139.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_439",
+      "name": "Strelka_lib242_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745158.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_440",
+      "name": "Strelka_lib243_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745300.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_441",
+      "name": "Strelka_lib243_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745196.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_442",
+      "name": "Strelka_lib243_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745213.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_443",
+      "name": "Strelka_lib243_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745181.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_444",
+      "name": "Strelka_lib244_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745296.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_445",
+      "name": "Strelka_lib244_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745143.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_446",
+      "name": "Strelka_lib244_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745184.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_447",
+      "name": "Strelka_lib244_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745170.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_448",
+      "name": "Strelka_lib245_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745299.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_449",
+      "name": "Strelka_lib245_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745206.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_450",
+      "name": "Strelka_lib245_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745197.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_451",
+      "name": "Strelka_lib245_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745191.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_452",
+      "name": "Strelka_lib246_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745313.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_453",
+      "name": "Strelka_lib246_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745260.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_454",
+      "name": "Strelka_lib246_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745269.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_455",
+      "name": "Strelka_lib246_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745225.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_456",
+      "name": "Strelka_lib247_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745315.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_457",
+      "name": "Strelka_lib247_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745239.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_458",
+      "name": "Strelka_lib247_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745226.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_459",
+      "name": "Strelka_lib247_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745227.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_460",
+      "name": "Strelka_lib248_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745314.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_461",
+      "name": "Strelka_lib248_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745271.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_462",
+      "name": "Strelka_lib248_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745245.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_463",
+      "name": "Strelka_lib248_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745246.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_464",
+      "name": "Strelka_lib249_genome.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745311.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_465",
+      "name": "Strelka_lib249_genome.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745279.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_466",
+      "name": "Strelka_lib249_variants.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745281.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_467",
+      "name": "Strelka_lib249_variants.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745264.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_468",
+      "name": "Germline Genomic Variants - Strelka Pipeline (from syn31726450)",
+      "description": "Synapse Dataset metadata schema for syn35562838",
+      "contentUrl": "https://www.synapse.org/Synapse:syn35562838",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema",
+      "name": "Germline Genomic Variants - Strelka Pipeline (from syn31726450) (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn35562838: 30 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/id/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/name/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/etag/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/type/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/assay/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/sex",
+          "name": "sex",
+          "description": "Column 'sex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/sex/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "sex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/species/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/workflow",
+          "name": "workflow",
+          "description": "Column 'workflow'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Strelka_Pipeline__from_syn31726450_-schema/workflow/source",
+            "fileObject": {
+              "@id": "file_468"
+            },
+            "extract": {
+              "column": "workflow"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

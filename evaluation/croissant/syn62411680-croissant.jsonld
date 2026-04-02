@@ -1,0 +1,1014 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "AMP RA Phase I Synovium CyTOF",
+  "description": "AMP RA Phase I CyTOF of dissociated synovium samples from RA and OA cases profiling a 35 parameter synovial marker panel.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "AMP RA Phase I Synovium CyTOF. https://doi.org/10.7303/syn62411680.2",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Jessica Vera",
+    "url": "https://www.synapse.org/#!Profile:3499646"
+  },
+  "datePublished": "2026-04-02 11:01:31.206",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn62411680",
+  "version": "3",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "300-0482_RA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328568.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "300-0483_RA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328569.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "300-0486_RA_syn-C_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328575.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "300-0486_RA_syn-D_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328577.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "300-0487_RA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328578.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "300-0511_RA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328581.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "300-0511_RA_syn-B_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328582.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "300-0528_RA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328580.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "301-0132_OA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328583.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "301-0133_OA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328588.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "301-0134_RA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328584.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "301-0135_OA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328595.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "301-0152_RA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328586.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "301-0153_RA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328557.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "301-0157_RA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328560.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "301-0159_OA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328558.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "301-0160_OA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328559.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "301-0162_RA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328561.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "301-0242_OA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328566.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "301-0244_RA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328563.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "301-0248_OA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328562.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "301-0250_RA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328570.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "301-0251_OA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328565.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "301-0400_OA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328576.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "301-0401_OA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328571.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "301-0403_OA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328579.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "301-0404_RA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328564.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "301-0405_RA_syn-A_raw.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328573.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "300-0482_RA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328609.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "300-0483_RA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328606.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "300-0486_RA_syn-C_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328608.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "300-0486_RA_syn-D_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328613.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "300-0487_RA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328612.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "300-0511_RA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328614.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "300-0511_RA_syn-B_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328627.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "300-0528_RA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328605.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "301-0132_OA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328585.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "301-0133_OA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328587.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "301-0134_RA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328589.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "301-0135_OA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328607.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "301-0152_RA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328592.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "301-0153_RA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328590.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "301-0157_RA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328591.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "301-0159_OA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328594.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "301-0160_OA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328593.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "301-0162_RA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328611.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "301-0242_OA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328596.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "301-0244_RA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328602.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "301-0248_OA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328597.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "301-0250_RA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328598.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "301-0251_OA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328604.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "301-0400_OA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328600.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "301-0401_OA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328603.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "301-0403_OA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328610.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "301-0404_RA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328601.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "301-0405_RA_syn-A_normalized.fcs",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328599.3",
+      "encodingFormat": "application/vnd.isac.fcs"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "AMP-RA.CyTOF.Synovium_Staining_Protocol.docx",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328617.2",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "AMP-RA_synovium.CyTOF.Antibody_Staining_Panel.xlsx",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26328625.3",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "AMP-RA_synovium.CyTOF.sample_metadata.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn62411675.1",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "AMP-RA.SLE_clinical.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn47136972.4",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "AMP RA Phase I Synovium CyTOF",
+      "description": "Synapse Dataset metadata schema for syn62411680",
+      "contentUrl": "https://www.synapse.org/Synapse:syn62411680",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema",
+      "name": "AMP RA Phase I Synovium CyTOF (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn62411680: 32 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/id/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/name/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/metadataType",
+          "name": "metadataType",
+          "description": "Column 'metadataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/metadataType/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "metadataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/assay/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/tissue",
+          "name": "tissue",
+          "description": "Column 'tissue'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/tissue/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "tissue"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/markerPanel",
+          "name": "markerPanel",
+          "description": "Column 'markerPanel'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/markerPanel/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "markerPanel"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/isMultiSpecimen",
+          "name": "isMultiSpecimen",
+          "description": "Column 'isMultiSpecimen'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/isMultiSpecimen/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "isMultiSpecimen"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/program",
+          "name": "program",
+          "description": "Column 'program'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/program/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "program"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/project",
+          "name": "project",
+          "description": "Column 'project'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/project/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "project"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/study",
+          "name": "study",
+          "description": "Column 'study'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/study/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "study"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/etag/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/path",
+          "name": "path",
+          "description": "Column 'path'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/path/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "path"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/dataFileName",
+          "name": "dataFileName",
+          "description": "Column 'dataFileName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/dataFileName/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "dataFileName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/dataFileConcreteType",
+          "name": "dataFileConcreteType",
+          "description": "Column 'dataFileConcreteType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/dataFileConcreteType/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "dataFileConcreteType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/dataFileBucket",
+          "name": "dataFileBucket",
+          "description": "Column 'dataFileBucket'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/dataFileBucket/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "dataFileBucket"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/dataFileKey",
+          "name": "dataFileKey",
+          "description": "Column 'dataFileKey'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA_Phase_I_Synovium_CyTOF-schema/dataFileKey/source",
+            "fileObject": {
+              "@id": "file_60"
+            },
+            "extract": {
+              "column": "dataFileKey"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

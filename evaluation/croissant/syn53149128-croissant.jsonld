@@ -1,0 +1,2343 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Somatic Genomic Variants - Strelka Pipeline - 2024Release",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Somatic Genomic Variants - Strelka Pipeline - 2024Release. Synapse ID: syn53149128. https://www.synapse.org/Synapse:syn53149128",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:10:20.280",
+  "keywords": [
+    "somatic variants",
+    "Strelka",
+    "WES",
+    "2024 release"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn53149128",
+  "version": "9",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "JH-2-085-F2983-A_vs_JH-2-085-895A5-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "107811",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849405.1",
+      "encodingFormat": "application/gzip",
+      "md5": "33b399d83d82ef4a1a4816c857f4d4e2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "JH-2-085-F2983-A_vs_JH-2-085-895A5-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1024992",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849413.1",
+      "encodingFormat": "application/gzip",
+      "md5": "05f4ccc5e33c01f21529e05d27f4a30e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "JH-2-086-5EA11-A_vs_JH-2-086-F439A-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "113641",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849416.1",
+      "encodingFormat": "application/gzip",
+      "md5": "727d05fa17c0068220e454c3e02d2aa5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "JH-2-086-5EA11-A_vs_JH-2-086-F439A-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1138783",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849420.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f8c9adfb41cad60320b0ea747dd1126b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "JH-2-089-H8EBA-A_vs_JH-2-089-B5G31-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "104380",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849435.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c669b890d7d78904e799a2fad656609b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "JH-2-089-H8EBA-A_vs_JH-2-089-B5G31-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1166583",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849455.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e96673653dd00ec7a3d9c9c6d599d4dd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "JH-2-090-19D3F-A_vs_JH-2-090-B565B-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "115469",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849439.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6902a2bc6260a80c8170723d6bbddf92"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "JH-2-090-19D3F-A_vs_JH-2-090-B565B-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "880385",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849464.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2e5870a4f18a432bb3e40404235246d9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "JH-2-090-59DE8-A_vs_JH-2-090-B565B-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "106583",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849457.1",
+      "encodingFormat": "application/gzip",
+      "md5": "780caa72f7f0f37d897f5945f3252505"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "JH-2-090-59DE8-A_vs_JH-2-090-B565B-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "973775",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849472.1",
+      "encodingFormat": "application/gzip",
+      "md5": "541dfad33e8be78df6c92a89cac9b3c7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "JH-2-091-CAA8H-A_vs_JH-2-091-854A2-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "109698",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849469.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f93fea1cd422d8b52f478eb6694595b5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "JH-2-091-CAA8H-A_vs_JH-2-091-854A2-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1155812",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849462.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6859a6bbfb3d1998660fba4cf659265b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "JH-2-092-B4F11-A_vs_JH-2-092-9F22G-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "148488",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849463.1",
+      "encodingFormat": "application/gzip",
+      "md5": "636ab2914aab43b09d721df494e6cea2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "JH-2-092-B4F11-A_vs_JH-2-092-9F22G-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1686849",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849460.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4334466dfc90f351f1ce6d5b1ddbb9e2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "JH-2-092-B52E5-A_vs_JH-2-092-9F22G-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "109234",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849479.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d6c6bb30e879d2cf031fa0b469456995"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "JH-2-092-B52E5-A_vs_JH-2-092-9F22G-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1015978",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849515.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3fbe74fd46daaac48a592591971bbf6f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "JH-2-093-214AE-A_vs_JH-2-093-4B712-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "107360",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849494.1",
+      "encodingFormat": "application/gzip",
+      "md5": "29d9ed76bca1cedbcb11ffcfe5ceed04"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "JH-2-093-214AE-A_vs_JH-2-093-4B712-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "890158",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849498.1",
+      "encodingFormat": "application/gzip",
+      "md5": "34ba6af599dfb039516bdf200e22ce75"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "JH-2-093-518GA-A_vs_JH-2-093-4B712-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "102772",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849504.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6d7ca7a8b2c7ae73ff191e4230e79dc2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "JH-2-093-518GA-A_vs_JH-2-093-4B712-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1240549",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849493.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2f84bdcd11e077498a40ede5425bbd5c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "JH-2-094-151G9-A_vs_JH-2-094-3756F-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "104786",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849478.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2c8047e48af22c95a8515b6a35706305"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "JH-2-094-151G9-A_vs_JH-2-094-3756F-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1043410",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849499.1",
+      "encodingFormat": "application/gzip",
+      "md5": "278e821f02506e787ca846260fe6042d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "JH-2-094-5HA24-A_vs_JH-2-094-3756F-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "128502",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849508.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2c07efd47320cf943315c8b352a544dd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "JH-2-094-5HA24-A_vs_JH-2-094-3756F-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "2149017",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849518.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e5ecc2c3e94540aebc00fcadc2735047"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "JH-2-095-4H3FE-A_vs_JH-2-095-H2F2A-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "99118",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849505.1",
+      "encodingFormat": "application/gzip",
+      "md5": "18c0171999a07d2e21891e3e67bdc128"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "JH-2-095-4H3FE-A_vs_JH-2-095-H2F2A-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1253000",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849514.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ca0c19c9073df850e8350d88e1310774"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "JH-2-096-5E593-A_vs_JH-2-096-C8CBF-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "102886",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849517.1",
+      "encodingFormat": "application/gzip",
+      "md5": "35f3c843337f546b630a45ed641b4615"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "JH-2-096-5E593-A_vs_JH-2-096-C8CBF-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1204883",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849520.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f51c803600c50df88b556c6cc3246f3d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "JH-2-099-26HCE-A_vs_JH-2-099-28D4E-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "109154",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849526.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5a905a1adc9d77838648eeb7323df4a6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "JH-2-099-26HCE-A_vs_JH-2-099-28D4E-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "817107",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849536.1",
+      "encodingFormat": "application/gzip",
+      "md5": "818ef3cfc662e4703db1253b3981d3bd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "JH-2-100-19H33-A_vs_JH-2-100-EHACB-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "112257",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849524.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d3fbea7b1acca2abb375f6297fc033b5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "JH-2-100-19H33-A_vs_JH-2-100-EHACB-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "887330",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849529.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f9ad679f8976b120a8bbf2872f901d1b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "JH-2-103-H731E-A_vs_JH-2-103-63HH5-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "99869",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849553.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2d7180b7f6c0bab916eb8d2a73aeec1b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "JH-2-103-H731E-A_vs_JH-2-103-63HH5-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "944619",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849554.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c27de8c785b924bb82f766819d01f77f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "JH-2-104-51E2H-A_vs_JH-2-104-B5CDH-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "104404",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849560.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fbd7406ad98b55f83faf9f6f5ad58f57"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "JH-2-104-51E2H-A_vs_JH-2-104-B5CDH-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "872429",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849532.1",
+      "encodingFormat": "application/gzip",
+      "md5": "45a754777b316cd009294916abfe7eaf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "JH-2-106-1447G-A_vs_JH-2-106-B73E8-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "118709",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849544.1",
+      "encodingFormat": "application/gzip",
+      "md5": "615eed3e6ff0baa9ca2887b4ee35e2f3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "JH-2-106-1447G-A_vs_JH-2-106-B73E8-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1794852",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849573.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3e8ff11b41992503f22da446dced463f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "JH-2-111-G645D-A_vs_JH-2-111-AFH11-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "122367",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849570.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9b9541f5b751477da09ad740c0e3ef08"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "JH-2-111-G645D-A_vs_JH-2-111-AFH11-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1486269",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849577.1",
+      "encodingFormat": "application/gzip",
+      "md5": "677777be6bd788912db3b0a1d16f24c0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "JH-2-113-7857D-A_vs_JH-2-113-G61GC-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "122933",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849548.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5a284f4ac6d7296a3dc04cb096b458b0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "JH-2-113-7857D-A_vs_JH-2-113-G61GC-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1278777",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849581.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4534e99e60d3f4c219945cd3e2d32ad4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "JH-2-002-354A1-A_vs_JH-2-002-2G58E-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "111048",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844633.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6b4807953626d4731827b39a87323c2d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "JH-2-002-354A1-A_vs_JH-2-002-2G58E-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "730974",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844636.1",
+      "encodingFormat": "application/gzip",
+      "md5": "53ae512b33462a4418321df70faea3c4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "JH-2-044-83F15-A_vs_JH-2-044-BD592-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "116976",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844649.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6927ef38e9ea319ed88df14948f011cf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "JH-2-044-83F15-A_vs_JH-2-044-BD592-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "743168",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844626.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f07b7954a6792dbaa2af490130989c40"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "JH-2-045-F7H3C-A_vs_JH-2-045-DE13F-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "126947",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844645.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8e8cd3f53837f1ac42b534e706a4bfcf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "JH-2-045-F7H3C-A_vs_JH-2-045-DE13F-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1063399",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844658.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fe343a6e39e8574ab04db1275de9a1b5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "JH-2-045-GH3AA-A_vs_JH-2-045-DE13F-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "111596",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844628.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c0dd23726ff5e8bbf520a13a64617be4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "JH-2-045-GH3AA-A_vs_JH-2-045-DE13F-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "966724",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844681.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9779411efa0e39463fa30ec25ce66233"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "JH-2-054-241HF-A_vs_JH-2-054-9HEG7-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "112863",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844665.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c616ba0ffaa746abff275bb784b01ca7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "JH-2-054-241HF-A_vs_JH-2-054-9HEG7-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "978892",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844679.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4a050bf0794d8b451888cbce75aaaa30"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "JH-2-054-9255F-A_vs_JH-2-054-9HEG7-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "114677",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844663.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1103808fc0a9aeab923cd9370d72899b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "JH-2-054-9255F-A_vs_JH-2-054-9HEG7-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "710853",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844657.1",
+      "encodingFormat": "application/gzip",
+      "md5": "67779b1b0d9a05d96bcc4c4f3bc87f76"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "JH-2-055-1419H-9GG15_vs_JH-2-055-G6A65-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "113931",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844656.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e668f0512773a382537b43465a0079af"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "JH-2-055-1419H-9GG15_vs_JH-2-055-G6A65-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "860421",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844670.1",
+      "encodingFormat": "application/gzip",
+      "md5": "84bf6ddfd4483455416bb8b7efe71dba"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "JH-2-055-E1381-A_vs_JH-2-055-G6A65-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "104615",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844680.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1896f8651804a63fd054e44aa9e4ae9d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "JH-2-055-E1381-A_vs_JH-2-055-G6A65-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "983020",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844682.1",
+      "encodingFormat": "application/gzip",
+      "md5": "63e033fa3bc11d0dadbb7df63c95441c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "JH-2-057-37D5D-A_vs_JH-2-057-A1CAA-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "120013",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844688.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f3d67424a6303dcca212879a1abbdd22"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "JH-2-057-37D5D-A_vs_JH-2-057-A1CAA-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "698677",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844687.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f26d68210d780179441f2c36ddfcd198"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "JH-2-060-19EC4-A_vs_JH-2-060-3C319-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "105518",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844695.1",
+      "encodingFormat": "application/gzip",
+      "md5": "39960a178f986ea55bffa23c8c47cf41"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "JH-2-060-19EC4-A_vs_JH-2-060-3C319-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "901775",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844699.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1dea8c85ea0825a12d58e50606719aa2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "JH-2-060-4CE8D-A_vs_JH-2-060-3C319-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "106267",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844693.1",
+      "encodingFormat": "application/gzip",
+      "md5": "01cba5c5807cad8edade6f2c4ee76a14"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "JH-2-060-4CE8D-A_vs_JH-2-060-3C319-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "654528",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844691.1",
+      "encodingFormat": "application/gzip",
+      "md5": "843cfff77b63356e119e93144b086910"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "JH-2-061-1H66H-A_vs_JH-2-061-7E44H-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "108854",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844698.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f195ed3c6c9eb2efd48cef36f6abe85b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "JH-2-061-1H66H-A_vs_JH-2-061-7E44H-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "768435",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844704.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8191efb4c5d35826f15a6d4591b90fac"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "JH-2-068-2BHHG-A_vs_JH-2-068-5DHG2-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "106908",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844720.1",
+      "encodingFormat": "application/gzip",
+      "md5": "458cd1c9264c68da57f53f391945e97f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "JH-2-068-2BHHG-A_vs_JH-2-068-5DHG2-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "684139",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844710.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ed403a703c470a8cd4461b189116c438"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "JH-2-068-A733G-A_vs_JH-2-068-5DHG2-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "106410",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844734.1",
+      "encodingFormat": "application/gzip",
+      "md5": "41a63aa10e1b462332a66c46d34852c9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "JH-2-068-A733G-A_vs_JH-2-068-5DHG2-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "793695",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844729.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7ac645f268b03a753a28ebfd55afabe2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "JH-2-068-A7488-A_vs_JH-2-068-5DHG2-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "105095",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844723.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6a7286124cdb92801d0b2c4d83e9570d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "JH-2-068-A7488-A_vs_JH-2-068-5DHG2-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "801843",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844741.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c60646d6ab89dbd006a0526a7d350952"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "JH-2-068-FH52C-A_vs_JH-2-068-5DHG2-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "101418",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844750.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5c6fecf782a5a312d849630d3dcac0cf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "JH-2-068-FH52C-A_vs_JH-2-068-5DHG2-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "817929",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844740.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5ebb44f8576cd6f7a67feefd85a77573"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "JH-2-072-3DD4G-A_vs_JH-2-072-HGBCF-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "125117",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844735.1",
+      "encodingFormat": "application/gzip",
+      "md5": "21c8447ea8d2700aba01dfc603f6a1fb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "JH-2-072-3DD4G-A_vs_JH-2-072-HGBCF-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1271654",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844745.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c44263fffdf0a9c6761e79d6bf6b2039"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "JH-2-074-HE12C-A_vs_JH-2-074-3G8A7-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "109003",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844749.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5ca8495d632373a10a2bf95b2c6ef5dd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "JH-2-074-HE12C-A_vs_JH-2-074-3G8A7-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1110064",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844762.1",
+      "encodingFormat": "application/gzip",
+      "md5": "769a3f49353f65214d840b5ce2443303"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "JH-2-075-3HE68-A_vs_JH-2-075-A52EE-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "106950",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844754.1",
+      "encodingFormat": "application/gzip",
+      "md5": "74ebd40fba044e45ac0992de9144c3d2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "JH-2-075-3HE68-A_vs_JH-2-075-A52EE-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "792418",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844772.1",
+      "encodingFormat": "application/gzip",
+      "md5": "afe7cd40a6fa5c7847db4c0642d3f287"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "JH-2-075-4F211-A_vs_JH-2-075-A52EE-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "113529",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844779.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ca1d9960e6f36f05f6307d98a36ee104"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "JH-2-075-4F211-A_vs_JH-2-075-A52EE-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1002992",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844760.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4907d6f34655b59f355e43f75d023d29"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "JH-2-076-41G1H-A_vs_JH-2-076-C8H1F-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "109266",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844780.1",
+      "encodingFormat": "application/gzip",
+      "md5": "de1c212ddbefad642198fbdf6163d963"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "JH-2-076-41G1H-A_vs_JH-2-076-C8H1F-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "908066",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844773.1",
+      "encodingFormat": "application/gzip",
+      "md5": "40a9251484c2acea63602c598c4f0601"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "JH-2-076-811H2-A_vs_JH-2-076-C8H1F-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "117295",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844763.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c9c2cd08819530142295a2a279f51d8e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "JH-2-076-811H2-A_vs_JH-2-076-C8H1F-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "794228",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844765.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c262c4f70f9e746755c0908ccd7f7262"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "JH-2-077-88G11-A_vs_JH-2-077-D2DG7-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "113747",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844757.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a709ec3283c4f1ae6ee1856321ab2fa9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "JH-2-077-88G11-A_vs_JH-2-077-D2DG7-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1153544",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844777.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f410278f8aa93114f8d8fb0f5bc28446"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "JH-2-079-9D31F-A_vs_JH-2-079-B2ABC-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "108821",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844791.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a36643fe69ccaefc05f2d752d8c1a60c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "JH-2-079-9D31F-A_vs_JH-2-079-B2ABC-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "620212",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844782.1",
+      "encodingFormat": "application/gzip",
+      "md5": "878cd54e321dc99ca4f26ab46277cf39"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "JH-2-082-B5148-A_vs_JH-2-082-1C3BH-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "125368",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844813.1",
+      "encodingFormat": "application/gzip",
+      "md5": "44fa22df176e7e1919a0ed3a1a3ee5c3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "JH-2-082-B5148-A_vs_JH-2-082-1C3BH-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "970638",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844844.1",
+      "encodingFormat": "application/gzip",
+      "md5": "06edd2158343b040334a458ca7b0d7ae"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "JH-2-082-G8357-A_vs_JH-2-082-1C3BH-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "125621",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844804.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b4ce67675e078e89d741e657b27fdf72"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "JH-2-082-G8357-A_vs_JH-2-082-1C3BH-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "982256",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844814.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fb2782ee0154a884038a765ee762b602"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "JH-2-084-AE169-A_vs_JH-2-084-8HG64-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "109313",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844810.1",
+      "encodingFormat": "application/gzip",
+      "md5": "108888b0c91a41a0bdae8cd1adeadf98"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "JH-2-084-AE169-A_vs_JH-2-084-8HG64-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "970274",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844829.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ed831d6117d3c5e75166501b8817a3fc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "JH-2-084-F9A84-A_vs_JH-2-084-8HG64-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "118701",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844833.1",
+      "encodingFormat": "application/gzip",
+      "md5": "63d1d27f7d4b27a7d99369959aee9cf9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "JH-2-084-F9A84-A_vs_JH-2-084-8HG64-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "923845",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844822.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c4f1e93bdd6d7aed35f2eec9a598f23d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "JH-2-002-354A1-A_vs_JH-2-002-2G58E-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "111047",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52595053.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8adf044f5b28f7c1e7f7b811e158870e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "JH-2-002-354A1-A_vs_JH-2-002-2G58E-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "730973",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52595044.1",
+      "encodingFormat": "application/gzip",
+      "md5": "971d291348b6e561e8afcade119dd5e9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "JH-2-002-94FAA-A_vs_JH-2-002-2G58E-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "305090",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52595047.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5d762d59577f114909546b084d75df89"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "JH-2-002-94FAA-A_vs_JH-2-002-2G58E-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1183070",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52595006.1",
+      "encodingFormat": "application/gzip",
+      "md5": "94e09c16a36a3c6a84fb4e8e427af040"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "JH-2-002-GAF53-FB9H7_vs_JH-2-002-2G58E-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "127635",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52595057.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a545fc22478b9e8212fb2fb8399d5bc5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "JH-2-002-GAF53-FB9H7_vs_JH-2-002-2G58E-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1051798",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52595030.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a097e8c7c780afcf4fbad7d409a2797b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "JH-2-055-FC9GH-A_vs_JH-2-055-G6A65-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "265779",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52595051.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b4142437b0799742ced0bc51a4a2727b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "JH-2-055-FC9GH-A_vs_JH-2-055-G6A65-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1096050",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52595017.1",
+      "encodingFormat": "application/gzip",
+      "md5": "661bef1bca0530203f0d18592c058323"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "JH-2-079-CB92G-A_vs_JH-2-079-B2ABC-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "290384",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52595021.1",
+      "encodingFormat": "application/gzip",
+      "md5": "dfd9bfb5072fe912ba24701addd5d5b0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "JH-2-079-CB92G-A_vs_JH-2-079-B2ABC-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1388345",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52595034.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b892bea6de41e7defe8b3e79640ec0bc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "JH-2-102-3B72A-A_vs_JH-2-102-1CH6E-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "120472",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52595063.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1aad0e68de3cee1486730338d9e57e39"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "JH-2-102-3B72A-A_vs_JH-2-102-1CH6E-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "844941",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52595048.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b0296882aa382c9b41af0cf78f1af415"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "JH-2-001-8A1B1-A_vs_JH-2-001-F3361-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "182272",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788901.1",
+      "encodingFormat": "application/gzip",
+      "md5": "aa3543e3533b8ff65335ed88724ecbfa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "JH-2-001-8A1B1-A_vs_JH-2-001-F3361-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1200314",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788905.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1bf06255ad2a15e6ffc8dc20ad1a3460"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "JH-2-002-FF824-A_vs_JH-2-002-A35CA-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "154791",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788903.1",
+      "encodingFormat": "application/gzip",
+      "md5": "749363d7e3aaf77246b9838ed8475727"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "JH-2-002-FF824-A_vs_JH-2-002-A35CA-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1244657",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788907.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fec1bc699b803740ad375a4230f1fafa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "JH-2-002-GAF53-A1011_vs_JH-2-002-A35CA-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "165691",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788913.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b9c824d5402d4e70a414df75ef1a2ef4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "JH-2-002-GAF53-A1011_vs_JH-2-002-A35CA-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1777012",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788921.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1202014b5bab0add50655a855435f568"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_116",
+      "name": "JH-2-004-9D9D7-A_vs_JH-2-004-24A54-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "139452",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788912.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e61ade6a1f7c9cb87dcb5286dcccb2f6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_117",
+      "name": "JH-2-004-9D9D7-A_vs_JH-2-004-24A54-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1311631",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788917.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b315a9cbaf07ed2c52f2f0e0b970c8db"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_118",
+      "name": "JH-2-006-D6BA4-A_vs_JH-2-006-E4H85-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "209801",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788919.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c9e8ba4450e3af3b7c964259ba389b1a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_119",
+      "name": "JH-2-006-D6BA4-A_vs_JH-2-006-E4H85-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1345837",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788920.1",
+      "encodingFormat": "application/gzip",
+      "md5": "70960a43fa7d01b4b0de5ec09ca301af"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_120",
+      "name": "JH-2-009-518B9-A_vs_JH-2-009-871FH-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "148398",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788942.1",
+      "encodingFormat": "application/gzip",
+      "md5": "90418f1792298146a016f111c5faebab"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_121",
+      "name": "JH-2-009-518B9-A_vs_JH-2-009-871FH-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1619887",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788922.1",
+      "encodingFormat": "application/gzip",
+      "md5": "65f81d63177fd49425d44a520d6ba4ca"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_122",
+      "name": "JH-2-010-H915D-A_vs_JH-2-010-731C2-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "186904",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788938.1",
+      "encodingFormat": "application/gzip",
+      "md5": "57d751823c02f8975c8c7c1ff7ef27d2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_123",
+      "name": "JH-2-010-H915D-A_vs_JH-2-010-731C2-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1126131",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788950.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0fa4d02a5b0c54c2a3de90da62e3f2b0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_124",
+      "name": "JH-2-012-HE58H-A_vs_JH-2-012-99CG6-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "149934",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788954.1",
+      "encodingFormat": "application/gzip",
+      "md5": "adaf71fb4ba98fb2fdf78b850f7dbe4c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_125",
+      "name": "JH-2-012-HE58H-A_vs_JH-2-012-99CG6-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1370983",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788955.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d2b481e0d0f80ca7b4af392ceb44c614"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_126",
+      "name": "JH-2-013-7886G-A_vs_JH-2-013-3HDBG-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "193750",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788949.1",
+      "encodingFormat": "application/gzip",
+      "md5": "bc1394d790a0090c66fc7d24ae8ed317"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_127",
+      "name": "JH-2-013-7886G-A_vs_JH-2-013-3HDBG-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1514289",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788963.1",
+      "encodingFormat": "application/gzip",
+      "md5": "10be215a94dbb2f8f3b2903b7da70327"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_128",
+      "name": "JH-2-014-AH466-A_vs_JH-2-014-7EC8C-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "164743",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788966.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7c281daad1d6d29911f0edade0b3631f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_129",
+      "name": "JH-2-014-AH466-A_vs_JH-2-014-7EC8C-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1367649",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788960.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5f6b211bb69fe9c8727de5d14092dce8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_130",
+      "name": "JH-2-015-55B8D-A_vs_JH-2-015-65F26-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "138780",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788974.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2664b703c197f3071224a7f9b5aad7b6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_131",
+      "name": "JH-2-015-55B8D-A_vs_JH-2-015-65F26-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1259955",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788964.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3157b64ebe3c7dae4c82ea9cec396359"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_132",
+      "name": "JH-2-015-6AD96-A_vs_JH-2-015-65F26-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "142432",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788972.1",
+      "encodingFormat": "application/gzip",
+      "md5": "60b976becffd2d91ab8d1ec6e5266562"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_133",
+      "name": "JH-2-015-6AD96-A_vs_JH-2-015-65F26-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1781490",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788983.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c8ac13dc2d8767ac249fea7f9a508cf4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_134",
+      "name": "JH-2-015-G41AC-A_vs_JH-2-015-65F26-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "158056",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788982.1",
+      "encodingFormat": "application/gzip",
+      "md5": "211f08cc6d28ba4774aff36fd8372484"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_135",
+      "name": "JH-2-015-G41AC-A_vs_JH-2-015-65F26-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1370302",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788991.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0325a3e821a05ca247564a02768ec197"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_136",
+      "name": "JH-2-016-4H597-A_vs_JH-2-016-8HH24-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "176066",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788989.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b1c514fe5fa1c49db3fad1584f7ac908"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_137",
+      "name": "JH-2-016-4H597-A_vs_JH-2-016-8HH24-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1452364",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788987.1",
+      "encodingFormat": "application/gzip",
+      "md5": "259861904979b511852e792bfadd9b36"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_138",
+      "name": "JH-2-016-6H516-A_vs_JH-2-016-8HH24-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "151445",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52789005.1",
+      "encodingFormat": "application/gzip",
+      "md5": "848ba51a52bc3b61c69277e600154b15"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_139",
+      "name": "JH-2-016-6H516-A_vs_JH-2-016-8HH24-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1580697",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788984.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b13beac4684e9eda76eb871da32f74ba"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_140",
+      "name": "JH-2-017-9FH8F-A_vs_JH-2-017-C6562-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "174543",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52789006.1",
+      "encodingFormat": "application/gzip",
+      "md5": "062b7c69114fd64e58e88a40eddf5199"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_141",
+      "name": "JH-2-017-9FH8F-A_vs_JH-2-017-C6562-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1364644",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788995.1",
+      "encodingFormat": "application/gzip",
+      "md5": "82ea0e3295ed02104893a55b4cdbc76b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_142",
+      "name": "JH-2-019-DB5EH-A_vs_JH-2-019-HFBE1-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "160104",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52789008.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2d6e8046864050d116603ec5fa1226bd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_143",
+      "name": "JH-2-019-DB5EH-A_vs_JH-2-019-HFBE1-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1437806",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788997.1",
+      "encodingFormat": "application/gzip",
+      "md5": "eb49374a52ae6433c2a87c942153c532"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_144",
+      "name": "JH-2-021-6GFE7-A_vs_JH-2-021-4E64E-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "203744",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52789010.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8d7b78075438ff1596dec7b76c384944"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_145",
+      "name": "JH-2-021-6GFE7-A_vs_JH-2-021-4E64E-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1535677",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52789023.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e0d7dfa766843432d07a9c07e9797040"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_146",
+      "name": "JH-2-023-1G2BC-A_vs_JH-2-023-3EG77-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "166747",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52789017.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5b253bce36c3bda0808a60fee3f8d143"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_147",
+      "name": "JH-2-023-1G2BC-A_vs_JH-2-023-3EG77-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1778251",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52789022.1",
+      "encodingFormat": "application/gzip",
+      "md5": "32117dab029feeb9b12901edbf455bdc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_148",
+      "name": "JH-2-023-89E1F-A_vs_JH-2-023-3EG77-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "142761",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52789029.1",
+      "encodingFormat": "application/gzip",
+      "md5": "dc7a654f9e26a5fad60197f93e77e703"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_149",
+      "name": "JH-2-023-89E1F-A_vs_JH-2-023-3EG77-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1525154",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52789024.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7a4a81d8961476b1a295eac56ae224f4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_150",
+      "name": "JH-2-026-9FD64-A_vs_JH-2-026-17B1H-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "140618",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52789041.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6cad40d94753078b74e1bf18c7a44b3c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_151",
+      "name": "JH-2-026-9FD64-A_vs_JH-2-026-17B1H-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1382067",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52789048.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5e72b6523370c9d418a1f33615be04af"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_152",
+      "name": "JH-2-031-9GEA9-A_vs_JH-2-031-C91BG-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "168298",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52789043.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0eef55717e3720f90dd12740d4183b16"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_153",
+      "name": "JH-2-031-9GEA9-A_vs_JH-2-031-C91BG-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1631073",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52789045.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ffa742fb3d955153b46c9ada465db2ea"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_154",
+      "name": "JH-2-032-AE88A-A_vs_JH-2-032-D511F-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "143541",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52789059.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2e5ac9010a05c4da656c16b3fd456209"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_155",
+      "name": "JH-2-032-AE88A-A_vs_JH-2-032-D511F-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1493480",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52789057.1",
+      "encodingFormat": "application/gzip",
+      "md5": "127bb0b85b7a7e623bbda6c437a3714c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_156",
+      "name": "JH-2-009-2578C-A_vs_JH-2-009-871FH-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "22108",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52594326.1",
+      "encodingFormat": "application/gzip",
+      "md5": "27d2f3c70471df0282c4c6351719cbf6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_157",
+      "name": "JH-2-009-2578C-A_vs_JH-2-009-871FH-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "23975",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52594305.1",
+      "encodingFormat": "application/gzip",
+      "md5": "908dca5eab52a0fdbb1ac79d89a98dd0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_158",
+      "name": "JH-2-009-BBGBH-A_vs_JH-2-009-871FH-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "22334",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52594303.1",
+      "encodingFormat": "application/gzip",
+      "md5": "cd12cf8abe74122917a790e38129ea3e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_159",
+      "name": "JH-2-009-BBGBH-A_vs_JH-2-009-871FH-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "27131",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52594304.1",
+      "encodingFormat": "application/gzip",
+      "md5": "832826ebce3cce0a49c5f470d71c2880"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_160",
+      "name": "JH-2-009-HH11A-A_vs_JH-2-009-871FH-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "25551",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52594308.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1118ec0f81399b5f1ff81aafb8c40dfd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_161",
+      "name": "JH-2-009-HH11A-A_vs_JH-2-009-871FH-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "31364",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52594342.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f989a34bea818ca0c2bf13278b675f55"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_162",
+      "name": "JH-2-031-BFF3F-A_vs_JH-2-031-C91BG-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "25322",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52594316.1",
+      "encodingFormat": "application/gzip",
+      "md5": "584f44af136466b55b5edb28d11ae3a7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_163",
+      "name": "JH-2-031-BFF3F-A_vs_JH-2-031-C91BG-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "31823",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52594319.1",
+      "encodingFormat": "application/gzip",
+      "md5": "070af1c606891738b84a124a609435e9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_164",
+      "name": "JH-2-023-876HC-A_vs_JH-2-023-G59BC-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "242885",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52654574.1",
+      "encodingFormat": "application/gzip",
+      "md5": "65fa5d9e9ecb7be1f21d53bf7147232f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_165",
+      "name": "JH-2-023-876HC-A_vs_JH-2-023-G59BC-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1307021",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52654570.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e2819653dc70c18f333d8d70480404b1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_166",
+      "name": "JH-2-023-91HBD-A_vs_JH-2-023-G59BC-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "101299",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52654575.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ef652242fad78e47fcdaa2f5ba9aa2fe"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_167",
+      "name": "JH-2-023-91HBD-A_vs_JH-2-023-G59BC-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1043295",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52654585.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ee9f8788645be378470cdf92bc6b3cca"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_168",
+      "name": "JH-2-023-9DA42-A_vs_JH-2-023-G59BC-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "102235",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52654578.1",
+      "encodingFormat": "application/gzip",
+      "md5": "619d419ae881e92b6b7cbe320b800c96"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_169",
+      "name": "JH-2-023-9DA42-A_vs_JH-2-023-G59BC-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1026516",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52654576.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3c16346838bbb79a4e1e55bb9b328340"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_170",
+      "name": "JH-2-009-2578C-A_vs_JH-2-009-871FH-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "132341",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52602158.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f9c569532a09983b9db05dae3491cdb3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_171",
+      "name": "JH-2-009-2578C-A_vs_JH-2-009-871FH-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1503934",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52602160.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e78692f90da5f33f67a5beb7ce9ee7ca"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_172",
+      "name": "JH-2-015-C436G-A_vs_JH-2-015-65F26-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "148550",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52602135.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a4c014aa7f4daee8ab211bbbf8100b63"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_173",
+      "name": "JH-2-015-C436G-A_vs_JH-2-015-65F26-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1292587",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52602171.1",
+      "encodingFormat": "application/gzip",
+      "md5": "55049aa4d924360c5c9c9797b5f627e5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_174",
+      "name": "JH-2-029-7AE7F-A_vs_JH-2-029-9D9HA-A.strelka.somatic_indels.vcf.gz",
+      "contentSize": "165628",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52602134.1",
+      "encodingFormat": "application/gzip",
+      "md5": "033e95b3577753b108334433397702b1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_175",
+      "name": "JH-2-029-7AE7F-A_vs_JH-2-029-9D9HA-A.strelka.somatic_snvs.vcf.gz",
+      "contentSize": "1613215",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52602175.1",
+      "encodingFormat": "application/gzip",
+      "md5": "73eb8ca2c542600f91d03284d620c69f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_176",
+      "name": "Somatic Genomic Variants - Strelka Pipeline - 2024Release",
+      "description": "Synapse Dataset metadata schema for syn53149128",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53149128",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema",
+      "name": "Somatic Genomic Variants - Strelka Pipeline - 2024Release (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn53149128: 42 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/tumorType",
+          "name": "tumorType",
+          "description": "Column 'tumorType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/tumorType/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "tumorType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/workflow",
+          "name": "workflow",
+          "description": "Column 'workflow'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/workflow/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "workflow"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/id/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/name/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/description",
+          "name": "description",
+          "description": "Column 'description'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/description/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "description"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/etag/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/type/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/dataFileName",
+          "name": "dataFileName",
+          "description": "Column 'dataFileName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/dataFileName/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "dataFileName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/dataFileConcreteType",
+          "name": "dataFileConcreteType",
+          "description": "Column 'dataFileConcreteType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/dataFileConcreteType/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "dataFileConcreteType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/dataFileBucket",
+          "name": "dataFileBucket",
+          "description": "Column 'dataFileBucket'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/dataFileBucket/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "dataFileBucket"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/dataFileKey",
+          "name": "dataFileKey",
+          "description": "Column 'dataFileKey'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/dataFileKey/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "dataFileKey"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/age",
+          "name": "age",
+          "description": "Column 'age'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/age/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "age"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/assay/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/nf1Genotype",
+          "name": "nf1Genotype",
+          "description": "Column 'nf1Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/nf1Genotype/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "nf1Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/nf2Genotype",
+          "name": "nf2Genotype",
+          "description": "Column 'nf2Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/nf2Genotype/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "nf2Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/organ",
+          "name": "organ",
+          "description": "Column 'organ'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/organ/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "organ"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/sex",
+          "name": "sex",
+          "description": "Column 'sex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/sex/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "sex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/species/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/workflowLink",
+          "name": "workflowLink",
+          "description": "Column 'workflowLink'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/workflowLink/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "workflowLink"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/tissue",
+          "name": "tissue",
+          "description": "Column 'tissue'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Strelka_Pipeline_-_2024Release-schema/tissue/source",
+            "fileObject": {
+              "@id": "file_176"
+            },
+            "extract": {
+              "column": "tissue"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

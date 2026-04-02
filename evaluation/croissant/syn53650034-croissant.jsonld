@@ -1,0 +1,3349 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "The chromatin landscape of pathogenic transcriptional cell states in rheumatoid arthritis",
+  "description": "AMP RA Phase II synovium 10x Genomics scATAC-seq data from RA and OA control cases. Twenty-four chromatin classes were identified which are proposed to represent ‘superstates’ corresponding to multiple transcriptional cell states as described in Nature Communications https://doi.org/10.1038/s41467-024-48620-7.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "The chromatin landscape of pathogenic transcriptional cell states in rheumatoid arthritis. https://doi.org/10.7303/syn53650034.4",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "James Eddy",
+    "url": "https://www.synapse.org/#!Profile:2223305"
+  },
+  "datePublished": "2026-04-02 11:02:13.971",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn53650034",
+  "version": "5",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "AMP-RA.SLE_clinical.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn47136972.4",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "metadata_clin_donor_singlecell.xlsx",
+      "contentUrl": "https://www.synapse.org/Synapse:syn57405619.5",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "BRI-448_filtered_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330209.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "BRI-448_possorted_bam.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330304.3",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "BRI-448_possorted_bam.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330223.3",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "BRI-448_raw_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330218.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "BRI-449_filtered_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330153.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "BRI-449_possorted_bam.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330220.3",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "BRI-449_possorted_bam.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330157.3",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "BRI-449_raw_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330165.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "BRI-450_filtered_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330163.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "BRI-450_possorted_bam.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330262.3",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "BRI-450_possorted_bam.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330162.3",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "BRI-450_raw_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330166.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "BRI-542_filtered_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330172.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "BRI-542_possorted_bam.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330379.3",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "BRI-542_possorted_bam.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330171.3",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "BRI-542_raw_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330175.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "BRI-543_filtered_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330183.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "BRI-543_possorted_bam.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330389.3",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "BRI-543_possorted_bam.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330184.3",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "BRI-543_raw_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330189.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "BRI-544_filtered_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330191.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "BRI-544_possorted_bam.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330369.3",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "BRI-544_possorted_bam.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330192.3",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "BRI-544_raw_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330193.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "BRI-545_filtered_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330203.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "BRI-545_possorted_bam.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330386.3",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "BRI-545_possorted_bam.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330202.3",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "BRI-545_raw_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330201.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "BRI-546_filtered_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330231.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "BRI-546_possorted_bam.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330405.3",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "BRI-546_possorted_bam.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330230.3",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "BRI-546_raw_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330229.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "BRI-547_filtered_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330237.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "BRI-547_possorted_bam.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330392.3",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "BRI-547_possorted_bam.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330241.3",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "BRI-547_raw_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330239.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "BRI-639_filtered_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330249.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "BRI-639_possorted_bam.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330422.3",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "BRI-639_possorted_bam.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330252.3",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "BRI-639_raw_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330251.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "BRI-640_filtered_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330266.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "BRI-640_possorted_bam.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330432.3",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "BRI-640_possorted_bam.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330268.3",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "BRI-640_raw_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330267.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "BRI-641_filtered_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330277.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "BRI-641_possorted_bam.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330436.3",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "BRI-641_possorted_bam.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330404.3",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "BRI-641_raw_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330278.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "BRI-642_filtered_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330443.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "BRI-642_possorted_bam.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330537.3",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "BRI-642_possorted_bam.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330441.3",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "BRI-642_raw_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330446.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "BRI-643_filtered_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330453.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "BRI-643_possorted_bam.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330549.3",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "BRI-643_possorted_bam.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330449.3",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "BRI-643_raw_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330454.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "BRI-644_filtered_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330456.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "BRI-644_possorted_bam.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330568.3",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "BRI-644_possorted_bam.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330458.3",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "BRI-644_raw_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330457.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "BRI-645_filtered_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330482.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "BRI-645_possorted_bam.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330541.3",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "BRI-645_possorted_bam.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330483.3",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "BRI-645_raw_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330486.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "BRI-646_filtered_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330491.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "BRI-646_possorted_bam.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330603.3",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "BRI-646_possorted_bam.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330490.3",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "BRI-646_raw_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330492.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "BRI-647_filtered_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330497.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "BRI-647_possorted_bam.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330630.3",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "BRI-647_possorted_bam.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330501.3",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "BRI-647_raw_peak_bc_matrix.h5",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330498.3",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "BRI-448_S2_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329858.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "BRI-448_S2_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329865.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "BRI-448_S2_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329861.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "BRI-448_S2_L001_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329864.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "BRI-448_S2_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329857.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "BRI-448_S2_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329867.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "BRI-448_S2_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329862.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "BRI-448_S2_L002_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329866.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "BRI-449_S3_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329859.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "BRI-449_S3_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329874.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "BRI-449_S3_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329871.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "BRI-449_S3_L001_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329875.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "BRI-449_S3_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329860.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "BRI-449_S3_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329873.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "BRI-449_S3_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329870.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "BRI-449_S3_L002_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329876.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "BRI-450_S4_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329868.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "BRI-450_S4_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329872.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "BRI-450_S4_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329878.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "BRI-450_S4_L001_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329881.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "BRI-450_S4_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329869.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "BRI-450_S4_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329877.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "BRI-450_S4_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329879.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "BRI-450_S4_L002_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329880.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "BRI-542_S1_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329883.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "BRI-542_S1_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329885.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "BRI-542_S1_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329887.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "BRI-542_S1_L001_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329889.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "BRI-542_S1_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329882.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "BRI-542_S1_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329886.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "BRI-542_S1_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329884.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "BRI-542_S1_L002_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329888.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "BRI-543_S2_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329890.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "BRI-543_S2_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329892.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "BRI-543_S2_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329895.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "BRI-543_S2_L001_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329898.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "BRI-543_S2_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329891.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "BRI-543_S2_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329893.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "BRI-543_S2_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329894.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "BRI-543_S2_L002_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329896.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "BRI-544_S3_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329899.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "BRI-544_S3_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329903.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_116",
+      "name": "BRI-544_S3_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329905.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_117",
+      "name": "BRI-544_S3_L001_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329907.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_118",
+      "name": "BRI-544_S3_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329900.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_119",
+      "name": "BRI-544_S3_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329904.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_120",
+      "name": "BRI-544_S3_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329906.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_121",
+      "name": "BRI-544_S3_L002_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329908.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_122",
+      "name": "BRI-545_S4_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329910.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_123",
+      "name": "BRI-545_S4_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330013.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_124",
+      "name": "BRI-545_S4_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330011.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_125",
+      "name": "BRI-545_S4_L001_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330016.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_126",
+      "name": "BRI-545_S4_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329909.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_127",
+      "name": "BRI-545_S4_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329911.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_128",
+      "name": "BRI-545_S4_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330012.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_129",
+      "name": "BRI-545_S4_L002_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330017.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_130",
+      "name": "BRI-546_S5_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329913.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_131",
+      "name": "BRI-546_S5_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330023.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_132",
+      "name": "BRI-546_S5_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330014.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_133",
+      "name": "BRI-546_S5_L001_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330025.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_134",
+      "name": "BRI-546_S5_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26329914.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_135",
+      "name": "BRI-546_S5_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330020.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_136",
+      "name": "BRI-546_S5_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330015.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_137",
+      "name": "BRI-546_S5_L002_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330024.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_138",
+      "name": "BRI-547_S6_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330018.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_139",
+      "name": "BRI-547_S6_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330028.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_140",
+      "name": "BRI-547_S6_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330030.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_141",
+      "name": "BRI-547_S6_L001_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330036.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_142",
+      "name": "BRI-547_S6_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330021.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_143",
+      "name": "BRI-547_S6_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330027.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_144",
+      "name": "BRI-547_S6_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330031.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_145",
+      "name": "BRI-547_S6_L002_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330034.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_146",
+      "name": "BRI-639_S1_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330033.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_147",
+      "name": "BRI-639_S1_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330046.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_148",
+      "name": "BRI-639_S1_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330039.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_149",
+      "name": "BRI-639_S1_L001_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330044.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_150",
+      "name": "BRI-639_S1_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330035.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_151",
+      "name": "BRI-639_S1_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330051.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_152",
+      "name": "BRI-639_S1_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330042.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_153",
+      "name": "BRI-639_S1_L002_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330054.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_154",
+      "name": "BRI-640_S2_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330040.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_155",
+      "name": "BRI-640_S2_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330057.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_156",
+      "name": "BRI-640_S2_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330052.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_157",
+      "name": "BRI-640_S2_L001_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330059.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_158",
+      "name": "BRI-640_S2_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330048.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_159",
+      "name": "BRI-640_S2_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330060.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_160",
+      "name": "BRI-640_S2_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330056.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_161",
+      "name": "BRI-640_S2_L002_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330062.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_162",
+      "name": "BRI-641_S3_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330063.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_163",
+      "name": "BRI-641_S3_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330065.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_164",
+      "name": "BRI-641_S3_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330066.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_165",
+      "name": "BRI-641_S3_L001_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330078.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_166",
+      "name": "BRI-641_S3_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330067.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_167",
+      "name": "BRI-641_S3_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330074.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_168",
+      "name": "BRI-641_S3_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330069.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_169",
+      "name": "BRI-641_S3_L002_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330085.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_170",
+      "name": "BRI-642_S4_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330070.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_171",
+      "name": "BRI-642_S4_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330087.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_172",
+      "name": "BRI-642_S4_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330080.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_173",
+      "name": "BRI-642_S4_L001_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330088.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_174",
+      "name": "BRI-642_S4_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330073.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_175",
+      "name": "BRI-642_S4_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330089.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_176",
+      "name": "BRI-642_S4_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330083.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_177",
+      "name": "BRI-642_S4_L002_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330090.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_178",
+      "name": "BRI-643_S5_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330081.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_179",
+      "name": "BRI-643_S5_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330091.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_180",
+      "name": "BRI-643_S5_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330092.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_181",
+      "name": "BRI-643_S5_L001_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330100.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_182",
+      "name": "BRI-643_S5_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330093.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_183",
+      "name": "BRI-643_S5_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330099.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_184",
+      "name": "BRI-643_S5_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330101.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_185",
+      "name": "BRI-643_S5_L002_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330105.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_186",
+      "name": "BRI-644_S6_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330095.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_187",
+      "name": "BRI-644_S6_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330107.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_188",
+      "name": "BRI-644_S6_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330103.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_189",
+      "name": "BRI-644_S6_L001_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330111.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_190",
+      "name": "BRI-644_S6_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330097.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_191",
+      "name": "BRI-644_S6_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330109.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_192",
+      "name": "BRI-644_S6_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330112.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_193",
+      "name": "BRI-644_S6_L002_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330118.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_194",
+      "name": "BRI-645_S7_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330113.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_195",
+      "name": "BRI-645_S7_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330119.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_196",
+      "name": "BRI-645_S7_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330120.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_197",
+      "name": "BRI-645_S7_L001_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330122.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_198",
+      "name": "BRI-645_S7_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330121.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_199",
+      "name": "BRI-645_S7_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330123.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_200",
+      "name": "BRI-645_S7_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330124.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_201",
+      "name": "BRI-645_S7_L002_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330126.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_202",
+      "name": "BRI-646_S8_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330125.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_203",
+      "name": "BRI-646_S8_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330128.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_204",
+      "name": "BRI-646_S8_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330130.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_205",
+      "name": "BRI-646_S8_L001_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330135.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_206",
+      "name": "BRI-646_S8_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330131.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_207",
+      "name": "BRI-646_S8_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330140.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_208",
+      "name": "BRI-646_S8_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330137.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_209",
+      "name": "BRI-646_S8_L002_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330144.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_210",
+      "name": "BRI-647_S9_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330142.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_211",
+      "name": "BRI-647_S9_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330145.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_212",
+      "name": "BRI-647_S9_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330148.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_213",
+      "name": "BRI-647_S9_L001_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330156.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_214",
+      "name": "BRI-647_S9_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330146.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_215",
+      "name": "BRI-647_S9_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330155.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_216",
+      "name": "BRI-647_S9_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330152.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_217",
+      "name": "BRI-647_S9_L002_R3_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26330164.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_218",
+      "name": "AMP ATAC-SEQ protocol.pdf",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26162375.1",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_219",
+      "name": "AMP-RA_pII_synovium.snATACSeq.assay_metadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68494285.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_220",
+      "name": "AMP-RA_pII_synovium.snATACSeq.biospecimen_metadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68494280.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_221",
+      "name": "AMP RA ATAC-SEQ process data file manifest.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn61284785.2",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_222",
+      "name": "Bplasma_ATAC_meta.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641806.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_223",
+      "name": "Bplasma_ArchR_chromVARz_JASPAR2020.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641813.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_224",
+      "name": "Bplasma_ArchR_padj_JASPAR2020.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641805.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_225",
+      "name": "Bplasma_CITE_meta.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641808.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_226",
+      "name": "Bplasma_LDA_stats.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641802.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_227",
+      "name": "Bplasma_chosenPeaks.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641804.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_228",
+      "name": "Bplasma_class_state_df.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641803.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_229",
+      "name": "Bplasma_diffGenes.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641812.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_230",
+      "name": "Bplasma_diffPeaks.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641809.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_231",
+      "name": "Bplasma_snATAC_pxCT_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641810.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_232",
+      "name": "Bplasma_snATAC_pxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641814.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_233",
+      "name": "Bplasma_snRNA_gxCT_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641807.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_234",
+      "name": "Bplasma_snRNA_gxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641811.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_235",
+      "name": "PBMCsuperstate_TXH_diffGenes.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641911.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_236",
+      "name": "PBMCsuperstate_TXH_diffPeaks.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641905.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_237",
+      "name": "PBMCsuperstate_TXH_snATAC_pxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641914.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_238",
+      "name": "PBMCsuperstate_TXH_snRNA_gxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641912.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_239",
+      "name": "PBMCsuperstate_Treg_diffGenes.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641908.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_240",
+      "name": "PBMCsuperstate_Treg_diffPeaks.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641907.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_241",
+      "name": "PBMCsuperstate_Treg_snATAC_pxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641917.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_242",
+      "name": "PBMCsuperstate_Treg_snRNA_gxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641916.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_243",
+      "name": "PBMCsuperstate_geneUMIcounts.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641909.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_244",
+      "name": "PBMCsuperstate_meta.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641906.5",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_245",
+      "name": "PBMCsuperstate_peakFragCounts.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641913.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_246",
+      "name": "PBMCsuperstate_snATAC_cellQC_cellCounts.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641904.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_247",
+      "name": "PBMCsuperstate_snRNA_cellQC_cellCounts.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641903.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_248",
+      "name": "PBMCsuperstate_tissue_ATAC_df.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641910.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_249",
+      "name": "Bcell_PBMCvsTissue_df.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641871.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_250",
+      "name": "Tcell_PBMCvsTissue_df.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641872.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_251",
+      "name": "myeloid_PBMCvsTissue_df.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641870.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_252",
+      "name": "ATAC_chosenSNPs.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641941.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_253",
+      "name": "ATAC_pxc_afc_SNPpeaks_pxCT_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641942.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_254",
+      "name": "Tcell_ATAC_meta.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641488.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_255",
+      "name": "Tcell_ATAC_otherRes.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641489.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_256",
+      "name": "Tcell_ATAC_pxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641498.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_257",
+      "name": "Tcell_ArchR_chromVARz_JASPAR2020.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641491.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_258",
+      "name": "Tcell_ArchR_padj_JASPAR2020.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641486.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_259",
+      "name": "Tcell_CD4_CD8_lineage_betas.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641481.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_260",
+      "name": "Tcell_CITE_meta.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641487.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_261",
+      "name": "Tcell_CNA_CTAP-TB.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641482.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_262",
+      "name": "Tcell_CNA_Krenn.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641485.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_263",
+      "name": "Tcell_LDA_AUROC_T13_T14.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641478.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_264",
+      "name": "Tcell_LDA_AUROC_T3_T14.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641484.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_265",
+      "name": "Tcell_LDA_stats.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641483.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_266",
+      "name": "Tcell_chosenPeaks.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641477.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_267",
+      "name": "Tcell_class_state_df.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641479.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_268",
+      "name": "Tcell_diffGenes.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641490.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_269",
+      "name": "Tcell_diffPeaks.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641480.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_270",
+      "name": "Tcell_pseudobulkATAC_TA1_diffState_statsDF.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641500.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_271",
+      "name": "Tcell_pseudobulkATAC_diffState_pvalDF.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641493.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_272",
+      "name": "Tcell_snATAC_pxCITE_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641497.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_273",
+      "name": "Tcell_snATAC_pxCT_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641496.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_274",
+      "name": "Tcell_snATAC_pxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641502.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_275",
+      "name": "Tcell_snRNA_gxCITE_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641495.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_276",
+      "name": "Tcell_snRNA_gxCT_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641494.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_277",
+      "name": "Tcell_snRNA_gxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641499.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_278",
+      "name": "broadCT_chosenPeaks.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53642006.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_279",
+      "name": "multiome_bothQC_meta.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53642004.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_280",
+      "name": "peakComparison_df.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641999.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_281",
+      "name": "scATAC_cellQC_cellCounts.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53642001.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_282",
+      "name": "scATAC_meta.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53642005.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_283",
+      "name": "scATAC_pxCT_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53642008.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_284",
+      "name": "scATAC_pxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53642015.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_285",
+      "name": "snATAC_cellQC_cellCounts.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53642000.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_286",
+      "name": "snATAC_pxCT_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53642007.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_287",
+      "name": "snATAC_pxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53642012.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_288",
+      "name": "snRNA_cellQC_cellCounts.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53642002.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_289",
+      "name": "snRNA_gxCT_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53642003.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_290",
+      "name": "snRNA_gxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53642009.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_291",
+      "name": "endothelial_ATAC_meta.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641828.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_292",
+      "name": "endothelial_ArchR_chromVARz_JASPAR2020.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641835.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_293",
+      "name": "endothelial_ArchR_padj_JASPAR2020.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641827.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_294",
+      "name": "endothelial_CITE_meta.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641830.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_295",
+      "name": "endothelial_LDA_stats.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641826.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_296",
+      "name": "endothelial_chosenPeaks.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641825.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_297",
+      "name": "endothelial_class_state_df.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641824.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_298",
+      "name": "endothelial_diffGenes.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641832.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_299",
+      "name": "endothelial_diffPeaks.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641831.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_300",
+      "name": "endothelial_snATAC_pxCT_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641833.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_301",
+      "name": "endothelial_snATAC_pxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641836.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_302",
+      "name": "endothelial_snRNA_gxCT_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641829.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_303",
+      "name": "endothelial_snRNA_gxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641834.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_304",
+      "name": "ATAC_CITE_sample_conversion.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641971.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_305",
+      "name": "ATAC_class_colors.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641968.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_306",
+      "name": "CITE_state_colors.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641969.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_307",
+      "name": "HTO_hashtag_colors.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641970.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_308",
+      "name": "broadCT_colors.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641967.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_309",
+      "name": "myeloid_ATAC_meta.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641779.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_310",
+      "name": "myeloid_ATAC_otherRes.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641777.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_311",
+      "name": "myeloid_ArchR_chromVARz_JASPAR2020.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641785.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_312",
+      "name": "myeloid_ArchR_padj_JASPAR2020.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641773.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_313",
+      "name": "myeloid_CITE_meta.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641780.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_314",
+      "name": "myeloid_CNA_lymphoidDensity.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641778.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_315",
+      "name": "myeloid_LDA_stats.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641774.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_316",
+      "name": "myeloid_chosenPeaks.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641775.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_317",
+      "name": "myeloid_class_state_df.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641776.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_318",
+      "name": "myeloid_diffGenes.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641783.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_319",
+      "name": "myeloid_diffPeaks.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641782.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_320",
+      "name": "myeloid_pseudobulkATAC_diffState_pvalDF.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641781.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_321",
+      "name": "myeloid_snATAC_pxCT_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641784.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_322",
+      "name": "myeloid_snATAC_pxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641789.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_323",
+      "name": "myeloid_snRNA_gxCT_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641787.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_324",
+      "name": "myeloid_snRNA_gxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641788.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_325",
+      "name": "Bplasma_highCC_reclustering_df.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641857.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_326",
+      "name": "Tcell_RAonly_reclustering_df.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641859.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_327",
+      "name": "endothelial_highCC_reclustering_df.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641856.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_328",
+      "name": "stromal_RAonly_reclustering_df.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641858.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_329",
+      "name": "fibroblast_culturedFLS_gxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641745.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_330",
+      "name": "fibroblast_culturedFLS_pxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641748.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_331",
+      "name": "fibroblast_snATAC_pxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641747.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_332",
+      "name": "fibroblast_snRNA_gxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641744.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_333",
+      "name": "stromal_ATAC_meta.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641739.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_334",
+      "name": "stromal_ATAC_otherRes.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641738.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_335",
+      "name": "stromal_ATAC_pxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641756.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_336",
+      "name": "stromal_ArchR_chromVARz_JASPAR2020.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641746.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_337",
+      "name": "stromal_ArchR_padj_JASPAR2020.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641737.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_338",
+      "name": "stromal_CITE_meta.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641741.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_339",
+      "name": "stromal_CNA_CTAP-F.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641740.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_340",
+      "name": "stromal_DNAmethylation.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641751.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_341",
+      "name": "stromal_DNAmethylation_genes.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641750.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_342",
+      "name": "stromal_LDA_stats.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641752.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_343",
+      "name": "stromal_chosenPeaks.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641735.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_344",
+      "name": "stromal_class_state_df.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641736.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_345",
+      "name": "stromal_diffGenes.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641743.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_346",
+      "name": "stromal_diffPeaks.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641753.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_347",
+      "name": "stromal_pseudobulkATAC_diffState_pvalDF.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641755.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_348",
+      "name": "stromal_snATAC_pxCT_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641754.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_349",
+      "name": "stromal_snATAC_pxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641760.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_350",
+      "name": "stromal_snRNA_gxCT_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641759.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_351",
+      "name": "stromal_snRNA_gxc_norm.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641757.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_352",
+      "name": "PBMCsuperstate_snATAC_peaksXcells.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53640854.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_353",
+      "name": "PBMCsuperstate_snRNA_genesXcells.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53640857.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_354",
+      "name": "scATAC_peaksXcells.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641022.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_355",
+      "name": "snATAC_peaksXcells.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641130.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_356",
+      "name": "snRNA_genesXcells.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53641148.4",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_357",
+      "name": "The chromatin landscape of pathogenic transcriptional cell states in rheumatoid arthritis",
+      "description": "Synapse Dataset metadata schema for syn53650034",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53650034",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema",
+      "name": "The chromatin landscape of pathogenic transcriptional cell states in rheumatoid arthritis (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn53650034: 48 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/id/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/name/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/metadataType",
+          "name": "metadataType",
+          "description": "Column 'metadataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/metadataType/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "metadataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/metadataStandards",
+          "name": "metadataStandards",
+          "description": "Column 'metadataStandards'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/metadataStandards/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "metadataStandards"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/assay/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/libraryID",
+          "name": "libraryID",
+          "description": "Column 'libraryID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/libraryID/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "libraryID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/visitID",
+          "name": "visitID",
+          "description": "Column 'visitID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/visitID/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "visitID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataLevel",
+          "name": "dataLevel",
+          "description": "Column 'dataLevel'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataLevel/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "dataLevel"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/program",
+          "name": "program",
+          "description": "Column 'program'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/program/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "program"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/programPhase",
+          "name": "programPhase",
+          "description": "Column 'programPhase'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/programPhase/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "programPhase"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/project",
+          "name": "project",
+          "description": "Column 'project'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/project/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "project"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/biospecimenID",
+          "name": "biospecimenID",
+          "description": "Column 'biospecimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/biospecimenID/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "biospecimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/biospecimenType",
+          "name": "biospecimenType",
+          "description": "Column 'biospecimenType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/biospecimenType/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "biospecimenType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/biospecimenSubtype",
+          "name": "biospecimenSubtype",
+          "description": "Column 'biospecimenSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/biospecimenSubtype/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "biospecimenSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/parentBiospecimenID",
+          "name": "parentBiospecimenID",
+          "description": "Column 'parentBiospecimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/parentBiospecimenID/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "parentBiospecimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/specimenModality",
+          "name": "specimenModality",
+          "description": "Column 'specimenModality'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/specimenModality/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "specimenModality"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/cellRangerOutput",
+          "name": "cellRangerOutput",
+          "description": "Column 'cellRangerOutput'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/cellRangerOutput/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "cellRangerOutput"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/RObjectClass",
+          "name": "RObjectClass",
+          "description": "Column 'RObjectClass'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/RObjectClass/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "RObjectClass"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/libraryPrepMethod",
+          "name": "libraryPrepMethod",
+          "description": "Column 'libraryPrepMethod'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/libraryPrepMethod/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "libraryPrepMethod"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/nucleicAcidSource",
+          "name": "nucleicAcidSource",
+          "description": "Column 'nucleicAcidSource'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/nucleicAcidSource/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "nucleicAcidSource"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/platform",
+          "name": "platform",
+          "description": "Column 'platform'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/platform/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "platform"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/publicationSynID",
+          "name": "publicationSynID",
+          "description": "Column 'publicationSynID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/publicationSynID/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "publicationSynID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/softwareAndVersion",
+          "name": "softwareAndVersion",
+          "description": "Column 'softwareAndVersion'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/softwareAndVersion/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "softwareAndVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/etag/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataFileName",
+          "name": "dataFileName",
+          "description": "Column 'dataFileName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataFileName/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "dataFileName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataFileConcreteType",
+          "name": "dataFileConcreteType",
+          "description": "Column 'dataFileConcreteType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataFileConcreteType/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "dataFileConcreteType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataFileBucket",
+          "name": "dataFileBucket",
+          "description": "Column 'dataFileBucket'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataFileBucket/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "dataFileBucket"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataFileKey",
+          "name": "dataFileKey",
+          "description": "Column 'dataFileKey'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/dataFileKey/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "dataFileKey"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/path",
+          "name": "path",
+          "description": "Column 'path'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/path/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "path"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/description",
+          "name": "description",
+          "description": "Column 'description'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/description/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "description"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/type/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "The_chromatin_landscape_of_pathogenic_transcriptional_cell_states_in_rheumatoid_arthritis-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_357"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

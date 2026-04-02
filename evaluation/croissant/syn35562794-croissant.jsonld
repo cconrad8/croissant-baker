@@ -1,0 +1,764 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Germline Genomic Variants - FreeBayes Pipeline (from syn31621349)",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Germline Genomic Variants - FreeBayes Pipeline (from syn31621349). Synapse ID: syn35562794. https://www.synapse.org/Synapse:syn35562794",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:19:18.438",
+  "keywords": [
+    "FreeBayes",
+    "WGS",
+    "germline variants",
+    "NF1",
+    "cNF"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn35562794",
+  "version": "5",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "FreeBayes_VA01.vcf.gz",
+      "contentSize": "185957384",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624535.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5a73a07828931718b8b72de182ef7791"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "FreeBayes_VA01.vcf.gz.tbi",
+      "contentSize": "1633317",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624529.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "d9a0028878186e2bbad6c9b3992cd9d7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "FreeBayes_VA02.vcf.gz",
+      "contentSize": "357133124",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624587.1",
+      "encodingFormat": "application/gzip",
+      "md5": "89bf79166401ea0957219e829961e1e8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "FreeBayes_VA02.vcf.gz.tbi",
+      "contentSize": "1731732",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624568.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "a1f899dded060d4dd0fbfd0e660f3e9c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "FreeBayes_VA03.vcf.gz",
+      "contentSize": "125246691",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624634.1",
+      "encodingFormat": "application/gzip",
+      "md5": "be9f88f6eb85b64afd6a01436acaf124"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "FreeBayes_VA03.vcf.gz.tbi",
+      "contentSize": "1587582",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624621.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "793541c5f4975224d28439b0f43700da"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "FreeBayes_VA04.vcf.gz",
+      "contentSize": "302382263",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624890.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6ce0942a4d322cce73f955735b3c0f2d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "FreeBayes_VA04.vcf.gz.tbi",
+      "contentSize": "1707355",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624865.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "2ee8d44b62ddae17fb66b16bb91f9b7e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "FreeBayes_VA05.vcf.gz",
+      "contentSize": "415048682",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624897.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1b1d6f4f06d4cd30cdd7a2130c91d4c4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "FreeBayes_VA05.vcf.gz.tbi",
+      "contentSize": "1752899",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624875.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "3bb529d519ddc80fec0c53053db2ac5f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "FreeBayes_VA06.vcf.gz",
+      "contentSize": "318643173",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624949.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8bb687e86ffc1a97dbeba37eede37885"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "FreeBayes_VA06.vcf.gz.tbi",
+      "contentSize": "1710461",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624915.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "72cc419170652869be0ff0c63e97001c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "FreeBayes_VA07.vcf.gz",
+      "contentSize": "314524415",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624940.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8f43aee084b9c307a0b935273e062c72"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "FreeBayes_VA07.vcf.gz.tbi",
+      "contentSize": "1704303",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624928.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "fc925be4c99baa79701d2212418b26a0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "FreeBayes_VA08.vcf.gz",
+      "contentSize": "333300573",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624998.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2e1d9b462719fd0ca7cf6a385ee8a8b5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "FreeBayes_VA08.vcf.gz.tbi",
+      "contentSize": "1714353",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31624984.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "f25252b12247d422f1517e5283f044d3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "FreeBayes_VA09.vcf.gz",
+      "contentSize": "281489323",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31625036.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e27ac3e2b65846f60495452d2e739731"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "FreeBayes_VA09.vcf.gz.tbi",
+      "contentSize": "1681497",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31625026.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "240bbee418b0ac61513a3413773eb0a7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "FreeBayes_alt.vcf.gz",
+      "contentSize": "60035547",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31625249.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5f40b6d149a602e0b5751d862b5ef6c7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "FreeBayes_alt.vcf.gz.tbi",
+      "contentSize": "1421256",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31625244.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "0263385a9a71d15019574c066eacee6c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "Germline Genomic Variants - FreeBayes Pipeline (from syn31621349)",
+      "description": "Synapse Dataset metadata schema for syn35562794",
+      "contentUrl": "https://www.synapse.org/Synapse:syn35562794",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema",
+      "name": "Germline Genomic Variants - FreeBayes Pipeline (from syn31621349) (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn35562794: 31 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/id/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/name/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/etag/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/type/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/assay/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/nf1Genotype",
+          "name": "nf1Genotype",
+          "description": "Column 'nf1Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/nf1Genotype/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "nf1Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/nf2Genotype",
+          "name": "nf2Genotype",
+          "description": "Column 'nf2Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/nf2Genotype/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "nf2Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/species/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/workflow",
+          "name": "workflow",
+          "description": "Column 'workflow'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/workflow/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "workflow"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/workflowLink",
+          "name": "workflowLink",
+          "description": "Column 'workflowLink'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31621349_-schema/workflowLink/source",
+            "fileObject": {
+              "@id": "file_20"
+            },
+            "extract": {
+              "column": "workflowLink"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

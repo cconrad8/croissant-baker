@@ -1,0 +1,1750 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "AMP SLE LN class II kidney scRNA-seq",
+  "description": "AMP SLE Phase II 10x Genomics scRNA-seq data generated from kidney biopsies from class II lupus nephritis (i.e. SLE) and control cases.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "AMP SLE LN class II kidney scRNA-seq. https://doi.org/10.7303/syn62408999.2",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Jessica Vera",
+    "url": "https://www.synapse.org/#!Profile:3499646"
+  },
+  "datePublished": "2026-04-02 11:04:24.091",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn62408999",
+  "version": "3",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "AMP-SLE_LN_classII.kidney.10xGEX.sample_metadata.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn62403798.2",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "AMP-SLE_LN_classII.kidney.10xGEX.fastq_filename_mappings.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn62408400.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "200-0379_SLE_kidney-A_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375518.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "200-0379_SLE_kidney-A_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375523.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "200-0379_SLE_kidney-A_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375528.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "200-0379_SLE_kidney-A_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375522.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "200-0379_SLE_kidney-A_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375524.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "200-0379_SLE_kidney-A_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375529.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "200-0388_SLE_kidney-A_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374852.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "200-0388_SLE_kidney-A_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374857.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "200-0388_SLE_kidney-A_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374868.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "200-0388_SLE_kidney-A_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374853.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "200-0388_SLE_kidney-A_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374860.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "200-0388_SLE_kidney-A_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374871.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "200-1159_SLE_kidney-A_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374838.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "200-1159_SLE_kidney-A_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374842.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "200-1159_SLE_kidney-A_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374844.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "200-1159_SLE_kidney-A_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374841.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "200-1159_SLE_kidney-A_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374843.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "200-1159_SLE_kidney-A_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374847.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "200-1654_Ctrl_kidney-A_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375515.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "200-1654_Ctrl_kidney-A_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375519.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "200-1654_Ctrl_kidney-A_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375526.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "200-1654_Ctrl_kidney-A_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375516.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "200-1654_Ctrl_kidney-A_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375520.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "200-1654_Ctrl_kidney-A_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375527.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "200-1656_Ctrl_kidney-A_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374832.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "200-1656_Ctrl_kidney-A_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374834.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "200-1656_Ctrl_kidney-A_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374840.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "200-1656_Ctrl_kidney-A_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374837.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "200-1656_Ctrl_kidney-A_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374839.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "200-1656_Ctrl_kidney-A_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374848.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "200-1656_Ctrl_kidney-B_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375294.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "200-1656_Ctrl_kidney-B_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375440.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "200-1656_Ctrl_kidney-B_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375517.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "200-1656_Ctrl_kidney-B_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375465.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "200-1656_Ctrl_kidney-B_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375514.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "200-1656_Ctrl_kidney-B_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375521.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "200-1657_Ctrl_kidney-A_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374828.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "200-1657_Ctrl_kidney-A_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374829.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "200-1657_Ctrl_kidney-A_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374835.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "200-1657_Ctrl_kidney-A_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374831.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "200-1657_Ctrl_kidney-A_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374833.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "200-1657_Ctrl_kidney-A_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374836.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "200-1657_Ctrl_kidney-B_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374902.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "200-1657_Ctrl_kidney-B_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375054.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "200-1657_Ctrl_kidney-B_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375056.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "200-1657_Ctrl_kidney-B_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375055.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "200-1657_Ctrl_kidney-B_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375273.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "200-1657_Ctrl_kidney-B_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375373.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "200-1658_Ctrl_kidney-A_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374820.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "200-1658_Ctrl_kidney-A_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374825.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "200-1658_Ctrl_kidney-A_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374827.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "200-1658_Ctrl_kidney-A_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374821.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "200-1658_Ctrl_kidney-A_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374823.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "200-1658_Ctrl_kidney-A_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374830.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "200-1663_Ctrl_kidney-A_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374812.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "200-1663_Ctrl_kidney-A_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374814.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "200-1663_Ctrl_kidney-A_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374822.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "200-1663_Ctrl_kidney-A_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374816.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "200-1663_Ctrl_kidney-A_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374818.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "200-1663_Ctrl_kidney-A_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374826.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "200-2724_SLE_kidney-A_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374806.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "200-2724_SLE_kidney-A_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374813.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "200-2724_SLE_kidney-A_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374817.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "200-2724_SLE_kidney-A_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374811.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "200-2724_SLE_kidney-A_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374815.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "200-2724_SLE_kidney-A_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374819.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "200-2726_SLE_kidney-A_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374801.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "200-2726_SLE_kidney-A_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374803.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "200-2726_SLE_kidney-A_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374810.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "200-2726_SLE_kidney-A_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374804.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "200-2726_SLE_kidney-A_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374805.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "200-2726_SLE_kidney-A_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374808.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "200-2730_SLE_kidney-A_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374898.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "200-2730_SLE_kidney-A_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374900.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "200-2730_SLE_kidney-A_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375072.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "200-2730_SLE_kidney-A_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374899.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "200-2730_SLE_kidney-A_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374901.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "200-2730_SLE_kidney-A_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375245.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "200-2744_SLE_kidney-A_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374796.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "200-2744_SLE_kidney-A_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374798.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "200-2744_SLE_kidney-A_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374800.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "200-2744_SLE_kidney-A_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374797.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "200-2744_SLE_kidney-A_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374799.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "200-2744_SLE_kidney-A_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374802.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "200-2752_SLE_kidney-A_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374890.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "200-2752_SLE_kidney-A_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374892.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "200-2752_SLE_kidney-A_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374894.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "200-2752_SLE_kidney-A_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374891.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "200-2752_SLE_kidney-A_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374893.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "200-2752_SLE_kidney-A_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375053.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "200-2760_SLE_kidney-A_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374791.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "200-2760_SLE_kidney-A_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374792.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "200-2760_SLE_kidney-A_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374795.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "200-2760_SLE_kidney-A_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374790.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "200-2760_SLE_kidney-A_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374793.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "200-2760_SLE_kidney-A_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374794.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "200-2819_SLE_kidney-A_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374867.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "200-2819_SLE_kidney-A_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374880.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "200-2819_SLE_kidney-A_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374886.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "200-2819_SLE_kidney-A_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374884.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "200-2819_SLE_kidney-A_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374885.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "200-2819_SLE_kidney-A_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374889.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "200-2840_SLE_kidney-A_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374863.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "200-2840_SLE_kidney-A_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374866.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "200-2840_SLE_kidney-A_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374878.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "200-2840_SLE_kidney-A_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374864.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "200-2840_SLE_kidney-A_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374876.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "200-2840_SLE_kidney-A_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374879.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "200-3000_SLE_kidney-A_L001_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374851.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "200-3000_SLE_kidney-A_L001_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374858.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "200-3000_SLE_kidney-A_L001_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374861.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "200-3000_SLE_kidney-A_L002_I1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374854.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "200-3000_SLE_kidney-A_L002_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374859.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "200-3000_SLE_kidney-A_L002_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374862.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_116",
+      "name": "200-0379_SLE_kidney-A.DASH.R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375544.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_117",
+      "name": "200-0379_SLE_kidney-A.DASH.R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375541.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_118",
+      "name": "200-0388_SLE_kidney-A.DASH.R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375545.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_119",
+      "name": "200-0388_SLE_kidney-A.DASH.R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375685.2",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_120",
+      "name": "200-1159_SLE_kidney-A.DASH.R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375593.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_121",
+      "name": "200-1159_SLE_kidney-A.DASH.R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375534.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_122",
+      "name": "200-1654_Ctrl_kidney-A.DASH.R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375654.2",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_123",
+      "name": "200-1654_Ctrl_kidney-A.DASH.R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375572.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_124",
+      "name": "200-1656_Ctrl_kidney-A.DASH.R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375531.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_125",
+      "name": "200-1656_Ctrl_kidney-A.DASH.R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375557.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_126",
+      "name": "200-1656_Ctrl_kidney-B.DASH.R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375569.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_127",
+      "name": "200-1656_Ctrl_kidney-B.DASH.R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375550.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_128",
+      "name": "200-1657_Ctrl_kidney-A.DASH.R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375537.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_129",
+      "name": "200-1657_Ctrl_kidney-A.DASH.R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375538.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_130",
+      "name": "200-1657_Ctrl_kidney-B.DASH.R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375570.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_131",
+      "name": "200-1657_Ctrl_kidney-B.DASH.R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375583.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_132",
+      "name": "200-1658_Ctrl_kidney-A.DASH.R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375535.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_133",
+      "name": "200-1658_Ctrl_kidney-A.DASH.R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375539.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_134",
+      "name": "200-1663_Ctrl_kidney-A.DASH.R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375530.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_135",
+      "name": "200-1663_Ctrl_kidney-A.DASH.R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375553.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_136",
+      "name": "200-2724_SLE_kidney-A.DASH.R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375591.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_137",
+      "name": "200-2724_SLE_kidney-A.DASH.R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375548.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_138",
+      "name": "200-2726_SLE_kidney-A.DASH.R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375653.2",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_139",
+      "name": "200-2726_SLE_kidney-A.DASH.R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375542.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_140",
+      "name": "200-2730_SLE_kidney-A.DASH.R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375571.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_141",
+      "name": "200-2730_SLE_kidney-A.DASH.R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375540.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_142",
+      "name": "200-2736_SLE_kidney-A.DASH.R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375582.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_143",
+      "name": "200-2736_SLE_kidney-A.DASH.R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375543.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_144",
+      "name": "200-2744_SLE_kidney-A.DASH.R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375581.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_145",
+      "name": "200-2744_SLE_kidney-A.DASH.R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375536.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_146",
+      "name": "200-2760_SLE_kidney-A.DASH.R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375580.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_147",
+      "name": "200-2760_SLE_kidney-A.DASH.R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375533.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_148",
+      "name": "200-2819_SLE_kidney-A.DASH.R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375532.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_149",
+      "name": "200-2819_SLE_kidney-A.DASH.R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375594.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_150",
+      "name": "200-2840_SLE_kidney-A.DASH.R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375584.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_151",
+      "name": "200-2840_SLE_kidney-A.DASH.R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375560.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_152",
+      "name": "200-3000_SLE_kidney-A.DASH.R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375561.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_153",
+      "name": "200-3000_SLE_kidney-A.DASH.R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26375559.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_154",
+      "name": "Class_II_biopsies_with_dash.xlsx",
+      "contentUrl": "https://www.synapse.org/Synapse:syn61810647.2",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_155",
+      "name": "AMP-RA.SLE_clinical.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn47136972.4",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_156",
+      "name": "AMP SLE LN class II kidney scRNA-seq",
+      "description": "Synapse Dataset metadata schema for syn62408999",
+      "contentUrl": "https://www.synapse.org/Synapse:syn62408999",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema",
+      "name": "AMP SLE LN class II kidney scRNA-seq (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn62408999: 36 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/id/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/name/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/assay/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/tissue",
+          "name": "tissue",
+          "description": "Column 'tissue'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/tissue/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "tissue"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/isMultiSpecimen",
+          "name": "isMultiSpecimen",
+          "description": "Column 'isMultiSpecimen'",
+          "dataType": "sc:Boolean",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/isMultiSpecimen/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "isMultiSpecimen"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/libraryPreparationMethod",
+          "name": "libraryPreparationMethod",
+          "description": "Column 'libraryPreparationMethod'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/libraryPreparationMethod/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "libraryPreparationMethod"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/metadataType",
+          "name": "metadataType",
+          "description": "Column 'metadataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/metadataType/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "metadataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/platform",
+          "name": "platform",
+          "description": "Column 'platform'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/platform/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "platform"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/program",
+          "name": "program",
+          "description": "Column 'program'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/program/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "program"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/project",
+          "name": "project",
+          "description": "Column 'project'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/project/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "project"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/study",
+          "name": "study",
+          "description": "Column 'study'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/study/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "study"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/description",
+          "name": "description",
+          "description": "Column 'description'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/description/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "description"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/etag/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/path",
+          "name": "path",
+          "description": "Column 'path'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/path/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "path"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/type/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/dataFileName",
+          "name": "dataFileName",
+          "description": "Column 'dataFileName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/dataFileName/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "dataFileName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/dataFileConcreteType",
+          "name": "dataFileConcreteType",
+          "description": "Column 'dataFileConcreteType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/dataFileConcreteType/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "dataFileConcreteType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/dataFileBucket",
+          "name": "dataFileBucket",
+          "description": "Column 'dataFileBucket'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/dataFileBucket/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "dataFileBucket"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/dataFileKey",
+          "name": "dataFileKey",
+          "description": "Column 'dataFileKey'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_SLE_LN_class_II_kidney_scRNA-seq-schema/dataFileKey/source",
+            "fileObject": {
+              "@id": "file_156"
+            },
+            "extract": {
+              "column": "dataFileKey"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

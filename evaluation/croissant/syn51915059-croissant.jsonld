@@ -1,0 +1,836 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Gene expression profiling of Schwann cells and macrophages in mouse nerves and neurofibromas",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Gene expression profiling of Schwann cells and macrophages in mouse nerves and neurofibromas. Synapse ID: syn51915059. https://www.synapse.org/Synapse:syn51915059",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Jianqiang Wu"
+  },
+  "datePublished": "2026-04-02 11:12:10.149",
+  "keywords": [
+    "neurofibroma",
+    "Schwann cells",
+    "macrophages",
+    "gene expression",
+    "plexiform neurofibroma",
+    "NF1",
+    "intercellular signaling",
+    "inflammation"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn51915059",
+  "version": "9",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "4481_Schwann_cell_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "706866",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911760.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "7cdbc7ceeaa77ebf4b20176378e1470a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "4441_Macrophage_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "706858",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911750.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "b670708b4a48fd678ff9de48b3d12b4f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "4486_Macrophage_(MoGene-2_0-st).CEL",
+      "contentSize": "26356795",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911761.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "a92e81f9545f4a8ee1417ca392e6f557"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "1__28_+_30_Schwann_cell_(MoGene-2_0-st).CEL",
+      "contentSize": "26290047",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911695.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "96a5be6c7d417c0f09bc64bb68f10ef2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "4486_Macrophage_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "706054",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911762.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "d357d94824458e476b63f835407f9156"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "1__28_+_30_Schwann_cell_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "709244",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911696.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "722dc09f7a76dc904fe98529d0d0568d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "4486_Schwann_cell_(MoGene-2_0-st).CEL",
+      "contentSize": "26242087",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911763.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "836f4a7fcbd38521929f812f7ff08809"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "2__193_+_195_Schwann_cell_(MoGene-2_0-st).CEL",
+      "contentSize": "26321459",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911697.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "2eaa6998fcdb60bc324a3c050bed4dab"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "phenoData-detailed.csv",
+      "contentSize": "1319",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5931311.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "aa4ba12d13ce996c12862040b289f15a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "9__203_+_206_Schwann_cell_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "710056",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911720.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "79c4c1287a7bc7d1b191872313c7dcb3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "12__85_Macrophage_(MoGene-2_0-st).CEL",
+      "contentSize": "26197235",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911731.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "2152546d62cc21eebc066077b56ec33f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "15__207_+_210_Macrophage_(MoGene-2_0-st).CEL",
+      "contentSize": "26252471",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911742.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "35289105e3c8fcf39946d6847ad22021"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "4486_Schwann_cell_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "706866",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911764.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "c355bae8755d24f9853690551c2d201b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "2__193_+_195_Schwann_cell_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "710056",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911698.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "8a141efce3e82dc0575b2fa95d293834"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "5__193_+_195_Macrophage_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "710048",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911710.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "df868e2c5e2825d5f20a7707febbee83"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "12__85_Macrophage_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "710024",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911732.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "38e4e431bf6b1e4afd973fb7fd9a031d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "15__207_+_210_Macrophage_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "710052",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911743.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "7ed2369b26f95465cd9d1a36f3961b05"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "4448_Macrophage_(MoGene-2_0-st).CEL",
+      "contentSize": "26235363",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911754.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "854ecb5b0412c5abc4119280f5c3ba27"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "4992_Schwann_cell_(MoGene-2_0-st).CEL",
+      "contentSize": "26194743",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911765.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "f33715a6ce8496bf12b06f9661190c93"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "rma-gene-batch-corrected-by-combat.csv",
+      "contentSize": "16433863",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5931313.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "612a27def198c926c1faebd7d1c70b05"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "10__207_+_210_Schwann_cell_(MoGene-2_0-st).CEL",
+      "contentSize": "26218887",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911722.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "62c66b3631cb756db3760487f199fc69"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "16__Batch_Control_(MoGene-2_0-st).CEL",
+      "contentSize": "26253203",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911744.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "69b8b4cb59609a8b6b9b7f5a9c8a7547"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "4448_Macrophage_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "706858",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911755.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "0a3161eba92e6b470cb16574a415a3cc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "4992_Schwann_cell_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "706858",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911766.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "f6e2b615454ce9695b493800d504e4ee"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "10__207_+_210_Schwann_cell_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "710060",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911723.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "07e44fc58fdf54edd5035c3c4ce82dbd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "Batch_Control_2_(MoGene-2_0-st).CEL",
+      "contentSize": "26216923",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911767.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "3846af7c6cfe4651707c83ea3a42d817"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "3__196_+_197_+_198_Schwann_cell_(MoGene-2_0-st).CEL",
+      "contentSize": "26247843",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911702.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "32f31d4649b0abc899c14285a9e4896a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "6__196_-_199_+_201_+_204_Macrophage_(MoGene-2_0-st).CEL",
+      "contentSize": "26183987",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911713.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "b3e05ba89e1fefba98b0b60bde2d9e9b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "13__89_Macrophage_(MoGene-2_0-st).CEL",
+      "contentSize": "26240415",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911735.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "9f0ce9f685c3cdf55676ea925ef3f0f7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "16__Batch_Control_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "710024",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911746.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "ea984228c7f02af769505e95fa582c12"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "4481_Macrophage_(MoGene-2_0-st).CEL",
+      "contentSize": "26213835",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911757.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "0be4c27050c2185f81bd0c8c3e941beb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "Batch_Control_2_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "706858",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911768.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "0d1607df1d8d0a09ce9800e1f8a515a9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "3__196_+_197_+_198_Schwann_cell_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "710080",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911703.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "135ae9944078e78b2a92005d8c8a7a0c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "6__196_-_199_+_201_+_204_Macrophage_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "710096",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911714.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "39d7f531d64768a2f10003d3bcfb17f9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "13__89_Macrophage_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "710024",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911736.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "28c3cbf91a45aa01fdd0c3fc8eef49ab"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "4441_Macrophage_(MoGene-2_0-st).CEL",
+      "contentSize": "26212819",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911747.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "a938bf94e252815349f8222a57bd9b5d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "4481_Macrophage_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "706858",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911758.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "493d348cbb2566bb236c3d5cd5bc7792"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "GA_affy_CHP.xlsx",
+      "contentSize": "8620",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911769.1",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "md5": "8a0e58069d6845684c759fbe2e7b8656"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "4__28_+_30_Macrophage_(MoGene-2_0-st).CEL",
+      "contentSize": "26294091",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911704.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "841e0faa19dd6304f2e40136de2a87b5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "8__48_+_78_Schwann_cell_(MoGene-2_0-st).CEL",
+      "contentSize": "26186887",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911715.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "444cec8651e8694b9d286367bc729917"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "14__203_+_206_Macrophage_(MoGene-2_0-st).CEL",
+      "contentSize": "26264899",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911737.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "63407c91049fe42b8f1a479b33c77525"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "4481_Schwann_cell_(MoGene-2_0-st).CEL",
+      "contentSize": "26204411",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911759.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "20ef2bd40a2c80ba4b4b09f12b1a294d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "4__28_+_30_Macrophage_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "710040",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911705.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "b6def31633f222fa6d93d26bfdfaf798"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "8__48_+_78_Schwann_cell_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "710048",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911716.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "ab751437036059d846b64202821cf704"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "11__48_+_78_Macrophage_(MoGene-2_0-st).CEL",
+      "contentSize": "26256307",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911727.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "178b0f6702500c3c31efae4678cb318f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "14__203_+_206_Macrophage_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "710052",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911738.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "0fd9c2a88dd66e0d7d115f6bd8b263b4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "11__48_+_78_Macrophage_(MoGene-2_0-st).rma-gene-full.chp",
+      "contentSize": "710044",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911728.1",
+      "encodingFormat": "application/octet-stream",
+      "md5": "04faeeb11d8d88376a30874a78b780bf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "9__203_+_206_Schwann_cell_(MoGene-2_0-st).CEL",
+      "contentSize": "26247723",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911719.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "1797d28e31eecfe7fbab2f9c62e3336d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "5__193_+_195_Macrophage_(MoGene-2_0-st).CEL",
+      "contentSize": "26240315",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5911709.1",
+      "encodingFormat": "application/x-cel",
+      "md5": "805446481584b1394240a871644eeb84"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "Gene expression profiling of Schwann cells and macrophages in mouse nerves and neurofibromas",
+      "description": "Synapse Dataset metadata schema for syn51915059",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51915059",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema",
+      "name": "Gene expression profiling of Schwann cells and macrophages in mouse nerves and neurofibromas (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn51915059: 19 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/id/source",
+            "fileObject": {
+              "@id": "file_49"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/name/source",
+            "fileObject": {
+              "@id": "file_49"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/description",
+          "name": "description",
+          "description": "Column 'description'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/description/source",
+            "fileObject": {
+              "@id": "file_49"
+            },
+            "extract": {
+              "column": "description"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_49"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_49"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/etag/source",
+            "fileObject": {
+              "@id": "file_49"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_49"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_49"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/type/source",
+            "fileObject": {
+              "@id": "file_49"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_49"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_49"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_49"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_49"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_49"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_49"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_49"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/dataFileConcreteType",
+          "name": "dataFileConcreteType",
+          "description": "Column 'dataFileConcreteType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/dataFileConcreteType/source",
+            "fileObject": {
+              "@id": "file_49"
+            },
+            "extract": {
+              "column": "dataFileConcreteType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/dataFileBucket",
+          "name": "dataFileBucket",
+          "description": "Column 'dataFileBucket'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/dataFileBucket/source",
+            "fileObject": {
+              "@id": "file_49"
+            },
+            "extract": {
+              "column": "dataFileBucket"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/dataFileKey",
+          "name": "dataFileKey",
+          "description": "Column 'dataFileKey'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Gene_expression_profiling_of_Schwann_cells_and_macrophages_in_mouse_nerves_and_neurofibromas-schema/dataFileKey/source",
+            "fileObject": {
+              "@id": "file_49"
+            },
+            "extract": {
+              "column": "dataFileKey"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

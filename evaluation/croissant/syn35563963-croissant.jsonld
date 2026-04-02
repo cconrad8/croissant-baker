@@ -1,0 +1,695 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Germline Genomic Variants - DeepVariant Pipeline (from syn31715607)",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks. NF-OSI processed datasets of variant calls",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Germline Genomic Variants - DeepVariant Pipeline (from syn31715607). Synapse ID: syn35563963. https://www.synapse.org/Synapse:syn35563963",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:12:15.940",
+  "keywords": [
+    "germline variants",
+    "WGS",
+    "NF1",
+    "MPNST",
+    "DeepVariant"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn35563963",
+  "version": "7",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "JHU002-048.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716983.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "JHU023-044.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717004.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "JHU023-049.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717036.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "JHU031-045.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716972.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "JHU031-050.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716986.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "WU505-041.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716989.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "WU505-046.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717005.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "WU545-042.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717031.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "WU545-047.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717049.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "Germline Genomic Variants - DeepVariant Pipeline (from syn31715607)",
+      "description": "Synapse Dataset metadata schema for syn35563963",
+      "contentUrl": "https://www.synapse.org/Synapse:syn35563963",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema",
+      "name": "Germline Genomic Variants - DeepVariant Pipeline (from syn31715607) (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn35563963: 34 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/id/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/name/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/etag/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/type/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/assay/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/sex",
+          "name": "sex",
+          "description": "Column 'sex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/sex/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "sex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/species/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/workflow",
+          "name": "workflow",
+          "description": "Column 'workflow'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/workflow/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "workflow"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/data_type",
+          "name": "data_type",
+          "description": "Column 'data_type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/data_type/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "data_type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/isCellLine",
+          "name": "isCellLine",
+          "description": "Column 'isCellLine'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/isCellLine/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "isCellLine"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/tumorType",
+          "name": "tumorType",
+          "description": "Column 'tumorType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/tumorType/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "tumorType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/workflowLink",
+          "name": "workflowLink",
+          "description": "Column 'workflowLink'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31715607_-schema/workflowLink/source",
+            "fileObject": {
+              "@id": "file_9"
+            },
+            "extract": {
+              "column": "workflowLink"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

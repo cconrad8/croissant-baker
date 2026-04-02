@@ -1,0 +1,3164 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "A Spatially Coordinated Keratinocyte-Fibroblast Circuit Recruits MMP9+ Myeloid Cells to Drive IFN-I-Driven Inflammation in Photosensitive Autoimmunity",
+  "description": "Community Contributed publication dataset from Manuel Garber and John E. Harris of the University of Massachusetts Chan Medical School Vitiligo Center of Research Translation (V-CoRT). Using a variety of investigational methods the authors examined in vivo and in vitro samples to investigate an interferon-I (IFN-I)-amplified skin pathology and identified MMP9+ CD14+ myeloid cells as central effectors of photosensitivity in both cutaneous lupus erythematosus and dermatomyositis.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "A Spatially Coordinated Keratinocyte-Fibroblast Circuit Recruits MMP9+ Myeloid Cells to Drive IFN-I-Driven Inflammation in Photosensitive Autoimmunity. https://doi.org/10.7303/syn71964948.1",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Jessica Vera",
+    "url": "https://www.synapse.org/#!Profile:3499646"
+  },
+  "datePublished": "2026-04-02 13:00:52.277",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn71964948",
+  "version": "2",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "CLE_gse179633_seuratObject.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71230441.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "UMass_V-CoRT.skin_SeqFISH.AssayMetadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72122097.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "UMass_V-CoRT.skin_SeqFISH.BiospecimenMetadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72122098.2",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "UMass_V-CoRT.skin_SeqFISH.ClinicalMetadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72122099.2",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "seqfish_genePanel511.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71904932.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "UV_seqfish_seuratObject.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71222410.3",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "fourDisease_seqfish_seuratObject.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71222329.2",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "MiniProject_UV109_ROI1.tar.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219976.1",
+      "encodingFormat": "application/x-tar"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "MiniProject_UV238_ROI1.tar.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219990.1",
+      "encodingFormat": "application/x-tar"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "MiniProject_UV238_ROI2.tar.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71220003.1",
+      "encodingFormat": "application/x-tar"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "MiniProject_UV239_ROI1.tar.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71220035.1",
+      "encodingFormat": "application/x-tar"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "MiniProject_UV239_ROI2.tar.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71220018.1",
+      "encodingFormat": "application/x-tar"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "MiniProject_UV243_ROI1.tar.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71220013.1",
+      "encodingFormat": "application/x-tar"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "MiniProject_UV253_ROI1.tar.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71220040.1",
+      "encodingFormat": "application/x-tar"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "MiniProject_UV253_ROI2.tar.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219965.1",
+      "encodingFormat": "application/x-tar"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "MiniProject_UV258_ROI1.tar.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71220057.1",
+      "encodingFormat": "application/x-tar"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "MiniProject_UV258_ROI2.tar.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71220052.1",
+      "encodingFormat": "application/x-tar"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "MiniProject_UV258_ROI3.tar.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71220104.1",
+      "encodingFormat": "application/x-tar"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "MiniProject_UV260_ROI1.tar.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71220070.1",
+      "encodingFormat": "application/x-tar"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "MiniProject_UV260_ROI2.tar.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71220095.1",
+      "encodingFormat": "application/x-tar"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "MiniProject_VB268_ROI1.tar.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219955.1",
+      "encodingFormat": "application/x-tar"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "MiniProject_VB268_ROI2.tar.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219928.1",
+      "encodingFormat": "application/x-tar"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "UV109_ROI1_CellCoordinates.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219244.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "UV109_ROI1_CellxGene.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219264.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "UV109_ROI1_TranscriptsList.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219282.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "UV109_ROI2_CellCoordinates.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219278.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "UV109_ROI2_CellxGene.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219276.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "UV109_ROI2_TranscriptList.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219271.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "UV238_ROI1_CellCoordinates.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219301.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "UV238_ROI1_CellxGene.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219248.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "UV238_ROI1_TranscriptList.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219302.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "UV238_ROI2_CellCoordinates.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219275.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "UV238_ROI2_CellxGene.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219289.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "UV238_ROI2_TranscriptList.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219297.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "UV239_ROI1_CellCoordinates.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219281.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "UV239_ROI1_CellxGene.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219252.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "UV239_ROI1_TranscriptList.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219299.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "UV239_ROI2_CellCoordinates.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219284.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "UV239_ROI2_CellxGene.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219270.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "UV239_ROI2_TranscriptList.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219277.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "UV243_ROI1_CellCoordinates.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219229.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "UV243_ROI1_CellxGene.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219288.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "UV243_ROI1_TranscriptList.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219272.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "UV253_ROI1_CellCoordinates.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219298.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "UV253_ROI1_CellxGene.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219285.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "UV253_ROI1_TranscriptList.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219269.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "UV253_ROI2_CellCoordinates.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219257.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "UV253_ROI2_CellxGene.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219250.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "UV253_ROI2_TranscriptList.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219265.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "UV258_ROI1_CellCoordinates.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219256.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "UV258_ROI1_CellxGene.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219259.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "UV258_ROI1_TranscriptList.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219295.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "UV258_ROI2_CellCoordinates.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219255.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "UV258_ROI2_CellxGene.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219263.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "UV258_ROI2_TranscriptList.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219294.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "UV258_ROI3_CellCoordinates.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219253.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "UV258_ROI3_CellxGene.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219274.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "UV258_ROI3_TranscriptList.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219287.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "UV260_ROI1_CellCoordinates.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219267.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "UV260_ROI1_CellxGene.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219291.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "UV260_ROI1_TranscriptList.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219290.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "UV260_ROI2_CellCoordinates.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219235.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "UV260_ROI2_CellxGene.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219296.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "UV260_ROI2_TranscriptList.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219286.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "VB268_ROI1_CellCoordinates.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219260.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "VB268_ROI1_CellxGene.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219292.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "VB268_ROI1_TranscriptList.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219266.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "VB268_ROI2_CellCoordinates.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219246.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "VB268_ROI2_CellxGene.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219273.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "VB268_ROI2_TranscriptList.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71219283.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "NULISAseq_Inflammation_Panel_250_Targets_20251208.tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71947393.1",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "UMass_V-CoRT.suction_blister_fluid.Nulisa.AssayMetadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72107708.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "UMass_V-CoRT.suction_blister_fluid.Nulisa.BiospecimenMetadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72107709.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "UMass_V-CoRT.suction_blister_fluid.Nulisa.ClinicalMetadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72107707.2",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "fourDisease_nulisa.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71223300.2",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "Olink Target 48 Cytokine - 2025-12-07.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71925273.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "Olink Target 48 Immune Surveillance - 2025-12-07.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71925274.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "UMass_V-CoRT.keratinocyte-moDCs.Olink.AssayMetadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72107688.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "UMass_V-CoRT.keratinocyte-moDCs.Olink.BiospecimenMetadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72107843.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "UV_olink_meta_data_with_biospecimenID.xlsx",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71958956.2",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "UV_olink_NPX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71223432.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "UV_olink_absolute_concentration.xlsx",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71223431.1",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "F2N_100.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255236.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "F2N_Ctrl.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255242.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "F2N_IFNB.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255246.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "F2N_IFNB_50.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255235.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "F3N_Ctrl.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255238.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "F3N_IFNB.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255232.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "F3N_IFNB_50.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255230.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "F3N_KC.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255234.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "F4N_100.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255244.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "F4N_Ctrl.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255249.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "F4N_IFNB.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255239.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "F4N_IFNB_50.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255248.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "F4N_KC.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255228.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "F5N_100.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255241.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "F5N_Ctrl.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255245.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "F5N_IFNB.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255247.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "F5N_IFNB_50.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255240.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "F5N_KC.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255233.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "PF2n_B_24h.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255227.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "PF2n_G_24h.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255229.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "PF2n_IL1_24h.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706479.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "PF2n_M_24h.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706481.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "PF2n_TNF_24h.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706482.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "PF3n_G_24h.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255243.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "PF3n_IL1_24h.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706483.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "PF3n_M_24h.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706477.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "PF3n_TNF_24h.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706476.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "PF5n_B_24h.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255231.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "PF5n_G_24h.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255237.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "PF5n_IL1_24h.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706484.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "PF5n_M_24h.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706480.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "PF5n_TNF_24h.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706478.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "UMass_V-CoRT.fibroblast_bulk_RNA-seq.AssayMetadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72107898.3",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "UMass_V-CoRT.fibroblast_bulk_RNA-seq.BiospecimenMetadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72107900.3",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_116",
+      "name": "bulkRNAseq_metadata_fibroblast.xlsx",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71707987.3",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_117",
+      "name": "Fib_sup_KC_normalized_counts_combatseq.tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255078.2",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_118",
+      "name": "Fib_sup_KC_raw_adjusted_combatseq.tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72255077.2",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_119",
+      "name": "DC1_100.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706435.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_120",
+      "name": "DC1_50.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706438.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_121",
+      "name": "DC1_50I.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706436.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_122",
+      "name": "DC1_I.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706470.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_123",
+      "name": "DC1_KC.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706446.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_124",
+      "name": "DC1_KCI.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706445.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_125",
+      "name": "DC1_LPS.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706451.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_126",
+      "name": "DC1_M.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706441.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_127",
+      "name": "DC2_100.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706449.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_128",
+      "name": "DC2_100I.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706437.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_129",
+      "name": "DC2_50.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706442.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_130",
+      "name": "DC2_50I.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706454.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_131",
+      "name": "DC2_50I_batch2.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706469.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_132",
+      "name": "DC2_I.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706452.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_133",
+      "name": "DC2_KC.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706459.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_134",
+      "name": "DC2_KCI.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706457.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_135",
+      "name": "DC2_LPS.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706458.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_136",
+      "name": "DC2_M.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706472.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_137",
+      "name": "DC3_100.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706444.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_138",
+      "name": "DC3_100I.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706447.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_139",
+      "name": "DC3_50.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706455.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_140",
+      "name": "DC3_50I.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706440.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_141",
+      "name": "DC3_I.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706433.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_142",
+      "name": "DC3_KC.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706462.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_143",
+      "name": "DC3_KCI.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706434.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_144",
+      "name": "DC3_LPS.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706448.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_145",
+      "name": "DC3_M.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706461.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_146",
+      "name": "DC4_100.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706464.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_147",
+      "name": "DC4_100I.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706456.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_148",
+      "name": "DC4_50.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706466.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_149",
+      "name": "DC4_50I.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706443.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_150",
+      "name": "DC4_I.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706460.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_151",
+      "name": "DC4_KC.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706450.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_152",
+      "name": "DC4_KCI.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706467.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_153",
+      "name": "DC4_LPS.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706475.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_154",
+      "name": "DC4_M.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706439.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_155",
+      "name": "DC5_100.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706473.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_156",
+      "name": "DC5_100I.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706471.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_157",
+      "name": "DC5_I.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706465.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_158",
+      "name": "DC5_KC.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706468.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_159",
+      "name": "DC5_KCI.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706453.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_160",
+      "name": "DC5_LPS.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706474.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_161",
+      "name": "DC5_M.p2.fq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706463.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_162",
+      "name": "UMass_V-CoRT.moDCs_bulk_RNA-seq.AssayMetadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72107899.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_163",
+      "name": "UMass_V-CoRT.moDCs_bulk_RNA-seq.BiospecimenMetadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72107901.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_164",
+      "name": "bulkRNAseq_metadata_DC.xlsx",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71707985.2",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_165",
+      "name": "DC_uvb_meta_cpm_merged_samples_paper.tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706301.1",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_166",
+      "name": "DC_uvb_meta_raw_merged_samples_paper.tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71706298.1",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_167",
+      "name": "extractValidReads_V3_ps_gz.py",
+      "contentUrl": "https://www.synapse.org/Synapse:syn66395126.1",
+      "encodingFormat": "text/x-python"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_168",
+      "name": "CB017_V1_H2_batch9_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65484422.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_169",
+      "name": "CB020_V1_H1_batch16_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485082.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_170",
+      "name": "CB020_V1_H2_batch16_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485027.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_171",
+      "name": "CB021_V1_H1_batch17_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485048.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_172",
+      "name": "CB021_V1_H2_batch16_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485149.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_173",
+      "name": "CB022_V1_H1_batch18_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485030.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_174",
+      "name": "CB022_V1_H1_batch19_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65484993.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_175",
+      "name": "CB022_V1_H1_batch20_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65484949.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_176",
+      "name": "CB022_V1_H1_batch21_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485021.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_177",
+      "name": "CB022_V1_H1_batch22_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485068.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_178",
+      "name": "CB022_V1_H2_batch18_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485009.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_179",
+      "name": "CB022_V1_H2_batch19_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485143.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_180",
+      "name": "CB022_V1_H2_batch20_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485034.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_181",
+      "name": "CB022_V1_H2_batch21_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65484974.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_182",
+      "name": "CB022_V1_H2_batch22_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485047.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_183",
+      "name": "CB023_V1_H1_batch18_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485050.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_184",
+      "name": "CB023_V1_H2_batch18_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485052.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_185",
+      "name": "CB027_V1_H1_batch11_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485016.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_186",
+      "name": "CB043_V1_H_batch5_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831993.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_187",
+      "name": "CB044_V1_H_batch5_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68832000.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_188",
+      "name": "CB046_V1_H_batch5_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831990.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_189",
+      "name": "CB31_V1_H1_batch3_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831979.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_190",
+      "name": "CL067_V1_L1_batch12_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485061.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_191",
+      "name": "CL067_V1_L1_batch7_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485130.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_192",
+      "name": "CL067_V1_L2_batch12_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485060.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_193",
+      "name": "CL067_V1_L2_batch6_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65484975.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_194",
+      "name": "CL067_V1_NL_batch12_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485037.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_195",
+      "name": "CL067_V1_NL_batch7_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485001.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_196",
+      "name": "CL067_V2_L1_batch5_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831996.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_197",
+      "name": "CL067_V2_L2_batch5_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831995.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_198",
+      "name": "CL067_V2_NL_batch5_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831989.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_199",
+      "name": "CL091_V1_L1_batch25_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485077.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_200",
+      "name": "CL091_V1_L2_batch23_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65484997.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_201",
+      "name": "CL091_V1_NL1_batch23_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485097.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_202",
+      "name": "CL179_V1_L_batch5_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831997.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_203",
+      "name": "CL179_V1_NL_batch5_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68832004.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_204",
+      "name": "CL190_V1_L_batch2_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831987.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_205",
+      "name": "CL190_V1_NL_batch2_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831980.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_206",
+      "name": "DM103_V1_L_batch11_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485118.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_207",
+      "name": "DM103_V1_NL_batch11_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65484983.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_208",
+      "name": "DM103_V1_PL_batch11_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485076.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_209",
+      "name": "DM103_V2_L_batch11_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65484424.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_210",
+      "name": "DM103_V2_NL1_batch11_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485095.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_211",
+      "name": "DM103_V2_NL2_batch11_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485008.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_212",
+      "name": "DM178_V1_L_batch5_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831998.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_213",
+      "name": "DM178_V1_NL_batch5_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831991.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_214",
+      "name": "DM178_V2_L_batch2_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831992.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_215",
+      "name": "DM178_V2_NL_batch2_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831982.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_216",
+      "name": "DM198_V1_L_batch4_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831986.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_217",
+      "name": "DM198_V1_NL_batch4_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831981.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_218",
+      "name": "DM199_V1_L_batch4_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831978.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_219",
+      "name": "DM199_V1_NL_batch4_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68832003.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_220",
+      "name": "DM200_V1_L_batch4_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831994.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_221",
+      "name": "DM200_V1_NL_batch4_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68832002.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_222",
+      "name": "VB065_V1_L1_batch7_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485144.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_223",
+      "name": "VB065_V1_L2_batch8_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485031.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_224",
+      "name": "VB065_V1_NL_batch12_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485165.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_225",
+      "name": "VB065_V1_NL_batch7_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485150.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_226",
+      "name": "VB066_V1_L1_batch10_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485064.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_227",
+      "name": "VB066_V1_NL_batch10_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485164.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_228",
+      "name": "VB066_V1_NL_batch14_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65484978.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_229",
+      "name": "VB074_V1_L1_batch13_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485119.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_230",
+      "name": "VB074_V1_L2_batch13_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485041.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_231",
+      "name": "VB074_V1_NL1_batch13_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485046.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_232",
+      "name": "VB074_V1_NL2_batch15_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485092.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_233",
+      "name": "VB075_V1_L1_batch16_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485069.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_234",
+      "name": "VB075_V1_NL1_batch12_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485053.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_235",
+      "name": "VB075_V1_NL2_batch15_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485013.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_236",
+      "name": "VB076_V1_L1_batch15_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485137.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_237",
+      "name": "VB076_V1_L2_batch14_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485122.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_238",
+      "name": "VB076_V1_NL1_batch15_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485015.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_239",
+      "name": "VB076_V1_NL1_batch16_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485062.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_240",
+      "name": "VB076_V1_NL2_batch15_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485022.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_241",
+      "name": "VB076_V1_NL2_batch16_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485056.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_242",
+      "name": "VB077_V1_L1_batch10_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65484985.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_243",
+      "name": "VB077_V1_L2_batch13_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485038.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_244",
+      "name": "VB077_V1_L2_batch17_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485133.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_245",
+      "name": "VB077_V1_L2_batch24_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485063.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_246",
+      "name": "VB077_V1_NL1_batch10_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485124.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_247",
+      "name": "VB077_V1_NL1_batch14_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65484980.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_248",
+      "name": "VB077_V1_NL2_batch13_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65484987.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_249",
+      "name": "VB077_V1_NL2_batch17_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485072.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_250",
+      "name": "VB081_V1_L1_batch17_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485029.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_251",
+      "name": "VB081_V1_L1_batch24_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485028.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_252",
+      "name": "VB081_V1_L2_batch17_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485036.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_253",
+      "name": "VB081_V1_NL_batch17_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485105.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_254",
+      "name": "VB085_V1_L1_batch24_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485004.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_255",
+      "name": "VB085_V1_NL_batch24_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485019.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_256",
+      "name": "VB092_V1_L_batch36_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485094.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_257",
+      "name": "VB092_V1_NL_batch36_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485032.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_258",
+      "name": "VB092_V1_PL1_batch25_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485125.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_259",
+      "name": "VB093_V1_L_batch27_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485157.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_260",
+      "name": "VB093_V1_L_batch34_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485162.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_261",
+      "name": "VB093_V1_NL_batch27_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485163.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_262",
+      "name": "VB093_V1_NL_batch34_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485151.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_263",
+      "name": "VB096_V1_L2_batch29_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485075.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_264",
+      "name": "VB096_V1_L_batch29_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485098.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_265",
+      "name": "VB096_V1_NL_batch29_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485111.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_266",
+      "name": "VB097_V1_L1_batch26_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485155.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_267",
+      "name": "VB097_V1_L1_batch34_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485117.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_268",
+      "name": "VB097_V1_L2_batch26_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485090.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_269",
+      "name": "VB097_V1_L2_batch34_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485023.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_270",
+      "name": "VB097_V1_NL1_batch26_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485026.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_271",
+      "name": "VB097_V1_NL1_batch34_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485018.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_272",
+      "name": "VB097_V1_NL2_batch26_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485071.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_273",
+      "name": "VB097_V1_NL2_batch34_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485014.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_274",
+      "name": "VB098_V1_L_batch35_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485138.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_275",
+      "name": "VB098_V1_NL_batch35_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485126.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_276",
+      "name": "VB098_V1_NL_batch5_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831983.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_277",
+      "name": "VB102_V1_L_batch30_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485128.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_278",
+      "name": "VB102_V1_L_batch36_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485080.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_279",
+      "name": "VB102_V1_NL_batch36_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65484992.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_280",
+      "name": "VB102_V1_PL_batch11_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485152.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_281",
+      "name": "VB105_V1_LI_batch29_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485079.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_282",
+      "name": "VB105_V1_L_batch29_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485113.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_283",
+      "name": "VB105_V1_NL_batch29_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485017.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_284",
+      "name": "VB114_V1_L_batch31_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485108.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_285",
+      "name": "VB114_V1_NL_batch31_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65484979.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_286",
+      "name": "VB130_V1_L_batch11_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485107.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_287",
+      "name": "VB130_V1_NL_batch11_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485024.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_288",
+      "name": "VB131_V1_L_batch11_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485003.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_289",
+      "name": "VB131_V1_NL_batch11_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485065.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_290",
+      "name": "VB132_V1_L_batch11_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485131.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_291",
+      "name": "VB132_V1_NL_batch11_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485102.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_292",
+      "name": "VB141_V1_L_batch3_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831999.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_293",
+      "name": "VB141_V1_NL_batch3_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831977.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_294",
+      "name": "VB150_V1_L_batch32_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485136.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_295",
+      "name": "VB150_V1_NL_batch32_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485033.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_296",
+      "name": "VB151_V1_L_batch32_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485084.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_297",
+      "name": "VB151_V1_NL_batch32_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485020.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_298",
+      "name": "VB170_V1_L_batch1_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831985.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_299",
+      "name": "VB170_V1_NL_batch1_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831976.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_300",
+      "name": "VB172_V1_L_batch35_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485141.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_301",
+      "name": "VB172_V1_NL_batch35_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn65485057.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_302",
+      "name": "VB172_V1_NL_batch5_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68832001.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_303",
+      "name": "VB173_V1_L_batch5_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831984.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_304",
+      "name": "VB173_V1_NL_batch5_R1_valid.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68831988.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_305",
+      "name": "UMass_V-CoRT.suction_blister_cells.scRNASeq.AssayMetadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72108809.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_306",
+      "name": "UMass_V-CoRT.suction_blister_cells.scRNASeq.BiospecimenMetadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72108811.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_307",
+      "name": "UMass_V-CoRT.suction_blister_cells.scRNASeq.ClinicalMetadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn72108810.2",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_308",
+      "name": "gel_barcode1_list.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn66395125.1",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_309",
+      "name": "scRNAseq_seuratObject.rds",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68840795.2",
+      "encodingFormat": "application/x-r-rds"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_310",
+      "name": "A Spatially Coordinated Keratinocyte-Fibroblast Circuit Recruits MMP9+ Myeloid Cells to Drive IFN-I-Driven Inflammation in Photosensitive Autoimmunity",
+      "description": "Synapse Dataset metadata schema for syn71964948",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71964948",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema",
+      "name": "A Spatially Coordinated Keratinocyte-Fibroblast Circuit Recruits MMP9+ Myeloid Cells to Drive IFN-I-Driven Inflammation in Photosensitive Autoimmunity (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn71964948: 57 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/id/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/name/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/assay/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/biospecimenID",
+          "name": "biospecimenID",
+          "description": "Column 'biospecimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/biospecimenID/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "biospecimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/parentBiospecimenID",
+          "name": "parentBiospecimenID",
+          "description": "Column 'parentBiospecimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/parentBiospecimenID/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "parentBiospecimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/metadataType",
+          "name": "metadataType",
+          "description": "Column 'metadataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/metadataType/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "metadataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/metadataStandards",
+          "name": "metadataStandards",
+          "description": "Column 'metadataStandards'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/metadataStandards/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "metadataStandards"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/biospecimenType",
+          "name": "biospecimenType",
+          "description": "Column 'biospecimenType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/biospecimenType/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "biospecimenType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/biospecimenSubtype",
+          "name": "biospecimenSubtype",
+          "description": "Column 'biospecimenSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/biospecimenSubtype/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "biospecimenSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/cellType",
+          "name": "cellType",
+          "description": "Column 'cellType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/cellType/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "cellType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/primaryCellSource",
+          "name": "primaryCellSource",
+          "description": "Column 'primaryCellSource'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/primaryCellSource/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "primaryCellSource"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/processedDataType",
+          "name": "processedDataType",
+          "description": "Column 'processedDataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/processedDataType/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "processedDataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataCollectionBatch",
+          "name": "dataCollectionBatch",
+          "description": "Column 'dataCollectionBatch'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataCollectionBatch/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "dataCollectionBatch"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataLevel",
+          "name": "dataLevel",
+          "description": "Column 'dataLevel'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataLevel/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "dataLevel"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/RObjectClass",
+          "name": "RObjectClass",
+          "description": "Column 'RObjectClass'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/RObjectClass/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "RObjectClass"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/alignmentReference",
+          "name": "alignmentReference",
+          "description": "Column 'alignmentReference'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/alignmentReference/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "alignmentReference"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/libraryID",
+          "name": "libraryID",
+          "description": "Column 'libraryID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/libraryID/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "libraryID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/libraryPrepMethod",
+          "name": "libraryPrepMethod",
+          "description": "Column 'libraryPrepMethod'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/libraryPrepMethod/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "libraryPrepMethod"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/nucleicAcidSource",
+          "name": "nucleicAcidSource",
+          "description": "Column 'nucleicAcidSource'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/nucleicAcidSource/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "nucleicAcidSource"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/plateID",
+          "name": "plateID",
+          "description": "Column 'plateID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/plateID/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "plateID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/platform",
+          "name": "platform",
+          "description": "Column 'platform'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/platform/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "platform"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/program",
+          "name": "program",
+          "description": "Column 'program'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/program/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "program"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/project",
+          "name": "project",
+          "description": "Column 'project'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/project/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "project"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/readLength",
+          "name": "readLength",
+          "description": "Column 'readLength'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/readLength/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "readLength"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/softwareAndVersion",
+          "name": "softwareAndVersion",
+          "description": "Column 'softwareAndVersion'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/softwareAndVersion/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "softwareAndVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/species/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/specimenModality",
+          "name": "specimenModality",
+          "description": "Column 'specimenModality'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/specimenModality/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "specimenModality"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/targetPanel",
+          "name": "targetPanel",
+          "description": "Column 'targetPanel'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/targetPanel/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "targetPanel"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/targetPanelSize",
+          "name": "targetPanelSize",
+          "description": "Column 'targetPanelSize'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/targetPanelSize/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "targetPanelSize"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/targetPanelSynID",
+          "name": "targetPanelSynID",
+          "description": "Column 'targetPanelSynID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/targetPanelSynID/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "targetPanelSynID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/userDefinedCellType",
+          "name": "userDefinedCellType",
+          "description": "Column 'userDefinedCellType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/userDefinedCellType/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "userDefinedCellType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/visitID",
+          "name": "visitID",
+          "description": "Column 'visitID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/visitID/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "visitID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/description",
+          "name": "description",
+          "description": "Column 'description'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/description/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "description"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/path",
+          "name": "path",
+          "description": "Column 'path'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/path/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "path"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/etag/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/type/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataFileName",
+          "name": "dataFileName",
+          "description": "Column 'dataFileName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataFileName/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "dataFileName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataFileConcreteType",
+          "name": "dataFileConcreteType",
+          "description": "Column 'dataFileConcreteType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataFileConcreteType/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "dataFileConcreteType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataFileBucket",
+          "name": "dataFileBucket",
+          "description": "Column 'dataFileBucket'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataFileBucket/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "dataFileBucket"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataFileKey",
+          "name": "dataFileKey",
+          "description": "Column 'dataFileKey'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "A_Spatially_Coordinated_Keratinocyte-Fibroblast_Circuit_Recruits_MMP9__Myeloid_Cells_to_Drive_IFN-I-Driven_Inflammation_in_Photosensitive_Autoimmunity-schema/dataFileKey/source",
+            "fileObject": {
+              "@id": "file_310"
+            },
+            "extract": {
+              "column": "dataFileKey"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

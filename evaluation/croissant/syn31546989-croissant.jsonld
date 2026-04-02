@@ -1,0 +1,821 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "DeepVariant Output (WES)",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "DeepVariant Output (WES). Synapse ID: syn31546989. https://www.synapse.org/Synapse:syn31546989",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:17:41.928",
+  "keywords": [
+    "DeepVariant",
+    "WES",
+    "germline variants",
+    "NF1"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn31546989",
+  "version": "9",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "icNF98.4c_VEP.ann.vcf.gz",
+      "contentSize": "14764891",
+      "contentUrl": "https://www.synapse.org/Synapse:syn29551050.1",
+      "encodingFormat": "application/gzip",
+      "md5": "11687b71d6ffec6627164315d7e118fb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "cNF97.2a_VEP.ann.vcf.gz",
+      "contentSize": "15367380",
+      "contentUrl": "https://www.synapse.org/Synapse:syn29569368.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f780b0933561038cf2cbab766d215fb5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "cNF04.9a_VEP.ann.vcf.gz",
+      "contentSize": "16115235",
+      "contentUrl": "https://www.synapse.org/Synapse:syn29550871.1",
+      "encodingFormat": "application/gzip",
+      "md5": "de06961fc97231720512480ee714b43b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "icNF04.9a_VEP.ann.vcf.gz",
+      "contentSize": "15476213",
+      "contentUrl": "https://www.synapse.org/Synapse:syn29550950.1",
+      "encodingFormat": "application/gzip",
+      "md5": "70fe004c82f6b8673eb8df595417d671"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "icNF00.10a_VEP.ann.vcf.gz",
+      "contentSize": "15535838",
+      "contentUrl": "https://www.synapse.org/Synapse:syn29550962.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5c4b33fed0feaa11d2d2cfe7be4b6a46"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "28NF_VEP.ann.vcf.gz",
+      "contentSize": "16055121",
+      "contentUrl": "https://www.synapse.org/Synapse:syn29550731.1",
+      "encodingFormat": "application/gzip",
+      "md5": "259e8b91522775a5c2e10c01b605d561"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "cNF00.10a_VEP.ann.vcf.gz",
+      "contentSize": "15939853",
+      "contentUrl": "https://www.synapse.org/Synapse:syn29550753.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7715b28e07404ae94721a1a0a0d644e9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "icNF97.2b_VEP.ann.vcf.gz",
+      "contentSize": "15914393",
+      "contentUrl": "https://www.synapse.org/Synapse:syn29551028.1",
+      "encodingFormat": "application/gzip",
+      "md5": "16ac42f9865a61309dec9cf219870c3a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "cNF97.2b_VEP.ann.vcf.gz",
+      "contentSize": "16197540",
+      "contentUrl": "https://www.synapse.org/Synapse:syn29550886.1",
+      "encodingFormat": "application/gzip",
+      "md5": "62996290d6f0f90b24fd13b2783a3b17"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "icNF97.2a_VEP.ann.vcf.gz",
+      "contentSize": "16328059",
+      "contentUrl": "https://www.synapse.org/Synapse:syn29551019.1",
+      "encodingFormat": "application/gzip",
+      "md5": "451c87c9f724950cafca6b0afd172a33"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "i28NF_VEP.ann.vcf.gz",
+      "contentSize": "15510872",
+      "contentUrl": "https://www.synapse.org/Synapse:syn29550899.1",
+      "encodingFormat": "application/gzip",
+      "md5": "41e26bc703f83c5b3051f16f11eb42a7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "cNF98.4c_VEP.ann.vcf.gz",
+      "contentSize": "16092893",
+      "contentUrl": "https://www.synapse.org/Synapse:syn29550835.1",
+      "encodingFormat": "application/gzip",
+      "md5": "688358d96ce58226cb06d9533c128b85"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "cNF98.4d_VEP.ann.vcf.gz",
+      "contentSize": "14382843",
+      "contentUrl": "https://www.synapse.org/Synapse:syn29550914.1",
+      "encodingFormat": "application/gzip",
+      "md5": "cc8474b62d1809b57ee5c90fa2ef391d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "icNF98.4d_VEP.ann.vcf.gz",
+      "contentSize": "15921395",
+      "contentUrl": "https://www.synapse.org/Synapse:syn29551091.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5a88672f04b0590535cc3da26f154963"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "DeepVariant Output (WES)",
+      "description": "Synapse Dataset metadata schema for syn31546989",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31546989",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "DeepVariant_Output__WES_-schema",
+      "name": "DeepVariant Output (WES) (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn31546989: 38 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/id/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/name/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/etag/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/type/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/Component",
+          "name": "Component",
+          "description": "Column 'Component'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/Component/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "Component"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/Uuid",
+          "name": "Uuid",
+          "description": "Column 'Uuid'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/Uuid/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "Uuid"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/ageUnit",
+          "name": "ageUnit",
+          "description": "Column 'ageUnit'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/ageUnit/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "ageUnit"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/aliquotID",
+          "name": "aliquotID",
+          "description": "Column 'aliquotID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/aliquotID/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "aliquotID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/assay/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/comments",
+          "name": "comments",
+          "description": "Column 'comments'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/comments/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "comments"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/dissociationMethod",
+          "name": "dissociationMethod",
+          "description": "Column 'dissociationMethod'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/dissociationMethod/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "dissociationMethod"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/entityId",
+          "name": "entityId",
+          "description": "Column 'entityId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/entityId/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "entityId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/nucleicAcidSource",
+          "name": "nucleicAcidSource",
+          "description": "Column 'nucleicAcidSource'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/nucleicAcidSource/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "nucleicAcidSource"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/parentSpecimenID",
+          "name": "parentSpecimenID",
+          "description": "Column 'parentSpecimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/parentSpecimenID/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "parentSpecimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/readDepth",
+          "name": "readDepth",
+          "description": "Column 'readDepth'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/readDepth/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "readDepth"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/readLength",
+          "name": "readLength",
+          "description": "Column 'readLength'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/readLength/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "readLength"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/readPairOrientation",
+          "name": "readPairOrientation",
+          "description": "Column 'readPairOrientation'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/readPairOrientation/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "readPairOrientation"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/readStrandOrigin",
+          "name": "readStrandOrigin",
+          "description": "Column 'readStrandOrigin'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/readStrandOrigin/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "readStrandOrigin"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/runType",
+          "name": "runType",
+          "description": "Column 'runType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/runType/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "runType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/specimenPreparationMethod",
+          "name": "specimenPreparationMethod",
+          "description": "Column 'specimenPreparationMethod'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/specimenPreparationMethod/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "specimenPreparationMethod"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "DeepVariant_Output__WES_-schema/tumorType",
+          "name": "tumorType",
+          "description": "Column 'tumorType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "DeepVariant_Output__WES_-schema/tumorType/source",
+            "fileObject": {
+              "@id": "file_14"
+            },
+            "extract": {
+              "column": "tumorType"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

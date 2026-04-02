@@ -1,0 +1,3835 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Germline Genomic Variants - Mutect2 Pipeline (from syn31668189)",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Germline Genomic Variants - Mutect2 Pipeline (from syn31668189). Synapse ID: syn35562703. https://www.synapse.org/Synapse:syn35562703",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:19:36.721",
+  "keywords": [
+    "Mutect2",
+    "WES",
+    "germline variants",
+    "NF1"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn35562703",
+  "version": "6",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "Mutect2_filtered_2-001_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "23187326",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689809.1",
+      "encodingFormat": "application/gzip",
+      "md5": "408b7c18d0f84cb60c4ca89fd0b29064"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "Mutect2_filtered_2-001_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1779624",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689785.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "820e534cd65b246e9be321f8949b333f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "Mutect2_unfiltered_2-001_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "13091051",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689784.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fccb8bac4ab1efa79581c3c6665983e5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "Mutect2_unfiltered_2-001_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1217365",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689780.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "d555f451a58066f6d40c599b1d75afda"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "Mutect2_filtered_2-002_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz",
+      "contentSize": "19805645",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689829.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ac33ec4541b9d00bd524b13f6a6bf46f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "Mutect2_filtered_2-002_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz.tbi",
+      "contentSize": "1690644",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689822.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "28b31ba62fedb457d83a1fa0244bf046"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "Mutect2_unfiltered_2-002_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz",
+      "contentSize": "10942230",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689824.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d4b49ae738bb75a4557eb5ce796f2a65"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "Mutect2_unfiltered_2-002_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz.tbi",
+      "contentSize": "1154775",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689817.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "6f8389a16ed30c9355441bb0dcbf90f2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "Mutect2_filtered_2-004_NF_Cell_Line.vcf.gz",
+      "contentSize": "28043013",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689842.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c55456773b4a001fc649cde38f343ffc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "Mutect2_filtered_2-004_NF_Cell_Line.vcf.gz.tbi",
+      "contentSize": "1905346",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689843.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "036b04437f8aa37ab44fcf8a91623828"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "Mutect2_unfiltered_2-004_NF_Cell_Line.vcf.gz",
+      "contentSize": "15858506",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689848.1",
+      "encodingFormat": "application/gzip",
+      "md5": "bce5315b54f2b97f44203c2a918ffde1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "Mutect2_unfiltered_2-004_NF_Cell_Line.vcf.gz.tbi",
+      "contentSize": "1305266",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689849.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "b828b6db6a944945d53cc0cfc9719136"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "Mutect2_filtered_2-004_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "22050179",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689868.1",
+      "encodingFormat": "application/gzip",
+      "md5": "875057f3b6976bd93b04669805d3b6df"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "Mutect2_filtered_2-004_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1695179",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689874.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "39d57e43b39e4eef67782cd28af7c8e4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "Mutect2_unfiltered_2-004_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "12549157",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689891.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7ebb792aadf72cc9460c1c5811cfc530"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "Mutect2_unfiltered_2-004_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1159327",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689884.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "29eaa15d24e2313239098e9c1da9f984"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "Mutect2_filtered_2-004_pNF_Cell_Line.vcf.gz",
+      "contentSize": "26461051",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689903.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1a1d8ee7cad9f6758187460eecba75ac"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "Mutect2_filtered_2-004_pNF_Cell_Line.vcf.gz.tbi",
+      "contentSize": "1658388",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689900.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "05bc812b1d44e08cdf606d9c373845b2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "Mutect2_unfiltered_2-004_pNF_Cell_Line.vcf.gz",
+      "contentSize": "15586516",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689909.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c67b20b26a5efceaf4ea30ca9e7fdb4b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "Mutect2_unfiltered_2-004_pNF_Cell_Line.vcf.gz.tbi",
+      "contentSize": "1134887",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689912.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "2dffd88f47018deba0f6115979900946"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "Mutect2_filtered_2-005_Neurofibroma.vcf.gz",
+      "contentSize": "29495521",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689937.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6f290b790877f69906beb45fba582ea0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "Mutect2_filtered_2-005_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1921216",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689957.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "d534b9e64edd801876df30e6ecd71d53"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "Mutect2_unfiltered_2-005_Neurofibroma.vcf.gz",
+      "contentSize": "16682447",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689945.1",
+      "encodingFormat": "application/gzip",
+      "md5": "77343fa4d0293171b09b2cb6f3f68fe9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "Mutect2_unfiltered_2-005_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1320755",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689950.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "ad39306f23a80bec93436713375e35ce"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "Mutect2_filtered_2-006_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "31058327",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689980.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2a8988c761e3d4e39246c5277478c649"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "Mutect2_filtered_2-006_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1942407",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689985.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "12b9b596c0c5a5e7a357673d08221ec5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "Mutect2_unfiltered_2-006_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "17561690",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689979.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7823e28920dcb628ac008b6bc5271607"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "Mutect2_unfiltered_2-006_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1333595",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689978.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "262c7f667472f77e9bd089dcbabe0cb4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "Mutect2_filtered_2-009_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz",
+      "contentSize": "17635834",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690014.1",
+      "encodingFormat": "application/gzip",
+      "md5": "01e03426936a437f8d3ba6179a3f3aef"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "Mutect2_filtered_2-009_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz.tbi",
+      "contentSize": "1602745",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690011.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "813f8bfd1bb38e264b41d6a04305f7f3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "Mutect2_unfiltered_2-009_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz",
+      "contentSize": "9789285",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690003.1",
+      "encodingFormat": "application/gzip",
+      "md5": "06c7f94a11b3aafeeaa4286f7ea3dde5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "Mutect2_unfiltered_2-009_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz.tbi",
+      "contentSize": "1092415",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690010.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "448a3c9f0f36eabd8d3fa56418c32177"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "Mutect2_filtered_2-010_Neurofibroma.vcf.gz",
+      "contentSize": "24902844",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690048.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2419d06bbdd15381f899fc079f86d2e9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "Mutect2_filtered_2-010_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1849670",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690051.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "97b2d99c1636034d7155fb86e1194fd9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "Mutect2_unfiltered_2-010_Neurofibroma.vcf.gz",
+      "contentSize": "14073280",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690052.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2590b9ad7084abbdcc4c4040a45a7bc3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "Mutect2_unfiltered_2-010_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1268011",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690049.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4189accba0602b349c7f23e66766a308"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "Mutect2_filtered_2-012_Neurofibroma.vcf.gz",
+      "contentSize": "24511779",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690101.1",
+      "encodingFormat": "application/gzip",
+      "md5": "844b081dc47b6ca4ad87109dfb4c9286"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "Mutect2_filtered_2-012_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1789377",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690086.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "a3415a1bc207f4c99a9d577f775bacae"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "Mutect2_unfiltered_2-012_Neurofibroma.vcf.gz",
+      "contentSize": "13950668",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690083.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3b82a720f74bd1bcc6e2d0f675eef65b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "Mutect2_unfiltered_2-012_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1225710",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690091.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "8c7519f6d944735da5a9abcf30a9c136"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "Mutect2_filtered_2-013_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "33408354",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690129.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8330f68b0d619437ba33cee3fd08ce0d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "Mutect2_filtered_2-013_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1998433",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690135.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "fe91339d6df9a86b3929fd23ae2d4ecd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "Mutect2_unfiltered_2-013_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "18847293",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690113.1",
+      "encodingFormat": "application/gzip",
+      "md5": "485c653afa04ed148903518fc675bb1e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "Mutect2_unfiltered_2-013_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1376070",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690120.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "270fc2a1f63cc931eef05ca90289e255"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "Mutect2_filtered_2-014_Neurofibroma.vcf.gz",
+      "contentSize": "19339994",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690162.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7d5d37e7407654c59412861756075ddb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "Mutect2_filtered_2-014_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1656276",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690147.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "89c4a1c51887785e4677406d096009bb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "Mutect2_unfiltered_2-014_Neurofibroma.vcf.gz",
+      "contentSize": "10848615",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690152.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2182f4c1c1a6f53f4946c2e5a9dc07f8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "Mutect2_unfiltered_2-014_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1130747",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690170.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "c6bc3f797c10fa336be8be92ad2c938d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "Mutect2_filtered_2-015_Neurofibroma.vcf.gz",
+      "contentSize": "20835022",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690196.1",
+      "encodingFormat": "application/gzip",
+      "md5": "70a0a6b697c995c66c9a75a279cea616"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "Mutect2_filtered_2-015_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1696303",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690192.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "c89e2e06ad06acacc13e08a1a710ed7f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "Mutect2_unfiltered_2-015_Neurofibroma.vcf.gz",
+      "contentSize": "11769403",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690199.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a6c95fe0c93af2119a9f7338355556a2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "Mutect2_unfiltered_2-015_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1160108",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690213.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "a5e915946c27f31d586329bda6bd55b5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "Mutect2_filtered_2-015_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "20087746",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690208.1",
+      "encodingFormat": "application/gzip",
+      "md5": "dbd0a7439c282c8bb5bcffd1b10fa2b2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "Mutect2_filtered_2-015_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1668170",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690218.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "6f1a121e313a1b4c7b8947c303c5a7af"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "Mutect2_unfiltered_2-015_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "11277567",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690231.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3f87da4b2b982cc0e4708941e81c4062"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "Mutect2_unfiltered_2-015_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1138111",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690229.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "b747381f8da7caf44e39348b501172bc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "Mutect2_filtered_2-016_Neurofibroma.vcf.gz",
+      "contentSize": "22135231",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690259.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3fded2f0361f1526b31f0dde68c36ef9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "Mutect2_filtered_2-016_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1718162",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690261.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "c06f357b378177ac248dd65d203c897e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "Mutect2_unfiltered_2-016_Neurofibroma.vcf.gz",
+      "contentSize": "12478138",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690258.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3d1bb7a8b79946213ff4fb16e73e6f59"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "Mutect2_unfiltered_2-016_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1174822",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690299.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "6a748e0c8fd6676b76e712c87119b261"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "Mutect2_filtered_2-017_Neurofibroma.vcf.gz",
+      "contentSize": "22308024",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690292.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a067230b76d86132a50e1f7e120800c3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "Mutect2_filtered_2-017_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1763494",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690294.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "6d423050ffd2209947d41a8503009b18"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "Mutect2_unfiltered_2-017_Neurofibroma.vcf.gz",
+      "contentSize": "12496178",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690296.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8ec14b77619fc78c1c93f4f810cd6bee"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "Mutect2_unfiltered_2-017_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1206916",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690286.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "52ccc068cbf6e50c859ef330300ebb6a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "Mutect2_filtered_2-019_Neurofibroma.vcf.gz",
+      "contentSize": "22555901",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690328.1",
+      "encodingFormat": "application/gzip",
+      "md5": "cbb2543515a06ab3166b660202d5f759"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "Mutect2_filtered_2-019_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1725361",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690332.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "2fee31c5e0eb905d567667f20ef19b8e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "Mutect2_unfiltered_2-019_Neurofibroma.vcf.gz",
+      "contentSize": "12704809",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690338.1",
+      "encodingFormat": "application/gzip",
+      "md5": "272ed1458fb916dbcaedc5d0e52f7dd0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "Mutect2_unfiltered_2-019_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1181392",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690329.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "ac119dbae16d7f7c608fcd0c4904844a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "Mutect2_filtered_2-021_Neurofibroma.vcf.gz",
+      "contentSize": "24778220",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690375.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b3091e721fefdf441bc6338c90a7c57f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "Mutect2_filtered_2-021_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1798699",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690371.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "bfabb51b289eabd0b7511cfe055aa9e0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "Mutect2_unfiltered_2-021_Neurofibroma.vcf.gz",
+      "contentSize": "14024609",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690373.1",
+      "encodingFormat": "application/gzip",
+      "md5": "49fcbaf822d0021e55410878bdf07403"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "Mutect2_unfiltered_2-021_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1232584",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690364.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "b3cf3f8de120ef26d67572414cd8b2d7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "Mutect2_filtered_2-023_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz",
+      "contentSize": "19045132",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690388.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b7d4067e2020f9ab70fadb3a80de0158"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "Mutect2_filtered_2-023_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz.tbi",
+      "contentSize": "1631141",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690397.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "8b2f3ad7d3cc3dad5dfdee807a9c3202"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "Mutect2_unfiltered_2-023_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz",
+      "contentSize": "10688668",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690406.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e92aa5102f4ff6a6cc8e70f1207a5fe9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "Mutect2_unfiltered_2-023_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz.tbi",
+      "contentSize": "1110555",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690405.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "08e02b6e5f624e7b15eab8193affc764"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "Mutect2_filtered_2-023_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "22969405",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690425.1",
+      "encodingFormat": "application/gzip",
+      "md5": "beb89602e611bb87d26879e5e5f231e7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "Mutect2_filtered_2-023_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1752118",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690432.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "e9c93a66374befcd7a74cf4c7ca1b4be"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "Mutect2_unfiltered_2-023_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "12967119",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690447.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a9bb6630cd0ea8a0a3a4cbc7651c65fa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "Mutect2_unfiltered_2-023_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1197902",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690438.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "2827d37be18519f49d6ff5141d7c3fd5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "Mutect2_filtered_2-025_Neurofibroma.vcf.gz",
+      "contentSize": "22895069",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690464.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4bbd69e59571780b110f78f3cc50904e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "Mutect2_filtered_2-025_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1762745",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690469.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "b8970077f4fce5d39a371d050fc8c07d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "Mutect2_unfiltered_2-025_Neurofibroma.vcf.gz",
+      "contentSize": "12837983",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690490.1",
+      "encodingFormat": "application/gzip",
+      "md5": "bc4f8968b48a527f561308c4bb371e74"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "Mutect2_unfiltered_2-025_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1201968",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690456.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4920d139c0a7104e135dacdcaebfb77d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "Mutect2_filtered_2-026_Neurofibroma.vcf.gz",
+      "contentSize": "20489912",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690475.1",
+      "encodingFormat": "application/gzip",
+      "md5": "55e2b78e919b46a8ff043ca16c4174ba"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "Mutect2_filtered_2-026_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1725399",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690496.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "af1dca13d07f1b8ce7c1e513da2745f9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "Mutect2_unfiltered_2-026_Neurofibroma.vcf.gz",
+      "contentSize": "11549492",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690501.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f0744e176dd6b95bd88dcbf25e6587d7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "Mutect2_unfiltered_2-026_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1176132",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690488.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "1e36f1b1975c92312b0169f435eb86f3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "Mutect2_filtered_2-029_Neurofibroma.vcf.gz",
+      "contentSize": "25044625",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690532.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6b41e2efc6b858a14763344047ffb8b8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "Mutect2_filtered_2-029_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1804078",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690540.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "3c02e4cb249bcb4aadecd238701eaf35"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "Mutect2_unfiltered_2-029_Neurofibroma.vcf.gz",
+      "contentSize": "14141881",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690547.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f3798759d68c81d1c28f4a054954e9d2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "Mutect2_unfiltered_2-029_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1238321",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690549.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "28522dc95dfc6baf8a4809f3b7f5ab04"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "Mutect2_filtered_2-031_Cell_Line.vcf.gz",
+      "contentSize": "20028554",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690563.1",
+      "encodingFormat": "application/gzip",
+      "md5": "70504ca8872398638fab964cb22f0f38"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "Mutect2_filtered_2-031_Cell_Line.vcf.gz.tbi",
+      "contentSize": "1689665",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690570.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "a057a707d3cf78e56331f7ea6f7b8be9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "Mutect2_unfiltered_2-031_Cell_Line.vcf.gz",
+      "contentSize": "11267040",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690565.1",
+      "encodingFormat": "application/gzip",
+      "md5": "86d97018eba4edf7afbaa097c6e87cc7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "Mutect2_unfiltered_2-031_Cell_Line.vcf.gz.tbi",
+      "contentSize": "1155291",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690575.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "ec19b52b6fa83b6d2f10d12dadab3408"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "Mutect2_filtered_2-031_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz",
+      "contentSize": "24883385",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690605.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b387492d836b1831f05df16a7d86d2e9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "Mutect2_filtered_2-031_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz.tbi",
+      "contentSize": "1792921",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690609.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "6e9cb0ec51231cba3381abbb769a86a7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "Mutect2_unfiltered_2-031_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz",
+      "contentSize": "13980713",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690597.1",
+      "encodingFormat": "application/gzip",
+      "md5": "44e54eb38c2f5ab8a04a0fd7d49271be"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "Mutect2_unfiltered_2-031_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz.tbi",
+      "contentSize": "1229250",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690604.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "504e4514b6009951e69fd9831e501f85"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "Mutect2_filtered_2-032_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "19312533",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690637.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6770ff9e16527ac0b2396f7bd3ca5b43"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "Mutect2_filtered_2-032_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1663396",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690632.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "82647dc4bd724b306bdd6e7f2ce6e56a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "Mutect2_unfiltered_2-032_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "10834282",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690638.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b76c7e5c8ae79d5ece06e3a5b13f1377"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "Mutect2_unfiltered_2-032_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1136967",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690635.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "ef3f59226e2a166b1b44b8e8fbf40c84"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "Mutect2_filtered_2_002_Plexiform_Neurofibroma_TD.vcf.gz",
+      "contentSize": "20513074",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690682.1",
+      "encodingFormat": "application/gzip",
+      "md5": "004abc77cdd5410c8c901561ed2da76e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "Mutect2_filtered_2_002_Plexiform_Neurofibroma_TD.vcf.gz.tbi",
+      "contentSize": "1685856",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690680.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "f84326e8b9b521bd4c3a77b7bff82520"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "Mutect2_unfiltered_2_002_Plexiform_Neurofibroma_TD.vcf.gz",
+      "contentSize": "11520402",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690681.1",
+      "encodingFormat": "application/gzip",
+      "md5": "53d74ec0be6b72acb5783a4b756658f6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "Mutect2_unfiltered_2_002_Plexiform_Neurofibroma_TD.vcf.gz.tbi",
+      "contentSize": "1149556",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690686.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "388e70ee877df05d1a31801faf4a69bd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "Mutect2_filtered_2_009_Neurofibroma_TD.vcf.gz",
+      "contentSize": "18874657",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690706.1",
+      "encodingFormat": "application/gzip",
+      "md5": "59aea824c01b0fd51683251c106b5917"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "Mutect2_filtered_2_009_Neurofibroma_TD.vcf.gz.tbi",
+      "contentSize": "1618556",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690695.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "1eebea74be14100dbd4b24ac9aa02ee3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "Mutect2_unfiltered_2_009_Neurofibroma_TD.vcf.gz",
+      "contentSize": "10549379",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690687.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d2dfca4ecdb7d53342760c8497791d59"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "Mutect2_unfiltered_2_009_Neurofibroma_TD.vcf.gz.tbi",
+      "contentSize": "1102824",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690698.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "7762018f79695c8820ca1c0fe88a6371"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "Mutect2_filtered_2_015_Malignant_Peripheral_Nerve_Sheath_Tumor_TD.vcf.gz",
+      "contentSize": "23328602",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690715.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7413f2072870f0496d932e71a3b55c89"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "Mutect2_filtered_2_015_Malignant_Peripheral_Nerve_Sheath_Tumor_TD.vcf.gz.tbi",
+      "contentSize": "1835158",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690721.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "41549130f8001a231fda07deb5b5b4cb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "Mutect2_unfiltered_2_015_Malignant_Peripheral_Nerve_Sheath_Tumor_TD.vcf.gz",
+      "contentSize": "13085422",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690714.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9431e6347946a92f0f58344854c89abb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "Mutect2_unfiltered_2_015_Malignant_Peripheral_Nerve_Sheath_Tumor_TD.vcf.gz.tbi",
+      "contentSize": "1258776",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690730.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "117f4995375ffa17d50bb11ff7e87d87"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_116",
+      "name": "Mutect2_filtered_2_015_TD.vcf.gz",
+      "contentSize": "19166961",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690759.1",
+      "encodingFormat": "application/gzip",
+      "md5": "59cc913c96966caa09c35958a555a6f3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_117",
+      "name": "Mutect2_filtered_2_015_TD.vcf.gz.tbi",
+      "contentSize": "1605585",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690765.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "069e6d9b7f4a8706a1712976c3715ce6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_118",
+      "name": "Mutect2_unfiltered_2_015_TD.vcf.gz",
+      "contentSize": "10780738",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690817.1",
+      "encodingFormat": "application/gzip",
+      "md5": "018c889972aafee3799cf905505cff46"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_119",
+      "name": "Mutect2_unfiltered_2_015_TD.vcf.gz.tbi",
+      "contentSize": "1092631",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690816.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "3302484cfc9d85e32d65ad0b0aa8ece2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_120",
+      "name": "Mutect2_filtered_2_016_TD.vcf.gz",
+      "contentSize": "23339550",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690800.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3a08b1a367041c4e1f277971996633a1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_121",
+      "name": "Mutect2_filtered_2_016_TD.vcf.gz.tbi",
+      "contentSize": "1780271",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690794.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "f596bdcc799903dd2a2980fbd02ac260"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_122",
+      "name": "Mutect2_unfiltered_2_016_TD.vcf.gz",
+      "contentSize": "13045684",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690774.1",
+      "encodingFormat": "application/gzip",
+      "md5": "470c47e37d437a6f8e9f59365ea051cc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_123",
+      "name": "Mutect2_unfiltered_2_016_TD.vcf.gz.tbi",
+      "contentSize": "1217921",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690782.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "66a9ac39b643b5f8fc77082f93d3ad2e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_124",
+      "name": "Mutect2_filtered_TWFE-2-002-20.vcf.gz",
+      "contentSize": "7988848",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690812.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a35940eedc08e273df74353485c368b0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_125",
+      "name": "Mutect2_filtered_TWFE-2-002-20.vcf.gz.tbi",
+      "contentSize": "738852",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690806.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "3fcd720acab45718761e180ae3c4ebac"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_126",
+      "name": "Mutect2_unfiltered_TWFE-2-002-20.vcf.gz",
+      "contentSize": "4852530",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690809.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0fb7f1fa5fbf23a59319759e0f907e5a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_127",
+      "name": "Mutect2_unfiltered_TWFE-2-002-20.vcf.gz.tbi",
+      "contentSize": "523070",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690823.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "76327b4d7133ed20ae85f4e871e8250a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_128",
+      "name": "Mutect2_filtered_TWFE-2-002-30.vcf.gz",
+      "contentSize": "6360287",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690850.1",
+      "encodingFormat": "application/gzip",
+      "md5": "352105243bf131cbc21a9cfa19cc9bdb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_129",
+      "name": "Mutect2_filtered_TWFE-2-002-30.vcf.gz.tbi",
+      "contentSize": "588683",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690846.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "529825b8d0b577be54261b801e0a9a3e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_130",
+      "name": "Mutect2_unfiltered_TWFE-2-002-30.vcf.gz",
+      "contentSize": "3897260",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690842.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8624c1d5ea6fd504090d8e776968079d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_131",
+      "name": "Mutect2_unfiltered_TWFE-2-002-30.vcf.gz.tbi",
+      "contentSize": "417111",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690853.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "28e095d569bfa5f07cc3c6e0acd0908b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_132",
+      "name": "Mutect2_filtered_TWFE-2-009-23.vcf.gz",
+      "contentSize": "7111842",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690880.1",
+      "encodingFormat": "application/gzip",
+      "md5": "26c04384567a4b31b7d5f46ae74354f1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_133",
+      "name": "Mutect2_filtered_TWFE-2-009-23.vcf.gz.tbi",
+      "contentSize": "691070",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690881.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "611d471d380da96d072be0dd92c7fc45"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_134",
+      "name": "Mutect2_unfiltered_TWFE-2-009-23.vcf.gz",
+      "contentSize": "4345459",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690883.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0e450966041bf4df200512296c3eabd1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_135",
+      "name": "Mutect2_unfiltered_TWFE-2-009-23.vcf.gz.tbi",
+      "contentSize": "490158",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690886.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "8f628d4a64f280cb3704b17988d0225d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_136",
+      "name": "Mutect2_filtered_TWFE-2-023-21.vcf.gz",
+      "contentSize": "9787900",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690902.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c7b9fffe48deac6e3ef95c9537f99f1b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_137",
+      "name": "Mutect2_filtered_TWFE-2-023-21.vcf.gz.tbi",
+      "contentSize": "864975",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690912.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "0a23c2735463deaebd19b307b819fece"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_138",
+      "name": "Mutect2_unfiltered_TWFE-2-023-21.vcf.gz",
+      "contentSize": "5935352",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690914.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fab86f7b610a2ca806605aceb0838151"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_139",
+      "name": "Mutect2_unfiltered_TWFE-2-023-21.vcf.gz.tbi",
+      "contentSize": "610482",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690913.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "859759f5dfea4b276b1072542dbdf0f7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_140",
+      "name": "Mutect2_filtered_TWFE-2-0234-6.vcf.gz",
+      "contentSize": "7418949",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690944.1",
+      "encodingFormat": "application/gzip",
+      "md5": "43c3d4e606bb2eb609ca19cd4e22263a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_141",
+      "name": "Mutect2_filtered_TWFE-2-0234-6.vcf.gz.tbi",
+      "contentSize": "671541",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690929.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "67b2f1ada0f633689fecaf825edcb3ab"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_142",
+      "name": "Mutect2_unfiltered_TWFE-2-0234-6.vcf.gz",
+      "contentSize": "4583695",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690940.1",
+      "encodingFormat": "application/gzip",
+      "md5": "dc6cd6c52c23efd39d9f520055da755b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_143",
+      "name": "Mutect2_unfiltered_TWFE-2-0234-6.vcf.gz.tbi",
+      "contentSize": "478788",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690939.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "cf8c7f527487f8a93908dd15673c68cb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_144",
+      "name": "Mutect2_filtered_TWFE-2-044-34.vcf.gz",
+      "contentSize": "7703864",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690964.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e63f74dc76dc939318f47633d680e8b1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_145",
+      "name": "Mutect2_filtered_TWFE-2-044-34.vcf.gz.tbi",
+      "contentSize": "754766",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690977.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "373613dcec2bd41c299475457ff5187b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_146",
+      "name": "Mutect2_unfiltered_TWFE-2-044-34.vcf.gz",
+      "contentSize": "4660615",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690969.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3463e8aae5e0ec9ce70182cebf1d01c2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_147",
+      "name": "Mutect2_unfiltered_TWFE-2-044-34.vcf.gz.tbi",
+      "contentSize": "532609",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690986.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "6045f83c7cff0c2ae88cecc86a852640"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_148",
+      "name": "Mutect2_filtered_TWFE-2-045-24.vcf.gz",
+      "contentSize": "5954679",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691004.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ed6a0c2ee2a4d55313f889e8435f3d70"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_149",
+      "name": "Mutect2_filtered_TWFE-2-045-24.vcf.gz.tbi",
+      "contentSize": "598567",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691015.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "0d71da1aad9144239d502ceeffb4a260"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_150",
+      "name": "Mutect2_unfiltered_TWFE-2-045-24.vcf.gz",
+      "contentSize": "3657425",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691008.1",
+      "encodingFormat": "application/gzip",
+      "md5": "49cc8fe17e8a2b4b634815d022407d1d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_151",
+      "name": "Mutect2_unfiltered_TWFE-2-045-24.vcf.gz.tbi",
+      "contentSize": "422808",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691000.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "129a3dc5abe1cfbf74d94c40882c1e3e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_152",
+      "name": "Mutect2_filtered_TWFE-2-045-25.vcf.gz",
+      "contentSize": "8943018",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691014.1",
+      "encodingFormat": "application/gzip",
+      "md5": "116a366f9daf8c809c97bf8a9d8e2c8c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_153",
+      "name": "Mutect2_filtered_TWFE-2-045-25.vcf.gz.tbi",
+      "contentSize": "824341",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691030.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "6a5c92d0d10cc4c0f66a2521742e7be5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_154",
+      "name": "Mutect2_unfiltered_TWFE-2-045-25.vcf.gz",
+      "contentSize": "5404430",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691012.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3f37b8511e6f65f4626a3eb72ac20226"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_155",
+      "name": "Mutect2_unfiltered_TWFE-2-045-25.vcf.gz.tbi",
+      "contentSize": "578774",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691022.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "14791469f691b0ee594ec3ec784a2739"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_156",
+      "name": "Mutect2_filtered_TWFE-2-045-26.vcf.gz",
+      "contentSize": "6878090",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691034.1",
+      "encodingFormat": "application/gzip",
+      "md5": "af985e19aeef143b2f6cf62a7b7f28e2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_157",
+      "name": "Mutect2_filtered_TWFE-2-045-26.vcf.gz.tbi",
+      "contentSize": "706371",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691039.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "9189b92c0a374791fd551962f587c545"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_158",
+      "name": "Mutect2_unfiltered_TWFE-2-045-26.vcf.gz",
+      "contentSize": "4157355",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691043.1",
+      "encodingFormat": "application/gzip",
+      "md5": "bab5d112d0bb1973f74c460956e96df7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_159",
+      "name": "Mutect2_unfiltered_TWFE-2-045-26.vcf.gz.tbi",
+      "contentSize": "501632",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691028.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "cd7e561f8b7f95b6a6421775ca3e0955"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_160",
+      "name": "Mutect2_filtered_TWFE-2-054-3.vcf.gz",
+      "contentSize": "7029710",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691042.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1fec8f37ae0408ef3890c8f313eeb9a3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_161",
+      "name": "Mutect2_filtered_TWFE-2-054-3.vcf.gz.tbi",
+      "contentSize": "665921",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691059.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "f2e3a10a87893dc3c96dcce31bf75755"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_162",
+      "name": "Mutect2_unfiltered_TWFE-2-054-3.vcf.gz",
+      "contentSize": "4311648",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691053.1",
+      "encodingFormat": "application/gzip",
+      "md5": "056c2cb02785104e37e279a852a8b546"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_163",
+      "name": "Mutect2_unfiltered_TWFE-2-054-3.vcf.gz.tbi",
+      "contentSize": "470995",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691058.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "a3081a9dce29983a765396087e74895c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_164",
+      "name": "Mutect2_filtered_TWFE-2-054-40.vcf.gz",
+      "contentSize": "7717430",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691081.1",
+      "encodingFormat": "application/gzip",
+      "md5": "cf3c0cd73553436e6b52ef94d3a3bd64"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_165",
+      "name": "Mutect2_filtered_TWFE-2-054-40.vcf.gz.tbi",
+      "contentSize": "735266",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691090.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "34b22b7a7f966099a12026b6bbd50899"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_166",
+      "name": "Mutect2_unfiltered_TWFE-2-054-40.vcf.gz",
+      "contentSize": "4697344",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691101.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a5c03388fb6715ab8ede32e4c8bc1881"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_167",
+      "name": "Mutect2_unfiltered_TWFE-2-054-40.vcf.gz.tbi",
+      "contentSize": "522982",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691099.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "973667459442aa602f3fe3fa18fa3552"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_168",
+      "name": "Mutect2_filtered_TWFE-2-055-13.vcf.gz",
+      "contentSize": "10460958",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691114.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4cf5f4aa6ed5a31e78050ad771c69246"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_169",
+      "name": "Mutect2_filtered_TWFE-2-055-13.vcf.gz.tbi",
+      "contentSize": "721261",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691123.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "d11f002e55a81ce38b153aafa17abd12"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_170",
+      "name": "Mutect2_unfiltered_TWFE-2-055-13.vcf.gz",
+      "contentSize": "6554554",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691117.1",
+      "encodingFormat": "application/gzip",
+      "md5": "55c861598c768deb99e4e1574f85185c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_171",
+      "name": "Mutect2_unfiltered_TWFE-2-055-13.vcf.gz.tbi",
+      "contentSize": "511364",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691120.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "319d34abd548ae74999c74079b329e25"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_172",
+      "name": "Mutect2_filtered_TWFE-2-055-14.vcf.gz",
+      "contentSize": "6617235",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691146.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9f0dc922129471ea54807ba732a1ab6d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_173",
+      "name": "Mutect2_filtered_TWFE-2-055-14.vcf.gz.tbi",
+      "contentSize": "651087",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691145.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "de4e9fb77a183e8ee9057624c5dcc325"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_174",
+      "name": "Mutect2_unfiltered_TWFE-2-055-14.vcf.gz",
+      "contentSize": "4023597",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691143.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ef24744b36803b4452a03c8e888de8aa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_175",
+      "name": "Mutect2_unfiltered_TWFE-2-055-14.vcf.gz.tbi",
+      "contentSize": "460655",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691154.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "7f1a4fc1415308b42f8376299352a565"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_176",
+      "name": "Mutect2_filtered_TWFE-2-055-15.vcf.gz",
+      "contentSize": "6617198",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691176.1",
+      "encodingFormat": "application/gzip",
+      "md5": "eba04a180310c7d508a8354f67e4172e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_177",
+      "name": "Mutect2_filtered_TWFE-2-055-15.vcf.gz.tbi",
+      "contentSize": "682067",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691175.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "08696d1aba4950afead1590f7c9372a4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_178",
+      "name": "Mutect2_unfiltered_TWFE-2-055-15.vcf.gz",
+      "contentSize": "4029684",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691183.1",
+      "encodingFormat": "application/gzip",
+      "md5": "cc3d454d0b72f9ce4b256c1847d280e3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_179",
+      "name": "Mutect2_unfiltered_TWFE-2-055-15.vcf.gz.tbi",
+      "contentSize": "482934",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691160.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "76f957711c7f7dcc9f27aa420109ac71"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_180",
+      "name": "Mutect2_filtered_TWFE-2-057-28.vcf.gz",
+      "contentSize": "8210960",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691209.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b1538972402d51be3836f3333039f5c6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_181",
+      "name": "Mutect2_filtered_TWFE-2-057-28.vcf.gz.tbi",
+      "contentSize": "790696",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691212.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "b691570e18ca22a40b11626853058056"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_182",
+      "name": "Mutect2_unfiltered_TWFE-2-057-28.vcf.gz",
+      "contentSize": "4973560",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691204.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7e1c3e8139941d3150e1ca71b677aff1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_183",
+      "name": "Mutect2_unfiltered_TWFE-2-057-28.vcf.gz.tbi",
+      "contentSize": "555621",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691213.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "cb343affe43775a51a4594c80d507d72"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_184",
+      "name": "Mutect2_filtered_TWFE-2-060-38.vcf.gz",
+      "contentSize": "8177341",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691228.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0a23edff8dc54809c848f49e8b2b5a08"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_185",
+      "name": "Mutect2_filtered_TWFE-2-060-38.vcf.gz.tbi",
+      "contentSize": "783551",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691245.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "11f7038803bcb6601082398981a896b4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_186",
+      "name": "Mutect2_unfiltered_TWFE-2-060-38.vcf.gz",
+      "contentSize": "4966635",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691256.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7fda96e7c597e460113b76a4d71aed88"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_187",
+      "name": "Mutect2_unfiltered_TWFE-2-060-38.vcf.gz.tbi",
+      "contentSize": "551074",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691247.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "f3d9808e3cb89847b3adf65a0d001937"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_188",
+      "name": "Mutect2_filtered_TWFE-2-060-5.vcf.gz",
+      "contentSize": "6644889",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691275.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7bfddaa5cf3eb177f298344188ea5bed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_189",
+      "name": "Mutect2_filtered_TWFE-2-060-5.vcf.gz.tbi",
+      "contentSize": "649581",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691282.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "54977d7a4da0cca58102312a3dc2becf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_190",
+      "name": "Mutect2_unfiltered_TWFE-2-060-5.vcf.gz",
+      "contentSize": "4053826",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691277.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2fbed01565394d8d9880540524062e21"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_191",
+      "name": "Mutect2_unfiltered_TWFE-2-060-5.vcf.gz.tbi",
+      "contentSize": "460182",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691276.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "e55fd95da48a695828c86ac6cab7be5c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_192",
+      "name": "Mutect2_filtered_TWFE-2-060-7.vcf.gz",
+      "contentSize": "7235470",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691300.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d8ef507d64e4ae0df68794eba4e58d6c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_193",
+      "name": "Mutect2_filtered_TWFE-2-060-7.vcf.gz.tbi",
+      "contentSize": "692298",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691295.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "56add268819c34365b0a06598f77c4b5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_194",
+      "name": "Mutect2_unfiltered_TWFE-2-060-7.vcf.gz",
+      "contentSize": "4422782",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691289.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9b95aa918694f051d353e966dea30ece"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_195",
+      "name": "Mutect2_unfiltered_TWFE-2-060-7.vcf.gz.tbi",
+      "contentSize": "489739",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691297.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4fae6daf2429495a8d9acb6beba19e20"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_196",
+      "name": "Mutect2_filtered_TWFE-2-061-27.vcf.gz",
+      "contentSize": "8797761",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691350.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1a377971bfbe1b2e00a1f74eac3f95aa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_197",
+      "name": "Mutect2_filtered_TWFE-2-061-27.vcf.gz.tbi",
+      "contentSize": "820926",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691351.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "52666580be0953761a515c889192aa06"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_198",
+      "name": "Mutect2_unfiltered_TWFE-2-061-27.vcf.gz",
+      "contentSize": "5389264",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691352.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b6008cc6451542d498222ba6e6f6f625"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_199",
+      "name": "Mutect2_unfiltered_TWFE-2-061-27.vcf.gz.tbi",
+      "contentSize": "578208",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691354.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "63b5658f8735100a8fa550d002fc99e6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_200",
+      "name": "Mutect2_filtered_TWFE-2-068-10.vcf.gz",
+      "contentSize": "8669984",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691395.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c0abf20dccb40790518a812cad59ed63"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_201",
+      "name": "Mutect2_filtered_TWFE-2-068-10.vcf.gz.tbi",
+      "contentSize": "800183",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691387.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "3c5769a88fe3696a8569e740ceb424cb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_202",
+      "name": "Mutect2_unfiltered_TWFE-2-068-10.vcf.gz",
+      "contentSize": "5321340",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691398.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b08010181a73060f7c12a1f970af76f5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_203",
+      "name": "Mutect2_unfiltered_TWFE-2-068-10.vcf.gz.tbi",
+      "contentSize": "560297",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691382.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "f22eb17984f4f931feb959dddb53f824"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_204",
+      "name": "Mutect2_filtered_TWFE-2-068-12.vcf.gz",
+      "contentSize": "8532270",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691463.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8299dd634b1163fe12ee7d890e4b1929"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_205",
+      "name": "Mutect2_filtered_TWFE-2-068-12.vcf.gz.tbi",
+      "contentSize": "827670",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691420.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "d739e7fd537934cfaba15d713cf8276f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_206",
+      "name": "Mutect2_unfiltered_TWFE-2-068-12.vcf.gz",
+      "contentSize": "5160181",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691471.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3076d9f8f2471dd9d57542a514023604"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_207",
+      "name": "Mutect2_unfiltered_TWFE-2-068-12.vcf.gz.tbi",
+      "contentSize": "581596",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691428.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "1a9f24e4512581d8fd152cc8bcb79936"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_208",
+      "name": "Mutect2_filtered_TWFE-2-068-8.vcf.gz",
+      "contentSize": "7487783",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691451.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0f3641b571b6b07c4098427e82be1608"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_209",
+      "name": "Mutect2_filtered_TWFE-2-068-8.vcf.gz.tbi",
+      "contentSize": "697834",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691456.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "62fc7638c6fb4784e58988885f0107ba"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_210",
+      "name": "Mutect2_unfiltered_TWFE-2-068-8.vcf.gz",
+      "contentSize": "4617125",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691453.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d6817cca265b7a6ae4fe0016d319d278"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_211",
+      "name": "Mutect2_unfiltered_TWFE-2-068-8.vcf.gz.tbi",
+      "contentSize": "495227",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691447.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "f9b76ad201134ad0b40750bc6b823daa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_212",
+      "name": "Mutect2_filtered_TWFE-2-068-9.vcf.gz",
+      "contentSize": "7116562",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691496.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2c73c04d8b1a6d9aa1d60848ce4e6ff9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_213",
+      "name": "Mutect2_filtered_TWFE-2-068-9.vcf.gz.tbi",
+      "contentSize": "676453",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691491.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "88bfb03b5493db7708fb6e01274e0e7d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_214",
+      "name": "Mutect2_unfiltered_TWFE-2-068-9.vcf.gz",
+      "contentSize": "4368333",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691489.1",
+      "encodingFormat": "application/gzip",
+      "md5": "48314359c4117ddebad81ccdbe9839ef"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_215",
+      "name": "Mutect2_unfiltered_TWFE-2-068-9.vcf.gz.tbi",
+      "contentSize": "478658",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691492.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "0bbfb9dff21b21686499f163d5baf52e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_216",
+      "name": "Mutect2_filtered_TWFE-2-072-1.vcf.gz",
+      "contentSize": "7577174",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691499.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ba7489bc7ad0c303b1d81b80e278cc11"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_217",
+      "name": "Mutect2_filtered_TWFE-2-072-1.vcf.gz.tbi",
+      "contentSize": "668496",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691526.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "57c41b1223711298fc455ac47ca66485"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_218",
+      "name": "Mutect2_unfiltered_TWFE-2-072-1.vcf.gz",
+      "contentSize": "4642691",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691502.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8d3ace275298be0baf8bf09ab647e1dc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_219",
+      "name": "Mutect2_unfiltered_TWFE-2-072-1.vcf.gz.tbi",
+      "contentSize": "474743",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691507.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "516081c5bffc7d9bc1d1dfd73937c7f0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_220",
+      "name": "Mutect2_filtered_TWFE-2-074-16.vcf.gz",
+      "contentSize": "8794963",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691533.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f11e237bd86a665bdb538b73751734b4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_221",
+      "name": "Mutect2_filtered_TWFE-2-074-16.vcf.gz.tbi",
+      "contentSize": "774039",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691543.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4ce370628850f3e462feb3e22455ef1a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_222",
+      "name": "Mutect2_unfiltered_TWFE-2-074-16.vcf.gz",
+      "contentSize": "5357611",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691551.1",
+      "encodingFormat": "application/gzip",
+      "md5": "bf3e478a5db9bed001b858aa3df95147"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_223",
+      "name": "Mutect2_unfiltered_TWFE-2-074-16.vcf.gz.tbi",
+      "contentSize": "545744",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691544.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "c84ee0d0ca9619c9f161fee72c4d3367"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_224",
+      "name": "Mutect2_filtered_TWFE-2-075-29.vcf.gz",
+      "contentSize": "7509311",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691581.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8e3f861be47685d38a150706aece95c5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_225",
+      "name": "Mutect2_filtered_TWFE-2-075-29.vcf.gz.tbi",
+      "contentSize": "725735",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691582.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "9bcf7d93f4ff92c172fe0439b9734aae"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_226",
+      "name": "Mutect2_unfiltered_TWFE-2-075-29.vcf.gz",
+      "contentSize": "4553977",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691580.1",
+      "encodingFormat": "application/gzip",
+      "md5": "29a9b7f2e6d28e9eaba6091fb9df25e3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_227",
+      "name": "Mutect2_unfiltered_TWFE-2-075-29.vcf.gz.tbi",
+      "contentSize": "515021",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691587.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "07e0cae08faea8e7acc32d92bf8569c5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_228",
+      "name": "Mutect2_filtered_TWFE-2-075-31.vcf.gz",
+      "contentSize": "6766584",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691608.1",
+      "encodingFormat": "application/gzip",
+      "md5": "04956f8150e96a71bc6ac26e69df1e2c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_229",
+      "name": "Mutect2_filtered_TWFE-2-075-31.vcf.gz.tbi",
+      "contentSize": "641738",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691606.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4bd4a25570a8d272dae87b1e3fe3c733"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_230",
+      "name": "Mutect2_unfiltered_TWFE-2-075-31.vcf.gz",
+      "contentSize": "4174059",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691616.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c792c01726266d313c765ff6d3f7d012"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_231",
+      "name": "Mutect2_unfiltered_TWFE-2-075-31.vcf.gz.tbi",
+      "contentSize": "454245",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691659.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "ffb0ab5b08df01b80137b99e83a80e13"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_232",
+      "name": "Mutect2_filtered_TWFE-2-076-17.vcf.gz",
+      "contentSize": "6161981",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691641.1",
+      "encodingFormat": "application/gzip",
+      "md5": "19912ab12fa27afa7213d9981ff8f42d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_233",
+      "name": "Mutect2_filtered_TWFE-2-076-17.vcf.gz.tbi",
+      "contentSize": "595724",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691701.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "054d6f33cbcd3a00d1f684cfa5c89028"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_234",
+      "name": "Mutect2_unfiltered_TWFE-2-076-17.vcf.gz",
+      "contentSize": "3768777",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691645.1",
+      "encodingFormat": "application/gzip",
+      "md5": "eefa7a4e8014b4ddec86a2d6f8c49dd5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_235",
+      "name": "Mutect2_unfiltered_TWFE-2-076-17.vcf.gz.tbi",
+      "contentSize": "421720",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691636.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "250b0a5ee21ae574a7497512b074aeb7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_236",
+      "name": "Mutect2_filtered_TWFE-2-076-4.vcf.gz",
+      "contentSize": "6872062",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691674.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8efbdbeaf3b6189de6793c36f23ddad8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_237",
+      "name": "Mutect2_filtered_TWFE-2-076-4.vcf.gz.tbi",
+      "contentSize": "669420",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691668.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "a4f0fc6b9327b441527152a7382d4208"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_238",
+      "name": "Mutect2_unfiltered_TWFE-2-076-4.vcf.gz",
+      "contentSize": "4212995",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691688.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e26000dbcc3b938616ce296d15cb3a29"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_239",
+      "name": "Mutect2_unfiltered_TWFE-2-076-4.vcf.gz.tbi",
+      "contentSize": "474825",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691692.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "74437d2082f28d2db5411c94e97c287b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_240",
+      "name": "Mutect2_filtered_TWFE-2-077-18.vcf.gz",
+      "contentSize": "6831983",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691721.1",
+      "encodingFormat": "application/gzip",
+      "md5": "381bd16c7c28ef1faf9a2317a28f08e5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_241",
+      "name": "Mutect2_filtered_TWFE-2-077-18.vcf.gz.tbi",
+      "contentSize": "616986",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691715.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "e3829ba5817faae68a6133cc287bc59d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_242",
+      "name": "Mutect2_unfiltered_TWFE-2-077-18.vcf.gz",
+      "contentSize": "4154532",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691710.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5fdf2689360e1c4bc99c1d11d720d734"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_243",
+      "name": "Mutect2_unfiltered_TWFE-2-077-18.vcf.gz.tbi",
+      "contentSize": "436043",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691714.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "fc376b276c5f1c68c217f536273bb681"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_244",
+      "name": "Mutect2_filtered_TWFE-2-077-39.vcf.gz",
+      "contentSize": "7139871",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691731.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c94b641d0e64d93673401602bbeece3b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_245",
+      "name": "Mutect2_filtered_TWFE-2-077-39.vcf.gz.tbi",
+      "contentSize": "670478",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691754.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "14d648ba1825348294e7bb4d81d1878a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_246",
+      "name": "Mutect2_unfiltered_TWFE-2-077-39.vcf.gz",
+      "contentSize": "4418880",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691807.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2a54cf65022fc38bf77486f6e29de36a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_247",
+      "name": "Mutect2_unfiltered_TWFE-2-077-39.vcf.gz.tbi",
+      "contentSize": "475735",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691744.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "f385f8f5e726e989d7c1f6afa156b70c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_248",
+      "name": "Mutect2_filtered_TWFE-2-079-32.vcf.gz",
+      "contentSize": "8559560",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691756.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ade59aebdaa510ca72cb9280104088bc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_249",
+      "name": "Mutect2_filtered_TWFE-2-079-32.vcf.gz.tbi",
+      "contentSize": "741157",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691773.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "9f5a06dab6eac34718a99c015011dfbe"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_250",
+      "name": "Mutect2_unfiltered_TWFE-2-079-32.vcf.gz",
+      "contentSize": "5300792",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691760.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8bb85b6a40d83ecb98e1d21089a0bfa2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_251",
+      "name": "Mutect2_unfiltered_TWFE-2-079-32.vcf.gz.tbi",
+      "contentSize": "527195",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691758.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "9eca87f99bd2f8d84bd50e7d741fc3a9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_252",
+      "name": "Mutect2_filtered_TWFE-2-082-2.vcf.gz",
+      "contentSize": "8824105",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691833.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0e8c3d5fb5797b07d9ca41988db826c7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_253",
+      "name": "Mutect2_filtered_TWFE-2-082-2.vcf.gz.tbi",
+      "contentSize": "792929",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691818.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "a0d6adfa93b453ac11d15573d4e6a237"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_254",
+      "name": "Mutect2_unfiltered_TWFE-2-082-2.vcf.gz",
+      "contentSize": "5348990",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691804.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d75e32fc57c8d967be908ef0844bf9fe"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_255",
+      "name": "Mutect2_unfiltered_TWFE-2-082-2.vcf.gz.tbi",
+      "contentSize": "559941",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691830.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "a838d907fb09b1036724b6b4d8ba16eb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_256",
+      "name": "Mutect2_filtered_TWFE-2-082-36.vcf.gz",
+      "contentSize": "5912769",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691819.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fda221931eb285a3a6d950122f4abbde"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_257",
+      "name": "Mutect2_filtered_TWFE-2-082-36.vcf.gz.tbi",
+      "contentSize": "576794",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691886.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "60e66ffeffdbf2cd0f6c4d20742e73a0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_258",
+      "name": "Mutect2_unfiltered_TWFE-2-082-36.vcf.gz",
+      "contentSize": "3669169",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691831.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5a59ea7016a31d13e0393cbe2ec69362"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_259",
+      "name": "Mutect2_unfiltered_TWFE-2-082-36.vcf.gz.tbi",
+      "contentSize": "409902",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691847.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "a3f4e2b5e4f3c14706b96c64c5b2dd2e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_260",
+      "name": "Mutect2_filtered_TWFE-2-084-19.vcf.gz",
+      "contentSize": "7875652",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691878.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ae873b05ef677d5a00b77cf76dd9ffbe"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_261",
+      "name": "Mutect2_filtered_TWFE-2-084-19.vcf.gz.tbi",
+      "contentSize": "726490",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691863.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "8b04d409f1eaf5472892985540a38d70"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_262",
+      "name": "Mutect2_unfiltered_TWFE-2-084-19.vcf.gz",
+      "contentSize": "4806934",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691879.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0912d2f9947c0bd0655025b2a7ab84e1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_263",
+      "name": "Mutect2_unfiltered_TWFE-2-084-19.vcf.gz.tbi",
+      "contentSize": "514507",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691871.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "a8e0d9f387cfcb54eb7b5d902a69c112"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_264",
+      "name": "Mutect2_filtered_TWFE-2-084-35.vcf.gz",
+      "contentSize": "6399975",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691908.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0320d9ef2401d72d8969d2851cab3bea"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_265",
+      "name": "Mutect2_filtered_TWFE-2-084-35.vcf.gz.tbi",
+      "contentSize": "623401",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691902.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "69d9765a2b0357425692fc0dd019e704"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_266",
+      "name": "Mutect2_unfiltered_TWFE-2-084-35.vcf.gz",
+      "contentSize": "3910236",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691913.1",
+      "encodingFormat": "application/gzip",
+      "md5": "39ab23fc5b2c734076f515dd76af5de3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_267",
+      "name": "Mutect2_unfiltered_TWFE-2-084-35.vcf.gz.tbi",
+      "contentSize": "441423",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691920.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "c28eb50554f9c63da20a203cd3746115"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_268",
+      "name": "Mutect2_filtered_TWFE-2-085-2.vcf.gz",
+      "contentSize": "6691076",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691959.1",
+      "encodingFormat": "application/gzip",
+      "md5": "61c5fa175b7e4ba04b6df0adffe3522c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_269",
+      "name": "Mutect2_filtered_TWFE-2-085-2.vcf.gz.tbi",
+      "contentSize": "565425",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691946.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "b4ca4e6bf94aa80145144c9bbcfb8c19"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_270",
+      "name": "Mutect2_unfiltered_TWFE-2-085-2.vcf.gz",
+      "contentSize": "4233021",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691957.1",
+      "encodingFormat": "application/gzip",
+      "md5": "82c42a8140ea689477330491af64dffd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_271",
+      "name": "Mutect2_unfiltered_TWFE-2-085-2.vcf.gz.tbi",
+      "contentSize": "403361",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691963.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "6a1114c7233cca682cb81a69594f4d7b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_272",
+      "name": "Mutect2_filtered_TWFE-2-086-2-086LLE.vcf.gz",
+      "contentSize": "7176391",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691989.1",
+      "encodingFormat": "application/gzip",
+      "md5": "510a06891455c16d3f9b5170762d133d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_273",
+      "name": "Mutect2_filtered_TWFE-2-086-2-086LLE.vcf.gz.tbi",
+      "contentSize": "637199",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691993.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "3f6f5ce1c08a4bb5695e682e95b0df5d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_274",
+      "name": "Mutect2_unfiltered_TWFE-2-086-2-086LLE.vcf.gz",
+      "contentSize": "4463450",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692000.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3ea57eb608c471082e5719c01c226546"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_275",
+      "name": "Mutect2_unfiltered_TWFE-2-086-2-086LLE.vcf.gz.tbi",
+      "contentSize": "453384",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691998.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "7119f07704a23bc585e30d800a83c008"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_276",
+      "name": "Mutect2_filtered_TWFE-2-089-2-089Tumor.vcf.gz",
+      "contentSize": "5851012",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692089.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f8e5abefaa096b97f769c665690991c0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_277",
+      "name": "Mutect2_filtered_TWFE-2-089-2-089Tumor.vcf.gz.tbi",
+      "contentSize": "528098",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692032.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "ee2f8b7904249721482b18dfcac986e2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_278",
+      "name": "Mutect2_unfiltered_TWFE-2-089-2-089Tumor.vcf.gz",
+      "contentSize": "3631559",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692021.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c2bbbec4f193fafad5349cb6249e0a2a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_279",
+      "name": "Mutect2_unfiltered_TWFE-2-089-2-089Tumor.vcf.gz.tbi",
+      "contentSize": "374671",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692022.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "01dd9dd12b7a21e6ef73e9f878dce203"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_280",
+      "name": "Mutect2_filtered_TWFE-2-090-2-090Benign.vcf.gz",
+      "contentSize": "9088001",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692066.1",
+      "encodingFormat": "application/gzip",
+      "md5": "63f16375ca26079abfeb1f1fd7dd4102"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_281",
+      "name": "Mutect2_filtered_TWFE-2-090-2-090Benign.vcf.gz.tbi",
+      "contentSize": "717777",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692060.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "cf17da93c039927444216e83de6c62df"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_282",
+      "name": "Mutect2_unfiltered_TWFE-2-090-2-090Benign.vcf.gz",
+      "contentSize": "5636460",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692072.1",
+      "encodingFormat": "application/gzip",
+      "md5": "07350f44b53cf8aeca143100229f5b19"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_283",
+      "name": "Mutect2_unfiltered_TWFE-2-090-2-090Benign.vcf.gz.tbi",
+      "contentSize": "510394",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692069.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "5cdbbf3ddbefd1489654a416c502653b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_284",
+      "name": "Mutect2_filtered_TWFE-2-090-2-090MalignantTumor.vcf.gz",
+      "contentSize": "7912956",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692097.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fe57a9842ed8156c77b4bac69d2673dc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_285",
+      "name": "Mutect2_filtered_TWFE-2-090-2-090MalignantTumor.vcf.gz.tbi",
+      "contentSize": "693682",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692080.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "ee4fb763484c9744b5398d32c750eb01"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_286",
+      "name": "Mutect2_unfiltered_TWFE-2-090-2-090MalignantTumor.vcf.gz",
+      "contentSize": "4952929",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692081.1",
+      "encodingFormat": "application/gzip",
+      "md5": "64ff416919b1055ed1cdae953a11a493"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_287",
+      "name": "Mutect2_unfiltered_TWFE-2-090-2-090MalignantTumor.vcf.gz.tbi",
+      "contentSize": "493557",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692095.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "977ebdc3acf8bed0241176dd760fb824"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_288",
+      "name": "Mutect2_filtered_TWFE-2-091-2-091.vcf.gz",
+      "contentSize": "6840628",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692119.1",
+      "encodingFormat": "application/gzip",
+      "md5": "666e3e03a9f167b062f83fbc84ce0fd5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_289",
+      "name": "Mutect2_filtered_TWFE-2-091-2-091.vcf.gz.tbi",
+      "contentSize": "645293",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692129.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "c0c4db2a9a5fd25c0e5be685bd425141"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_290",
+      "name": "Mutect2_unfiltered_TWFE-2-091-2-091.vcf.gz",
+      "contentSize": "4201929",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692121.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0ad44b9b7d9ed9e6d2a57e0b3095e068"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_291",
+      "name": "Mutect2_unfiltered_TWFE-2-091-2-091.vcf.gz.tbi",
+      "contentSize": "456635",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692130.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "1816ae2b57f7ce1e20f0f35a49d4989c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_292",
+      "name": "Mutect2_filtered_TWFE-2-092-2-092LeftFlank.vcf.gz",
+      "contentSize": "6933253",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692150.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d5deec7b064bd57cc632e7b07cb02e55"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_293",
+      "name": "Mutect2_filtered_TWFE-2-092-2-092LeftFlank.vcf.gz.tbi",
+      "contentSize": "592275",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692167.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "5d921c7ebd3f100f1e7655ba7e90edab"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_294",
+      "name": "Mutect2_unfiltered_TWFE-2-092-2-092LeftFlank.vcf.gz",
+      "contentSize": "4265058",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692176.1",
+      "encodingFormat": "application/gzip",
+      "md5": "988b4c64c39afe51e2324bd3c745fc51"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_295",
+      "name": "Mutect2_unfiltered_TWFE-2-092-2-092LeftFlank.vcf.gz.tbi",
+      "contentSize": "421791",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692177.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "599f0d9083ee48b090025ea293959be0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_296",
+      "name": "Mutect2_filtered_TWFE-2-092-2-092RightFlank.vcf.gz",
+      "contentSize": "5935892",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692188.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0b29830a88720cfc93268043aece0a2f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_297",
+      "name": "Mutect2_filtered_TWFE-2-092-2-092RightFlank.vcf.gz.tbi",
+      "contentSize": "551908",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692210.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "2dd59f24a7e8fe86986489718fdf7fd8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_298",
+      "name": "Mutect2_unfiltered_TWFE-2-092-2-092RightFlank.vcf.gz",
+      "contentSize": "3697514",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692202.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4c8a3b17052ea04b371f26608b608217"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_299",
+      "name": "Mutect2_unfiltered_TWFE-2-092-2-092RightFlank.vcf.gz.tbi",
+      "contentSize": "391767",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692211.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "1c1611bd79a0c5598950a57c05c7c1e7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_300",
+      "name": "Mutect2_filtered_TWFE-2-093-2-093RightMiddleBack.vcf.gz",
+      "contentSize": "5717359",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692236.1",
+      "encodingFormat": "application/gzip",
+      "md5": "19f4d4e6f02b5244cb542e7f389d7b0f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_301",
+      "name": "Mutect2_filtered_TWFE-2-093-2-093RightMiddleBack.vcf.gz.tbi",
+      "contentSize": "504062",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692221.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4e742ca19b2db37672fd4ba57e7d44b5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_302",
+      "name": "Mutect2_unfiltered_TWFE-2-093-2-093RightMiddleBack.vcf.gz",
+      "contentSize": "3595940",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692239.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3a5512ebf3eb476050d0002f30b11ebe"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_303",
+      "name": "Mutect2_unfiltered_TWFE-2-093-2-093RightMiddleBack.vcf.gz.tbi",
+      "contentSize": "361334",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692243.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "78104a59381a246aeba4e8b4a1ec1b34"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_304",
+      "name": "Mutect2_filtered_TWFE-2-093-2-093RightUpperBack.vcf.gz",
+      "contentSize": "7111535",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692259.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c489e42dfe7f942ab064a42fdeaa752d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_305",
+      "name": "Mutect2_filtered_TWFE-2-093-2-093RightUpperBack.vcf.gz.tbi",
+      "contentSize": "626866",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692261.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4522edd222d2122e439d9a78d23a43f5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_306",
+      "name": "Mutect2_unfiltered_TWFE-2-093-2-093RightUpperBack.vcf.gz",
+      "contentSize": "4461381",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692252.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6893759cc58890e842523ba3adfdb782"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_307",
+      "name": "Mutect2_unfiltered_TWFE-2-093-2-093RightUpperBack.vcf.gz.tbi",
+      "contentSize": "444637",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692270.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "982286410a43c0fc5b0d62f2f7551a4f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_308",
+      "name": "Mutect2_filtered_TWFE-2-094-2-094ankleRightBx.vcf.gz",
+      "contentSize": "7020451",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692293.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0bd5048377e033a21ba8a81c16ff771f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_309",
+      "name": "Mutect2_filtered_TWFE-2-094-2-094ankleRightBx.vcf.gz.tbi",
+      "contentSize": "620268",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692291.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "c03161db66c3eb493b0eced9634d6f38"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_310",
+      "name": "Mutect2_unfiltered_TWFE-2-094-2-094ankleRightBx.vcf.gz",
+      "contentSize": "4392978",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692281.1",
+      "encodingFormat": "application/gzip",
+      "md5": "525d49245c765983f00f016532ea6319"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_311",
+      "name": "Mutect2_unfiltered_TWFE-2-094-2-094ankleRightBx.vcf.gz.tbi",
+      "contentSize": "439008",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692300.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "8db73afdf0fb669a6df0729cbfea35b9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_312",
+      "name": "Mutect2_filtered_TWFE-2-094-2-094ankleSuperficial.vcf.gz",
+      "contentSize": "6214214",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692322.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b905736bf213a32f8b7afcf187cf6fb1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_313",
+      "name": "Mutect2_filtered_TWFE-2-094-2-094ankleSuperficial.vcf.gz.tbi",
+      "contentSize": "510072",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692324.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "bd4818ecae3ea4c46ef990ec48d58146"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_314",
+      "name": "Mutect2_unfiltered_TWFE-2-094-2-094ankleSuperficial.vcf.gz",
+      "contentSize": "3865371",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692323.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9cdcfb72bac320ff057c1f0260ca05a8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_315",
+      "name": "Mutect2_unfiltered_TWFE-2-094-2-094ankleSuperficial.vcf.gz.tbi",
+      "contentSize": "364165",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692328.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4a6062da69b5039a12be03d5dee35078"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_316",
+      "name": "Mutect2_filtered_TWFE-2-095-2-095tumor.vcf.gz",
+      "contentSize": "5361286",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692361.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3d64a941c817a6450555c0ef95177ab8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_317",
+      "name": "Mutect2_filtered_TWFE-2-095-2-095tumor.vcf.gz.tbi",
+      "contentSize": "499563",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692358.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "636a862c5353c75d01b4119448a67094"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_318",
+      "name": "Mutect2_unfiltered_TWFE-2-095-2-095tumor.vcf.gz",
+      "contentSize": "3339329",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692350.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e5ad358a176800b5b07b807bfea5665a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_319",
+      "name": "Mutect2_unfiltered_TWFE-2-095-2-095tumor.vcf.gz.tbi",
+      "contentSize": "357031",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692366.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4274f40b7a6c3d03dd4e45014123c1ac"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_320",
+      "name": "Mutect2_filtered_TWFE-2-096-2-096tumor.vcf.gz",
+      "contentSize": "5362482",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692410.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1771fbe595bba971bf8c40552c23cc03"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_321",
+      "name": "Mutect2_filtered_TWFE-2-096-2-096tumor.vcf.gz.tbi",
+      "contentSize": "494554",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692403.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "6d1c071d4183af8bc81630864dd20beb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_322",
+      "name": "Mutect2_unfiltered_TWFE-2-096-2-096tumor.vcf.gz",
+      "contentSize": "3346722",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692389.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d98a22d09d8043e4b3377dc044ae942f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_323",
+      "name": "Mutect2_unfiltered_TWFE-2-096-2-096tumor.vcf.gz.tbi",
+      "contentSize": "353901",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692400.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4884baa77474c4f1c951ce36e4744bf6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_324",
+      "name": "Mutect2_filtered_TWFE-2-099-2-099.vcf.gz",
+      "contentSize": "6256994",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692421.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a45c86d01652719910533f535c81fce9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_325",
+      "name": "Mutect2_filtered_TWFE-2-099-2-099.vcf.gz.tbi",
+      "contentSize": "584742",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692434.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "ea46439ff63ec6da129f8c763f220099"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_326",
+      "name": "Mutect2_unfiltered_TWFE-2-099-2-099.vcf.gz",
+      "contentSize": "3872727",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692437.1",
+      "encodingFormat": "application/gzip",
+      "md5": "88207123ce40cf8fa6213d34546f2b8f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_327",
+      "name": "Mutect2_unfiltered_TWFE-2-099-2-099.vcf.gz.tbi",
+      "contentSize": "413494",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692426.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "1667b34812edc11b8f334321bab82694"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_328",
+      "name": "Mutect2_filtered_TWFE-2-100-2-100buttocksTumor.vcf.gz",
+      "contentSize": "7135597",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692472.1",
+      "encodingFormat": "application/gzip",
+      "md5": "50494cbce59b96eb37d0e0553f17b76f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_329",
+      "name": "Mutect2_filtered_TWFE-2-100-2-100buttocksTumor.vcf.gz.tbi",
+      "contentSize": "652979",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692487.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "67e7bc91dc4ddcce663b8825d7cd85e3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_330",
+      "name": "Mutect2_unfiltered_TWFE-2-100-2-100buttocksTumor.vcf.gz",
+      "contentSize": "4374737",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692531.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a582fb5573898dbe70b878a95a587e52"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_331",
+      "name": "Mutect2_unfiltered_TWFE-2-100-2-100buttocksTumor.vcf.gz.tbi",
+      "contentSize": "463989",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692455.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "409ccc997defdb32cdb57bf0f4ef9008"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_332",
+      "name": "Mutect2_filtered_TWFE-2-102-2-102leftBackLesion.vcf.gz",
+      "contentSize": "7751300",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692510.1",
+      "encodingFormat": "application/gzip",
+      "md5": "edb5a02c81a87c2307b2b22b1dea41fc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_333",
+      "name": "Mutect2_filtered_TWFE-2-102-2-102leftBackLesion.vcf.gz.tbi",
+      "contentSize": "696484",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692505.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "3aa7421c69b2b1bdb3210eb1d05c4ca2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_334",
+      "name": "Mutect2_unfiltered_TWFE-2-102-2-102leftBackLesion.vcf.gz",
+      "contentSize": "4760418",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692517.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9590751586cf3bc6fa82e93e222f3354"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_335",
+      "name": "Mutect2_unfiltered_TWFE-2-102-2-102leftBackLesion.vcf.gz.tbi",
+      "contentSize": "494597",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692513.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "7d5f8096b19c73a6e7aaa509b86f2a51"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_336",
+      "name": "Mutect2_filtered_TWFE-2-103-2-103tumor.vcf.gz",
+      "contentSize": "7073558",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692557.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8c30948f0d6bab723949301d430b2cd7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_337",
+      "name": "Mutect2_filtered_TWFE-2-103-2-103tumor.vcf.gz.tbi",
+      "contentSize": "595936",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692546.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "669bdefbbd85ff9cfc68e168a5fbc44b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_338",
+      "name": "Mutect2_unfiltered_TWFE-2-103-2-103tumor.vcf.gz",
+      "contentSize": "4435959",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692618.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2993490d8211eae995cc7535d779d55c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_339",
+      "name": "Mutect2_unfiltered_TWFE-2-103-2-103tumor.vcf.gz.tbi",
+      "contentSize": "423068",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692630.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "21cb25dfdfdc2f5d60c26b8a06e46e0a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_340",
+      "name": "Mutect2_filtered_TWFE-2-104-2-104tumor.vcf.gz",
+      "contentSize": "5894886",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692564.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a534e5291d99c4920671491290a87ca2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_341",
+      "name": "Mutect2_filtered_TWFE-2-104-2-104tumor.vcf.gz.tbi",
+      "contentSize": "553306",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692578.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "75f6eb3b78dc15c27e185ffb8fc92182"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_342",
+      "name": "Mutect2_unfiltered_TWFE-2-104-2-104tumor.vcf.gz",
+      "contentSize": "3669232",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692572.1",
+      "encodingFormat": "application/gzip",
+      "md5": "08b7615735e497c15c7e9349d28c148a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_343",
+      "name": "Mutect2_unfiltered_TWFE-2-104-2-104tumor.vcf.gz.tbi",
+      "contentSize": "391692",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692579.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "32660a169812b9ad7ea891a30d77aeb5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_344",
+      "name": "Mutect2_filtered_TWFE-2-106-2-106.vcf.gz",
+      "contentSize": "6718930",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692614.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8ee702f5ddc318bdc842d4b04e017f3d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_345",
+      "name": "Mutect2_filtered_TWFE-2-106-2-106.vcf.gz.tbi",
+      "contentSize": "551499",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692593.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "06ed613d1c2be9d78cc37bf3728e3425"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_346",
+      "name": "Mutect2_unfiltered_TWFE-2-106-2-106.vcf.gz",
+      "contentSize": "4153078",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692608.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f0ea7232305e07042e69578db832670e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_347",
+      "name": "Mutect2_unfiltered_TWFE-2-106-2-106.vcf.gz.tbi",
+      "contentSize": "392731",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692678.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "904bccbc17673ddde05033a4be3ca0a5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_348",
+      "name": "Mutect2_filtered_TWFE-2-111-2-111tumor.vcf.gz",
+      "contentSize": "6564342",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692666.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d78b0bf2e02893a51460f1a2a4826b60"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_349",
+      "name": "Mutect2_filtered_TWFE-2-111-2-111tumor.vcf.gz.tbi",
+      "contentSize": "543714",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692664.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "134a74df628adabf3f419d42d635e3d6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_350",
+      "name": "Mutect2_unfiltered_TWFE-2-111-2-111tumor.vcf.gz",
+      "contentSize": "4104154",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692656.1",
+      "encodingFormat": "application/gzip",
+      "md5": "db55d3e8837b95cac01dd37e4789e8fe"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_351",
+      "name": "Mutect2_unfiltered_TWFE-2-111-2-111tumor.vcf.gz.tbi",
+      "contentSize": "386280",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692670.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "602b76cef791db436e3dd1ee05400408"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_352",
+      "name": "Mutect2_filtered_TWFE-2-113-2-113lumbar.vcf.gz",
+      "contentSize": "7567932",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692738.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d9adbd05b5adfddbc1f2b31b45896290"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_353",
+      "name": "Mutect2_filtered_TWFE-2-113-2-113lumbar.vcf.gz.tbi",
+      "contentSize": "663482",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692709.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "79059072f95fd0c810bcebc170cea8f2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_354",
+      "name": "Mutect2_unfiltered_TWFE-2-113-2-113lumbar.vcf.gz",
+      "contentSize": "4691499",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692701.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7402c163fd32dddb00e7ad142992157a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_355",
+      "name": "Mutect2_unfiltered_TWFE-2-113-2-113lumbar.vcf.gz.tbi",
+      "contentSize": "471971",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692684.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "b37e76f66ae90776eec84514075f3d6b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_356",
+      "name": "Germline Genomic Variants - Mutect2 Pipeline (from syn31668189)",
+      "description": "Synapse Dataset metadata schema for syn35562703",
+      "contentUrl": "https://www.synapse.org/Synapse:syn35562703",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema",
+      "name": "Germline Genomic Variants - Mutect2 Pipeline (from syn31668189) (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn35562703: 34 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/id/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/name/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/etag/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/type/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/assay/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/nf1Genotype",
+          "name": "nf1Genotype",
+          "description": "Column 'nf1Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/nf1Genotype/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "nf1Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/nf2Genotype",
+          "name": "nf2Genotype",
+          "description": "Column 'nf2Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/nf2Genotype/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "nf2Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/progressReportNumber",
+          "name": "progressReportNumber",
+          "description": "Column 'progressReportNumber'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/progressReportNumber/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "progressReportNumber"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/sex",
+          "name": "sex",
+          "description": "Column 'sex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/sex/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "sex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/species/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/workflow",
+          "name": "workflow",
+          "description": "Column 'workflow'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/workflow/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "workflow"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/workflowLink",
+          "name": "workflowLink",
+          "description": "Column 'workflowLink'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31668189_-schema/workflowLink/source",
+            "fileObject": {
+              "@id": "file_356"
+            },
+            "extract": {
+              "column": "workflowLink"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

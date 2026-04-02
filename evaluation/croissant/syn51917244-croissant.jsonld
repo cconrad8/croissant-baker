@@ -1,0 +1,697 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "6x6 Combination Screens of pNF Cell Lines",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "6x6 Combination Screens of pNF Cell Lines. Synapse ID: syn51917244. https://www.synapse.org/Synapse:syn51917244",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:12:22.898",
+  "keywords": [
+    "drug combination screen",
+    "6x6",
+    "pNF",
+    "NF1"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn51917244",
+  "version": "12",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "iPNF05.5_mixed_6x6_CTG_48h_calc.csv",
+      "contentSize": "64175",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5613590.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "323ad096257a63904aa888ddf64f5bb2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "iPNF05.5_mixed_6x6_CTG_48h_metadata.csv",
+      "contentSize": "191398",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5613591.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "415d262f2f24946102c1346241d648a3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "iPN02.3l_6x6_CTG_48h_calc.csv",
+      "contentSize": "62297",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5613581.2",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "36a3d6fdb2692da6761216625f4e313c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "iPNF05.5_mixed_6x6_CTG_48h_responses.csv",
+      "contentSize": "657956",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5613592.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "717feb8bd5310490025e3d54d0be99d4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "iPN02.3l_6x6_CTG_48h_metadata.csv",
+      "contentSize": "191270",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5613582.2",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "6bef169dac635f71063be8a37c697b01"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "ipNF95.6_6x6_CTG_48h_calc.csv",
+      "contentSize": "62023",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5613593.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "41b711388cd9da525708d7f321eeae67"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "iPN02.3l_6x6_CTG_48h_responses.csv",
+      "contentSize": "657966",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5613583.2",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "e8786a045919ec36136eb7da252d6c15"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "ipNF95.6_6x6_CTG_48h_metadata.csv",
+      "contentSize": "190988",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5613594.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "798880e636f3755e1add2b390768be46"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "ipNF95.6_6x6_CTG_48h_responses.csv",
+      "contentSize": "659190",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5613595.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "b162dfed9a3f1f3d4361b8d7f4df6316"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "ipnNF95.11c_6x6_CTG_48h_calc.csv",
+      "contentSize": "61502",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5613596.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "44c86470a4804ddb5299128ca4d7fb68"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "ipnNF95.11c_6x6_CTG_48h_metadata.csv",
+      "contentSize": "190743",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5613597.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "6c596f603ecff21a89b1cf907ac592e5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "ipNF05.5_6x6_CTG_48h_calc.csv",
+      "contentSize": "64198",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5613587.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "2f17a441a83cdd2a43bea12f467f3b39"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "ipnNF95.11c_6x6_CTG_48h_responses.csv",
+      "contentSize": "659414",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5613598.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "e55906defa98bfa1435e88c2f0b56f75"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "ipNF05.5_6x6_CTG_48h_metadata.csv",
+      "contentSize": "191582",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5613588.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "8a36ea58c0a4452a16b41beebfd2bc50"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "ipNF05.5_6x6_CTG_48h_responses.csv",
+      "contentSize": "657002",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5613589.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "f0594feee8f13620a49461f4d84b0f0b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "HFF_6x6_CTG_48h_calc.csv",
+      "contentSize": "61171",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5613647.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "13152ebd33d1ed515e3879486fc60145"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "HFF_6x6_CTG_48h_metadata.csv",
+      "contentSize": "191018",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5613648.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "4d1951f69d54b2850f82ae76d388e0a2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "HFF_6x6_CTG_48h_responses.csv",
+      "contentSize": "659366",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5613649.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "54797670718072a1baa401770294bcf4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "6x6 Combination Screens of pNF Cell Lines",
+      "description": "Synapse Dataset metadata schema for syn51917244",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51917244",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema",
+      "name": "6x6 Combination Screens of pNF Cell Lines (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn51917244: 28 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/id/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/name/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/Resource_id",
+          "name": "Resource_id",
+          "description": "Column 'Resource_id'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/Resource_id/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "Resource_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/assay/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/cellType",
+          "name": "cellType",
+          "description": "Column 'cellType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/cellType/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "cellType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/disease",
+          "name": "disease",
+          "description": "Column 'disease'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/disease/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "disease"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/drugScreenType",
+          "name": "drugScreenType",
+          "description": "Column 'drugScreenType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/drugScreenType/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "drugScreenType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/isCellLine",
+          "name": "isCellLine",
+          "description": "Column 'isCellLine'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/isCellLine/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "isCellLine"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/isMultiIndividual",
+          "name": "isMultiIndividual",
+          "description": "Column 'isMultiIndividual'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/isMultiIndividual/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "isMultiIndividual"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/isMultiSpecimen",
+          "name": "isMultiSpecimen",
+          "description": "Column 'isMultiSpecimen'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/isMultiSpecimen/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "isMultiSpecimen"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/nf1Genotype",
+          "name": "nf1Genotype",
+          "description": "Column 'nf1Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/nf1Genotype/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "nf1Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/nf2Genotype",
+          "name": "nf2Genotype",
+          "description": "Column 'nf2Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/nf2Genotype/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "nf2Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/organ",
+          "name": "organ",
+          "description": "Column 'organ'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/organ/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "organ"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/species/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/tissue",
+          "name": "tissue",
+          "description": "Column 'tissue'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/tissue/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "tissue"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/tumorType",
+          "name": "tumorType",
+          "description": "Column 'tumorType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/tumorType/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "tumorType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/dataSource",
+          "name": "dataSource",
+          "description": "Column 'dataSource'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/dataSource/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "dataSource"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "6x6_Combination_Screens_of_pNF_Cell_Lines-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_18"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

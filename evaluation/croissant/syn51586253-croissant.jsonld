@@ -1,0 +1,688 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "MPNST Cell Line Methylation Arrays",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "MPNST Cell Line Methylation Arrays. Synapse ID: syn51586253. https://www.synapse.org/Synapse:syn51586253",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:13:45.694",
+  "keywords": [
+    "methylation array",
+    "raw intensities",
+    "MPNST",
+    "NF1"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn51586253",
+  "version": "11",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "205049780005_R01C01_Grn.idat",
+      "contentSize": "13677895",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50698200.1",
+      "encodingFormat": "application/x-idat",
+      "md5": "d74e79cf4d2d95297fa2be3241732f43"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "205049780005_R01C01_Red.idat",
+      "contentSize": "13677895",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50698201.1",
+      "encodingFormat": "application/x-idat",
+      "md5": "8e1bf6d178b9ed9eae80081d15eac299"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "205049780005_R02C01_Grn.idat",
+      "contentSize": "13677895",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50698202.1",
+      "encodingFormat": "application/x-idat",
+      "md5": "0d4bc71901982961ac2db8d2b1cd92a3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "205049780005_R02C01_Red.idat",
+      "contentSize": "13677895",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50698203.1",
+      "encodingFormat": "application/x-idat",
+      "md5": "c76793bbe23b70e6116a3b9c81282a12"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "205049780005_R03C01_Grn.idat",
+      "contentSize": "13677895",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50698204.1",
+      "encodingFormat": "application/x-idat",
+      "md5": "5ddf6211de978d28f77a82eb60ff37bb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "205049780005_R03C01_Red.idat",
+      "contentSize": "13677895",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50698205.1",
+      "encodingFormat": "application/x-idat",
+      "md5": "c121b18078bf12ed1fc0dfd2f73bc43e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "samples.txt",
+      "contentSize": "298",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50698206.1",
+      "encodingFormat": "text/plain",
+      "md5": "b82763cab02ceb860870e5739ad00f90"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "205023290165_R06C01_Grn.idat",
+      "contentSize": "13677910",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50698190.1",
+      "encodingFormat": "application/x-idat",
+      "md5": "bbdf2493b79509dfa4cd6a17b3ebed7a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "205023290165_R06C01_Red.idat",
+      "contentSize": "13677910",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50698191.1",
+      "encodingFormat": "application/x-idat",
+      "md5": "aa7a120c6af2c4d0736fb67f580ef2b2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "205023290165_R07C01_Grn.idat",
+      "contentSize": "13677910",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50698192.1",
+      "encodingFormat": "application/x-idat",
+      "md5": "752b82a35e991e31d14e387e202e6425"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "205023290165_R07C01_Red.idat",
+      "contentSize": "13677910",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50698193.1",
+      "encodingFormat": "application/x-idat",
+      "md5": "d54e19f9bd2efaa7cb7ebee59002b195"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "205049780004_R06C01_Grn.idat",
+      "contentSize": "13677895",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50698194.1",
+      "encodingFormat": "application/x-idat",
+      "md5": "dbe4410b1e9cc322a6f2feaf1227e250"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "205049780004_R06C01_Red.idat",
+      "contentSize": "13677895",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50698195.1",
+      "encodingFormat": "application/x-idat",
+      "md5": "2bde03833d9fa933ea98d203b05654f0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "205049780004_R07C01_Grn.idat",
+      "contentSize": "13677895",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50698196.1",
+      "encodingFormat": "application/x-idat",
+      "md5": "2124c0a12e2a4a4cd2073b551b6cefa1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "205049780004_R07C01_Red.idat",
+      "contentSize": "13677895",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50698197.1",
+      "encodingFormat": "application/x-idat",
+      "md5": "ce95c6f1e03db9fac7698c6b6b250657"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "205049780004_R08C01_Grn.idat",
+      "contentSize": "13677895",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50698198.1",
+      "encodingFormat": "application/x-idat",
+      "md5": "9a4fb497ea6472e6e94e5e372966e6d6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "205049780004_R08C01_Red.idat",
+      "contentSize": "13677895",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50698199.1",
+      "encodingFormat": "application/x-idat",
+      "md5": "123675c4a46786dc34a66de0c14516fc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "MPNST Cell Line Methylation Arrays",
+      "description": "Synapse Dataset metadata schema for syn51586253",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51586253",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "MPNST_Cell_Line_Methylation_Arrays-schema",
+      "name": "MPNST Cell Line Methylation Arrays (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn51586253: 28 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/id/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/name/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/age",
+          "name": "age",
+          "description": "Column 'age'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/age/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "age"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/ageUnit",
+          "name": "ageUnit",
+          "description": "Column 'ageUnit'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/ageUnit/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "ageUnit"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/aliquotID",
+          "name": "aliquotID",
+          "description": "Column 'aliquotID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/aliquotID/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "aliquotID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/assay/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/entityId",
+          "name": "entityId",
+          "description": "Column 'entityId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/entityId/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "entityId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/isCellLine",
+          "name": "isCellLine",
+          "description": "Column 'isCellLine'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/isCellLine/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "isCellLine"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/isPrimaryCell",
+          "name": "isPrimaryCell",
+          "description": "Column 'isPrimaryCell'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/isPrimaryCell/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "isPrimaryCell"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/modelSystemName",
+          "name": "modelSystemName",
+          "description": "Column 'modelSystemName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/modelSystemName/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "modelSystemName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/nucleicAcidSource",
+          "name": "nucleicAcidSource",
+          "description": "Column 'nucleicAcidSource'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/nucleicAcidSource/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "nucleicAcidSource"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/parentSpecimenID",
+          "name": "parentSpecimenID",
+          "description": "Column 'parentSpecimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/parentSpecimenID/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "parentSpecimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/platform",
+          "name": "platform",
+          "description": "Column 'platform'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/platform/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "platform"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/progressReportNumber",
+          "name": "progressReportNumber",
+          "description": "Column 'progressReportNumber'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/progressReportNumber/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "progressReportNumber"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/sex",
+          "name": "sex",
+          "description": "Column 'sex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/sex/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "sex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/species/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/tumorType",
+          "name": "tumorType",
+          "description": "Column 'tumorType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Methylation_Arrays-schema/tumorType/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "tumorType"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

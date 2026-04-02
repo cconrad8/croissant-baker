@@ -1,0 +1,585 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "ADMC_ADNI1",
+  "description": "Dataset 'ADMC_ADNI1' from Synapse (syn5592519)",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "ADMC_ADNI1. Synapse ID: syn5592519. https://www.synapse.org/Synapse:syn5592519",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "SageNeuroCommunityAdmin",
+    "url": "https://www.synapse.org/#!Profile:3327871"
+  },
+  "datePublished": "2026-04-02 11:31:29.585",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn5592519",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "ADNI1 Participant Baseline Medications Mapped to Drug Classes",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7440367",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "ADNI RECMEDS Current Version",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7829508",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "Med Mapping Workflow.pdf",
+      "contentSize": "175841",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7813820",
+      "encodingFormat": "application/pdf",
+      "md5": "2823742af9f7eb648e84216f655db407"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "Medication_Name_Scores.R",
+      "contentSize": "13081",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7813945",
+      "encodingFormat": "text/plain",
+      "md5": "8c9531fcc725c22b76c6b53e6da1689a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "README.txt",
+      "contentSize": "3296",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7813941",
+      "encodingFormat": "text/plain",
+      "md5": "f27d687b830a154c7090ce32d6b46c41"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "Reformat ADNI source.R",
+      "contentSize": "2038",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7813943",
+      "encodingFormat": "text/plain",
+      "md5": "1147919f57ccb14c5160b2f41a170415"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "class.config",
+      "contentSize": "521",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7813948",
+      "encodingFormat": "application/xml",
+      "md5": "0e796737894b7f2281c8fe7e12f5ee84"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "meds_classes_grid.R",
+      "contentSize": "2287",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7813946",
+      "encodingFormat": "text/plain",
+      "md5": "a9033de65f3a075c8d4975ecbeaeaa29"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "score.config",
+      "contentSize": "288",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7813947",
+      "encodingFormat": "application/xml",
+      "md5": "60fd68d57ea58b69387cfe66516f265e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "4226_Bile_Acids_NIST_and_QC_Data.xlsx",
+      "contentSize": "48307",
+      "contentUrl": "https://www.synapse.org/Synapse:syn17103738",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "md5": "b6a00825113bf40c7676b8e453d60892"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "ADMC ADNI1 Bile Acids Data",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12036817",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "ADMC ADNI1 Bile Acids Dictionary",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12036821",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "ADMC ADNI1 Bile Acids Post Processed Data",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12177069",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "ADMC ADNI1 Bile Acids Post Processed Data Dictionary",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12177268",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "ADNI1 BA LOD values.csv",
+      "contentSize": "268",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12046012",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "3a9be735b99e0746542cc97a3f314510"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "ADNI1 NIST.csv",
+      "contentSize": "11888",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12046011",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "533e3a871de67847930448da2ce3d267"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "BILEACID.ADNI1.CV_ICC_LOD_Filter_LOG.csv",
+      "contentSize": "908",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12180152",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "58d5edf59b255045984bc8461c16e891"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "BileAcidRatios_revised_2017_12_07.csv",
+      "contentSize": "230",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12046208",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "0f142fd58c10f3f83f60a474162c1fac"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "Fasting Status-ADNI 1.txt",
+      "contentSize": "7346",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12046023",
+      "encodingFormat": "text/plain",
+      "md5": "8ed60999490a8f778a782e93562c8678"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "ADNI_BA_LEVEL0_to_LEVEL1.R",
+      "contentSize": "4869",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12046005",
+      "encodingFormat": "text/plain",
+      "md5": "df0278c7f83642a69a415abe9ba4a93e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "ADNI_BA_LEVEL1_to_LEVEL2.R",
+      "contentSize": "5438",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12046006",
+      "encodingFormat": "text/plain",
+      "md5": "9bad402243147a1fac0aa6657d245ad1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "ADNI_BA_LEVEL2_to_LEVEL3.R",
+      "contentSize": "5351",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12046007",
+      "encodingFormat": "text/plain",
+      "md5": "991fa0f3c32f0d3f1fe1bc1e14456ae5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "ADNI_BA_LEVEL3_to_LEVEL4.R",
+      "contentSize": "2654",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12179037",
+      "encodingFormat": "text/plain",
+      "md5": "8616d30d133052eee0603154f71b8e2f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "ADNI_BA_LEVEL4_to_LEVEL5.R",
+      "contentSize": "6881",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12046003",
+      "encodingFormat": "text/plain",
+      "md5": "f00f649f97af3aa98f4bef940f0407b7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "ADNI_BA_PIPELINE.R",
+      "contentSize": "8907",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12046004",
+      "encodingFormat": "text/plain",
+      "md5": "e7772c454135880533beedab75897eb6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "SUMS_AND_RATIOS_UTILITIES.r",
+      "contentSize": "4970",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12046009",
+      "encodingFormat": "text/plain",
+      "md5": "f5ca6545c33ac2b501726fa45fd0c0cf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "Processed ADNI1 lipidomics data",
+      "contentUrl": "https://www.synapse.org/Synapse:syn10208594",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "Processed ADNI1 lipidomics data dictionary",
+      "contentUrl": "https://www.synapse.org/Synapse:syn10208614",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "ADNI1_LIPIDOMICS_RAW_DATA_ESI_NEG.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn10495771",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "ADNI1_LIPIDOMICS_RAW_DATA_ESI_POS.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn10495782",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "adni1-lipidomics-acq.zip",
+      "contentSize": "87568",
+      "contentUrl": "https://www.synapse.org/Synapse:syn10208671",
+      "encodingFormat": "application/x-zip-compressed",
+      "md5": "c44d7f98a3b7c0eca1ee03a3606518ad"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "adni1-lipidomics-eics.zip- Extracted Ion Chromatograms",
+      "contentUrl": "https://www.synapse.org/Synapse:syn10495758",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "adni1-lipidomics-script.r",
+      "contentSize": "46055",
+      "contentUrl": "https://www.synapse.org/Synapse:syn10208679",
+      "encodingFormat": "text/plain",
+      "md5": "f85341b3cd36ea64a453a190800216ad"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "adni1_acqtime.zip",
+      "contentSize": "18916",
+      "contentUrl": "https://www.synapse.org/Synapse:syn10208662",
+      "encodingFormat": "application/x-zip-compressed",
+      "md5": "e9f517252e7efa9af736bd31e481badd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "adni1_loess_results.zip",
+      "contentSize": "29084745",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12973204",
+      "encodingFormat": "application/x-zip-compressed",
+      "md5": "6319d03ec2e22d05aebbfef16628faf1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "adni1_qcrsd_ttest-2.csv",
+      "contentSize": "83148",
+      "contentUrl": "https://www.synapse.org/Synapse:syn10208665",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "2d967c9aaa939e01ccb48452731f36b8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "data_processing_matrices.zip",
+      "contentSize": "20854047",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12973205",
+      "encodingFormat": "application/x-zip-compressed",
+      "md5": "64ca17f5374e037e7e4b4ccef780fc57"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "wcmc-lipidomics-database.zip",
+      "contentSize": "20305",
+      "contentUrl": "https://www.synapse.org/Synapse:syn10208660",
+      "encodingFormat": "application/x-zip-compressed",
+      "md5": "d373bcedd6ab7e1977b2f817d4c9555b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "FIA Data Dictionary",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7477315",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "UPLC Data Dictionary",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7477316",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "ADNI1 p180 FIA Post-processed Data",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7440356",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "ADNI1 p180 FIA Pre-processed Data",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7440354",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "ADNI1 p180 UPLC Post-processed Data",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7440357",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "ADNI1 p180 UPLC Pre-processed Data",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7440355",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "Fasting Status.txt",
+      "contentSize": "7346",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9774830",
+      "encodingFormat": "text/plain",
+      "md5": "8ed60999490a8f778a782e93562c8678"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "P180FIALODvalues.csv",
+      "contentSize": "10619",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9775685",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "7e2754bf90cf928d0c311accb925f6a0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "P180UPLCLODvalues.csv",
+      "contentSize": "2204",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9775688",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "c014152f6b7ebc236ccfa8bc347075d5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "p180 FIA Raw Spectra (zip file)",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8443643",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "p180 UPLC Raw Spectra (zip file)",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8443618",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "p180 Worklists (MS input files)",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8443654",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "p180_Raw_File_Mapping_Data_Dictionary.xlsx",
+      "contentSize": "11416",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8443714",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "md5": "bec0101cff6e4ebcb05e7db182e44cc6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "ADNI_P180_LEVEL0_to_LEVEL1.R",
+      "contentSize": "6323",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7354355",
+      "encodingFormat": "text/plain",
+      "md5": "03b2ff1422abf5706a385ae91e6bad0e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "ADNI_P180_LEVEL1_to_LEVEL2.R",
+      "contentSize": "4749",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7354356",
+      "encodingFormat": "text/plain",
+      "md5": "d77e9af3a8a919e8bf2b09253c410328"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "ADNI_P180_LEVEL2_to_LEVEL3.R",
+      "contentSize": "4117",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7354357",
+      "encodingFormat": "text/plain",
+      "md5": "e1d7a1fb803f0d9404e6ebae7701cb20"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "ADNI_P180_LEVEL3_to_LEVEL4.R",
+      "contentSize": "2057",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7354358",
+      "encodingFormat": "text/plain",
+      "md5": "20cee75fb333934a79b2ea235f2f149e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "ADNI_P180_LEVEL4_to_LEVEL5.R",
+      "contentSize": "2561",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7354359",
+      "encodingFormat": "text/plain",
+      "md5": "5f1872b186eea71e8b33ba50b451e0b8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "ADNI_P180_PIPELINE.R",
+      "contentSize": "11751",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7354362",
+      "encodingFormat": "text/plain",
+      "md5": "8c7a1b50c7e864e4586447c240f9aaa9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "README.docx",
+      "contentSize": "17091",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7354363",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "md5": "1fa67225a44e2fc2082dded4d01fe415"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "ADMC ADNI1 Bile Acids Methods (PDF)",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12036820",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "ADNI_Methods_About_the_Metabolomics_Data_v3.1_20160115.pdf",
+      "contentSize": "175486",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8532154",
+      "encodingFormat": "application/pdf",
+      "md5": "684a0e1df11b63868badf14c12f85925"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "Metabolite_Key_Master.csv",
+      "contentSize": "130268",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21676764",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "76d9db5d4e1ed27ab45c636e39c9da2b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "Metadata for ADNI1 subjects in the ISA-TAB format",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12972536",
+      "encodingFormat": "NOT_SET"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "p180 Methods Description",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7477319",
+      "encodingFormat": "NOT_SET"
+    }
+  ]
+}

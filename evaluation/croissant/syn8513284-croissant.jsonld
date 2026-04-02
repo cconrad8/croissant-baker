@@ -1,0 +1,352 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "SY5Y_Emory",
+  "description": "Dataset 'SY5Y_Emory' from Synapse (syn8513284)",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "SY5Y_Emory. Synapse ID: syn8513284. https://www.synapse.org/Synapse:syn8513284",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Mette Peters",
+    "url": "https://www.synapse.org/#!Profile:273995"
+  },
+  "datePublished": "2026-04-02 11:40:33.190",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn8513284",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "EMORY_Proteomics_Sy5y_moduleassignments.csv",
+      "contentSize": "3248323",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637353",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "6eb583c0137acf32617b63b4dce261cb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "EMORY_Proteomics_Sy5y_networkRcode.R",
+      "contentSize": "22235",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637354",
+      "encodingFormat": "text/plain",
+      "md5": "563036210fa184a862e39ddcfcce4980"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "EMORY_Proteomics_Sy5y_proteininput.csv",
+      "contentSize": "1336672",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637355",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "b31fcdd4e919cd2090fbaacde52e09ba"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "EMORY_Proteomics_Sy5y_traits.csv",
+      "contentSize": "466",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637356",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "7b4df3a5759c019c9786a0b8413ed02a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "EMORY_Proteomics_Sy5y_traits.csv",
+      "contentSize": "1253",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637528",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "80802c089f7e84517bd9f277a9a97214"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "EMORY_Proteomics_Sy5y_database.fasta",
+      "contentSize": "45372808",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637525",
+      "encodingFormat": "application/octet-stream",
+      "md5": "b34a621a184274bd962c4f148fba626c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "EMORY_Proteomics_Sy5y_proteinoutput.txt",
+      "contentSize": "31767103",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637526",
+      "encodingFormat": "text/plain",
+      "md5": "0e6f1e1d6c7aac5d0be34d6b4e74e188"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "EMORY_Proteomics_Sy5y_searchparams.xml",
+      "contentSize": "13174",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637527",
+      "encodingFormat": "text/xml",
+      "md5": "1dfd7a8aeefbb6936e1dd8fc6fb3a69e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "Emory_Proteomics_Sy5y_RAW_26.raw",
+      "contentSize": "2264290366",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9633850",
+      "encodingFormat": "image/RAW",
+      "md5": "a4052bd0639b964128b75852ee0911bc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "Emory_Proteomics_Sy5y_RAW_27.raw",
+      "contentSize": "2259479968",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9634455",
+      "encodingFormat": "image/RAW",
+      "md5": "621dceb78739497bf61d26ab97563dbf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "Emory_Proteomics_Sy5y_RAW_28.raw",
+      "contentSize": "2281492220",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9634558",
+      "encodingFormat": "image/RAW",
+      "md5": "f53afae6ccb7b2bea4dda0f748a0d664"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "Emory_Proteomics_Sy5y_RAW_29.raw",
+      "contentSize": "2285011254",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9634653",
+      "encodingFormat": "image/RAW",
+      "md5": "f6bf88956bd6f011937ba9d36f0740ec"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "Emory_Proteomics_Sy5y_RAW_30.raw",
+      "contentSize": "2307344026",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9634903",
+      "encodingFormat": "image/RAW",
+      "md5": "cf73d5bf88a6a31f6a72e7a349880d70"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "Emory_Proteomics_Sy5y_RAW_31.raw",
+      "contentSize": "2295224148",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9635398",
+      "encodingFormat": "image/RAW",
+      "md5": "d4acc40489b3be3c9770dc7696f915b2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "Emory_Proteomics_Sy5y_RAW_32.raw",
+      "contentSize": "2289338614",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9635514",
+      "encodingFormat": "image/RAW",
+      "md5": "31b3ef4d207bd9e59af85e210fd19550"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "Emory_Proteomics_Sy5y_RAW_33.raw",
+      "contentSize": "2295380120",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9635603",
+      "encodingFormat": "image/RAW",
+      "md5": "92b1429f93a2c4004a41a66f98d1bf8a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "Emory_Proteomics_Sy5y_RAW_34.raw",
+      "contentSize": "2335671384",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9635711",
+      "encodingFormat": "image/RAW",
+      "md5": "5c44c407302a61a9d34ea44401b1a52b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "Emory_Proteomics_Sy5y_RAW_35.raw",
+      "contentSize": "2324141694",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9635852",
+      "encodingFormat": "image/RAW",
+      "md5": "021161296c254034127b9acdb3975ba4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "Emory_Proteomics_Sy5y_RAW_36.raw",
+      "contentSize": "2311042392",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9635990",
+      "encodingFormat": "image/RAW",
+      "md5": "05e3d2a46c3e0b5c9aa96b70b8468698"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "Emory_Proteomics_Sy5y_RAW_37.raw",
+      "contentSize": "2357544052",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9636199",
+      "encodingFormat": "image/RAW",
+      "md5": "e8bfa213bd5e36831aec103381c9bd94"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "Emory_Proteomics_Sy5y_RAW_38.raw",
+      "contentSize": "2386029778",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9636510",
+      "encodingFormat": "image/RAW",
+      "md5": "45662ec000fcc15b4b74ab6eec768b20"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "Emory_Proteomics_Sy5y_RAW_39.raw",
+      "contentSize": "2376846868",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9636801",
+      "encodingFormat": "image/RAW",
+      "md5": "6d664ac3b9bfa0670cfac93451efc6ec"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "Emory_Proteomics_Sy5y_RAW_40.raw",
+      "contentSize": "2397883306",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9636906",
+      "encodingFormat": "image/RAW",
+      "md5": "4d53e43e25076dcb468688ed0db9cc15"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "Emory_Proteomics_Sy5y_RAW_41.raw",
+      "contentSize": "2409192998",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637021",
+      "encodingFormat": "image/RAW",
+      "md5": "f9bead5416d7c1a191c6a363471b3191"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "Emory_Proteomics_Sy5y_RAW_42.raw",
+      "contentSize": "2440875616",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637119",
+      "encodingFormat": "image/RAW",
+      "md5": "f2296d71aa75da26034ace4b72215d53"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "Emory_Proteomics_Sy5y_RAW_43.raw",
+      "contentSize": "2426697524",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637235",
+      "encodingFormat": "image/RAW",
+      "md5": "615330f1102b2dff9131a9c965e8609b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "Emory_Proteomics_Sy5y_RAW_60.raw",
+      "contentSize": "2407264236",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637357",
+      "encodingFormat": "image/RAW",
+      "md5": "795b9be05b234ef462a82f98fd586167"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "Emory_Proteomics_Sy5y_RAW_61.raw",
+      "contentSize": "2415526706",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637518",
+      "encodingFormat": "image/RAW",
+      "md5": "9e44dfbccb0539094281a6b99e896888"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "Emory_Proteomics_Sy5y_RAW_62.raw",
+      "contentSize": "2419582628",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637644",
+      "encodingFormat": "image/RAW",
+      "md5": "25f32e7da76e9b0477c5a069261ef192"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "Emory_Proteomics_Sy5y_RAW_63.raw",
+      "contentSize": "2438304132",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637775",
+      "encodingFormat": "image/RAW",
+      "md5": "008a872277ea2cf89d6c99e6f45864ee"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "Emory_Proteomics_Sy5y_RAW_64.raw",
+      "contentSize": "2377656212",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637898",
+      "encodingFormat": "image/RAW",
+      "md5": "b56118fec5d4bfa6933eaaf87650b396"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "Emory_Proteomics_Sy5y_RAW_65.raw",
+      "contentSize": "2491479014",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9638024",
+      "encodingFormat": "image/RAW",
+      "md5": "ebe3b00942b7d6423ce7fddcbb95301f"
+    }
+  ]
+}

@@ -1,0 +1,5313 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Banner",
+  "description": "Dataset 'Banner' from Synapse (syn7170616)",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Banner. Synapse ID: syn7170616. https://www.synapse.org/Synapse:syn7170616",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Mette Peters",
+    "url": "https://www.synapse.org/#!Profile:273995"
+  },
+  "datePublished": "2026-04-02 11:32:49.330",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn7170616",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "Banner_Proteomics_PFC_moduleassignments.csv",
+      "contentSize": "1185159",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9740277",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "8c9cbf4db65a634aed06ac771b065bcf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "Banner_Proteomics_PFC_networkRcode.R",
+      "contentSize": "42497",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9740282",
+      "encodingFormat": "text/plain",
+      "md5": "7aba49870f408f17596f2193bd47bb36"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "Banner_Proteomics_PFC_proteininput.csv",
+      "contentSize": "9843349",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9740293",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "7cfb30c9641fdd4a386a8fd479b5303c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "Banner_Proteomics_PFC_traits.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9740295",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "Banner_TMTquantitation_assay_metadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51110874",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "Banner_biospecimen_metadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51110872",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "Banner_individual_metadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51110871",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "Banner_proteomics_assay_metadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51110873",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "banner_sampletraits.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277187",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "banner_proteomics_pfc_database.fasta",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7421677",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "banner_proteomics_pfc_proteinoutput.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7417613",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "banner_proteomics_pfc_searchparameters.xml",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7420067",
+      "encodingFormat": "text/xml"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "banner_proteomics_pfc_raw_b1_002_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205002",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "banner_proteomics_pfc_raw_b1_006_25.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205011",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "banner_proteomics_pfc_raw_b1_008_38.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205022",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "banner_proteomics_pfc_raw_b1_010_51.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205027",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "banner_proteomics_pfc_raw_b1_019_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205041",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "banner_proteomics_pfc_raw_b1_022_41.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205055",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "banner_proteomics_pfc_raw_b1_023_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205060",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "banner_proteomics_pfc_raw_b1_025_30.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205062",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "banner_proteomics_pfc_raw_b1_036_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205063",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "banner_proteomics_pfc_raw_b1_042_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205071",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "banner_proteomics_pfc_raw_b1_049_49.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205076",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "banner_proteomics_pfc_raw_b1_051_36.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205078",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "banner_proteomics_pfc_raw_b1_054_46.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205079",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "banner_proteomics_pfc_raw_b1_055_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205081",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "banner_proteomics_pfc_raw_b1_056_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205083",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "banner_proteomics_pfc_raw_b1_060_33.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205084",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "banner_proteomics_pfc_raw_b1_064_26.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205089",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "banner_proteomics_pfc_raw_b1_083_42.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205098",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "banner_proteomics_pfc_raw_b1_084_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205100",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "banner_proteomics_pfc_raw_b1_087_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205107",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "banner_proteomics_pfc_raw_b1_089_39.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205122",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "banner_proteomics_pfc_raw_b1_090_44.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205132",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "banner_proteomics_pfc_raw_b1_092_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205136",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "banner_proteomics_pfc_raw_b1_093_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205137",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "banner_proteomics_pfc_raw_b1_096_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205138",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "banner_proteomics_pfc_raw_b1_098_50.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205139",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "banner_proteomics_pfc_raw_b1_102_31.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205141",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "banner_proteomics_pfc_raw_b1_104_35.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205143",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "banner_proteomics_pfc_raw_b1_108_45.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205145",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "banner_proteomics_pfc_raw_b1_109_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205150",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "banner_proteomics_pfc_raw_b1_112_43.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205153",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "banner_proteomics_pfc_raw_b1_113_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205159",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "banner_proteomics_pfc_raw_b1_122_52.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205163",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "banner_proteomics_pfc_raw_b1_125_32.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205176",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "banner_proteomics_pfc_raw_b1_137_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205182",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "banner_proteomics_pfc_raw_b1_138_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205186",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "banner_proteomics_pfc_raw_b1_139_48.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205189",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "banner_proteomics_pfc_raw_b1_143_47.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205192",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "banner_proteomics_pfc_raw_b1_148_37.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205193",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "banner_proteomics_pfc_raw_b1_150_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205196",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "banner_proteomics_pfc_raw_b1_155_34.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205198",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "banner_proteomics_pfc_raw_b1_158_40.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205210",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "banner_proteomics_pfc_raw_b1_168_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205211",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "banner_proteomics_pfc_raw_b1_169_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205214",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "banner_proteomics_pfc_raw_b1_174_29.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205216",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "banner_proteomics_pfc_raw_b1_181_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205217",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "banner_proteomics_pfc_raw_b1_191_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205219",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "banner_proteomics_pfc_raw_b1_198_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205223",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "banner_proteomics_pfc_raw_b2_001_30.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205244",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "banner_proteomics_pfc_raw_b2_004_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205250",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "banner_proteomics_pfc_raw_b2_011_48.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349215",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "banner_proteomics_pfc_raw_b2_014_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205257",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "banner_proteomics_pfc_raw_b2_016_38.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205267",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "banner_proteomics_pfc_raw_b2_018_47.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205268",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "banner_proteomics_pfc_raw_b2_020_37.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349219",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "banner_proteomics_pfc_raw_b2_026_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349223",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "banner_proteomics_pfc_raw_b2_027_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349226",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "banner_proteomics_pfc_raw_b2_030_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349231",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "banner_proteomics_pfc_raw_b2_033_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349234",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "banner_proteomics_pfc_raw_b2_039_52.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349236",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "banner_proteomics_pfc_raw_b2_050_40.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349240",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "banner_proteomics_pfc_raw_b2_052_50.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349242",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "banner_proteomics_pfc_raw_b2_053_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349245",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "banner_proteomics_pfc_raw_b2_061_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349250",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "banner_proteomics_pfc_raw_b2_067_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349253",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "banner_proteomics_pfc_raw_b2_068_35.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349267",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "banner_proteomics_pfc_raw_b2_074_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349274",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "banner_proteomics_pfc_raw_b2_076_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349279",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "banner_proteomics_pfc_raw_b2_080_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349281",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "banner_proteomics_pfc_raw_b2_085_39.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349284",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "banner_proteomics_pfc_raw_b2_088_36.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349291",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "banner_proteomics_pfc_raw_b2_099_32.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349293",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "banner_proteomics_pfc_raw_b2_105_29.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349298",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "banner_proteomics_pfc_raw_b2_114_43.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349300",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "banner_proteomics_pfc_raw_b2_117_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349301",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "banner_proteomics_pfc_raw_b2_118_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349306",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "banner_proteomics_pfc_raw_b2_120_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349310",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "banner_proteomics_pfc_raw_b2_121_49.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349312",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "banner_proteomics_pfc_raw_b2_123_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349316",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "banner_proteomics_pfc_raw_b2_126_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349322",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "banner_proteomics_pfc_raw_b2_131_51.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349324",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "banner_proteomics_pfc_raw_b2_132_33.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349326",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "banner_proteomics_pfc_raw_b2_141_41.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349330",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "banner_proteomics_pfc_raw_b2_142_44.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349334",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "banner_proteomics_pfc_raw_b2_146_46.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349337",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "banner_proteomics_pfc_raw_b2_151_31.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349344",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "banner_proteomics_pfc_raw_b2_156_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349356",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "banner_proteomics_pfc_raw_b2_171_25.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349358",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "banner_proteomics_pfc_raw_b2_175_45.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349363",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "banner_proteomics_pfc_raw_b2_176_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349365",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "banner_proteomics_pfc_raw_b2_178_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349368",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "banner_proteomics_pfc_raw_b2_179_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349372",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "banner_proteomics_pfc_raw_b2_184_42.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349376",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "banner_proteomics_pfc_raw_b2_186_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349379",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "banner_proteomics_pfc_raw_b2_188_26.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349383",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "banner_proteomics_pfc_raw_b2_194_34.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7349387",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "banner_proteomics_pfc_raw_b3_003_53.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205302",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "banner_proteomics_pfc_raw_b3_005_47.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205305",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "banner_proteomics_pfc_raw_b3_009_25.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205309",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "banner_proteomics_pfc_raw_b3_012_52.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205310",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "banner_proteomics_pfc_raw_b3_017_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205312",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "banner_proteomics_pfc_raw_b3_021_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205314",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "banner_proteomics_pfc_raw_b3_031_38.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205347",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "banner_proteomics_pfc_raw_b3_035_51.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205357",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_116",
+      "name": "banner_proteomics_pfc_raw_b3_037_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205380",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_117",
+      "name": "banner_proteomics_pfc_raw_b3_041_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205406",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_118",
+      "name": "banner_proteomics_pfc_raw_b3_044_30.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205438",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_119",
+      "name": "banner_proteomics_pfc_raw_b3_045_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205449",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_120",
+      "name": "banner_proteomics_pfc_raw_b3_046_61.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205450",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_121",
+      "name": "banner_proteomics_pfc_raw_b3_047_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205452",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_122",
+      "name": "banner_proteomics_pfc_raw_b3_048_44.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205453",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_123",
+      "name": "banner_proteomics_pfc_raw_b3_057_26.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205478",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_124",
+      "name": "banner_proteomics_pfc_raw_b3_058_42.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205511",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_125",
+      "name": "banner_proteomics_pfc_raw_b3_059_39.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205537",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_126",
+      "name": "banner_proteomics_pfc_raw_b3_070_60.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205571",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_127",
+      "name": "banner_proteomics_pfc_raw_b3_071_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205580",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_128",
+      "name": "banner_proteomics_pfc_raw_b3_072_49.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205582",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_129",
+      "name": "banner_proteomics_pfc_raw_b3_073_40.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205604",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_130",
+      "name": "banner_proteomics_pfc_raw_b3_075_54.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205620",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_131",
+      "name": "banner_proteomics_pfc_raw_b3_077_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205640",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_132",
+      "name": "banner_proteomics_pfc_raw_b3_079_58.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205658",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_133",
+      "name": "banner_proteomics_pfc_raw_b3_081_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205662",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_134",
+      "name": "banner_proteomics_pfc_raw_b3_082_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205665",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_135",
+      "name": "banner_proteomics_pfc_raw_b3_086_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205693",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_136",
+      "name": "banner_proteomics_pfc_raw_b3_091_37.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205729",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_137",
+      "name": "banner_proteomics_pfc_raw_b3_094_28.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205730",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_138",
+      "name": "banner_proteomics_pfc_raw_b3_097_41.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205774",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_139",
+      "name": "banner_proteomics_pfc_raw_b3_100_45.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7205873",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_140",
+      "name": "banner_proteomics_pfc_raw_b3_103_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7206068",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_141",
+      "name": "banner_proteomics_pfc_raw_b3_110_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7206398",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_142",
+      "name": "banner_proteomics_pfc_raw_b3_111_29.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7206705",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_143",
+      "name": "banner_proteomics_pfc_raw_b3_115_56.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7206866",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_144",
+      "name": "banner_proteomics_pfc_raw_b3_116_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7206959",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_145",
+      "name": "banner_proteomics_pfc_raw_b3_119_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207037",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_146",
+      "name": "banner_proteomics_pfc_raw_b3_127_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207242",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_147",
+      "name": "banner_proteomics_pfc_raw_b3_130_59.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207481",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_148",
+      "name": "banner_proteomics_pfc_raw_b3_133_27.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207719",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_149",
+      "name": "banner_proteomics_pfc_raw_b3_135_35.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207805",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_150",
+      "name": "banner_proteomics_pfc_raw_b3_136_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207812",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_151",
+      "name": "banner_proteomics_pfc_raw_b3_144_34.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207815",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_152",
+      "name": "banner_proteomics_pfc_raw_b3_147_33.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207819",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_153",
+      "name": "banner_proteomics_pfc_raw_b3_153_46.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207823",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_154",
+      "name": "banner_proteomics_pfc_raw_b3_159_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207830",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_155",
+      "name": "banner_proteomics_pfc_raw_b3_161_57.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207832",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_156",
+      "name": "banner_proteomics_pfc_raw_b3_162_43.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207834",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_157",
+      "name": "banner_proteomics_pfc_raw_b3_166_48.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207836",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_158",
+      "name": "banner_proteomics_pfc_raw_b3_170_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207837",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_159",
+      "name": "banner_proteomics_pfc_raw_b3_173_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207843",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_160",
+      "name": "banner_proteomics_pfc_raw_b3_180_55.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207844",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_161",
+      "name": "banner_proteomics_pfc_raw_b3_182_36.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207850",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_162",
+      "name": "banner_proteomics_pfc_raw_b3_192_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207851",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_163",
+      "name": "banner_proteomics_pfc_raw_b3_197_50.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207853",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_164",
+      "name": "banner_proteomics_pfc_raw_b3_199_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7207854",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_165",
+      "name": "banner_proteomics_pfc_raw_b4_007_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7210079",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_166",
+      "name": "banner_proteomics_pfc_raw_b4_013_45.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7210084",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_167",
+      "name": "banner_proteomics_pfc_raw_b4_015_30.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7210086",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_168",
+      "name": "banner_proteomics_pfc_raw_b4_024_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7210087",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_169",
+      "name": "banner_proteomics_pfc_raw_b4_028_48.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7210089",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_170",
+      "name": "banner_proteomics_pfc_raw_b4_029_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7210090",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_171",
+      "name": "banner_proteomics_pfc_raw_b4_032_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7210092",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_172",
+      "name": "banner_proteomics_pfc_raw_b4_034_36.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7210095",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_173",
+      "name": "banner_proteomics_pfc_raw_b4_038_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348727",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_174",
+      "name": "banner_proteomics_pfc_raw_b4_040_33.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348730",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_175",
+      "name": "banner_proteomics_pfc_raw_b4_043_29.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348731",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_176",
+      "name": "banner_proteomics_pfc_raw_b4_062_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348732",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_177",
+      "name": "banner_proteomics_pfc_raw_b4_063_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348734",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_178",
+      "name": "banner_proteomics_pfc_raw_b4_065_37.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348738",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_179",
+      "name": "banner_proteomics_pfc_raw_b4_066_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348740",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_180",
+      "name": "banner_proteomics_pfc_raw_b4_069_41.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348743",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_181",
+      "name": "banner_proteomics_pfc_raw_b4_078_46.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348746",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_182",
+      "name": "banner_proteomics_pfc_raw_b4_095_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348747",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_183",
+      "name": "banner_proteomics_pfc_raw_b4_101_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348748",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_184",
+      "name": "banner_proteomics_pfc_raw_b4_106_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348750",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_185",
+      "name": "banner_proteomics_pfc_raw_b4_107_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348755",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_186",
+      "name": "banner_proteomics_pfc_raw_b4_124_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348756",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_187",
+      "name": "banner_proteomics_pfc_raw_b4_128_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348759",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_188",
+      "name": "banner_proteomics_pfc_raw_b4_129_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348762",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_189",
+      "name": "banner_proteomics_pfc_raw_b4_134_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348763",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_190",
+      "name": "banner_proteomics_pfc_raw_b4_140_50.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348764",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_191",
+      "name": "banner_proteomics_pfc_raw_b4_145_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348767",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_192",
+      "name": "banner_proteomics_pfc_raw_b4_149_49.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348771",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_193",
+      "name": "banner_proteomics_pfc_raw_b4_152_34.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348774",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_194",
+      "name": "banner_proteomics_pfc_raw_b4_154_52.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348777",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_195",
+      "name": "banner_proteomics_pfc_raw_b4_157_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348778",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_196",
+      "name": "banner_proteomics_pfc_raw_b4_160_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348779",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_197",
+      "name": "banner_proteomics_pfc_raw_b4_163_39.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348784",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_198",
+      "name": "banner_proteomics_pfc_raw_b4_164_31.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348786",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_199",
+      "name": "banner_proteomics_pfc_raw_b4_165_44.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348789",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_200",
+      "name": "banner_proteomics_pfc_raw_b4_167_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348793",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_201",
+      "name": "banner_proteomics_pfc_raw_b4_172_40.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348794",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_202",
+      "name": "banner_proteomics_pfc_raw_b4_177_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348800",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_203",
+      "name": "banner_proteomics_pfc_raw_b4_183_32.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348802",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_204",
+      "name": "banner_proteomics_pfc_raw_b4_185_38.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348806",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_205",
+      "name": "banner_proteomics_pfc_raw_b4_187_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348807",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_206",
+      "name": "banner_proteomics_pfc_raw_b4_189_43.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348808",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_207",
+      "name": "banner_proteomics_pfc_raw_b4_190_26.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348815",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_208",
+      "name": "banner_proteomics_pfc_raw_b4_193_42.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348817",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_209",
+      "name": "banner_proteomics_pfc_raw_b4_195_51.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348819",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_210",
+      "name": "banner_proteomics_pfc_raw_b4_196_47.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348824",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_211",
+      "name": "banner_proteomics_pfc_raw_b4_200_25.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348825",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_212",
+      "name": "banner_proteomics_pfc_raw_b4_201_35.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7348826",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_213",
+      "name": "IPI_HUMAN_042015_maptmtbrmod_abeta_apoe.fasta",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277189",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_214",
+      "name": "bannertmt_22batchmulticoncensus_InputFiles.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277188",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_215",
+      "name": "bannertmt_22batchmulticoncensus_PeptideGroups.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277195",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_216",
+      "name": "bannertmt_22batchmulticoncensus_ProteinGroups.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277190",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_217",
+      "name": "bannertmt_22batchmulticoncensus_Proteins.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277191",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_218",
+      "name": "bannertmt_b01_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277192",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_219",
+      "name": "bannertmt_b01_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277193",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_220",
+      "name": "bannertmt_b01_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277194",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_221",
+      "name": "bannertmt_b01_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277196",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_222",
+      "name": "bannertmt_b01_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277198",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_223",
+      "name": "bannertmt_b01_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277197",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_224",
+      "name": "bannertmt_b01_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277199",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_225",
+      "name": "bannertmt_b01_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277200",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_226",
+      "name": "bannertmt_b01_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277201",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_227",
+      "name": "bannertmt_b01_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277202",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_228",
+      "name": "bannertmt_b01_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277203",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_229",
+      "name": "bannertmt_b01_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277204",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_230",
+      "name": "bannertmt_b01_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277205",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_231",
+      "name": "bannertmt_b01_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277207",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_232",
+      "name": "bannertmt_b01_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277206",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_233",
+      "name": "bannertmt_b01_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277208",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_234",
+      "name": "bannertmt_b01_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277210",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_235",
+      "name": "bannertmt_b01_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277209",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_236",
+      "name": "bannertmt_b01_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277211",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_237",
+      "name": "bannertmt_b01_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277214",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_238",
+      "name": "bannertmt_b01_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277216",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_239",
+      "name": "bannertmt_b01_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277213",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_240",
+      "name": "bannertmt_b01_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277215",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_241",
+      "name": "bannertmt_b01_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277217",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_242",
+      "name": "bannertmt_b02_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277219",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_243",
+      "name": "bannertmt_b02_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277218",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_244",
+      "name": "bannertmt_b02_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277220",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_245",
+      "name": "bannertmt_b02_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277221",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_246",
+      "name": "bannertmt_b02_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277223",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_247",
+      "name": "bannertmt_b02_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277222",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_248",
+      "name": "bannertmt_b02_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277224",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_249",
+      "name": "bannertmt_b02_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277225",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_250",
+      "name": "bannertmt_b02_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277227",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_251",
+      "name": "bannertmt_b02_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277226",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_252",
+      "name": "bannertmt_b02_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277229",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_253",
+      "name": "bannertmt_b02_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277228",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_254",
+      "name": "bannertmt_b02_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277230",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_255",
+      "name": "bannertmt_b02_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277234",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_256",
+      "name": "bannertmt_b02_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277231",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_257",
+      "name": "bannertmt_b02_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277232",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_258",
+      "name": "bannertmt_b02_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277233",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_259",
+      "name": "bannertmt_b02_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277235",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_260",
+      "name": "bannertmt_b02_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277238",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_261",
+      "name": "bannertmt_b02_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277239",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_262",
+      "name": "bannertmt_b02_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277237",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_263",
+      "name": "bannertmt_b02_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277236",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_264",
+      "name": "bannertmt_b02_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277240",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_265",
+      "name": "bannertmt_b02_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277241",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_266",
+      "name": "bannertmt_b03_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277242",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_267",
+      "name": "bannertmt_b03_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277243",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_268",
+      "name": "bannertmt_b03_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277244",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_269",
+      "name": "bannertmt_b03_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277245",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_270",
+      "name": "bannertmt_b03_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277246",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_271",
+      "name": "bannertmt_b03_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277247",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_272",
+      "name": "bannertmt_b03_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277248",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_273",
+      "name": "bannertmt_b03_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277250",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_274",
+      "name": "bannertmt_b03_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277251",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_275",
+      "name": "bannertmt_b03_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277253",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_276",
+      "name": "bannertmt_b03_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277252",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_277",
+      "name": "bannertmt_b03_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277254",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_278",
+      "name": "bannertmt_b03_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277255",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_279",
+      "name": "bannertmt_b03_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277256",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_280",
+      "name": "bannertmt_b03_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277257",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_281",
+      "name": "bannertmt_b03_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277258",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_282",
+      "name": "bannertmt_b03_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277259",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_283",
+      "name": "bannertmt_b03_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277260",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_284",
+      "name": "bannertmt_b03_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277261",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_285",
+      "name": "bannertmt_b03_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277263",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_286",
+      "name": "bannertmt_b03_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277267",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_287",
+      "name": "bannertmt_b03_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277264",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_288",
+      "name": "bannertmt_b03_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277265",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_289",
+      "name": "bannertmt_b03_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277266",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_290",
+      "name": "bannertmt_b04_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277269",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_291",
+      "name": "bannertmt_b04_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277270",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_292",
+      "name": "bannertmt_b04_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277268",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_293",
+      "name": "bannertmt_b04_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277271",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_294",
+      "name": "bannertmt_b04_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277272",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_295",
+      "name": "bannertmt_b04_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277276",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_296",
+      "name": "bannertmt_b04_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277274",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_297",
+      "name": "bannertmt_b04_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277275",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_298",
+      "name": "bannertmt_b04_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277277",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_299",
+      "name": "bannertmt_b04_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277278",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_300",
+      "name": "bannertmt_b04_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277279",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_301",
+      "name": "bannertmt_b04_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277281",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_302",
+      "name": "bannertmt_b04_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277280",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_303",
+      "name": "bannertmt_b04_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277282",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_304",
+      "name": "bannertmt_b04_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277283",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_305",
+      "name": "bannertmt_b04_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277284",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_306",
+      "name": "bannertmt_b04_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277286",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_307",
+      "name": "bannertmt_b04_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277285",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_308",
+      "name": "bannertmt_b04_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277287",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_309",
+      "name": "bannertmt_b04_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277288",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_310",
+      "name": "bannertmt_b04_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277290",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_311",
+      "name": "bannertmt_b04_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277292",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_312",
+      "name": "bannertmt_b04_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277291",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_313",
+      "name": "bannertmt_b04_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277293",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_314",
+      "name": "bannertmt_b05_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277294",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_315",
+      "name": "bannertmt_b05_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277295",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_316",
+      "name": "bannertmt_b05_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277296",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_317",
+      "name": "bannertmt_b05_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277297",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_318",
+      "name": "bannertmt_b05_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277298",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_319",
+      "name": "bannertmt_b05_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277299",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_320",
+      "name": "bannertmt_b05_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277301",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_321",
+      "name": "bannertmt_b05_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277303",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_322",
+      "name": "bannertmt_b05_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277302",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_323",
+      "name": "bannertmt_b05_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277306",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_324",
+      "name": "bannertmt_b05_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277305",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_325",
+      "name": "bannertmt_b05_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277307",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_326",
+      "name": "bannertmt_b05_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277309",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_327",
+      "name": "bannertmt_b05_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277308",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_328",
+      "name": "bannertmt_b05_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277310",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_329",
+      "name": "bannertmt_b05_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277312",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_330",
+      "name": "bannertmt_b05_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277313",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_331",
+      "name": "bannertmt_b05_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277315",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_332",
+      "name": "bannertmt_b05_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277314",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_333",
+      "name": "bannertmt_b05_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277317",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_334",
+      "name": "bannertmt_b05_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277319",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_335",
+      "name": "bannertmt_b05_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277320",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_336",
+      "name": "bannertmt_b05_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277321",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_337",
+      "name": "bannertmt_b05_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277322",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_338",
+      "name": "bannertmt_b06_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277323",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_339",
+      "name": "bannertmt_b06_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277324",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_340",
+      "name": "bannertmt_b06_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277325",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_341",
+      "name": "bannertmt_b06_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277327",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_342",
+      "name": "bannertmt_b06_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277326",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_343",
+      "name": "bannertmt_b06_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277328",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_344",
+      "name": "bannertmt_b06_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277329",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_345",
+      "name": "bannertmt_b06_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277331",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_346",
+      "name": "bannertmt_b06_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277332",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_347",
+      "name": "bannertmt_b06_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277330",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_348",
+      "name": "bannertmt_b06_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277335",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_349",
+      "name": "bannertmt_b06_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277336",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_350",
+      "name": "bannertmt_b06_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277338",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_351",
+      "name": "bannertmt_b06_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277337",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_352",
+      "name": "bannertmt_b06_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277339",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_353",
+      "name": "bannertmt_b06_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277340",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_354",
+      "name": "bannertmt_b06_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277341",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_355",
+      "name": "bannertmt_b06_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277342",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_356",
+      "name": "bannertmt_b06_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277344",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_357",
+      "name": "bannertmt_b06_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277343",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_358",
+      "name": "bannertmt_b06_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277345",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_359",
+      "name": "bannertmt_b06_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277346",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_360",
+      "name": "bannertmt_b06_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277349",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_361",
+      "name": "bannertmt_b06_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277351",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_362",
+      "name": "bannertmt_b07_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277350",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_363",
+      "name": "bannertmt_b07_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277352",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_364",
+      "name": "bannertmt_b07_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277353",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_365",
+      "name": "bannertmt_b07_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277354",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_366",
+      "name": "bannertmt_b07_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277356",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_367",
+      "name": "bannertmt_b07_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277355",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_368",
+      "name": "bannertmt_b07_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277365",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_369",
+      "name": "bannertmt_b07_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277362",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_370",
+      "name": "bannertmt_b07_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277368",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_371",
+      "name": "bannertmt_b07_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277373",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_372",
+      "name": "bannertmt_b07_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277371",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_373",
+      "name": "bannertmt_b07_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277381",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_374",
+      "name": "bannertmt_b07_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277382",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_375",
+      "name": "bannertmt_b07_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277383",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_376",
+      "name": "bannertmt_b07_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277385",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_377",
+      "name": "bannertmt_b07_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277384",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_378",
+      "name": "bannertmt_b07_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277386",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_379",
+      "name": "bannertmt_b07_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277387",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_380",
+      "name": "bannertmt_b07_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277388",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_381",
+      "name": "bannertmt_b07_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277390",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_382",
+      "name": "bannertmt_b07_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277389",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_383",
+      "name": "bannertmt_b07_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277391",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_384",
+      "name": "bannertmt_b07_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277392",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_385",
+      "name": "bannertmt_b07_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277393",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_386",
+      "name": "bannertmt_b08_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277394",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_387",
+      "name": "bannertmt_b08_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277395",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_388",
+      "name": "bannertmt_b08_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277396",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_389",
+      "name": "bannertmt_b08_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277397",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_390",
+      "name": "bannertmt_b08_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277398",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_391",
+      "name": "bannertmt_b08_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277400",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_392",
+      "name": "bannertmt_b08_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277399",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_393",
+      "name": "bannertmt_b08_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277454",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_394",
+      "name": "bannertmt_b08_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277455",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_395",
+      "name": "bannertmt_b08_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277456",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_396",
+      "name": "bannertmt_b08_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277458",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_397",
+      "name": "bannertmt_b08_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277457",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_398",
+      "name": "bannertmt_b08_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277460",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_399",
+      "name": "bannertmt_b08_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277461",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_400",
+      "name": "bannertmt_b08_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277462",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_401",
+      "name": "bannertmt_b08_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277464",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_402",
+      "name": "bannertmt_b08_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277463",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_403",
+      "name": "bannertmt_b08_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277465",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_404",
+      "name": "bannertmt_b08_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277466",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_405",
+      "name": "bannertmt_b08_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277467",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_406",
+      "name": "bannertmt_b08_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277469",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_407",
+      "name": "bannertmt_b08_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277468",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_408",
+      "name": "bannertmt_b08_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277470",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_409",
+      "name": "bannertmt_b08_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277471",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_410",
+      "name": "bannertmt_b09_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277472",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_411",
+      "name": "bannertmt_b09_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277474",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_412",
+      "name": "bannertmt_b09_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277473",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_413",
+      "name": "bannertmt_b09_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277475",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_414",
+      "name": "bannertmt_b09_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277476",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_415",
+      "name": "bannertmt_b09_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277477",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_416",
+      "name": "bannertmt_b09_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277479",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_417",
+      "name": "bannertmt_b09_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277478",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_418",
+      "name": "bannertmt_b09_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277481",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_419",
+      "name": "bannertmt_b09_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277482",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_420",
+      "name": "bannertmt_b09_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277483",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_421",
+      "name": "bannertmt_b09_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277484",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_422",
+      "name": "bannertmt_b09_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277485",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_423",
+      "name": "bannertmt_b09_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277486",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_424",
+      "name": "bannertmt_b09_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277487",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_425",
+      "name": "bannertmt_b09_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277488",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_426",
+      "name": "bannertmt_b09_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277490",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_427",
+      "name": "bannertmt_b09_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277489",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_428",
+      "name": "bannertmt_b09_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277491",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_429",
+      "name": "bannertmt_b09_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277492",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_430",
+      "name": "bannertmt_b09_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277493",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_431",
+      "name": "bannertmt_b09_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277494",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_432",
+      "name": "bannertmt_b09_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277495",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_433",
+      "name": "bannertmt_b09_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277496",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_434",
+      "name": "bannertmt_b10_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277497",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_435",
+      "name": "bannertmt_b10_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277498",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_436",
+      "name": "bannertmt_b10_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277499",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_437",
+      "name": "bannertmt_b10_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277500",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_438",
+      "name": "bannertmt_b10_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277501",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_439",
+      "name": "bannertmt_b10_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277502",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_440",
+      "name": "bannertmt_b10_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277503",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_441",
+      "name": "bannertmt_b10_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277504",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_442",
+      "name": "bannertmt_b10_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277505",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_443",
+      "name": "bannertmt_b10_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277506",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_444",
+      "name": "bannertmt_b10_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277507",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_445",
+      "name": "bannertmt_b10_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277508",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_446",
+      "name": "bannertmt_b10_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277509",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_447",
+      "name": "bannertmt_b10_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277510",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_448",
+      "name": "bannertmt_b10_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277512",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_449",
+      "name": "bannertmt_b10_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277511",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_450",
+      "name": "bannertmt_b10_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277513",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_451",
+      "name": "bannertmt_b10_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277514",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_452",
+      "name": "bannertmt_b10_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277515",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_453",
+      "name": "bannertmt_b10_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277516",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_454",
+      "name": "bannertmt_b10_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277517",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_455",
+      "name": "bannertmt_b10_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277518",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_456",
+      "name": "bannertmt_b10_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277519",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_457",
+      "name": "bannertmt_b10_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277520",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_458",
+      "name": "bannertmt_b11_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277521",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_459",
+      "name": "bannertmt_b11_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277522",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_460",
+      "name": "bannertmt_b11_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277523",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_461",
+      "name": "bannertmt_b11_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277524",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_462",
+      "name": "bannertmt_b11_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277525",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_463",
+      "name": "bannertmt_b11_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277526",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_464",
+      "name": "bannertmt_b11_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277527",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_465",
+      "name": "bannertmt_b11_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277528",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_466",
+      "name": "bannertmt_b11_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277529",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_467",
+      "name": "bannertmt_b11_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277530",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_468",
+      "name": "bannertmt_b11_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277531",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_469",
+      "name": "bannertmt_b11_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277532",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_470",
+      "name": "bannertmt_b11_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277533",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_471",
+      "name": "bannertmt_b11_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277534",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_472",
+      "name": "bannertmt_b11_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277535",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_473",
+      "name": "bannertmt_b11_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277536",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_474",
+      "name": "bannertmt_b11_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277537",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_475",
+      "name": "bannertmt_b11_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277538",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_476",
+      "name": "bannertmt_b11_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277539",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_477",
+      "name": "bannertmt_b11_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277540",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_478",
+      "name": "bannertmt_b11_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277541",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_479",
+      "name": "bannertmt_b11_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277542",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_480",
+      "name": "bannertmt_b11_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277545",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_481",
+      "name": "bannertmt_b11_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277543",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_482",
+      "name": "bannertmt_b12_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277544",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_483",
+      "name": "bannertmt_b12_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277546",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_484",
+      "name": "bannertmt_b12_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277547",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_485",
+      "name": "bannertmt_b12_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277548",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_486",
+      "name": "bannertmt_b12_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277549",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_487",
+      "name": "bannertmt_b12_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277550",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_488",
+      "name": "bannertmt_b12_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277551",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_489",
+      "name": "bannertmt_b12_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277552",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_490",
+      "name": "bannertmt_b12_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277553",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_491",
+      "name": "bannertmt_b12_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277554",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_492",
+      "name": "bannertmt_b12_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277555",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_493",
+      "name": "bannertmt_b12_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277556",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_494",
+      "name": "bannertmt_b12_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277558",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_495",
+      "name": "bannertmt_b12_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277557",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_496",
+      "name": "bannertmt_b12_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277559",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_497",
+      "name": "bannertmt_b12_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277560",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_498",
+      "name": "bannertmt_b12_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277561",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_499",
+      "name": "bannertmt_b12_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277562",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_500",
+      "name": "bannertmt_b12_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277563",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_501",
+      "name": "bannertmt_b12_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277566",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_502",
+      "name": "bannertmt_b12_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277592",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_503",
+      "name": "bannertmt_b12_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277564",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_504",
+      "name": "bannertmt_b12_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277565",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_505",
+      "name": "bannertmt_b12_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277588",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_506",
+      "name": "bannertmt_b13_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277620",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_507",
+      "name": "bannertmt_b13_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277622",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_508",
+      "name": "bannertmt_b13_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277623",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_509",
+      "name": "bannertmt_b13_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277621",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_510",
+      "name": "bannertmt_b13_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277624",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_511",
+      "name": "bannertmt_b13_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22277627",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_512",
+      "name": "bannertmt_b13_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002649",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_513",
+      "name": "bannertmt_b13_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002648",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_514",
+      "name": "bannertmt_b13_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002647",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_515",
+      "name": "bannertmt_b13_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002643",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_516",
+      "name": "bannertmt_b13_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002642",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_517",
+      "name": "bannertmt_b13_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002638",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_518",
+      "name": "bannertmt_b13_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002637",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_519",
+      "name": "bannertmt_b13_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002458",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_520",
+      "name": "bannertmt_b13_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002244",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_521",
+      "name": "bannertmt_b13_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002215",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_522",
+      "name": "bannertmt_b13_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999146",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_523",
+      "name": "bannertmt_b13_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001967",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_524",
+      "name": "bannertmt_b13_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001851",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_525",
+      "name": "bannertmt_b13_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001850",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_526",
+      "name": "bannertmt_b13_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001846",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_527",
+      "name": "bannertmt_b13_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001842",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_528",
+      "name": "bannertmt_b13_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001841",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_529",
+      "name": "bannertmt_b13_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002653",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_530",
+      "name": "bannertmt_b14_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001840",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_531",
+      "name": "bannertmt_b14_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001836",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_532",
+      "name": "bannertmt_b14_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001835",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_533",
+      "name": "bannertmt_b14_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001831",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_534",
+      "name": "bannertmt_b14_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001830",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_535",
+      "name": "bannertmt_b14_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001829",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_536",
+      "name": "bannertmt_b14_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001825",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_537",
+      "name": "bannertmt_b14_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001821",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_538",
+      "name": "bannertmt_b14_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001820",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_539",
+      "name": "bannertmt_b14_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001819",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_540",
+      "name": "bannertmt_b14_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001818",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_541",
+      "name": "bannertmt_b14_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001814",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_542",
+      "name": "bannertmt_b14_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001810",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_543",
+      "name": "bannertmt_b14_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001809",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_544",
+      "name": "bannertmt_b14_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001808",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_545",
+      "name": "bannertmt_b14_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001804",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_546",
+      "name": "bannertmt_b14_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001800",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_547",
+      "name": "bannertmt_b14_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001799",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_548",
+      "name": "bannertmt_b14_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001798",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_549",
+      "name": "bannertmt_b14_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001794",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_550",
+      "name": "bannertmt_b14_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001793",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_551",
+      "name": "bannertmt_b14_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001789",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_552",
+      "name": "bannertmt_b14_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001722",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_553",
+      "name": "bannertmt_b14_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51001536",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_554",
+      "name": "bannertmt_b15_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51000785",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_555",
+      "name": "bannertmt_b15_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999191",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_556",
+      "name": "bannertmt_b15_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51000571",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_557",
+      "name": "bannertmt_b15_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51000471",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_558",
+      "name": "bannertmt_b15_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51000432",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_559",
+      "name": "bannertmt_b15_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51000394",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_560",
+      "name": "bannertmt_b15_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51000357",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_561",
+      "name": "bannertmt_b15_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51000179",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_562",
+      "name": "bannertmt_b15_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999916",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_563",
+      "name": "bannertmt_b15_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999855",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_564",
+      "name": "bannertmt_b15_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999792",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_565",
+      "name": "bannertmt_b15_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999752",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_566",
+      "name": "bannertmt_b15_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999710",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_567",
+      "name": "bannertmt_b15_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999650",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_568",
+      "name": "bannertmt_b15_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999613",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_569",
+      "name": "bannertmt_b15_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999558",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_570",
+      "name": "bannertmt_b15_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999514",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_571",
+      "name": "bannertmt_b15_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999471",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_572",
+      "name": "bannertmt_b15_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999434",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_573",
+      "name": "bannertmt_b15_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999395",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_574",
+      "name": "bannertmt_b15_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999355",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_575",
+      "name": "bannertmt_b15_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999313",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_576",
+      "name": "bannertmt_b15_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999273",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_577",
+      "name": "bannertmt_b15_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999232",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_578",
+      "name": "bannertmt_b16_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002705",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_579",
+      "name": "bannertmt_b16_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002704",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_580",
+      "name": "bannertmt_b16_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002700",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_581",
+      "name": "bannertmt_b16_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002699",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_582",
+      "name": "bannertmt_b16_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002698",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_583",
+      "name": "bannertmt_b16_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002696",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_584",
+      "name": "bannertmt_b16_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002692",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_585",
+      "name": "bannertmt_b16_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002691",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_586",
+      "name": "bannertmt_b16_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002690",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_587",
+      "name": "bannertmt_b16_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002689",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_588",
+      "name": "bannertmt_b16_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002688",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_589",
+      "name": "bannertmt_b16_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002684",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_590",
+      "name": "bannertmt_b16_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002683",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_591",
+      "name": "bannertmt_b16_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002682",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_592",
+      "name": "bannertmt_b16_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002681",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_593",
+      "name": "bannertmt_b16_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002680",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_594",
+      "name": "bannertmt_b16_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002676",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_595",
+      "name": "bannertmt_b16_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002675",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_596",
+      "name": "bannertmt_b16_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002674",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_597",
+      "name": "bannertmt_b16_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002672",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_598",
+      "name": "bannertmt_b16_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002662",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_599",
+      "name": "bannertmt_b16_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002661",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_600",
+      "name": "bannertmt_b16_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002658",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_601",
+      "name": "bannertmt_b16_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51002657",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_602",
+      "name": "bannertmt_b17_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999104",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_603",
+      "name": "bannertmt_b17_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999053",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_604",
+      "name": "bannertmt_b17_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50999009",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_605",
+      "name": "bannertmt_b17_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50998968",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_606",
+      "name": "bannertmt_b17_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50998926",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_607",
+      "name": "bannertmt_b17_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50998871",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_608",
+      "name": "bannertmt_b17_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50998837",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_609",
+      "name": "bannertmt_b17_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50998782",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_610",
+      "name": "bannertmt_b17_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50998494",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_611",
+      "name": "bannertmt_b17_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50998332",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_612",
+      "name": "bannertmt_b17_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50998304",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_613",
+      "name": "bannertmt_b17_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50998277",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_614",
+      "name": "bannertmt_b17_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50998235",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_615",
+      "name": "bannertmt_b17_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50998211",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_616",
+      "name": "bannertmt_b17_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50997819",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_617",
+      "name": "bannertmt_b17_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50997720",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_618",
+      "name": "bannertmt_b17_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50997715",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_619",
+      "name": "bannertmt_b17_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50997712",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_620",
+      "name": "bannertmt_b17_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50997694",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_621",
+      "name": "bannertmt_b17_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50997693",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_622",
+      "name": "bannertmt_b17_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50997624",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_623",
+      "name": "bannertmt_b17_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50997449",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_624",
+      "name": "bannertmt_b17_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50997312",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_625",
+      "name": "bannertmt_b17_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50997199",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_626",
+      "name": "bannertmt_b18_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50997013",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_627",
+      "name": "bannertmt_b18_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996872",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_628",
+      "name": "bannertmt_b18_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996866",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_629",
+      "name": "bannertmt_b18_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996847",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_630",
+      "name": "bannertmt_b18_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996846",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_631",
+      "name": "bannertmt_b18_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996845",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_632",
+      "name": "bannertmt_b18_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996691",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_633",
+      "name": "bannertmt_b18_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996492",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_634",
+      "name": "bannertmt_b18_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996452",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_635",
+      "name": "bannertmt_b18_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996433",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_636",
+      "name": "bannertmt_b18_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996431",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_637",
+      "name": "bannertmt_b18_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996420",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_638",
+      "name": "bannertmt_b18_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996405",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_639",
+      "name": "bannertmt_b18_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996397",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_640",
+      "name": "bannertmt_b18_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996390",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_641",
+      "name": "bannertmt_b18_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996386",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_642",
+      "name": "bannertmt_b18_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996385",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_643",
+      "name": "bannertmt_b18_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996361",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_644",
+      "name": "bannertmt_b18_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996360",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_645",
+      "name": "bannertmt_b18_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996354",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_646",
+      "name": "bannertmt_b18_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996352",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_647",
+      "name": "bannertmt_b18_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996329",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_648",
+      "name": "bannertmt_b18_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996325",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_649",
+      "name": "bannertmt_b18_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996322",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_650",
+      "name": "bannertmt_b19_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996320",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_651",
+      "name": "bannertmt_b19_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996305",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_652",
+      "name": "bannertmt_b19_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996291",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_653",
+      "name": "bannertmt_b19_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996284",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_654",
+      "name": "bannertmt_b19_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996280",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_655",
+      "name": "bannertmt_b19_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996270",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_656",
+      "name": "bannertmt_b19_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996253",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_657",
+      "name": "bannertmt_b19_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996245",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_658",
+      "name": "bannertmt_b19_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50996190",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_659",
+      "name": "bannertmt_b19_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995933",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_660",
+      "name": "bannertmt_b19_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995822",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_661",
+      "name": "bannertmt_b19_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995797",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_662",
+      "name": "bannertmt_b19_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995787",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_663",
+      "name": "bannertmt_b19_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995772",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_664",
+      "name": "bannertmt_b19_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995763",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_665",
+      "name": "bannertmt_b19_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995747",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_666",
+      "name": "bannertmt_b19_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995728",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_667",
+      "name": "bannertmt_b19_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995681",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_668",
+      "name": "bannertmt_b19_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995625",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_669",
+      "name": "bannertmt_b19_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995613",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_670",
+      "name": "bannertmt_b19_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995592",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_671",
+      "name": "bannertmt_b19_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995558",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_672",
+      "name": "bannertmt_b19_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995379",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_673",
+      "name": "bannertmt_b19_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995164",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_674",
+      "name": "bannertmt_b20_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995121",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_675",
+      "name": "bannertmt_b20_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995077",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_676",
+      "name": "bannertmt_b20_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995067",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_677",
+      "name": "bannertmt_b20_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995063",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_678",
+      "name": "bannertmt_b20_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50995059",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_679",
+      "name": "bannertmt_b20_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50994912",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_680",
+      "name": "bannertmt_b20_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50994688",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_681",
+      "name": "bannertmt_b20_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50994621",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_682",
+      "name": "bannertmt_b20_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50994617",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_683",
+      "name": "bannertmt_b20_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50994605",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_684",
+      "name": "bannertmt_b20_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50994602",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_685",
+      "name": "bannertmt_b20_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50994596",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_686",
+      "name": "bannertmt_b20_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50994587",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_687",
+      "name": "bannertmt_b20_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50994538",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_688",
+      "name": "bannertmt_b20_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50994525",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_689",
+      "name": "bannertmt_b20_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50994493",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_690",
+      "name": "bannertmt_b20_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50994484",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_691",
+      "name": "bannertmt_b20_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50994457",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_692",
+      "name": "bannertmt_b20_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50994427",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_693",
+      "name": "bannertmt_b20_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50994388",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_694",
+      "name": "bannertmt_b20_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50994362",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_695",
+      "name": "bannertmt_b20_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50994328",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_696",
+      "name": "bannertmt_b20_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50994279",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_697",
+      "name": "bannertmt_b20_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50994254",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_698",
+      "name": "bannertmt_b21_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50983291",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_699",
+      "name": "bannertmt_b21_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50982795",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_700",
+      "name": "bannertmt_b21_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50980667",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_701",
+      "name": "bannertmt_b21_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50978494",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_702",
+      "name": "bannertmt_b21_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50976305",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_703",
+      "name": "bannertmt_b21_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50974210",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_704",
+      "name": "bannertmt_b21_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50972215",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_705",
+      "name": "bannertmt_b21_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50972040",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_706",
+      "name": "bannertmt_b21_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50971901",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_707",
+      "name": "bannertmt_b21_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50971577",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_708",
+      "name": "bannertmt_b21_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50968788",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_709",
+      "name": "bannertmt_b21_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50965735",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_710",
+      "name": "bannertmt_b21_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50963007",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_711",
+      "name": "bannertmt_b21_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50960418",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_712",
+      "name": "bannertmt_b21_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50957676",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_713",
+      "name": "bannertmt_b21_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50954684",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_714",
+      "name": "bannertmt_b21_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50951848",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_715",
+      "name": "bannertmt_b21_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50950092",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_716",
+      "name": "bannertmt_b21_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50949898",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_717",
+      "name": "bannertmt_b21_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50949770",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_718",
+      "name": "bannertmt_b21_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50949666",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_719",
+      "name": "bannertmt_b21_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50949565",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_720",
+      "name": "bannertmt_b21_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50948939",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_721",
+      "name": "bannertmt_b21_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50946604",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_722",
+      "name": "bannertmt_b22_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50987274",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_723",
+      "name": "bannertmt_b22_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50987181",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_724",
+      "name": "bannertmt_b22_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50987086",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_725",
+      "name": "bannertmt_b22_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50986996",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_726",
+      "name": "bannertmt_b22_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50986894",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_727",
+      "name": "bannertmt_b22_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50986796",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_728",
+      "name": "bannertmt_b22_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50986703",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_729",
+      "name": "bannertmt_b22_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50986541",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_730",
+      "name": "bannertmt_b22_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50986366",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_731",
+      "name": "bannertmt_b22_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50986156",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_732",
+      "name": "bannertmt_b22_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50985971",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_733",
+      "name": "bannertmt_b22_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50985750",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_734",
+      "name": "bannertmt_b22_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50985559",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_735",
+      "name": "bannertmt_b22_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50985373",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_736",
+      "name": "bannertmt_b22_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50985197",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_737",
+      "name": "bannertmt_b22_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50985008",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_738",
+      "name": "bannertmt_b22_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50984827",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_739",
+      "name": "bannertmt_b22_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50984641",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_740",
+      "name": "bannertmt_b22_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50984429",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_741",
+      "name": "bannertmt_b22_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50984225",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_742",
+      "name": "bannertmt_b22_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50984042",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_743",
+      "name": "bannertmt_b22_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50983860",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_744",
+      "name": "bannertmt_b22_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50983671",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_745",
+      "name": "bannertmt_b22_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50983473",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_746",
+      "name": "template_assay_proteomics.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22272659",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_747",
+      "name": "template_biospecimen.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22272661",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_748",
+      "name": "template_individual_human.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22272660",
+      "encodingFormat": "application/vnd.ms-excel"
+    }
+  ]
+}

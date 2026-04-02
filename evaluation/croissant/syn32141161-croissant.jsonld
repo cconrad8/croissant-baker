@@ -1,0 +1,855 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "MayoHippocampus",
+  "description": "Dataset 'MayoHippocampus' from Synapse (syn32141161)",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "MayoHippocampus. Synapse ID: syn32141161. https://www.synapse.org/Synapse:syn32141161",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Abby Vander Linden",
+    "url": "https://www.synapse.org/#!Profile:3420438"
+  },
+  "datePublished": "2026-04-02 12:06:14.271",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn32141161",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "MEM00001_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33072262",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "MEM00001_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33072319",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "MEM00002_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32912065",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "MEM00002_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32913007",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "MEM00003_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33069271",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "MEM00003_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33068972",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "MEM00004_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33071777",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "MEM00004_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33072070",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "MEM00005_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33070772",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "MEM00005_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33070899",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "MEM00006_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32907512",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "MEM00006_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32907017",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "MEM00007_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33071961",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "MEM00007_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33071865",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "MEM00008_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33071139",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "MEM00008_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33071196",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "MEM00009_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32910931",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "MEM00009_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32911360",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "MEM00010_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32908388",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "MEM00010_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32908773",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "MEM00011_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33073064",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "MEM00011_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33073123",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "MEM00012_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32906938",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "MEM00012_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32907063",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "MEM00013_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32909305",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "MEM00013_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32909444",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "MEM00014_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32907947",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "MEM00014_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32907803",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "MEM00015_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33072982",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "MEM00015_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33072878",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "MEM00016_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32907705",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "MEM00016_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32907749",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "MEM00017_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33069042",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "MEM00017_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33072664",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "MEM00018_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33073353",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "MEM00018_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33073323",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "MEM00019_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33070508",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "MEM00019_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33070539",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "MEM00020_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33073192",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "MEM00020_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33073276",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "MEM00021_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33072361",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "MEM00021_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33072388",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "MEM00022_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32910391",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "MEM00022_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32912470",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "MEM00023_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33071830",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "MEM00023_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33071919",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "MEM00024_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33072005",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "MEM00024_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33072115",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "MEM00025_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32913974",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "MEM00025_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33069352",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "MEM00026_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32908352",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "MEM00026_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32908499",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "MEM00027_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32909257",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "MEM00027_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32909858",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "MEM00028_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32914497",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "MEM00028_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33070997",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "MEM00029_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33070078",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "MEM00029_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33070352",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "MEM00030_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32911834",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "MEM00030_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32910047",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "MEM00031_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33069730",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "MEM00031_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33069194",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "MEM00032_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33068557",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "MEM00032_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33068471",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "MEM00033_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32913394",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "MEM00033_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32912234",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "MEM00034_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33070485",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "MEM00034_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33069978",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "MEM00035_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33070790",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "MEM00035_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33070731",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "MEM00036_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33068301",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "MEM00036_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33068371",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "MEM00037_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33073902",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "MEM00037_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33071534",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "MEM00038_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33068142",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "MEM00038_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33068194",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "MEM00039_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33070931",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "MEM00039_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33070714",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "MEM00040_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32906896",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "MEM00040_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32907069",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "MEM00041_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32913195",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "MEM00041_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33070960",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "MEM00042_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32911068",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "MEM00042_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32912797",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "MEM00043_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33071435",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "MEM00043_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33071385",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "MEM00044_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33073445",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "MEM00044_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33073640",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "MEM00045_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32914357",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "MEM00045_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33071042",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "MEM00046_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33072437",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "MEM00046_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33072488",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "MEM00047_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33068623",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "MEM00047_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33068702",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "MEM00048_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33069098",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "MEM00048_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33069638",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "MEM00049_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32914192",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "MEM00049_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33071225",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "MEM00050_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33072548",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "MEM00050_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33072628",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "MEM00051_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32907053",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "MEM00051_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32908400",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "MEM00052_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33072735",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "MEM00052_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33072689",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "MEM00053_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33069814",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "MEM00053_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33069903",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "MEM00054_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33070667",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "MEM00054_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33070577",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "MEM00055_R1.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33072759",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "MEM00055_R2.fastq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33072805",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "MayoHippocampus_assay_RNAseq_metadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33071357",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "MayoHippocampus_biospecimen_metadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33071356",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "MayoHippocampus_individual_metadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn33071355",
+      "encodingFormat": "application/vnd.ms-excel"
+    }
+  ]
+}

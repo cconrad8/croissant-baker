@@ -1,0 +1,1090 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Agora",
+  "description": "Dataset 'Agora' from Synapse (syn13363442)",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Agora. Synapse ID: syn13363442. https://www.synapse.org/Synapse:syn13363442",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Benjamin Logsdon",
+    "url": "https://www.synapse.org/#!Profile:274008"
+  },
+  "datePublished": "2026-04-02 11:52:28.570",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn13363442",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "Final_Agora_DE.csv",
+      "contentSize": "2629411",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18689335",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "388bbac99216a5da73b8935d949ec401"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "Final_Agora_DE_TMT.csv",
+      "contentSize": "1466482",
+      "contentUrl": "https://www.synapse.org/Synapse:syn32188234",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "4ecf3244fbc9bda010fdc5eba229459b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "SRM_UniProt_Mapping.csv",
+      "contentSize": "106043",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52850588",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "318730f77238f540749d423d358d3461"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "SRM_diff_expr.csv",
+      "contentSize": "18880",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52579640",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "ad141f3e986d76d4e5c95755e3680d1a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "Agora_Targets_Rush.xlsx",
+      "contentSize": "28026",
+      "contentUrl": "https://www.synapse.org/Synapse:syn17014044",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "md5": "335839b3b8802ecd382e08e0f3501737"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "Agora target submission_top100 Rui Chang.xlsx",
+      "contentSize": "25366",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18362774",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "md5": "d6382f3749184e2889c9d45a5cff1e12"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "byOriginal_KRONOSgene_0.3.txt",
+      "contentSize": "144743",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806128",
+      "encodingFormat": "text/plain",
+      "md5": "61d3aff0ebb671f06b973e793136c3d5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "byOriginal_KRONOSgene_0.4.txt",
+      "contentSize": "122115",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806139",
+      "encodingFormat": "text/plain",
+      "md5": "f4fb207846a5c54bdc5ef8b64d750350"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "byOriginal_KRONOSmulti_0.3.txt",
+      "contentSize": "198032",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806147",
+      "encodingFormat": "text/plain",
+      "md5": "54180b8aca47223730c765d3ffc08de2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "byOriginal_KRONOSmulti_0.4.txt",
+      "contentSize": "176502",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806159",
+      "encodingFormat": "text/plain",
+      "md5": "6b7a38745036e9fb9267af6e10d140e0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "byOriginal_KRONOSprotein_0.2.txt",
+      "contentSize": "65753",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806173",
+      "encodingFormat": "text/plain",
+      "md5": "1385a8ba48ceca1162926788499b15a1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "byOriginal_KRONOSprotein_0.3.txt",
+      "contentSize": "54286",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806185",
+      "encodingFormat": "text/plain",
+      "md5": "e9aacda69ae51cbbffcbe7b3c23967b3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "byOriginal_RUSHgene_0.3.txt",
+      "contentSize": "129519",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806195",
+      "encodingFormat": "text/plain",
+      "md5": "1180b4266561c60d112e770f805ee69f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "byOriginal_RUSHgene_0.4.txt",
+      "contentSize": "109866",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806211",
+      "encodingFormat": "text/plain",
+      "md5": "30ae045e992aa3e814a42d86547f13ea"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "byOriginal_RUSHmulti_0.3.txt",
+      "contentSize": "188907",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806225",
+      "encodingFormat": "text/plain",
+      "md5": "d063cfdff1f0295f3841990b5813768e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "byOriginal_RUSHmulti_0.4.txt",
+      "contentSize": "169380",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806238",
+      "encodingFormat": "text/plain",
+      "md5": "e8022940445386eae9963a1e3b95e787"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "byOriginal_RUSHprotein_0.2.txt",
+      "contentSize": "69183",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806247",
+      "encodingFormat": "text/plain",
+      "md5": "c7f2d2dfac8e984051189713468e58d1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "byOriginal_RUSHprotein_0.3.txt",
+      "contentSize": "56395",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806254",
+      "encodingFormat": "text/plain",
+      "md5": "4117abfe410285840d2a760dcdc63f8e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "byPosterior_KRONOSgene.txt",
+      "contentSize": "122624",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806267",
+      "encodingFormat": "text/plain",
+      "md5": "ba4412f529901174cc037b932323d7cc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "byPosterior_KRONOSmulti.txt",
+      "contentSize": "174252",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806280",
+      "encodingFormat": "text/plain",
+      "md5": "0ca325e504a64e7ac28d64aa05861f2a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "byPosterior_KRONOSprotein_0.2.txt",
+      "contentSize": "55533",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806295",
+      "encodingFormat": "text/plain",
+      "md5": "0863e73abbf299ce80e5b1fd058ca22f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "byPosterior_KRONOSprotein_0.3.txt",
+      "contentSize": "47439",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806309",
+      "encodingFormat": "text/plain",
+      "md5": "739a9c801a8f614b143e53f3c59fa85a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "byPosterior_RUSHgene.txt",
+      "contentSize": "112245",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806322",
+      "encodingFormat": "text/plain",
+      "md5": "2dbac030ca92b1f622d5eb18f9a6d987"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "byPosterior_RUSHmulti.txt",
+      "contentSize": "168212",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806329",
+      "encodingFormat": "text/plain",
+      "md5": "cca8e3daea614d2efb4e5548c65ba247"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "byPosterior_RUSHprotein_0.2.txt",
+      "contentSize": "58028",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806342",
+      "encodingFormat": "text/plain",
+      "md5": "b93922325e8c81525603b98bcb66a083"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "byPosterior_RUSHprotein_0.3.txt",
+      "contentSize": "49291",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806354",
+      "encodingFormat": "text/plain",
+      "md5": "861dc163a2a04eb2b73efb5c7d26a15f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "byciPG_KRONOSgene.txt",
+      "contentSize": "122624",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806024",
+      "encodingFormat": "text/plain",
+      "md5": "a7a3952a16d49e466503672249bda533"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "byciPG_KRONOSmulti.txt",
+      "contentSize": "174252",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806040",
+      "encodingFormat": "text/plain",
+      "md5": "6274698bc05f9e542f70d3ff6d409905"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "byciPG_KRONOSprotein_0.2.txt",
+      "contentSize": "55533",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806053",
+      "encodingFormat": "text/plain",
+      "md5": "1f670bdb0be420fbd5deb27c206cf1ae"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "byciPG_KRONOSprotein_0.3.txt",
+      "contentSize": "47439",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806063",
+      "encodingFormat": "text/plain",
+      "md5": "0e42956f0342042757c408a09b0cce0b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "byciPG_RUSHgene.txt",
+      "contentSize": "112245",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806076",
+      "encodingFormat": "text/plain",
+      "md5": "df91b998947ffa7d6810a964dfdbd998"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "byciPG_RUSHmulti.txt",
+      "contentSize": "168212",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806089",
+      "encodingFormat": "text/plain",
+      "md5": "372f2828ac3052c84ca34d57329242cc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "byciPG_RUSHprotein_0.2.txt",
+      "contentSize": "58028",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806102",
+      "encodingFormat": "text/plain",
+      "md5": "85f220e0a8f821052493596a9dfa15ce"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "byciPG_RUSHprotein_0.3.txt",
+      "contentSize": "49291",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806113",
+      "encodingFormat": "text/plain",
+      "md5": "921a5db8a3a5a22b4973371b7222aaab"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "ciPG_AMPAD_MAYO_v1_0.4.txt",
+      "contentSize": "1140096",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806366",
+      "encodingFormat": "text/plain",
+      "md5": "1f69f2d67648a062d16e0ab75b8a475c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "ciPG_AMPAD_MAYO_v1_0.5.txt",
+      "contentSize": "993248",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806377",
+      "encodingFormat": "text/plain",
+      "md5": "3bccd1c74f5f8557b9e4b616e9154ef9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "ciPG_AMPAD_MAYO_v1_0.6.txt",
+      "contentSize": "824640",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806385",
+      "encodingFormat": "text/plain",
+      "md5": "e00c80eca5b85c0df39c4a522e6e93f5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "ciPG_AMPAD_MAYO_v2_0.4.txt",
+      "contentSize": "982016",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806394",
+      "encodingFormat": "text/plain",
+      "md5": "a9e93ffac10fc5ce25f9e07462a68fd9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "ciPG_AMPAD_MAYO_v2_0.5.txt",
+      "contentSize": "892544",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806408",
+      "encodingFormat": "text/plain",
+      "md5": "cbf02b08d6bd288159d51e7c1613b913"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "ciPG_AMPAD_MAYO_v2_0.6.txt",
+      "contentSize": "796064",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806417",
+      "encodingFormat": "text/plain",
+      "md5": "9b854d81473fb910c8afebb8af1ab20a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "ciPG_AMPAD_MAYO_v3_0.5.txt",
+      "contentSize": "1077280",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806431",
+      "encodingFormat": "text/plain",
+      "md5": "f69ddf78a087381a4cc7fcb1de625673"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "ciPG_AMPAD_MAYO_v3_0.6.txt",
+      "contentSize": "891040",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806447",
+      "encodingFormat": "text/plain",
+      "md5": "c69c0591f4496d9f426f1188526ca674"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "ciPG_AMPAD_MAYO_v3_0.7.txt",
+      "contentSize": "699296",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806459",
+      "encodingFormat": "text/plain",
+      "md5": "8db0745fc8a2556f1647a6b5289b91f5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "ciPG_AMPAD_MAYO_v4_0.5.txt",
+      "contentSize": "1110336",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806474",
+      "encodingFormat": "text/plain",
+      "md5": "cbcd25e56ec286c200b58fca4f7d5852"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "ciPG_AMPAD_MAYO_v4_0.6.txt",
+      "contentSize": "903040",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806489",
+      "encodingFormat": "text/plain",
+      "md5": "e2379df29ce4305f7e3f826803dce991"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "ciPG_AMPAD_MAYO_v6_0.7.txt",
+      "contentSize": "527232",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806498",
+      "encodingFormat": "text/plain",
+      "md5": "38b924f90fcd2ae1b39e4c624fa5d445"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "ciPG_AMPAD_seed_MAYO_v5_0.5.txt",
+      "contentSize": "764160",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806506",
+      "encodingFormat": "text/plain",
+      "md5": "3d85451b1f0e98447e1e11731daf99b8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "ciPG_AMPAD_seed_MAYO_v5_0.6.txt",
+      "contentSize": "636032",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806520",
+      "encodingFormat": "text/plain",
+      "md5": "74320dbdf95775030bb850cfd7e98f5f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "ciPG_AMPAD_seed_MAYO_v6_0.5.txt",
+      "contentSize": "775168",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806532",
+      "encodingFormat": "text/plain",
+      "md5": "104dffe6db90062cfb7e0ff054dc47d8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "ciPG_AMPAD_seed_MAYO_v6_0.6.txt",
+      "contentSize": "653344",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806540",
+      "encodingFormat": "text/plain",
+      "md5": "e11f4412624c58b7a7bf53b741c1dbdb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "ciPG_MAYO_CD68_0.5.txt",
+      "contentSize": "816288",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806550",
+      "encodingFormat": "text/plain",
+      "md5": "3f6d26fbe8c84e7b2094fa83503153ee"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "ciPG_MAYO_CD68_0.6.txt",
+      "contentSize": "680856",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806565",
+      "encodingFormat": "text/plain",
+      "md5": "db4f106e21d53f4834823671c5c60bdb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "ciPG_MAYO_CD68_0.7.txt",
+      "contentSize": "546183",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806577",
+      "encodingFormat": "text/plain",
+      "md5": "3765076c140729d3eb0a56098e60c492"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "ciPG_MAYO_ENO2_0.5.txt",
+      "contentSize": "1062501",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806585",
+      "encodingFormat": "text/plain",
+      "md5": "58a976609fe0cb926c951ce106bcbb25"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "ciPG_MAYO_ENO2_0.6.txt",
+      "contentSize": "875325",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806601",
+      "encodingFormat": "text/plain",
+      "md5": "2a6b9e1ea920e4e05152205edabcaae9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "ciPG_MAYO_ENO2_0.7.txt",
+      "contentSize": "679701",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806612",
+      "encodingFormat": "text/plain",
+      "md5": "1831c017430f5c58045f9adc52b244a0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "ciPG_MAYO_seed_CD68_0.4.txt",
+      "contentSize": "278272",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806634",
+      "encodingFormat": "text/plain",
+      "md5": "b74dc8eca63d239a2012ba997873542a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "ciPG_MAYO_seed_CD68_0.5.txt",
+      "contentSize": "242144",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806648",
+      "encodingFormat": "text/plain",
+      "md5": "7376c430306163ace69d9aadbb70a9e6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "ciPG_MAYO_seed_ENO2_0.4.txt",
+      "contentSize": "717568",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806665",
+      "encodingFormat": "text/plain",
+      "md5": "d570d759bd29f8550f4e16b641bd849d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "ciPG_MAYO_seed_ENO2_0.5.txt",
+      "contentSize": "613536",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806672",
+      "encodingFormat": "text/plain",
+      "md5": "875f1cc58ada06ed85d3623facc89c88"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "ciPG_ROSMAP_CD68_0.3.txt",
+      "contentSize": "523328",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806684",
+      "encodingFormat": "text/plain",
+      "md5": "df667ad7af4eeda07ba6674aed7c13c9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "ciPG_ROSMAP_CD68_0.4.txt",
+      "contentSize": "478752",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806697",
+      "encodingFormat": "text/plain",
+      "md5": "a65cfed91ae76ffbf79749b3e8429c52"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "ciPG_ROSMAP_ENO2_0.3.txt",
+      "contentSize": "664000",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806704",
+      "encodingFormat": "text/plain",
+      "md5": "6218ebc721ebd011fdbc375859f91187"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "ciPG_ROSMAP_ENO2_0.4.txt",
+      "contentSize": "607840",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806714",
+      "encodingFormat": "text/plain",
+      "md5": "181285971dad05ca47cbf08818b6cda4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "ciPG_ROSMAP_seed_CD68_0.3.txt",
+      "contentSize": "204224",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806722",
+      "encodingFormat": "text/plain",
+      "md5": "4cafbd2478305c00751773521395df67"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "ciPG_ROSMAP_v1_0.2.txt",
+      "contentSize": "469952",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806734",
+      "encodingFormat": "text/plain",
+      "md5": "93532cfe56addd18f036ee2d3ac3f9a5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "ciPG_ROSMAP_v1_0.3.txt",
+      "contentSize": "419072",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806745",
+      "encodingFormat": "text/plain",
+      "md5": "cae582abf93e5e11ecb1a162d75f90a5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "ciPG_ROSMAP_v1_0.4.txt",
+      "contentSize": "388320",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806757",
+      "encodingFormat": "text/plain",
+      "md5": "dc232263d1ad8d89e04e8d54940ff8ab"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "ciPG_ROSMAP_v2_0.3.txt",
+      "contentSize": "506144",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806770",
+      "encodingFormat": "text/plain",
+      "md5": "2c22cd7225782c31491cfc79fc7bd5ee"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "ciPG_ROSMAP_v2_0.4.txt",
+      "contentSize": "459360",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806780",
+      "encodingFormat": "text/plain",
+      "md5": "ef33883a06116df672046599e94442a8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "net_MSBB_BM10_protein_Noam.txt",
+      "contentSize": "62081",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806791",
+      "encodingFormat": "text/plain",
+      "md5": "8f1fd135f257c5b2e09cd798420c0251"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "posterior_MAYO_seed_CD68_0.4.txt",
+      "contentSize": "295812",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806800",
+      "encodingFormat": "text/plain",
+      "md5": "83760967953f7022f288d1cd6f53047e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "posterior_MAYO_seed_CD68_0.5.txt",
+      "contentSize": "249711",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806814",
+      "encodingFormat": "text/plain",
+      "md5": "2c312d3953e94e4bb68aa3f049168de4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "posterior_MAYO_seed_ENO2_0.4.txt",
+      "contentSize": "756195",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806821",
+      "encodingFormat": "text/plain",
+      "md5": "39542cba01843732fa778a5e203bff15"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "posterior_MAYO_seed_ENO2_0.5.txt",
+      "contentSize": "632709",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806833",
+      "encodingFormat": "text/plain",
+      "md5": "9631bc49f12620c243fa0c244cce675c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "posterior_ROSMAP_seed_CD68_0.3.txt",
+      "contentSize": "227073",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806840",
+      "encodingFormat": "text/plain",
+      "md5": "98956761396a3415a42e8af08e6121a6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "posterior_ROSMAP_seed_ENO2_0.3.txt",
+      "contentSize": "425007",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806854",
+      "encodingFormat": "text/plain",
+      "md5": "dfef7d2cc284415f73541bee92dda39c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "posterior_ROSMAP_seed_ENO2_0.4.txt",
+      "contentSize": "375672",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806866",
+      "encodingFormat": "text/plain",
+      "md5": "07d783cfb2f5fee2c1f8be51a4b40059"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "posterior_ROSMAP_seed_v3ADCT_0.3.txt",
+      "contentSize": "125103",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806901",
+      "encodingFormat": "text/plain",
+      "md5": "23103ee61e49a166b8bd4e0075ab0a33"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "posterior_ROSMAP_seed_v3ADCT_0.4.txt",
+      "contentSize": "112101",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806911",
+      "encodingFormat": "text/plain",
+      "md5": "deddfd552d85c718ccca61400d522f4b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "posterior_ROSMAP_seed_v3AD_0.3.txt",
+      "contentSize": "125103",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806880",
+      "encodingFormat": "text/plain",
+      "md5": "23103ee61e49a166b8bd4e0075ab0a33"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "posterior_ROSMAP_seed_v3AD_0.4.txt",
+      "contentSize": "112101",
+      "contentUrl": "https://www.synapse.org/Synapse:syn18806888",
+      "encodingFormat": "text/plain",
+      "md5": "deddfd552d85c718ccca61400d522f4b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "Agora_Targets_Duke_20180907.xlsx",
+      "contentSize": "35567",
+      "contentUrl": "https://www.synapse.org/Synapse:syn17014045",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "md5": "ae06c1b29b4f3a03969a09c53e993aa1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "Duke Team-Target selection methods.docx",
+      "contentSize": "18772",
+      "contentUrl": "https://www.synapse.org/Synapse:syn17008742",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "md5": "f1160af294ad263b225e39c3b3f9f85c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "Agora_Targets_Emory_July16.2018.xlsx",
+      "contentSize": "63488",
+      "contentUrl": "https://www.synapse.org/Synapse:syn17014046",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "md5": "38e1aa0c180951b09eccd2cd7e1ff737"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "Agora_Targets_MSSM_Sept7_2018.xlsx",
+      "contentSize": "24142",
+      "contentUrl": "https://www.synapse.org/Synapse:syn17014047",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "md5": "642c90bb07d98c59e5ddb8792917855c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "Agora_Targets_UF_Mayo_ISB_101018.xlsx",
+      "contentSize": "21270",
+      "contentUrl": "https://www.synapse.org/Synapse:syn17014049",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "md5": "b4157c5f02a6da77a2bb4144dd740b1f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "Copy of 86Targets_UFL-Mayo-ISB_070118_Sageadditionv2_091218.xlsx",
+      "contentSize": "37168",
+      "contentUrl": "https://www.synapse.org/Synapse:syn17014050",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "md5": "b9c9bab8cb5adbd4f24b4cf6d7c67487"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "Mayo_UF_ISB_Selection_Criteria_10-29-2018.docx",
+      "contentSize": "65719",
+      "contentUrl": "https://www.synapse.org/Synapse:syn17017414",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "md5": "7981b114b3b17aee784f83b4105c4c43"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "Agora_target_exp_validation_harmonized_v3_20240301.csv",
+      "contentSize": "94305",
+      "contentUrl": "https://www.synapse.org/Synapse:syn24184512",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "9ffb9d884c0776e3c72b834fab8a3239"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "amp_ad_median_expression.csv",
+      "contentSize": "22961836",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27211878",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "8b56516ce39dd790bdf899ab7a1822d7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "SRMdata.csv",
+      "contentSize": "168442",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25454540",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "92f0ddae843483d923f5ab494edc104e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "amp_ad_median_expression.csv",
+      "contentSize": "4264307",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12514804",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "a73a17b841f35d51fcb0855138498592"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "amp_ad_rna_seq_feature_set.csv",
+      "contentSize": "19538226",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11695124",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "3a62f110cb2593df4ec7100ffcbe5240"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "deg_meta_analysis.csv",
+      "contentSize": "890490",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12590958",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "2ce4f7afe372c6c701e2d0e48f9bf4bf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "druggability_genomewide_2020Feb.csv",
+      "contentSize": "16449160",
+      "contentUrl": "https://www.synapse.org/Synapse:syn13363443",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "c18697613bb931c75e6e6aaa01e3f7ab"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "ensg_to_uniprot_mapping.tsv",
+      "contentSize": "502433",
+      "contentUrl": "https://www.synapse.org/Synapse:syn54113663",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "1bb748d735da0bf72e0be7dc2925d4ab"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "eqtl_meta_analysis.csv",
+      "contentSize": "408254",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12514912",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "f54d1f796ee0dd4a5f0d9a35fd0d4300"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "gencode.v24.primary_assembly.refFlat.txt",
+      "contentSize": "38574841",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25953353",
+      "encodingFormat": "text/plain",
+      "md5": "d285ef97271db2f851a23dd6c1688290"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "geneInfo.RData",
+      "contentSize": "13866072",
+      "contentUrl": "https://www.synapse.org/Synapse:syn15666826",
+      "encodingFormat": "application/x-r-data",
+      "md5": "743372bc27bd6f0e7d74c221491529b6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "gene_metadata.json",
+      "contentSize": "30488477",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26868788",
+      "encodingFormat": "application/json",
+      "md5": "35a2c4ae94d874e376a87ebb19f57fe6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "gene_table_merged_GRCh38.p14.feather",
+      "contentSize": "5784234",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25953363",
+      "encodingFormat": "application/octet-stream",
+      "md5": "0a581d38819bc7db14516661a0b4bc08"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "harmonized_drug_nominations_2_18_26.csv",
+      "contentSize": "57450",
+      "contentUrl": "https://www.synapse.org/Synapse:syn73677240",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "e1058a1f7c00f9e28799ac07b13f9638"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "harmonized_targets_20251121.csv",
+      "contentSize": "684428",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12540368",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "939718aa3a371498abb38c24bf22b738"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "igap_genetic_association_genes_2023.csv",
+      "contentSize": "1930",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12514826",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "65dbd8d741d2b47e4e6e1a772c2f9334"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "metabolomics.feather",
+      "contentSize": "1440506",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26064497",
+      "encodingFormat": "application/octet-stream",
+      "md5": "55cfc65ceb4fcd5887878fa3877d71a6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "metanetwork_edges_amp_ad.csv",
+      "contentSize": "17266398",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11685347",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "c8e46a7a8ba1c10e953de2a40a02c145"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "opentargets_drug_metadata.json",
+      "contentSize": "44999",
+      "contentUrl": "https://www.synapse.org/Synapse:syn73724873",
+      "encodingFormat": "application/json",
+      "md5": "29dce13ec26efa69044f7922f3c9662d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "pharos_classes.csv",
+      "contentSize": "639345",
+      "contentUrl": "https://www.synapse.org/Synapse:syn64123611",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "dc217efbb42e73c658c24e7f4a94cdcd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "team_info_20231218.csv",
+      "contentSize": "9542",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12615624",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "a69b7ad349163b4e96dd9d19ced6572d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "team_member_info_20250116.csv",
+      "contentSize": "7756",
+      "contentUrl": "https://www.synapse.org/Synapse:syn12615633",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "90d26c1e1c42d89d363a363ccf25aac1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "tep_adi_info.csv",
+      "contentSize": "4502",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51942280",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "ad6d7242737c73d0dcef0cc2aab2c42a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "ui_config.json",
+      "contentSize": "6350",
+      "contentUrl": "https://www.synapse.org/Synapse:syn73677126",
+      "encodingFormat": "application/json",
+      "md5": "e51d7c2965d467bfeb6f2a20f8e4e6f3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "Neuropathology_Scores.csv",
+      "contentSize": "8042549",
+      "contentUrl": "https://www.synapse.org/Synapse:syn22017882",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "9783f0728ab1a755c9c3fa54e44c898c"
+    }
+  ]
+}

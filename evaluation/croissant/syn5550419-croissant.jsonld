@@ -1,0 +1,595 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "rnaSeqSampleSwap",
+  "description": "Dataset 'rnaSeqSampleSwap' from Synapse (syn5550419)",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "rnaSeqSampleSwap. Synapse ID: syn5550419. https://www.synapse.org/Synapse:syn5550419",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "SageNeuroCommunityAdmin",
+    "url": "https://www.synapse.org/#!Profile:3327871"
+  },
+  "datePublished": "2026-04-02 11:30:10.907",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn5550419",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "AMP-AD_SampleSwap_MSSM_IlluminaHiSeq2500_raw_counts.tsv",
+      "contentSize": "3571909",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4609466",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "c0e762703b77c93f9ae33c29894012be"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "11330_TCX.accepted_hits.sort.coord.bam",
+      "contentSize": "1693787429",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4883147",
+      "encodingFormat": "application/x-bam",
+      "md5": "8b270b6f055e87164a05048e40392504"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "11330_TCX.unmapped.fq.gz",
+      "contentSize": "74702792",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4884894",
+      "encodingFormat": "application/gzip",
+      "md5": "49beed1ed2a7ae222843297a97562931"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "11333_TCX.accepted_hits.sort.coord.bam",
+      "contentSize": "1545831675",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4883133",
+      "encodingFormat": "application/x-bam",
+      "md5": "af1355a2d51a8d60dd7a3b15a964d84b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "11333_TCX.unmapped.fq.gz",
+      "contentSize": "111867538",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4884891",
+      "encodingFormat": "application/gzip",
+      "md5": "13e7dc08037c2d6de9cad6fe76290c77"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "11383_TCX.accepted_hits.sort.coord.bam",
+      "contentSize": "2067672912",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4883206",
+      "encodingFormat": "application/x-bam",
+      "md5": "5727fd55f04912cfe97b2b3d0cab7933"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "11383_TCX.unmapped.fq.gz",
+      "contentSize": "98719585",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4884959",
+      "encodingFormat": "application/gzip",
+      "md5": "b1fda95b6a337fb28b2009c8c8d670af"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "132_TCX.accepted_hits.sort.coord.bam",
+      "contentSize": "5770940619",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4884448",
+      "encodingFormat": "application/x-bam",
+      "md5": "cc3734341057288d932bfca4e94eb704"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "132_TCX.unmapped.fq.gz",
+      "contentSize": "156451794",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4884988",
+      "encodingFormat": "application/gzip",
+      "md5": "b14951c481ff3f0fe2bb7163ef562d6f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "1923_TCX.accepted_hits.sort.coord.bam",
+      "contentSize": "2060974580",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4883205",
+      "encodingFormat": "application/x-bam",
+      "md5": "f2140e33751907268a8c7a6ef71fc663"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "1923_TCX.unmapped.fq.gz",
+      "contentSize": "117499087",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4884941",
+      "encodingFormat": "application/gzip",
+      "md5": "baf13dea06c53b71a48f29832f7483c7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "1955_TCX.accepted_hits.sort.coord.bam",
+      "contentSize": "1932531901",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4884469",
+      "encodingFormat": "application/x-bam",
+      "md5": "48c4af33b727e870670ae15148248439"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "1955_TCX.unmapped.fq.gz",
+      "contentSize": "100549689",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4885019",
+      "encodingFormat": "application/gzip",
+      "md5": "fcd1c816249a928def4e24f4bed8815d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "6929_TCX.accepted_hits.sort.coord.bam",
+      "contentSize": "7417306178",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4883200",
+      "encodingFormat": "application/x-bam",
+      "md5": "ae748a83c2d611309b294b5e588b0fad"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "6929_TCX.unmapped.fq.gz",
+      "contentSize": "332821983",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4884921",
+      "encodingFormat": "application/gzip",
+      "md5": "23f0bb32ac64f92a6941a16af4eb1996"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "775_TCX.accepted_hits.sort.coord.bam",
+      "contentSize": "1464246761",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4884456",
+      "encodingFormat": "application/x-bam",
+      "md5": "8105dfd3032ccb272711000de77207f4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "775_TCX.unmapped.fq.gz",
+      "contentSize": "80340651",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4885000",
+      "encodingFormat": "application/gzip",
+      "md5": "df4bfa9c79e29c5cc636dfdf4db47507"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "894_TCX.accepted_hits.sort.coord.bam",
+      "contentSize": "1778194769",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4883258",
+      "encodingFormat": "application/x-bam",
+      "md5": "47e1a5b6d4eae99c79ce63958763918b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "894_TCX.unmapped.fq.gz",
+      "contentSize": "88409265",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4884970",
+      "encodingFormat": "application/gzip",
+      "md5": "fc7009bd8ea374f2d75358a412f72666"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "sinai_count_TMMnormalized_CPM.txt",
+      "contentSize": "6838165",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5205862",
+      "encodingFormat": "text/plain",
+      "md5": "6bc3b86d18b1b92ec68fc0038bef5396"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "sinai_counts.txt",
+      "contentSize": "2194188",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5205887",
+      "encodingFormat": "text/plain",
+      "md5": "d66e2ed5fd6b1d97d1ad5bdc06b7240d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "HB_651_CER.FCC7KUNACXX_L7ICGTACG.snap.bam",
+      "contentSize": "12012854004",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5206108",
+      "encodingFormat": "application/x-bam",
+      "md5": "ce445c2f8f909b9ac8e51e391e54e25e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "HB_675_CER.FCC7BR1ACXX_L2IGGCTAC.snap.bam",
+      "contentSize": "8806292850",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5207268",
+      "encodingFormat": "application/x-bam",
+      "md5": "a4b31f816a07dd89f20fe7b039ddf6f2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "HB_680_CER.FCC7DRJACXX_L3ICGTACG.snap.bam",
+      "contentSize": "10262246583",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5209314",
+      "encodingFormat": "application/x-bam",
+      "md5": "15c7bd07d5c030ac8ad07f1c417856eb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "HB_683_CER.FCC7DJAACXX_L6IGGCTAC.snap.bam",
+      "contentSize": "9840586004",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5209615",
+      "encodingFormat": "application/x-bam",
+      "md5": "00e11fa54fe5563c893ae2bb98ce8fec"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "HB_686_CER.FCC7E15ACXX_L2IGGCTAC.snap.bam",
+      "contentSize": "8337177666",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5209829",
+      "encodingFormat": "application/x-bam",
+      "md5": "9c1685e1dc1c621372013729d31c014b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "HB_707_CER.FCC7DRJACXX_L1IACTTGA.snap.bam",
+      "contentSize": "15862906016",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5210258",
+      "encodingFormat": "application/x-bam",
+      "md5": "2bb241389f34082cec90e17fa5ad98fe"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "HB_743_CER.FCC7983ACXX_L4IATTCCT.snap.bam",
+      "contentSize": "7882717988",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5210477",
+      "encodingFormat": "application/x-bam",
+      "md5": "ab4afd3725d41008b668b1da4578c7c6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "HB_744_CER.FCC7KUNACXX_L8IATTCCT.snap.bam",
+      "contentSize": "10444062085",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5210752",
+      "encodingFormat": "application/x-bam",
+      "md5": "c13c3e0d82df9fcdf03a4d3a53967cd7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "HB_746_CER.FCC7L0WACXX_L8IATTCCT.snap.bam",
+      "contentSize": "12318745097",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5211059",
+      "encodingFormat": "application/x-bam",
+      "md5": "c6caea70b0259e7b3e475f8d0abbc74a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "HB_782_CER.FCC7DJAACXX_L6ITAGCTT.snap.bam",
+      "contentSize": "10231710336",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5211327",
+      "encodingFormat": "application/x-bam",
+      "md5": "5f4c93437437a17067b5552d4b75754a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "AMP-AD_SampleSwap_MSSM_IlluminaHiSeq2500_raw_counts.tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3558202",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "10249336.accepted_hits.sort.coord.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213261",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "10249336.unmapped.fq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213271",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "10315029.accepted_hits.sort.coord.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213262",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "10315029.unmapped.fq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213272",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "11444465.accepted_hits.sort.coord.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213263",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "11444465.unmapped.fq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213273",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "11615242.accepted_hits.sort.coord.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213264",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "11615242.unmapped.fq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213274",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "20177982.accepted_hits.sort.coord.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213265",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "20177982.unmapped.fq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213275",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "20270920.accepted_hits.sort.coord.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213266",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "20270920.unmapped.fq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213276",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "36492755.accepted_hits.sort.coord.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213267",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "36492755.unmapped.fq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213277",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "50100518.accepted_hits.sort.coord.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213268",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "50100518.unmapped.fq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213278",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "50104008.accepted_hits.sort.coord.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213269",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "50104008.unmapped.fq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213279",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "5689621.accepted_hits.sort.coord.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213270",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "5689621.unmapped.fq",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4213280",
+      "encodingFormat": "text/x-fastq"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "AMP-AD_SampleSwap_UFL-Mayo-ISB_IlluminaHiSeq2000_RushBroadSS_Covariates.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3630140",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "AMP-AD_SampleSwap_UFL-Mayo-ISB_IlluminaHiSeq2000_dIPFC_Rush-Broad_SS_GeneCounts_JulyRerun.txt.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4719606",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "AMP-AD_SampleSwap_UFL-Mayo-ISB_IlluminaHiSeq2000_dIPFC_Rush-Broad_SS_GeneCounts_Normalized_JulyRerun.txt.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4719692",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "AMP-AD_SampleSwap_UFL-Mayo-ISB_IlluminaHiSeq2000_dIPFC_Rush-Broad_SS_TranscriptCounts_JulyRerun.txt.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4719609",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "AMP-AD_SampleSwap_UFL-Mayo-ISB_IlluminaHiSeq2000_dIPFC_Rush-Broad_SS_TranscriptCounts_Normalized_JulyRerun.txt.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4719707",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "05689621.snap.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4898304",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "10249336.snap.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4899625",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "10315029.snap.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4899643",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "11444465.snap.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4899341",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "11615242.snap.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4898407",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "20177982.snap.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4899381",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "20270920.snap.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4899424",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "36492755.snap.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4899486",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "50100518.snap.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4898391",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "50104008.snap.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4898399",
+      "encodingFormat": "application/x-bam"
+    }
+  ]
+}

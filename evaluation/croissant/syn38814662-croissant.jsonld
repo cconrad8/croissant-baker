@@ -1,0 +1,1569 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "AMP RA.SLE Genomic Variants v1",
+  "description": "SNP array profiling of AMP RA/SLE RA, SLE, OA, RA at-risk, and control subjects, v1 dataset first included in ARK 1.0 Release.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "AMP RA.SLE Genomic Variants v1. https://doi.org/10.7303/syn38814662.4",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Mette Peters",
+    "url": "https://www.synapse.org/#!Profile:273995"
+  },
+  "datePublished": "2026-04-02 12:47:54.660",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn38814662",
+  "version": "5",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "AMP_final_auto.final.chr15.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374690.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "AMP_final_auto.final.chr6.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374680.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "AMP_final_auto.final.chr18.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374691.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "AMP_final_auto.final.chr2.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374670.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "AMP_final_auto.final.chr6.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374681.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "AMP_final_auto.final.chr19.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374692.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "AMP_final_auto.final.chr10.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374660.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "AMP_final_auto.final.chr9.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374671.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "AMP_final_auto.final.chr4.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374682.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "AMP_final_auto.final.chr17.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374693.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "AMP_final_auto.final.chr5.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374650.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "AMP_final_auto.final.chr15.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374661.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "AMP_final_auto.final.chr6.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374672.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "AMP_final_auto.final.chr7.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374683.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "AMP_final_auto.final.chr17.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374694.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "AMP_final_auto.final.chr22.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374750.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "AMP_final_auto.final.chr1.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374640.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "AMP_final_auto.final.chr4.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374651.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "AMP_final_auto.final.chr13.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374662.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "AMP_final_auto.final.chr6.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374673.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "AMP_final_auto.final.chr15.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374684.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "AMP_final_auto.final.chr18.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374695.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "AMP_final_auto.final.chr11.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374740.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "AMP_final_auto.final.chr2.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374630.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "AMP_final_auto.final.chr2.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374751.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "AMP_final_auto.final.chr13.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374641.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "AMP_final_auto.final.chr4.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374652.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "AMP_final_auto.final.chr8.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374663.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "AMP_final_auto.final.chr5.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374674.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "AMP_final_auto.final.chr7.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374685.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "AMP_final_auto.final.chr16.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374696.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "AMP_final_auto.final.chr18.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374730.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "AMP_final_auto.final.chr15.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374741.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "AMP_final_auto.final.chr2.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374631.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "post_merged_auto.final.fam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374752.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "AMP_final_auto.final.chr3.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374642.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "AMP_final_auto.final.chr4.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374653.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "AMP_final_auto.final.chr5.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374664.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "AMP_final_auto.final.chr7.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374675.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "AMP_final_auto.final.chr7.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374686.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "AMP_final_auto.final.chr10.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374697.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "AMP_final_auto.final.chr22.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374720.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "AMP_final_auto.final.chr5.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374731.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "AMP_final_auto.final.chr13.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374742.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "AMP_final_auto.final.chr10.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374632.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "AMP_final_auto.final.chr21.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374753.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "AMP_final_auto.final.chr3.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374643.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "AMP_final_auto.final.chr5.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374654.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "AMP_final_auto.final.chr12.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374665.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "AMP_final_auto.final.chr12.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374676.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "AMP_final_auto.final.chr15.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374687.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "AMP_final_auto.final.chr19.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374698.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "AMP_final_auto.final.chr15.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374710.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "AMP_final_auto.final.chr22.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374721.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "AMP_final_auto.final.chr19.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374732.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "AMP_final_auto.final.chr1.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374622.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "AMP_final_auto.final.chr14.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374743.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "AMP_final_auto.final.chr11.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374633.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "AMP_final_auto.final.chr3.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374754.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "AMP_final_auto.final.chr11.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374644.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "AMP_final_auto.final.chr9.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374655.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "AMP_final_auto.final.chr3.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374666.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "AMP_final_auto.final.chr10.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374677.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "AMP_final_auto.final.chr1.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374688.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "AMP_final_auto.final.chr16.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374699.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "AMP_final_auto.final.chr16.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374700.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "AMP_final_auto.final.chr22.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374711.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "AMP_final_auto.final.chr17.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374722.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "AMP_final_auto.final.chr21.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374733.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "AMP_final_auto.final.chr2.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374623.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "AMP_final_auto.final.chr16.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374744.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "AMP_final_auto.final.chr13.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374634.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "post_merged_auto.final.bim",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374755.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "AMP_final_auto.final.chr14.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374645.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "AMP_final_auto.final.chr13.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374656.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "AMP_final_auto.final.chr14.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374667.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "AMP_final_auto.final.chr6.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374678.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "AMP_final_auto.final.chr8.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374689.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "AMP_final_auto.final.chr16.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374701.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "AMP_final_auto.final.chr12.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374712.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "AMP_final_auto.final.chr17.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374723.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "AMP_final_auto.final.chr1.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374734.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "AMP_final_auto.final.chr2.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374624.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "AMP_final_auto.final.chr22.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374745.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "AMP_final_auto.final.chr12.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374635.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "post_merged_auto.final.bed",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374756.1",
+      "encodingFormat": "text/x-bed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "AMP_final_auto.final.chr14.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374646.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "AMP_final_auto.final.chr5.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374657.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "AMP_final_auto.final.chr8.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374668.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "AMP-RA.SLE_GenomicVariants_biospecimen_metadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn47282027.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "AMP_final_auto.final.chr14.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374679.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "AMP_final_auto.final.chr18.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374702.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "AMP_final_auto.final.chr11.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374713.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "AMP_final_auto.final.chr16.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374724.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "AMP_final_auto.final.chr6.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374735.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "AMP_final_auto.final.chr9.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374625.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "AMP_final_auto.final.chr17.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374746.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "AMP_final_auto.final.chr3.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374636.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "AMP_final_auto.final.chr4.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374647.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "AMP_final_auto.final.chr11.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374658.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "AMP_final_auto.final.chr8.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374669.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "AMP_final_auto.final.chr17.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374703.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "AMP_final_auto.final.chr21.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374714.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "AMP_final_auto.final.chr7.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374725.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "AMP_final_auto.final.chr10.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374736.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "AMP_final_auto.final.chr12.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374626.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "AMP_final_auto.final.chr19.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374747.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "AMP_final_auto.final.chr10.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374637.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "AMP_final_auto.final.chr9.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374648.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "AMP_final_auto.final.chr9.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374659.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "AMP_final_auto.final.chr20.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374704.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "AMP_final_auto.final.chr18.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374715.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "AMP_final_auto.final.chr8.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374726.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "AMP_final_auto.final.chr12.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374737.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "AMP_final_auto.final.chr7.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374627.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "AMP_final_auto.final.chr20.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374748.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_116",
+      "name": "AMP_final_auto.final.chr3.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374638.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_117",
+      "name": "AMP_final_auto.final.chr11.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374649.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_118",
+      "name": "AMP_final_auto.final.chr21.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374705.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_119",
+      "name": "AMP_final_auto.final.chr20.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374716.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_120",
+      "name": "AMP_final_auto.final.chr20.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374727.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_121",
+      "name": "AMP_final_auto.final.chr20.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374738.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_122",
+      "name": "AMP_final_auto.final.chr1.minimac3.dose.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374628.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_123",
+      "name": "AMP_final_auto.final.chr18.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374749.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_124",
+      "name": "AMP_final_auto.final.chr8.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374639.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_125",
+      "name": "AMP_final_auto.final.chr19.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374706.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_126",
+      "name": "AMP_final_auto.final.chr4.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374717.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_127",
+      "name": "AMP_final_auto.final.chr22.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374728.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_128",
+      "name": "AMP_final_auto.final.chr21.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374739.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_129",
+      "name": "AMP_final_auto.final.chr1.minimac3.dose.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374629.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_130",
+      "name": "AMP_final_auto.final.chr13.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374707.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_131",
+      "name": "AMP_final_auto.final.chr21.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374718.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_132",
+      "name": "AMP_final_auto.final.chr9.minimac3.dose.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374729.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_133",
+      "name": "AMP_final_auto.final.chr14.minimac3.info",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374708.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_134",
+      "name": "AMP_final_auto.final.chr20.minimac3.erate",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374719.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_135",
+      "name": "AMP_final_auto.final.chr19.minimac3.rec",
+      "contentUrl": "https://www.synapse.org/Synapse:syn26374709.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_136",
+      "name": "AMP-RA.SLE_clinical.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn47136972.4",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_137",
+      "name": "AMP RA.SLE Genomic Variants v1",
+      "description": "Synapse Dataset metadata schema for syn38814662",
+      "contentUrl": "https://www.synapse.org/Synapse:syn38814662",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema",
+      "name": "AMP RA.SLE Genomic Variants v1 (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn38814662: 33 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/id/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/name/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/metadataType",
+          "name": "metadataType",
+          "description": "Column 'metadataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/metadataType/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "metadataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/dataLevel",
+          "name": "dataLevel",
+          "description": "Column 'dataLevel'",
+          "dataType": "sc:Float",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/dataLevel/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "dataLevel"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/assay/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/isMultiSpecimen",
+          "name": "isMultiSpecimen",
+          "description": "Column 'isMultiSpecimen'",
+          "dataType": "sc:Boolean",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/isMultiSpecimen/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "isMultiSpecimen"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/libraryType",
+          "name": "libraryType",
+          "description": "Column 'libraryType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/libraryType/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "libraryType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/platform",
+          "name": "platform",
+          "description": "Column 'platform'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/platform/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "platform"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/referenceSet",
+          "name": "referenceSet",
+          "description": "Column 'referenceSet'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/referenceSet/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "referenceSet"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/chromosome",
+          "name": "chromosome",
+          "description": "Column 'chromosome'",
+          "dataType": "sc:Float",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/chromosome/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "chromosome"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/program",
+          "name": "program",
+          "description": "Column 'program'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/program/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "program"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/project",
+          "name": "project",
+          "description": "Column 'project'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/project/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "project"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/etag/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/type/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/dataFileConcreteType",
+          "name": "dataFileConcreteType",
+          "description": "Column 'dataFileConcreteType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/dataFileConcreteType/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "dataFileConcreteType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/dataFileBucket",
+          "name": "dataFileBucket",
+          "description": "Column 'dataFileBucket'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/dataFileBucket/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "dataFileBucket"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/dataFileKey",
+          "name": "dataFileKey",
+          "description": "Column 'dataFileKey'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/dataFileKey/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "dataFileKey"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/path",
+          "name": "path",
+          "description": "Column 'path'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/path/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "path"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/dataFileName",
+          "name": "dataFileName",
+          "description": "Column 'dataFileName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v1-schema/dataFileName/source",
+            "fileObject": {
+              "@id": "file_137"
+            },
+            "extract": {
+              "column": "dataFileName"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

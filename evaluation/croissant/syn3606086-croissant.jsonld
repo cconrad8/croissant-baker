@@ -1,0 +1,847 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "BLSA",
+  "description": "Dataset 'BLSA' from Synapse (syn3606086)",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "BLSA. Synapse ID: syn3606086. https://www.synapse.org/Synapse:syn3606086",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Duc Duong",
+    "url": "https://www.synapse.org/#!Profile:3320325"
+  },
+  "datePublished": "2026-04-02 11:32:04.270",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn3606086",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "blsa_proteomics_pfc_WGCNACODE.R",
+      "contentSize": "79209",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7417635",
+      "encodingFormat": "text/plain",
+      "md5": "fe248599fef8229361dc3bcfa20a7470"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "blsa_proteomics_pfc_moduleassignments.csv",
+      "contentSize": "452746",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7421789",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "1a52865d6ede421e902b23a9650b55f5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "blsa_proteomics_pfc_proteininput.Rdata",
+      "contentSize": "3331809",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7417638",
+      "encodingFormat": "application/x-r-data",
+      "md5": "a1d2425849cc385496ca240dd6b34ed4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "AMP-AD_BLSA_EMORY_HomogenizationProtocol.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4087587",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "AMP-AD_BLSA_EMORY_LiquidChromatographyProtocol.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4087588",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "AMP-AD_BLSA_EMORY_MassSpectrometerParameters.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4087589",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "blsa_proteomics_pfc_traits.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn7417639",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "AMP-AD_BLSA_EMORY_MaxQuantParameters.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4216225",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "AMP-AD_BLSA_EMORY_ProteomicAnalysis_ColumnDescriptions.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4216217",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "AMP-AD_BLSA_EMORY_ProteomicAnalysis_MaxQuantCorrIntensityUniprot.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4216216",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "AMP-AD_BLSA_EMORY_ProteomicAnalysis_MissingValues.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4216213",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "AMP-AD_BLSA_EMORY_ProteomicAnalysis_SamplesCorrection.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4216214",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "AMP-AD_BLSA_EMORY_ProteomicAnalysis_Wiki.docx",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4216223",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "AMP-AD_BLSA_EMORY_UniprotDatabase_April2015Release.fasta",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4216883",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad059.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3614429",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad061.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3614551",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad063.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3614734",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad065.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3614876",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad067.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3615039",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad069.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3615180",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad071.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3615346",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad073.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3615533",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad075.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3615873",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad077.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3616113",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad079.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3616286",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad081.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3616442",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad083.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3616606",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad085.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3616775",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad087.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3616929",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad089.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3617104",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad091.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3617254",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad093.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3617428",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad095.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3617566",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ad097.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3617740",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_asym099.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3617877",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_asym104.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3618064",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_asym106.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3618200",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_asym108.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3618370",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_asym110.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3618522",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_asym112.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3618869",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_asym114.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3619091",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_asym116.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3619250",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_asym118.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3619427",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_asym120.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3619589",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_asym122.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3619744",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_asym124.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3619904",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_asym126.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3620064",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_asym128.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3620236",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ctl033.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3620383",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ctl035.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3620553",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ctl037.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3620693",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ctl039.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3620869",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ctl041.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3621005",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ctl043.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3621185",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ctl045.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3621312",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ctl047.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3621489",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ctl049.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3621623",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ctl051.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3621802",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ctl053.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3621937",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ctl055.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3622118",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_ctl057.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn3622274",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_060.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4639084",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_062.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4639617",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_064.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4640043",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_066.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4640513",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_068.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4640890",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_070.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4641143",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_072.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4641340",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_074.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4641381",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_076.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4641422",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_078.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4641463",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_080.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4641535",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_082.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4641609",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_084.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4641659",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_086.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4641701",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_088.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4641743",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_090.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4641781",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_092.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4641825",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_094.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4641861",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_096.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4641889",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ad_098.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4641919",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_asym_100.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4641955",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_asym_101.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4642004",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_asym_105.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4642045",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_asym_107.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4642091",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_asym_109.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4642132",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_asym_111.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4642185",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_asym_113.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4642237",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_asym_115.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4642273",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_asym_117.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4642317",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_asym_119.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4642361",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_asym_121.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4644485",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_asym_123.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4644638",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_asym_125.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4644681",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_asym_127.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4644721",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_asym_129.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4644754",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ctl_031.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4644771",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ctl_032.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4645127",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ctl_034.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4645168",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ctl_036.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4645211",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ctl_038.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4645251",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ctl_040.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4645298",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ctl_042.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4645349",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ctl_044.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4645393",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ctl_046.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4645429",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ctl_048.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4645466",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ctl_050.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4645505",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ctl_052.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4645540",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ctl_054.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4645578",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ctl_056.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4645610",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "AMP-AD_BLSA_EMORY_QEPLUS_Precuneus_ctl_058.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn4645645",
+      "encodingFormat": "image/RAW"
+    }
+  ]
+}

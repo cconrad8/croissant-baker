@@ -1,0 +1,1512 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Synodos LGG RNAseq",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks. RNA-seq dataset of 54 pediatric samples.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Synodos LGG RNAseq. Synapse ID: syn30865196. https://www.synapse.org/Synapse:syn30865196",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Synodos for NF1 - Low Grade Glioma"
+  },
+  "datePublished": "2026-04-02 11:11:48.157",
+  "keywords": [
+    "RNA-seq",
+    "gene expression",
+    "LGG",
+    "low grade glioma",
+    "Neurofibromatosis type 1",
+    "Pilocytic Astrocytoma",
+    "Pleomorphic Xanthoastrocytoma",
+    "Diffuse Astrocytoma",
+    "Pilomyxoid Astrocytoma",
+    "fastq",
+    "transcriptomics"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn30865196",
+  "version": "12",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "AS-178917-LR-27276_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888011.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "AS-178918-LR-27277_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888022.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "AS-178919-LR-27276_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888023.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "AS-178920-LR-27277_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888034.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "AS-167607-LR-25158_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887991.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "AS-167609-LR-25158_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888002.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "AS-178917-LR-27277_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888013.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "AS-178919-LR-27276_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888024.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "AS-167604-LR-25365_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887970.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "AS-167609-LR-25158_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888003.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "AS-178920-LR-27277_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888036.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "AS-167602-LR-25157_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887960.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "AS-178917-LR-27277_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888015.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "AS-167602-LR-25157_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887961.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "AS-178918-LR-27276_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888016.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "AS-178919-LR-27277_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888027.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "AS-167597-LR-25364_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887940.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "AS-167600-LR-25157_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887951.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "AS-167607-LR-25158_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887995.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "AS-167610-LR-25158_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888006.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "AS-178919-LR-27277_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888028.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "AS-167606-LR-25365_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887985.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "AS-178918-LR-27276_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888018.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "AS-167593-LR-25156_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887920.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "AS-167595-LR-25364_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887931.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "AS-167598-LR-25364_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887942.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "AS-167608-LR-25158_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887997.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "AS-167610-LR-25158_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888008.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "AS-167600-LR-25157_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887954.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "AS-167605-LR-25365_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887976.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "AS-167606-LR-25365_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887987.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "AS-167608-LR-25158_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887998.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "AS-178917-LR-27276_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888009.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "AS-167591-LR-25156_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887911.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "AS-167596-LR-25364_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887933.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "AS-167598-LR-25364_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887944.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "AS-167601-LR-25157_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887955.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "AS-167593-LR-25156_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887923.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "AS-167604-LR-25365_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887967.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "AS-167596-LR-25364_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887935.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "AS-167605-LR-25365_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887979.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "AS-167591-LR-25156_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887914.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "AS-167594-LR-25156_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887925.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "AS-167599-LR-25157_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887947.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "AS-167601-LR-25157_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887958.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "AS-167594-LR-25156_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887926.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "AS-167592-LR-25156_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887916.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "AS-167597-LR-25364_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887938.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "AS-167599-LR-25157_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887949.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "AS-167595-LR-25364_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887929.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "AS-167592-LR-25156_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11887919.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "AS-178920-LR-27276_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888030.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "AS-178918-LR-27277_R1.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888020.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "AS-178920-LR-27276_R2.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11888032.3",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "Synodos LGG RNAseq",
+      "description": "Synapse Dataset metadata schema for syn30865196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn30865196",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Synodos_LGG_RNAseq-schema",
+      "name": "Synodos LGG RNAseq (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn30865196: 65 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/id/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/name/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/age",
+          "name": "age",
+          "description": "Column 'age'",
+          "dataType": "sc:Float",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/age/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "age"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/ageUnit",
+          "name": "ageUnit",
+          "description": "Column 'ageUnit'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/ageUnit/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "ageUnit"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/aliquotID",
+          "name": "aliquotID",
+          "description": "Column 'aliquotID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/aliquotID/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "aliquotID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/assay/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/cellType",
+          "name": "cellType",
+          "description": "Column 'cellType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/cellType/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "cellType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/comments",
+          "name": "comments",
+          "description": "Column 'comments'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/comments/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "comments"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/dissociationMethod",
+          "name": "dissociationMethod",
+          "description": "Column 'dissociationMethod'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/dissociationMethod/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "dissociationMethod"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/isCellLine",
+          "name": "isCellLine",
+          "description": "Column 'isCellLine'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/isCellLine/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "isCellLine"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/isMultiIndividual",
+          "name": "isMultiIndividual",
+          "description": "Column 'isMultiIndividual'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/isMultiIndividual/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "isMultiIndividual"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/isMultiSpecimen",
+          "name": "isMultiSpecimen",
+          "description": "Column 'isMultiSpecimen'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/isMultiSpecimen/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "isMultiSpecimen"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/isPrimaryCell",
+          "name": "isPrimaryCell",
+          "description": "Column 'isPrimaryCell'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/isPrimaryCell/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "isPrimaryCell"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/isStranded",
+          "name": "isStranded",
+          "description": "Column 'isStranded'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/isStranded/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "isStranded"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/libraryPrep",
+          "name": "libraryPrep",
+          "description": "Column 'libraryPrep'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/libraryPrep/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "libraryPrep"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/libraryPreparationMethod",
+          "name": "libraryPreparationMethod",
+          "description": "Column 'libraryPreparationMethod'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/libraryPreparationMethod/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "libraryPreparationMethod"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/modelSystemName",
+          "name": "modelSystemName",
+          "description": "Column 'modelSystemName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/modelSystemName/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "modelSystemName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/nf1Genotype",
+          "name": "nf1Genotype",
+          "description": "Column 'nf1Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/nf1Genotype/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "nf1Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/nf2Genotype",
+          "name": "nf2Genotype",
+          "description": "Column 'nf2Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/nf2Genotype/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "nf2Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/nucleicAcidSource",
+          "name": "nucleicAcidSource",
+          "description": "Column 'nucleicAcidSource'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/nucleicAcidSource/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "nucleicAcidSource"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/organ",
+          "name": "organ",
+          "description": "Column 'organ'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/organ/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "organ"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/parentSpecimenID",
+          "name": "parentSpecimenID",
+          "description": "Column 'parentSpecimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/parentSpecimenID/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "parentSpecimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/platform",
+          "name": "platform",
+          "description": "Column 'platform'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/platform/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "platform"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/progressReportNumber",
+          "name": "progressReportNumber",
+          "description": "Column 'progressReportNumber'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/progressReportNumber/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "progressReportNumber"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/readDepth",
+          "name": "readDepth",
+          "description": "Column 'readDepth'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/readDepth/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "readDepth"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/readLength",
+          "name": "readLength",
+          "description": "Column 'readLength'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/readLength/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "readLength"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/readPair",
+          "name": "readPair",
+          "description": "Column 'readPair'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/readPair/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "readPair"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/readPairOrientation",
+          "name": "readPairOrientation",
+          "description": "Column 'readPairOrientation'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/readPairOrientation/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "readPairOrientation"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/readStrandOrigin",
+          "name": "readStrandOrigin",
+          "description": "Column 'readStrandOrigin'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/readStrandOrigin/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "readStrandOrigin"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/runType",
+          "name": "runType",
+          "description": "Column 'runType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/runType/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "runType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/sex",
+          "name": "sex",
+          "description": "Column 'sex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/sex/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "sex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/species/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/specimenPreparationMethod",
+          "name": "specimenPreparationMethod",
+          "description": "Column 'specimenPreparationMethod'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/specimenPreparationMethod/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "specimenPreparationMethod"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/tissue",
+          "name": "tissue",
+          "description": "Column 'tissue'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/tissue/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "tissue"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/tumorType",
+          "name": "tumorType",
+          "description": "Column 'tumorType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/tumorType/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "tumorType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/description",
+          "name": "description",
+          "description": "Column 'description'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/description/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "description"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/etag/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/path",
+          "name": "path",
+          "description": "Column 'path'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/path/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "path"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/type/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/dataFileName",
+          "name": "dataFileName",
+          "description": "Column 'dataFileName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/dataFileName/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "dataFileName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/dataFileConcreteType",
+          "name": "dataFileConcreteType",
+          "description": "Column 'dataFileConcreteType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/dataFileConcreteType/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "dataFileConcreteType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/dataFileBucket",
+          "name": "dataFileBucket",
+          "description": "Column 'dataFileBucket'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/dataFileBucket/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "dataFileBucket"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_LGG_RNAseq-schema/dataFileKey",
+          "name": "dataFileKey",
+          "description": "Column 'dataFileKey'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_LGG_RNAseq-schema/dataFileKey/source",
+            "fileObject": {
+              "@id": "file_54"
+            },
+            "extract": {
+              "column": "dataFileKey"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

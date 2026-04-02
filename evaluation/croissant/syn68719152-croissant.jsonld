@@ -1,0 +1,1947 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Release 18.0-public",
+  "description": "Dataset 'Release 18.0-public' from Synapse (syn68719152)",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Release 18.0-public. Synapse ID: syn68719152. https://www.synapse.org/Synapse:syn68719152",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Dan Lu",
+    "url": "https://www.synapse.org/#!Profile:3434599"
+  },
+  "datePublished": "2026-04-02 12:51:47.585",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn68719152",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "assay_information.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719162",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "data_CNA.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719289",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "data_clinical_patient.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719290",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "data_clinical_sample.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719291",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "data_cna_hg19.seg",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719292",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "data_gene_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719293",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "data_guide.pdf",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719439",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "data_mutations_extended.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719440",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "data_sv.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719441",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "genomic_information.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719442",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "meta_CNA.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719443",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "meta_clinical_patient.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719444",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "meta_clinical_sample.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719445",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "meta_cna_hg19_seg.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719446",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "meta_gene_matrix.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719448",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "meta_mutations_extended.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719449",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "meta_study.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719450",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "meta_sv.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719451",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "release-notes.pdf",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719452",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "tmb_18.0-public.tsv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn71318914",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "cases_Adenocarcinoma_In_Situ.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719163",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "cases_Adrenal_Gland_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719164",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "cases_Adrenocortical_Adenoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719165",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "cases_Adrenocortical_Carcinoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719166",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "cases_Ampullary_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719167",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "cases_Anal_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719168",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "cases_Angiomatoid_Fibrous_Histiocytoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719169",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "cases_Appendiceal_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719170",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "cases_B-Lymphoblastic_Leukemia_Lymphoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719171",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "cases_Biliary_Tract_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719172",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "cases_Bladder_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719173",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "cases_Bladder_Urinary_Tract_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719174",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "cases_Blastic_Plasmacytoid_Dendritic_Cell_Neoplasm.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719175",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "cases_Blood_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719176",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "cases_Blood_Cancer_NOS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719177",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "cases_Bone_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719178",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "cases_Bowel_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719179",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "cases_Breast_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719180",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "cases_Breast_Sarcoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719181",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "cases_CNS_Brain_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719182",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "cases_CNS_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719183",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "cases_Cancer_of_Unknown_Primary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719184",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "cases_Cervical_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719185",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "cases_Choroid_Plexus_Tumor.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719186",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "cases_Clear_Cell_Sarcoma_of_Kidney.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719187",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "cases_Colorectal_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719188",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "cases_Desmoplastic_Nodular_Medulloblastoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719189",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "cases_Embryonal_Tumor.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719190",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "cases_Endometrial_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719191",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "cases_Esophageal_Stomach_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719192",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "cases_Esophagogastric_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719193",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "cases_Eye_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719194",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "cases_Gastrointestinal_Neuroendocrine_Tumor.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719195",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "cases_Gastrointestinal_Neuroendocrine_Tumors_of_the_Esophagus_Stomach.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719196",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "cases_Gastrointestinal_Stromal_Tumor.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719197",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "cases_Germ_Cell_Tumor.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719198",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "cases_Gestational_Trophoblastic_Disease.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719199",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "cases_Glioma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719200",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "cases_Head_and_Neck_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719201",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "cases_Hepatobiliary_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719202",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "cases_Histiocytosis.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719203",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "cases_Hodgkin_Lymphoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719204",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "cases_Infantile_Fibrosarcoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719205",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "cases_Kidney_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719207",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "cases_Lacrimal_Gland_Tumor.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719209",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "cases_Large_Cell_Anaplastic_Medulloblastoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719210",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "cases_Leukemia.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719211",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "cases_Liver_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719212",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "cases_Lung_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719213",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "cases_Lymphatic_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719214",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "cases_Lymphatic_Cancer_NOS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719215",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "cases_Malignant_Glomus_Tumor.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719216",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "cases_Malignant_Rhabdoid_Tumor_of_the_Liver.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719220",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "cases_Mastocytosis.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719221",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "cases_Mature_B-Cell_Neoplasms.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719222",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "cases_Mature_T_and_NK_Neoplasms.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719223",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "cases_Medulloblastoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719224",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "cases_Melanocytoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719225",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "cases_Melanoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719226",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "cases_Mesothelioma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719227",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "cases_Miscellaneous_Brain_Tumor.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719228",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "cases_Miscellaneous_Neuroepithelial_Tumor.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719229",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "cases_Myelodysplastic_Myeloproliferative_Neoplasms.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719230",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "cases_Myelodysplastic_Syndromes.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719231",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "cases_Myeloid_Neoplasms_with_Germ_Line_Predisposition.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719232",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "cases_Myeloproliferative_Neoplasms.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719233",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "cases_Myofibromatosis.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719234",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "cases_Nerve_Sheath_Tumor.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719235",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "cases_Non-Hodgkin_Lymphoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719236",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "cases_Non-Small_Cell_Lung_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719237",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "cases_Other_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719238",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "cases_Ovarian_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719239",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "cases_Ovarian_Fallopian_Tube_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719240",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "cases_Pancreatic_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719241",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "cases_Parathyroid_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719242",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "cases_Penile_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719243",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "cases_Peripheral_Nervous_System.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719244",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "cases_Peripheral_Nervous_System_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719245",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "cases_Peritoneal_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719246",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "cases_Peritoneal_Cancer_NOS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719247",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "cases_Pheochromocytoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719248",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "cases_Pineal_Tumor.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719249",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "cases_Posttransplant_Lymphoproliferative_Disorders.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719250",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "cases_Primary_CNS_Melanocytic_Tumors.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719251",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "cases_Prostate_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719252",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "cases_Renal_Cell_Carcinoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719253",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "cases_Renal_Neuroendocrine_Tumor.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719254",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "cases_Retinoblastoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719255",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "cases_Rhabdoid_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719256",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "cases_Salivary_Gland_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719257",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "cases_Sellar_Tumor.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719258",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "cases_Sex_Cord_Stromal_Tumor.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719259",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "cases_Sialoblastoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719261",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "cases_Skin_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719264",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "cases_Skin_Cancer_Non-Melanoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719266",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "cases_Small_Bowel_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719267",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_116",
+      "name": "cases_Small_Cell_Lung_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719268",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_117",
+      "name": "cases_Soft_Tissue_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719269",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_118",
+      "name": "cases_Soft_Tissue_Sarcoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719270",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_119",
+      "name": "cases_T-Lymphoblastic_Leukemia_Lymphoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719271",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_120",
+      "name": "cases_Testicular_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719272",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_121",
+      "name": "cases_Thymic_Tumor.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719273",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_122",
+      "name": "cases_Thyroid_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719274",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_123",
+      "name": "cases_Tubular_Adenoma_of_the_Colon.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719275",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_124",
+      "name": "cases_UNKNOWN.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719276",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_125",
+      "name": "cases_Undifferentiated_Embryonal_Sarcoma_of_the_Liver.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719277",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_126",
+      "name": "cases_Uterine_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719278",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_127",
+      "name": "cases_Uterine_Sarcoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719279",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_128",
+      "name": "cases_Vaginal_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719280",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_129",
+      "name": "cases_Vulvar_Carcinoma.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719281",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_130",
+      "name": "cases_Vulvar_Vaginal_Cancer.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719282",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_131",
+      "name": "cases_Wilms_Tumor.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719283",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_132",
+      "name": "cases_all.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719284",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_133",
+      "name": "cases_cna.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719285",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_134",
+      "name": "cases_cnaseq.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719286",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_135",
+      "name": "cases_sequenced.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719287",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_136",
+      "name": "cases_sv.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719288",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_137",
+      "name": "data_gene_panel_CHOP-COMPT-V2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719294",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_138",
+      "name": "data_gene_panel_CHOP-COMPT.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719295",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_139",
+      "name": "data_gene_panel_CHOP-FUSIP.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719296",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_140",
+      "name": "data_gene_panel_CHOP-HEMEP.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719297",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_141",
+      "name": "data_gene_panel_CHOP-STNGS-V2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719298",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_142",
+      "name": "data_gene_panel_CHOP-STNGS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719299",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_143",
+      "name": "data_gene_panel_COLU-CCCP-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719300",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_144",
+      "name": "data_gene_panel_COLU-CCCP-V2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719301",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_145",
+      "name": "data_gene_panel_COLU-CSTP-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719302",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_146",
+      "name": "data_gene_panel_COLU-CSTP-V2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719303",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_147",
+      "name": "data_gene_panel_COLU-TSACP-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719304",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_148",
+      "name": "data_gene_panel_CRUK-TS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719305",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_149",
+      "name": "data_gene_panel_DFCI-F1-AB1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719306",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_150",
+      "name": "data_gene_panel_DFCI-F1-CF2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719307",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_151",
+      "name": "data_gene_panel_DFCI-F1-CF3.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719308",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_152",
+      "name": "data_gene_panel_DFCI-ONCOPANEL-1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719309",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_153",
+      "name": "data_gene_panel_DFCI-ONCOPANEL-2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719310",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_154",
+      "name": "data_gene_panel_DFCI-ONCOPANEL-3.1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719311",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_155",
+      "name": "data_gene_panel_DFCI-ONCOPANEL-3.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719312",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_156",
+      "name": "data_gene_panel_DUKE-F1-DX1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719313",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_157",
+      "name": "data_gene_panel_DUKE-F1-T5A.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719314",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_158",
+      "name": "data_gene_panel_DUKE-F1-T7.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719315",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_159",
+      "name": "data_gene_panel_GRCC-2030859.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719316",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_160",
+      "name": "data_gene_panel_GRCC-2040388.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719317",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_161",
+      "name": "data_gene_panel_GRCC-2040390.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719318",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_162",
+      "name": "data_gene_panel_GRCC-2058737.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719319",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_163",
+      "name": "data_gene_panel_GRCC-2061930.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719320",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_164",
+      "name": "data_gene_panel_GRCC-2063107.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719321",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_165",
+      "name": "data_gene_panel_GRCC-2067719.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719322",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_166",
+      "name": "data_gene_panel_GRCC-2067720.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719323",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_167",
+      "name": "data_gene_panel_GRCC-2105390.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719324",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_168",
+      "name": "data_gene_panel_GRCC-CHP2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719325",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_169",
+      "name": "data_gene_panel_GRCC-CP1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719326",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_170",
+      "name": "data_gene_panel_GRCC-MOSC3.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719327",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_171",
+      "name": "data_gene_panel_GRCC-MOSC4.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719328",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_172",
+      "name": "data_gene_panel_GRCC-OCAV3.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719329",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_173",
+      "name": "data_gene_panel_GRCC-SAFIR02.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719330",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_174",
+      "name": "data_gene_panel_JHU-500STP.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719331",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_175",
+      "name": "data_gene_panel_JHU-50GP.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719332",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_176",
+      "name": "data_gene_panel_MDA-409-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719333",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_177",
+      "name": "data_gene_panel_MDA-46-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719334",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_178",
+      "name": "data_gene_panel_MDA-50-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719335",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_179",
+      "name": "data_gene_panel_MSK-ACCESS129.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719336",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_180",
+      "name": "data_gene_panel_MSK-IMPACT-HEME-400.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719337",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_181",
+      "name": "data_gene_panel_MSK-IMPACT-HEME-468.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719338",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_182",
+      "name": "data_gene_panel_MSK-IMPACT341.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719339",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_183",
+      "name": "data_gene_panel_MSK-IMPACT410.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719340",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_184",
+      "name": "data_gene_panel_MSK-IMPACT468.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719341",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_185",
+      "name": "data_gene_panel_MSK-IMPACT505.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719342",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_186",
+      "name": "data_gene_panel_NKI-CHP-V2-PLUS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719343",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_187",
+      "name": "data_gene_panel_NKI-CHPV2-NGS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719344",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_188",
+      "name": "data_gene_panel_NKI-CHPV2-SOCV2-NGS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719345",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_189",
+      "name": "data_gene_panel_NKI-PATH-NGS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719346",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_190",
+      "name": "data_gene_panel_NKI-TSACP-MISEQ-NGS.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719347",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_191",
+      "name": "data_gene_panel_PROV-AMLC.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719348",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_192",
+      "name": "data_gene_panel_PROV-FOCUS-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719349",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_193",
+      "name": "data_gene_panel_PROV-FOUNDATIONONELIQUIDCDX.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719350",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_194",
+      "name": "data_gene_panel_PROV-MPNC.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719351",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_195",
+      "name": "data_gene_panel_PROV-MPNT.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719355",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_196",
+      "name": "data_gene_panel_PROV-TRISEQ-V2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719356",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_197",
+      "name": "data_gene_panel_PROV-TSO500HT-V2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719357",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_198",
+      "name": "data_gene_panel_PROV-TST170-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719358",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_199",
+      "name": "data_gene_panel_SCI-PMP68-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719359",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_200",
+      "name": "data_gene_panel_UCHI-ONCOHEME55-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719360",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_201",
+      "name": "data_gene_panel_UCHI-ONCOSCREEN50-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719361",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_202",
+      "name": "data_gene_panel_UCSF-IDTV5-TN.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719362",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_203",
+      "name": "data_gene_panel_UCSF-IDTV5-TO.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719363",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_204",
+      "name": "data_gene_panel_UCSF-NIMV4-TN.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719364",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_205",
+      "name": "data_gene_panel_UCSF-NIMV4-TO.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719365",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_206",
+      "name": "data_gene_panel_UHN-48-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719366",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_207",
+      "name": "data_gene_panel_UHN-50-V2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719367",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_208",
+      "name": "data_gene_panel_UHN-54-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719368",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_209",
+      "name": "data_gene_panel_UHN-555-BLADDER-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719369",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_210",
+      "name": "data_gene_panel_UHN-555-BREAST-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719370",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_211",
+      "name": "data_gene_panel_UHN-555-GLIOMA-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719371",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_212",
+      "name": "data_gene_panel_UHN-555-GYNE-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719372",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_213",
+      "name": "data_gene_panel_UHN-555-HEAD-NECK-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719373",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_214",
+      "name": "data_gene_panel_UHN-555-LUNG-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719374",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_215",
+      "name": "data_gene_panel_UHN-555-MELANOMA-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719375",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_216",
+      "name": "data_gene_panel_UHN-555-PAN-GI-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719376",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_217",
+      "name": "data_gene_panel_UHN-555-PROSTATE-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719377",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_218",
+      "name": "data_gene_panel_UHN-555-RENAL-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719378",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_219",
+      "name": "data_gene_panel_UHN-555-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719379",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_220",
+      "name": "data_gene_panel_UHN-555-V2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719380",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_221",
+      "name": "data_gene_panel_UHN-HM-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719381",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_222",
+      "name": "data_gene_panel_UHN-HM-V2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719382",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_223",
+      "name": "data_gene_panel_UHN-OCA-V3.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719383",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_224",
+      "name": "data_gene_panel_UHN-TSO500-V1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719384",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_225",
+      "name": "data_gene_panel_UMIAMI-CA-HYBRID-WES.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719385",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_226",
+      "name": "data_gene_panel_VHIO-300.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719386",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_227",
+      "name": "data_gene_panel_VHIO-BILIARY-V01.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719387",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_228",
+      "name": "data_gene_panel_VHIO-BRAIN-V01.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719390",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_229",
+      "name": "data_gene_panel_VHIO-BREAST-V01.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719392",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_230",
+      "name": "data_gene_panel_VHIO-BREAST-V02.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719393",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_231",
+      "name": "data_gene_panel_VHIO-COLORECTAL-V01.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719394",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_232",
+      "name": "data_gene_panel_VHIO-ENDOMETRIUM-V01.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719395",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_233",
+      "name": "data_gene_panel_VHIO-GASTRIC-V01.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719396",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_234",
+      "name": "data_gene_panel_VHIO-GENERAL-V01.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719397",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_235",
+      "name": "data_gene_panel_VHIO-HEAD-NECK-V01.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719398",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_236",
+      "name": "data_gene_panel_VHIO-KIDNEY-V01.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719399",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_237",
+      "name": "data_gene_panel_VHIO-LUNG-V01.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719400",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_238",
+      "name": "data_gene_panel_VHIO-OVARY-V01.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719401",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_239",
+      "name": "data_gene_panel_VHIO-PANCREAS-V01.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719403",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_240",
+      "name": "data_gene_panel_VHIO-PAROTIDE-V01.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719404",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_241",
+      "name": "data_gene_panel_VHIO-SKIN-V01.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719405",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_242",
+      "name": "data_gene_panel_VHIO-URINARY-BLADDER-V01.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719406",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_243",
+      "name": "data_gene_panel_VICC-01-D2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719407",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_244",
+      "name": "data_gene_panel_VICC-01-DX1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719408",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_245",
+      "name": "data_gene_panel_VICC-01-MYELOID.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719409",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_246",
+      "name": "data_gene_panel_VICC-01-SOLIDTUMOR.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719410",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_247",
+      "name": "data_gene_panel_VICC-01-T4B.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719411",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_248",
+      "name": "data_gene_panel_VICC-01-T5A.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719412",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_249",
+      "name": "data_gene_panel_VICC-01-T6B.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719413",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_250",
+      "name": "data_gene_panel_VICC-01-T7.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719416",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_251",
+      "name": "data_gene_panel_VICC-02-XTV2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719417",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_252",
+      "name": "data_gene_panel_VICC-02-XTV3.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719418",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_253",
+      "name": "data_gene_panel_VICC-02-XTV4.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719419",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_254",
+      "name": "data_gene_panel_WAKE-CA-01.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719420",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_255",
+      "name": "data_gene_panel_WAKE-CA-NGSQ3.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719421",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_256",
+      "name": "data_gene_panel_WAKE-CLINICAL-AB1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719423",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_257",
+      "name": "data_gene_panel_WAKE-CLINICAL-AB2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719424",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_258",
+      "name": "data_gene_panel_WAKE-CLINICAL-AB3.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719425",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_259",
+      "name": "data_gene_panel_WAKE-CLINICAL-CF2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719426",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_260",
+      "name": "data_gene_panel_WAKE-CLINICAL-CF3.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719427",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_261",
+      "name": "data_gene_panel_WAKE-CLINICAL-D2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719431",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_262",
+      "name": "data_gene_panel_WAKE-CLINICAL-DX1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719432",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_263",
+      "name": "data_gene_panel_WAKE-CLINICAL-DX2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719433",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_264",
+      "name": "data_gene_panel_WAKE-CLINICAL-R2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719434",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_265",
+      "name": "data_gene_panel_WAKE-CLINICAL-R2D2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719435",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_266",
+      "name": "data_gene_panel_WAKE-CLINICAL-T5A.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719436",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_267",
+      "name": "data_gene_panel_WAKE-CLINICAL-T7.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719437",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_268",
+      "name": "data_gene_panel_YALE-OCP-V3.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn68719438",
+      "encodingFormat": "text/plain"
+    }
+  ]
+}

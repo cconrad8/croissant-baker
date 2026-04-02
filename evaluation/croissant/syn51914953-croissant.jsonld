@@ -1,0 +1,655 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Single Agent Screens of pNF Cell Lines",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks. If you use this dataset, please cite the following publication: \"Ferrer M, Gosline SJC, Stathis M, et al. Pharmacological and genomic profiling of neurofibromatosis type 1 plexiform neurofibroma-derived schwann cells. Sci Data. 2018;5:180106. Published 2018 Jun 12. doi:10.1038/sdata.2018.106.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Single Agent Screens of pNF Cell Lines. Synapse ID: syn51914953. https://www.synapse.org/Synapse:syn51914953",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:06:58.915",
+  "keywords": [
+    "drug screen",
+    "single agent",
+    "pNF",
+    "MIPE 4.0",
+    "NF1"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn51914953",
+  "version": "11",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "ipNF95_11bC_before_correction.png",
+      "contentSize": "53912",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20506424.3",
+      "encodingFormat": "image/png",
+      "md5": "ef1cfb59fd2f0b517ae092935cff064f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "s-ntap-HFF-1.csv",
+      "contentSize": "1015506",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5917344.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "b309e725dfd59812cfcfdd58dd65c7aa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "ipNF95_11bC_after_correction.png",
+      "contentSize": "61753",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20506425.2",
+      "encodingFormat": "image/png",
+      "md5": "bfadfc9e64e5d9324a4a41a1dd970a3b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "s-ntap-MTC-1.csv",
+      "contentSize": "1051866",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5917348.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "93e5e666498aa1966a9838c128abd96a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "aucRecalculatedFromNCATSscreens_nplr.txt",
+      "contentSize": "712047",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5637634.4",
+      "encodingFormat": "text/plain",
+      "md5": "2f635bcbf2f40064a824ba907628d0c8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "qhts-protocol-dump-headers.txt",
+      "contentSize": "685",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5522652.1",
+      "encodingFormat": "text/plain",
+      "md5": "dd5c77849e3203a7fdbc9e0edb3b724a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "NTAP ipNF02.3 2l MIPE qHTS.csv",
+      "contentSize": "932533",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5522642.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "5afe58e51a77beba165899181fb42856"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "NTAP ipNF02.8 MIPE qHTS.csv",
+      "contentSize": "935074",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5522643.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "93ee6a9761af7d841bf782d564c4ae6e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "NTAP ipNF05.5 MC MIPE qHTS.csv",
+      "contentSize": "976145",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5522644.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "5dab3ac172caec57b762579618bd5c33"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "NTAP ipNF05.5 SC MIPE qHTS.csv",
+      "contentSize": "974894",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5522645.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "ba4b23e2cdf1cfef949fbb7428c3a891"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "NTAP ipNF06.2A MIPE qHTS.csv",
+      "contentSize": "940546",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5522646.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "b9da1d1ad8605912f1bc8d8eb27c281a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "NTAP_ipNF95.11bC_MIPE_qHTS.csv",
+      "contentSize": "803446",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8556314.3",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "827fddeea1a1efe5d2628935e235ae3f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "NTAP ipNF95.11b C_T MIPE qHTS.csv",
+      "contentSize": "957597",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5522647.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "7a76a4d3158031fa894913502d4be54b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "NTAP ipnNF95.11C MIPE qHTS.csv",
+      "contentSize": "947378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5522648.2",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "d6df561bbfba01ded6f86359774b34f1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "NTAP ipNF95.6 MIPE qHTS.csv",
+      "contentSize": "945685",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5522649.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "faf6b30d479fe25f55d7198ba5560c85"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "Single Agent Screens of pNF Cell Lines",
+      "description": "Synapse Dataset metadata schema for syn51914953",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51914953",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema",
+      "name": "Single Agent Screens of pNF Cell Lines (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn51914953: 27 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/id/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/name/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/Resource_id",
+          "name": "Resource_id",
+          "description": "Column 'Resource_id'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/Resource_id/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "Resource_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/assay/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/cellType",
+          "name": "cellType",
+          "description": "Column 'cellType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/cellType/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "cellType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/disease",
+          "name": "disease",
+          "description": "Column 'disease'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/disease/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "disease"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/drugScreenType",
+          "name": "drugScreenType",
+          "description": "Column 'drugScreenType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/drugScreenType/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "drugScreenType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/isCellLine",
+          "name": "isCellLine",
+          "description": "Column 'isCellLine'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/isCellLine/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "isCellLine"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/isMultiIndividual",
+          "name": "isMultiIndividual",
+          "description": "Column 'isMultiIndividual'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/isMultiIndividual/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "isMultiIndividual"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/isMultiSpecimen",
+          "name": "isMultiSpecimen",
+          "description": "Column 'isMultiSpecimen'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/isMultiSpecimen/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "isMultiSpecimen"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/nf1Genotype",
+          "name": "nf1Genotype",
+          "description": "Column 'nf1Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/nf1Genotype/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "nf1Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/nf2Genotype",
+          "name": "nf2Genotype",
+          "description": "Column 'nf2Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/nf2Genotype/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "nf2Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/organ",
+          "name": "organ",
+          "description": "Column 'organ'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/organ/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "organ"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/species/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/tissue",
+          "name": "tissue",
+          "description": "Column 'tissue'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/tissue/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "tissue"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/tumorType",
+          "name": "tumorType",
+          "description": "Column 'tumorType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/tumorType/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "tumorType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Single_Agent_Screens_of_pNF_Cell_Lines-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_15"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

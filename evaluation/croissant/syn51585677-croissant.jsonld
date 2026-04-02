@@ -1,0 +1,727 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "MPNST Cell Line Whole Genome Sequencing",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "MPNST Cell Line Whole Genome Sequencing. Synapse ID: syn51585677. https://www.synapse.org/Synapse:syn51585677",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:11:27.300",
+  "keywords": [
+    "WGS",
+    "MPNST",
+    "cell line",
+    "NF1"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn51585677",
+  "version": "10",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "HS-Sch-2_2.fastq.gz",
+      "contentSize": "53360790421",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50859319.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a65e8559846a35ef1ed87343874da479"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "S462_2.fastq.gz",
+      "contentSize": "51740710637",
+      "contentUrl": "https://www.synapse.org/Synapse:syn30114199.1",
+      "encodingFormat": "application/gzip",
+      "md5": "57915e01a527b24a9cff62e164fefd10"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "STS-26T_1.fastq.gz",
+      "contentSize": "51173089005",
+      "contentUrl": "https://www.synapse.org/Synapse:syn30604228.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7066dc2eae6a83941b2e801a128aebdf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "HS-Sch-2_1.fastq.gz",
+      "contentSize": "52703908548",
+      "contentUrl": "https://www.synapse.org/Synapse:syn30403204.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b5d559d27556ffac094cfe6aa4ae26bf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "ST88-14_2.fastq.gz",
+      "contentSize": "52628644727",
+      "contentUrl": "https://www.synapse.org/Synapse:syn30604559.1",
+      "encodingFormat": "application/gzip",
+      "md5": "56bc6077c39a1dc028290b08c7c3e34b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "STS-26T_2.fastq.gz",
+      "contentSize": "51588606032",
+      "contentUrl": "https://www.synapse.org/Synapse:syn30121585.1",
+      "encodingFormat": "application/gzip",
+      "md5": "78b1f8ade4867c0028ad1b1d91a72ce9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "S462_1.fastq.gz",
+      "contentSize": "50678611103",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50697537.1",
+      "encodingFormat": "application/gzip",
+      "md5": "48df14e72ad6b8c9cdb0dd4a17c33f9b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "ST88-14_1.fastq.gz",
+      "contentSize": "51609453273",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50698705.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3870498f4a495b3023aecfe94440cd91"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "NF90-8_2.fastq.gz",
+      "contentSize": "50565840832",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50909133.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4a1b93e52027eb20afb23f301c705792"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "NF90-8_1.fastq.gz",
+      "contentSize": "49920461272",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50909134.1",
+      "encodingFormat": "application/gzip",
+      "md5": "71b7df0dd48ed5b6a5a2d8b9f96f183e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "HS-PSS_1.fastq.gz",
+      "contentSize": "50189560373",
+      "contentUrl": "https://www.synapse.org/Synapse:syn30594817.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2b96bc164a4e843ac8f1ff385605be0f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "HS-PSS_2.fastq.gz",
+      "contentSize": "50493511652",
+      "contentUrl": "https://www.synapse.org/Synapse:syn30380826.1",
+      "encodingFormat": "application/gzip",
+      "md5": "15bd03d252b2fd4efd3e8f24491571be"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "NMS-2_2.fastq.gz",
+      "contentSize": "51640105945",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50912330.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d0adc37675dde45f5f96b26e19e75d98"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "NMS-2_1.fastq.gz",
+      "contentSize": "51125851943",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50912323.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0e33f3437a55ae8b433c0c80f5f14af4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "sNF96.2_1.fastq.gz",
+      "contentSize": "51584331360",
+      "contentUrl": "https://www.synapse.org/Synapse:syn50896131.1",
+      "encodingFormat": "application/gzip",
+      "md5": "edf94f9282a851384c5a514253db9d8c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "sNF96.2_2.fastq.gz",
+      "contentSize": "52209508208",
+      "contentUrl": "https://www.synapse.org/Synapse:syn30408543.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9dfd354cb55549aa4b15a3b3632430eb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "MPNST Cell Line Whole Genome Sequencing",
+      "description": "Synapse Dataset metadata schema for syn51585677",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51585677",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema",
+      "name": "MPNST Cell Line Whole Genome Sequencing (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn51585677: 31 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/id/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/name/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/age",
+          "name": "age",
+          "description": "Column 'age'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/age/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "age"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/ageUnit",
+          "name": "ageUnit",
+          "description": "Column 'ageUnit'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/ageUnit/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "ageUnit"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/assay/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/entityId",
+          "name": "entityId",
+          "description": "Column 'entityId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/entityId/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "entityId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/isCellLine",
+          "name": "isCellLine",
+          "description": "Column 'isCellLine'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/isCellLine/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "isCellLine"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/isPrimaryCell",
+          "name": "isPrimaryCell",
+          "description": "Column 'isPrimaryCell'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/isPrimaryCell/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "isPrimaryCell"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/modelSystemName",
+          "name": "modelSystemName",
+          "description": "Column 'modelSystemName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/modelSystemName/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "modelSystemName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/nf1Genotype",
+          "name": "nf1Genotype",
+          "description": "Column 'nf1Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/nf1Genotype/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "nf1Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/nf2Genotype",
+          "name": "nf2Genotype",
+          "description": "Column 'nf2Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/nf2Genotype/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "nf2Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/nucleicAcidSource",
+          "name": "nucleicAcidSource",
+          "description": "Column 'nucleicAcidSource'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/nucleicAcidSource/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "nucleicAcidSource"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/parentSpecimenID",
+          "name": "parentSpecimenID",
+          "description": "Column 'parentSpecimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/parentSpecimenID/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "parentSpecimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/platform",
+          "name": "platform",
+          "description": "Column 'platform'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/platform/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "platform"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/progressReportNumber",
+          "name": "progressReportNumber",
+          "description": "Column 'progressReportNumber'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/progressReportNumber/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "progressReportNumber"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/readPair",
+          "name": "readPair",
+          "description": "Column 'readPair'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/readPair/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "readPair"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/runType",
+          "name": "runType",
+          "description": "Column 'runType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/runType/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "runType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/sex",
+          "name": "sex",
+          "description": "Column 'sex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/sex/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "sex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/species/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/tumorType",
+          "name": "tumorType",
+          "description": "Column 'tumorType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "MPNST_Cell_Line_Whole_Genome_Sequencing-schema/tumorType/source",
+            "fileObject": {
+              "@id": "file_16"
+            },
+            "extract": {
+              "column": "tumorType"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

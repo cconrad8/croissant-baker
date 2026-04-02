@@ -1,0 +1,3089 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Germline Genomic Variants - Mutect2 Pipeline (from syn31726450)",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Germline Genomic Variants - Mutect2 Pipeline (from syn31726450). Synapse ID: syn35562837. https://www.synapse.org/Synapse:syn35562837",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:15:47.966",
+  "keywords": [
+    "cfDNA",
+    "ultra-low-pass WGS",
+    "germline variants",
+    "Mutect2",
+    "NF1",
+    "MPNST"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn35562837",
+  "version": "6",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "Mutect2_filtered_lib003.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743632.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "Mutect2_filtered_lib003.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743696.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "Mutect2_unfiltered_lib003.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743673.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "Mutect2_unfiltered_lib003.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743628.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "Mutect2_filtered_lib009.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743643.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "Mutect2_filtered_lib009.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743659.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "Mutect2_unfiltered_lib009.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743711.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "Mutect2_unfiltered_lib009.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743710.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "Mutect2_filtered_lib012.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743665.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "Mutect2_filtered_lib012.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743646.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "Mutect2_unfiltered_lib012.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743700.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "Mutect2_unfiltered_lib012.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743676.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "Mutect2_filtered_lib014.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743669.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "Mutect2_filtered_lib014.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743670.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "Mutect2_unfiltered_lib014.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743663.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "Mutect2_unfiltered_lib014.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743681.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "Mutect2_filtered_lib019.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743705.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "Mutect2_filtered_lib019.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743780.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "Mutect2_unfiltered_lib019.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743728.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "Mutect2_unfiltered_lib019.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743759.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "Mutect2_filtered_lib023.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743762.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "Mutect2_filtered_lib023.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743716.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "Mutect2_unfiltered_lib023.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743741.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "Mutect2_unfiltered_lib023.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743701.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "Mutect2_filtered_lib027.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743785.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "Mutect2_filtered_lib027.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743764.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "Mutect2_unfiltered_lib027.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743725.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "Mutect2_unfiltered_lib027.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743729.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "Mutect2_filtered_lib032.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743749.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "Mutect2_filtered_lib032.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743745.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "Mutect2_unfiltered_lib032.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743750.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "Mutect2_unfiltered_lib032.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743744.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "Mutect2_filtered_lib036.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743763.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "Mutect2_filtered_lib036.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743773.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "Mutect2_unfiltered_lib036.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743736.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "Mutect2_unfiltered_lib036.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743868.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "Mutect2_filtered_lib041.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743777.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "Mutect2_filtered_lib041.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743787.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "Mutect2_unfiltered_lib041.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743789.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "Mutect2_unfiltered_lib041.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743776.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "Mutect2_filtered_lib052.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743796.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "Mutect2_filtered_lib052.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743801.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "Mutect2_unfiltered_lib052.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743805.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "Mutect2_unfiltered_lib052.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743800.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "Mutect2_filtered_lib070.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743860.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "Mutect2_filtered_lib070.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743931.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "Mutect2_unfiltered_lib070.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743850.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "Mutect2_unfiltered_lib070.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743935.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "Mutect2_filtered_lib073.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743854.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "Mutect2_filtered_lib073.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743880.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "Mutect2_unfiltered_lib073.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743857.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "Mutect2_unfiltered_lib073.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743884.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "Mutect2_filtered_lib107.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744011.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "Mutect2_filtered_lib107.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743991.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "Mutect2_unfiltered_lib107.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744017.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "Mutect2_unfiltered_lib107.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744007.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "Mutect2_filtered_lib109.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744061.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "Mutect2_filtered_lib109.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743998.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "Mutect2_unfiltered_lib109.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744031.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "Mutect2_unfiltered_lib109.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744075.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "Mutect2_filtered_lib110.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744029.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "Mutect2_filtered_lib110.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744064.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "Mutect2_unfiltered_lib110.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744058.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "Mutect2_unfiltered_lib110.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744060.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "Mutect2_filtered_lib113.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744069.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "Mutect2_filtered_lib113.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744055.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "Mutect2_unfiltered_lib113.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744052.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "Mutect2_unfiltered_lib113.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744048.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "Mutect2_filtered_lib117.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744080.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "Mutect2_filtered_lib117.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744078.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "Mutect2_unfiltered_lib117.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744096.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "Mutect2_unfiltered_lib117.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744099.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "Mutect2_filtered_lib119.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744092.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "Mutect2_filtered_lib119.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744065.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "Mutect2_unfiltered_lib119.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744079.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "Mutect2_unfiltered_lib119.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744085.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "Mutect2_filtered_lib123.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744089.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "Mutect2_filtered_lib123.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744124.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "Mutect2_unfiltered_lib123.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744117.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "Mutect2_unfiltered_lib123.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744108.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "Mutect2_filtered_lib126.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744129.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "Mutect2_filtered_lib126.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744131.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "Mutect2_unfiltered_lib126.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744135.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "Mutect2_unfiltered_lib126.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744138.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "Mutect2_filtered_lib127.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744170.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "Mutect2_filtered_lib127.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744148.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "Mutect2_unfiltered_lib127.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744157.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "Mutect2_unfiltered_lib127.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744171.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "Mutect2_filtered_lib129.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744161.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "Mutect2_filtered_lib129.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744159.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "Mutect2_unfiltered_lib129.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744165.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "Mutect2_unfiltered_lib129.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744169.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "Mutect2_filtered_lib131.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744304.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "Mutect2_filtered_lib131.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744180.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "Mutect2_unfiltered_lib131.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744205.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "Mutect2_unfiltered_lib131.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744173.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "Mutect2_filtered_lib132.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744181.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "Mutect2_filtered_lib132.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744210.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "Mutect2_unfiltered_lib132.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744247.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "Mutect2_unfiltered_lib132.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744212.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "Mutect2_filtered_lib134.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744238.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "Mutect2_filtered_lib134.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744219.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "Mutect2_unfiltered_lib134.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744250.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "Mutect2_unfiltered_lib134.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744194.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "Mutect2_filtered_lib135.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744234.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "Mutect2_filtered_lib135.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744225.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "Mutect2_unfiltered_lib135.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744227.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "Mutect2_unfiltered_lib135.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744246.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "Mutect2_filtered_lib136.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744253.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "Mutect2_filtered_lib136.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744233.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "Mutect2_unfiltered_lib136.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744489.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "Mutect2_unfiltered_lib136.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744305.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "Mutect2_filtered_lib138.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744256.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "Mutect2_filtered_lib138.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744301.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "Mutect2_unfiltered_lib138.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744255.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "Mutect2_unfiltered_lib138.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744245.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_116",
+      "name": "Mutect2_filtered_lib139.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744267.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_117",
+      "name": "Mutect2_filtered_lib139.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744289.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_118",
+      "name": "Mutect2_unfiltered_lib139.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744287.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_119",
+      "name": "Mutect2_unfiltered_lib139.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744273.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_120",
+      "name": "Mutect2_filtered_lib141.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744284.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_121",
+      "name": "Mutect2_filtered_lib141.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744268.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_122",
+      "name": "Mutect2_unfiltered_lib141.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744294.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_123",
+      "name": "Mutect2_unfiltered_lib141.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744339.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_124",
+      "name": "Mutect2_filtered_lib142.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744309.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_125",
+      "name": "Mutect2_filtered_lib142.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744316.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_126",
+      "name": "Mutect2_unfiltered_lib142.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744308.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_127",
+      "name": "Mutect2_unfiltered_lib142.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744338.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_128",
+      "name": "Mutect2_filtered_lib143.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744313.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_129",
+      "name": "Mutect2_filtered_lib143.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744296.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_130",
+      "name": "Mutect2_unfiltered_lib143.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744334.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_131",
+      "name": "Mutect2_unfiltered_lib143.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744331.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_132",
+      "name": "Mutect2_filtered_lib144.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744364.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_133",
+      "name": "Mutect2_filtered_lib144.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744353.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_134",
+      "name": "Mutect2_unfiltered_lib144.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744343.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_135",
+      "name": "Mutect2_unfiltered_lib144.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744349.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_136",
+      "name": "Mutect2_filtered_lib145.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744355.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_137",
+      "name": "Mutect2_filtered_lib145.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744351.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_138",
+      "name": "Mutect2_unfiltered_lib145.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744374.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_139",
+      "name": "Mutect2_unfiltered_lib145.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744368.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_140",
+      "name": "Mutect2_filtered_lib146.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744619.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_141",
+      "name": "Mutect2_filtered_lib146.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744377.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_142",
+      "name": "Mutect2_unfiltered_lib146.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744388.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_143",
+      "name": "Mutect2_unfiltered_lib146.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744437.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_144",
+      "name": "Mutect2_filtered_lib147.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744354.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_145",
+      "name": "Mutect2_filtered_lib147.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744385.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_146",
+      "name": "Mutect2_unfiltered_lib147.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744369.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_147",
+      "name": "Mutect2_unfiltered_lib147.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744391.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_148",
+      "name": "Mutect2_filtered_lib148.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744401.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_149",
+      "name": "Mutect2_filtered_lib148.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744406.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_150",
+      "name": "Mutect2_unfiltered_lib148.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744396.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_151",
+      "name": "Mutect2_unfiltered_lib148.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744400.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_152",
+      "name": "Mutect2_filtered_lib153.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744423.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_153",
+      "name": "Mutect2_filtered_lib153.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744447.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_154",
+      "name": "Mutect2_unfiltered_lib153.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744425.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_155",
+      "name": "Mutect2_unfiltered_lib153.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744443.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_156",
+      "name": "Mutect2_filtered_lib154.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744614.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_157",
+      "name": "Mutect2_filtered_lib154.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744420.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_158",
+      "name": "Mutect2_unfiltered_lib154.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744441.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_159",
+      "name": "Mutect2_unfiltered_lib154.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744413.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_160",
+      "name": "Mutect2_filtered_lib155.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744460.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_161",
+      "name": "Mutect2_filtered_lib155.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744470.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_162",
+      "name": "Mutect2_unfiltered_lib155.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744456.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_163",
+      "name": "Mutect2_unfiltered_lib155.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744472.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_164",
+      "name": "Mutect2_filtered_lib156.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744463.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_165",
+      "name": "Mutect2_filtered_lib156.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744495.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_166",
+      "name": "Mutect2_unfiltered_lib156.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744473.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_167",
+      "name": "Mutect2_unfiltered_lib156.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744479.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_168",
+      "name": "Mutect2_filtered_lib158.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744485.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_169",
+      "name": "Mutect2_filtered_lib158.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744502.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_170",
+      "name": "Mutect2_unfiltered_lib158.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744474.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_171",
+      "name": "Mutect2_unfiltered_lib158.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744499.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_172",
+      "name": "Mutect2_filtered_lib160.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744517.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_173",
+      "name": "Mutect2_filtered_lib160.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744500.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_174",
+      "name": "Mutect2_unfiltered_lib160.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744496.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_175",
+      "name": "Mutect2_unfiltered_lib160.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744501.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_176",
+      "name": "Mutect2_filtered_lib161.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744512.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_177",
+      "name": "Mutect2_filtered_lib161.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744521.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_178",
+      "name": "Mutect2_unfiltered_lib161.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744524.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_179",
+      "name": "Mutect2_unfiltered_lib161.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744588.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_180",
+      "name": "Mutect2_filtered_lib162.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744603.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_181",
+      "name": "Mutect2_filtered_lib162.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744597.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_182",
+      "name": "Mutect2_unfiltered_lib162.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744543.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_183",
+      "name": "Mutect2_unfiltered_lib162.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744575.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_184",
+      "name": "Mutect2_filtered_lib168.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744540.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_185",
+      "name": "Mutect2_filtered_lib168.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744554.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_186",
+      "name": "Mutect2_unfiltered_lib168.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744547.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_187",
+      "name": "Mutect2_unfiltered_lib168.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744548.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_188",
+      "name": "Mutect2_filtered_lib169.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744562.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_189",
+      "name": "Mutect2_filtered_lib169.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744563.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_190",
+      "name": "Mutect2_unfiltered_lib169.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744623.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_191",
+      "name": "Mutect2_unfiltered_lib169.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744585.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_192",
+      "name": "Mutect2_filtered_lib171.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744570.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_193",
+      "name": "Mutect2_filtered_lib171.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744584.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_194",
+      "name": "Mutect2_unfiltered_lib171.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744635.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_195",
+      "name": "Mutect2_unfiltered_lib171.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744621.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_196",
+      "name": "Mutect2_filtered_lib172.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744582.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_197",
+      "name": "Mutect2_filtered_lib172.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744599.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_198",
+      "name": "Mutect2_unfiltered_lib172.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744609.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_199",
+      "name": "Mutect2_unfiltered_lib172.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744598.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_200",
+      "name": "Mutect2_filtered_lib173.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744604.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_201",
+      "name": "Mutect2_filtered_lib173.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744608.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_202",
+      "name": "Mutect2_unfiltered_lib173.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744625.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_203",
+      "name": "Mutect2_unfiltered_lib173.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744616.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_204",
+      "name": "Mutect2_filtered_lib175.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744633.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_205",
+      "name": "Mutect2_filtered_lib175.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744630.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_206",
+      "name": "Mutect2_unfiltered_lib175.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744810.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_207",
+      "name": "Mutect2_unfiltered_lib175.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744647.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_208",
+      "name": "Mutect2_filtered_lib179.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744639.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_209",
+      "name": "Mutect2_filtered_lib179.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744631.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_210",
+      "name": "Mutect2_unfiltered_lib179.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744643.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_211",
+      "name": "Mutect2_unfiltered_lib179.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744653.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_212",
+      "name": "Mutect2_filtered_lib180.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744688.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_213",
+      "name": "Mutect2_filtered_lib180.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744660.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_214",
+      "name": "Mutect2_unfiltered_lib180.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744658.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_215",
+      "name": "Mutect2_unfiltered_lib180.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744674.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_216",
+      "name": "Mutect2_filtered_lib181.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744675.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_217",
+      "name": "Mutect2_filtered_lib181.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744685.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_218",
+      "name": "Mutect2_unfiltered_lib181.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744671.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_219",
+      "name": "Mutect2_unfiltered_lib181.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744693.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_220",
+      "name": "Mutect2_filtered_lib182.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744700.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_221",
+      "name": "Mutect2_filtered_lib182.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744680.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_222",
+      "name": "Mutect2_unfiltered_lib182.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744738.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_223",
+      "name": "Mutect2_unfiltered_lib182.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744695.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_224",
+      "name": "Mutect2_filtered_lib183.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744724.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_225",
+      "name": "Mutect2_filtered_lib183.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744721.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_226",
+      "name": "Mutect2_unfiltered_lib183.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744702.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_227",
+      "name": "Mutect2_unfiltered_lib183.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744723.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_228",
+      "name": "Mutect2_filtered_lib184.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744748.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_229",
+      "name": "Mutect2_filtered_lib184.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744732.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_230",
+      "name": "Mutect2_unfiltered_lib184.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744713.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_231",
+      "name": "Mutect2_unfiltered_lib184.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744716.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_232",
+      "name": "Mutect2_filtered_lib185.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744762.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_233",
+      "name": "Mutect2_filtered_lib185.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744737.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_234",
+      "name": "Mutect2_unfiltered_lib185.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744760.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_235",
+      "name": "Mutect2_unfiltered_lib185.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744742.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_236",
+      "name": "Mutect2_filtered_lib188.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744767.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_237",
+      "name": "Mutect2_filtered_lib188.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744744.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_238",
+      "name": "Mutect2_unfiltered_lib188.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744761.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_239",
+      "name": "Mutect2_unfiltered_lib188.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744800.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_240",
+      "name": "Mutect2_filtered_lib190.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744847.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_241",
+      "name": "Mutect2_filtered_lib190.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744812.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_242",
+      "name": "Mutect2_unfiltered_lib190.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744776.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_243",
+      "name": "Mutect2_unfiltered_lib190.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744791.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_244",
+      "name": "Mutect2_filtered_lib191.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744782.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_245",
+      "name": "Mutect2_filtered_lib191.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744785.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_246",
+      "name": "Mutect2_unfiltered_lib191.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744842.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_247",
+      "name": "Mutect2_unfiltered_lib191.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744790.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_248",
+      "name": "Mutect2_filtered_lib193.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744815.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_249",
+      "name": "Mutect2_filtered_lib193.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744894.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_250",
+      "name": "Mutect2_unfiltered_lib193.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744813.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_251",
+      "name": "Mutect2_unfiltered_lib193.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744886.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_252",
+      "name": "Mutect2_filtered_lib196.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744830.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_253",
+      "name": "Mutect2_filtered_lib196.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744803.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_254",
+      "name": "Mutect2_unfiltered_lib196.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744850.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_255",
+      "name": "Mutect2_unfiltered_lib196.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744822.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_256",
+      "name": "Mutect2_filtered_lib198.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744855.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_257",
+      "name": "Mutect2_filtered_lib198.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744840.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_258",
+      "name": "Mutect2_unfiltered_lib198.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744883.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_259",
+      "name": "Mutect2_unfiltered_lib198.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744947.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_260",
+      "name": "Mutect2_filtered_lib199.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744833.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_261",
+      "name": "Mutect2_filtered_lib199.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744874.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_262",
+      "name": "Mutect2_unfiltered_lib199.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744919.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_263",
+      "name": "Mutect2_unfiltered_lib199.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744862.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_264",
+      "name": "Mutect2_filtered_lib201.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744887.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_265",
+      "name": "Mutect2_filtered_lib201.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744902.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_266",
+      "name": "Mutect2_unfiltered_lib201.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744890.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_267",
+      "name": "Mutect2_unfiltered_lib201.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744881.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_268",
+      "name": "Mutect2_filtered_lib202.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745030.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_269",
+      "name": "Mutect2_filtered_lib202.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744900.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_270",
+      "name": "Mutect2_unfiltered_lib202.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744944.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_271",
+      "name": "Mutect2_unfiltered_lib202.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744939.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_272",
+      "name": "Mutect2_filtered_lib203.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744918.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_273",
+      "name": "Mutect2_filtered_lib203.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744906.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_274",
+      "name": "Mutect2_unfiltered_lib203.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744917.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_275",
+      "name": "Mutect2_unfiltered_lib203.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744907.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_276",
+      "name": "Mutect2_filtered_lib204.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744921.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_277",
+      "name": "Mutect2_filtered_lib204.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745033.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_278",
+      "name": "Mutect2_unfiltered_lib204.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744920.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_279",
+      "name": "Mutect2_unfiltered_lib204.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744922.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_280",
+      "name": "Mutect2_filtered_lib205.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744953.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_281",
+      "name": "Mutect2_filtered_lib205.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744930.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_282",
+      "name": "Mutect2_unfiltered_lib205.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744959.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_283",
+      "name": "Mutect2_unfiltered_lib205.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744954.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_284",
+      "name": "Mutect2_filtered_lib206.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744973.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_285",
+      "name": "Mutect2_filtered_lib206.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744938.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_286",
+      "name": "Mutect2_unfiltered_lib206.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744948.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_287",
+      "name": "Mutect2_unfiltered_lib206.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744956.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_288",
+      "name": "Mutect2_filtered_lib208.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744961.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_289",
+      "name": "Mutect2_filtered_lib208.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744985.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_290",
+      "name": "Mutect2_unfiltered_lib208.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744969.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_291",
+      "name": "Mutect2_unfiltered_lib208.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744992.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_292",
+      "name": "Mutect2_filtered_lib209.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744987.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_293",
+      "name": "Mutect2_filtered_lib209.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745013.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_294",
+      "name": "Mutect2_unfiltered_lib209.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745018.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_295",
+      "name": "Mutect2_unfiltered_lib209.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744981.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_296",
+      "name": "Mutect2_filtered_lib214.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745027.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_297",
+      "name": "Mutect2_filtered_lib214.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745050.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_298",
+      "name": "Mutect2_unfiltered_lib214.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745019.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_299",
+      "name": "Mutect2_unfiltered_lib214.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745014.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_300",
+      "name": "Mutect2_filtered_lib216.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745062.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_301",
+      "name": "Mutect2_filtered_lib216.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745074.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_302",
+      "name": "Mutect2_unfiltered_lib216.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745057.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_303",
+      "name": "Mutect2_unfiltered_lib216.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745059.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_304",
+      "name": "Mutect2_filtered_lib218.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745028.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_305",
+      "name": "Mutect2_filtered_lib218.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745012.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_306",
+      "name": "Mutect2_unfiltered_lib218.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745045.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_307",
+      "name": "Mutect2_unfiltered_lib218.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745038.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_308",
+      "name": "Mutect2_filtered_lib235.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745187.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_309",
+      "name": "Mutect2_filtered_lib235.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745115.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_310",
+      "name": "Mutect2_unfiltered_lib235.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745037.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_311",
+      "name": "Mutect2_unfiltered_lib235.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745026.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_312",
+      "name": "Mutect2_filtered_lib236.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745131.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_313",
+      "name": "Mutect2_filtered_lib236.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745061.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_314",
+      "name": "Mutect2_unfiltered_lib236.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745130.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_315",
+      "name": "Mutect2_unfiltered_lib236.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745070.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_316",
+      "name": "Mutect2_filtered_lib238.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745075.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_317",
+      "name": "Mutect2_filtered_lib238.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745071.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_318",
+      "name": "Mutect2_unfiltered_lib238.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745096.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_319",
+      "name": "Mutect2_unfiltered_lib238.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745047.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_320",
+      "name": "Mutect2_filtered_lib239.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745103.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_321",
+      "name": "Mutect2_filtered_lib239.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745093.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_322",
+      "name": "Mutect2_unfiltered_lib239.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745106.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_323",
+      "name": "Mutect2_unfiltered_lib239.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745085.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_324",
+      "name": "Mutect2_filtered_lib241.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745127.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_325",
+      "name": "Mutect2_filtered_lib241.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745176.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_326",
+      "name": "Mutect2_unfiltered_lib241.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745119.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_327",
+      "name": "Mutect2_unfiltered_lib241.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745199.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_328",
+      "name": "Mutect2_filtered_lib242.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745141.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_329",
+      "name": "Mutect2_filtered_lib242.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745140.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_330",
+      "name": "Mutect2_unfiltered_lib242.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745120.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_331",
+      "name": "Mutect2_unfiltered_lib242.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745200.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_332",
+      "name": "Mutect2_filtered_lib243.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745145.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_333",
+      "name": "Mutect2_filtered_lib243.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745138.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_334",
+      "name": "Mutect2_unfiltered_lib243.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745147.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_335",
+      "name": "Mutect2_unfiltered_lib243.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745157.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_336",
+      "name": "Mutect2_filtered_lib244.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745163.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_337",
+      "name": "Mutect2_filtered_lib244.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745155.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_338",
+      "name": "Mutect2_unfiltered_lib244.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745150.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_339",
+      "name": "Mutect2_unfiltered_lib244.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745175.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_340",
+      "name": "Mutect2_filtered_lib245.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745193.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_341",
+      "name": "Mutect2_filtered_lib245.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745171.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_342",
+      "name": "Mutect2_unfiltered_lib245.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745164.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_343",
+      "name": "Mutect2_unfiltered_lib245.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745186.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_344",
+      "name": "Mutect2_filtered_lib246.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745201.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_345",
+      "name": "Mutect2_filtered_lib246.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745210.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_346",
+      "name": "Mutect2_unfiltered_lib246.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745207.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_347",
+      "name": "Mutect2_unfiltered_lib246.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745267.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_348",
+      "name": "Mutect2_filtered_lib247.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745214.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_349",
+      "name": "Mutect2_filtered_lib247.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745224.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_350",
+      "name": "Mutect2_unfiltered_lib247.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745233.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_351",
+      "name": "Mutect2_unfiltered_lib247.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745238.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_352",
+      "name": "Mutect2_filtered_lib248.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745244.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_353",
+      "name": "Mutect2_filtered_lib248.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745253.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_354",
+      "name": "Mutect2_unfiltered_lib248.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745232.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_355",
+      "name": "Mutect2_unfiltered_lib248.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745297.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_356",
+      "name": "Mutect2_filtered_lib249.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745258.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_357",
+      "name": "Mutect2_filtered_lib249.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745234.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_358",
+      "name": "Mutect2_unfiltered_lib249.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745282.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_359",
+      "name": "Mutect2_unfiltered_lib249.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745255.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_360",
+      "name": "Germline Genomic Variants - Mutect2 Pipeline (from syn31726450)",
+      "description": "Synapse Dataset metadata schema for syn35562837",
+      "contentUrl": "https://www.synapse.org/Synapse:syn35562837",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema",
+      "name": "Germline Genomic Variants - Mutect2 Pipeline (from syn31726450) (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn35562837: 30 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/id/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/name/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/etag/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/type/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/assay/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/sex",
+          "name": "sex",
+          "description": "Column 'sex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/sex/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "sex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/species/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/workflow",
+          "name": "workflow",
+          "description": "Column 'workflow'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31726450_-schema/workflow/source",
+            "fileObject": {
+              "@id": "file_360"
+            },
+            "extract": {
+              "column": "workflow"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

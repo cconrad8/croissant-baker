@@ -1,0 +1,523 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "UFLOR_ABI3_GNGT2",
+  "description": "Dataset 'UFLOR_ABI3_GNGT2' from Synapse (syn27056180)",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "UFLOR_ABI3_GNGT2. Synapse ID: syn27056180. https://www.synapse.org/Synapse:syn27056180",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Abby Vander Linden",
+    "url": "https://www.synapse.org/#!Profile:3420438"
+  },
+  "datePublished": "2026-04-02 12:44:14.476",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn27056180",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "Abi3-10_S10_R1.fastq.gz",
+      "contentSize": "3616964871",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27240673",
+      "encodingFormat": "application/gzip",
+      "md5": "a829bc26128b9146bfdf1e2432d2dae5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "Abi3-10_S10_R2.fastq.gz",
+      "contentSize": "3663041082",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27241035",
+      "encodingFormat": "application/gzip",
+      "md5": "0dcb23d0c4dbc3bb8adfeffc30dc4069"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "Abi3-11_S11_R1.fastq.gz",
+      "contentSize": "2423022656",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27241240",
+      "encodingFormat": "application/gzip",
+      "md5": "fbfed0a0e3971ba2c9f3f7927f3601d3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "Abi3-11_S11_R2.fastq.gz",
+      "contentSize": "2471702610",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27241504",
+      "encodingFormat": "application/gzip",
+      "md5": "fbd9cc125c81b82dcbce2d65e0e44228"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "Abi3-12_S12_R1.fastq.gz",
+      "contentSize": "2303153661",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27241706",
+      "encodingFormat": "application/gzip",
+      "md5": "32b05d1ae400cbfed96753e7a7b754e2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "Abi3-12_S12_R2.fastq.gz",
+      "contentSize": "2336705319",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27241897",
+      "encodingFormat": "application/gzip",
+      "md5": "c69cbfe89193d24263af9420349fb033"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "Abi3-13_S1_R1.fastq.gz",
+      "contentSize": "1536345794",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27242082",
+      "encodingFormat": "application/gzip",
+      "md5": "fb6f24227c3bc22a70c5864aafe6d343"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "Abi3-13_S1_R2.fastq.gz",
+      "contentSize": "1574798225",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27242210",
+      "encodingFormat": "application/gzip",
+      "md5": "4852cf03010e2e9e1b4f8d0c5339cb86"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "Abi3-14_S2_R1.fastq.gz",
+      "contentSize": "2717922024",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27242506",
+      "encodingFormat": "application/gzip",
+      "md5": "65e727b52ef91703ee7b0622c86b03ef"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "Abi3-14_S2_R2.fastq.gz",
+      "contentSize": "2749762196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27242797",
+      "encodingFormat": "application/gzip",
+      "md5": "9f0685de3924a7770c0a0990c75f359d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "Abi3-15_S3_R1.fastq.gz",
+      "contentSize": "4229111596",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27243225",
+      "encodingFormat": "application/gzip",
+      "md5": "ecdaf7120e8cd68a1c3db110f43a4ef0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "Abi3-15_S3_R2.fastq.gz",
+      "contentSize": "4284120882",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27243649",
+      "encodingFormat": "application/gzip",
+      "md5": "36a5608354942680298db63adb0f62fc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "Abi3-16_S4_R1.fastq.gz",
+      "contentSize": "1950247010",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27243762",
+      "encodingFormat": "application/gzip",
+      "md5": "9ee903e59dca328437618da819530d31"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "Abi3-16_S4_R2.fastq.gz",
+      "contentSize": "2019842361",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27243949",
+      "encodingFormat": "application/gzip",
+      "md5": "23c3fc76147531edf7697bad3503e7a6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "Abi3-17_S5_R1.fastq.gz",
+      "contentSize": "2122604109",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27244190",
+      "encodingFormat": "application/gzip",
+      "md5": "502b050dbbc3236d6defa8e4f23da123"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "Abi3-17_S5_R2.fastq.gz",
+      "contentSize": "2144668398",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27244368",
+      "encodingFormat": "application/gzip",
+      "md5": "7816d7d066fa7bbca5f07ba74fc9a995"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "Abi3-18_S6_R1.fastq.gz",
+      "contentSize": "1668365508",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27244567",
+      "encodingFormat": "application/gzip",
+      "md5": "51f2bde355d1af3f48ee4ecab55904a3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "Abi3-18_S6_R2.fastq.gz",
+      "contentSize": "1686029961",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27244644",
+      "encodingFormat": "application/gzip",
+      "md5": "443f3fe4308ea853773acd889450e43d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "Abi3-19_S7_R1.fastq.gz",
+      "contentSize": "2468638717",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27244856",
+      "encodingFormat": "application/gzip",
+      "md5": "e59005531aa80a680947e82b13d40b1b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "Abi3-19_S7_R2.fastq.gz",
+      "contentSize": "2503525771",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27245167",
+      "encodingFormat": "application/gzip",
+      "md5": "070891eb3f00bb9bd9d39ab8817e6258"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "Abi3-1_S1_R1.fastq.gz",
+      "contentSize": "3424499823",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27234745",
+      "encodingFormat": "application/gzip",
+      "md5": "d14665977c4c8810db69822416a02019"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "Abi3-1_S1_R2.fastq.gz",
+      "contentSize": "3496292009",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27235052",
+      "encodingFormat": "application/gzip",
+      "md5": "18a3a8608f744ab493bab0e3b7227bba"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "Abi3-20_S8_R1.fastq.gz",
+      "contentSize": "2921759927",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27245542",
+      "encodingFormat": "application/gzip",
+      "md5": "946fc4576c8c3b3ecc0ac88b295769b7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "Abi3-20_S8_R2.fastq.gz",
+      "contentSize": "2955949156",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27245839",
+      "encodingFormat": "application/gzip",
+      "md5": "aab5b82e0a66e561184eddd937d600f7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "Abi3-21_S9_R1.fastq.gz",
+      "contentSize": "1715496583",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27246040",
+      "encodingFormat": "application/gzip",
+      "md5": "af8fd526be4dd59bae9433ef3c748a9a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "Abi3-21_S9_R2.fastq.gz",
+      "contentSize": "1752961421",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27246149",
+      "encodingFormat": "application/gzip",
+      "md5": "02c407385756f139928b50b2adf4cf7d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "Abi3-22_S10_R1.fastq.gz",
+      "contentSize": "1891861918",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27246304",
+      "encodingFormat": "application/gzip",
+      "md5": "d385b1667307454b13bea89a36286916"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "Abi3-22_S10_R2.fastq.gz",
+      "contentSize": "1911691758",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27246419",
+      "encodingFormat": "application/gzip",
+      "md5": "d552f9a42b206daa5bc4bb44b89fae49"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "Abi3-23_S11_R1.fastq.gz",
+      "contentSize": "6478898279",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27246851",
+      "encodingFormat": "application/gzip",
+      "md5": "d90f91cb2dfdb71cf0b7ce1f84e0c84f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "Abi3-23_S11_R2.fastq.gz",
+      "contentSize": "6623218531",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27247154",
+      "encodingFormat": "application/gzip",
+      "md5": "cf1060a2e6a1593d9032c3782434a51d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "Abi3-24_S12_R1.fastq.gz",
+      "contentSize": "2094342145",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27247236",
+      "encodingFormat": "application/gzip",
+      "md5": "cd1f2690c69d8fdfef2dafa952767087"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "Abi3-24_S12_R2.fastq.gz",
+      "contentSize": "2121432113",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27247349",
+      "encodingFormat": "application/gzip",
+      "md5": "d389379313ed094d48bb7fe6cb0a68df"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "Abi3-2_S2_R1.fastq.gz",
+      "contentSize": "2901687137",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27235317",
+      "encodingFormat": "application/gzip",
+      "md5": "8721dcc648aa4b5d9f851522da95e699"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "Abi3-2_S2_R2.fastq.gz",
+      "contentSize": "2941657248",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27235663",
+      "encodingFormat": "application/gzip",
+      "md5": "b17d1dcd4bfd8d556c61bffed4ec7568"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "Abi3-3_S3_R1.fastq.gz",
+      "contentSize": "3077557873",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27236729",
+      "encodingFormat": "application/gzip",
+      "md5": "1bd463de0c4f87b06efa9221c4b4c5a9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "Abi3-3_S3_R2.fastq.gz",
+      "contentSize": "3123573397",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27237108",
+      "encodingFormat": "application/gzip",
+      "md5": "721f3c4f574b1d9810b8159cec455609"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "Abi3-4_S4_R1.fastq.gz",
+      "contentSize": "2077669539",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27237332",
+      "encodingFormat": "application/gzip",
+      "md5": "455647ddb6f8ed14da6bef0d1a1770aa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "Abi3-4_S4_R2.fastq.gz",
+      "contentSize": "2139054860",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27237521",
+      "encodingFormat": "application/gzip",
+      "md5": "f9af712c1530e6514230450a321ca1a0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "Abi3-5_S5_R1.fastq.gz",
+      "contentSize": "2071690482",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27237650",
+      "encodingFormat": "application/gzip",
+      "md5": "26a2303ce0a68bbcb4dd116a95c1be47"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "Abi3-5_S5_R2.fastq.gz",
+      "contentSize": "2099482878",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27237967",
+      "encodingFormat": "application/gzip",
+      "md5": "3d3aed68953781c21b7101ba8e95e231"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "Abi3-6_S6_R1.fastq.gz",
+      "contentSize": "2085446644",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27238107",
+      "encodingFormat": "application/gzip",
+      "md5": "d5bbc50617fe4d382fb48a8638b22461"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "Abi3-6_S6_R2.fastq.gz",
+      "contentSize": "2116900485",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27238390",
+      "encodingFormat": "application/gzip",
+      "md5": "0f046b4bb683ad3e67703f00f463415b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "Abi3-7_S7_R1.fastq.gz",
+      "contentSize": "1678783448",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27238541",
+      "encodingFormat": "application/gzip",
+      "md5": "d4344c1ce4f2c3cf3d8fc2d9dcdae47f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "Abi3-7_S7_R2.fastq.gz",
+      "contentSize": "1706535000",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27238772",
+      "encodingFormat": "application/gzip",
+      "md5": "70dc2cf8b03d73509181803f9970e25e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "Abi3-8_S8_R1.fastq.gz",
+      "contentSize": "3065799062",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27239069",
+      "encodingFormat": "application/gzip",
+      "md5": "9726e7c36aa201fc816322b0a34a3168"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "Abi3-8_S8_R2.fastq.gz",
+      "contentSize": "3101164737",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27239432",
+      "encodingFormat": "application/gzip",
+      "md5": "9127b5cddbd81661fdf22ee8f7d2fc77"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "Abi3-9_S9_R1.fastq.gz",
+      "contentSize": "3244133789",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27239779",
+      "encodingFormat": "application/gzip",
+      "md5": "0b4c646999700ecb47a7494da2852fe4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "Abi3-9_S9_R2.fastq.gz",
+      "contentSize": "3318830362",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27240204",
+      "encodingFormat": "application/gzip",
+      "md5": "7276394a34ebdf03fd69dc939e92a30d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "UFLOR_ABI3_GNGT2_assay_RNAseq.csv",
+      "contentSize": "3133",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27310075",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "9a78ac14864cc324a490b9cbacbfbb88"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "UFLOR_ABI3_GNGT2_biospecimen.csv",
+      "contentSize": "2047",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27310076",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "04e3d8461849f2d60e94057cde628f04"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "UFLOR_ABI3_GNGT2_individual_animal.csv",
+      "contentSize": "1844",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27250114",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "f92e0fd64e711c55808d44847681e93b"
+    }
+  ]
+}

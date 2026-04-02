@@ -1,0 +1,820 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Germline Genomic Variants - Mutect2 Pipeline (from syn31715607)",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Germline Genomic Variants - Mutect2 Pipeline (from syn31715607). Synapse ID: syn35563961. https://www.synapse.org/Synapse:syn35563961",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:16:49.577",
+  "keywords": [
+    "germline variants",
+    "WGS",
+    "NF1",
+    "MPNST",
+    "Mutect2"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn35563961",
+  "version": "7",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "Mutect2_filtered_JHU002-048.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717010.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "Mutect2_filtered_JHU002-048.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716995.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "Mutect2_unfiltered_JHU002-048.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716946.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "Mutect2_unfiltered_JHU002-048.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716945.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "Mutect2_filtered_JHU023-044.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716964.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "Mutect2_filtered_JHU023-044.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716954.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "Mutect2_unfiltered_JHU023-044.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716968.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "Mutect2_unfiltered_JHU023-044.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716952.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "Mutect2_filtered_JHU023-049.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717037.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "Mutect2_filtered_JHU023-049.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716984.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "Mutect2_unfiltered_JHU023-049.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716965.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "Mutect2_unfiltered_JHU023-049.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717090.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "Mutect2_filtered_JHU031-045.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716991.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "Mutect2_filtered_JHU031-045.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716973.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "Mutect2_unfiltered_JHU031-045.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716961.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "Mutect2_unfiltered_JHU031-045.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716966.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "Mutect2_filtered_JHU031-050.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716990.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "Mutect2_filtered_JHU031-050.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717064.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "Mutect2_unfiltered_JHU031-050.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716988.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "Mutect2_unfiltered_JHU031-050.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716985.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "Mutect2_filtered_WU505-041.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717007.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "Mutect2_filtered_WU505-041.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717014.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "Mutect2_unfiltered_WU505-041.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717021.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "Mutect2_unfiltered_WU505-041.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717002.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "Mutect2_filtered_WU505-046.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717013.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "Mutect2_filtered_WU505-046.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717070.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "Mutect2_unfiltered_WU505-046.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717018.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "Mutect2_unfiltered_WU505-046.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31716992.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "Mutect2_filtered_WU545-042.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717066.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "Mutect2_filtered_WU545-042.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717028.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "Mutect2_unfiltered_WU545-042.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717017.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "Mutect2_unfiltered_WU545-042.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717073.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "Mutect2_filtered_WU545-047.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717077.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "Mutect2_filtered_WU545-047.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717076.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "Mutect2_unfiltered_WU545-047.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717043.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "Mutect2_unfiltered_WU545-047.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31717011.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "Germline Genomic Variants - Mutect2 Pipeline (from syn31715607)",
+      "description": "Synapse Dataset metadata schema for syn35563961",
+      "contentUrl": "https://www.synapse.org/Synapse:syn35563961",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema",
+      "name": "Germline Genomic Variants - Mutect2 Pipeline (from syn31715607) (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn35563961: 30 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/id/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/name/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/etag/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/type/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/assay/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/sex",
+          "name": "sex",
+          "description": "Column 'sex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/sex/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "sex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/species/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/workflow",
+          "name": "workflow",
+          "description": "Column 'workflow'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_Mutect2_Pipeline__from_syn31715607_-schema/workflow/source",
+            "fileObject": {
+              "@id": "file_36"
+            },
+            "extract": {
+              "column": "workflow"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

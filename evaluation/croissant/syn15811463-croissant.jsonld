@@ -1,0 +1,1729 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "MODEL-AD_JAX_GWAS_Gene_Survey",
+  "description": "Dataset 'MODEL-AD_JAX_GWAS_Gene_Survey' from Synapse (syn15811463)",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "MODEL-AD_JAX_GWAS_Gene_Survey. Synapse ID: syn15811463. https://www.synapse.org/Synapse:syn15811463",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Kara Woo",
+    "url": "https://www.synapse.org/#!Profile:3368956"
+  },
+  "datePublished": "2026-04-02 11:36:15.379",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn15811463",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "ApoE4-4148-GES15-02409_ATCACG_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "6714369358",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16977973",
+      "encodingFormat": "application/x-bam",
+      "md5": "71c826479b153898809ebf2fc77456ec"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "ApoE4-4149-GES15-02410_CGATGT_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "6841147450",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16979088",
+      "encodingFormat": "application/x-bam",
+      "md5": "1b6481b85bbb804aa2819a721b57620c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "ApoE4-4155-GES15-02411_TTAGGC_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "6276347078",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16902207",
+      "encodingFormat": "application/x-bam",
+      "md5": "7851686ba0879ec74fe05e7ffddae88f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "ApoE4-4156-GES15-02412_TGACCA_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "5590230363",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982427",
+      "encodingFormat": "application/x-bam",
+      "md5": "6b53350189068604c52f0b25c8db5a07"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "ApoE4-4157-GES15-02413_ACAGTG_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "6819062326",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982520",
+      "encodingFormat": "application/x-bam",
+      "md5": "f68720faf4c323219796ffc626aeb9e1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "ApoE4-4158-GES15-02414_GCCAAT_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "6065029119",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16978823",
+      "encodingFormat": "application/x-bam",
+      "md5": "64cda2b64ad9118353eaa556f8bdebc6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "Apoe-KO-4699-GES15-02415_CAGATC_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "7401405642",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982424",
+      "encodingFormat": "application/x-bam",
+      "md5": "9b36a5348efa28a8dd408b97f53a1478"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "Apoe-KO-4700-GES15-02416_ACTTGA_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "6899128657",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982554",
+      "encodingFormat": "application/x-bam",
+      "md5": "f8abb5fe65f8f77ed91a772ace5696c4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "Apoe-KO-4807-GES15-02417_GATCAG_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "7169889043",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982371",
+      "encodingFormat": "application/x-bam",
+      "md5": "2760461691b519c0f4f9e016970631eb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "Apoe-KO-4808-GES15-02418_TAGCTT_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "7220285697",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16973365",
+      "encodingFormat": "application/x-bam",
+      "md5": "e5c0ce0ab95be2848fbc039715e3d2d7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "Apoe-KO-4809-GES15-02419_GGCTAC_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "6916076206",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982584",
+      "encodingFormat": "application/x-bam",
+      "md5": "df8c283d3f3a0928ecd527f6b239023d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "Apoe-KO-4810-GES15-02420_CTTGTA_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "6992526283",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982473",
+      "encodingFormat": "application/x-bam",
+      "md5": "334ba96832f294bfcb196ea0cd5dba8f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "B6-2415-GES15-02421_AGTCAA_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "5015028110",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16978571",
+      "encodingFormat": "application/x-bam",
+      "md5": "88003e1b662fff103c0e87d2940d495c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "B6-2598-GES15-02422_AGTTCC_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "6735319582",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982391",
+      "encodingFormat": "application/x-bam",
+      "md5": "da678f491bb3f4499b1d567d8ef81515"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "B6-2599-GES15-02423_ATGTCA_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "7095743578",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16978988",
+      "encodingFormat": "application/x-bam",
+      "md5": "2fb5fe8fa1667bc8ccf40491cacb139f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "B6-2600-GES15-02424_CCGTCC_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "6657553232",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982522",
+      "encodingFormat": "application/x-bam",
+      "md5": "f954c934e79a7d5dd07d56a5b79b7550"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "B6-4520-GES15-02425_GTCCGC_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "6513916300",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982533",
+      "encodingFormat": "application/x-bam",
+      "md5": "bec39cbce295172270e2625a59fdf223"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "B6-4521-GES15-02426_GTGAAA_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "6528084328",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16977849",
+      "encodingFormat": "application/x-bam",
+      "md5": "347eb4811cc03c442ca4a7abd5e8eb6e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "Bin-1-6962-GES15-02428_GTTTCG_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "6345977257",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16976678",
+      "encodingFormat": "application/x-bam",
+      "md5": "4a06ed4f907ee6e155f9e79e00737561"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "Bin1-6961-GES15-02427_GTGGCC_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "6004359081",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982447",
+      "encodingFormat": "application/x-bam",
+      "md5": "133874513f7c802e0f61ed4b964b57f6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "Bin1-7565-GES15-02429_CGTACG_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "6724205132",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982531",
+      "encodingFormat": "application/x-bam",
+      "md5": "0a54b7679b7b64ee0fc714c93f5f6d96"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "Bin1-7569-GES15-02430_GAGTGG_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "6566186917",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982570",
+      "encodingFormat": "application/x-bam",
+      "md5": "a35774b09b4e7f7e5bd1bfafaf085b69"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "Bin1-8511-GES15-02431_ACTGAT-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "8181794669",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982449",
+      "encodingFormat": "application/x-bam",
+      "md5": "364d6cc45717e362c24a65b3d502ad03"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "Bin1-8512-GES15-02432_ATTCCT-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "7110646549",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16974571",
+      "encodingFormat": "application/x-bam",
+      "md5": "cddba635c63665befc8505f733ff8e0e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "Cd2ap-4136-GES15-02433_ATCACG-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "7254204630",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16980940",
+      "encodingFormat": "application/x-bam",
+      "md5": "9063696cc89e8fef1f3bf9f2e1e71c87"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "Cd2ap-4822-GES15-02434_CGATGT-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "7149858144",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16980331",
+      "encodingFormat": "application/x-bam",
+      "md5": "e911e8c3d2cd3fb47b64c846ddadab5f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "Cd2ap-4823-GES15-02435_TTAGGC-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "7418108685",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16977297",
+      "encodingFormat": "application/x-bam",
+      "md5": "800ef8b206f8236ff7946e4766896320"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "Cd2ap-4824-GES15-02436_TGACCA-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "7224127316",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16976794",
+      "encodingFormat": "application/x-bam",
+      "md5": "ef0335c8983fd123c5eca456341bc7b8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "Cd2ap-4825-GES15-02437_ACAGTG-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "7731130467",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982563",
+      "encodingFormat": "application/x-bam",
+      "md5": "a010c8c8d10e106c7b4daa6e354efb13"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "Cd2ap-4830-GES15-02438_GCCAAT-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "7450176642",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982558",
+      "encodingFormat": "application/x-bam",
+      "md5": "65299d608c25d26acd1c77097a4ece61"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "Clu-4643-GES15-02439_CAGATC-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "8052028573",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16977757",
+      "encodingFormat": "application/x-bam",
+      "md5": "966a503dc064df7364cc481e4151c519"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "Clu-4644-GES15-02440_ACTTGA-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "8234373683",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16981199",
+      "encodingFormat": "application/x-bam",
+      "md5": "a20f53351defdf234659bc732c060b78"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "Clu-4648-GES15-02441_GATCAG-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "7074394248",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982379",
+      "encodingFormat": "application/x-bam",
+      "md5": "1578bc1451285c56ecaf6cf35731ff27"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "Clu-4655-GES15-02442_TAGCTT-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "7114558637",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982560",
+      "encodingFormat": "application/x-bam",
+      "md5": "068ad9f539540cae8854e719cb68ce16"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "Clu-4658-GES15-02443_GGCTAC-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "6967362464",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16981673",
+      "encodingFormat": "application/x-bam",
+      "md5": "0fb82487c59fff2816120b4d917bfe5f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "Clu-4659-GES15-02444_CTTGTA-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out.bam",
+      "contentSize": "7137320069",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982461",
+      "encodingFormat": "application/x-bam",
+      "md5": "b7b8e0de2cd08759edf2c6e81161ad13"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "ApoE4-4148-GES15-02409_ATCACG_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4010441958",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16973031",
+      "encodingFormat": "application/gzip",
+      "md5": "22751751e4bfee455efda8200e309b51"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "ApoE4-4148-GES15-02409_ATCACG_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4018126246",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982485",
+      "encodingFormat": "application/gzip",
+      "md5": "f312215ed35369698b645b81e76d905a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "ApoE4-4149-GES15-02410_CGATGT_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4002454882",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16979262",
+      "encodingFormat": "application/gzip",
+      "md5": "fc5fb5c2c0f1de387b5db6dd7c82f110"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "ApoE4-4149-GES15-02410_CGATGT_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4142584307",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982494",
+      "encodingFormat": "application/gzip",
+      "md5": "e0c8c4924536b31382ac0c0ccb6d2a29"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "ApoE4-4155-GES15-02411_TTAGGC_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "3782085577",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16977080",
+      "encodingFormat": "application/gzip",
+      "md5": "817dacf72424afb7ad4df728b8f0cddd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "ApoE4-4155-GES15-02411_TTAGGC_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "3865039895",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982344",
+      "encodingFormat": "application/gzip",
+      "md5": "cf834e4204e3da2eabc1f01d7ae7c941"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "ApoE4-4156-GES15-02412_TGACCA_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "3354134864",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16979198",
+      "encodingFormat": "application/gzip",
+      "md5": "f39a12bc2736cf3d3cda41f04c6893a4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "ApoE4-4156-GES15-02412_TGACCA_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "3407856876",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982471",
+      "encodingFormat": "application/gzip",
+      "md5": "27b12dd18d800723ddb930bac9b63f4f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "ApoE4-4157-GES15-02413_ACAGTG_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4103873604",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982545",
+      "encodingFormat": "application/gzip",
+      "md5": "c573affa27287d87aebdd023d903ed82"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "ApoE4-4157-GES15-02413_ACAGTG_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4218059851",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982440",
+      "encodingFormat": "application/gzip",
+      "md5": "15dc6b680510f0f42034e45bf10a0cd5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "ApoE4-4158-GES15-02414_GCCAAT_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "3591901955",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16981256",
+      "encodingFormat": "application/gzip",
+      "md5": "372a86dcfeee7fb8723fba325f7f85c7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "ApoE4-4158-GES15-02414_GCCAAT_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "3652747596",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16972116",
+      "encodingFormat": "application/gzip",
+      "md5": "8fb161b2a6bf1ebab7d73b50871c554a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "Apoe-KO-4699-GES15-02415_CAGATC_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4395472287",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982400",
+      "encodingFormat": "application/gzip",
+      "md5": "a7bb4c83b336926dc08686cef3b41672"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "Apoe-KO-4699-GES15-02415_CAGATC_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4494388393",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982407",
+      "encodingFormat": "application/gzip",
+      "md5": "14dbb21a309660b97989f359685af29b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "Apoe-KO-4700-GES15-02416_ACTTGA_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4107394398",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16979478",
+      "encodingFormat": "application/gzip",
+      "md5": "b0373a2ae20104ef1166e9ac9ab3ddab"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "Apoe-KO-4700-GES15-02416_ACTTGA_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4185339402",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982532",
+      "encodingFormat": "application/gzip",
+      "md5": "7c0d3fee99ccfe91b1c8cb25352b6916"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "Apoe-KO-4807-GES15-02417_GATCAG_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4470903292",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16976284",
+      "encodingFormat": "application/gzip",
+      "md5": "c4374289c8ee0f9891b17057465e0371"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "Apoe-KO-4807-GES15-02417_GATCAG_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4624929188",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982441",
+      "encodingFormat": "application/gzip",
+      "md5": "4439c41607e60fc9a31a33d2945a33c7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "Apoe-KO-4808-GES15-02418_TAGCTT_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4232915501",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982550",
+      "encodingFormat": "application/gzip",
+      "md5": "a232ec7c8a9cf736627e29faca3ea21e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "Apoe-KO-4808-GES15-02418_TAGCTT_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4333684323",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16980542",
+      "encodingFormat": "application/gzip",
+      "md5": "3e5fd1373dc4fa445643472e60cf9b94"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "Apoe-KO-4809-GES15-02419_GGCTAC_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4147574213",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16981484",
+      "encodingFormat": "application/gzip",
+      "md5": "bf5c19dee0f269e730ebb5288567c7c1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "Apoe-KO-4809-GES15-02419_GGCTAC_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4268064027",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16978379",
+      "encodingFormat": "application/gzip",
+      "md5": "2b5f176bb69aa04327e9cc0c5083930e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "Apoe-KO-4810-GES15-02420_CTTGTA_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4095099244",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16971397",
+      "encodingFormat": "application/gzip",
+      "md5": "1969c7fc4be5ad26c89c4efc33474ff7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "Apoe-KO-4810-GES15-02420_CTTGTA_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4218939889",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16975110",
+      "encodingFormat": "application/gzip",
+      "md5": "90b2e2fec31c85c22aa61aaf784f517c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "B6-2415-GES15-02421_AGTCAA_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "2990306577",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982488",
+      "encodingFormat": "application/gzip",
+      "md5": "22f5796520d8ff5a6de82a7ac83452bd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "B6-2415-GES15-02421_AGTCAA_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "3020367108",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16971367",
+      "encodingFormat": "application/gzip",
+      "md5": "71d1b716f308ed5ca288d1266a58dc57"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "B6-2598-GES15-02422_AGTTCC_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "3989144631",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982572",
+      "encodingFormat": "application/gzip",
+      "md5": "0fe6a20b09deb60b17bdd79494d9bd9c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "B6-2598-GES15-02422_AGTTCC_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4090483728",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16975896",
+      "encodingFormat": "application/gzip",
+      "md5": "9a2a0aa808a69b1b6c6c342c305eff5c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "B6-2599-GES15-02423_ATGTCA_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4274389072",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16978142",
+      "encodingFormat": "application/gzip",
+      "md5": "27c75a3215ec4101d362935f12c66092"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "B6-2599-GES15-02423_ATGTCA_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4415260151",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982546",
+      "encodingFormat": "application/gzip",
+      "md5": "dd19b8a10127c4ea06065c341f34e259"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "B6-2600-GES15-02424_CCGTCC_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "3928441166",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16981075",
+      "encodingFormat": "application/gzip",
+      "md5": "b32e737b2fe84062ca669c9cd58efc47"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "B6-2600-GES15-02424_CCGTCC_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4001191819",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16971475",
+      "encodingFormat": "application/gzip",
+      "md5": "cf62863ee31f60ab224f1053438e9f28"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "B6-4520-GES15-02425_GTCCGC_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "3865855050",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16974877",
+      "encodingFormat": "application/gzip",
+      "md5": "f92889d7af0bc60123a1eeb1a1364b46"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "B6-4520-GES15-02425_GTCCGC_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "3943130388",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982467",
+      "encodingFormat": "application/gzip",
+      "md5": "7d33db3c926907252f76deb769a292bf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "B6-4521-GES15-02426_GTGAAA_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "3858820281",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16978060",
+      "encodingFormat": "application/gzip",
+      "md5": "3370faa9d4a2b51277d378a6ce8f8be3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "B6-4521-GES15-02426_GTGAAA_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "3919088977",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982593",
+      "encodingFormat": "application/gzip",
+      "md5": "a823296f42f9b5156660081e8cbd8618"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "Bin-1-6962-GES15-02428_GTTTCG_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "3765490868",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982487",
+      "encodingFormat": "application/gzip",
+      "md5": "a3cd5e6a31c7f65a4810605e002ac5f1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "Bin-1-6962-GES15-02428_GTTTCG_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "3882436994",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982468",
+      "encodingFormat": "application/gzip",
+      "md5": "bb096f3085313af4b25f0bb26c477146"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "Bin1-6961-GES15-02427_GTGGCC_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "3508253351",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16978313",
+      "encodingFormat": "application/gzip",
+      "md5": "a0ddd664b81948d99f37e953a55e4fd8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "Bin1-6961-GES15-02427_GTGGCC_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "3581579761",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982395",
+      "encodingFormat": "application/gzip",
+      "md5": "857b041b7df82b4682e33e1352896748"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "Bin1-7565-GES15-02429_CGTACG_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "3935576023",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16974768",
+      "encodingFormat": "application/gzip",
+      "md5": "79c9c0e5f30185927dfca882308216c1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "Bin1-7565-GES15-02429_CGTACG_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4064598618",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982444",
+      "encodingFormat": "application/gzip",
+      "md5": "77c1a7af0217da0a52f983105040712b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "Bin1-7569-GES15-02430_GAGTGG_AC6GK3ANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "3856436879",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16977597",
+      "encodingFormat": "application/gzip",
+      "md5": "9fbc22298f362a655adb6bc5fc93175c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "Bin1-7569-GES15-02430_GAGTGG_AC6GK3ANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4052739313",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16980187",
+      "encodingFormat": "application/gzip",
+      "md5": "879a9ef2d0267b8caa37a6a5c641164a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "Bin1-8511-GES15-02431_ACTGAT-_AC6R3HANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4805201821",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16978893",
+      "encodingFormat": "application/gzip",
+      "md5": "80a80aa3b0f6d3790f0ee5cb9579bee0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "Bin1-8511-GES15-02431_ACTGAT-_AC6R3HANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4837819402",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16972707",
+      "encodingFormat": "application/gzip",
+      "md5": "26912b3ec6e8dbcbb9a5c8c25fcdbf0c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "Bin1-8512-GES15-02432_ATTCCT-_AC6R3HANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4214134826",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982537",
+      "encodingFormat": "application/gzip",
+      "md5": "9bf3cefe5af76022d14dae7d0260dec4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "Bin1-8512-GES15-02432_ATTCCT-_AC6R3HANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4216798312",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16977033",
+      "encodingFormat": "application/gzip",
+      "md5": "57c1254cdc5da0d767145e00871aa9d7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "Cd2ap-4136-GES15-02433_ATCACG-_AC6R3HANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4258172647",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16971865",
+      "encodingFormat": "application/gzip",
+      "md5": "f8f7bb75176301eec9470f3bb8277b52"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "Cd2ap-4136-GES15-02433_ATCACG-_AC6R3HANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4263149672",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982551",
+      "encodingFormat": "application/gzip",
+      "md5": "8609fd6ab7d0e9aa768761ab9d00ed2c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "Cd2ap-4822-GES15-02434_CGATGT-_AC6R3HANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4141026218",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16974181",
+      "encodingFormat": "application/gzip",
+      "md5": "1e05df7bb41e1d545c57b8973c3ceee9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "Cd2ap-4822-GES15-02434_CGATGT-_AC6R3HANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4241120122",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982595",
+      "encodingFormat": "application/gzip",
+      "md5": "9244add785c0dff78b5fe6786692b453"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "Cd2ap-4823-GES15-02435_TTAGGC-_AC6R3HANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4345618112",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16976074",
+      "encodingFormat": "application/gzip",
+      "md5": "45d8b813144e321e3edb108a3cc78d61"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "Cd2ap-4823-GES15-02435_TTAGGC-_AC6R3HANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4414237269",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982401",
+      "encodingFormat": "application/gzip",
+      "md5": "bf0567558c72445a75fe96a86ce3dd0e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "Cd2ap-4824-GES15-02436_TGACCA-_AC6R3HANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4257188395",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982559",
+      "encodingFormat": "application/gzip",
+      "md5": "45ec26053c5cda07c71d16d7245a1bb3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "Cd2ap-4824-GES15-02436_TGACCA-_AC6R3HANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4281571915",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982597",
+      "encodingFormat": "application/gzip",
+      "md5": "a9639d2e478f2563990ca6c652825238"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "Cd2ap-4825-GES15-02437_ACAGTG-_AC6R3HANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4497470364",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16975354",
+      "encodingFormat": "application/gzip",
+      "md5": "1080aa1f9f7742445c5f608ddd951769"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "Cd2ap-4825-GES15-02437_ACAGTG-_AC6R3HANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4583630513",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16977208",
+      "encodingFormat": "application/gzip",
+      "md5": "3adf17d597f49d605c3c2f17dbcdf78f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "Cd2ap-4830-GES15-02438_GCCAAT-_AC6R3HANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4368649481",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16981739",
+      "encodingFormat": "application/gzip",
+      "md5": "e97de2934ccb442dbbd148baa87d898b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "Cd2ap-4830-GES15-02438_GCCAAT-_AC6R3HANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4398744056",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16981430",
+      "encodingFormat": "application/gzip",
+      "md5": "54572a281688aaf55ecf4cae383d4654"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "Clu-4643-GES15-02439_CAGATC-_AC6R3HANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4789747344",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982476",
+      "encodingFormat": "application/gzip",
+      "md5": "6afc9a5a4adb52c3a69c3900cbc87256"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "Clu-4643-GES15-02439_CAGATC-_AC6R3HANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4870451745",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16979908",
+      "encodingFormat": "application/gzip",
+      "md5": "e9787074735ea446d229c4cd4ddb61ca"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "Clu-4644-GES15-02440_ACTTGA-_AC6R3HANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4914652038",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982504",
+      "encodingFormat": "application/gzip",
+      "md5": "52cf8ae635a548faacf2bc5a7bb742b0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "Clu-4644-GES15-02440_ACTTGA-_AC6R3HANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4961575845",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982526",
+      "encodingFormat": "application/gzip",
+      "md5": "9b2c7a723d6c5cb3b155ca200389b0c8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "Clu-4648-GES15-02441_GATCAG-_AC6R3HANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4441109696",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982500",
+      "encodingFormat": "application/gzip",
+      "md5": "7b7979ef93eecb4a53938f2caae6bc26"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "Clu-4648-GES15-02441_GATCAG-_AC6R3HANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4534626300",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982336",
+      "encodingFormat": "application/gzip",
+      "md5": "743d3258243739475dc0714a7df71062"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "Clu-4655-GES15-02442_TAGCTT-_AC6R3HANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4289797878",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16980090",
+      "encodingFormat": "application/gzip",
+      "md5": "0cdde9f7d0004225bd68b74a25c61ef7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "Clu-4655-GES15-02442_TAGCTT-_AC6R3HANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4336033764",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16976399",
+      "encodingFormat": "application/gzip",
+      "md5": "04ac4ab12dc34c582c8ffd141bcb0d25"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "Clu-4658-GES15-02443_GGCTAC-_AC6R3HANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4156917868",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16973469",
+      "encodingFormat": "application/gzip",
+      "md5": "d862b03524a24c7345d3a5e48dc01a7e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "Clu-4658-GES15-02443_GGCTAC-_AC6R3HANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4253506331",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16972939",
+      "encodingFormat": "application/gzip",
+      "md5": "16397d2da82030bf8bef5deecb46faf6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "Clu-4659-GES15-02444_CTTGTA-_AC6R3HANXX_LaneALL_001_R1.fastq.gz",
+      "contentSize": "4189257409",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982505",
+      "encodingFormat": "application/gzip",
+      "md5": "2564c2aabcc7aed070a582d7f03efad9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "Clu-4659-GES15-02444_CTTGTA-_AC6R3HANXX_LaneALL_001_R2.fastq.gz",
+      "contentSize": "4264284255",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16981932",
+      "encodingFormat": "application/gzip",
+      "md5": "abeb25600d769295488c05732d274aa0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "ApoE4-4148-GES15-02409_ATCACG_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "841739",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16975225",
+      "encodingFormat": "text/plain",
+      "md5": "c5a224d28935de90353e69637cf5562a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "ApoE4-4148-GES15-02409_ATCACG_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3665467",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982421",
+      "encodingFormat": "application/octet-stream",
+      "md5": "3e39c916ef22bd4f50aaadb34151f560"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "ApoE4-4149-GES15-02410_CGATGT_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "842270",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982502",
+      "encodingFormat": "text/plain",
+      "md5": "367a4f420ad8cfbeaab1c71b7d7f7899"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "ApoE4-4149-GES15-02410_CGATGT_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3665962",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982578",
+      "encodingFormat": "application/octet-stream",
+      "md5": "30e12a1b4d362634c705d9d736f62769"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "ApoE4-4155-GES15-02411_TTAGGC_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "841170",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16977858",
+      "encodingFormat": "text/plain",
+      "md5": "ff5b11c22b842f8faef12ce87b6e69ac"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "ApoE4-4155-GES15-02411_TTAGGC_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3664961",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982585",
+      "encodingFormat": "application/octet-stream",
+      "md5": "6c7c5836703e8e61f43e1ba0a612a4a0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "ApoE4-4156-GES15-02412_TGACCA_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "840272",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982474",
+      "encodingFormat": "text/plain",
+      "md5": "98dee9999e54730c20afa2c7b1d30ad1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "ApoE4-4156-GES15-02412_TGACCA_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3664280",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982372",
+      "encodingFormat": "application/octet-stream",
+      "md5": "eafb15187b1dc1a92b1b040d1189205f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_116",
+      "name": "ApoE4-4157-GES15-02413_ACAGTG_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "841904",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982491",
+      "encodingFormat": "text/plain",
+      "md5": "2cf32e2a57e6a3a2c0b13150c8f1dca2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_117",
+      "name": "ApoE4-4157-GES15-02413_ACAGTG_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3665830",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16981381",
+      "encodingFormat": "application/octet-stream",
+      "md5": "5f64381aa347cd828464a779e8318b52"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_118",
+      "name": "ApoE4-4158-GES15-02414_GCCAAT_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "840962",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982385",
+      "encodingFormat": "text/plain",
+      "md5": "aae30bc78b4541ab836dbe7b14233885"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_119",
+      "name": "ApoE4-4158-GES15-02414_GCCAAT_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3664760",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982425",
+      "encodingFormat": "application/octet-stream",
+      "md5": "321d0b45dfc56febd498b7b40d5484fb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_120",
+      "name": "Apoe-KO-4699-GES15-02415_CAGATC_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "843149",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982406",
+      "encodingFormat": "text/plain",
+      "md5": "3ddf358e4cb8cd3abfdd519287263db6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_121",
+      "name": "Apoe-KO-4699-GES15-02415_CAGATC_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3667091",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16972943",
+      "encodingFormat": "application/octet-stream",
+      "md5": "49edd2c33c69e3e5924f6bc8e293ef73"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_122",
+      "name": "Apoe-KO-4700-GES15-02416_ACTTGA_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "842358",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16979488",
+      "encodingFormat": "text/plain",
+      "md5": "51fb668fc38b129143a860894fcc8547"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_123",
+      "name": "Apoe-KO-4700-GES15-02416_ACTTGA_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3666280",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16976683",
+      "encodingFormat": "application/octet-stream",
+      "md5": "62c6e1286a178025313b9f6ee11a3eb2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_124",
+      "name": "Apoe-KO-4807-GES15-02417_GATCAG_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "842560",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16978149",
+      "encodingFormat": "text/plain",
+      "md5": "4fd0f188031c6d726947d82514cae311"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_125",
+      "name": "Apoe-KO-4807-GES15-02417_GATCAG_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3666432",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982541",
+      "encodingFormat": "application/octet-stream",
+      "md5": "6a6c25ef7ed0c6eb6fc2b4026ada461a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_126",
+      "name": "Apoe-KO-4808-GES15-02418_TAGCTT_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "842227",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16975357",
+      "encodingFormat": "text/plain",
+      "md5": "057ebb786b11b13292f79c121f32a49d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_127",
+      "name": "Apoe-KO-4808-GES15-02418_TAGCTT_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3665707",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16981015",
+      "encodingFormat": "application/octet-stream",
+      "md5": "5c767335d7254fc910ee582b822679b6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_128",
+      "name": "Apoe-KO-4809-GES15-02419_GGCTAC_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "842462",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16980613",
+      "encodingFormat": "text/plain",
+      "md5": "1008fe6cfb1b532ff1f3100cbf537087"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_129",
+      "name": "Apoe-KO-4809-GES15-02419_GGCTAC_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3666891",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982490",
+      "encodingFormat": "application/octet-stream",
+      "md5": "c5d445e78dbeccedd341a70dee5742c6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_130",
+      "name": "Apoe-KO-4810-GES15-02420_CTTGTA_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "841911",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16902205",
+      "encodingFormat": "text/plain",
+      "md5": "0d8e115084300eb6bb9c90d41c80b221"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_131",
+      "name": "Apoe-KO-4810-GES15-02420_CTTGTA_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3665179",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982538",
+      "encodingFormat": "application/octet-stream",
+      "md5": "71474706bd0508c5c2825fb0d3086d3b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_132",
+      "name": "B6-2415-GES15-02421_AGTCAA_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "839505",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16979611",
+      "encodingFormat": "text/plain",
+      "md5": "fcafc2107be6346ced50add3231ef5b7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_133",
+      "name": "B6-2415-GES15-02421_AGTCAA_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3663548",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982411",
+      "encodingFormat": "application/octet-stream",
+      "md5": "f5b73507120eec3bf406ce03ab270ea7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_134",
+      "name": "B6-2598-GES15-02422_AGTTCC_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "841889",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16974979",
+      "encodingFormat": "text/plain",
+      "md5": "e272dbbbbc9f723effca6c4b82dd6353"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_135",
+      "name": "B6-2598-GES15-02422_AGTTCC_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3665609",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16979143",
+      "encodingFormat": "application/octet-stream",
+      "md5": "581551cdc0a1724dba8b70d9bbb44af4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_136",
+      "name": "B6-2599-GES15-02423_ATGTCA_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "842709",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982557",
+      "encodingFormat": "text/plain",
+      "md5": "a61e83df180db67222963cb6ada0bde0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_137",
+      "name": "B6-2599-GES15-02423_ATGTCA_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3666649",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982110",
+      "encodingFormat": "application/octet-stream",
+      "md5": "736c56d27eb8f3cfba7cd112f7fcc9a2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_138",
+      "name": "B6-2600-GES15-02424_CCGTCC_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "841766",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16977855",
+      "encodingFormat": "text/plain",
+      "md5": "f573d0db678836601baa1d1349a3e0dd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_139",
+      "name": "B6-2600-GES15-02424_CCGTCC_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3665620",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982464",
+      "encodingFormat": "application/octet-stream",
+      "md5": "b6a3f3f3f6bdbe69681a143e54248aa5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_140",
+      "name": "B6-4520-GES15-02425_GTCCGC_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "841882",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982378",
+      "encodingFormat": "text/plain",
+      "md5": "6a9120d53d181d99933d7d02fe36e9ea"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_141",
+      "name": "B6-4520-GES15-02425_GTCCGC_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3665756",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982403",
+      "encodingFormat": "application/octet-stream",
+      "md5": "96ec46b7e0d5e3dce7f1c04c17051748"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_142",
+      "name": "B6-4521-GES15-02426_GTGAAA_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "841543",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16977851",
+      "encodingFormat": "text/plain",
+      "md5": "c698c0b921c686a88dfd01128ad0ebc5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_143",
+      "name": "B6-4521-GES15-02426_GTGAAA_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3665229",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982383",
+      "encodingFormat": "application/octet-stream",
+      "md5": "124323952bbafb8a6e2d5d09e1c547c6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_144",
+      "name": "Bin-1-6962-GES15-02428_GTTTCG_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "841583",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982417",
+      "encodingFormat": "text/plain",
+      "md5": "aa33662fb49106adcf9f1efffde73ae4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_145",
+      "name": "Bin-1-6962-GES15-02428_GTTTCG_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3665287",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982477",
+      "encodingFormat": "application/octet-stream",
+      "md5": "e71302a5204cc29c76abde1a00404635"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_146",
+      "name": "Bin1-6961-GES15-02427_GTGGCC_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "840984",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16977146",
+      "encodingFormat": "text/plain",
+      "md5": "5c51a828a852af56b94d1b71fb244cdb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_147",
+      "name": "Bin1-6961-GES15-02427_GTGGCC_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3664987",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982394",
+      "encodingFormat": "application/octet-stream",
+      "md5": "fec4ba4073dd19ceba59a49a934767d5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_148",
+      "name": "Bin1-7565-GES15-02429_CGTACG_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "841898",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982415",
+      "encodingFormat": "text/plain",
+      "md5": "089b489ebd9ac53831252584649ebe9c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_149",
+      "name": "Bin1-7565-GES15-02429_CGTACG_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3665505",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16978063",
+      "encodingFormat": "application/octet-stream",
+      "md5": "f31d5f9e922167029c1658c42ff7e691"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_150",
+      "name": "Bin1-7569-GES15-02430_GAGTGG_AC6GK3ANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "841999",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16972463",
+      "encodingFormat": "text/plain",
+      "md5": "b80e1e0f7213b81cf2a1bef4906aadc4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_151",
+      "name": "Bin1-7569-GES15-02430_GAGTGG_AC6GK3ANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3665538",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16979481",
+      "encodingFormat": "application/octet-stream",
+      "md5": "864515fca85313ab471c07e3cb14b1c9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_152",
+      "name": "Bin1-8511-GES15-02431_ACTGAT-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "842821",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982549",
+      "encodingFormat": "text/plain",
+      "md5": "c51a41f32449c933cd6838e4f525ef14"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_153",
+      "name": "Bin1-8511-GES15-02431_ACTGAT-_AC6R3HANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3666544",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16972711",
+      "encodingFormat": "application/octet-stream",
+      "md5": "44f492491bd7f7df3a2c480f12a4934c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_154",
+      "name": "Bin1-8512-GES15-02432_ATTCCT-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "841685",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982413",
+      "encodingFormat": "text/plain",
+      "md5": "0981b667f667d413756ee64785d05d75"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_155",
+      "name": "Bin1-8512-GES15-02432_ATTCCT-_AC6R3HANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3665817",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982103",
+      "encodingFormat": "application/octet-stream",
+      "md5": "17d7054b22b3df59c41a1060b33e41ac"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_156",
+      "name": "Cd2ap-4136-GES15-02433_ATCACG-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "841667",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982414",
+      "encodingFormat": "text/plain",
+      "md5": "a29ba43a5321f329c0ffff0715c671cf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_157",
+      "name": "Cd2ap-4136-GES15-02433_ATCACG-_AC6R3HANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3665674",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16980615",
+      "encodingFormat": "application/octet-stream",
+      "md5": "1c630d005f9286cb3e0362698b1570ca"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_158",
+      "name": "Cd2ap-4822-GES15-02434_CGATGT-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "841723",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982429",
+      "encodingFormat": "text/plain",
+      "md5": "3a42f5a07f8696940cf025f7ba828220"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_159",
+      "name": "Cd2ap-4822-GES15-02434_CGATGT-_AC6R3HANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3665591",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16975608",
+      "encodingFormat": "application/octet-stream",
+      "md5": "6a51b76f42976d4c1606ad7d8d073965"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_160",
+      "name": "Cd2ap-4823-GES15-02435_TTAGGC-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "841962",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982579",
+      "encodingFormat": "text/plain",
+      "md5": "00b340a5eb27ba0893a4a315526f5bda"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_161",
+      "name": "Cd2ap-4823-GES15-02435_TTAGGC-_AC6R3HANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3665691",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16975362",
+      "encodingFormat": "application/octet-stream",
+      "md5": "ac2d6cf47dee2a9aa72728e885150961"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_162",
+      "name": "Cd2ap-4824-GES15-02436_TGACCA-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "841660",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16980942",
+      "encodingFormat": "text/plain",
+      "md5": "0e9fd6c20aae200d662b1f9e6424b796"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_163",
+      "name": "Cd2ap-4824-GES15-02436_TGACCA-_AC6R3HANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3665407",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16975227",
+      "encodingFormat": "application/octet-stream",
+      "md5": "569276b8ebedcf2916315d0e7130f108"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_164",
+      "name": "Cd2ap-4825-GES15-02437_ACAGTG-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "842358",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982452",
+      "encodingFormat": "text/plain",
+      "md5": "b6440279fa9f80d1ab60b06f4abcdb9f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_165",
+      "name": "Cd2ap-4825-GES15-02437_ACAGTG-_AC6R3HANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3666061",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16977300",
+      "encodingFormat": "application/octet-stream",
+      "md5": "279590c29abaac4334f4641771cb516d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_166",
+      "name": "Cd2ap-4830-GES15-02438_GCCAAT-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "842228",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16981833",
+      "encodingFormat": "text/plain",
+      "md5": "809d4f7932cf87a262510966ad4af883"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_167",
+      "name": "Cd2ap-4830-GES15-02438_GCCAAT-_AC6R3HANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3666195",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16980544",
+      "encodingFormat": "application/octet-stream",
+      "md5": "448e93375c0a1efa456cc2f2553be001"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_168",
+      "name": "Clu-4643-GES15-02439_CAGATC-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "842893",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982412",
+      "encodingFormat": "text/plain",
+      "md5": "dc038bbb547ae72033677e03e3a98c12"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_169",
+      "name": "Clu-4643-GES15-02439_CAGATC-_AC6R3HANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3666715",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16973189",
+      "encodingFormat": "application/octet-stream",
+      "md5": "a47d1298623d4a36586b139cbd058c94"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_170",
+      "name": "Clu-4644-GES15-02440_ACTTGA-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "843053",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982548",
+      "encodingFormat": "text/plain",
+      "md5": "f965eb6fe9f1a3989961df140c12754a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_171",
+      "name": "Clu-4644-GES15-02440_ACTTGA-_AC6R3HANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3667169",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982499",
+      "encodingFormat": "application/octet-stream",
+      "md5": "a15fe078755714b540c881240b2f4f49"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_172",
+      "name": "Clu-4648-GES15-02441_GATCAG-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "842010",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16980425",
+      "encodingFormat": "text/plain",
+      "md5": "f03ee08dfabc7c6d6c4ba5bbf71db76f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_173",
+      "name": "Clu-4648-GES15-02441_GATCAG-_AC6R3HANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3666236",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982569",
+      "encodingFormat": "application/octet-stream",
+      "md5": "8d588e5aa587a478c3240292abe2d1fa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_174",
+      "name": "Clu-4655-GES15-02442_TAGCTT-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "841992",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982434",
+      "encodingFormat": "text/plain",
+      "md5": "a3ce393022fb70a811bb3a444412158d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_175",
+      "name": "Clu-4655-GES15-02442_TAGCTT-_AC6R3HANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3666108",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16973721",
+      "encodingFormat": "application/octet-stream",
+      "md5": "f05569af42d755ca109b2a2dfadf47cd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_176",
+      "name": "Clu-4658-GES15-02443_GGCTAC-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "841405",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16902211",
+      "encodingFormat": "text/plain",
+      "md5": "035ecd7041218d414378cf6604b66388"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_177",
+      "name": "Clu-4658-GES15-02443_GGCTAC-_AC6R3HANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3665372",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16975223",
+      "encodingFormat": "application/octet-stream",
+      "md5": "b993092ef7b5ec18dc2980f21c27d05a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_178",
+      "name": "Clu-4659-GES15-02444_CTTGTA-_AC6R3HANXX_LaneALL_001_STARAligned.sortedByCoord.out_htseq_count.txt",
+      "contentSize": "841822",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16981836",
+      "encodingFormat": "text/plain",
+      "md5": "99edfa45c5bec5a345379cb1c89f9d8c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_179",
+      "name": "Clu-4659-GES15-02444_CTTGTA-_AC6R3HANXX_LaneALL_001_rsem.genes.results",
+      "contentSize": "3665822",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982535",
+      "encodingFormat": "application/octet-stream",
+      "md5": "327240f3ff8dc7eb07883ee2dd9e6c1e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_180",
+      "name": "htseqcounts_GWAS.txt",
+      "contentSize": "6700965",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25114691",
+      "encodingFormat": "text/plain",
+      "md5": "30c4f51660b9f6b8fc0020913ef79bb6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_181",
+      "name": "tpm_gene_GWAS.txt",
+      "contentSize": "11486602",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25114714",
+      "encodingFormat": "text/plain",
+      "md5": "9b5f79f7e05cda159b9f68efad1ce169"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_182",
+      "name": "MODEL-AD_JAX_GWAS_Gene_Survey_assay_RNAseq_metadata.csv",
+      "contentSize": "2961",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982436",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "90f7be0a68620d6bf2a73e5904d2ddc2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_183",
+      "name": "MODEL-AD_JAX_GWAS_Gene_Survey_biospecimen_metadata.csv",
+      "contentSize": "1565",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16982469",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "121991a62c610ed10cbe3b0e030a10ac"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_184",
+      "name": "MODEL-AD_JAX_GWAS_Gene_Survey_individual_metadata.csv",
+      "contentSize": "6379",
+      "contentUrl": "https://www.synapse.org/Synapse:syn17008896",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "6839b183fddd3fc7f287476fa1971d8d"
+    }
+  ]
+}

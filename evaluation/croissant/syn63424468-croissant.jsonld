@@ -1,0 +1,762 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "AMP RA.SLE Genomic Variants v2",
+  "description": "SNP array profiling of AMP RA/SLE RA, SLE, OA, RA at-risk, and control subjects.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "AMP RA.SLE Genomic Variants v2. https://doi.org/10.7303/syn63424468.2",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Jessica Vera",
+    "url": "https://www.synapse.org/#!Profile:3499646"
+  },
+  "datePublished": "2026-04-02 12:49:04.335",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn63424468",
+  "version": "3",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "AMP-RA.SLE_1kG_UMAP.pdf",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63424467.1",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "AMP-RA.SLE_independentSNPs_1kG_Populations_PCA.pdf",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63424466.1",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "AMP-RA.SLE_HLA_imputed_hg38.bed",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53647773.2",
+      "encodingFormat": "text/x-bed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "AMP-RA.SLE_HLA_imputed_hg38.bim",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53647774.2",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "AMP-RA.SLE_HLA_imputed_hg38.fam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53647775.2",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "AMP-RA.SLE_HLA_imputed_hg38.nosex.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53647760.2",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "AMP-RA.SLE_TOPMed_imputed_hg38.bed",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53648082.2",
+      "encodingFormat": "text/x-bed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "AMP-RA.SLE_TOPMed_imputed_hg38.bim",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53648033.2",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "AMP-RA.SLE_TOPMed_imputed_hg38.fam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53647776.2",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "AMP-RA.SLE_TOPMed_imputed_hg38.hh.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53648035.2",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "AMP-RA.SLE_TOPMed_imputed_hg38.nosex.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53647865.2",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "AMP-RA.SLE_GenomicVariants_v2.biospecimen_metadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63424465.1",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "AMP-RA.SLE_HLA_imputed_hg38.log",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53647759.2",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "AMP-RA.SLE_HLA_imputed_hg38_data_processed_output.README.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53648095.2",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "AMP-RA.SLE_TOPMed_imputed_hg38.log",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53647863.2",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "AMP-RA.SLE_TOPMed_imputed_hg38_data_processed_output.README.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53648094.2",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "AMP-RA.SLE_genotyped_hg38.log",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53648091.2",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "AMP-RA.SLE_genotyped_hg38_data_processed_output.README.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53648093.2",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "AMP-RA.SLE_genotyped_hg38.bed",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53648097.2",
+      "encodingFormat": "text/x-bed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "AMP-RA.SLE_genotyped_hg38.bim",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53648096.2",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "AMP-RA.SLE_genotyped_hg38.fam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53648089.2",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "AMP-RA.SLE_genotyped_hg38.hh.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53648090.2",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "AMP-RA.SLE_genotyped_hg38.nosex.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53648092.2",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "AMP-RA.SLE_clinical.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn47136972.4",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "AMP RA.SLE Genomic Variants v2",
+      "description": "Synapse Dataset metadata schema for syn63424468",
+      "contentUrl": "https://www.synapse.org/Synapse:syn63424468",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema",
+      "name": "AMP RA.SLE Genomic Variants v2 (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn63424468: 32 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/id/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/name/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/assay/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/metadataType",
+          "name": "metadataType",
+          "description": "Column 'metadataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/metadataType/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "metadataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/tissue",
+          "name": "tissue",
+          "description": "Column 'tissue'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/tissue/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "tissue"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/genomicReference",
+          "name": "genomicReference",
+          "description": "Column 'genomicReference'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/genomicReference/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "genomicReference"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/isMultiSpecimen",
+          "name": "isMultiSpecimen",
+          "description": "Column 'isMultiSpecimen'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/isMultiSpecimen/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "isMultiSpecimen"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/platform",
+          "name": "platform",
+          "description": "Column 'platform'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/platform/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "platform"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/program",
+          "name": "program",
+          "description": "Column 'program'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/program/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "program"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/project",
+          "name": "project",
+          "description": "Column 'project'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/project/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "project"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/study",
+          "name": "study",
+          "description": "Column 'study'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/study/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "study"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/etag/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/path",
+          "name": "path",
+          "description": "Column 'path'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/path/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "path"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/dataFileName",
+          "name": "dataFileName",
+          "description": "Column 'dataFileName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/dataFileName/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "dataFileName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/dataFileConcreteType",
+          "name": "dataFileConcreteType",
+          "description": "Column 'dataFileConcreteType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/dataFileConcreteType/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "dataFileConcreteType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/dataFileBucket",
+          "name": "dataFileBucket",
+          "description": "Column 'dataFileBucket'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/dataFileBucket/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "dataFileBucket"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/dataFileKey",
+          "name": "dataFileKey",
+          "description": "Column 'dataFileKey'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "AMP_RA.SLE_Genomic_Variants_v2-schema/dataFileKey/source",
+            "fileObject": {
+              "@id": "file_24"
+            },
+            "extract": {
+              "column": "dataFileKey"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

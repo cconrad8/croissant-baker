@@ -1,0 +1,668 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "NF-OSI-processed-RNAseq-countsTSV-2023",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "NF-OSI-processed-RNAseq-countsTSV-2023. https://doi.org/10.7303/syn53141534",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:06:20.561",
+  "keywords": [
+    "RNA-seq",
+    "counts matrix",
+    "processed"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn53141534",
+  "version": "10",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "JH_batch1_salmon.merged.gene_counts.tsv",
+      "contentSize": "6828710",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52663091.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "191b2df87cff4f33982056197bd99c04"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "JHU_batch2_salmon.merged.gene_counts.tsv",
+      "contentSize": "4443649",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51544799.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "cb463d1dca34c76ea484c1cf74e5b15e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "JHU_batch2_addl_salmon.merged.gene_counts.tsv",
+      "contentSize": "2360138",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51539337.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "71600f205766a0b9eaca10247478dfcf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "JHU_batch3_salmon.merged.gene_counts.tsv",
+      "contentSize": "4158262",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51559031.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "5c4a63efebc48644dab76574ad8d9993"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "JHU_mixed_batch_salmon.merged.gene_counts.tsv",
+      "contentSize": "1947856",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51539269.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "7932039a16a88ebede31a4eda19c5cf3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "JHU_batch4_salmon.merged.gene_counts.tsv",
+      "contentSize": "6452422",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51546615.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "3e5168a04e74f1e8a7715d01ebf42c97"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "NF-OSI-processed-RNAseq-countsTSV-2023",
+      "description": "Synapse Dataset metadata schema for syn53141534",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53141534",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema",
+      "name": "NF-OSI-processed-RNAseq-countsTSV-2023 (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn53141534: 33 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/id/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/name/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/dataFileName",
+          "name": "dataFileName",
+          "description": "Column 'dataFileName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/dataFileName/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "dataFileName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/description",
+          "name": "description",
+          "description": "Column 'description'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/description/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "description"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/etag/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/type/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/dataFileConcreteType",
+          "name": "dataFileConcreteType",
+          "description": "Column 'dataFileConcreteType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/dataFileConcreteType/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "dataFileConcreteType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/dataFileBucket",
+          "name": "dataFileBucket",
+          "description": "Column 'dataFileBucket'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/dataFileBucket/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "dataFileBucket"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/dataFileKey",
+          "name": "dataFileKey",
+          "description": "Column 'dataFileKey'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/dataFileKey/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "dataFileKey"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/assay/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/expressionUnit",
+          "name": "expressionUnit",
+          "description": "Column 'expressionUnit'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/expressionUnit/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "expressionUnit"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/species/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/workflow",
+          "name": "workflow",
+          "description": "Column 'workflow'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/workflow/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "workflow"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/workflowLink",
+          "name": "workflowLink",
+          "description": "Column 'workflowLink'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "NF-OSI-processed-RNAseq-countsTSV-2023-schema/workflowLink/source",
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "workflowLink"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

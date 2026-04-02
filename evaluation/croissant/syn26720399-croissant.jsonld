@@ -1,0 +1,539 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "released_LG_Aging-PheWAS",
+  "description": "Dataset 'released_LG_Aging-PheWAS' from Synapse (syn26720399)",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "released_LG_Aging-PheWAS. Synapse ID: syn26720399. https://www.synapse.org/Synapse:syn26720399",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "University of California San Francisco"
+  },
+  "datePublished": "2026-04-02 12:57:25.959",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn26720399",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "AD.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369164",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "ARHI.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369170",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "Afib.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369167",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "BMI.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369177",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "CAD.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369180",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "CRP.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369183",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "FA_BMD.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369240",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "FEV1.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369243",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "FEV1_FVC.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369246",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "FN_BMD.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369249",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "FVC.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369256",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "HDL.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369269",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "LDL.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369275",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "LS_BMD.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369282",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "MI.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369287",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "PEF.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369292",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "Parent_longevity.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369290",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "RDW.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369301",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "SRH.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369303",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "SWB.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369305",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "T2D.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369309",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "TC.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369312",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "TG.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369314",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "WHRadjBMI.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369160",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "diabp.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369203",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "eBMD.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369235",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "fracture_any.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369255",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "grip.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369264",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "longevity_90.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369279",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "longevity_99.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369280",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "menarche_age.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369285",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "pulse_pressure.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369294",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "sysbp.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369307",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "AD_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369617",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "ARHI_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369625",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "Afib_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369620",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "BMI_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369639",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "CAD_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369646",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "CRP_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369654",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "FA_BMD_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369671",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "FEV1_FVC_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369676",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "FEV1_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369682",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "FN_BMD_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369699",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "FVC_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369348",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "HDL_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369360",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "LDL_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369368",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "LS_BMD_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369393",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "MI_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369411",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "PEF_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369427",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "Parent_longevity_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369417",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "RDW_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369544",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "SRH_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369551",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "SWB_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369572",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "T2D_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369591",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "TC_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369598",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "TG_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369603",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "WHRadjBMI_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369610",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "diabp_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369658",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "eBMD_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369664",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "fracture_any_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369342",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "grip_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369354",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "longevity_90_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369375",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "longevity_99_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369382",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "menarche_age_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369403",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "pulse_pressure_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369540",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "sysbp_metaX.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27369586",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "AgingPheWAS_GWASfiles_dataDictionary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27373432",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "AgingPheWAS_MetaXcan_dataDictionary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn27373454",
+      "encodingFormat": "text/plain"
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "U1-70_PrimaryCellCulture",
+  "description": "Dataset 'U1-70_PrimaryCellCulture' from Synapse (syn5820226)",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "U1-70_PrimaryCellCulture. Synapse ID: syn5820226. https://www.synapse.org/Synapse:syn5820226",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Mette Peters",
+    "url": "https://www.synapse.org/#!Profile:273995"
+  },
+  "datePublished": "2026-04-02 11:34:57.420",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn5820226",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "EMORY_Proteomics_PRIMARYNEURONS_moduleassignments.csv",
+      "contentSize": "3219785",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637225",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "aee5e6a637f442f4076572b674369dd1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "EMORY_Proteomics_PRIMARYNEURONS_networkRcode.R",
+      "contentSize": "11245",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637226",
+      "encodingFormat": "text/plain",
+      "md5": "1e05d66765788b148c05cf2c13fd012f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "EMORY_Proteomics_PRIMARYNEURONS_proteininput.csv",
+      "contentSize": "1432114",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637227",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "828baafbc5463dc340b4fd1ff56a7743"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "EMORY_Proteomics_PRIMARYNEURONS_traits.csv",
+      "contentSize": "546",
+      "contentUrl": "https://www.synapse.org/Synapse:syn9637228",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "0946cc815ee69736f6a5d6dfb305ccff"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "EMORY_Proteomics_PRIMARYNEURONS_TRAITS.csv",
+      "contentSize": "546",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6100423",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "0946cc815ee69736f6a5d6dfb305ccff"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "EMORY_Proteomics_PRIMARYNEURONS_DATABASE.fasta",
+      "contentSize": "19217108",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6100419",
+      "encodingFormat": "application/octet-stream",
+      "md5": "fd5794fd9e12085e3b08f9d5807a4970"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "EMORY_Proteomics_PRIMARYNEURONS_PROTEINOUTPUT.txt",
+      "contentSize": "31935073",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6100420",
+      "encodingFormat": "text/plain",
+      "md5": "91daf95b56d89571100748283e0a3a72"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "EMORY_Proteomics_PRIMARYNEURONS_SEARCHPARAMS.xml",
+      "contentSize": "13609",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6100421",
+      "encodingFormat": "text/xml",
+      "md5": "7c2dda774ccd02be12d3bf1d49ead833"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_01.raw",
+      "contentSize": "2116464608",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6043835",
+      "encodingFormat": "image/RAW",
+      "md5": "49089ea1c5a84a38f18617edfcd2132e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_02.raw",
+      "contentSize": "2133291524",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6043871",
+      "encodingFormat": "image/RAW",
+      "md5": "99b4411258a8a04ea97b40d70421fd8d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_03.raw",
+      "contentSize": "2212919080",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6045109",
+      "encodingFormat": "image/RAW",
+      "md5": "2224ca9618768bf5b3b45132d95198ed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_04.raw",
+      "contentSize": "2223824836",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6045112",
+      "encodingFormat": "image/RAW",
+      "md5": "00a6bd9e88c9ccceef6222db43bc077a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_app01.raw",
+      "contentSize": "2210131258",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6045113",
+      "encodingFormat": "image/RAW",
+      "md5": "13cc3254b7736194cb2cd25c2d818519"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_app02.raw",
+      "contentSize": "2200995614",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6045115",
+      "encodingFormat": "image/RAW",
+      "md5": "e7d4bfee4863dac2e015a3ed30f61f6c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_app03.raw",
+      "contentSize": "2185632602",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6045116",
+      "encodingFormat": "image/RAW",
+      "md5": "2eec8ef6ddc3006e9c38e5183b548e7e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_appm01.raw",
+      "contentSize": "2224819896",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6045123",
+      "encodingFormat": "image/RAW",
+      "md5": "307580a83414e6b95febce7509d061b7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_appm02.raw",
+      "contentSize": "2217497532",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6045124",
+      "encodingFormat": "image/RAW",
+      "md5": "787021e7a038df88173012f8b5861ec0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_appm03.raw",
+      "contentSize": "2193886400",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6045126",
+      "encodingFormat": "image/RAW",
+      "md5": "fb89fe869e3c141085fb792394b9d489"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_appw01.raw",
+      "contentSize": "2223934856",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6045131",
+      "encodingFormat": "image/RAW",
+      "md5": "1b99853be179c642de4945092aa0be71"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_appw02.raw",
+      "contentSize": "2206000244",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6045132",
+      "encodingFormat": "image/RAW",
+      "md5": "4a8a71d3c12cb508fceff6bd72cc1d76"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_appw03.raw",
+      "contentSize": "2216330580",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6045133",
+      "encodingFormat": "image/RAW",
+      "md5": "0a534deda7dec8d4c5fd452708b16f8a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_m01.raw",
+      "contentSize": "2165459530",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6045157",
+      "encodingFormat": "image/RAW",
+      "md5": "6cd4de955daf05e94080acb5a028d6a5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_m02.raw",
+      "contentSize": "2220202686",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6045158",
+      "encodingFormat": "image/RAW",
+      "md5": "b694c86a0607d195f8610327ed0c981d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_m03.raw",
+      "contentSize": "2222143186",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6045159",
+      "encodingFormat": "image/RAW",
+      "md5": "dac7a96e68580654441f9e5692b1f0cd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_m04.raw",
+      "contentSize": "2208637270",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6045162",
+      "encodingFormat": "image/RAW",
+      "md5": "818850238c3feb6960f06216f772c865"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_w01.raw",
+      "contentSize": "2126015998",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6045164",
+      "encodingFormat": "image/RAW",
+      "md5": "edeca938f67998457a254e1c3b5c2f6f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_w02.raw",
+      "contentSize": "2166104018",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6045166",
+      "encodingFormat": "image/RAW",
+      "md5": "4f744b73d6505ea14c4bdfea1c847075"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_w03.raw",
+      "contentSize": "2220572454",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6045197",
+      "encodingFormat": "image/RAW",
+      "md5": "13cd8c48a68e226f3455f98b5b713e1e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "Emory_Proteomics_RatNeurons_RAW_rb_w04.raw",
+      "contentSize": "2186399302",
+      "contentUrl": "https://www.synapse.org/Synapse:syn6045201",
+      "encodingFormat": "image/RAW",
+      "md5": "1424c1dba0d82db11b49048ad7752b10"
+    }
+  ]
+}

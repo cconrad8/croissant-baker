@@ -1,0 +1,2207 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Germline Genomic Variants - FreeBayes Pipeline (from syn31726450)",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Germline Genomic Variants - FreeBayes Pipeline (from syn31726450). Synapse ID: syn35562836. https://www.synapse.org/Synapse:syn35562836",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:14:47.897",
+  "keywords": [
+    "cfDNA",
+    "ultra-low-pass WGS",
+    "germline variants",
+    "FreeBayes",
+    "NF1",
+    "MPNST"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn35562836",
+  "version": "6",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "FreeBayes_lib003.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743707.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "FreeBayes_lib003.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743617.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "FreeBayes_lib009.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743644.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "FreeBayes_lib009.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743634.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "FreeBayes_lib012.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743639.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "FreeBayes_lib012.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743658.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "FreeBayes_lib014.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743677.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "FreeBayes_lib014.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743674.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "FreeBayes_lib019.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743689.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "FreeBayes_lib019.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743652.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "FreeBayes_lib023.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743719.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "FreeBayes_lib023.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743713.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "FreeBayes_lib027.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743781.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "FreeBayes_lib027.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743714.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "FreeBayes_lib032.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743742.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "FreeBayes_lib032.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743760.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "FreeBayes_lib036.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743822.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "FreeBayes_lib036.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743737.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "FreeBayes_lib041.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743793.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "FreeBayes_lib041.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743797.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "FreeBayes_lib052.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743783.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "FreeBayes_lib052.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743774.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "FreeBayes_lib060.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743807.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "FreeBayes_lib060.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743782.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "FreeBayes_lib061.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743878.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "FreeBayes_lib061.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743838.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "FreeBayes_lib065.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743836.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "FreeBayes_lib065.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743833.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "FreeBayes_lib066.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743826.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "FreeBayes_lib066.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743821.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "FreeBayes_lib067.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743827.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "FreeBayes_lib067.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743834.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "FreeBayes_lib068.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743849.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "FreeBayes_lib068.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743844.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "FreeBayes_lib070.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743934.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "FreeBayes_lib070.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743852.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "FreeBayes_lib071.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743875.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "FreeBayes_lib071.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743871.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "FreeBayes_lib072.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743877.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "FreeBayes_lib072.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743865.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "FreeBayes_lib073.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743876.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "FreeBayes_lib073.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743886.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "FreeBayes_lib076.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743893.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "FreeBayes_lib076.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743904.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "FreeBayes_lib077.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743901.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "FreeBayes_lib077.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743903.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "FreeBayes_lib079.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743909.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "FreeBayes_lib079.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743902.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "FreeBayes_lib080.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743908.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "FreeBayes_lib080.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743926.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "FreeBayes_lib083.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743933.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "FreeBayes_lib083.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743912.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "FreeBayes_lib085.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743917.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "FreeBayes_lib085.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743977.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "FreeBayes_lib086.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743936.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "FreeBayes_lib086.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743927.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "FreeBayes_lib088.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743948.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "FreeBayes_lib088.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744026.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "FreeBayes_lib090.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744028.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "FreeBayes_lib090.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743939.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "FreeBayes_lib092.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744024.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "FreeBayes_lib092.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744012.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "FreeBayes_lib093.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743955.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "FreeBayes_lib093.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743975.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "FreeBayes_lib094.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743950.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "FreeBayes_lib094.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743945.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "FreeBayes_lib095.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743974.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "FreeBayes_lib095.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743983.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "FreeBayes_lib096.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743971.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "FreeBayes_lib096.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744034.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "FreeBayes_lib099.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743979.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "FreeBayes_lib099.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743958.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "FreeBayes_lib100.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743994.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "FreeBayes_lib100.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743999.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "FreeBayes_lib101.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744049.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "FreeBayes_lib101.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743989.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "FreeBayes_lib107.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744016.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "FreeBayes_lib107.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743992.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "FreeBayes_lib109.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744118.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "FreeBayes_lib109.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744091.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "FreeBayes_lib110.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744038.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "FreeBayes_lib110.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744059.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "FreeBayes_lib113.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744081.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "FreeBayes_lib113.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744056.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "FreeBayes_lib117.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744190.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "FreeBayes_lib117.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744088.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "FreeBayes_lib119.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744115.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "FreeBayes_lib119.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744103.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "FreeBayes_lib123.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744125.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "FreeBayes_lib123.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744100.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "FreeBayes_lib126.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744132.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "FreeBayes_lib126.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744134.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "FreeBayes_lib127.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744153.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "FreeBayes_lib127.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744140.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "FreeBayes_lib129.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744196.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "FreeBayes_lib129.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744183.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "FreeBayes_lib131.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744224.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "FreeBayes_lib131.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744176.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "FreeBayes_lib132.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744191.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "FreeBayes_lib132.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744178.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "FreeBayes_lib134.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744209.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "FreeBayes_lib134.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744213.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "FreeBayes_lib135.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744310.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "FreeBayes_lib135.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744236.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "FreeBayes_lib136.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744449.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "FreeBayes_lib136.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744231.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "FreeBayes_lib138.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744277.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "FreeBayes_lib138.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744263.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "FreeBayes_lib139.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744348.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "FreeBayes_lib139.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744293.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "FreeBayes_lib141.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744300.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "FreeBayes_lib141.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744280.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "FreeBayes_lib142.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744361.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "FreeBayes_lib142.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744299.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "FreeBayes_lib143.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744329.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "FreeBayes_lib143.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744314.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_116",
+      "name": "FreeBayes_lib144.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744359.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_117",
+      "name": "FreeBayes_lib144.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744337.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_118",
+      "name": "FreeBayes_lib145.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744375.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_119",
+      "name": "FreeBayes_lib145.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744376.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_120",
+      "name": "FreeBayes_lib146.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744429.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_121",
+      "name": "FreeBayes_lib146.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744367.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_122",
+      "name": "FreeBayes_lib147.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744383.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_123",
+      "name": "FreeBayes_lib147.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744373.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_124",
+      "name": "FreeBayes_lib148.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744427.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_125",
+      "name": "FreeBayes_lib148.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744402.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_126",
+      "name": "FreeBayes_lib150.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744428.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_127",
+      "name": "FreeBayes_lib150.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744421.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_128",
+      "name": "FreeBayes_lib153.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744452.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_129",
+      "name": "FreeBayes_lib153.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744407.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_130",
+      "name": "FreeBayes_lib154.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744434.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_131",
+      "name": "FreeBayes_lib154.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744432.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_132",
+      "name": "FreeBayes_lib155.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744528.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_133",
+      "name": "FreeBayes_lib155.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744445.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_134",
+      "name": "FreeBayes_lib156.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744497.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_135",
+      "name": "FreeBayes_lib156.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744462.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_136",
+      "name": "FreeBayes_lib158.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744481.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_137",
+      "name": "FreeBayes_lib158.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744689.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_138",
+      "name": "FreeBayes_lib160.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744513.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_139",
+      "name": "FreeBayes_lib160.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744492.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_140",
+      "name": "FreeBayes_lib161.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744600.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_141",
+      "name": "FreeBayes_lib161.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744535.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_142",
+      "name": "FreeBayes_lib162.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744558.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_143",
+      "name": "FreeBayes_lib162.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744571.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_144",
+      "name": "FreeBayes_lib164.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744536.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_145",
+      "name": "FreeBayes_lib164.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744531.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_146",
+      "name": "FreeBayes_lib168.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744546.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_147",
+      "name": "FreeBayes_lib168.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744551.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_148",
+      "name": "FreeBayes_lib169.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744736.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_149",
+      "name": "FreeBayes_lib169.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744568.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_150",
+      "name": "FreeBayes_lib171.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744613.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_151",
+      "name": "FreeBayes_lib171.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744617.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_152",
+      "name": "FreeBayes_lib172.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744606.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_153",
+      "name": "FreeBayes_lib172.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744589.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_154",
+      "name": "FreeBayes_lib173.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744626.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_155",
+      "name": "FreeBayes_lib173.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744612.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_156",
+      "name": "FreeBayes_lib175.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744735.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_157",
+      "name": "FreeBayes_lib175.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744727.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_158",
+      "name": "FreeBayes_lib179.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744683.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_159",
+      "name": "FreeBayes_lib179.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744645.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_160",
+      "name": "FreeBayes_lib180.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744720.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_161",
+      "name": "FreeBayes_lib180.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744669.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_162",
+      "name": "FreeBayes_lib181.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744857.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_163",
+      "name": "FreeBayes_lib181.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744667.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_164",
+      "name": "FreeBayes_lib182.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744707.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_165",
+      "name": "FreeBayes_lib182.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744705.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_166",
+      "name": "FreeBayes_lib183.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744765.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_167",
+      "name": "FreeBayes_lib183.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744717.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_168",
+      "name": "FreeBayes_lib184.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744747.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_169",
+      "name": "FreeBayes_lib184.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744749.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_170",
+      "name": "FreeBayes_lib185.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744925.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_171",
+      "name": "FreeBayes_lib185.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744793.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_172",
+      "name": "FreeBayes_lib188.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744763.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_173",
+      "name": "FreeBayes_lib188.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744768.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_174",
+      "name": "FreeBayes_lib190.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744993.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_175",
+      "name": "FreeBayes_lib190.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744771.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_176",
+      "name": "FreeBayes_lib191.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744865.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_177",
+      "name": "FreeBayes_lib191.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744831.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_178",
+      "name": "FreeBayes_lib193.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744804.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_179",
+      "name": "FreeBayes_lib193.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744806.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_180",
+      "name": "FreeBayes_lib196.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744839.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_181",
+      "name": "FreeBayes_lib196.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744801.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_182",
+      "name": "FreeBayes_lib198.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744878.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_183",
+      "name": "FreeBayes_lib198.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744820.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_184",
+      "name": "FreeBayes_lib199.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744888.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_185",
+      "name": "FreeBayes_lib199.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744834.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_186",
+      "name": "FreeBayes_lib201.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744863.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_187",
+      "name": "FreeBayes_lib201.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744846.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_188",
+      "name": "FreeBayes_lib202.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744908.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_189",
+      "name": "FreeBayes_lib202.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744884.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_190",
+      "name": "FreeBayes_lib203.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744977.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_191",
+      "name": "FreeBayes_lib203.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744903.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_192",
+      "name": "FreeBayes_lib204.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745064.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_193",
+      "name": "FreeBayes_lib204.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744933.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_194",
+      "name": "FreeBayes_lib205.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744982.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_195",
+      "name": "FreeBayes_lib205.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744941.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_196",
+      "name": "FreeBayes_lib206.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745053.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_197",
+      "name": "FreeBayes_lib206.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744976.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_198",
+      "name": "FreeBayes_lib208.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745006.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_199",
+      "name": "FreeBayes_lib208.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744967.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_200",
+      "name": "FreeBayes_lib209.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745029.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_201",
+      "name": "FreeBayes_lib209.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744999.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_202",
+      "name": "FreeBayes_lib214.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745024.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_203",
+      "name": "FreeBayes_lib214.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745001.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_204",
+      "name": "FreeBayes_lib216.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745067.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_205",
+      "name": "FreeBayes_lib216.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745022.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_206",
+      "name": "FreeBayes_lib218.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745077.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_207",
+      "name": "FreeBayes_lib218.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745109.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_208",
+      "name": "FreeBayes_lib235.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745126.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_209",
+      "name": "FreeBayes_lib235.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745274.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_210",
+      "name": "FreeBayes_lib236.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745051.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_211",
+      "name": "FreeBayes_lib236.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745183.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_212",
+      "name": "FreeBayes_lib238.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745080.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_213",
+      "name": "FreeBayes_lib238.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745088.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_214",
+      "name": "FreeBayes_lib239.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745098.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_215",
+      "name": "FreeBayes_lib239.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745117.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_216",
+      "name": "FreeBayes_lib241.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745128.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_217",
+      "name": "FreeBayes_lib241.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745118.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_218",
+      "name": "FreeBayes_lib242.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745134.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_219",
+      "name": "FreeBayes_lib242.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745192.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_220",
+      "name": "FreeBayes_lib243.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745146.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_221",
+      "name": "FreeBayes_lib243.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745129.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_222",
+      "name": "FreeBayes_lib244.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745182.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_223",
+      "name": "FreeBayes_lib244.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745152.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_224",
+      "name": "FreeBayes_lib245.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745174.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_225",
+      "name": "FreeBayes_lib245.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745194.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_226",
+      "name": "FreeBayes_lib246.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745221.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_227",
+      "name": "FreeBayes_lib246.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745189.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_228",
+      "name": "FreeBayes_lib247.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745241.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_229",
+      "name": "FreeBayes_lib247.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745231.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_230",
+      "name": "FreeBayes_lib248.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745251.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_231",
+      "name": "FreeBayes_lib248.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745235.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_232",
+      "name": "FreeBayes_lib249.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745254.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_233",
+      "name": "FreeBayes_lib249.vcf.gz.tbi",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745273.1",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_234",
+      "name": "Germline Genomic Variants - FreeBayes Pipeline (from syn31726450)",
+      "description": "Synapse Dataset metadata schema for syn35562836",
+      "contentUrl": "https://www.synapse.org/Synapse:syn35562836",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema",
+      "name": "Germline Genomic Variants - FreeBayes Pipeline (from syn31726450) (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn35562836: 30 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/id/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/name/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/etag/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/type/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/assay/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/sex",
+          "name": "sex",
+          "description": "Column 'sex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/sex/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "sex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/species/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/workflow",
+          "name": "workflow",
+          "description": "Column 'workflow'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31726450_-schema/workflow/source",
+            "fileObject": {
+              "@id": "file_234"
+            },
+            "extract": {
+              "column": "workflow"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

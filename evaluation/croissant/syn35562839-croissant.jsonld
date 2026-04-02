@@ -1,0 +1,1388 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Germline Genomic Variants - DeepVariant Pipeline (from syn31726450)",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Germline Genomic Variants - DeepVariant Pipeline (from syn31726450). Synapse ID: syn35562839. https://www.synapse.org/Synapse:syn35562839",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:13:01.544",
+  "keywords": [
+    "cfDNA",
+    "ultra-low-pass WGS",
+    "germline variants",
+    "DeepVariant",
+    "NF1",
+    "MPNST"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn35562839",
+  "version": "6",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "lib003.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743614.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "lib009.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743624.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "lib012.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743645.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "lib014.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743686.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "lib019.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743699.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "lib023.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743717.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "lib027.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743755.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "lib032.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743727.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "lib036.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743775.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "lib041.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743825.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "lib052.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743766.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "lib060.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743818.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "lib061.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743808.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "lib065.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743920.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "lib066.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743819.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "lib067.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743830.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "lib068.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743837.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "lib070.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743851.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "lib071.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743867.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "lib072.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743869.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "lib073.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743863.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "lib076.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743906.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "lib077.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743896.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "lib079.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743899.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "lib080.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743914.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "lib083.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743930.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "lib085.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743984.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "lib086.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743928.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "lib088.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743924.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "lib090.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743981.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "lib092.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743972.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "lib093.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743970.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "lib094.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743966.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "lib095.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743963.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "lib096.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743969.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "lib099.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743980.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "lib100.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31743990.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "lib101.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744013.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "lib107.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744003.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "lib109.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744001.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "lib110.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744036.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "lib113.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744076.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "lib117.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744175.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "lib119.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744095.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "lib123.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744119.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "lib126.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744114.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "lib127.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744168.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "lib129.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744172.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "lib131.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744177.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "lib132.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744197.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "lib134.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744239.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "lib135.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744221.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "lib136.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744232.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "lib138.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744254.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "lib139.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744295.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "lib141.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744283.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "lib142.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744312.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "lib143.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744330.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "lib144.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744328.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "lib145.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744366.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "lib146.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744390.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "lib147.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744386.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "lib148.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744404.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "lib150.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744412.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "lib153.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744424.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "lib154.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744422.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "lib155.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744454.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "lib156.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744526.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "lib158.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744467.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "lib160.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744490.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "lib161.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744482.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "lib162.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744593.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "lib164.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744545.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "lib168.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744530.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "lib169.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744564.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "lib171.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744678.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "lib172.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744620.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "lib173.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744622.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "lib175.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744641.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "lib179.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744651.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "lib180.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744673.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "lib181.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744679.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "lib182.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744687.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "lib183.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744726.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "lib184.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744731.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "lib185.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744756.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "lib188.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744829.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "lib190.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744848.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "lib191.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744937.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "lib193.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744799.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "lib196.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744814.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "lib198.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744821.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "lib199.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744867.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "lib201.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744861.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "lib202.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744990.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "lib203.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744916.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "lib204.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744935.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "lib205.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744964.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "lib206.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744958.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "lib208.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744978.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "lib209.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31744963.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "lib214.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745042.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "lib216.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745076.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "lib218.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745031.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "lib235.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745043.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "lib236.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745148.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "lib238.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745094.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "lib239.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745102.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "lib241.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745160.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "lib242.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745188.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "lib243.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745137.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "lib244.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745185.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "lib245.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745167.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "lib246.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745208.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "lib247.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745229.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "lib248.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745228.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_116",
+      "name": "lib249.vcf.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31745252.1",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_117",
+      "name": "Germline Genomic Variants - DeepVariant Pipeline (from syn31726450)",
+      "description": "Synapse Dataset metadata schema for syn35562839",
+      "contentUrl": "https://www.synapse.org/Synapse:syn35562839",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema",
+      "name": "Germline Genomic Variants - DeepVariant Pipeline (from syn31726450) (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn35562839: 30 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/id/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/name/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/etag/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/type/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/assay/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/sex",
+          "name": "sex",
+          "description": "Column 'sex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/sex/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "sex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/species/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/workflow",
+          "name": "workflow",
+          "description": "Column 'workflow'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_DeepVariant_Pipeline__from_syn31726450_-schema/workflow/source",
+            "fileObject": {
+              "@id": "file_117"
+            },
+            "extract": {
+              "column": "workflow"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

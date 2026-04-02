@@ -1,0 +1,538 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Drug-Target Explorer",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Drug-Target Explorer. Synapse ID: syn51927498. https://www.synapse.org/Synapse:syn51927498",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Robert Allaway"
+  },
+  "datePublished": "2026-04-02 11:09:25.157",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn51927498",
+  "version": "12",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "cmpd_links_v4.csv",
+      "contentSize": "57387614",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25388390.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "e241a0addb86cdfde6d0c6a19f6f573c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "distinct_compound_synonyms_v4.csv",
+      "contentSize": "22662862",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25388380.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "251538e36ed11b3f963f81d6b7553dc6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "gene_links_v4.rds",
+      "contentSize": "40445",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25388391.1",
+      "encodingFormat": "application/x-r-rds",
+      "md5": "a147150cec1c724392d054862a673f1e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "distinct_compound_synonyms_v4.rds",
+      "contentSize": "7302584",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25388381.1",
+      "encodingFormat": "application/x-r-rds",
+      "md5": "29b076bec9d3745d46060e84ff86e49a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "gene_links_v4.csv",
+      "contentSize": "450605",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25388392.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "90f4c5b369b4794771beb6c8e1407a01"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "compound_structures_v4.rds",
+      "contentSize": "30485663",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25388382.1",
+      "encodingFormat": "application/x-r-rds",
+      "md5": "fab9ab4889f27b99b875a117f02b93ae"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "compound_structures_v4.csv",
+      "contentSize": "102629633",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25388383.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "b04ff3598260415bdde04c27c132ca9f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "db_fingerprints_circular_v4.rds",
+      "contentSize": "40682267",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25388384.1",
+      "encodingFormat": "application/x-r-rds",
+      "md5": "3bb9af768e8c1b18c9a956fef2a90f80"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "db_fingerprints_extended_v4.rds",
+      "contentSize": "56204376",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25388385.1",
+      "encodingFormat": "application/x-r-rds",
+      "md5": "3212f960a494e0d94e5fb5ab27a287c3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "db_fingerprints_maccs_v4.rds",
+      "contentSize": "16174719",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25388386.1",
+      "encodingFormat": "application/x-r-rds",
+      "md5": "75a633f4fd8e099736de8c9e4299eb74"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "compound_target_associations_v4.rds",
+      "contentSize": "13523470",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25388376.1",
+      "encodingFormat": "application/x-r-rds",
+      "md5": "441fb230a817a40e40fed6f10e2553b1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "external_ids_v4.rds",
+      "contentSize": "5856400",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25388387.1",
+      "encodingFormat": "application/x-r-rds",
+      "md5": "a8820a6e36af64d50adf4c9c7308f478"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "compound_target_associations_v4.csv",
+      "contentSize": "72382092",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25388377.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "fa2118fd9209fb979720a1a5a4827a5a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "external_ids_v4.csv",
+      "contentSize": "19662101",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25388388.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "5fadfedcb62c9d47594cce3fdad5db16"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "distinct_compound_names_v4.rds",
+      "contentSize": "5762166",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25388378.1",
+      "encodingFormat": "application/x-r-rds",
+      "md5": "469ddce7f6bd7318778ad39505822958"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "cmpd_links_v4.rds",
+      "contentSize": "7228207",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25388389.1",
+      "encodingFormat": "application/x-r-rds",
+      "md5": "4e7e0f940daf51bf548b019bbbde16ba"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "distinct_compound_names_v4.csv",
+      "contentSize": "15991776",
+      "contentUrl": "https://www.synapse.org/Synapse:syn25388379.1",
+      "encodingFormat": "application/vnd.ms-excel",
+      "md5": "790577840d14e8749c3d2d16cbca8ad6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "Drug-Target Explorer",
+      "description": "Synapse Dataset metadata schema for syn51927498",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51927498",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Drug-Target_Explorer-schema",
+      "name": "Drug-Target Explorer (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn51927498: 19 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Drug-Target_Explorer-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Drug-Target_Explorer-schema/id/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Drug-Target_Explorer-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Drug-Target_Explorer-schema/name/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Drug-Target_Explorer-schema/description",
+          "name": "description",
+          "description": "Column 'description'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Drug-Target_Explorer-schema/description/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "description"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Drug-Target_Explorer-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Drug-Target_Explorer-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Drug-Target_Explorer-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Drug-Target_Explorer-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Drug-Target_Explorer-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Drug-Target_Explorer-schema/etag/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Drug-Target_Explorer-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Drug-Target_Explorer-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Drug-Target_Explorer-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Drug-Target_Explorer-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Drug-Target_Explorer-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Drug-Target_Explorer-schema/type/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Drug-Target_Explorer-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Drug-Target_Explorer-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Drug-Target_Explorer-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Drug-Target_Explorer-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Drug-Target_Explorer-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Drug-Target_Explorer-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Drug-Target_Explorer-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Drug-Target_Explorer-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Drug-Target_Explorer-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Drug-Target_Explorer-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Drug-Target_Explorer-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Drug-Target_Explorer-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Drug-Target_Explorer-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Drug-Target_Explorer-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Drug-Target_Explorer-schema/dataFileConcreteType",
+          "name": "dataFileConcreteType",
+          "description": "Column 'dataFileConcreteType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Drug-Target_Explorer-schema/dataFileConcreteType/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "dataFileConcreteType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Drug-Target_Explorer-schema/dataFileBucket",
+          "name": "dataFileBucket",
+          "description": "Column 'dataFileBucket'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Drug-Target_Explorer-schema/dataFileBucket/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "dataFileBucket"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Drug-Target_Explorer-schema/dataFileKey",
+          "name": "dataFileKey",
+          "description": "Column 'dataFileKey'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Drug-Target_Explorer-schema/dataFileKey/source",
+            "fileObject": {
+              "@id": "file_17"
+            },
+            "extract": {
+              "column": "dataFileKey"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

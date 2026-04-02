@@ -1,0 +1,404 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "CTF-UCF-Cenix Complete Compound Drug Screen",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "CTF-UCF-Cenix Complete Compound Drug Screen. Synapse ID: syn51916091. https://www.synapse.org/Synapse:syn51916091",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Cenix Bioscience"
+  },
+  "datePublished": "2026-04-02 11:12:34.177",
+  "keywords": [
+    "drug screening",
+    "compound screening",
+    "mouse Schwann cells",
+    "NF2",
+    "merlin-deficient",
+    "high content assay",
+    "phenotypic screening",
+    "EdU"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn51916091",
+  "version": "9",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "CTF-UCF-Cenix-CompleteCompoundData-all passes in one tab_ to release_FINAL_cleaned.xlsx",
+      "contentSize": "673073",
+      "contentUrl": "https://www.synapse.org/Synapse:syn5562327.2",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "md5": "0f23090fe549b7afd6ab1d26b61a4169"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "CTF-UCF-Cenix Complete Compound Drug Screen",
+      "description": "Synapse Dataset metadata schema for syn51916091",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51916091",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema",
+      "name": "CTF-UCF-Cenix Complete Compound Drug Screen (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn51916091: 19 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/id/source",
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/name/source",
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/description",
+          "name": "description",
+          "description": "Column 'description'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/description/source",
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "description"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/etag/source",
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/type/source",
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/dataFileConcreteType",
+          "name": "dataFileConcreteType",
+          "description": "Column 'dataFileConcreteType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/dataFileConcreteType/source",
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "dataFileConcreteType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/dataFileBucket",
+          "name": "dataFileBucket",
+          "description": "Column 'dataFileBucket'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/dataFileBucket/source",
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "dataFileBucket"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/dataFileKey",
+          "name": "dataFileKey",
+          "description": "Column 'dataFileKey'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "CTF-UCF-Cenix_Complete_Compound_Drug_Screen-schema/dataFileKey/source",
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "dataFileKey"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

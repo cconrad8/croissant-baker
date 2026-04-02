@@ -1,0 +1,4558 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "RNA Study - PSON0009",
+  "description": "Dataset 'RNA Study - PSON0009' from Synapse (syn11510898)",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "RNA Study - PSON0009. Synapse ID: syn11510898. https://www.synapse.org/Synapse:syn11510898",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Xindi Guo",
+    "url": "https://www.synapse.org/#!Profile:3334658"
+  },
+  "datePublished": "2026-04-02 11:20:30.414",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn11510898",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "FNLCR_GeneMatrix_1.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511532",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "FNLCR_GeneMatrix_2.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511533",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "FNLCR_SequencingSummary_mRNA_070517_CB64MANXX_CB7EAANXX.pdf",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511534",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "FNLCR_SequencingSummary_mRNA_070517_CB7EAANXX_CB64MANXX.xlsx",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511535",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "FNLCR_SequencingSummary_microRNA.xlsx",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511536",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "FNLCR_extraction_1.pdf",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511537",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "FNLCR_extraction_2.pdf",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511538",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "FNLCR_extraction_3.pdf",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511539",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "FNLCR_extraction_4.pdf",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511540",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "FNLCR_extraction_5.pdf",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511541",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "FNLCR_extraction_6.pdf",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511542",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "FNLCR_extraction_RNA_7.5.17.xlsx",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511543",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "NCI-PBCF-CCL227_Glass.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510902",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "NCI-PBCF-CCL227_HAColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510912",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "NCI-PBCF-CCL227_HAFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510922",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "NCI-PBCF-CCL227_PA30kPaColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510932",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "NCI-PBCF-CCL227_PA30kPaFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510942",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "NCI-PBCF-CCL227_PA500PaColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510952",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "NCI-PBCF-CCL227_PA500PaFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510962",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "NCI-PBCF-CCL228_Glass.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510972",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "NCI-PBCF-CCL228_HAColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510982",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "NCI-PBCF-CCL228_HAFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510992",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "NCI-PBCF-CCL228_PA30kPaColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511002",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "NCI-PBCF-CCL228_PA30kPaFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511012",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "NCI-PBCF-CCL228_PA500PaColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511022",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "NCI-PBCF-CCL228_PA500PaFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511032",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "NCI-PBCF-CRL11609_Glass.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511042",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "NCI-PBCF-CRL11609_HAColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511052",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "NCI-PBCF-CRL11609_HAFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511062",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "NCI-PBCF-CRL11609_PA30kPaColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511072",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "NCI-PBCF-CRL11609_PA30kPaFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511082",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "NCI-PBCF-CRL11609_PA500PaColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511092",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "NCI-PBCF-CRL11609_PA500PaFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511102",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "NCI-PBCF-CRL1619_Glass.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511112",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "NCI-PBCF-CRL1619_HAColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511122",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "NCI-PBCF-CRL1619_HAFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511132",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "NCI-PBCF-CRL1619_PA30kPaColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511142",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "NCI-PBCF-CRL1619_PA30kPaFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511152",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "NCI-PBCF-CRL1619_PA500PaColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511162",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "NCI-PBCF-CRL1619_PA500PaFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511172",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "NCI-PBCF-CRL1690_Glass.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511182",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "NCI-PBCF-CRL1690_HAColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511192",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "NCI-PBCF-CRL1690_HAFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511202",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "NCI-PBCF-CRL1690_PA30kPaColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511212",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "NCI-PBCF-CRL1690_PA30kPaFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511222",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "NCI-PBCF-CRL1690_PA500PaColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511232",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "NCI-PBCF-CRL1690_PA500PaFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511242",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "NCI-PBCF-CRL2505_Glass.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511252",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "NCI-PBCF-CRL2505_HAColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511262",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "NCI-PBCF-CRL2505_HAFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511272",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "NCI-PBCF-CRL2505_PA30kPaColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511282",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "NCI-PBCF-CRL2505_PA30kPaFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511292",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "NCI-PBCF-CRL2505_PA500PaColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511302",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "NCI-PBCF-CRL2505_PA500PaFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511312",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "NCI-PBCF-HTB133_Glass.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511322",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "NCI-PBCF-HTB133_HAColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511332",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "NCI-PBCF-HTB133_HAFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511342",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "NCI-PBCF-HTB133_PA30kPaColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511352",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "NCI-PBCF-HTB133_PA30kPaFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511362",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "NCI-PBCF-HTB133_PA500PaColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511372",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "NCI-PBCF-HTB133_PA500PaFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511382",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "NCI-PBCF-HTB14_Glass.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511392",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "NCI-PBCF-HTB14_HAColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511402",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "NCI-PBCF-HTB14_HAFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511412",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "NCI-PBCF-HTB14_PA30kPaColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511422",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "NCI-PBCF-HTB14_PA30kPaFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511432",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "NCI-PBCF-HTB14_PA500PaColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511442",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "NCI-PBCF-HTB14_PA500PaFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511452",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "NCI-PBCF-HTB26_Glass.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511462",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "NCI-PBCF-HTB26_HAColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511472",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "NCI-PBCF-HTB26_HAFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511482",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "NCI-PBCF-HTB26_PA30kPaColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511492",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "NCI-PBCF-HTB26_PA30kPaFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511502",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "NCI-PBCF-HTB26_PA500PaColl.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511512",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "NCI-PBCF-HTB26_PA500PaFn.zip",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511522",
+      "encodingFormat": "application/x-zip-compressed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "mRNA_R10_S10_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511183",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "mRNA_R10_S10_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511184",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "mRNA_R10_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511185",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "mRNA_R10_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511186",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "mRNA_R10_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511187",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "mRNA_R11_S11_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511223",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "mRNA_R11_S11_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511224",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "mRNA_R11_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511225",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "mRNA_R11_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511226",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "mRNA_R11_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511227",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "mRNA_R12_S12_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511213",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "mRNA_R12_S12_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511214",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "mRNA_R12_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511215",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "mRNA_R12_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511216",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "mRNA_R12_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511217",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "mRNA_R13_S13_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511203",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "mRNA_R13_S13_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511204",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "mRNA_R13_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511205",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "mRNA_R13_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511206",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "mRNA_R13_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511207",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "mRNA_R14_S14_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511193",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "mRNA_R14_S14_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511194",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "mRNA_R14_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511195",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "mRNA_R14_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511196",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "mRNA_R14_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511197",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "mRNA_R15_S15_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510963",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "mRNA_R15_S15_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510964",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "mRNA_R15_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510965",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "mRNA_R15_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510966",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "mRNA_R15_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510967",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "mRNA_R16_S16_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510953",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "mRNA_R16_S16_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510954",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "mRNA_R16_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510955",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "mRNA_R16_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510956",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "mRNA_R16_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510957",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "mRNA_R17_S17_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510903",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "mRNA_R17_S17_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510904",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "mRNA_R17_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510905",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "mRNA_R17_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510906",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "mRNA_R17_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510907",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "mRNA_R18_S18_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510943",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_116",
+      "name": "mRNA_R18_S18_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510944",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_117",
+      "name": "mRNA_R18_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510945",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_118",
+      "name": "mRNA_R18_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510946",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_119",
+      "name": "mRNA_R18_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510947",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_120",
+      "name": "mRNA_R19_S19_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510933",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_121",
+      "name": "mRNA_R19_S19_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510934",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_122",
+      "name": "mRNA_R19_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510935",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_123",
+      "name": "mRNA_R19_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510936",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_124",
+      "name": "mRNA_R19_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510937",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_125",
+      "name": "mRNA_R1_S1_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511313",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_126",
+      "name": "mRNA_R1_S1_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511314",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_127",
+      "name": "mRNA_R1_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511315",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_128",
+      "name": "mRNA_R1_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511316",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_129",
+      "name": "mRNA_R1_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511317",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_130",
+      "name": "mRNA_R20_S20_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510923",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_131",
+      "name": "mRNA_R20_S20_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510924",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_132",
+      "name": "mRNA_R20_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510925",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_133",
+      "name": "mRNA_R20_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510926",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_134",
+      "name": "mRNA_R20_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510927",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_135",
+      "name": "mRNA_R21_S21_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510913",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_136",
+      "name": "mRNA_R21_S21_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510914",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_137",
+      "name": "mRNA_R21_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510915",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_138",
+      "name": "mRNA_R21_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510916",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_139",
+      "name": "mRNA_R21_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510917",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_140",
+      "name": "mRNA_R22_S22_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511103",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_141",
+      "name": "mRNA_R22_S22_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511104",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_142",
+      "name": "mRNA_R22_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511105",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_143",
+      "name": "mRNA_R22_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511106",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_144",
+      "name": "mRNA_R22_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511107",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_145",
+      "name": "mRNA_R23_S23_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511093",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_146",
+      "name": "mRNA_R23_S23_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511094",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_147",
+      "name": "mRNA_R23_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511095",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_148",
+      "name": "mRNA_R23_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511096",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_149",
+      "name": "mRNA_R23_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511097",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_150",
+      "name": "mRNA_R24_S24_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511043",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_151",
+      "name": "mRNA_R24_S24_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511044",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_152",
+      "name": "mRNA_R24_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511045",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_153",
+      "name": "mRNA_R24_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511046",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_154",
+      "name": "mRNA_R24_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511047",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_155",
+      "name": "mRNA_R25_S25_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511083",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_156",
+      "name": "mRNA_R25_S25_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511084",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_157",
+      "name": "mRNA_R25_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511085",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_158",
+      "name": "mRNA_R25_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511086",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_159",
+      "name": "mRNA_R25_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511087",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_160",
+      "name": "mRNA_R26_S26_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511073",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_161",
+      "name": "mRNA_R26_S26_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511074",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_162",
+      "name": "mRNA_R26_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511075",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_163",
+      "name": "mRNA_R26_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511076",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_164",
+      "name": "mRNA_R26_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511077",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_165",
+      "name": "mRNA_R27_S27_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511063",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_166",
+      "name": "mRNA_R27_S27_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511064",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_167",
+      "name": "mRNA_R27_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511065",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_168",
+      "name": "mRNA_R27_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511066",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_169",
+      "name": "mRNA_R27_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511067",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_170",
+      "name": "mRNA_R28_S28_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511053",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_171",
+      "name": "mRNA_R28_S28_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511054",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_172",
+      "name": "mRNA_R28_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511055",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_173",
+      "name": "mRNA_R28_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511056",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_174",
+      "name": "mRNA_R28_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511057",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_175",
+      "name": "mRNA_R29_S29_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511453",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_176",
+      "name": "mRNA_R29_S29_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511454",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_177",
+      "name": "mRNA_R29_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511455",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_178",
+      "name": "mRNA_R29_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511456",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_179",
+      "name": "mRNA_R29_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511457",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_180",
+      "name": "mRNA_R2_S2_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511303",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_181",
+      "name": "mRNA_R2_S2_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511304",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_182",
+      "name": "mRNA_R2_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511305",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_183",
+      "name": "mRNA_R2_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511306",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_184",
+      "name": "mRNA_R2_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511307",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_185",
+      "name": "mRNA_R30_S30_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511443",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_186",
+      "name": "mRNA_R30_S30_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511444",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_187",
+      "name": "mRNA_R30_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511445",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_188",
+      "name": "mRNA_R30_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511446",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_189",
+      "name": "mRNA_R30_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511447",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_190",
+      "name": "mRNA_R31_S31_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511393",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_191",
+      "name": "mRNA_R31_S31_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511394",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_192",
+      "name": "mRNA_R31_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511395",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_193",
+      "name": "mRNA_R31_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511396",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_194",
+      "name": "mRNA_R31_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511397",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_195",
+      "name": "mRNA_R32_S32_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511433",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_196",
+      "name": "mRNA_R32_S32_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511434",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_197",
+      "name": "mRNA_R32_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511435",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_198",
+      "name": "mRNA_R32_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511436",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_199",
+      "name": "mRNA_R32_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511437",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_200",
+      "name": "mRNA_R33_S1_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511423",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_201",
+      "name": "mRNA_R33_S1_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511424",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_202",
+      "name": "mRNA_R33_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511425",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_203",
+      "name": "mRNA_R33_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511426",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_204",
+      "name": "mRNA_R33_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511427",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_205",
+      "name": "mRNA_R34_S2_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511413",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_206",
+      "name": "mRNA_R34_S2_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511414",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_207",
+      "name": "mRNA_R34_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511415",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_208",
+      "name": "mRNA_R34_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511416",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_209",
+      "name": "mRNA_R34_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511417",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_210",
+      "name": "mRNA_R35_S3_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511403",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_211",
+      "name": "mRNA_R35_S3_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511404",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_212",
+      "name": "mRNA_R35_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511405",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_213",
+      "name": "mRNA_R35_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511406",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_214",
+      "name": "mRNA_R35_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511407",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_215",
+      "name": "mRNA_R36_S4_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511033",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_216",
+      "name": "mRNA_R36_S4_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511034",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_217",
+      "name": "mRNA_R36_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511035",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_218",
+      "name": "mRNA_R36_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511036",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_219",
+      "name": "mRNA_R36_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511037",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_220",
+      "name": "mRNA_R37_S5_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511023",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_221",
+      "name": "mRNA_R37_S5_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511024",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_222",
+      "name": "mRNA_R37_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511025",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_223",
+      "name": "mRNA_R37_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511026",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_224",
+      "name": "mRNA_R37_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511027",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_225",
+      "name": "mRNA_R38_S6_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510973",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_226",
+      "name": "mRNA_R38_S6_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510974",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_227",
+      "name": "mRNA_R38_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510975",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_228",
+      "name": "mRNA_R38_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510976",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_229",
+      "name": "mRNA_R38_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510977",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_230",
+      "name": "mRNA_R39_S7_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511013",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_231",
+      "name": "mRNA_R39_S7_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511014",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_232",
+      "name": "mRNA_R39_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511015",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_233",
+      "name": "mRNA_R39_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511016",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_234",
+      "name": "mRNA_R39_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511017",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_235",
+      "name": "mRNA_R3_S3_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511253",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_236",
+      "name": "mRNA_R3_S3_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511254",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_237",
+      "name": "mRNA_R3_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511255",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_238",
+      "name": "mRNA_R3_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511256",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_239",
+      "name": "mRNA_R3_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511257",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_240",
+      "name": "mRNA_R40_S8_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511003",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_241",
+      "name": "mRNA_R40_S8_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511004",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_242",
+      "name": "mRNA_R40_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511005",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_243",
+      "name": "mRNA_R40_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511006",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_244",
+      "name": "mRNA_R40_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511007",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_245",
+      "name": "mRNA_R41_S9_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510993",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_246",
+      "name": "mRNA_R41_S9_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510994",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_247",
+      "name": "mRNA_R41_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510995",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_248",
+      "name": "mRNA_R41_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510996",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_249",
+      "name": "mRNA_R41_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510997",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_250",
+      "name": "mRNA_R42_S10_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510983",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_251",
+      "name": "mRNA_R42_S10_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510984",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_252",
+      "name": "mRNA_R42_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510985",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_253",
+      "name": "mRNA_R42_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510986",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_254",
+      "name": "mRNA_R42_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510987",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_255",
+      "name": "mRNA_R43_S11_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511173",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_256",
+      "name": "mRNA_R43_S11_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511174",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_257",
+      "name": "mRNA_R43_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511175",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_258",
+      "name": "mRNA_R43_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511176",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_259",
+      "name": "mRNA_R43_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511177",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_260",
+      "name": "mRNA_R44_S12_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511163",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_261",
+      "name": "mRNA_R44_S12_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511164",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_262",
+      "name": "mRNA_R44_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511165",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_263",
+      "name": "mRNA_R44_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511166",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_264",
+      "name": "mRNA_R44_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511167",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_265",
+      "name": "mRNA_R45_S13_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511113",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_266",
+      "name": "mRNA_R45_S13_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511114",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_267",
+      "name": "mRNA_R45_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511115",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_268",
+      "name": "mRNA_R45_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511116",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_269",
+      "name": "mRNA_R45_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511117",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_270",
+      "name": "mRNA_R46_S14_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511153",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_271",
+      "name": "mRNA_R46_S14_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511154",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_272",
+      "name": "mRNA_R46_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511155",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_273",
+      "name": "mRNA_R46_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511156",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_274",
+      "name": "mRNA_R46_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511157",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_275",
+      "name": "mRNA_R47_S15_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511143",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_276",
+      "name": "mRNA_R47_S15_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511144",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_277",
+      "name": "mRNA_R47_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511145",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_278",
+      "name": "mRNA_R47_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511146",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_279",
+      "name": "mRNA_R47_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511147",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_280",
+      "name": "mRNA_R48_S16_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511133",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_281",
+      "name": "mRNA_R48_S16_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511134",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_282",
+      "name": "mRNA_R48_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511135",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_283",
+      "name": "mRNA_R48_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511136",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_284",
+      "name": "mRNA_R48_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511137",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_285",
+      "name": "mRNA_R49_S17_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511123",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_286",
+      "name": "mRNA_R49_S17_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511124",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_287",
+      "name": "mRNA_R49_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511125",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_288",
+      "name": "mRNA_R49_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511126",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_289",
+      "name": "mRNA_R49_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511127",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_290",
+      "name": "mRNA_R4_S4_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511293",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_291",
+      "name": "mRNA_R4_S4_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511294",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_292",
+      "name": "mRNA_R4_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511295",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_293",
+      "name": "mRNA_R4_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511296",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_294",
+      "name": "mRNA_R4_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511297",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_295",
+      "name": "mRNA_R50_S18_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511383",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_296",
+      "name": "mRNA_R50_S18_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511384",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_297",
+      "name": "mRNA_R50_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511385",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_298",
+      "name": "mRNA_R50_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511386",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_299",
+      "name": "mRNA_R50_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511387",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_300",
+      "name": "mRNA_R51_S19_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511373",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_301",
+      "name": "mRNA_R51_S19_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511374",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_302",
+      "name": "mRNA_R51_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511375",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_303",
+      "name": "mRNA_R51_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511376",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_304",
+      "name": "mRNA_R51_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511377",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_305",
+      "name": "mRNA_R52_S20_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511323",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_306",
+      "name": "mRNA_R52_S20_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511324",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_307",
+      "name": "mRNA_R52_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511325",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_308",
+      "name": "mRNA_R52_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511326",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_309",
+      "name": "mRNA_R52_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511327",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_310",
+      "name": "mRNA_R53_S21_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511363",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_311",
+      "name": "mRNA_R53_S21_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511364",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_312",
+      "name": "mRNA_R53_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511365",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_313",
+      "name": "mRNA_R53_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511366",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_314",
+      "name": "mRNA_R53_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511367",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_315",
+      "name": "mRNA_R54_S22_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511353",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_316",
+      "name": "mRNA_R54_S22_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511354",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_317",
+      "name": "mRNA_R54_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511355",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_318",
+      "name": "mRNA_R54_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511356",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_319",
+      "name": "mRNA_R54_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511357",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_320",
+      "name": "mRNA_R55_S23_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511343",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_321",
+      "name": "mRNA_R55_S23_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511344",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_322",
+      "name": "mRNA_R55_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511345",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_323",
+      "name": "mRNA_R55_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511346",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_324",
+      "name": "mRNA_R55_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511347",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_325",
+      "name": "mRNA_R56_S24_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511333",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_326",
+      "name": "mRNA_R56_S24_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511334",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_327",
+      "name": "mRNA_R56_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511335",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_328",
+      "name": "mRNA_R56_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511336",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_329",
+      "name": "mRNA_R56_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511337",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_330",
+      "name": "mRNA_R57_S25_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511523",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_331",
+      "name": "mRNA_R57_S25_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511524",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_332",
+      "name": "mRNA_R57_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511525",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_333",
+      "name": "mRNA_R57_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511526",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_334",
+      "name": "mRNA_R57_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511527",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_335",
+      "name": "mRNA_R58_S26_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511513",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_336",
+      "name": "mRNA_R58_S26_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511514",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_337",
+      "name": "mRNA_R58_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511515",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_338",
+      "name": "mRNA_R58_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511516",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_339",
+      "name": "mRNA_R58_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511517",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_340",
+      "name": "mRNA_R59_S27_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511463",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_341",
+      "name": "mRNA_R59_S27_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511464",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_342",
+      "name": "mRNA_R59_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511465",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_343",
+      "name": "mRNA_R59_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511466",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_344",
+      "name": "mRNA_R59_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511467",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_345",
+      "name": "mRNA_R5_S5_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511283",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_346",
+      "name": "mRNA_R5_S5_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511284",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_347",
+      "name": "mRNA_R5_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511285",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_348",
+      "name": "mRNA_R5_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511286",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_349",
+      "name": "mRNA_R5_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511287",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_350",
+      "name": "mRNA_R60_S28_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511503",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_351",
+      "name": "mRNA_R60_S28_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511504",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_352",
+      "name": "mRNA_R60_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511505",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_353",
+      "name": "mRNA_R60_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511506",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_354",
+      "name": "mRNA_R60_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511507",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_355",
+      "name": "mRNA_R61_S29_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511493",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_356",
+      "name": "mRNA_R61_S29_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511494",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_357",
+      "name": "mRNA_R61_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511495",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_358",
+      "name": "mRNA_R61_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511496",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_359",
+      "name": "mRNA_R61_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511497",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_360",
+      "name": "mRNA_R62_S30_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511483",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_361",
+      "name": "mRNA_R62_S30_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511484",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_362",
+      "name": "mRNA_R62_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511485",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_363",
+      "name": "mRNA_R62_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511486",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_364",
+      "name": "mRNA_R62_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511487",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_365",
+      "name": "mRNA_R63_S31_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511473",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_366",
+      "name": "mRNA_R63_S31_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511474",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_367",
+      "name": "mRNA_R63_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511475",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_368",
+      "name": "mRNA_R63_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511476",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_369",
+      "name": "mRNA_R63_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511477",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_370",
+      "name": "mRNA_R6_S6_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511273",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_371",
+      "name": "mRNA_R6_S6_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511274",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_372",
+      "name": "mRNA_R6_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511275",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_373",
+      "name": "mRNA_R6_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511276",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_374",
+      "name": "mRNA_R6_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511277",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_375",
+      "name": "mRNA_R7_S7_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511263",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_376",
+      "name": "mRNA_R7_S7_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511264",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_377",
+      "name": "mRNA_R7_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511265",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_378",
+      "name": "mRNA_R7_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511266",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_379",
+      "name": "mRNA_R7_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511267",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_380",
+      "name": "mRNA_R8_S8_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511243",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_381",
+      "name": "mRNA_R8_S8_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511244",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_382",
+      "name": "mRNA_R8_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511245",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_383",
+      "name": "mRNA_R8_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511246",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_384",
+      "name": "mRNA_R8_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511247",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_385",
+      "name": "mRNA_R9_S9_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511233",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_386",
+      "name": "mRNA_R9_S9_R2_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511234",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_387",
+      "name": "mRNA_R9_rsem.genes.results.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511235",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_388",
+      "name": "mRNA_R9_star.genome.sorted.bam",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511236",
+      "encodingFormat": "application/x-bam"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_389",
+      "name": "mRNA_R9_star.genome.sorted.bam.bai",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511237",
+      "encodingFormat": "application/x-bam-index"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_390",
+      "name": "miRNA_R10_S2_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511188",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_391",
+      "name": "miRNA_R10_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511189",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_392",
+      "name": "miRNA_R10_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511190",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_393",
+      "name": "miRNA_R10_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511191",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_394",
+      "name": "miRNA_R11_S3_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511228",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_395",
+      "name": "miRNA_R11_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511229",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_396",
+      "name": "miRNA_R11_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511230",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_397",
+      "name": "miRNA_R11_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511231",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_398",
+      "name": "miRNA_R12_S4_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511218",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_399",
+      "name": "miRNA_R12_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511219",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_400",
+      "name": "miRNA_R12_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511220",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_401",
+      "name": "miRNA_R12_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511221",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_402",
+      "name": "miRNA_R13_S5_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511208",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_403",
+      "name": "miRNA_R13_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511209",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_404",
+      "name": "miRNA_R13_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511210",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_405",
+      "name": "miRNA_R13_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511211",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_406",
+      "name": "miRNA_R14_S6_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511198",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_407",
+      "name": "miRNA_R14_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511199",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_408",
+      "name": "miRNA_R14_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511200",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_409",
+      "name": "miRNA_R14_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511201",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_410",
+      "name": "miRNA_R15_S7_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510968",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_411",
+      "name": "miRNA_R15_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510969",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_412",
+      "name": "miRNA_R15_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510970",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_413",
+      "name": "miRNA_R15_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510971",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_414",
+      "name": "miRNA_R16_S8_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510958",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_415",
+      "name": "miRNA_R16_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510959",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_416",
+      "name": "miRNA_R16_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510960",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_417",
+      "name": "miRNA_R16_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510961",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_418",
+      "name": "miRNA_R17_S1_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510908",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_419",
+      "name": "miRNA_R17_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510909",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_420",
+      "name": "miRNA_R17_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510910",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_421",
+      "name": "miRNA_R17_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510911",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_422",
+      "name": "miRNA_R18_S2_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510948",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_423",
+      "name": "miRNA_R18_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510949",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_424",
+      "name": "miRNA_R18_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510950",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_425",
+      "name": "miRNA_R18_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510951",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_426",
+      "name": "miRNA_R19_S3_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510938",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_427",
+      "name": "miRNA_R19_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510939",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_428",
+      "name": "miRNA_R19_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510940",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_429",
+      "name": "miRNA_R19_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510941",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_430",
+      "name": "miRNA_R1_S1_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511318",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_431",
+      "name": "miRNA_R1_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511319",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_432",
+      "name": "miRNA_R1_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511320",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_433",
+      "name": "miRNA_R1_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511321",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_434",
+      "name": "miRNA_R20_S4_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510928",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_435",
+      "name": "miRNA_R20_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510929",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_436",
+      "name": "miRNA_R20_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510930",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_437",
+      "name": "miRNA_R20_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510931",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_438",
+      "name": "miRNA_R21_S5_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510918",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_439",
+      "name": "miRNA_R21_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510919",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_440",
+      "name": "miRNA_R21_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510920",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_441",
+      "name": "miRNA_R21_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510921",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_442",
+      "name": "miRNA_R22_S6_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511108",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_443",
+      "name": "miRNA_R22_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511109",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_444",
+      "name": "miRNA_R22_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511110",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_445",
+      "name": "miRNA_R22_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511111",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_446",
+      "name": "miRNA_R23_S7_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511098",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_447",
+      "name": "miRNA_R23_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511099",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_448",
+      "name": "miRNA_R23_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511100",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_449",
+      "name": "miRNA_R23_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511101",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_450",
+      "name": "miRNA_R24_S8_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511048",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_451",
+      "name": "miRNA_R24_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511049",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_452",
+      "name": "miRNA_R24_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511050",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_453",
+      "name": "miRNA_R24_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511051",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_454",
+      "name": "miRNA_R25_S2_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511088",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_455",
+      "name": "miRNA_R25_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511089",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_456",
+      "name": "miRNA_R25_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511090",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_457",
+      "name": "miRNA_R25_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511091",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_458",
+      "name": "miRNA_R26_S3_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511078",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_459",
+      "name": "miRNA_R26_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511079",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_460",
+      "name": "miRNA_R26_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511080",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_461",
+      "name": "miRNA_R26_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511081",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_462",
+      "name": "miRNA_R27_S4_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511068",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_463",
+      "name": "miRNA_R27_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511069",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_464",
+      "name": "miRNA_R27_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511070",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_465",
+      "name": "miRNA_R27_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511071",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_466",
+      "name": "miRNA_R28_S5_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511058",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_467",
+      "name": "miRNA_R28_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511059",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_468",
+      "name": "miRNA_R28_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511060",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_469",
+      "name": "miRNA_R28_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511061",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_470",
+      "name": "miRNA_R29_S6_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511458",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_471",
+      "name": "miRNA_R29_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511459",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_472",
+      "name": "miRNA_R29_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511460",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_473",
+      "name": "miRNA_R29_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511461",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_474",
+      "name": "miRNA_R2_S2_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511308",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_475",
+      "name": "miRNA_R2_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511309",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_476",
+      "name": "miRNA_R2_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511310",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_477",
+      "name": "miRNA_R2_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511311",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_478",
+      "name": "miRNA_R30_S7_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511448",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_479",
+      "name": "miRNA_R30_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511449",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_480",
+      "name": "miRNA_R30_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511450",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_481",
+      "name": "miRNA_R30_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511451",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_482",
+      "name": "miRNA_R31_S8_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511398",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_483",
+      "name": "miRNA_R31_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511399",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_484",
+      "name": "miRNA_R31_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511400",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_485",
+      "name": "miRNA_R31_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511401",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_486",
+      "name": "miRNA_R32_S1_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511438",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_487",
+      "name": "miRNA_R32_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511439",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_488",
+      "name": "miRNA_R32_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511440",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_489",
+      "name": "miRNA_R32_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511441",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_490",
+      "name": "miRNA_R33_S1_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511428",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_491",
+      "name": "miRNA_R33_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511429",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_492",
+      "name": "miRNA_R33_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511430",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_493",
+      "name": "miRNA_R33_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511431",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_494",
+      "name": "miRNA_R34_S8_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511418",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_495",
+      "name": "miRNA_R34_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511419",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_496",
+      "name": "miRNA_R34_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511420",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_497",
+      "name": "miRNA_R34_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511421",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_498",
+      "name": "miRNA_R35_S2_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511408",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_499",
+      "name": "miRNA_R35_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511409",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_500",
+      "name": "miRNA_R35_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511410",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_501",
+      "name": "miRNA_R35_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511411",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_502",
+      "name": "miRNA_R36_S3_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511038",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_503",
+      "name": "miRNA_R36_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511039",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_504",
+      "name": "miRNA_R36_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511040",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_505",
+      "name": "miRNA_R36_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511041",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_506",
+      "name": "miRNA_R37_S4_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511028",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_507",
+      "name": "miRNA_R37_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511029",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_508",
+      "name": "miRNA_R37_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511030",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_509",
+      "name": "miRNA_R37_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511031",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_510",
+      "name": "miRNA_R38_S5_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510978",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_511",
+      "name": "miRNA_R38_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510979",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_512",
+      "name": "miRNA_R38_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510980",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_513",
+      "name": "miRNA_R38_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510981",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_514",
+      "name": "miRNA_R39_S6_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511018",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_515",
+      "name": "miRNA_R39_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511019",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_516",
+      "name": "miRNA_R39_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511020",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_517",
+      "name": "miRNA_R39_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511021",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_518",
+      "name": "miRNA_R3_S3_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511258",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_519",
+      "name": "miRNA_R3_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511259",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_520",
+      "name": "miRNA_R3_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511260",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_521",
+      "name": "miRNA_R3_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511261",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_522",
+      "name": "miRNA_R40_S7_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511008",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_523",
+      "name": "miRNA_R40_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511009",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_524",
+      "name": "miRNA_R40_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511010",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_525",
+      "name": "miRNA_R40_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511011",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_526",
+      "name": "miRNA_R41_S1_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510998",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_527",
+      "name": "miRNA_R41_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510999",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_528",
+      "name": "miRNA_R41_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511000",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_529",
+      "name": "miRNA_R41_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511001",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_530",
+      "name": "miRNA_R42_S2_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510988",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_531",
+      "name": "miRNA_R42_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510989",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_532",
+      "name": "miRNA_R42_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510990",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_533",
+      "name": "miRNA_R42_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11510991",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_534",
+      "name": "miRNA_R43_S3_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511178",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_535",
+      "name": "miRNA_R43_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511179",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_536",
+      "name": "miRNA_R43_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511180",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_537",
+      "name": "miRNA_R43_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511181",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_538",
+      "name": "miRNA_R44_S4_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511168",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_539",
+      "name": "miRNA_R44_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511169",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_540",
+      "name": "miRNA_R44_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511170",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_541",
+      "name": "miRNA_R44_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511171",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_542",
+      "name": "miRNA_R45_S5_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511118",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_543",
+      "name": "miRNA_R45_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511119",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_544",
+      "name": "miRNA_R45_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511120",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_545",
+      "name": "miRNA_R45_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511121",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_546",
+      "name": "miRNA_R46_S6_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511158",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_547",
+      "name": "miRNA_R46_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511159",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_548",
+      "name": "miRNA_R46_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511160",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_549",
+      "name": "miRNA_R46_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511161",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_550",
+      "name": "miRNA_R47_S7_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511148",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_551",
+      "name": "miRNA_R47_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511149",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_552",
+      "name": "miRNA_R47_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511150",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_553",
+      "name": "miRNA_R47_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511151",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_554",
+      "name": "miRNA_R48_S8_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511138",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_555",
+      "name": "miRNA_R48_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511139",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_556",
+      "name": "miRNA_R48_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511140",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_557",
+      "name": "miRNA_R48_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511141",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_558",
+      "name": "miRNA_R49_S1_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511128",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_559",
+      "name": "miRNA_R49_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511129",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_560",
+      "name": "miRNA_R49_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511130",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_561",
+      "name": "miRNA_R49_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511131",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_562",
+      "name": "miRNA_R4_S4_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511298",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_563",
+      "name": "miRNA_R4_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511299",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_564",
+      "name": "miRNA_R4_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511300",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_565",
+      "name": "miRNA_R4_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511301",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_566",
+      "name": "miRNA_R50_S2_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511388",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_567",
+      "name": "miRNA_R50_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511389",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_568",
+      "name": "miRNA_R50_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511390",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_569",
+      "name": "miRNA_R50_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511391",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_570",
+      "name": "miRNA_R51_S3_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511378",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_571",
+      "name": "miRNA_R51_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511379",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_572",
+      "name": "miRNA_R51_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511380",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_573",
+      "name": "miRNA_R51_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511381",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_574",
+      "name": "miRNA_R52_S4_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511328",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_575",
+      "name": "miRNA_R52_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511329",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_576",
+      "name": "miRNA_R52_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511330",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_577",
+      "name": "miRNA_R52_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511331",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_578",
+      "name": "miRNA_R53_S5_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511368",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_579",
+      "name": "miRNA_R53_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511369",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_580",
+      "name": "miRNA_R53_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511370",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_581",
+      "name": "miRNA_R53_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511371",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_582",
+      "name": "miRNA_R54_S6_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511358",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_583",
+      "name": "miRNA_R54_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511359",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_584",
+      "name": "miRNA_R54_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511360",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_585",
+      "name": "miRNA_R54_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511361",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_586",
+      "name": "miRNA_R55_S7_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511348",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_587",
+      "name": "miRNA_R55_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511349",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_588",
+      "name": "miRNA_R55_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511350",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_589",
+      "name": "miRNA_R55_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511351",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_590",
+      "name": "miRNA_R56_S8_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511338",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_591",
+      "name": "miRNA_R56_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511339",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_592",
+      "name": "miRNA_R56_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511340",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_593",
+      "name": "miRNA_R56_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511341",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_594",
+      "name": "miRNA_R57_S5_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511528",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_595",
+      "name": "miRNA_R57_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511529",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_596",
+      "name": "miRNA_R57_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511530",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_597",
+      "name": "miRNA_R57_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511531",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_598",
+      "name": "miRNA_R58_S1_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511518",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_599",
+      "name": "miRNA_R58_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511519",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_600",
+      "name": "miRNA_R58_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511520",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_601",
+      "name": "miRNA_R58_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511521",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_602",
+      "name": "miRNA_R59_S2_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511468",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_603",
+      "name": "miRNA_R59_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511469",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_604",
+      "name": "miRNA_R59_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511470",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_605",
+      "name": "miRNA_R59_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511471",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_606",
+      "name": "miRNA_R5_S5_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511288",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_607",
+      "name": "miRNA_R5_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511289",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_608",
+      "name": "miRNA_R5_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511290",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_609",
+      "name": "miRNA_R5_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511291",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_610",
+      "name": "miRNA_R60_S6_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511508",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_611",
+      "name": "miRNA_R60_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511509",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_612",
+      "name": "miRNA_R60_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511510",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_613",
+      "name": "miRNA_R60_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511511",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_614",
+      "name": "miRNA_R61_S3_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511498",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_615",
+      "name": "miRNA_R61_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511499",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_616",
+      "name": "miRNA_R61_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511500",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_617",
+      "name": "miRNA_R61_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511501",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_618",
+      "name": "miRNA_R62_S7_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511488",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_619",
+      "name": "miRNA_R62_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511489",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_620",
+      "name": "miRNA_R62_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511490",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_621",
+      "name": "miRNA_R62_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511491",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_622",
+      "name": "miRNA_R63_S4_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511478",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_623",
+      "name": "miRNA_R63_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511479",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_624",
+      "name": "miRNA_R63_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511480",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_625",
+      "name": "miRNA_R63_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511481",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_626",
+      "name": "miRNA_R6_S6_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511278",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_627",
+      "name": "miRNA_R6_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511279",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_628",
+      "name": "miRNA_R6_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511280",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_629",
+      "name": "miRNA_R6_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511281",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_630",
+      "name": "miRNA_R7_S7_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511268",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_631",
+      "name": "miRNA_R7_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511269",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_632",
+      "name": "miRNA_R7_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511270",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_633",
+      "name": "miRNA_R7_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511271",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_634",
+      "name": "miRNA_R8_S8_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511248",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_635",
+      "name": "miRNA_R8_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511249",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_636",
+      "name": "miRNA_R8_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511250",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_637",
+      "name": "miRNA_R8_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511251",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_638",
+      "name": "miRNA_R9_S1_R1_001.fastq.gz",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511238",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_639",
+      "name": "miRNA_R9_mirdeep2_mature.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511239",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_640",
+      "name": "miRNA_R9_mirdeep2_novel.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511240",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_641",
+      "name": "miRNA_R9_mirdeep2_summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn11511241",
+      "encodingFormat": "text/plain"
+    }
+  ]
+}

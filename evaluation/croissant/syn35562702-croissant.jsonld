@@ -1,0 +1,3295 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Germline Genomic Variants - FreeBayes Pipeline (from syn31668189)",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Germline Genomic Variants - FreeBayes Pipeline (from syn31668189). Synapse ID: syn35562702. https://www.synapse.org/Synapse:syn35562702",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:19:34.352",
+  "keywords": [
+    "FreeBayes",
+    "WES",
+    "germline variants",
+    "NF1"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn35562702",
+  "version": "6",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "FreeBayes_2-001_Blood.vcf.gz",
+      "contentSize": "45328877",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689766.1",
+      "encodingFormat": "application/gzip",
+      "md5": "84b2ff485d8f22978f6cf2f9063f25f8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "FreeBayes_2-001_Blood.vcf.gz.tbi",
+      "contentSize": "1317399",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689760.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4248270e97ee1118d5c7ad66117c9e72"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "FreeBayes_2-001_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "46755482",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689778.1",
+      "encodingFormat": "application/gzip",
+      "md5": "cb22f4157a95fda26309b17b3824ff79"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "FreeBayes_2-001_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1252825",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689769.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "6f3fb8ef423828e66509c87176a5a4ee"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "FreeBayes_2-002_Blood.vcf.gz",
+      "contentSize": "37593092",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689804.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5d132e66f9584b89a945e33f9a85a5c0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "FreeBayes_2-002_Blood.vcf.gz.tbi",
+      "contentSize": "1284881",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689791.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "bf325a1c7ef733b36be50d20e12ef3b0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "FreeBayes_2-002_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz",
+      "contentSize": "35118595",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689807.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f62b6b2604c363b08ce6d4e1ff88b84b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "FreeBayes_2-002_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz.tbi",
+      "contentSize": "1113299",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689811.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "7a608af08f545bdcff9b7d9983709550"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "FreeBayes_2-004_Blood.vcf.gz",
+      "contentSize": "48363315",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689847.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fd792542cacca0198fd59df73df471a4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "FreeBayes_2-004_Blood.vcf.gz.tbi",
+      "contentSize": "1325660",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689826.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "5a7634c0dfc046af0f67d8886e87d06e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "FreeBayes_2-004_NF_Cell_Line.vcf.gz",
+      "contentSize": "52912655",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689837.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2cc035b90dab3bc7bd4d38d9a2ef2498"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "FreeBayes_2-004_NF_Cell_Line.vcf.gz.tbi",
+      "contentSize": "1340030",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689845.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "5206a46c16ee9f0691a53835b86fda69"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "FreeBayes_2-004_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "48932933",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689885.1",
+      "encodingFormat": "application/gzip",
+      "md5": "097875df10e62b14a755ef9681c0ad26"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "FreeBayes_2-004_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1353193",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689875.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "9fe37488c4066113720b04a02a391726"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "FreeBayes_2-004_pNF_Cell_Line.vcf.gz",
+      "contentSize": "45901361",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689890.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7e222d6f3b081a56cdaaa3db5dbfc3b1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "FreeBayes_2-004_pNF_Cell_Line.vcf.gz.tbi",
+      "contentSize": "1223786",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689951.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "6dbfa92d5ef896d3103f1ee0dd037682"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "FreeBayes_2-005_Blood.vcf.gz",
+      "contentSize": "44980369",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689922.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5b5617bc2fa9295dc89fa496e967f2e4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "FreeBayes_2-005_Blood.vcf.gz.tbi",
+      "contentSize": "1369965",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689933.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "bdfd3d0c8171cb7f2be4406d12ccacdc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "FreeBayes_2-005_Neurofibroma.vcf.gz",
+      "contentSize": "53782424",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689942.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0e3e67ef4e908337ea4f7a57f0d81743"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "FreeBayes_2-005_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1379608",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689938.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "a723b06bd5217575147c1615634c97bd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "FreeBayes_2-006_Blood.vcf.gz",
+      "contentSize": "43990298",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689967.1",
+      "encodingFormat": "application/gzip",
+      "md5": "10efa9f3ce0350f86e4b44c1890d33ae"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "FreeBayes_2-006_Blood.vcf.gz.tbi",
+      "contentSize": "1346593",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689971.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "eecbf6e060c5b948dcca608dca6eb48b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "FreeBayes_2-006_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "62179806",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689990.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a89c903129b773c6d45a8cbd7794fe92"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "FreeBayes_2-006_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1421901",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689970.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "ecee0b5795fa35521b183f366f7c1d5a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "FreeBayes_2-009_Blood.vcf.gz",
+      "contentSize": "40739864",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689999.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d1846b092ba84298deff6fac0a4658b7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "FreeBayes_2-009_Blood.vcf.gz.tbi",
+      "contentSize": "1274889",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31689994.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "27de27f0678f7967bbf87e157ef2625c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "FreeBayes_2-009_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz",
+      "contentSize": "31379901",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690016.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7985a6ef23cd7d60448b2e667a611938"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "FreeBayes_2-009_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz.tbi",
+      "contentSize": "1033110",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690064.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "db1ebd5e6aa7b0d3b889f0b7688df0fe"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "FreeBayes_2-010_Blood.vcf.gz",
+      "contentSize": "49024296",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690035.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2a10022cd87a8f31799a7275eb91bce1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "FreeBayes_2-010_Blood.vcf.gz.tbi",
+      "contentSize": "1329798",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690029.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "2da038531f7c46b58e77d623517b3968"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "FreeBayes_2-010_Neurofibroma.vcf.gz",
+      "contentSize": "48108281",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690038.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4209362dece5791752291c53a3941def"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "FreeBayes_2-010_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1286460",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690043.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "d987c9fc0084f12e844aa2367ff3d638"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "FreeBayes_2-012_Blood.vcf.gz",
+      "contentSize": "49775973",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690080.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1064512f6465f21ada54ddc1c86c8a36"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "FreeBayes_2-012_Blood.vcf.gz.tbi",
+      "contentSize": "1364169",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690072.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "20496b4add3b65e5c571443668d05907"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "FreeBayes_2-012_Neurofibroma.vcf.gz",
+      "contentSize": "50996296",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690092.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d76694031d3cb7e94a9ff42a17daf20a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "FreeBayes_2-012_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1345080",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690067.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "50ed001e84f738a59e6c743bf8b01bf3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "FreeBayes_2-013_Blood.vcf.gz",
+      "contentSize": "51387184",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690127.1",
+      "encodingFormat": "application/gzip",
+      "md5": "728edda4eab602d36b4761f804a74b90"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "FreeBayes_2-013_Blood.vcf.gz.tbi",
+      "contentSize": "1368857",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690116.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4709c875ec61dc6b8685c86c032fec0f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "FreeBayes_2-013_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "66512592",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690122.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c1edd70b656b2adaf5db54adae262169"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "FreeBayes_2-013_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1483120",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690119.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "41ffad2c68aa0b72c52d61117df08564"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "FreeBayes_2-014_Blood.vcf.gz",
+      "contentSize": "44620972",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690163.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7f67a3686cd15a31e2dd1bd416a3aef1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "FreeBayes_2-014_Blood.vcf.gz.tbi",
+      "contentSize": "1250377",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690144.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "af71b5c4bf3de74ecf95d77e99a89ce3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "FreeBayes_2-014_Neurofibroma.vcf.gz",
+      "contentSize": "39318081",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690201.1",
+      "encodingFormat": "application/gzip",
+      "md5": "128b93c4598f7a709f6f5a51d900e0d1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "FreeBayes_2-014_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1185376",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690182.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "495140779bbc5937adfd153e181b015a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "FreeBayes_2-015_Blood.vcf.gz",
+      "contentSize": "38879565",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690165.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a26be92d7891a6b4c854be148eeb3153"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "FreeBayes_2-015_Blood.vcf.gz.tbi",
+      "contentSize": "1254609",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690178.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "f2e5f9ba2ec802df22261fd111e977e4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "FreeBayes_2-015_Neurofibroma.vcf.gz",
+      "contentSize": "47453584",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690187.1",
+      "encodingFormat": "application/gzip",
+      "md5": "65e9cb9a7eccbdc97f550156a9a58615"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "FreeBayes_2-015_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1345776",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690184.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "35cb64f2c577a7680f7927e7c7d1e559"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "FreeBayes_2-015_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "44888871",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690225.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5fda0fd67a297d7c8fb47844e5496a6e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "FreeBayes_2-015_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1281872",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690221.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "681c6eadd6ab29be83f3b681d402442d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "FreeBayes_2-016_Blood.vcf.gz",
+      "contentSize": "47444447",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690291.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b4a77f63ec6fbe2cef2151ef9566df2d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "FreeBayes_2-016_Blood.vcf.gz.tbi",
+      "contentSize": "1316362",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690247.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "456c6a5c29438db561d5cdd6320ab261"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "FreeBayes_2-016_Neurofibroma.vcf.gz",
+      "contentSize": "47789105",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690254.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d53202976d628d66bbc8281454c853f2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "FreeBayes_2-016_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1341361",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690260.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "fb443faa849a1f5bfd01c0ce4d3fcf9e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "FreeBayes_2-017_Blood.vcf.gz",
+      "contentSize": "42189456",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690278.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d388b9e0ad76c39bc90a1c276e10ffa2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "FreeBayes_2-017_Blood.vcf.gz.tbi",
+      "contentSize": "1301067",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690277.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "3538f2716d5019977f5684967bb62079"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "FreeBayes_2-017_Neurofibroma.vcf.gz",
+      "contentSize": "42315671",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690274.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2db76a4d759e1d3629cfa75d561c03c7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "FreeBayes_2-017_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1238504",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690295.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "48048eb31b815a2146a27722ca505138"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "FreeBayes_2-019_Blood.vcf.gz",
+      "contentSize": "45010631",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690315.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ae9810f3b1872d0e7a3e271c044e9579"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "FreeBayes_2-019_Blood.vcf.gz.tbi",
+      "contentSize": "1315273",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690325.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "988bbe776d1d867bc60078cf51d04dce"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "FreeBayes_2-019_Neurofibroma.vcf.gz",
+      "contentSize": "48484369",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690331.1",
+      "encodingFormat": "application/gzip",
+      "md5": "aab89c5384ace8237e6e42def5cc849f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "FreeBayes_2-019_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1311983",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690327.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "c82b162e2982989243334a278d522dcd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "FreeBayes_2-021_Blood.vcf.gz",
+      "contentSize": "38487196",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690350.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4520ec6337092c907e18d38ec2a427b4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "FreeBayes_2-021_Blood.vcf.gz.tbi",
+      "contentSize": "1288373",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690359.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "7faad5d8a7c9e768a40b5d29d9898b87"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "FreeBayes_2-021_Neurofibroma.vcf.gz",
+      "contentSize": "50859176",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690369.1",
+      "encodingFormat": "application/gzip",
+      "md5": "89b888e8da012d54953c0f73bb3ef34e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "FreeBayes_2-021_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1326762",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690356.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "449dbbb456d870c2c913c0a3a3af883b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "FreeBayes_2-023_Blood.vcf.gz",
+      "contentSize": "46515467",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690394.1",
+      "encodingFormat": "application/gzip",
+      "md5": "071907213313a7036f371b668d733bba"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "FreeBayes_2-023_Blood.vcf.gz.tbi",
+      "contentSize": "1330127",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690407.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "d1f6f3ed470090d67880607eaa319629"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "FreeBayes_2-023_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz",
+      "contentSize": "36518759",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690402.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0a0c623cef376688efbfff90c95611b4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "FreeBayes_2-023_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz.tbi",
+      "contentSize": "1101093",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690391.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "48e729756dd944c7c95f26215abb58ef"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "FreeBayes_2-023_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "48406712",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690431.1",
+      "encodingFormat": "application/gzip",
+      "md5": "252f76624af43057c61bdba318833d85"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "FreeBayes_2-023_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1340381",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690423.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "71280b2c53f195c5158b37650fc64174"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "FreeBayes_2-025_Blood.vcf.gz",
+      "contentSize": "43529320",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690463.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fd3d562abb4b90f69ccd405d26b9fad9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "FreeBayes_2-025_Blood.vcf.gz.tbi",
+      "contentSize": "1307416",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690454.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "f2980f5783947c83a20d46195721d549"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "FreeBayes_2-025_Neurofibroma.vcf.gz",
+      "contentSize": "46597246",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690468.1",
+      "encodingFormat": "application/gzip",
+      "md5": "cc5a6f4d6cd7afe87828971e9e5046d1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "FreeBayes_2-025_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1297465",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690460.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4f65b963f95f42f007b492940b8e279e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "FreeBayes_2-026_Blood.vcf.gz",
+      "contentSize": "36048354",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690479.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f7d53c1fbf907fee7a1d6a24845b6ad1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "FreeBayes_2-026_Blood.vcf.gz.tbi",
+      "contentSize": "1228200",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690487.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4e9ccb7a0e7d9c2d54bbfe0d7c7f485d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "FreeBayes_2-026_Neurofibroma.vcf.gz",
+      "contentSize": "43217968",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690494.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ef30f07e75fdd1d352647292f60355ae"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "FreeBayes_2-026_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1269839",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690482.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "a6b833bd906a1080b9852c5ae15506e4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "FreeBayes_2-029_Blood.vcf.gz",
+      "contentSize": "47815951",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690524.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d9b36ef7950fa66e26e83110f5963f44"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "FreeBayes_2-029_Blood.vcf.gz.tbi",
+      "contentSize": "1326575",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690525.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "6cf90f097f709adaaaa109b4ecd12a74"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "FreeBayes_2-029_Neurofibroma.vcf.gz",
+      "contentSize": "49667067",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690544.1",
+      "encodingFormat": "application/gzip",
+      "md5": "656885d1b472ac46f68939a0e38aa4f5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "FreeBayes_2-029_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1330415",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690530.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4d8eaed01937ec27c0988fb73ff426dd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "FreeBayes_2-031_Blood.vcf.gz",
+      "contentSize": "44581425",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690558.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1603eba9236a0948d29da06e232c2b30"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "FreeBayes_2-031_Blood.vcf.gz.tbi",
+      "contentSize": "1322753",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690573.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "069005bb3b6d0315b6509e91a9fb658d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "FreeBayes_2-031_Cell_Line.vcf.gz",
+      "contentSize": "39629738",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690583.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4af4d062628d8d6c5fdf6b5a184cda00"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "FreeBayes_2-031_Cell_Line.vcf.gz.tbi",
+      "contentSize": "1139980",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690562.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "3376db15537730ef8767051c0ece3459"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "FreeBayes_2-031_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz",
+      "contentSize": "47841438",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690607.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7f1726a70c3888902b63d0cb7a490029"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "FreeBayes_2-031_Malignant_Peripheral_Nerve_Sheath_Tumor.vcf.gz.tbi",
+      "contentSize": "1328185",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690596.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "5e8fc54e2180a3da461dc9da5bd4474c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "FreeBayes_2-032_Plexiform_Neurofibroma.vcf.gz",
+      "contentSize": "42826601",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690642.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b8cc3eaaa218a3559c651bc50599af92"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "FreeBayes_2-032_Plexiform_Neurofibroma.vcf.gz.tbi",
+      "contentSize": "1299462",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690618.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "2a55ecbfa930f72861acfeadba109f73"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "FreeBayes_2-032_Skin.vcf.gz",
+      "contentSize": "38105835",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690648.1",
+      "encodingFormat": "application/gzip",
+      "md5": "dc96f97384ce0435434e7c22b40c5704"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "FreeBayes_2-032_Skin.vcf.gz.tbi",
+      "contentSize": "1276632",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690678.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "989a239a78781c14a75ca25145f2c052"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "FreeBayes_2_002_Plexiform_Neurofibroma_TD.vcf.gz",
+      "contentSize": "44696944",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690674.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0417ba44d693b8029c00eb02530713b3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "FreeBayes_2_002_Plexiform_Neurofibroma_TD.vcf.gz.tbi",
+      "contentSize": "1272231",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690670.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "6317f2f9cd8dfbcc37ec9220226c7cbf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "FreeBayes_2_009_Neurofibroma_TD.vcf.gz",
+      "contentSize": "42150935",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690699.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e416646aa45c7eba046cfd817596fcbb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "FreeBayes_2_009_Neurofibroma_TD.vcf.gz.tbi",
+      "contentSize": "1298973",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690707.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4d2a2b24aa0a01431d492ceeb6292b8c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "FreeBayes_2_015_Malignant_Peripheral_Nerve_Sheath_Tumor_TD.vcf.gz",
+      "contentSize": "47642322",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690722.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fcc758516cd0c421b15232adea59bb21"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "FreeBayes_2_015_Malignant_Peripheral_Nerve_Sheath_Tumor_TD.vcf.gz.tbi",
+      "contentSize": "1267982",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690723.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "9a0b90a3743f702700e25b72077d7402"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "FreeBayes_2_015_TD.vcf.gz",
+      "contentSize": "42236561",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690747.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4a132b8cdc724799ec752ef7f1f52f67"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "FreeBayes_2_015_TD.vcf.gz.tbi",
+      "contentSize": "1280301",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690755.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "bbe3bac7c88b7dd723a87a059e31f023"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "FreeBayes_2_016_TD.vcf.gz",
+      "contentSize": "46069691",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690824.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0155311a4604b38e166580f905119ad6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "FreeBayes_2_016_TD.vcf.gz.tbi",
+      "contentSize": "1306902",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690780.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "a33284af792612570f0b65420eae4170"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "FreeBayes_TWFE-2-002-20.vcf.gz",
+      "contentSize": "27669739",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690787.1",
+      "encodingFormat": "application/gzip",
+      "md5": "88dc138e7a2b65cca892fc37f2b3b1f8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "FreeBayes_TWFE-2-002-20.vcf.gz.tbi",
+      "contentSize": "807572",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690814.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "7ffe086228d8b73a42e694af42c8aa82"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "FreeBayes_TWFE-2-002-30.vcf.gz",
+      "contentSize": "25958627",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690844.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5cc39c2db0a18c43e909d4f0ece16fb5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "FreeBayes_TWFE-2-002-30.vcf.gz.tbi",
+      "contentSize": "711621",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690847.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "6a421e6b6161b636b82a505566b92e0b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "FreeBayes_TWFE-2-002-JHK6.vcf.gz",
+      "contentSize": "25699675",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690864.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5c5c677894e9be865c21475e5fa0843e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "FreeBayes_TWFE-2-002-JHK6.vcf.gz.tbi",
+      "contentSize": "731456",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690875.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "e240b1736aa576d2d4f5d39c1d538993"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "FreeBayes_TWFE-2-009-23.vcf.gz",
+      "contentSize": "26271656",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690879.1",
+      "encodingFormat": "application/gzip",
+      "md5": "916e6b3985f40f0abc566c0ce4d42694"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "FreeBayes_TWFE-2-009-23.vcf.gz.tbi",
+      "contentSize": "765264",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690878.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4510e9a48778055d14fde480225055ca"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "FreeBayes_TWFE-2-023-21.vcf.gz",
+      "contentSize": "30277187",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690907.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e4d1e8ed9a23511d5bb564ea7695e162"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "FreeBayes_TWFE-2-023-21.vcf.gz.tbi",
+      "contentSize": "894792",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690908.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "2fa0f03ec54a4d9f828f1fdc48f3c398"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "FreeBayes_TWFE-2-0234-6.vcf.gz",
+      "contentSize": "27269987",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690943.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3d954cc341e03aa42aa46dba5a64760f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "FreeBayes_TWFE-2-0234-6.vcf.gz.tbi",
+      "contentSize": "721583",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690945.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "64bae8e04422d5c39eeaf67b903be3c4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_116",
+      "name": "FreeBayes_TWFE-2-044-22.vcf.gz",
+      "contentSize": "22662288",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691011.1",
+      "encodingFormat": "application/gzip",
+      "md5": "434c2ceb85ae1fb80aad90908bf7c5a5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_117",
+      "name": "FreeBayes_TWFE-2-044-22.vcf.gz.tbi",
+      "contentSize": "792286",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690971.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "8d02d82b91bb819e959ce881088e7a22"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_118",
+      "name": "FreeBayes_TWFE-2-044-34.vcf.gz",
+      "contentSize": "27011885",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690983.1",
+      "encodingFormat": "application/gzip",
+      "md5": "416ecc5233b7a5be84cd36fc14eca34f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_119",
+      "name": "FreeBayes_TWFE-2-044-34.vcf.gz.tbi",
+      "contentSize": "828787",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31690978.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "f1e6d666039cf13fe079a5e70fea14b2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_120",
+      "name": "FreeBayes_TWFE-2-045-24.vcf.gz",
+      "contentSize": "23693394",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691007.1",
+      "encodingFormat": "application/gzip",
+      "md5": "231a79a81079ed4e9826771b45a9a05d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_121",
+      "name": "FreeBayes_TWFE-2-045-24.vcf.gz.tbi",
+      "contentSize": "745007",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691001.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "5dfee584fb7c660575a86d42c9819dbc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_122",
+      "name": "FreeBayes_TWFE-2-045-25.vcf.gz",
+      "contentSize": "30027357",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691017.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3e958ff728465ba0c4ae705448ea691a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_123",
+      "name": "FreeBayes_TWFE-2-045-25.vcf.gz.tbi",
+      "contentSize": "813458",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691021.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "28cd5240ef3e447b1e814bf5ab32a3bd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_124",
+      "name": "FreeBayes_TWFE-2-045-26.vcf.gz",
+      "contentSize": "25542653",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691031.1",
+      "encodingFormat": "application/gzip",
+      "md5": "eee24ed23f63c0d034a827e7054b5783"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_125",
+      "name": "FreeBayes_TWFE-2-045-26.vcf.gz.tbi",
+      "contentSize": "739923",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691019.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4d14253b3a79503bfc7dacaf7b5901da"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_126",
+      "name": "FreeBayes_TWFE-2-054-3.vcf.gz",
+      "contentSize": "26695133",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691045.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1638247317d60bf61aeece66af2a415a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_127",
+      "name": "FreeBayes_TWFE-2-054-3.vcf.gz.tbi",
+      "contentSize": "798097",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691044.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "cc2e809a694a5efcdcf0bd46cce66f5d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_128",
+      "name": "FreeBayes_TWFE-2-054-33.vcf.gz",
+      "contentSize": "22885889",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691065.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3162a537a9384bd2129adaa46a4e1cde"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_129",
+      "name": "FreeBayes_TWFE-2-054-33.vcf.gz.tbi",
+      "contentSize": "686101",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691062.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "0225fad902a260ea8c98fe6f376db710"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_130",
+      "name": "FreeBayes_TWFE-2-054-40.vcf.gz",
+      "contentSize": "27938752",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691088.1",
+      "encodingFormat": "application/gzip",
+      "md5": "78fdaf30157ff6fd660421e8c2b526c9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_131",
+      "name": "FreeBayes_TWFE-2-054-40.vcf.gz.tbi",
+      "contentSize": "748670",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691086.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "898dc038f69c8faf768c04b118a2422c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_132",
+      "name": "FreeBayes_TWFE-2-055-13.vcf.gz",
+      "contentSize": "27812125",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691111.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e9a80800ace5785c68e65963ac99b511"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_133",
+      "name": "FreeBayes_TWFE-2-055-13.vcf.gz.tbi",
+      "contentSize": "749964",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691128.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "0a36eb630bf83c9dd6aaac425f8aced2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_134",
+      "name": "FreeBayes_TWFE-2-055-14.vcf.gz",
+      "contentSize": "24475300",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691148.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6469ac8916c157aa26c045358e6c648b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_135",
+      "name": "FreeBayes_TWFE-2-055-14.vcf.gz.tbi",
+      "contentSize": "716597",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691144.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "6315f3b401bb21a0e9cb595cb9808da5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_136",
+      "name": "FreeBayes_TWFE-2-055-15.vcf.gz",
+      "contentSize": "24450482",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691171.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8284acaeea64b8ebd6fb168bd9403b4a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_137",
+      "name": "FreeBayes_TWFE-2-055-15.vcf.gz.tbi",
+      "contentSize": "717335",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691174.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "f1ffebeff01f732a6a56b0c758d46c07"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_138",
+      "name": "FreeBayes_TWFE-2-055-41.vcf.gz",
+      "contentSize": "25216003",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691211.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c5bb605a836c5d77e63c48c8cd44175a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_139",
+      "name": "FreeBayes_TWFE-2-055-41.vcf.gz.tbi",
+      "contentSize": "789282",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691202.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "fb36d11336501c7d006b1bc7184e1b47"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_140",
+      "name": "FreeBayes_TWFE-2-057-28.vcf.gz",
+      "contentSize": "29288227",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691207.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6bae8f0d286a47b269ea4274b7d0bc97"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_141",
+      "name": "FreeBayes_TWFE-2-057-28.vcf.gz.tbi",
+      "contentSize": "780188",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691200.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "89fc35aee6c7cc9d9b922a54d9d39d32"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_142",
+      "name": "FreeBayes_TWFE-2-057-42.vcf.gz",
+      "contentSize": "22190186",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691240.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d210bdbe6f999c956b71b7ad74f8ae9e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_143",
+      "name": "FreeBayes_TWFE-2-057-42.vcf.gz.tbi",
+      "contentSize": "666378",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691243.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "f2cdcda7a17813f8ac28749413834555"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_144",
+      "name": "FreeBayes_TWFE-2-060-38.vcf.gz",
+      "contentSize": "29421802",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691251.1",
+      "encodingFormat": "application/gzip",
+      "md5": "29a785f41487dd600e15af271b5b4f37"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_145",
+      "name": "FreeBayes_TWFE-2-060-38.vcf.gz.tbi",
+      "contentSize": "788331",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691249.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "29ba2aed1ae0937e74f27550ba013de6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_146",
+      "name": "FreeBayes_TWFE-2-060-5.vcf.gz",
+      "contentSize": "24885453",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691268.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4cdf4b2d83dea87935fbf3fc70f7fa55"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_147",
+      "name": "FreeBayes_TWFE-2-060-5.vcf.gz.tbi",
+      "contentSize": "737787",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691271.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "ab1e4c8a72fcc6f0d349e45bd65357e8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_148",
+      "name": "FreeBayes_TWFE-2-060-7.vcf.gz",
+      "contentSize": "26600948",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691294.1",
+      "encodingFormat": "application/gzip",
+      "md5": "189609253a900a8704dd72df08a01dba"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_149",
+      "name": "FreeBayes_TWFE-2-060-7.vcf.gz.tbi",
+      "contentSize": "835802",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691291.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "b8a2ecf4a92a4b463efea74c4c3adbb4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_150",
+      "name": "FreeBayes_TWFE-2-060-JHK1.vcf.gz",
+      "contentSize": "24631176",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691325.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a883705a7cec2f1202a0f0760f2b2773"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_151",
+      "name": "FreeBayes_TWFE-2-060-JHK1.vcf.gz.tbi",
+      "contentSize": "763198",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691323.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "a75deb027cc157738daba7f8b270c3de"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_152",
+      "name": "FreeBayes_TWFE-2-061-11.vcf.gz",
+      "contentSize": "26194945",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691345.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8d136e1c4cff688741267e4f9b8c5795"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_153",
+      "name": "FreeBayes_TWFE-2-061-11.vcf.gz.tbi",
+      "contentSize": "792310",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691340.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "94274c750ec034bf6557ef4b48afc4ef"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_154",
+      "name": "FreeBayes_TWFE-2-061-27.vcf.gz",
+      "contentSize": "30387597",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691326.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ac341005f478d3302fff2760c0284797"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_155",
+      "name": "FreeBayes_TWFE-2-061-27.vcf.gz.tbi",
+      "contentSize": "862351",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691338.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "74d9c3b135003170c5c79b29b290d5da"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_156",
+      "name": "FreeBayes_TWFE-2-061-43.vcf.gz",
+      "contentSize": "27899172",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691390.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8c2c220feea11ccc0c030678b3840952"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_157",
+      "name": "FreeBayes_TWFE-2-061-43.vcf.gz.tbi",
+      "contentSize": "764534",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691383.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "7e55d631046b201502ff53f1dc4ae7d1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_158",
+      "name": "FreeBayes_TWFE-2-068-10.vcf.gz",
+      "contentSize": "28775980",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691402.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8ed762504aa08e6aca026550e69004b0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_159",
+      "name": "FreeBayes_TWFE-2-068-10.vcf.gz.tbi",
+      "contentSize": "823302",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691377.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "9534d4f6a8222fc4a5f8fe9cf38af09c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_160",
+      "name": "FreeBayes_TWFE-2-068-12.vcf.gz",
+      "contentSize": "27612094",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691414.1",
+      "encodingFormat": "application/gzip",
+      "md5": "92a9d741dcccdecbd5873fdde655c397"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_161",
+      "name": "FreeBayes_TWFE-2-068-12.vcf.gz.tbi",
+      "contentSize": "820190",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691426.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "867a9beed5e1a20c4d9f3cef6e74ac17"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_162",
+      "name": "FreeBayes_TWFE-2-068-44.vcf.gz",
+      "contentSize": "26868020",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691488.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8e2b8f9315a78050068ef06564863280"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_163",
+      "name": "FreeBayes_TWFE-2-068-44.vcf.gz.tbi",
+      "contentSize": "849130",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691487.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "ed061998b88599c88450153c4f06f0b2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_164",
+      "name": "FreeBayes_TWFE-2-068-8.vcf.gz",
+      "contentSize": "26499490",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691441.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9c8a59624aef03ce4f957f54586a2ee8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_165",
+      "name": "FreeBayes_TWFE-2-068-8.vcf.gz.tbi",
+      "contentSize": "768202",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691450.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "47d56b14c5eb46e4899551bf7fd28b92"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_166",
+      "name": "FreeBayes_TWFE-2-068-9.vcf.gz",
+      "contentSize": "24724706",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691476.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d2a6c740df5a12a22e895a41217eb2d9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_167",
+      "name": "FreeBayes_TWFE-2-068-9.vcf.gz.tbi",
+      "contentSize": "798122",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691484.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "678c8574262c20b767e166db506d5a8c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_168",
+      "name": "FreeBayes_TWFE-2-072-1.vcf.gz",
+      "contentSize": "26853556",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691513.1",
+      "encodingFormat": "application/gzip",
+      "md5": "09da9879463563a2f5b81d9b46a4a896"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_169",
+      "name": "FreeBayes_TWFE-2-072-1.vcf.gz.tbi",
+      "contentSize": "765648",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691514.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "2ee505c1426667c01fe26c3ab74e1858"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_170",
+      "name": "FreeBayes_TWFE-2-072-45.vcf.gz",
+      "contentSize": "29980984",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691542.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3c88c827f221dcab348bce53a1566a27"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_171",
+      "name": "FreeBayes_TWFE-2-072-45.vcf.gz.tbi",
+      "contentSize": "850707",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691577.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "88bf5f986174ebe250910844e11ad8dd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_172",
+      "name": "FreeBayes_TWFE-2-074-16.vcf.gz",
+      "contentSize": "29537797",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691537.1",
+      "encodingFormat": "application/gzip",
+      "md5": "20d571f9bb33d231b6904c3f1846668d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_173",
+      "name": "FreeBayes_TWFE-2-074-16.vcf.gz.tbi",
+      "contentSize": "827952",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691541.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "471d28ec0cd643a9df817e6b25fca379"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_174",
+      "name": "FreeBayes_TWFE-2-074-46.vcf.gz",
+      "contentSize": "32907021",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691576.1",
+      "encodingFormat": "application/gzip",
+      "md5": "157b55f8a7af94c5c0f7b089759c1922"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_175",
+      "name": "FreeBayes_TWFE-2-074-46.vcf.gz.tbi",
+      "contentSize": "910420",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691574.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "742c504a291d393f78e615ae764468a6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_176",
+      "name": "FreeBayes_TWFE-2-075-29.vcf.gz",
+      "contentSize": "26295132",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691584.1",
+      "encodingFormat": "application/gzip",
+      "md5": "266d90ed279af1ae11b72cbb5b494a1f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_177",
+      "name": "FreeBayes_TWFE-2-075-29.vcf.gz.tbi",
+      "contentSize": "769939",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691590.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "3b5e3e69bfbb4fec5ab8b84ba1345b42"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_178",
+      "name": "FreeBayes_TWFE-2-075-31.vcf.gz",
+      "contentSize": "26337450",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691615.1",
+      "encodingFormat": "application/gzip",
+      "md5": "975072986b63d386fc9be5a7f36f63f8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_179",
+      "name": "FreeBayes_TWFE-2-075-31.vcf.gz.tbi",
+      "contentSize": "717743",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691614.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "2938e2c0ead7dedad2fcedd7972d92bf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_180",
+      "name": "FreeBayes_TWFE-2-075-JHK2.vcf.gz",
+      "contentSize": "24893017",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691624.1",
+      "encodingFormat": "application/gzip",
+      "md5": "bdbd509cb549828b05490756aa31f275"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_181",
+      "name": "FreeBayes_TWFE-2-075-JHK2.vcf.gz.tbi",
+      "contentSize": "748859",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691643.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "de2799f8febf8838b8f4517474d1324d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_182",
+      "name": "FreeBayes_TWFE-2-076-17.vcf.gz",
+      "contentSize": "24010577",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691642.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8209586242a82c3c71f402ae8940f750"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_183",
+      "name": "FreeBayes_TWFE-2-076-17.vcf.gz.tbi",
+      "contentSize": "724258",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691649.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "2e3a6586e59eb4be526adf09b59c68c1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_184",
+      "name": "FreeBayes_TWFE-2-076-4.vcf.gz",
+      "contentSize": "24791102",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691695.1",
+      "encodingFormat": "application/gzip",
+      "md5": "74483960a7e9c0d39f9c96c5541a19d5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_185",
+      "name": "FreeBayes_TWFE-2-076-4.vcf.gz.tbi",
+      "contentSize": "768420",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691673.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "05ed03b205a46945a46c40948cc5c08d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_186",
+      "name": "FreeBayes_TWFE-2-076-JHK3.vcf.gz",
+      "contentSize": "28411050",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691703.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5e7785751daaf22dbc8772e3895b6bb6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_187",
+      "name": "FreeBayes_TWFE-2-076-JHK3.vcf.gz.tbi",
+      "contentSize": "838816",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691699.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "38abc083524a9424d94560e35a5e2714"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_188",
+      "name": "FreeBayes_TWFE-2-077-18.vcf.gz",
+      "contentSize": "27062663",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691719.1",
+      "encodingFormat": "application/gzip",
+      "md5": "952c5fd31ebed62c9eeb8c8ac900e079"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_189",
+      "name": "FreeBayes_TWFE-2-077-18.vcf.gz.tbi",
+      "contentSize": "683768",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691707.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "a4e7cd9ec271f32865d86ced0ab02a3f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_190",
+      "name": "FreeBayes_TWFE-2-077-39.vcf.gz",
+      "contentSize": "27247791",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691784.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8a591f5e3a3727e7324f69f20735bdf9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_191",
+      "name": "FreeBayes_TWFE-2-077-39.vcf.gz.tbi",
+      "contentSize": "798710",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691723.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "64c5059b5bb85528c9c7e6a42536961e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_192",
+      "name": "FreeBayes_TWFE-2-077-JHK4.vcf.gz",
+      "contentSize": "28860208",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691763.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d0ba1d37ff7c0a6059bd9d0a668b71c5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_193",
+      "name": "FreeBayes_TWFE-2-077-JHK4.vcf.gz.tbi",
+      "contentSize": "818688",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691826.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "c988cddf80e5444497b55bbec55adcbb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_194",
+      "name": "FreeBayes_TWFE-2-079-32.vcf.gz",
+      "contentSize": "30829317",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691766.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c0024e86259a5dbda5a8d0f57b05d161"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_195",
+      "name": "FreeBayes_TWFE-2-079-32.vcf.gz.tbi",
+      "contentSize": "817364",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691827.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "359d0c45a7a4831c2257e2062350dc8e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_196",
+      "name": "FreeBayes_TWFE-2-079-47.vcf.gz",
+      "contentSize": "33045193",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691806.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3c5027633c30517818bd60ed60d5e078"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_197",
+      "name": "FreeBayes_TWFE-2-079-47.vcf.gz.tbi",
+      "contentSize": "894138",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691798.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "aa7c7de616fa4c1081ce1f0588a6d700"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_198",
+      "name": "FreeBayes_TWFE-2-082-2.vcf.gz",
+      "contentSize": "29607553",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691817.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c94e99602fb4adaa4687264c279c154b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_199",
+      "name": "FreeBayes_TWFE-2-082-2.vcf.gz.tbi",
+      "contentSize": "863935",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691791.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4360614b0e82f5c77b8c74d92eeb1ad0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_200",
+      "name": "FreeBayes_TWFE-2-082-36.vcf.gz",
+      "contentSize": "23285281",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691849.1",
+      "encodingFormat": "application/gzip",
+      "md5": "236d6d197dbdfc10ee2476b39026603b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_201",
+      "name": "FreeBayes_TWFE-2-082-36.vcf.gz.tbi",
+      "contentSize": "716564",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691843.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "336b28897421c4436c4d650dee5e9b44"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_202",
+      "name": "FreeBayes_TWFE-2-082-JHK5.vcf.gz",
+      "contentSize": "27521276",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691866.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8759da095a01fb8911b2fbe770d40dfa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_203",
+      "name": "FreeBayes_TWFE-2-082-JHK5.vcf.gz.tbi",
+      "contentSize": "795645",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691868.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "ba20710b2003ef7bac0e39184920a4a0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_204",
+      "name": "FreeBayes_TWFE-2-084-19.vcf.gz",
+      "contentSize": "28691076",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691873.1",
+      "encodingFormat": "application/gzip",
+      "md5": "81a7de6277f101629acd6780cc157256"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_205",
+      "name": "FreeBayes_TWFE-2-084-19.vcf.gz.tbi",
+      "contentSize": "766914",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691876.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "79ed2355c3f5457776da3f293c87ad36"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_206",
+      "name": "FreeBayes_TWFE-2-084-2-084.vcf.gz",
+      "contentSize": "21247443",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691901.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c82609ccb8d89ce5f8f6ed02bccbb7f1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_207",
+      "name": "FreeBayes_TWFE-2-084-2-084.vcf.gz.tbi",
+      "contentSize": "637019",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691898.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "b7cf07fb17e54d532ebd8d768b95894e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_208",
+      "name": "FreeBayes_TWFE-2-084-35.vcf.gz",
+      "contentSize": "24317563",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691912.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ddcc1a9d147b6586a762b412d9624b54"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_209",
+      "name": "FreeBayes_TWFE-2-084-35.vcf.gz.tbi",
+      "contentSize": "719513",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691916.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "73a0a00e0a1277c3300e0342648f1be6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_210",
+      "name": "FreeBayes_TWFE-2-084-37.vcf.gz",
+      "contentSize": "25626123",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691932.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fcc4b5f837d14b94e2641ba4b6f781f3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_211",
+      "name": "FreeBayes_TWFE-2-084-37.vcf.gz.tbi",
+      "contentSize": "791659",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691936.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "597189b65c1b4897dd91e1e08edc611f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_212",
+      "name": "FreeBayes_TWFE-2-085-2.vcf.gz",
+      "contentSize": "25246938",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691961.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f3e55f4ae88efe5a5fd1e8b0704f0921"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_213",
+      "name": "FreeBayes_TWFE-2-085-2.vcf.gz.tbi",
+      "contentSize": "635110",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691956.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "1ca3fbc27637a68fa751cea4583509e3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_214",
+      "name": "FreeBayes_TWFE-2-085-2-085.vcf.gz",
+      "contentSize": "24419262",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691955.1",
+      "encodingFormat": "application/gzip",
+      "md5": "271a99765a94a329b345312805633d10"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_215",
+      "name": "FreeBayes_TWFE-2-085-2-085.vcf.gz.tbi",
+      "contentSize": "662682",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691939.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "22a68f22da9f6149c1840b2868d3ecfd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_216",
+      "name": "FreeBayes_TWFE-2-086-2-086.vcf.gz",
+      "contentSize": "24929771",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691994.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5c98b7778a10cf4f4101d13a8fd13da5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_217",
+      "name": "FreeBayes_TWFE-2-086-2-086.vcf.gz.tbi",
+      "contentSize": "658060",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691991.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "568e38764f9aef439bf26fcce5ee370f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_218",
+      "name": "FreeBayes_TWFE-2-086-2-086LLE.vcf.gz",
+      "contentSize": "24350635",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692006.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fa27794709936017437ad2aa808a3ef7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_219",
+      "name": "FreeBayes_TWFE-2-086-2-086LLE.vcf.gz.tbi",
+      "contentSize": "660859",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31691995.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "115f425794c34b0ff465e70e0e24e753"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_220",
+      "name": "FreeBayes_TWFE-2-089-2-089.vcf.gz",
+      "contentSize": "22027764",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692012.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b37e638bd515c6496c4182d901f1d0a0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_221",
+      "name": "FreeBayes_TWFE-2-089-2-089.vcf.gz.tbi",
+      "contentSize": "643721",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692092.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "e8808232cc4a029f89a565eeb2b3c5da"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_222",
+      "name": "FreeBayes_TWFE-2-089-2-089Tumor.vcf.gz",
+      "contentSize": "23627429",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692037.1",
+      "encodingFormat": "application/gzip",
+      "md5": "19aaabcbced2a0230a841759dc0784c5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_223",
+      "name": "FreeBayes_TWFE-2-089-2-089Tumor.vcf.gz.tbi",
+      "contentSize": "630050",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692011.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "cb916912009efb63362dd1564ab3405a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_224",
+      "name": "FreeBayes_TWFE-2-090-2-090.vcf.gz",
+      "contentSize": "26041313",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692062.1",
+      "encodingFormat": "application/gzip",
+      "md5": "89c29c7a6b10a2082ef5ffea2c3861bc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_225",
+      "name": "FreeBayes_TWFE-2-090-2-090.vcf.gz.tbi",
+      "contentSize": "695244",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692055.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "af3d4d72d3017b0ae759d0d56892cc78"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_226",
+      "name": "FreeBayes_TWFE-2-090-2-090Benign.vcf.gz",
+      "contentSize": "30277229",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692050.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d36e1e0fc654366a4df18d64426be30a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_227",
+      "name": "FreeBayes_TWFE-2-090-2-090Benign.vcf.gz.tbi",
+      "contentSize": "728364",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692046.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "f09af705e30f06087159e7b1f9de5973"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_228",
+      "name": "FreeBayes_TWFE-2-090-2-090MalignantTumor.vcf.gz",
+      "contentSize": "26433738",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692094.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4d9b4e26ef834c01029e5ff89eac2bd1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_229",
+      "name": "FreeBayes_TWFE-2-090-2-090MalignantTumor.vcf.gz.tbi",
+      "contentSize": "715500",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692084.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "9e32574daf64ea18cc3c494e07cf74f1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_230",
+      "name": "FreeBayes_TWFE-2-091-2-091.vcf.gz",
+      "contentSize": "22812061",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692120.1",
+      "encodingFormat": "application/gzip",
+      "md5": "976afce6da4113f112d5e2ed13b210ec"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_231",
+      "name": "FreeBayes_TWFE-2-091-2-091.vcf.gz.tbi",
+      "contentSize": "644812",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692124.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "637c6c90915f714940d26854ef88bd52"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_232",
+      "name": "FreeBayes_TWFE-2-091-2-091normal.vcf.gz",
+      "contentSize": "21812712",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692141.1",
+      "encodingFormat": "application/gzip",
+      "md5": "347700fefcaab07606540090bbfd1ddf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_233",
+      "name": "FreeBayes_TWFE-2-091-2-091normal.vcf.gz.tbi",
+      "contentSize": "666365",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692153.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "8412ed91ad63051adb2cf64c760d3102"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_234",
+      "name": "FreeBayes_TWFE-2-092-2-092.vcf.gz",
+      "contentSize": "22650764",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692173.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fa3be0067639f2182c4d44c2e5273a7a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_235",
+      "name": "FreeBayes_TWFE-2-092-2-092.vcf.gz.tbi",
+      "contentSize": "660646",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692164.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "3813850fc9ae84fb18f6eeb2869c64ac"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_236",
+      "name": "FreeBayes_TWFE-2-092-2-092LeftFlank.vcf.gz",
+      "contentSize": "22930281",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692165.1",
+      "encodingFormat": "application/gzip",
+      "md5": "296e692e60c80b18a96d0288959b4433"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_237",
+      "name": "FreeBayes_TWFE-2-092-2-092LeftFlank.vcf.gz.tbi",
+      "contentSize": "641150",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692166.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "e6c53c2fb277b7e2145544aba8ebfc07"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_238",
+      "name": "FreeBayes_TWFE-2-092-2-092RightFlank.vcf.gz",
+      "contentSize": "23014890",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692200.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6dfebc754ccd5dd6476b452097d79868"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_239",
+      "name": "FreeBayes_TWFE-2-092-2-092RightFlank.vcf.gz.tbi",
+      "contentSize": "642923",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692193.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "92c4f48a100729405f20db8af0effc59"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_240",
+      "name": "FreeBayes_TWFE-2-093-2-093.vcf.gz",
+      "contentSize": "25933894",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692230.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b7c48dc71cccbd676e3e753ad15494f2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_241",
+      "name": "FreeBayes_TWFE-2-093-2-093.vcf.gz.tbi",
+      "contentSize": "669735",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692224.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "5935711423df67be1989880b976dd777"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_242",
+      "name": "FreeBayes_TWFE-2-093-2-093RightMiddleBack.vcf.gz",
+      "contentSize": "23140525",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692242.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3438d2ca022a665b9b318f38f58b1f4e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_243",
+      "name": "FreeBayes_TWFE-2-093-2-093RightMiddleBack.vcf.gz.tbi",
+      "contentSize": "609142",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692232.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "b1dbc56f82eb778682e35b8274a9c024"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_244",
+      "name": "FreeBayes_TWFE-2-093-2-093RightUpperBack.vcf.gz",
+      "contentSize": "25246127",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692258.1",
+      "encodingFormat": "application/gzip",
+      "md5": "88cdd53612ae6163ba2e6a8f44a4c6f7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_245",
+      "name": "FreeBayes_TWFE-2-093-2-093RightUpperBack.vcf.gz.tbi",
+      "contentSize": "661484",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692263.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "57d0bca1ff759da6ee98fa4801d969e7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_246",
+      "name": "FreeBayes_TWFE-2-094-2-094.vcf.gz",
+      "contentSize": "24316299",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692349.1",
+      "encodingFormat": "application/gzip",
+      "md5": "06d89d18ef363cd9c28bbab502f2c7aa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_247",
+      "name": "FreeBayes_TWFE-2-094-2-094.vcf.gz.tbi",
+      "contentSize": "643512",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692298.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "7029c5439a9245f6239f7c8733976a83"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_248",
+      "name": "FreeBayes_TWFE-2-094-2-094ankleRightBx.vcf.gz",
+      "contentSize": "25833513",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692296.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2dbfa141b842f26a3ec0d5740c3bbc10"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_249",
+      "name": "FreeBayes_TWFE-2-094-2-094ankleRightBx.vcf.gz.tbi",
+      "contentSize": "684085",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692346.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "a527a3729934181905dad53d396f625e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_250",
+      "name": "FreeBayes_TWFE-2-094-2-094ankleSuperficial.vcf.gz",
+      "contentSize": "24229073",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692316.1",
+      "encodingFormat": "application/gzip",
+      "md5": "70bed7f3f214b60e623e45122240e61a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_251",
+      "name": "FreeBayes_TWFE-2-094-2-094ankleSuperficial.vcf.gz.tbi",
+      "contentSize": "600464",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692318.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "e8e222e3f6855c68544db67606afe069"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_252",
+      "name": "FreeBayes_TWFE-2-095-2-095.vcf.gz",
+      "contentSize": "23730737",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692359.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8e34a9656496298bf050e1da9849ae22"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_253",
+      "name": "FreeBayes_TWFE-2-095-2-095.vcf.gz.tbi",
+      "contentSize": "697712",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692353.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "3cc0fef8c815e67e3d5d1706b8823134"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_254",
+      "name": "FreeBayes_TWFE-2-095-2-095tumor.vcf.gz",
+      "contentSize": "21114576",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692365.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9c4ec84f9fc56175f0eddb1b6630ddb2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_255",
+      "name": "FreeBayes_TWFE-2-095-2-095tumor.vcf.gz.tbi",
+      "contentSize": "605496",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692370.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "e3ce4cde220aa8bdd7880dd6f5ea5bf1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_256",
+      "name": "FreeBayes_TWFE-2-096-2-096normal.vcf.gz",
+      "contentSize": "22107427",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692397.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e9ef21236ab4230a50dfa048439a3410"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_257",
+      "name": "FreeBayes_TWFE-2-096-2-096normal.vcf.gz.tbi",
+      "contentSize": "648648",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692444.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "6df7e2cbd5d743ae199e0486555e9398"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_258",
+      "name": "FreeBayes_TWFE-2-096-2-096tumor.vcf.gz",
+      "contentSize": "21223434",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692465.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4e6b476a6223dd5aba85bd7b1487790e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_259",
+      "name": "FreeBayes_TWFE-2-096-2-096tumor.vcf.gz.tbi",
+      "contentSize": "615452",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692384.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "56fc6c2c97c97e30cbd4b55d3b0ad417"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_260",
+      "name": "FreeBayes_TWFE-2-098-2-098.vcf.gz",
+      "contentSize": "22831296",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692406.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f1be077c9dc07216f0d7654d038a0ab0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_261",
+      "name": "FreeBayes_TWFE-2-098-2-098.vcf.gz.tbi",
+      "contentSize": "670948",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692402.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "52e4eea1235f15ed313917f955346b0a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_262",
+      "name": "FreeBayes_TWFE-2-099-2-099.vcf.gz",
+      "contentSize": "23421782",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692423.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d0a9ba5bf58225812df44b955ec3afed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_263",
+      "name": "FreeBayes_TWFE-2-099-2-099.vcf.gz.tbi",
+      "contentSize": "643922",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692430.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "1a43b0e32a8d081f297fa8936bf99bc9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_264",
+      "name": "FreeBayes_TWFE-2-099-2-099normal.vcf.gz",
+      "contentSize": "23476913",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692469.1",
+      "encodingFormat": "application/gzip",
+      "md5": "90eccc64a12e38929615a98b25fc8cfb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_265",
+      "name": "FreeBayes_TWFE-2-099-2-099normal.vcf.gz.tbi",
+      "contentSize": "654092",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692456.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "d7846c8c88a8a36c49821dfb14221656"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_266",
+      "name": "FreeBayes_TWFE-2-100-2-100.vcf.gz",
+      "contentSize": "22705122",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692461.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d302d6de49aae1627efcb172cfddbbc9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_267",
+      "name": "FreeBayes_TWFE-2-100-2-100.vcf.gz.tbi",
+      "contentSize": "673682",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692473.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "f3175c9cea8904a8f07d0ba587da6234"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_268",
+      "name": "FreeBayes_TWFE-2-100-2-100buttocksTumor.vcf.gz",
+      "contentSize": "24337450",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692486.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0e964d68e1fc002daaab71905cfc948d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_269",
+      "name": "FreeBayes_TWFE-2-100-2-100buttocksTumor.vcf.gz.tbi",
+      "contentSize": "690287",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692471.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "79ea0d20023de84417e426f1590f7211"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_270",
+      "name": "FreeBayes_TWFE-2-102-2-102.vcf.gz",
+      "contentSize": "22744991",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692515.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4a24667fe834a6e36b1fdac8c120f382"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_271",
+      "name": "FreeBayes_TWFE-2-102-2-102.vcf.gz.tbi",
+      "contentSize": "635370",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692514.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "d7e20fe9cba86975c97b8e5340faf1da"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_272",
+      "name": "FreeBayes_TWFE-2-102-2-102leftBackLesion.vcf.gz",
+      "contentSize": "24866204",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692519.1",
+      "encodingFormat": "application/gzip",
+      "md5": "53ad51c355d0ae8f54554dc308f025cb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_273",
+      "name": "FreeBayes_TWFE-2-102-2-102leftBackLesion.vcf.gz.tbi",
+      "contentSize": "700191",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692508.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "ccff7107bd27bbd612a77f39ab9ff11c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_274",
+      "name": "FreeBayes_TWFE-2-103-2-103normal.vcf.gz",
+      "contentSize": "24386630",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692554.1",
+      "encodingFormat": "application/gzip",
+      "md5": "bc0aeeecac076853d7e9d47a1e6821a1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_275",
+      "name": "FreeBayes_TWFE-2-103-2-103normal.vcf.gz.tbi",
+      "contentSize": "657483",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692535.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "7cea725b5579a0525e151e24a87d9d24"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_276",
+      "name": "FreeBayes_TWFE-2-103-2-103tumor.vcf.gz",
+      "contentSize": "26438671",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692621.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fad0b583e9658312a7563623c9bc5bb9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_277",
+      "name": "FreeBayes_TWFE-2-103-2-103tumor.vcf.gz.tbi",
+      "contentSize": "672364",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692628.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "732698f240371968d1f578b98aedb0eb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_278",
+      "name": "FreeBayes_TWFE-2-104-2-104normal.vcf.gz",
+      "contentSize": "19559390",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692634.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1674745e5a143cf424f36ef8505efc5a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_279",
+      "name": "FreeBayes_TWFE-2-104-2-104normal.vcf.gz.tbi",
+      "contentSize": "594094",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692556.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "b9ac02822c39a305a53a8850d5148a9c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_280",
+      "name": "FreeBayes_TWFE-2-104-2-104tumor.vcf.gz",
+      "contentSize": "22784126",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692568.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f97dbe5d35e5890aa9a71485b8f55772"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_281",
+      "name": "FreeBayes_TWFE-2-104-2-104tumor.vcf.gz.tbi",
+      "contentSize": "655611",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692574.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "5842128784ae166a72c784986de60ac9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_282",
+      "name": "FreeBayes_TWFE-2-105-2-105normal.vcf.gz",
+      "contentSize": "21630274",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692595.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8177e505883edd79e2fbf027386f1b10"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_283",
+      "name": "FreeBayes_TWFE-2-105-2-105normal.vcf.gz.tbi",
+      "contentSize": "643277",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692601.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "e3222a176d7e44a396d9db28a5b5b9c4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_284",
+      "name": "FreeBayes_TWFE-2-106-2-106.vcf.gz",
+      "contentSize": "24604190",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692623.1",
+      "encodingFormat": "application/gzip",
+      "md5": "dd656d858ef1cdb8a8887d5d205bff3f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_285",
+      "name": "FreeBayes_TWFE-2-106-2-106.vcf.gz.tbi",
+      "contentSize": "607983",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692603.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "0e4f670a2c4bc3aa5ece8fd92108a2f6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_286",
+      "name": "FreeBayes_TWFE-2-106-2-106normal.vcf.gz",
+      "contentSize": "26221597",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692648.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7adba2cc3f62c7e7bf5340068504b034"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_287",
+      "name": "FreeBayes_TWFE-2-106-2-106normal.vcf.gz.tbi",
+      "contentSize": "683160",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692651.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "4827d0aa3eaefdd26722ce29c99b05c4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_288",
+      "name": "FreeBayes_TWFE-2-111-2-111.vcf.gz",
+      "contentSize": "24635258",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692721.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0180b5ae7dd3b1706265381a334c10f4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_289",
+      "name": "FreeBayes_TWFE-2-111-2-111.vcf.gz.tbi",
+      "contentSize": "686225",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692658.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "21eaba6987b5219cef6ad01c58adfa5e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_290",
+      "name": "FreeBayes_TWFE-2-111-2-111tumor.vcf.gz",
+      "contentSize": "26222079",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692667.1",
+      "encodingFormat": "application/gzip",
+      "md5": "efbc802e7e1ecdea6526d38cf6f13032"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_291",
+      "name": "FreeBayes_TWFE-2-111-2-111tumor.vcf.gz.tbi",
+      "contentSize": "615005",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692650.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "092f83e1c5f492a4d7143950c30b3ec5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_292",
+      "name": "FreeBayes_TWFE-2-113-2-113.vcf.gz",
+      "contentSize": "24937507",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692690.1",
+      "encodingFormat": "application/gzip",
+      "md5": "caa6de7770435c70b10b8a47b103b4b0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_293",
+      "name": "FreeBayes_TWFE-2-113-2-113.vcf.gz.tbi",
+      "contentSize": "670243",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692688.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "7d5754ddaff986a414c2479e265d2e6e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_294",
+      "name": "FreeBayes_TWFE-2-113-2-113lumbar.vcf.gz",
+      "contentSize": "24436459",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692689.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c859738475dc18f7a1f6f1db29c02c76"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_295",
+      "name": "FreeBayes_TWFE-2-113-2-113lumbar.vcf.gz.tbi",
+      "contentSize": "684578",
+      "contentUrl": "https://www.synapse.org/Synapse:syn31692686.1",
+      "encodingFormat": "NOT_SET",
+      "md5": "dd0d00409bfe6526304c07e4e2a803ff"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_296",
+      "name": "Germline Genomic Variants - FreeBayes Pipeline (from syn31668189)",
+      "description": "Synapse Dataset metadata schema for syn35562702",
+      "contentUrl": "https://www.synapse.org/Synapse:syn35562702",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema",
+      "name": "Germline Genomic Variants - FreeBayes Pipeline (from syn31668189) (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn35562702: 34 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/id/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/name/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/etag/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/type/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/assay/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/nf1Genotype",
+          "name": "nf1Genotype",
+          "description": "Column 'nf1Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/nf1Genotype/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "nf1Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/nf2Genotype",
+          "name": "nf2Genotype",
+          "description": "Column 'nf2Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/nf2Genotype/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "nf2Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/progressReportNumber",
+          "name": "progressReportNumber",
+          "description": "Column 'progressReportNumber'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/progressReportNumber/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "progressReportNumber"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/sex",
+          "name": "sex",
+          "description": "Column 'sex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/sex/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "sex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/species/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/workflow",
+          "name": "workflow",
+          "description": "Column 'workflow'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/workflow/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "workflow"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/workflowLink",
+          "name": "workflowLink",
+          "description": "Column 'workflowLink'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Germline_Genomic_Variants_-_FreeBayes_Pipeline__from_syn31668189_-schema/workflowLink/source",
+            "fileObject": {
+              "@id": "file_296"
+            },
+            "extract": {
+              "column": "workflowLink"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

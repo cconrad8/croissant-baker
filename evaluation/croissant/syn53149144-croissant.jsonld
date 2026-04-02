@@ -1,0 +1,1535 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Somatic Genomic Variants - Mutect2 Pipeline - 2024Release",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Somatic Genomic Variants - Mutect2 Pipeline - 2024Release. Synapse ID: syn53149144. https://www.synapse.org/Synapse:syn53149144",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:09:51.723",
+  "keywords": [
+    "somatic variants",
+    "Mutect2",
+    "WES",
+    "2024 release"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn53149144",
+  "version": "11",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "JH-2-085-F2983-A_vs_JH-2-085-895A5-A.mutect2.filtered.vcf.gz",
+      "contentSize": "291185",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849170.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b35cc524c780c92295bc1e53a9bd6284"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "JH-2-086-5EA11-A_vs_JH-2-086-F439A-A.mutect2.filtered.vcf.gz",
+      "contentSize": "301980",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849178.1",
+      "encodingFormat": "application/gzip",
+      "md5": "3a1462edc7fdee5662bf047093d13f0b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "JH-2-089-H8EBA-A_vs_JH-2-089-B5G31-A.mutect2.filtered.vcf.gz",
+      "contentSize": "272972",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849191.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1cffe7e333951159a831fa099ef48c38"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "JH-2-090-19D3F-A_vs_JH-2-090-B565B-A.mutect2.filtered.vcf.gz",
+      "contentSize": "347603",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849201.1",
+      "encodingFormat": "application/gzip",
+      "md5": "36a1c06961b047b74dd236e337d15fa1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "JH-2-090-59DE8-A_vs_JH-2-090-B565B-A.mutect2.filtered.vcf.gz",
+      "contentSize": "338564",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849223.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f06baea23c58d3fc17d80e5c7f505fbb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "JH-2-091-CAA8H-A_vs_JH-2-091-854A2-A.mutect2.filtered.vcf.gz",
+      "contentSize": "289885",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849241.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1a2008ebf50db3a5a7f9896b3bbf7dd2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "JH-2-092-B4F11-A_vs_JH-2-092-9F22G-A.mutect2.filtered.vcf.gz",
+      "contentSize": "485867",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849234.1",
+      "encodingFormat": "application/gzip",
+      "md5": "344e3aaf3cb1bd93c2ecc84e3d3098d4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "JH-2-092-B52E5-A_vs_JH-2-092-9F22G-A.mutect2.filtered.vcf.gz",
+      "contentSize": "269326",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849270.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a4b8bcb4a72174475be3e6b6803b4d3e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "JH-2-093-214AE-A_vs_JH-2-093-4B712-A.mutect2.filtered.vcf.gz",
+      "contentSize": "314855",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849276.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0f5f45d4f12c39ef9c7f37c2d8733c7c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "JH-2-093-518GA-A_vs_JH-2-093-4B712-A.mutect2.filtered.vcf.gz",
+      "contentSize": "247094",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849291.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5b5d721cbea20f5b6438df54e605a8b9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "JH-2-094-151G9-A_vs_JH-2-094-3756F-A.mutect2.filtered.vcf.gz",
+      "contentSize": "310870",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849281.1",
+      "encodingFormat": "application/gzip",
+      "md5": "bac943fe7108d6c76a7a1ecf0f3a0b44"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "JH-2-094-5HA24-A_vs_JH-2-094-3756F-A.mutect2.filtered.vcf.gz",
+      "contentSize": "608614",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849312.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1de9741c80f5b9fee3c44ea0cab73932"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "JH-2-095-4H3FE-A_vs_JH-2-095-H2F2A-A.mutect2.filtered.vcf.gz",
+      "contentSize": "317089",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849289.1",
+      "encodingFormat": "application/gzip",
+      "md5": "48b0bd22970563057bcf36f25198ef8e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "JH-2-096-5E593-A_vs_JH-2-096-C8CBF-A.mutect2.filtered.vcf.gz",
+      "contentSize": "309755",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849325.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6fd1490a17849659b5447398e8a7bacb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "JH-2-099-26HCE-A_vs_JH-2-099-28D4E-A.mutect2.filtered.vcf.gz",
+      "contentSize": "307915",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849336.1",
+      "encodingFormat": "application/gzip",
+      "md5": "68d51a0692a959f8f4d1698c93289090"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "JH-2-100-19H33-A_vs_JH-2-100-EHACB-A.mutect2.filtered.vcf.gz",
+      "contentSize": "295986",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849360.1",
+      "encodingFormat": "application/gzip",
+      "md5": "eeeb5ee6ca91dfc59b19c40488a4d3b3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "JH-2-103-H731E-A_vs_JH-2-103-63HH5-A.mutect2.filtered.vcf.gz",
+      "contentSize": "349420",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849337.1",
+      "encodingFormat": "application/gzip",
+      "md5": "06cda4c8de12fcc566313007fb28b6aa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "JH-2-104-51E2H-A_vs_JH-2-104-B5CDH-A.mutect2.filtered.vcf.gz",
+      "contentSize": "286724",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849374.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7fb5701f18d64b6df258ef402fb1ff5b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "JH-2-106-1447G-A_vs_JH-2-106-B73E8-A.mutect2.filtered.vcf.gz",
+      "contentSize": "416386",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849387.1",
+      "encodingFormat": "application/gzip",
+      "md5": "b956dd57739a720d10fbdbf5dea4c6bd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "JH-2-111-G645D-A_vs_JH-2-111-AFH11-A.mutect2.filtered.vcf.gz",
+      "contentSize": "418338",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849390.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0d1a77cd2a012529dd493ef7bab2feed"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "JH-2-113-7857D-A_vs_JH-2-113-G61GC-A.mutect2.filtered.vcf.gz",
+      "contentSize": "335242",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51849431.1",
+      "encodingFormat": "application/gzip",
+      "md5": "724cbd091d2fa40b075b41c7bb4f35b2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "JH-2-002-354A1-A_vs_JH-2-002-2G58E-A.mutect2.filtered.vcf.gz",
+      "contentSize": "267152",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844300.1",
+      "encodingFormat": "application/gzip",
+      "md5": "717f6e581efbb3c9f96abe727e4083d4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "JH-2-044-83F15-A_vs_JH-2-044-BD592-A.mutect2.filtered.vcf.gz",
+      "contentSize": "255421",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844319.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e0e1e957eebb7d17a1abf4e4e830b4e1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "JH-2-045-F7H3C-A_vs_JH-2-045-DE13F-A.mutect2.filtered.vcf.gz",
+      "contentSize": "268738",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844311.1",
+      "encodingFormat": "application/gzip",
+      "md5": "8efd9f98ee1ed6e5812c307b02d8a492"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "JH-2-045-GH3AA-A_vs_JH-2-045-DE13F-A.mutect2.filtered.vcf.gz",
+      "contentSize": "240875",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844339.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ea04cd4c3bb205da757a8e299d36d709"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "JH-2-054-241HF-A_vs_JH-2-054-9HEG7-A.mutect2.filtered.vcf.gz",
+      "contentSize": "241000",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844320.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7e44577f3dc582f7521d28d8bbb74a48"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "JH-2-054-9255F-A_vs_JH-2-054-9HEG7-A.mutect2.filtered.vcf.gz",
+      "contentSize": "278168",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844357.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a5c9f071d8a7fe4d28bc1280ad2dccca"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "JH-2-055-1419H-9GG15_vs_JH-2-055-G6A65-A.mutect2.filtered.vcf.gz",
+      "contentSize": "278293",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844388.1",
+      "encodingFormat": "application/gzip",
+      "md5": "7128dac78a5a7b9189c6867b2e1aadc7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "JH-2-055-E1381-A_vs_JH-2-055-G6A65-A.mutect2.filtered.vcf.gz",
+      "contentSize": "259625",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844389.1",
+      "encodingFormat": "application/gzip",
+      "md5": "503ff3ba4dbe1c1026355cd9ced3013b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "JH-2-057-37D5D-A_vs_JH-2-057-A1CAA-A.mutect2.filtered.vcf.gz",
+      "contentSize": "285891",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844405.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ada82e62f64bc04427cbbf5a72144450"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "JH-2-060-19EC4-A_vs_JH-2-060-3C319-A.mutect2.filtered.vcf.gz",
+      "contentSize": "217536",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844387.1",
+      "encodingFormat": "application/gzip",
+      "md5": "37644d52712c0bc0c5368bd8db495ff1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "JH-2-060-4CE8D-A_vs_JH-2-060-3C319-A.mutect2.filtered.vcf.gz",
+      "contentSize": "285941",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844372.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a41da85446eac6ee84e2ebd7cd0e91bb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "JH-2-061-1H66H-A_vs_JH-2-061-7E44H-A.mutect2.filtered.vcf.gz",
+      "contentSize": "243461",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844451.1",
+      "encodingFormat": "application/gzip",
+      "md5": "40d0e3161bfa75952cf1216ea689c11c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "JH-2-068-2BHHG-A_vs_JH-2-068-5DHG2-A.mutect2.filtered.vcf.gz",
+      "contentSize": "329842",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844417.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fe0bff4e74247beb04a40ed1326d535b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "JH-2-068-A733G-A_vs_JH-2-068-5DHG2-A.mutect2.filtered.vcf.gz",
+      "contentSize": "302558",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844433.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0d7213170d2dc4587502dd5ae24cefa8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "JH-2-068-A7488-A_vs_JH-2-068-5DHG2-A.mutect2.filtered.vcf.gz",
+      "contentSize": "289317",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844435.1",
+      "encodingFormat": "application/gzip",
+      "md5": "004743b324682349e1f69a661d91c3d1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "JH-2-068-FH52C-A_vs_JH-2-068-5DHG2-A.mutect2.filtered.vcf.gz",
+      "contentSize": "276124",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844476.1",
+      "encodingFormat": "application/gzip",
+      "md5": "bd88e5d22cbd1ca90ffeec10f5acfb8f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "JH-2-072-3DD4G-A_vs_JH-2-072-HGBCF-A.mutect2.filtered.vcf.gz",
+      "contentSize": "307598",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844480.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9617dd00385065d37d07f563b5bd244b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "JH-2-074-HE12C-A_vs_JH-2-074-3G8A7-A.mutect2.filtered.vcf.gz",
+      "contentSize": "299759",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844489.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6952bcdc72e5d28ac90d8d8676200c89"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "JH-2-075-3HE68-A_vs_JH-2-075-A52EE-A.mutect2.filtered.vcf.gz",
+      "contentSize": "229016",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844504.1",
+      "encodingFormat": "application/gzip",
+      "md5": "58b44c1cf7b7c14d1b6f4811376c9dca"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "JH-2-075-4F211-A_vs_JH-2-075-A52EE-A.mutect2.filtered.vcf.gz",
+      "contentSize": "250993",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844532.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9846614787b981ca80470821eb599422"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "JH-2-076-41G1H-A_vs_JH-2-076-C8H1F-A.mutect2.filtered.vcf.gz",
+      "contentSize": "277260",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844524.1",
+      "encodingFormat": "application/gzip",
+      "md5": "32b7b799e8f5dbeb6ff0ea5ce096c0df"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "JH-2-076-811H2-A_vs_JH-2-076-C8H1F-A.mutect2.filtered.vcf.gz",
+      "contentSize": "311187",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844527.1",
+      "encodingFormat": "application/gzip",
+      "md5": "810a176348bae96640a34a5b02bd417d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "JH-2-077-88G11-A_vs_JH-2-077-D2DG7-A.mutect2.filtered.vcf.gz",
+      "contentSize": "274301",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844554.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2b5c57ad8ea9a6ca8cc5044a8341b5b1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "JH-2-079-9D31F-A_vs_JH-2-079-B2ABC-A.mutect2.filtered.vcf.gz",
+      "contentSize": "302865",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844564.1",
+      "encodingFormat": "application/gzip",
+      "md5": "2e9db9f717ceae917acaed399f49ec4d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "JH-2-082-B5148-A_vs_JH-2-082-1C3BH-A.mutect2.filtered.vcf.gz",
+      "contentSize": "346611",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844573.1",
+      "encodingFormat": "application/gzip",
+      "md5": "df6d762f75b363fe15a2e99a290cb256"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "JH-2-082-G8357-A_vs_JH-2-082-1C3BH-A.mutect2.filtered.vcf.gz",
+      "contentSize": "269822",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844575.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f8a02b9c6d2c80d51af03b3d4179bc7a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "JH-2-084-AE169-A_vs_JH-2-084-8HG64-A.mutect2.filtered.vcf.gz",
+      "contentSize": "258028",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844603.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f01b7fc7d538c4442bac62b62517d015"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "JH-2-084-F9A84-A_vs_JH-2-084-8HG64-A.mutect2.filtered.vcf.gz",
+      "contentSize": "333837",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51844615.1",
+      "encodingFormat": "application/gzip",
+      "md5": "4af6c5c1f938beb449c9a62b59cb6e42"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "JH-2-002-354A1-A_vs_JH-2-002-2G58E-A.mutect2.filtered.vcf.gz",
+      "contentSize": "267183",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52594974.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f792889317a4bfd5c1b1ba30b1190f7b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "JH-2-002-94FAA-A_vs_JH-2-002-2G58E-A.mutect2.filtered.vcf.gz",
+      "contentSize": "847074",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52594983.1",
+      "encodingFormat": "application/gzip",
+      "md5": "1109ca5b810ac10d1703423feae9b79c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "JH-2-002-GAF53-FB9H7_vs_JH-2-002-2G58E-A.mutect2.filtered.vcf.gz",
+      "contentSize": "300350",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52594958.1",
+      "encodingFormat": "application/gzip",
+      "md5": "e01a9da31596e5f872c40e87ad381956"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "JH-2-055-FC9GH-A_vs_JH-2-055-G6A65-A.mutect2.filtered.vcf.gz",
+      "contentSize": "1192717",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52594999.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d801e7ffbb7f75fee14841dcbc6b7f04"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "JH-2-079-CB92G-A_vs_JH-2-079-B2ABC-A.mutect2.filtered.vcf.gz",
+      "contentSize": "1246622",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52595005.1",
+      "encodingFormat": "application/gzip",
+      "md5": "67a6dfb1eaba96932f5c1f2abd7991ca"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "JH-2-102-3B72A-A_vs_JH-2-102-1CH6E-A.mutect2.filtered.vcf.gz",
+      "contentSize": "344745",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52595028.1",
+      "encodingFormat": "application/gzip",
+      "md5": "73847ded8c685a99759ccf1895afb476"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "JH-2-001-8A1B1-A_vs_JH-2-001-F3361-A.mutect2.filtered.vcf.gz",
+      "contentSize": "388302",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788639.1",
+      "encodingFormat": "application/gzip",
+      "md5": "c97bf6475a568262e8908b08b72baa39"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "JH-2-002-FF824-A_vs_JH-2-002-A35CA-A.mutect2.filtered.vcf.gz",
+      "contentSize": "337591",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788648.1",
+      "encodingFormat": "application/gzip",
+      "md5": "696cf6ceaaf47fbef1294c9f391b5db9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "JH-2-002-GAF53-A1011_vs_JH-2-002-A35CA-A.mutect2.filtered.vcf.gz",
+      "contentSize": "354559",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788662.1",
+      "encodingFormat": "application/gzip",
+      "md5": "33908e27ead6299a92c02f738ab7bb0e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "JH-2-004-9D9D7-A_vs_JH-2-004-24A54-A.mutect2.filtered.vcf.gz",
+      "contentSize": "378898",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788684.1",
+      "encodingFormat": "application/gzip",
+      "md5": "44f4125172f39bb94b7badbb5a41513e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "JH-2-006-D6BA4-A_vs_JH-2-006-E4H85-A.mutect2.filtered.vcf.gz",
+      "contentSize": "543139",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788692.1",
+      "encodingFormat": "application/gzip",
+      "md5": "72ad6e03a40f4231531d88853945869b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "JH-2-009-518B9-A_vs_JH-2-009-871FH-A.mutect2.filtered.vcf.gz",
+      "contentSize": "379243",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788702.1",
+      "encodingFormat": "application/gzip",
+      "md5": "971cef1fe191075152fc6034d2e63a0c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "JH-2-010-H915D-A_vs_JH-2-010-731C2-A.mutect2.filtered.vcf.gz",
+      "contentSize": "472381",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788698.1",
+      "encodingFormat": "application/gzip",
+      "md5": "eb4513ff722179169740dee168be28cb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "JH-2-012-HE58H-A_vs_JH-2-012-99CG6-A.mutect2.filtered.vcf.gz",
+      "contentSize": "397145",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788724.1",
+      "encodingFormat": "application/gzip",
+      "md5": "97fc0dbe08c8ecb48364e2cd2e28a26b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "JH-2-013-7886G-A_vs_JH-2-013-3HDBG-A.mutect2.filtered.vcf.gz",
+      "contentSize": "557325",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788734.1",
+      "encodingFormat": "application/gzip",
+      "md5": "690c33cb2d10f025d1146cb4e9518133"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "JH-2-014-AH466-A_vs_JH-2-014-7EC8C-A.mutect2.filtered.vcf.gz",
+      "contentSize": "359761",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788739.1",
+      "encodingFormat": "application/gzip",
+      "md5": "88a7f7bc51a3d942ada3491a13ed76e4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "JH-2-015-55B8D-A_vs_JH-2-015-65F26-A.mutect2.filtered.vcf.gz",
+      "contentSize": "392532",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788745.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fb476f462c0f217182cd05a4c350480e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "JH-2-015-6AD96-A_vs_JH-2-015-65F26-A.mutect2.filtered.vcf.gz",
+      "contentSize": "435710",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788766.1",
+      "encodingFormat": "application/gzip",
+      "md5": "681b91d19e8948088e05ce5162a26db7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "JH-2-015-G41AC-A_vs_JH-2-015-65F26-A.mutect2.filtered.vcf.gz",
+      "contentSize": "397644",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788788.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f8a1c736cf9aeb63d58df0797fd2d9d7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "JH-2-016-4H597-A_vs_JH-2-016-8HH24-A.mutect2.filtered.vcf.gz",
+      "contentSize": "435827",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788776.1",
+      "encodingFormat": "application/gzip",
+      "md5": "780f6aa722b6938cd52c8eaa19e2a402"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "JH-2-016-6H516-A_vs_JH-2-016-8HH24-A.mutect2.filtered.vcf.gz",
+      "contentSize": "399394",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788797.1",
+      "encodingFormat": "application/gzip",
+      "md5": "f3beafe9b37e6e8696f89b13d94a1b05"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "JH-2-017-9FH8F-A_vs_JH-2-017-C6562-A.mutect2.filtered.vcf.gz",
+      "contentSize": "429624",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788815.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d2eaf8e9a11f435fa8d5baf839698daa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "JH-2-019-DB5EH-A_vs_JH-2-019-HFBE1-A.mutect2.filtered.vcf.gz",
+      "contentSize": "378841",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788811.1",
+      "encodingFormat": "application/gzip",
+      "md5": "d642b6f34e43fd9f415e2a31080bbb44"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "JH-2-021-6GFE7-A_vs_JH-2-021-4E64E-A.mutect2.filtered.vcf.gz",
+      "contentSize": "440763",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788831.1",
+      "encodingFormat": "application/gzip",
+      "md5": "5d1a96ac4e2edbb26ebbd96c29c6e023"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "JH-2-023-1G2BC-A_vs_JH-2-023-3EG77-A.mutect2.filtered.vcf.gz",
+      "contentSize": "456932",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788834.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9c3f7e9a13a0b850980bebc67538068b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "JH-2-023-89E1F-A_vs_JH-2-023-3EG77-A.mutect2.filtered.vcf.gz",
+      "contentSize": "388089",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788855.1",
+      "encodingFormat": "application/gzip",
+      "md5": "154040a64f61b089e9f075996b3d0c31"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "JH-2-026-9FD64-A_vs_JH-2-026-17B1H-A.mutect2.filtered.vcf.gz",
+      "contentSize": "300774",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788867.1",
+      "encodingFormat": "application/gzip",
+      "md5": "ca32ddb8b2271429a2629ff9ebc1c7eb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "JH-2-031-9GEA9-A_vs_JH-2-031-C91BG-A.mutect2.filtered.vcf.gz",
+      "contentSize": "425045",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788881.1",
+      "encodingFormat": "application/gzip",
+      "md5": "a46d0f1cdc145ecb5198c41b5457398a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "JH-2-032-AE88A-A_vs_JH-2-032-D511F-A.mutect2.filtered.vcf.gz",
+      "contentSize": "366232",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52788888.1",
+      "encodingFormat": "application/gzip",
+      "md5": "711816d64824ce98447c3494c857835a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "JH-2-009-2578C-A_vs_JH-2-009-871FH-A.mutect2.filtered.vcf.gz",
+      "contentSize": "34014",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52594290.1",
+      "encodingFormat": "application/gzip",
+      "md5": "44a328a76363520299507ef8bd9ba818"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "JH-2-009-BBGBH-A_vs_JH-2-009-871FH-A.mutect2.filtered.vcf.gz",
+      "contentSize": "34205",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52594265.1",
+      "encodingFormat": "application/gzip",
+      "md5": "cd3f34060b2dd37124b5700a29388dfa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "JH-2-009-HH11A-A_vs_JH-2-009-871FH-A.mutect2.filtered.vcf.gz",
+      "contentSize": "39967",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52594314.1",
+      "encodingFormat": "application/gzip",
+      "md5": "6b026a86dbd9bc0299ad7272af52c7c1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "JH-2-031-BFF3F-A_vs_JH-2-031-C91BG-A.mutect2.filtered.vcf.gz",
+      "contentSize": "37556",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52594325.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fbe66101a01af1e8e0625d382750dbfb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "JH-2-023-876HC-A_vs_JH-2-023-G59BC-A.mutect2.filtered.vcf.gz",
+      "contentSize": "1194296",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52654548.1",
+      "encodingFormat": "application/gzip",
+      "md5": "70b607d5e08158cf71c5abc8e0df6e58"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "JH-2-023-91HBD-A_vs_JH-2-023-G59BC-A.mutect2.filtered.vcf.gz",
+      "contentSize": "248443",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52654558.1",
+      "encodingFormat": "application/gzip",
+      "md5": "9dd1b7e95fb262085641236f47e38a77"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "JH-2-023-9DA42-A_vs_JH-2-023-G59BC-A.mutect2.filtered.vcf.gz",
+      "contentSize": "307877",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52654555.1",
+      "encodingFormat": "application/gzip",
+      "md5": "0934aa84669f58e617c459279d8a578b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "JH-2-009-2578C-A_vs_JH-2-009-871FH-A.mutect2.filtered.vcf.gz",
+      "contentSize": "353790",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52602111.1",
+      "encodingFormat": "application/gzip",
+      "md5": "fdf54df59d9137bcddf2f8a62d849ee7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "JH-2-015-C436G-A_vs_JH-2-015-65F26-A.mutect2.filtered.vcf.gz",
+      "contentSize": "381929",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52602127.1",
+      "encodingFormat": "application/gzip",
+      "md5": "232a7dd37fdd8db889c92b73a1ae9368"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "JH-2-029-7AE7F-A_vs_JH-2-029-9D9HA-A.mutect2.filtered.vcf.gz",
+      "contentSize": "451394",
+      "contentUrl": "https://www.synapse.org/Synapse:syn52602139.1",
+      "encodingFormat": "application/gzip",
+      "md5": "563d275219770e78da148071e23e3037"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "Somatic Genomic Variants - Mutect2 Pipeline - 2024Release",
+      "description": "Synapse Dataset metadata schema for syn53149144",
+      "contentUrl": "https://www.synapse.org/Synapse:syn53149144",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema",
+      "name": "Somatic Genomic Variants - Mutect2 Pipeline - 2024Release (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn53149144: 41 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/tumorType",
+          "name": "tumorType",
+          "description": "Column 'tumorType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/tumorType/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "tumorType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/workflow",
+          "name": "workflow",
+          "description": "Column 'workflow'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/workflow/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "workflow"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/id/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/name/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/description",
+          "name": "description",
+          "description": "Column 'description'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/description/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "description"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/etag/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/type/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/dataFileName",
+          "name": "dataFileName",
+          "description": "Column 'dataFileName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/dataFileName/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "dataFileName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/dataFileConcreteType",
+          "name": "dataFileConcreteType",
+          "description": "Column 'dataFileConcreteType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/dataFileConcreteType/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "dataFileConcreteType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/dataFileBucket",
+          "name": "dataFileBucket",
+          "description": "Column 'dataFileBucket'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/dataFileBucket/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "dataFileBucket"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/dataFileKey",
+          "name": "dataFileKey",
+          "description": "Column 'dataFileKey'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/dataFileKey/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "dataFileKey"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/age",
+          "name": "age",
+          "description": "Column 'age'",
+          "dataType": "sc:Float",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/age/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "age"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/assay/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/nf1Genotype",
+          "name": "nf1Genotype",
+          "description": "Column 'nf1Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/nf1Genotype/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "nf1Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/nf2Genotype",
+          "name": "nf2Genotype",
+          "description": "Column 'nf2Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/nf2Genotype/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "nf2Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/organ",
+          "name": "organ",
+          "description": "Column 'organ'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/organ/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "organ"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/sex",
+          "name": "sex",
+          "description": "Column 'sex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/sex/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "sex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/species/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/workflowLink",
+          "name": "workflowLink",
+          "description": "Column 'workflowLink'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Somatic_Genomic_Variants_-_Mutect2_Pipeline_-_2024Release-schema/workflowLink/source",
+            "fileObject": {
+              "@id": "file_88"
+            },
+            "extract": {
+              "column": "workflowLink"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

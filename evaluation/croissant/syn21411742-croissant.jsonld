@@ -1,0 +1,3144 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "UPP",
+  "description": "Dataset 'UPP' from Synapse (syn21411742)",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "UPP. Synapse ID: syn21411742. https://www.synapse.org/Synapse:syn21411742",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Mette Peters",
+    "url": "https://www.synapse.org/#!Profile:273995"
+  },
+  "datePublished": "2026-04-02 11:48:51.643",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn21411742",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "UPP_biospecimen_metadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21438420",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "UPP_individual_metadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21438414",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "UPP_individual_metadata_codebook.pdf",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21438415",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "UPP_proteomics_metadata.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21438424",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "UPP_tables_DataDictionary.pdf",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20941361",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "LoaderAndBatchCorrection-UPenn354cases.R",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21437085",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "UPP_BatchCorrectionQC.pdf",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21438430",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "TAMPOR.R",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21437069",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "UniprotToGENESYMBOL(Apr2015)_v03_2columnLookupForR.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21437070",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "proteinGroups.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21437068",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "A1.MaxQuant-LFQ intensity-4698x383TMTchannels-no_batch_correction.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21437077",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "C1.medianPolishRatioOverGIS.batch_corrected_relative_reporter_abundance-2928x254.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21437078",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "C2.medianPolishRatioOverGISavg.batch_corrected_log2(abundanceRatioCenteredOnMedianOfBatchMediansPerProtein)-2928x254.csv",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21437080",
+      "encodingFormat": "application/vnd.ms-excel"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "TAMPOR-Improvement.Vis(75iterations)-2928x383_GIShybrid.pdf",
+      "contentUrl": "https://www.synapse.org/Synapse:syn21437082",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "PENN384-proteinGroups.xlsb",
+      "contentUrl": "https://www.synapse.org/Synapse:syn17086858",
+      "encodingFormat": "application/vnd.ms-excel.sheet.binary.macroEnabled.12"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "upenn_b10_018_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952576",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "upenn_b10_036_9.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952577",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "upenn_b10_075_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952578",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "upenn_b10_120_3.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952579",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "upenn_b10_162_7.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952581",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "upenn_b10_206_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952582",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "upenn_b10_237_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952583",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "upenn_b10_258_4.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952585",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "upenn_b10_265_8.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952586",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "upenn_b10_273_6.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952587",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "upenn_b10_296_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952588",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "upenn_b10_317_5.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952590",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "upenn_b10_egis_1.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952592",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "upenn_b10_egis_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952594",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "upenn_b10_ugis_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952596",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "upenn_b10_ugis_2.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952598",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "upenn_b1_006_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952480",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "upenn_b1_013_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952481",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "upenn_b1_020_34.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952482",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "upenn_b1_031_31.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952483",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "upenn_b1_032_35.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952484",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "upenn_b1_033_28.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952485",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "upenn_b1_042_26.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952486",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "upenn_b1_043_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952487",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "upenn_b1_050_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952488",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "upenn_b1_054_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952489",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "upenn_b1_070_38.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952490",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "upenn_b1_072_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952491",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "upenn_b1_074_32.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952492",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "upenn_b1_084_37.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952493",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "upenn_b1_085_33.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952494",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "upenn_b1_094_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952495",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "upenn_b1_113_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952497",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "upenn_b1_133_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952498",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "upenn_b1_137_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952501",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "upenn_b1_144_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952503",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "upenn_b1_157_42.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952504",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "upenn_b1_199_29.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952507",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "upenn_b1_202_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952509",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "upenn_b1_230_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952512",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "upenn_b1_236_25.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952514",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "upenn_b1_239_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952515",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "upenn_b1_240_36.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952516",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "upenn_b1_247_41.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952518",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "upenn_b1_251_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952519",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_60",
+      "name": "upenn_b1_289_27.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952520",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_61",
+      "name": "upenn_b1_295_30.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952521",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_62",
+      "name": "upenn_b1_304_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952522",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_63",
+      "name": "upenn_b1_331_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952523",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_64",
+      "name": "upenn_b1_335_39.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952530",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_65",
+      "name": "upenn_b1_337_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952560",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_66",
+      "name": "upenn_b1_338_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952561",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_67",
+      "name": "upenn_b1_344_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952562",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_68",
+      "name": "upenn_b1_348_40.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952563",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_69",
+      "name": "upenn_b1_egis_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952564",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_70",
+      "name": "upenn_b1_egis_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952566",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_71",
+      "name": "upenn_b1_egis_43.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952569",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_72",
+      "name": "upenn_b1_ugis_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952571",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_73",
+      "name": "upenn_b1_ugis_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952574",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_74",
+      "name": "upenn_b1_ugis_44.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952575",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_75",
+      "name": "upenn_b2_003_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952600",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_76",
+      "name": "upenn_b2_004_34.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952602",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_77",
+      "name": "upenn_b2_005_39.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952605",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_78",
+      "name": "upenn_b2_011_36.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952607",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_79",
+      "name": "upenn_b2_025_32.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952609",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_80",
+      "name": "upenn_b2_035_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952612",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_81",
+      "name": "upenn_b2_044_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952614",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_82",
+      "name": "upenn_b2_049_31.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952615",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_83",
+      "name": "upenn_b2_068_41.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952617",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_84",
+      "name": "upenn_b2_079_37.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952621",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_85",
+      "name": "upenn_b2_083_25.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952623",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_86",
+      "name": "upenn_b2_117_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952624",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_87",
+      "name": "upenn_b2_118_28.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952628",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_88",
+      "name": "upenn_b2_138_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952630",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_89",
+      "name": "upenn_b2_142_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952632",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_90",
+      "name": "upenn_b2_152_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952634",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_91",
+      "name": "upenn_b2_154_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952635",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_92",
+      "name": "upenn_b2_160_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952640",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_93",
+      "name": "upenn_b2_166_29.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952671",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_94",
+      "name": "upenn_b2_183_42.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952676",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_95",
+      "name": "upenn_b2_208_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952679",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_96",
+      "name": "upenn_b2_225_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952681",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_97",
+      "name": "upenn_b2_232_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952684",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_98",
+      "name": "upenn_b2_233_35.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952686",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_99",
+      "name": "upenn_b2_245_38.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952700",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_100",
+      "name": "upenn_b2_252_40.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952731",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_101",
+      "name": "upenn_b2_256_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952748",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_102",
+      "name": "upenn_b2_259_33.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952770",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_103",
+      "name": "upenn_b2_263_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952800",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_104",
+      "name": "upenn_b2_271_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952834",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_105",
+      "name": "upenn_b2_278_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952866",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_106",
+      "name": "upenn_b2_284_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952890",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_107",
+      "name": "upenn_b2_294_27.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952937",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_108",
+      "name": "upenn_b2_307_30.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952963",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_109",
+      "name": "upenn_b2_318_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn17086954",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_110",
+      "name": "upenn_b2_322_26.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20952980",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_111",
+      "name": "upenn_b2_323_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953006",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_112",
+      "name": "upenn_b2_346_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953050",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_113",
+      "name": "upenn_b2_egis_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953078",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_114",
+      "name": "upenn_b2_egis_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953100",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_115",
+      "name": "upenn_b2_egis_43.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953122",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_116",
+      "name": "upenn_b2_ugis_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953176",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_117",
+      "name": "upenn_b2_ugis_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953204",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_118",
+      "name": "upenn_b2_ugis_44.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953224",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_119",
+      "name": "upenn_b3_002_40.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953264",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_120",
+      "name": "upenn_b3_012_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953291",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_121",
+      "name": "upenn_b3_028_25.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953329",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_122",
+      "name": "upenn_b3_039_37.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953350",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_123",
+      "name": "upenn_b3_055_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953393",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_124",
+      "name": "upenn_b3_059_8.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953421",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_125",
+      "name": "upenn_b3_067_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953458",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_126",
+      "name": "upenn_b3_071_41.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953501",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_127",
+      "name": "upenn_b3_081_27.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953530",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_128",
+      "name": "upenn_b3_086_7.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953562",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_129",
+      "name": "upenn_b3_093_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953587",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_130",
+      "name": "upenn_b3_102_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953620",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_131",
+      "name": "upenn_b3_110_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953647",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_132",
+      "name": "upenn_b3_126_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953693",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_133",
+      "name": "upenn_b3_140_26.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953769",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_134",
+      "name": "upenn_b3_143_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953783",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_135",
+      "name": "upenn_b3_146_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953789",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_136",
+      "name": "upenn_b3_153_39.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953792",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_137",
+      "name": "upenn_b3_169_33.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953794",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_138",
+      "name": "upenn_b3_184_6.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953806",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_139",
+      "name": "upenn_b3_204_32.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953828",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_140",
+      "name": "upenn_b3_209_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953850",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_141",
+      "name": "upenn_b3_214_28.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953871",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_142",
+      "name": "upenn_b3_215_42.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953897",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_143",
+      "name": "upenn_b3_235_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953919",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_144",
+      "name": "upenn_b3_260_35.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953937",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_145",
+      "name": "upenn_b3_272_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953953",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_146",
+      "name": "upenn_b3_275_36.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953971",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_147",
+      "name": "upenn_b3_279_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20953990",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_148",
+      "name": "upenn_b3_286_38.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954008",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_149",
+      "name": "upenn_b3_290_30.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954031",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_150",
+      "name": "upenn_b3_310_9.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954055",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_151",
+      "name": "upenn_b3_314_3.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954071",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_152",
+      "name": "upenn_b3_328_5.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954087",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_153",
+      "name": "upenn_b3_333_31.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954105",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_154",
+      "name": "upenn_b3_350_34.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954128",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_155",
+      "name": "upenn_b3_352_29.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954147",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_156",
+      "name": "upenn_b3_353_4.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954173",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_157",
+      "name": "upenn_b3_egis_1.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954199",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_158",
+      "name": "upenn_b3_egis_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954225",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_159",
+      "name": "upenn_b3_egis_43.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954254",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_160",
+      "name": "upenn_b3_ugis_2.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954272",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_161",
+      "name": "upenn_b3_ugis_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954291",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_162",
+      "name": "upenn_b3_ugis_44.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954310",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_163",
+      "name": "upenn_b4_001_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954328",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_164",
+      "name": "upenn_b4_007_37.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954350",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_165",
+      "name": "upenn_b4_017_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954374",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_166",
+      "name": "upenn_b4_019_42.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954426",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_167",
+      "name": "upenn_b4_022_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954457",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_168",
+      "name": "upenn_b4_023_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954474",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_169",
+      "name": "upenn_b4_046_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954515",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_170",
+      "name": "upenn_b4_053_28.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954538",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_171",
+      "name": "upenn_b4_062_36.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954555",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_172",
+      "name": "upenn_b4_064_8.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954573",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_173",
+      "name": "upenn_b4_066_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954589",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_174",
+      "name": "upenn_b4_076_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954610",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_175",
+      "name": "upenn_b4_078_4.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954640",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_176",
+      "name": "upenn_b4_092_35.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954666",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_177",
+      "name": "upenn_b4_096_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954685",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_178",
+      "name": "upenn_b4_097_27.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954704",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_179",
+      "name": "upenn_b4_103_34.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954721",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_180",
+      "name": "upenn_b4_127_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954735",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_181",
+      "name": "upenn_b4_141_33.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954750",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_182",
+      "name": "upenn_b4_145_40.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954768",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_183",
+      "name": "upenn_b4_161_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954787",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_184",
+      "name": "upenn_b4_173_31.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954809",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_185",
+      "name": "upenn_b4_186_32.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954828",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_186",
+      "name": "upenn_b4_187_41.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954845",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_187",
+      "name": "upenn_b4_195_39.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954846",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_188",
+      "name": "upenn_b4_205_25.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954847",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_189",
+      "name": "upenn_b4_217_6.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954848",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_190",
+      "name": "upenn_b4_218_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954850",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_191",
+      "name": "upenn_b4_226_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954851",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_192",
+      "name": "upenn_b4_248_38.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954852",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_193",
+      "name": "upenn_b4_292_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954856",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_194",
+      "name": "upenn_b4_299_30.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954857",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_195",
+      "name": "upenn_b4_303_26.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954858",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_196",
+      "name": "upenn_b4_305_3.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954859",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_197",
+      "name": "upenn_b4_306_5.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954861",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_198",
+      "name": "upenn_b4_309_9.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954862",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_199",
+      "name": "upenn_b4_315_7.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954863",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_200",
+      "name": "upenn_b4_320_29.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954864",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_201",
+      "name": "upenn_b4_egis_1.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954866",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_202",
+      "name": "upenn_b4_egis_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954868",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_203",
+      "name": "upenn_b4_egis_43.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954869",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_204",
+      "name": "upenn_b4_ugis_2.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954894",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_205",
+      "name": "upenn_b4_ugis_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954911",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_206",
+      "name": "upenn_b4_ugis_44.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954914",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_207",
+      "name": "upenn_b5_014_35.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954917",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_208",
+      "name": "upenn_b5_026_28.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954920",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_209",
+      "name": "upenn_b5_038_31.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954923",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_210",
+      "name": "upenn_b5_041_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954925",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_211",
+      "name": "upenn_b5_063_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954928",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_212",
+      "name": "upenn_b5_082_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954931",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_213",
+      "name": "upenn_b5_088_41.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954934",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_214",
+      "name": "upenn_b5_090_36.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954938",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_215",
+      "name": "upenn_b5_099_42.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954941",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_216",
+      "name": "upenn_b5_107_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954946",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_217",
+      "name": "upenn_b5_121_32.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954948",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_218",
+      "name": "upenn_b5_132_25.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20954951",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_219",
+      "name": "upenn_b5_134_34.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955081",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_220",
+      "name": "upenn_b5_135_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955243",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_221",
+      "name": "upenn_b5_139_38.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955334",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_222",
+      "name": "upenn_b5_148_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955527",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_223",
+      "name": "upenn_b5_155_37.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955530",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_224",
+      "name": "upenn_b5_158_29.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955533",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_225",
+      "name": "upenn_b5_175_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955536",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_226",
+      "name": "upenn_b5_178_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955539",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_227",
+      "name": "upenn_b5_179_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955545",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_228",
+      "name": "upenn_b5_188_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955548",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_229",
+      "name": "upenn_b5_189_39.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955551",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_230",
+      "name": "upenn_b5_193_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955561",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_231",
+      "name": "upenn_b5_197_27.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955568",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_232",
+      "name": "upenn_b5_210_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955572",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_233",
+      "name": "upenn_b5_216_26.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955577",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_234",
+      "name": "upenn_b5_220_30.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955587",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_235",
+      "name": "upenn_b5_231_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955593",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_236",
+      "name": "upenn_b5_249_33.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955600",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_237",
+      "name": "upenn_b5_250_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955605",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_238",
+      "name": "upenn_b5_274_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955608",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_239",
+      "name": "upenn_b5_277_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955611",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_240",
+      "name": "upenn_b5_280_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955615",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_241",
+      "name": "upenn_b5_287_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955643",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_242",
+      "name": "upenn_b5_308_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955657",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_243",
+      "name": "upenn_b5_327_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955664",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_244",
+      "name": "upenn_b5_351_40.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955666",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_245",
+      "name": "upenn_b5_egis_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955670",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_246",
+      "name": "upenn_b5_egis_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955673",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_247",
+      "name": "upenn_b5_egis_43.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955676",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_248",
+      "name": "upenn_b5_ugis_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955687",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_249",
+      "name": "upenn_b5_ugis_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955696",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_250",
+      "name": "upenn_b5_ugis_44.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955705",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_251",
+      "name": "upenn_b6_010_41.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955713",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_252",
+      "name": "upenn_b6_021_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955721",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_253",
+      "name": "upenn_b6_029_7.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955732",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_254",
+      "name": "upenn_b6_048_5.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955740",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_255",
+      "name": "upenn_b6_056_33.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955752",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_256",
+      "name": "upenn_b6_065_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955763",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_257",
+      "name": "upenn_b6_069_39.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955775",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_258",
+      "name": "upenn_b6_073_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955786",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_259",
+      "name": "upenn_b6_087_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955797",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_260",
+      "name": "upenn_b6_095_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955808",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_261",
+      "name": "upenn_b6_098_42.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955818",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_262",
+      "name": "upenn_b6_109_25.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955833",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_263",
+      "name": "upenn_b6_111_27.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955846",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_264",
+      "name": "upenn_b6_125_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955861",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_265",
+      "name": "upenn_b6_136_30.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955875",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_266",
+      "name": "upenn_b6_164_31.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955885",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_267",
+      "name": "upenn_b6_172_29.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955898",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_268",
+      "name": "upenn_b6_177_34.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955912",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_269",
+      "name": "upenn_b6_192_28.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955918",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_270",
+      "name": "upenn_b6_194_35.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955923",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_271",
+      "name": "upenn_b6_198_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955929",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_272",
+      "name": "upenn_b6_200_36.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955934",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_273",
+      "name": "upenn_b6_201_9.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955939",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_274",
+      "name": "upenn_b6_203_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955945",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_275",
+      "name": "upenn_b6_223_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955984",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_276",
+      "name": "upenn_b6_227_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20955986",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_277",
+      "name": "upenn_b6_229_3.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956020",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_278",
+      "name": "upenn_b6_238_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956090",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_279",
+      "name": "upenn_b6_255_38.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956093",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_280",
+      "name": "upenn_b6_257_4.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956098",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_281",
+      "name": "upenn_b6_262_8.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956101",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_282",
+      "name": "upenn_b6_266_32.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956108",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_283",
+      "name": "upenn_b6_267_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956111",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_284",
+      "name": "upenn_b6_268_40.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956142",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_285",
+      "name": "upenn_b6_269_37.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956407",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_286",
+      "name": "upenn_b6_285_26.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956505",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_287",
+      "name": "upenn_b6_311_6.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956524",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_288",
+      "name": "upenn_b6_330_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956528",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_289",
+      "name": "upenn_b6_egis_1.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956531",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_290",
+      "name": "upenn_b6_egis_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956533",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_291",
+      "name": "upenn_b6_egis_43.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956535",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_292",
+      "name": "upenn_b6_ugis_2.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956539",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_293",
+      "name": "upenn_b6_ugis_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956541",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_294",
+      "name": "upenn_b6_ugis_44.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956544",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_295",
+      "name": "upenn_b7_024_27.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956546",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_296",
+      "name": "upenn_b7_051_37.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956548",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_297",
+      "name": "upenn_b7_058_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956551",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_298",
+      "name": "upenn_b7_089_35.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956681",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_299",
+      "name": "upenn_b7_091_30.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20956861",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_300",
+      "name": "upenn_b7_101_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957032",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_301",
+      "name": "upenn_b7_112_29.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957249",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_302",
+      "name": "upenn_b7_114_07.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957327",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_303",
+      "name": "upenn_b7_119_09.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957330",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_304",
+      "name": "upenn_b7_128_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957333",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_305",
+      "name": "upenn_b7_129_05.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957337",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_306",
+      "name": "upenn_b7_131_39.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957340",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_307",
+      "name": "upenn_b7_151_42.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957343",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_308",
+      "name": "upenn_b7_165_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957346",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_309",
+      "name": "upenn_b7_168_25.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957348",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_310",
+      "name": "upenn_b7_170_34.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957352",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_311",
+      "name": "upenn_b7_171_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957371",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_312",
+      "name": "upenn_b7_181_06.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957394",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_313",
+      "name": "upenn_b7_190_08.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957395",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_314",
+      "name": "upenn_b7_213_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957396",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_315",
+      "name": "upenn_b7_221_32.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957399",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_316",
+      "name": "upenn_b7_222_03.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957402",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_317",
+      "name": "upenn_b7_228_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957403",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_318",
+      "name": "upenn_b7_234_26.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957404",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_319",
+      "name": "upenn_b7_241_04.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957408",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_320",
+      "name": "upenn_b7_244_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957409",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_321",
+      "name": "upenn_b7_246_28.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957411",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_322",
+      "name": "upenn_b7_254_41.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957415",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_323",
+      "name": "upenn_b7_270_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957418",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_324",
+      "name": "upenn_b7_293_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957420",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_325",
+      "name": "upenn_b7_300_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957422",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_326",
+      "name": "upenn_b7_301_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957423",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_327",
+      "name": "upenn_b7_312_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957424",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_328",
+      "name": "upenn_b7_316_33.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957425",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_329",
+      "name": "upenn_b7_319_36.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957426",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_330",
+      "name": "upenn_b7_336_40.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957427",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_331",
+      "name": "upenn_b7_340_31.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957429",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_332",
+      "name": "upenn_b7_349_38.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957432",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_333",
+      "name": "upenn_b7_egis_01.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957440",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_334",
+      "name": "upenn_b7_egis_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957449",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_335",
+      "name": "upenn_b7_egis_43.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957452",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_336",
+      "name": "upenn_b7_ugis_02.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957453",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_337",
+      "name": "upenn_b7_ugis_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957454",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_338",
+      "name": "upenn_b7_ugis_44.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957455",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_339",
+      "name": "upenn_b8_016_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957462",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_340",
+      "name": "upenn_b8_027_37.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957469",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_341",
+      "name": "upenn_b8_030_36.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957477",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_342",
+      "name": "upenn_b8_034_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957483",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_343",
+      "name": "upenn_b8_040_8.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957489",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_344",
+      "name": "upenn_b8_045_42.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957491",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_345",
+      "name": "upenn_b8_047_26.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957493",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_346",
+      "name": "upenn_b8_057_7.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957495",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_347",
+      "name": "upenn_b8_077_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957542",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_348",
+      "name": "upenn_b8_080_33.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957561",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_349",
+      "name": "upenn_b8_100_34.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957563",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_350",
+      "name": "upenn_b8_104_30.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957566",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_351",
+      "name": "upenn_b8_108_25.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957568",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_352",
+      "name": "upenn_b8_123_5.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957571",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_353",
+      "name": "upenn_b8_124_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn17087200",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_354",
+      "name": "upenn_b8_147_3.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957573",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_355",
+      "name": "upenn_b8_163_27.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957575",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_356",
+      "name": "upenn_b8_176_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957581",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_357",
+      "name": "upenn_b8_180_32.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957584",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_358",
+      "name": "upenn_b8_182_31.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957585",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_359",
+      "name": "upenn_b8_207_38.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957597",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_360",
+      "name": "upenn_b8_219_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957599",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_361",
+      "name": "upenn_b8_224_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957602",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_362",
+      "name": "upenn_b8_242_28.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957607",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_363",
+      "name": "upenn_b8_253_29.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957611",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_364",
+      "name": "upenn_b8_264_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957613",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_365",
+      "name": "upenn_b8_281_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957614",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_366",
+      "name": "upenn_b8_282_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957615",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_367",
+      "name": "upenn_b8_291_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957617",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_368",
+      "name": "upenn_b8_324_9.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957618",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_369",
+      "name": "upenn_b8_325_4.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957619",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_370",
+      "name": "upenn_b8_326_41.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957620",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_371",
+      "name": "upenn_b8_332_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957621",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_372",
+      "name": "upenn_b8_339_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957622",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_373",
+      "name": "upenn_b8_342_39.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957624",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_374",
+      "name": "upenn_b8_345_40.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957625",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_375",
+      "name": "upenn_b8_347_6.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957626",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_376",
+      "name": "upenn_b8_354_35.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957627",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_377",
+      "name": "upenn_b8_egis_1.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957628",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_378",
+      "name": "upenn_b8_egis_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957629",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_379",
+      "name": "upenn_b8_egis_43.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957630",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_380",
+      "name": "upenn_b8_ugis_2.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957666",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_381",
+      "name": "upenn_b8_ugis_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957667",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_382",
+      "name": "upenn_b8_ugis_44.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957668",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_383",
+      "name": "upenn_b9_008_11.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957669",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_384",
+      "name": "upenn_b9_009_42.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957674",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_385",
+      "name": "upenn_b9_015_33.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957679",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_386",
+      "name": "upenn_b9_037_15.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957680",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_387",
+      "name": "upenn_b9_052_5.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957682",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_388",
+      "name": "upenn_b9_060_30.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957686",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_389",
+      "name": "upenn_b9_061_40.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957688",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_390",
+      "name": "upenn_b9_105_38.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957689",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_391",
+      "name": "upenn_b9_106_3.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957691",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_392",
+      "name": "upenn_b9_115_24.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957692",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_393",
+      "name": "upenn_b9_116_8.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957694",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_394",
+      "name": "upenn_b9_122_13.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957697",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_395",
+      "name": "upenn_b9_130_16.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957698",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_396",
+      "name": "upenn_b9_149_12.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957703",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_397",
+      "name": "upenn_b9_150_19.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957709",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_398",
+      "name": "upenn_b9_156_36.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957711",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_399",
+      "name": "upenn_b9_159_32.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957713",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_400",
+      "name": "upenn_b9_167_21.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957718",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_401",
+      "name": "upenn_b9_174_10.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957721",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_402",
+      "name": "upenn_b9_185_31.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957722",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_403",
+      "name": "upenn_b9_191_20.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957724",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_404",
+      "name": "upenn_b9_196_17.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957726",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_405",
+      "name": "upenn_b9_211_14.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957728",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_406",
+      "name": "upenn_b9_212_41.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957730",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_407",
+      "name": "upenn_b9_243_29.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957740",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_408",
+      "name": "upenn_b9_261_27.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957745",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_409",
+      "name": "upenn_b9_276_37.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957747",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_410",
+      "name": "upenn_b9_283_28.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957752",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_411",
+      "name": "upenn_b9_288_6.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957754",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_412",
+      "name": "upenn_b9_297_7.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957757",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_413",
+      "name": "upenn_b9_298_25.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957759",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_414",
+      "name": "upenn_b9_302_18.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957762",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_415",
+      "name": "upenn_b9_313_39.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957769",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_416",
+      "name": "upenn_b9_321_34.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957808",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_417",
+      "name": "upenn_b9_329_4.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957812",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_418",
+      "name": "upenn_b9_334_35.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957815",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_419",
+      "name": "upenn_b9_341_9.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957817",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_420",
+      "name": "upenn_b9_343_26.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957820",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_421",
+      "name": "upenn_b9_egis_1.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957821",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_422",
+      "name": "upenn_b9_egis_22.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957823",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_423",
+      "name": "upenn_b9_egis_43.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957829",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_424",
+      "name": "upenn_b9_ugis_2.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957831",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_425",
+      "name": "upenn_b9_ugis_23.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957833",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_426",
+      "name": "upenn_b9_ugis_44.raw",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20957837",
+      "encodingFormat": "image/RAW"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_427",
+      "name": "allpeptides.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20938218",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_428",
+      "name": "evidence.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20939069",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_429",
+      "name": "modificationspecificpeptides.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20938263",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_430",
+      "name": "mqpar.xml",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20938226",
+      "encodingFormat": "text/xml"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_431",
+      "name": "msms.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20940754",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_432",
+      "name": "msmsscans.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20941360",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_433",
+      "name": "msscans.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20941456",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_434",
+      "name": "mzrange.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20938275",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_435",
+      "name": "oxidation (m)sites.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20938224",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_436",
+      "name": "parameters.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20938219",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_437",
+      "name": "peptides.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20938321",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_438",
+      "name": "proteingroups.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20941493",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_439",
+      "name": "summary.txt",
+      "contentUrl": "https://www.synapse.org/Synapse:syn20941363",
+      "encodingFormat": "text/plain"
+    }
+  ]
+}

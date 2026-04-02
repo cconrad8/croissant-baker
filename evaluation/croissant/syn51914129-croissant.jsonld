@@ -1,0 +1,1071 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Synodos NF2 Processed RNA-seq - 2017 Release",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Synodos NF2 Processed RNA-seq - 2017 Release. Synapse ID: syn51914129. https://www.synapse.org/Synapse:syn51914129",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "NF-OSI"
+  },
+  "datePublished": "2026-04-02 11:07:34.640",
+  "keywords": [
+    "RNA-seq",
+    "gene expression",
+    "Synodos NF2",
+    "2017 release"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn51914129",
+  "version": "7",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "Synodos_mouseSchwannoma_RNASeq_diffExp_genes.tsv",
+      "contentSize": "19954109",
+      "contentUrl": "https://www.synapse.org/Synapse:syn10880708.1",
+      "encodingFormat": "text/tab-separated-values",
+      "md5": "0419f2d1f9d65abbad1af6f8d409e3c5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "meningioma_differential_expression.txt",
+      "contentSize": "75635674",
+      "contentUrl": "https://www.synapse.org/Synapse:syn10881885.1",
+      "encodingFormat": "text/plain",
+      "md5": "8cc9abe652a1543782cc335a8e360ffc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "schwannoma_differential_expression.txt",
+      "contentSize": "26533973",
+      "contentUrl": "https://www.synapse.org/Synapse:syn10881886.1",
+      "encodingFormat": "text/plain",
+      "md5": "d2483bf0f49ef8f538d838a5c7c40112"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "meningioma_raw_counts.txt",
+      "contentSize": "12939867",
+      "contentUrl": "https://www.synapse.org/Synapse:syn10882903.2",
+      "encodingFormat": "text/plain",
+      "md5": "1a53d1df139ec2b0dadd88077d5db2dd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "mouse_schwannoma_raw_counts_batch4.txt",
+      "contentSize": "4615812",
+      "contentUrl": "https://www.synapse.org/Synapse:syn10885230.1",
+      "encodingFormat": "text/plain",
+      "md5": "3923b1be4cf7c96a986660e1aed562a4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "mouse_schwannoma_raw_counts_batch5.txt",
+      "contentSize": "3851391",
+      "contentUrl": "https://www.synapse.org/Synapse:syn10885227.1",
+      "encodingFormat": "text/plain",
+      "md5": "7b0d5ef71fbb740a761a373cf8aa28a4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "schwannoma_raw_counts.txt",
+      "contentSize": "4557325",
+      "contentUrl": "https://www.synapse.org/Synapse:syn10882987.1",
+      "encodingFormat": "text/plain",
+      "md5": "3b84ec16a8e4c7112c710785ebbda77a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "schwannoma_reseq_raw_counts_bedtoolsHtseq.txt",
+      "contentSize": "1415017",
+      "contentUrl": "https://www.synapse.org/Synapse:syn10149572.1",
+      "encodingFormat": "text/plain",
+      "md5": "6c753d5a62c8e882dfe56824a31b5afd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "Synodos NF2 Processed RNA-seq - 2017 Release",
+      "description": "Synapse Dataset metadata schema for syn51914129",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51914129",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema",
+      "name": "Synodos NF2 Processed RNA-seq - 2017 Release (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn51914129: 57 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/id/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/name/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/description",
+          "name": "description",
+          "description": "Column 'description'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/description/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "description"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/etag/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/type/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/dataFileConcreteType",
+          "name": "dataFileConcreteType",
+          "description": "Column 'dataFileConcreteType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/dataFileConcreteType/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "dataFileConcreteType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/dataFileBucket",
+          "name": "dataFileBucket",
+          "description": "Column 'dataFileBucket'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/dataFileBucket/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "dataFileBucket"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/dataFileKey",
+          "name": "dataFileKey",
+          "description": "Column 'dataFileKey'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/dataFileKey/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "dataFileKey"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/accessTeam",
+          "name": "accessTeam",
+          "description": "Column 'accessTeam'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/accessTeam/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "accessTeam"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/accessType",
+          "name": "accessType",
+          "description": "Column 'accessType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/accessType/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "accessType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/analysisType",
+          "name": "analysisType",
+          "description": "Column 'analysisType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/analysisType/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "analysisType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/assay/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/cellLineMetadataSynId",
+          "name": "cellLineMetadataSynId",
+          "description": "Column 'cellLineMetadataSynId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/cellLineMetadataSynId/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "cellLineMetadataSynId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/cellType",
+          "name": "cellType",
+          "description": "Column 'cellType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/cellType/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "cellType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/compoundDose",
+          "name": "compoundDose",
+          "description": "Column 'compoundDose'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/compoundDose/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "compoundDose"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/compoundDoseUnit",
+          "name": "compoundDoseUnit",
+          "description": "Column 'compoundDoseUnit'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/compoundDoseUnit/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "compoundDoseUnit"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/compoundName",
+          "name": "compoundName",
+          "description": "Column 'compoundName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/compoundName/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "compoundName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/consortium",
+          "name": "consortium",
+          "description": "Column 'consortium'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/consortium/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "consortium"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/differentialExpressionMethod",
+          "name": "differentialExpressionMethod",
+          "description": "Column 'differentialExpressionMethod'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/differentialExpressionMethod/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "differentialExpressionMethod"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/experimentalCondition",
+          "name": "experimentalCondition",
+          "description": "Column 'experimentalCondition'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/experimentalCondition/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "experimentalCondition"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/experimentalTimePoint",
+          "name": "experimentalTimePoint",
+          "description": "Column 'experimentalTimePoint'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/experimentalTimePoint/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "experimentalTimePoint"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/genePerturbationTechnology",
+          "name": "genePerturbationTechnology",
+          "description": "Column 'genePerturbationTechnology'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/genePerturbationTechnology/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "genePerturbationTechnology"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/genePerturbationType",
+          "name": "genePerturbationType",
+          "description": "Column 'genePerturbationType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/genePerturbationType/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "genePerturbationType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/genePerturbed",
+          "name": "genePerturbed",
+          "description": "Column 'genePerturbed'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/genePerturbed/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "genePerturbed"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/individualIdSource",
+          "name": "individualIdSource",
+          "description": "Column 'individualIdSource'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/individualIdSource/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "individualIdSource"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/individualMetadataSynId",
+          "name": "individualMetadataSynId",
+          "description": "Column 'individualMetadataSynId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/individualMetadataSynId/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "individualMetadataSynId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/isCellLine",
+          "name": "isCellLine",
+          "description": "Column 'isCellLine'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/isCellLine/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "isCellLine"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/isMultiIndividual",
+          "name": "isMultiIndividual",
+          "description": "Column 'isMultiIndividual'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/isMultiIndividual/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "isMultiIndividual"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/isMultiSpecimen",
+          "name": "isMultiSpecimen",
+          "description": "Column 'isMultiSpecimen'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/isMultiSpecimen/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "isMultiSpecimen"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/multipleTestingAdjustmentMethod",
+          "name": "multipleTestingAdjustmentMethod",
+          "description": "Column 'multipleTestingAdjustmentMethod'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/multipleTestingAdjustmentMethod/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "multipleTestingAdjustmentMethod"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/nf1Genotype",
+          "name": "nf1Genotype",
+          "description": "Column 'nf1Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/nf1Genotype/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "nf1Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/species/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/specimenIdSource",
+          "name": "specimenIdSource",
+          "description": "Column 'specimenIdSource'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/specimenIdSource/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "specimenIdSource"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/timePointUnit",
+          "name": "timePointUnit",
+          "description": "Column 'timePointUnit'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/timePointUnit/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "timePointUnit"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/transcriptQuantificationMethod",
+          "name": "transcriptQuantificationMethod",
+          "description": "Column 'transcriptQuantificationMethod'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/transcriptQuantificationMethod/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "transcriptQuantificationMethod"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/tumorType",
+          "name": "tumorType",
+          "description": "Column 'tumorType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Synodos_NF2_Processed_RNA-seq_-_2017_Release-schema/tumorType/source",
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "tumorType"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

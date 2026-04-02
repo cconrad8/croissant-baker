@@ -1,0 +1,1373 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Copy Number Variation from the Columbia University NF1 Glioma Project",
+  "description": "Data hosted and governed on Synapse.org and Knowledge Portals by Sage Bionetworks.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Copy Number Variation from the Columbia University NF1 Glioma Project. Synapse ID: syn51915976. https://www.synapse.org/Synapse:syn51915976",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Antonio Iavarone"
+  },
+  "datePublished": "2026-04-02 11:08:48.922",
+  "keywords": [
+    "copy number variation",
+    "CNV",
+    "glioma",
+    "NF1",
+    "Neurofibromatosis type 1",
+    "whole exome sequencing",
+    "Columbia University"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://www.synapse.org/Synapse:syn51915976",
+  "version": "12",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "S8_T.seg.txt.gz",
+      "contentSize": "6789",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861180.1",
+      "encodingFormat": "text/plain",
+      "md5": "75101656b5f0e8465fe0b0c7546e32ea"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "NF_DT_22.seg.txt.gz",
+      "contentSize": "6163",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861170.1",
+      "encodingFormat": "text/plain",
+      "md5": "18ba942d0cad515e644c1f1502405f91"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "NF_DT_13.seg.txt.gz",
+      "contentSize": "4774",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861161.1",
+      "encodingFormat": "text/plain",
+      "md5": "51d564c6dc04480294733a02f4d2832e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "S2_T.seg.txt.gz",
+      "contentSize": "4093",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861172.1",
+      "encodingFormat": "text/plain",
+      "md5": "8943e2cf4075183bceb3d683ed17f716"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "S9_T.seg.txt.gz",
+      "contentSize": "6239",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861183.1",
+      "encodingFormat": "text/plain",
+      "md5": "aef24554327363a27b53f5aa8520feba"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "AI_DT_1.seg.txt.gz",
+      "contentSize": "3844",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16848006.1",
+      "encodingFormat": "text/plain",
+      "md5": "42541c4976c62fd4680d01aa85b63b6c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "NF_DT_7.seg.txt.gz",
+      "contentSize": "7363",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861151.1",
+      "encodingFormat": "text/plain",
+      "md5": "786a9527f650fb43b7224437d23efe15"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "AI_DT_38.seg.txt.gz",
+      "contentSize": "3831",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861130.1",
+      "encodingFormat": "text/plain",
+      "md5": "a88b5be330b6abcdc62cb97964b0e121"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "AI_DT_75.seg.txt.gz",
+      "contentSize": "5058",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861141.1",
+      "encodingFormat": "text/plain",
+      "md5": "99fcc9a11135cf4d9a58f9acb3497097"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_9",
+      "name": "NF_DT_15.seg.txt.gz",
+      "contentSize": "27563",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861163.1",
+      "encodingFormat": "text/plain",
+      "md5": "789592f109e3193c5cf2c8ce4f2792be"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_10",
+      "name": "S3_T.seg.txt.gz",
+      "contentSize": "5111",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861174.1",
+      "encodingFormat": "text/plain",
+      "md5": "eca9f0ec7d31b6a2ab747748c2a480bb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_11",
+      "name": "S10_T.seg.txt.gz",
+      "contentSize": "5071",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861185.1",
+      "encodingFormat": "text/plain",
+      "md5": "daca14ea71b6d164a93efec9949f79ee"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_12",
+      "name": "NF_DT_8.seg.txt.gz",
+      "contentSize": "6129",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861153.1",
+      "encodingFormat": "text/plain",
+      "md5": "7a2e113cce96121ed174baf02e71403f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_13",
+      "name": "S11_T.seg.txt.gz",
+      "contentSize": "9760",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861186.1",
+      "encodingFormat": "text/plain",
+      "md5": "00b834883c316c664ab881318e8eba9a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_14",
+      "name": "AI_DT_21.seg.txt.gz",
+      "contentSize": "3216",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16868215.1",
+      "encodingFormat": "text/plain",
+      "md5": "128ce720dfeff86916740699c61e35cf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_15",
+      "name": "AI_DT_39.seg.txt.gz",
+      "contentSize": "3006",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861132.1",
+      "encodingFormat": "text/plain",
+      "md5": "06ee38aeb73be538fee0fbd14fe3041e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_16",
+      "name": "NF_DT_2.seg.txt.gz",
+      "contentSize": "3794",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861143.1",
+      "encodingFormat": "text/plain",
+      "md5": "6476f8e4d9f456d403b297bd827a1181"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_17",
+      "name": "AI_DT_32.seg.txt.gz",
+      "contentSize": "4203",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8466581.1",
+      "encodingFormat": "text/plain",
+      "md5": "4613b70f87f8f8989655c62d3bf3df35"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_18",
+      "name": "S4_T.seg.txt.gz",
+      "contentSize": "4858",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861176.1",
+      "encodingFormat": "text/plain",
+      "md5": "ddc77a0180e2094aaa24a5478b92e861"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_19",
+      "name": "AI_DT_8.seg.txt.gz",
+      "contentSize": "3109",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861111.1",
+      "encodingFormat": "text/plain",
+      "md5": "753035de41d2dbc2fa490544743d74d1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_20",
+      "name": "AI_DT_26.seg.txt.gz",
+      "contentSize": "2846",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861122.1",
+      "encodingFormat": "text/plain",
+      "md5": "d5cfbacf1fb1ca691f563c570e6e699f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_21",
+      "name": "AI_DT_29.seg.txt.gz",
+      "contentSize": "7233",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8466571.1",
+      "encodingFormat": "text/plain",
+      "md5": "add5c085544d96f811193ad5352823d0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_22",
+      "name": "NF_DT_3.seg.txt.gz",
+      "contentSize": "6912",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861144.1",
+      "encodingFormat": "text/plain",
+      "md5": "bd63db4580a4b081301f5fb47cf22d96"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_23",
+      "name": "NF_DT_9.seg.txt.gz",
+      "contentSize": "7072",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861155.1",
+      "encodingFormat": "text/plain",
+      "md5": "65839ee227fc60c131fa6de51f7ca6cb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_24",
+      "name": "NF_DT_16.seg.txt.gz",
+      "contentSize": "5598",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861166.1",
+      "encodingFormat": "text/plain",
+      "md5": "89f69ad0b12f0a7e4959cd48164d314a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_25",
+      "name": "S33_T.seg.txt.gz",
+      "contentSize": "5766",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861188.1",
+      "encodingFormat": "text/plain",
+      "md5": "d5e8ba3aebc92aededc6e211f62161a9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_26",
+      "name": "AI_DT_11.seg.txt.gz",
+      "contentSize": "4930",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8466561.1",
+      "encodingFormat": "text/plain",
+      "md5": "ba1f901032a379ae0388981804b4a734"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_27",
+      "name": "AI_DT_40.seg.txt.gz",
+      "contentSize": "3258",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861134.1",
+      "encodingFormat": "text/plain",
+      "md5": "9a0a43855bd5c63fa9b9c2d026a1dbad"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_28",
+      "name": "AI_DT_33.seg.txt.gz",
+      "contentSize": "4511",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8466583.1",
+      "encodingFormat": "text/plain",
+      "md5": "2d839af9594118142530230bd07956b3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_29",
+      "name": "S6_T.seg.txt.gz",
+      "contentSize": "5013",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861178.1",
+      "encodingFormat": "text/plain",
+      "md5": "519827005d00f70b1a2a507e811954f1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_30",
+      "name": "AI_DT_9.seg.txt.gz",
+      "contentSize": "3025",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861113.1",
+      "encodingFormat": "text/plain",
+      "md5": "5364f26e68064e3c46a2535b0eb09c6e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_31",
+      "name": "AI_DT_34.seg.txt.gz",
+      "contentSize": "2984",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861124.1",
+      "encodingFormat": "text/plain",
+      "md5": "eee3f7f029dc893d2f59b9c5516ea2f9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_32",
+      "name": "AI_DT_12.seg.txt.gz",
+      "contentSize": "15778",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8466562.1",
+      "encodingFormat": "text/plain",
+      "md5": "611390f3b53d02878de675294ac1180f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_33",
+      "name": "NF_DT_4.seg.txt.gz",
+      "contentSize": "4070",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861146.1",
+      "encodingFormat": "text/plain",
+      "md5": "94b07a1bdd1c2fe6b1b597d2c5f48363"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_34",
+      "name": "AI_DT_4.seg.txt.gz",
+      "contentSize": "5350",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8466584.1",
+      "encodingFormat": "text/plain",
+      "md5": "c781b549940fd1b65cbda0447778434f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_35",
+      "name": "NF_DT_11.seg.txt.gz",
+      "contentSize": "14494",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861157.1",
+      "encodingFormat": "text/plain",
+      "md5": "c31caa3969dc2520920ffa0801486e9c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_36",
+      "name": "NF_DT_17.seg.txt.gz",
+      "contentSize": "11607",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861168.1",
+      "encodingFormat": "text/plain",
+      "md5": "4d0a4ce3d96ee9bc5bf42eb323088f9f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_37",
+      "name": "AI_DT_13.seg.txt.gz",
+      "contentSize": "4389",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8466563.1",
+      "encodingFormat": "text/plain",
+      "md5": "c4208868572576525932d247bc05f6be"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_38",
+      "name": "AI_DT_73.seg.txt.gz",
+      "contentSize": "4273",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861136.1",
+      "encodingFormat": "text/plain",
+      "md5": "1fe76fd2ff778bf35d3a8c676481bbd9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_39",
+      "name": "AI_DT_3.seg.txt.gz",
+      "contentSize": "9441",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8466574.1",
+      "encodingFormat": "text/plain",
+      "md5": "48c6ae855907fa10d7d3ea8fe9ab0e77"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_40",
+      "name": "AI_DT_5.seg.txt.gz",
+      "contentSize": "10049",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8466585.1",
+      "encodingFormat": "text/plain",
+      "md5": "c9feadda6122439ec3c7bfdcb7e4b156"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_41",
+      "name": "AI_DT_14.seg.txt.gz",
+      "contentSize": "3579",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861115.1",
+      "encodingFormat": "text/plain",
+      "md5": "73497269a457466731ef1e08e76ebf6b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_42",
+      "name": "AI_DT_36.seg.txt.gz",
+      "contentSize": "7470",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861126.1",
+      "encodingFormat": "text/plain",
+      "md5": "201dd74df111713f85f101fa1e39e8fb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_43",
+      "name": "NF_DT_6.seg.txt.gz",
+      "contentSize": "10228",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861148.1",
+      "encodingFormat": "text/plain",
+      "md5": "1051a86c98647e55692c9167125263c6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_44",
+      "name": "AI_DT_6.seg.txt.gz",
+      "contentSize": "25912",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8466586.1",
+      "encodingFormat": "text/plain",
+      "md5": "26a81f3c6fa006adae905daa395a1752"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_45",
+      "name": "NF_DT_12.seg.txt.gz",
+      "contentSize": "9856",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861159.1",
+      "encodingFormat": "text/plain",
+      "md5": "b5b37088f6c761c19ebf6b869240edb3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_46",
+      "name": "AI_DT_16.seg.txt.gz",
+      "contentSize": "5245",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8466565.1",
+      "encodingFormat": "text/plain",
+      "md5": "cf4cbb2b72e4cb4218499d6bc9e38e70"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_47",
+      "name": "AI_DT_74.seg.txt.gz",
+      "contentSize": "4579",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861138.1",
+      "encodingFormat": "text/plain",
+      "md5": "276fc961f5233799f90a0ed76d8ce102"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_48",
+      "name": "AI_DT_30.seg.txt.gz",
+      "contentSize": "5793",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8466576.1",
+      "encodingFormat": "text/plain",
+      "md5": "a79ab2b68ffb330816b9b6a1078af3b0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_49",
+      "name": "AI_DT_7.seg.txt.gz",
+      "contentSize": "24524",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8466587.1",
+      "encodingFormat": "text/plain",
+      "md5": "319d81df916f9aa26899f2509956e241"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_50",
+      "name": "AI_DT_22.seg.txt.gz",
+      "contentSize": "4094",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861117.1",
+      "encodingFormat": "text/plain",
+      "md5": "486e9cfe16b8260860a78c5e2142d1ef"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_51",
+      "name": "AI_DT_37.seg.txt.gz",
+      "contentSize": "3779",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861128.1",
+      "encodingFormat": "text/plain",
+      "md5": "c952f7578ed461539d4182b57e491025"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_52",
+      "name": "AI_DT_17.seg.txt.gz",
+      "contentSize": "5170",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8466566.1",
+      "encodingFormat": "text/plain",
+      "md5": "e18e08826851c3d87389c961d06ee628"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_53",
+      "name": "AI_DT_31.seg.txt.gz",
+      "contentSize": "7578",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8466577.1",
+      "encodingFormat": "text/plain",
+      "md5": "918752c794a9f5a2c25ee2766c936577"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_54",
+      "name": "AI_DT_72.seg.txt.gz",
+      "contentSize": "8396",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8466588.1",
+      "encodingFormat": "text/plain",
+      "md5": "ff1e3c5c2d7c6a947565ab6ad359d79d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_55",
+      "name": "AI_DT_24.seg.txt.gz",
+      "contentSize": "3079",
+      "contentUrl": "https://www.synapse.org/Synapse:syn16861119.1",
+      "encodingFormat": "text/plain",
+      "md5": "fe0fca26f911fb52f618008fe4e21fb0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_56",
+      "name": "AI_DT_23.seg.txt.gz",
+      "contentSize": "9340",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8466568.1",
+      "encodingFormat": "text/plain",
+      "md5": "e6e08b4b5c6d1add1dee5295f3fdb217"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_57",
+      "name": "AI_DT_25.seg.txt.gz",
+      "contentSize": "7074",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8466569.1",
+      "encodingFormat": "text/plain",
+      "md5": "140c9e38f8dc71b7cb41e5c03482a5f5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_58",
+      "name": "AI_DT_10.seg.txt.gz",
+      "contentSize": "5444",
+      "contentUrl": "https://www.synapse.org/Synapse:syn8466559.1",
+      "encodingFormat": "text/plain",
+      "md5": "20bd362b7b6aaf20e91891951c3a3a19"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_59",
+      "name": "Copy Number Variation from the Columbia University NF1 Glioma Project",
+      "description": "Synapse Dataset metadata schema for syn51915976",
+      "contentUrl": "https://www.synapse.org/Synapse:syn51915976",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema",
+      "name": "Copy Number Variation from the Columbia University NF1 Glioma Project (metadata schema)",
+      "description": "Item-level metadata schema for Synapse Dataset syn51915976: 47 columns",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/id",
+          "name": "id",
+          "description": "Column 'id'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/id/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/name",
+          "name": "name",
+          "description": "Column 'name'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/name/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/description",
+          "name": "description",
+          "description": "Column 'description'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/description/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "description"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/createdOn",
+          "name": "createdOn",
+          "description": "Column 'createdOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/createdOn/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "createdOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/createdBy",
+          "name": "createdBy",
+          "description": "Column 'createdBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/createdBy/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "createdBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/etag",
+          "name": "etag",
+          "description": "Column 'etag'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/etag/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "etag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/modifiedOn",
+          "name": "modifiedOn",
+          "description": "Column 'modifiedOn'",
+          "dataType": "sc:Date",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/modifiedOn/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "modifiedOn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/modifiedBy",
+          "name": "modifiedBy",
+          "description": "Column 'modifiedBy'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/modifiedBy/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "modifiedBy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/type",
+          "name": "type",
+          "description": "Column 'type'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/type/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/currentVersion",
+          "name": "currentVersion",
+          "description": "Column 'currentVersion'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/currentVersion/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "currentVersion"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/parentId",
+          "name": "parentId",
+          "description": "Column 'parentId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/parentId/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "parentId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/benefactorId",
+          "name": "benefactorId",
+          "description": "Column 'benefactorId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/benefactorId/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "benefactorId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/projectId",
+          "name": "projectId",
+          "description": "Column 'projectId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/projectId/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "projectId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/dataFileHandleId",
+          "name": "dataFileHandleId",
+          "description": "Column 'dataFileHandleId'",
+          "dataType": "sc:URL",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/dataFileHandleId/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "dataFileHandleId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/dataFileSizeBytes",
+          "name": "dataFileSizeBytes",
+          "description": "Column 'dataFileSizeBytes'",
+          "dataType": "sc:Integer",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/dataFileSizeBytes/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "dataFileSizeBytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/dataFileMD5Hex",
+          "name": "dataFileMD5Hex",
+          "description": "Column 'dataFileMD5Hex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/dataFileMD5Hex/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "dataFileMD5Hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/dataFileConcreteType",
+          "name": "dataFileConcreteType",
+          "description": "Column 'dataFileConcreteType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/dataFileConcreteType/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "dataFileConcreteType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/dataFileBucket",
+          "name": "dataFileBucket",
+          "description": "Column 'dataFileBucket'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/dataFileBucket/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "dataFileBucket"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/dataFileKey",
+          "name": "dataFileKey",
+          "description": "Column 'dataFileKey'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/dataFileKey/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "dataFileKey"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/accessTeam",
+          "name": "accessTeam",
+          "description": "Column 'accessTeam'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/accessTeam/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "accessTeam"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/accessType",
+          "name": "accessType",
+          "description": "Column 'accessType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/accessType/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "accessType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/age",
+          "name": "age",
+          "description": "Column 'age'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/age/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "age"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/assay",
+          "name": "assay",
+          "description": "Column 'assay'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/assay/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "assay"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/dataSubtype",
+          "name": "dataSubtype",
+          "description": "Column 'dataSubtype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/dataSubtype/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "dataSubtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/dataType",
+          "name": "dataType",
+          "description": "Column 'dataType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/dataType/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "dataType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/diagnosis",
+          "name": "diagnosis",
+          "description": "Column 'diagnosis'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/diagnosis/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "diagnosis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/fileFormat",
+          "name": "fileFormat",
+          "description": "Column 'fileFormat'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/fileFormat/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "fileFormat"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/fundingAgency",
+          "name": "fundingAgency",
+          "description": "Column 'fundingAgency'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/fundingAgency/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "fundingAgency"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/grade",
+          "name": "grade",
+          "description": "Column 'grade'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/grade/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "grade"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/histology",
+          "name": "histology",
+          "description": "Column 'histology'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/histology/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "histology"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/individualID",
+          "name": "individualID",
+          "description": "Column 'individualID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/individualID/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "individualID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/initiative",
+          "name": "initiative",
+          "description": "Column 'initiative'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/initiative/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "initiative"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/isCellLine",
+          "name": "isCellLine",
+          "description": "Column 'isCellLine'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/isCellLine/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "isCellLine"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/isMultiIndividual",
+          "name": "isMultiIndividual",
+          "description": "Column 'isMultiIndividual'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/isMultiIndividual/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "isMultiIndividual"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/isMultiSpecimen",
+          "name": "isMultiSpecimen",
+          "description": "Column 'isMultiSpecimen'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/isMultiSpecimen/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "isMultiSpecimen"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/isPrimaryCell",
+          "name": "isPrimaryCell",
+          "description": "Column 'isPrimaryCell'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/isPrimaryCell/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "isPrimaryCell"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/nf1Genotype",
+          "name": "nf1Genotype",
+          "description": "Column 'nf1Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/nf1Genotype/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "nf1Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/nf2Genotype",
+          "name": "nf2Genotype",
+          "description": "Column 'nf2Genotype'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/nf2Genotype/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "nf2Genotype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/organ",
+          "name": "organ",
+          "description": "Column 'organ'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/organ/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "organ"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/resourceType",
+          "name": "resourceType",
+          "description": "Column 'resourceType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/resourceType/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "resourceType"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/sex",
+          "name": "sex",
+          "description": "Column 'sex'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/sex/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "sex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/species",
+          "name": "species",
+          "description": "Column 'species'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/species/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "species"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/specimenID",
+          "name": "specimenID",
+          "description": "Column 'specimenID'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/specimenID/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "specimenID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/studyId",
+          "name": "studyId",
+          "description": "Column 'studyId'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/studyId/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "studyId"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/studyName",
+          "name": "studyName",
+          "description": "Column 'studyName'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/studyName/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "studyName"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/tissue",
+          "name": "tissue",
+          "description": "Column 'tissue'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/tissue/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "tissue"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/tumorType",
+          "name": "tumorType",
+          "description": "Column 'tumorType'",
+          "dataType": "sc:Text",
+          "source": {
+            "@id": "Copy_Number_Variation_from_the_Columbia_University_NF1_Glioma_Project-schema/tumorType/source",
+            "fileObject": {
+              "@id": "file_59"
+            },
+            "extract": {
+              "column": "tumorType"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
